@@ -49,6 +49,9 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+.text-center {
+    text-align: center;
+}
 .btn-hover {
     transition: all .2s;
 }
@@ -83,4 +86,19 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     width: 0.49rem;
     height: 0.49rem;
     background-position: -6.51rem 0;
+}
+.login-box {
+    margin-top: .43rem;
+}
+.login-box .login-text {
+    display: inline-block;
+    line-height: 1;
+    font-size: .24rem;
+    color: #fff;
+}
+/* 签到抽永久 */
+.main-title {
+    width: 7.19rem;
+    height: .78rem;
+    background-image: url();
 }

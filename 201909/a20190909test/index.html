@@ -44,12 +44,11 @@
                 <div class="bg video-bg"></div>
                 <i class="icon absolute video-icon btn-hover"></i>
             </div>
-        </div>
-        <div class="head2">
-            <div class="login-box">
+            <div class="text-center login-box">
                 <div id="ams_loginbar">
-                    <div id="unlogin">
-                        <a id="ptLoginBtn" href="javascript:;" style="cursor: pointer;">登录</a>
+                    <div id="unlogin" class="login-text">
+                        你好，请 <a id="ptLoginBtn" class="login-text" href="javascript:;" style="cursor: pointer;">[QQ登录]</a>
+                        <a id="wxloginBtn" class="login-text" href="javascript:void(0);">[微信登录]</a>
                     </div>
                     <div id="logined" style="display: none;">
                         <span>姓名</span>
@@ -58,6 +57,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="head2">
+            <div class="bg main-title"></div>
         </div>
     </header>
     <section>
@@ -108,32 +110,47 @@
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
 
-    //???
     milo.ready(function () {
         need("biz.login", function (LoginManager) {
             LoginManager.init({
+                appConfig: {
+                    "avoidConflict":"false",//默认值为空，判断是否需要校验微信登录态串号，设为true，为必须校验，设为false，为不校验，默认值""表示在微信环境下校验，其它app环境下不校验
+                    "QQBrowserAppId": "xxx",  //在QQ浏览器端申请的APPID，联系内部同学
+                    "WxAppId"       : "xxxxxxxxxxx",  //需要在微信申请openLink权限，联系内部同学
+                    "AppName"       : "业务的中文名称",  //业务的中文名称
+                    "scope"         : "snsapi_base",   //默认是 snsapi_base 静默授权，如果游戏无静默权限，就需要手动改成 snsapi_userinfo
+                    "LogoUrl"       : "//ossweb-img.qq.com/images/feiji/web201507/logo.png"   //业务在授权时需要显示的正方形标准Logo，图片要求：尺寸：100x100px
+                }
             });
-            //QQ???
+
+            //QQ登录
             milo.addEvent(g('ptLoginBtn'), 'click', function (e) {
                 LoginManager.login();
             });
-            //??????
-            LoginManager.checkLogin(function(userInfo){
-                //console.log("????");
-                //console.log("????????",userInfo);
-            },function(){
-                console.log("δ???");
+
+            //微信登录
+            milo.addEvent(g('wxloginBtn'), 'click', function (e) {
+                LoginManager.loginByWX();
             });
-            //???
+
+            //检查登录态
+            LoginManager.checkLogin(function(userInfo){
+                console.log("已登录");
+                console.log("登录信息：",userInfo);
+            },function(){
+                console.log("未登录");
+            });
+            //注销
             milo.addEvent(g("ptLogoutBtn"),"click",function(){
                 LoginManager.logout(
                     {
                         logoutCallback:function(){
-                            alert("?????");
+                            alert("已注销");
                         }
                     }
                 );
             })
+
         });
     });
 
@@ -187,25 +204,24 @@
         showDialog.hide();
     }
 
-
-    //????
+    //页面分享
     TGMobileShare({
-        shareTitle:'??????? ??????????',
-        shareDesc:'??????棬???????????????????',
-        shareImgUrl:'ossweb-img/share.jpg', //?????????200*200??????д????·??
-        shareLink:'',
-        actName:'a20181217live'
+        shareTitle:'demo3分享标题', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'demo3分享详情', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/tgideas/act/a20151127tgmsdemo/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20151127tgmsdemo' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
     });
 
-    //??δ???????????JS?У?
-    var setSite={ //???????????
-        siteType:"a20160711xxx", //??????:"os"???????????????????????дactName????a20160701xxx
-        pageType:"index", //??????:???????λ????????溬????д????main||list||detail||download||share||page1||pageN,??????(.)???????(_)
-        pageName:"???", //??????:?????????
-        project:"other", //?????:??????????????????;??????????????д????????;?????????base;????doujin;????match;?????story;????history;????fans;?????coming;???bbs;???skin;???other;
-        osact:0 //?????:?????0??osact=0???????????osact=pc???pc????/pc???????osact=m??????????/??????????osact=ingame????????/????????
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20160711xxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+        pageName:"首页", //必填项:页面中文名
+        project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+        osact:0 //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
     };
-    if(typeof(pgvMain)=='function')pgvMain();//??????????
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
 </script>
 </body>
 </html>
