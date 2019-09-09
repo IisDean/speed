@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk" />
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="玩穿越火线，参与一发入魂活动，赢取巴雷特-毁灭、王者之怒、毁灭-暗月皮肤等丰厚奖励！" />
+    <meta name="Keywords" content="穿越火线,穿越火线官网,穿越火线游戏下载,穿越火线下载,穿越火线官方下载,一发入魂" />
+    <title>一发入魂活动 - 穿越火线官方网站 - 腾讯游戏</title>
+    <link rel="stylesheet" href="./css/a20190909test.css">
+    <!-- 页面设计: 全速 | 页面制作： 全速 | 创建： 2019/09/09 -->
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k =750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="head1">
+            <div class="video-wrap">
+                <div class="bg absolute video-inset"></div>
+                <div class="bg video-bg"></div>
+                <i class="icon absolute video-icon btn-hover"></i>
+            </div>
+        </div>
+        <div class="head2">
+            <div class="login-box">
+                <div id="ams_loginbar">
+                    <div id="unlogin">
+                        <a id="ptLoginBtn" href="javascript:;" style="cursor: pointer;">登录</a>
+                    </div>
+                    <div id="logined" style="display: none;">
+                        <span>姓名</span>
+                        <span id="userinfo"></span>
+                        <a id="ptLogoutBtn" href="javascript:;" style="cursor: pointer;">??????</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main1"></div>
+        <div class="main2"></div>
+    </section>
+
+    <!--<a href="javascript:;" class="bm-btn icon hh" ontouchend="PTTSendClick('btn','bm-btn','???????');">???????</a>-->
+
+    <!--????-->
+    <div class="pop" id="popNote">
+        <a href="javascript:popHide();" class="btn-close hh">???</a>
+        <div class="pop-con">
+            <h3 class="pop-tit">????</h3>
+            <ul class="note-list">
+                <!--<li><span>2018.4.11 </span> <span>?????????30?????????30?????????30</span> </li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- ?????????OL????????iPhone Xs max-->
+    <div class="pop pop9" id="pop9">
+        <a href="javascript:void(0);" class="close-btn icon hh" title="???"></a>
+        <div class="pop-con">
+            <h2 class="pop-tit2 pop-tit">?????????OL????????iPhone Xs max</h2>
+            <p class="p-txt">????齱???????????</p>
+            <a href="javascript:;" class="fri-btn icon p-com">??????????</a>
+        </div>
+    </div>
+    <!-- ?????????OL????????iPhone Xs max-->
+    <div class="pop pop10" id="pop10" style="display: none;">
+        <a href="javascript:void(0);" class="close-btn icon hh" title="???"></a>
+        <div class="pop-con">
+            <h2 class="pop-tit2 pop-tit">iPhone Xs max</h2>
+            <p class="p-txt"> </br></p>
+            <a href="javascript:;" class="qcj-btn icon p-com">??齱</a>
+        </div>
+    </div>
+</div>
+<!--背景音乐-->
+<div id="musicBtn" class="music">
+    <audio id="bgm" src="http://i0.cy.com/kzgj/main/2019/0508/sound/bgm.mp3" preload="auto" autoplay loop=""></audio>
+</div>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+
+    //???
+    milo.ready(function () {
+        need("biz.login", function (LoginManager) {
+            LoginManager.init({
+            });
+            //QQ???
+            milo.addEvent(g('ptLoginBtn'), 'click', function (e) {
+                LoginManager.login();
+            });
+            //??????
+            LoginManager.checkLogin(function(userInfo){
+                //console.log("????");
+                //console.log("????????",userInfo);
+            },function(){
+                console.log("δ???");
+            });
+            //???
+            milo.addEvent(g("ptLogoutBtn"),"click",function(){
+                LoginManager.logout(
+                    {
+                        logoutCallback:function(){
+                            alert("?????");
+                        }
+                    }
+                );
+            })
+        });
+    });
+
+    //????
+    var popIsShow = false;
+    var popDom = null;
+    function popShow(id) {
+        popHide();
+        var p = $('#'+id);
+        popDom = p;
+        if (p) {
+            p.show().css({
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+            p.attr('for', 'pop');
+            popIsShow = true;
+            if ($('[for="' + id + '"]').length >= 1) return;
+            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:997;background:rgba(0,0,0,0.8);"></div>');
+        }
+    }
+    function popHide() {
+        $('[for="pop"]').hide().attr('style', '');
+        $('[name="overlay"]').remove();
+    }
+    window.addEventListener("resize", function () {
+        if (!popIsShow)
+            return;
+        setTimeout(function () {
+            popDom.css({
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+        }, 400)
+    });
+
+    //????
+    function popShow(e){
+        showDialog.show({
+            id:e, //?????????id????????????????div????????????
+            bgcolor:"#000",//??????????????????????"#FF6600"???????????"#fff"
+            opacity:80 //?????????????????????????10-100???????
+        });
+    }
+    function popHide(){
+        showDialog.hide();
+    }
+
+
+    //????
+    TGMobileShare({
+        shareTitle:'??????? ??????????',
+        shareDesc:'??????棬???????????????????',
+        shareImgUrl:'ossweb-img/share.jpg', //?????????200*200??????д????·??
+        shareLink:'',
+        actName:'a20181217live'
+    });
+
+    //??δ???????????JS?У?
+    var setSite={ //???????????
+        siteType:"a20160711xxx", //??????:"os"???????????????????????дactName????a20160701xxx
+        pageType:"index", //??????:???????λ????????溬????д????main||list||detail||download||share||page1||pageN,??????(.)???????(_)
+        pageName:"???", //??????:?????????
+        project:"other", //?????:??????????????????;??????????????д????????;?????????base;????doujin;????match;?????story;????history;????fans;?????coming;???bbs;???skin;???other;
+        osact:0 //?????:?????0??osact=0???????????osact=pc???pc????/pc???????osact=m??????????/??????????osact=ingame????????/????????
+    };
+    if(typeof(pgvMain)=='function')pgvMain();//??????????
+</script>
+</body>
+</html>

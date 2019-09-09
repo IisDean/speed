@@ -1,0 +1,1121 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none} 
+a:hover{text-decoration:underline}
+img{border:0} 
+body{padding-top:42px} 
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}
+/*** footer  **/
+#afooter{min-width:1000px; text-align:center; font-size:12px; line-height:20px;padding: 20px 0; color: #6a6a6a;background:#0e0e0e;}
+#afooter .copyright span a,#footer .copyright span a:hover{ margin:0 5px;}
+#afooter .notice{ display:none;}
+#afooter a{ color: #6a6a6a;}
+.bg {
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.clearfix::after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.absolute {
+	position: absolute;
+}
+.ab-center {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+}
+.sprite {
+	background-image: url(../ossweb-img/sprite.png);
+	background-size: 854px 1180px;
+}
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1); 
+}
+#stage {
+	min-width: 1200px;
+}
+.head-wrap {
+	position: relative;
+	width: 100%;
+	height: 1080px;
+	background-image: url(../ossweb-img/head_bg.jpg);
+	background-size: 1920px 1080px;
+	overflow: hidden;
+}
+.girl-wrap {
+	top: -20px;
+	left: -300px;
+	width: 1033px;
+	height: 1080px;
+	background-image: url(../ossweb-img/girl.png);
+}
+.boy-wrap {
+	top: 20px;
+	right: -338px;
+	width: 796px;
+	height: 1028px;
+	background-image: url(../ossweb-img/boy.png);
+}
+.slogan-wrap {
+	top: -55px;
+	width: 1114px;
+	height: 822px;
+	background-image: url(../ossweb-img/sloganbg.png);
+}
+.video-btn {
+	top: 190px;
+	left: 160px;
+	width: 110px;
+	height: 110px;
+	cursor: pointer;
+}
+.video-btn .video-bg {
+	width: 100%;
+	height: 100%;
+	background-position: -475px -243px;
+}
+.video-btn .video-icon {
+	top: 35px;
+	left: 46px;
+	width: 29px;
+	height: 39px;
+	background-position: -627px -278px;
+}
+.leaf-wrap {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../ossweb-img/leaf.png);
+	background-size: 1980px 1000px;
+	background-position: top center;
+	background-repeat: repeat;
+	pointer-events: none;
+}
+.head-next {
+	bottom: 0;
+	width: 100%;
+	height: 170px;
+	background-image: url(../ossweb-img/headbg_sub.png);
+	background-size: 1920px 170px;
+}
+.down-wrap {
+	left: 330px;
+	top: 610px;
+	padding: 9px 27px;
+	box-sizing: border-box;
+	width: 539px;
+	height: 179px;
+}
+.down-wrap,
+.down-wrap .code-wrap,
+.down-wrap .ios-down,
+.down-wrap .android-down,
+.down-wrap .entry-btn,
+.down-wrap .simulator-down {
+	background-image: url(../ossweb-img/down.png);
+	background-size: 539px 179px;
+}
+.down-wrap .code-wrap {
+	width: 110px;
+	height: 111px;
+	background-position: -27px -9px;
+}
+.down-wrap .code-line {
+	display: block;
+	width: 100%;
+	height: 14px;
+	background-image: url(../ossweb-img/ewm_lig.png);
+	background-size: 130px 14px;
+}
+.down-wrap .ios-down {
+	margin-left: 5px;
+	width: 206px;
+	height: 52px;
+	background-position: -142px -9px;
+}
+.down-wrap .android-down {
+	margin-top: 7px;
+	margin-left: 5px;
+	width: 206px;
+	height: 52px;
+	background-position: -142px -68px;
+}
+.down-wrap .entry-btn {
+	width: 157px;
+	height: 161px;
+	background-position: -355px -9px;
+}
+.down-wrap .simulator-down {
+	margin-top: 6px;
+	width: 321px;
+	height: 44px;
+	background-position: -27px -126px;
+}
+/* 看点 */
+.abg1 {
+	width: 100%;
+	height: 1037px;
+	background-image: url(../ossweb-img/abg1.jpg);
+	overflow: hidden;
+}
+.abg1 .mod-title {
+	margin: 12px auto 0;
+	width: 653px;
+	height: 99px;
+	background-position: 0 0;
+}
+.abg1 .mod-wrap {
+	margin: 70px auto 0;
+	padding: 18px 17px;
+	box-sizing: border-box;
+	width: 970px;
+	background-image: url(../ossweb-img/frame.png);
+	background-size: 969px 562px;
+}
+.aspect-img {
+	display: block;
+	width: 100%;
+}
+.swiper-inset {
+	position: relative;
+	z-index: 1;
+	margin: -45px auto 0;
+	width: 568px;
+	height: 164px;
+	background-image: url(../ossweb-img/aspect_inset.png);
+	background-size: 568px 1178px;
+}
+.abg1-swiper .swiper-slide:nth-child(1) .swiper-inset {
+	background-position: 0px 0px;
+}
+.abg1-swiper .swiper-slide:nth-child(2) .swiper-inset {
+	background-position: 0px -169px;
+}
+.abg1-swiper .swiper-slide:nth-child(3) .swiper-inset {
+	background-position: 0px -338px;
+}
+.abg1-swiper .swiper-slide:nth-child(4) .swiper-inset {
+	background-position: 0px -507px;
+}
+.abg1-swiper .swiper-slide:nth-child(5) .swiper-inset {
+	background-position: 0px -676px;
+}
+.abg1-swiper .swiper-slide:nth-child(6) .swiper-inset {
+	background-position: 0px -845px;
+}
+.abg1-swiper .swiper-slide:nth-child(7) .swiper-inset {
+	background-position: 0px -1014px;
+}
+.abg1-pagination {
+	position: static;
+	margin-top: 36px;
+}
+.abg1-pagination .swiper-pagination-bullet {
+	margin: 0 24px !important;
+	width: 25px;
+	height: 25px;
+	opacity: 1 !important;
+	background-color: transparent;
+	background-image: url(../ossweb-img/sprite.png);
+	background-position: -616px -393px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-position: -584px -393px;
+}
+.abg1 .part1 {
+	top: 70px;
+	left: 1034px;
+	width: 334px;
+	height: 76px;
+	background-position: -474px -623px;
+}
+.abg1 .part2 {
+	top: 752px;
+	left: -117px;
+	width: 379px;
+	height: 55px;
+	background-position: -474px -535px;
+}
+/* 八福月下逢 */
+.abg2 {
+	position: relative;
+	width: 100%;
+	height: 1287px;
+	background-image: url(../ossweb-img/bg2.jpg);
+	overflow: hidden;
+}
+.cloud-wrap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	margin: -140px auto 0;
+	width: 100%;
+	height: 453px;	
+	overflow: hidden;
+}
+.cloud {
+	width: 100%;
+	height: 100%;
+	background-image: url(../ossweb-img/cloud.png);
+}
+.blessing-wrap {
+	position: relative;
+}
+.blessing-wrap .btn-blessing {
+	width: 226px;
+	height: 226px;
+}
+.blessing-wrap .btn-blessing:nth-child(1) {
+	top: 381px;
+	left: 147px;
+	background-position: 0px -244px;
+}
+.blessing-wrap .btn-blessing:nth-child(2) {
+	top: 381px;
+	left: 788px;
+	background-position: -237px -244px;
+}
+.blessing-wrap .btn-blessing:nth-child(3) {
+	top: 584px;
+	left: -74px;
+	background-position: -0px -480px;
+}
+.blessing-wrap .btn-blessing:nth-child(4) {
+	top: 584px;
+	right: -52px;
+	background-position: -237px -480px;
+}
+.blessing-wrap .btn-blessing:nth-child(3),
+.blessing-wrap .btn-blessing:nth-child(4) {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-ms-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.blessing-wrap .btn-blessing:nth-child(5) {
+	top: 783px;
+	left: 147px;
+	background-position: 0px -717px;
+}
+.blessing-wrap .btn-blessing:nth-child(6) {
+	top: 783px;
+	left: 788px;
+	background-position: -237px -717px;
+}
+.blessing-wrap .btn-blessing:nth-child(5),
+.blessing-wrap .btn-blessing:nth-child(6) {
+	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-ms-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	animation-delay: .4s;
+}
+.blessing-wrap .btn-blessing:nth-child(7) {
+	top: 982px;
+	left: -74px;
+	background-position: -0px -955px;
+}
+.blessing-wrap .btn-blessing:nth-child(8) {
+	top: 982px;
+	right: -52px;
+	background-position: -237px -955px;
+}
+.blessing-wrap .btn-blessing:nth-child(7),
+.blessing-wrap .btn-blessing:nth-child(8) {
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-ms-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	animation-delay: .6s;
+}
+.blessing-wrap .btn-blessing:hover {
+	-webkit-animation: blessingDown .2s forwards;
+	-moz-animation: blessingDown .2s forwards;
+	-ms-animation: blessingDown .2s forwards;
+	-o-animation: blessingDown .2s forwards;
+	animation: blessingDown .2s forwards;
+}
+.pendant-wrap {
+	top: 864px;
+	left: 594px;
+	width: 18px;
+	height: 151px;
+	background-position: -700px -244px;
+}
+.snowfall-wrap {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.snowfall-wrap img {
+	z-index: 1 !important;
+}
+/* 山海新篇 特色一览 */
+.abg3 {
+	position: relative;
+	width: 100%;
+	height: 842px;
+	background-image: url(../ossweb-img/bg3.jpg);
+	overflow: hidden;
+}
+.abg3 .mod-title {
+	margin: 48px auto 0;
+	width: 653px;
+	height: 110px;
+	background-image: url(../ossweb-img/sprite.png);
+	background-position: 0 -110px;
+}
+.abg3 .mod-wrap {
+	margin: 75px auto 0;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 990px;
+	height: 480px;
+	background-image: url(../ossweb-img/frame2.png);
+	background-size: 990px 480px;
+}
+.abg3 .swiper-navigation-prev,
+.abg3 .swiper-navigation-next {
+	top: 432px;
+	width: 38px;
+	height: 74px;
+	outline: none;
+	cursor: pointer;
+}
+.abg3 .swiper-navigation-prev {
+	left: 0px;
+	background-position: -476px -368px;
+}
+.abg3 .swiper-navigation-next {
+	right: 0px;
+	background-position: -530px -368px;
+}
+/* 下载 */
+.bg4 {
+	width: 100%;
+	height: 338px;
+	background-color: #a7dedc;
+	overflow: hidden;
+}
+.foot-down-wrap,
+.code-wrap,
+.foot-down-wrap .btn-ios-down,
+.foot-down-wrap .btn-android-down,
+.foot-down-wrap .btn-entry {
+	background-image: url(../ossweb-img/foot_down.png);
+	background-size: 1199px 478px;
+}
+.foot-down-wrap {
+	margin: 50px auto 0;
+	width: 1199px;
+	height: 239px;
+}
+.foot-down-wrap .code-wrap {
+	width: 224px;
+	height: 238px;
+	background-position: 0px 0px;
+}
+.foot-down-wrap .btn-ios-down,
+.foot-down-wrap .btn-android-down {
+	margin-left: 19px;
+	width: 347px;
+	height: 237px;
+}
+.foot-down-wrap .btn-ios-down {
+	background-position: -245px 0;
+}
+.foot-down-wrap .btn-ios-down:hover {
+	background-position: -245px -240px;
+}
+.foot-down-wrap .btn-android-down {
+	background-position: -611px 0;
+}
+.foot-down-wrap .btn-android-down:hover {
+	background-position: -611px -240px;
+}
+.foot-down-wrap .btn-entry {
+	margin-left: 20px;
+	width: 223px;
+	height: 239px;
+	background-position: -977px 0;
+}
+.foot-down-wrap .btn-entry:hover {
+	background-position: -977px -240px;
+}
+/* 兔子 */
+.tuzi-wrap {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1000;
+	width: 335px;
+	height: 268px;
+}
+.tuzi-bg {
+	display: block;
+	width: 335px;
+	height: 268px;
+	background-image: url(../ossweb-img/tuzi_bg.png);
+}
+.tuzi {
+	top: 44px;
+	left: -30px;
+	display: block;
+	width: 181px;
+	height: 212px;
+	background-image: url(../ossweb-img/tuzi.png);
+}
+/* 侧边栏 */
+.sidebar {
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	z-index: 1000;
+	width: 135px;
+	height: 532px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.sidebar-bg {
+	display: block;
+	background-image: url(../ossweb-img/sidebar.png);
+	background-size: 135px 532px;
+}
+.sidebar .btn-ios-down {
+	margin-top: 152px;
+	width: 100%;
+	height: 51px;
+	background-position: 0px -152px;
+}
+.sidebar .btn-android-down {
+	width: 100%;
+	height: 51px;
+	background-position: 0px -203px;
+}
+.sidebar .btn-android-down {
+	width: 100%;
+	height: 51px;
+	background-position: 0px -203px;
+}
+.sidebar .btn-simulator-down {
+	width: 100%;
+	height: 49px;
+	background-position: 0px -254px;
+}
+.sidebar .btn-version-down {
+	width: 100%;
+	height: 46px;
+	background-position: 0px -303px;
+}
+.sidebar .btn-wellbeing-down {
+	margin-top: 1px;
+	width: 100%;
+	height: 48px;
+	background-position: 0px -350px;
+}
+.sidebar .btn-feature-down {
+	width: 100%;
+	height: 48px;
+	background-position: 0px -398px;
+}
+.sidebar .btn-backtop-down {
+	margin-top: 2px;
+	width: 100%;
+	height: 84px;
+	background-position: 0px -448px;
+	cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+	.sidebar,
+	.tuzi-wrap {
+		display: none;
+	}
+}
+/* 底部 */
+#gfooter {
+	background-color: #ffffff;
+}
+#gfooter a,
+#gfooter a:hover {
+    color: #2e2f33;
+    text-decoration: none;
+    outline: 0;
+}
+#gfooter .logo1 {
+	width: 131px;
+	height: 35px;
+	background-image: url(../ossweb-img/foot_logo.png);
+}
+/* 动画 */
+.element-animation{
+  animation: animationFrames linear 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames linear 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames linear 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames linear 10s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames linear 10s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+@keyframes animationFrames{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(360deg) ;
+  }
+}
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:  rotate(0deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(360deg) ;
+  }
+}
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(360deg) ;
+  }
+}
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  rotate(0deg) ;
+  }
+  100% {
+    -o-transform:  rotate(360deg) ;
+  }
+}
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform:  rotate(0deg) ;
+  }
+  100% {
+    -ms-transform:  rotate(360deg) ;
+  }
+}
+.ani-codeline{
+  animation: codeLine ease-in-out 1s alternate;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: codeLine ease-in-out 1s alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: codeLine ease-in-out 1s alternate;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: codeLine ease-in-out 1s alternate;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: codeLine ease-in-out 1s alternate;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+@keyframes codeLine{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,97px)  ;
+  }
+}
+@-moz-keyframes codeLine{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,97px)  ;
+  }
+}
+@-webkit-keyframes codeLine {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,97px)  ;
+  }
+}
+@-o-keyframes codeLine {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,97px)  ;
+  }
+}
+@-ms-keyframes codeLine {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,97px)  ;
+  }
+}
+.ani-cloud{
+  animation: cloud ease-in-out 1s alternate;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: cloud ease-in-out 1s alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: cloud ease-in-out 1s alternate;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: cloud ease-in-out 1s alternate;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: cloud ease-in-out 1s alternate;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50% alternate;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+@keyframes cloud{
+  0% {
+    transform:  translate(0px,0px)  scaleX(1.00) ;
+  }
+  100% {
+    transform:  translate(5px,0px)  scaleX(1.01) ;
+  }
+}
+
+@-moz-keyframes cloud{
+  0% {
+    -moz-transform:  translate(0px,0px)  scaleX(1.00) ;
+  }
+  100% {
+    -moz-transform:  translate(5px,0px)  scaleX(1.01) ;
+  }
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    -webkit-transform:  translate(0px,0px)  scaleX(1.00) ;
+  }
+  100% {
+    -webkit-transform:  translate(5px,0px)  scaleX(1.01) ;
+  }
+}
+
+@-o-keyframes cloud {
+  0% {
+    -o-transform:  translate(0px,0px)  scaleX(1.00) ;
+  }
+  100% {
+    -o-transform:  translate(5px,0px)  scaleX(1.01) ;
+  }
+}
+
+@-ms-keyframes cloud {
+  0% {
+    -ms-transform:  translate(0px,0px)  scaleX(1.00) ;
+  }
+  100% {
+    -ms-transform:  translate(5px,0px)  scaleX(1.01) ;
+  }
+}
+.ani-leaf {
+	animation: leaf linear 8s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	animation-fill-mode:forwards; /*when the spec is finished*/
+	-webkit-animation: leaf linear 8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+	-moz-animation: leaf linear 8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transform-origin: 50% 50%;
+	-moz-animation-fill-mode:forwards; /*FF 5+*/
+	-o-animation: leaf linear 8s;
+	-o-animation-iteration-count: infinite;
+	-o-transform-origin: 50% 50%;
+	-o-animation-fill-mode:forwards; /*Not implemented yet*/
+	-ms-animation: leaf linear 8s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transform-origin: 50% 50% alternate;
+	-ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+@keyframes leaf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 1000px;
+	}
+}
+@-webkit-keyframes leaf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 1000px;
+	}
+}
+@-moz-keyframes leaf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 1000px;
+	}
+}
+@-ms-keyframes leaf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 1000px;
+	}
+}
+@-o-keyframes leaf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 1000px;
+	}
+}
+.ani-swing{
+  animation: swing ease-in-out 1s alternate;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: swing ease-in-out 1s alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: swing ease-in-out 1s alternate;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 0%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: swing ease-in-out 1s alternate;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 0%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: swing ease-in-out 1s alternate;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 0%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+@keyframes swing{
+  0% {
+    transform:  rotate(4deg) ;
+  }
+  100% {
+    transform:  rotate(-4deg) ;
+  }
+}
+@-moz-keyframes swing{
+  0% {
+    -moz-transform:  rotate(4deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(-4deg) ;
+  }
+}
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform:  rotate(4deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(-4deg) ;
+  }
+}
+@-o-keyframes swing {
+  0% {
+    -o-transform:  rotate(4deg) ;
+  }
+  100% {
+    -o-transform:  rotate(-4deg) ;
+  }
+}
+@-ms-keyframes swing {
+  0% {
+    -ms-transform:  rotate(4deg) ;
+  }
+  100% {
+    -ms-transform:  rotate(-4deg) ;
+  }
+}
+.ani-blessing{
+  animation: blessing ease-in-out 2s alternate;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+  -webkit-animation: blessing ease-in-out 2s alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 0%;
+  -moz-animation: blessing ease-in-out 2s alternate;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 0%;
+  -o-animation: blessing ease-in-out 2s alternate;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 0%;
+  -ms-animation: blessing ease-in-out 2s alternate;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 0%;
+}
+@keyframes blessing{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,10px)  ;
+  }
+}
+@-moz-keyframes blessing{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,10px)  ;
+  }
+}
+@-webkit-keyframes blessing {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,10px)  ;
+  }
+}
+@-o-keyframes blessing {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,10px)  ;
+  }
+}
+@-ms-keyframes blessing {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,10px)  ;
+  }
+}
+
+@-webkit-keyframes blessingDown {
+	to {
+		-webkit-transform: translateY(10px);
+	}
+}
+@-moz-keyframes blessingDown {
+	to {
+		-moz-transform: translateY(10px);
+	}
+}
+@-ms-keyframes blessingDown {
+	to {
+		-ms-transform: translateY(10px);
+	}
+}
+@-o-keyframes blessingDown {
+	to {
+		-o-transform: translateY(10px);
+	}
+}
+@keyframes blessingDown {
+	to {
+		transform: translateY(10px);
+	}
+}
+.slideInLeft {
+	-webkit-animation: slideInLeft 1s both;
+	-moz-animation: slideInLeft 1s both;
+	-ms-animation: slideInLeft 1s both;
+	-o-animation: slideInLeft 1s both;
+	animation: slideInLeft 1s both;
+}
+@keyframes slideInLeft {
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+@-webkit-keyframes slideInLeft {
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+@-moz-keyframes slideInLeft {
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+@-ms-keyframes slideInLeft {
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+
+@-o-keyframes slideInLeft {
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+.ani-tuzi {
+	-webkit-animation: tuzi 1.6s .5s infinite linear;
+	-moz-animation: tuzi 1.6s .5s infinite linear;
+	-ms-animation: tuzi 1.6s .5s infinite linear;
+	-o-animation: tuzi 1.6s .5s infinite linear;
+	animation: tuzi 1.6s .5s infinite linear;
+}
+@keyframes tuzi {
+	0% {
+    	transform: scale(1);
+	}
+	10%, 20% {
+	    transform: scale(1) rotate(-2deg);
+	}
+	30%, 50%, 70%, 90% {
+	    transform: scale(1.02) rotate(2deg);
+	}
+	40%, 60%, 80% {
+	    transform: scale(1.02) rotate(-2deg);
+	}
+	100% {
+	    transform: scale(1) rotate(0);
+	}
+}
+@-webkit-keyframes tuzi {
+	0% {
+    	-webkit-transform: scale(1);
+	}
+	10%, 20% {
+	    -webkit-transform: scale(1) rotate(-2deg);
+	}
+	30%, 50%, 70%, 90% {
+	    -webkit-transform: scale(1.02) rotate(2deg);
+	}
+	40%, 60%, 80% {
+	    -webkit-transform: scale(1.02) rotate(-2deg);
+	}
+	100% {
+	    -webkit-transform: scale(1) rotate(0);
+	}
+}
+@-moz-keyframes tuzi {
+	0% {
+    	-moz-transform: scale(1);
+	}
+	10%, 20% {
+	    -moz-transform: scale(1) rotate(-2deg);
+	}
+	30%, 50%, 70%, 90% {
+	    -moz-transform: scale(1.02) rotate(2deg);
+	}
+	40%, 60%, 80% {
+	    -moz-transform: scale(1.02) rotate(-2deg);
+	}
+	100% {
+	    -moz-transform: scale(1) rotate(0);
+	}
+}
+@-ms-keyframes tuzi {
+	0% {
+    	-ms-transform: scale(1);
+	}
+	10%, 20% {
+	    -ms-transform: scale(1) rotate(-2deg);
+	}
+	30%, 50%, 70%, 90% {
+	    -ms-transform: scale(1.02) rotate(2deg);
+	}
+	40%, 60%, 80% {
+	    -ms-transform: scale(1.02) rotate(-2deg);
+	}
+	100% {
+	    -ms-transform: scale(1) rotate(0);
+	}
+}
+@-o-keyframes tuzi {
+	0% {
+    	-o-transform: scale(1);
+	}
+	10%, 20% {
+	    -o-transform: scale(1) rotate(-2deg);
+	}
+	30%, 50%, 70%, 90% {
+	    -o-transform: scale(1.02) rotate(2deg);
+	}
+	40%, 60%, 80% {
+	    -o-transform: scale(1.02) rotate(-2deg);
+	}
+	100% {
+	    -o-transform: scale(1) rotate(0);
+	}
+}
