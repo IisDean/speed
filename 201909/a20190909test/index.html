@@ -13,6 +13,7 @@
     <meta name="Description" content="玩穿越火线，参与一发入魂活动，赢取巴雷特-毁灭、王者之怒、毁灭-暗月皮肤等丰厚奖励！" />
     <meta name="Keywords" content="穿越火线,穿越火线官网,穿越火线游戏下载,穿越火线下载,穿越火线官方下载,一发入魂" />
     <title>一发入魂活动 - 穿越火线官方网站 - 腾讯游戏</title>
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
     <link rel="stylesheet" href="./css/a20190909test.css">
     <!-- 页面设计: 全速 | 页面制作： 全速 | 创建： 2019/09/09 -->
     <script>
@@ -59,12 +60,264 @@
             </div>
         </div>
         <div class="head2">
-            <div class="bg main-title"></div>
+            <div class="bg main-title main-title1"></div>
+            <p class="text-center main-description">活动期间签到满5次，可获得抽奖机会*1</p>
+            <!-- 签到 -->
+            <div class="bg progress-container">
+                <div class="bg progress-content" style="left: 5%;"></div>
+                <div class="bg absolute progress-inset"></div>
+                <ul class="flex absolute pro-tips-wrap">
+                    <li class="pro-tips-item">第1次</li>
+                    <li class="pro-tips-item">第2次</li>
+                    <li class="pro-tips-item">第3次</li>
+                    <li class="pro-tips-item">第4次</li>
+                    <li class="pro-tips-item">第5次</li>
+                </ul>
+            </div>
+            <a href="javascript: ;" class="bg-icon text-center btn btn-qd" title="签到" onclick="PTTSendClick('btn','qiandao','签到');"><span class="btn-text ">签到</span></a>
         </div>
     </header>
     <section>
-        <div class="main1"></div>
-        <div class="main2"></div>
+        <div class="main1">
+            <!-- 巴雷特-毁灭枪模手办 -->
+            <div class="bg main-title main-title2"></div>
+            <p class="text-center main-description">擎苍经典典藏系列</p>
+            <!-- swiper -->
+            <div class="swiper-1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/barrett1.jpg" alt="黑耀涂装"></div>
+                        <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/barrett2.jpg" alt="免费定制"></div>
+                        <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/barrett3.jpg" alt="流火夜光"></div>
+                        <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/barrett4.jpg" alt="变形支架"></div>
+                        <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/barrett5.jpg" alt="全合金枪体"></div>
+                    </div>
+                    <a href="javascript: ;" class="absolute bg-icon text-center btn btn-swi-buy" title="立即购买" onclick="PTTSendClick('btn','gmShouban','购买毁灭枪模手办');">
+                        <span class="btn-text ">立即购买</span>
+                    </a>
+                </div>
+                <div class="flex">
+                    <div class="flex swiper-description">
+                        <span class="active">黑耀涂装</span>
+                        <span>免费定制</span>
+                        <span>流火夜光</span>
+                        <span>变形支架</span>
+                        <span>全合金枪体</span>
+                    </div>
+                    <div class="flex navigation-wrap">
+                        <a href="javascript: ;" class="icon btn navigation-prev" title="上一页"  onclick="PTTSendClick('btn','pagePrev','手办上一页');"></a>
+                        <a href="javascript: ;" class="icon btn navigation-next" title="下一页" onclick="PTTSendClick('btn','pageNext','手办下一页');"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 毁灭主题周边 -->
+            <div class="bg main-title main-title3"></div>
+            <p class="text-center main-description">战场神狙手，一发入魂</p>
+            <!-- 商品 -->
+            <ul class="flex goods-container">
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_1.jpg" class="goods-img" alt="巴雷特火焰款T恤"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">巴雷特火焰款T恤</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：108元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHyTx','火焰T恤购买');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_2.jpg" class="goods-img" alt="巴雷特鲨鱼T恤"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">巴雷特鲨鱼T恤</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：150元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmSyTx','购买鲨鱼T恤');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_3.jpg" class="goods-img" alt="毁灭 运动抽绳背包"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">毁灭 运动抽绳背包</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：49元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHmBag','购买毁灭背包');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_4.jpg" class="goods-img" alt="毁灭 狙神精神腰带"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">毁灭 狙神精神腰带</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：89元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHmBelt','购买毁灭腰带');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_5.jpg" class="goods-img" alt="毁灭 渐变文字T恤"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">毁灭 渐变文字T恤</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：118元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmWzTx','购买文字T恤');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <img src="ossweb-img/goods_6.jpg" class="goods-img" alt="毁灭 狙神精神T恤"/>
+                    <div class="absolute goods-name">
+                        <p class="text-overflow">毁灭 狙神精神T恤</p>
+                    </div>
+                    <div class="flex goods-msg-wrap">
+                        <div class="goods-price">
+                            <p class="text-overflow">限时特价：118元</p>
+                        </div>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmJsTx','购买狙神T恤');">
+                            <span class="btn-text">立即购买</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- 灵狐者手办 -->
+            <div class="bg main-title main-title4"></div>
+            <p class="text-center main-description">预定开启，官方特典限量</p>
+            <div class="flex lh-container">
+                <div class="lh-left">
+                    <div class="absolute lh-msg-wrap">
+                        <p class="text-center lg-price">限时特价：69/个 118/对</p>
+                        <a href="javascript: ;" class="bg-icon text-center btn btn-lh-buy" title="前往预定" onclick="PTTSendClick('btn','orderLh','预定灵狐者手办');">
+                            <span class="btn-text ">前往预定</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lh-right">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/mxp_1.jpg" alt="明信片1"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/mxp_2.jpg" alt="明信片2"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/mxp_3.jpg" alt="明信片3"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/mxp_4.jpg" alt="明信片4"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/mxp_5.jpg" alt="明信片5"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h4 class="lh-award-title">预定人数奖励</h4>
+                    <p class="lh-award-msg">- 0-3000：每人可额外获得1张随机特典</p>
+                    <p class="lh-award-msg">- 3000-8000：每人可额外获得2张随机特典</p>
+                    <p class="lh-award-msg">- 8000-13000：每人可额外获得3张随机特典</p>
+                    <p class="lh-award-msg">- 13000-20000：每人可额外获得4张随机特典</p>
+                    <p class="lh-award-msg">- 20000+每人可额外获得全部5张特典</p>
+                </div>
+            </div>
+            <div class="flex lottery-btn-wrap">
+                <div class="lottery-tips-wrap">
+                    <p>10元预定即可参与抽奖</p>
+                </div>
+                <a href="javascript: ;" class="bg-icon text-center btn btn-lh-lottery" title="前往抽奖" onclick="PTTSendClick('btn','lotteryLh','前往灵狐手办抽奖');">
+                    <span class="btn-text ">前往抽奖</span>
+                </a>
+            </div>
+            <ul class="flex lh-list">
+                <li class="lh-item"><div class="absolute lh-item-name">火麒麟灵狐者</div></li>
+                <li class="lh-item"><div class="absolute lh-item-name">活力灵狐</div></li>
+                <li class="lh-item"><div class="absolute lh-item-name">甜心灵狐</div></li>
+                <li class="lh-item"><div class="absolute lh-item-name">珍贵道具</div></li>
+            </ul>
+            <!-- 毁灭大礼包 -->
+            <div class="bg main-title main-title5"></div>
+            <p class="text-center main-description">购毁灭枪模必得</p>
+            <div class="bg giftbag-wrap">
+                <div class="flex text-center giftbag-list">
+                    <span class="giftbag-item">巴雷特-毁灭（30天）</span>
+                    <span class="giftbag-item">沙鹰-修罗（30天）</span>
+                    <span class="giftbag-item">麒麟刺（30天）</span>
+                </div>
+                <a href="javascript: ;" class="bg-icon text-center btn btn-giftbag-qm" title="前往购买" onclick="PTTSendClick('btn','gmQm','前往购买枪模');">
+                    <span class="btn-text ">前往购买</span>
+                </a>
+                <p class="text-center giftbag-tips-text">购枪模即可领取</p>
+            </div>
+            <div class="flex mobile-game-wrap">
+                <i class="bg-icon btn mobile-game-icon"></i>
+                <p class="mobile-game-text">切换为手游，请先<a id="btn_logout" href="javascript:void(0)" title="退出">【退出】</a>，再重新登录</p>
+            </div>
+        </div>
+        <div class="main2">
+            <!-- 毁灭大转盘 -->
+            <div class="bg main-title main-title6"></div>
+            <p class="text-center main-description">满额抽奖</p>
+            <div class="lottery lottery-wrap" id="lotterycontent">
+                <img src="ossweb-img/lotter.png" alt="抽奖背景" />
+            </div>
+            <p class="text-center lottery-title">端游奖池&nbsp;&nbsp;&nbsp;&nbsp;剩余抽奖次数：<span>0</span></p>
+            <div class="flex lottery-btn-wrap2">
+                <div class="lottery-btn-left">
+                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-start" title="开始抽奖" onclick="PTTSendClick('btn','startLottery','开始抽奖');">
+                        <span class="btn-text">开始抽奖</span>
+                    </a>
+                    <p class="text-center lottery-tips-text1">消费每满150元可获得1次抽奖机会,<br/>每购买1把毁灭枪模可额外<br/>获得1次抽奖机会</p>
+                </div>
+                <div class="lottery-btn-right">
+                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="中奖记录" onclick="PTTSendClick('btn','lotteryRecord','中奖记录');">
+                        <span class="btn-text">中奖记录</span>
+                    </a>
+                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="个人中心" onclick="PTTSendClick('btn','personCenter','个人中心');">
+                        <span class="btn-text">个人中心</span>
+                    </a>
+                    <p class="lottery-tips-text2">提示：所有实物商品，请进入“周边商城-个人中心”填写地址领取</p>
+                </div>
+            </div>
+            <!-- 擎苍枪模 收藏有礼 -->
+            <div class="bg main-title main-title7"></div>
+            <div class="bg collect-container">
+                <a href="javascript: ;" class="bg-icon text-center btn btn-theme " title="前往主题站" onclick="PTTSendClick('btn','theme','前往主题站');">
+                    <span class="btn-text">前往主题站</span>
+                </a>
+            </div>
+            <!-- 评论有奖 -->
+            <div class="bg main-title main-title8"></div>
+            <div class="bg comment-container">
+                <h4 class="text-center comment-title-text">评论晒图</h4>
+                <p class="text-center comment-description-text">完成购买后在毁灭枪模<span>评论</span>区进行评论即有机会获得<span>王者之心/雷神枪模1把</span>，中奖名单将会在活动期间分三次公布，每次3名</p>
+            </div>
+            <!-- 活动规则 -->
+            <div class="bg main-title main-title9"></div>
+            <ol class="rule-list">
+                <li class="rule-item"><span>活动时间：2019年9月16日-10月7日</span>，活动期间签到满5次可获得1次毁灭大转盘抽奖机会</li>
+                <li class="rule-item">购买商品：点击购买后将直接引导至周边商城购买，完成购买后请返回活动页面领取奖励</li>
+                <li class="rule-item">端游或手游领取道具流程：玩家首次进入活动页面时需选择端游或手游，活动页面将会依据你的选择展示对应的游戏道具，获得道具后，请到“聚诚品周边商城-个人中心”领取到角色，唯一性道具不会重复获得</li>
+                <li class="rule-item">购买巴雷特-毁灭枪模手办：<span>在枪模手办限时促销期9月16日~10月7日内购买</span>，必得游戏道具和CF商业化活动抽奖机会以及毁灭大转盘抽奖机会，非定制版将在成功支付后48小时内发货，定制版由于需要更长制作周期，将在11月依次安排发货，请耐心等待</li>
+                <li class="rule-item">预定灵狐者手办：参与灵狐者手办预定可参与灵狐者奖池抽奖，可在灵狐者商品详情页前往奖池抽奖，预定每满10元可抽1次奖。灵狐者手办预计会在11月中旬开始发货，发货时会根据预定人数赠送相应的灵狐明信片特典。灵狐者手办支付尾款时可再次抽奖，届时奖池奖励也会升级，具体奖励道具请以实际页面为准</li>
+                <li class="rule-item">在毁灭枪模评论晒图的玩家中选出3位，赠送随机枪模，中奖玩家将会在掌火上进行公布</li>
+                <li class="rule-item"><span>获得的【游戏道具】请到聚诚品“个人中心-领取中心”领取</span>，活动结束前未领取将视为放弃奖品，购枪模必得奖励价值200元以上，一旦领取游戏道具奖励，视为确认交易，如产生退货，将从退款中扣除200元</li>
+                <li class="rule-item">毁灭大转盘奖池概率公示：<span>端游奖池永久道具0.06%、永久皮肤0.03%、30天道具6%-24%；手游奖池永久道具0.06%、英雄级角色0.05%、30天道具6%-24%</span></li>
+                <li class="rule-item">灵狐者预定奖池概率公示：<span>端游火麒麟灵狐者0.03%、活力灵狐0.1%、灵狐娃娃玩偶0.1%，期限道具16%-25%；手游圣诞灵狐0.11%、潜伏者玩偶0.11%、灵狐者0.37%，期限道具11-22%</span></li>
+                <li class="rule-item">灵狐者尾款奖池概率公示：<span>端游火麒麟灵狐者0.04%、狐影0.04%、期限道具33%；手游沙漠领主0.12%、魅惑灵狐0.21%、圣诞灵狐0.21%、期限道具33%</span></li>
+                <li class="rule-item">本活动与苹果公司无关</li>
+            </ol>
+        </div>
     </section>
 
     <!--<a href="javascript:;" class="bm-btn icon hh" ontouchend="PTTSendClick('btn','bm-btn','???????');">???????</a>-->
@@ -102,14 +355,16 @@
 <div id="musicBtn" class="music">
     <audio id="bgm" src="http://i0.cy.com/kzgj/main/2019/0508/sound/bgm.mp3" preload="auto" autoplay loop=""></audio>
 </div>
-<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
 <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script src="js/a20190909test.js"></script>
 <script>
-
     milo.ready(function () {
         need("biz.login", function (LoginManager) {
             LoginManager.init({
