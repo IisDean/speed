@@ -40,16 +40,18 @@
 <div class="wrap">
     <header>
         <div class="head1">
+            <i class="bg absolute logo-icon"></i>
             <div class="video-wrap">
                 <div class="bg absolute video-inset"></div>
                 <div class="bg video-bg"></div>
-                <i class="icon absolute video-icon btn-hover"></i>
+                <a href="javascript: ;" class="absolute video-btn" onClick="showPopVideo(123);" title="播放视频" ><!-- 视频id -->
+                    <i class="icon video-icon btn-hover"></i>
+                </a>
             </div>
             <div class="text-center login-box">
                 <div id="ams_loginbar">
                     <div id="unlogin" class="login-text">
-                        你好，请 <a id="ptLoginBtn" class="login-text" href="javascript:;" style="cursor: pointer;">[QQ登录]</a>
-                        <a id="wxloginBtn" class="login-text" href="javascript:void(0);">[微信登录]</a>
+                        你好，请 <a href="javascript: TGDialogS('popLogin');" class="login-text" onclick="PTTSendClick('btn','login','登录');">【登录】</a>
                     </div>
                     <div id="logined" style="display: none;">
                         <span>姓名</span>
@@ -74,11 +76,13 @@
                     <li class="pro-tips-item">第5次</li>
                 </ul>
             </div>
-            <a href="javascript: ;" class="bg-icon text-center btn btn-qd" title="签到" onclick="PTTSendClick('btn','qiandao','签到');"><span class="btn-text ">签到</span></a>
+            <a href="javascript: TGDialogS('pop-qdao');" class="bg-icon text-center btn btn-qd" title="签到" onclick="PTTSendClick('btn','qiandao','签到');">
+                <span class="btn-text ">签到</span>
+            </a>
         </div>
     </header>
     <section>
-        <div class="main1">
+        <div class="main1 headline" >
             <!-- 巴雷特-毁灭枪模手办 -->
             <div class="bg main-title main-title2"></div>
             <p class="text-center main-description">擎苍经典典藏系列</p>
@@ -116,88 +120,100 @@
             <!-- 商品 -->
             <ul class="flex goods-container">
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_1.jpg" class="goods-img" alt="巴雷特火焰款T恤"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">巴雷特火焰款T恤</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：108元</p>
+                    <a href="javascript: alert('敬请期待！');;" title="立即购买" onclick="PTTSendClick('btn','gmHyTx','火焰T恤购买');">
+                        <img src="ossweb-img/goods_1.jpg" class="goods-img" alt="巴雷特火焰款T恤"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">巴雷特火焰款T恤</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHyTx','火焰T恤购买');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：108元</p>
+                            </div>
+                            <div class="bg-icon text-center btn btn-goods-buy">
+                                <span class="btn-text">立即购买</span>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_2.jpg" class="goods-img" alt="巴雷特鲨鱼T恤"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">巴雷特鲨鱼T恤</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：150元</p>
+                    <a href="javascript: alert('敬请期待！');" title="立即购买" onclick="PTTSendClick('btn','gmSyTx','购买鲨鱼T恤');">
+                        <img src="ossweb-img/goods_2.jpg" class="goods-img" alt="巴雷特鲨鱼T恤"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">巴雷特鲨鱼T恤</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmSyTx','购买鲨鱼T恤');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：150元</p>
+                            </div>
+                            <div class="bg-icon text-center btn btn-goods-buy">
+                                <span class="btn-text">立即购买</span>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_3.jpg" class="goods-img" alt="毁灭 运动抽绳背包"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">毁灭 运动抽绳背包</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：49元</p>
+                    <a href="javascript: alert('敬请期待！');"  title="立即购买" onclick="PTTSendClick('btn','gmHmBag','购买毁灭背包');">
+                        <img src="ossweb-img/goods_3.jpg" class="goods-img" alt="毁灭 运动抽绳背包"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">毁灭 运动抽绳背包</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHmBag','购买毁灭背包');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：49元</p>
+                            </div>
+                            <div class="bg-icon text-center btn btn-goods-buy">
+                                <span class="btn-text">立即购买</span>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_4.jpg" class="goods-img" alt="毁灭 狙神精神腰带"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">毁灭 狙神精神腰带</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：89元</p>
+                    <a href="javascript: alert('敬请期待！');"  title="立即购买" onclick="PTTSendClick('btn','gmHmBelt','购买毁灭腰带');">
+                        <img src="ossweb-img/goods_4.jpg" class="goods-img" alt="毁灭 狙神精神腰带"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">毁灭 狙神精神腰带</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmHmBelt','购买毁灭腰带');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：89元</p>
+                            </div>
+                            <div class="bg-icon text-center btn btn-goods-buy">
+                                <span class="btn-text">立即购买</span>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_5.jpg" class="goods-img" alt="毁灭 渐变文字T恤"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">毁灭 渐变文字T恤</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：118元</p>
+                    <a href="javascript: alert('敬请期待！');" title="立即购买" onclick="PTTSendClick('btn','gmWzTx','购买文字T恤');">
+                        <img src="ossweb-img/goods_5.jpg" class="goods-img" alt="毁灭 渐变文字T恤"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">毁灭 渐变文字T恤</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmWzTx','购买文字T恤');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：118元</p>
+                            </div>
+                            <div href="javascript: ;" class="bg-icon text-center btn btn-goods-buy">
+                                <span class="btn-text">立即购买</span>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="goods-item">
-                    <img src="ossweb-img/goods_6.jpg" class="goods-img" alt="毁灭 狙神精神T恤"/>
-                    <div class="absolute goods-name">
-                        <p class="text-overflow">毁灭 狙神精神T恤</p>
-                    </div>
-                    <div class="flex goods-msg-wrap">
-                        <div class="goods-price">
-                            <p class="text-overflow">限时特价：118元</p>
+                    <a href="javascript: alert('敬请期待！');" title="立即购买" onclick="PTTSendClick('btn','gmJsTx','购买狙神T恤');">
+                        <img src="ossweb-img/goods_6.jpg" class="goods-img" alt="毁灭 狙神精神T恤"/>
+                        <div class="absolute goods-name">
+                            <p class="text-overflow">毁灭 狙神精神T恤</p>
                         </div>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" title="立即购买" onclick="PTTSendClick('btn','gmJsTx','购买狙神T恤');">
-                            <span class="btn-text">立即购买</span>
-                        </a>
-                    </div>
+                        <div class="flex goods-msg-wrap">
+                            <div class="goods-price">
+                                <p class="text-overflow">限时特价：118元</p>
+                            </div>
+                            <a href="javascript: ;" class="bg-icon text-center btn btn-goods-buy" >
+                                <span class="btn-text">立即购买</span>
+                            </a>
+                        </div>
+                    </a>
                 </li>
             </ul>
             <!-- 灵狐者手办 -->
@@ -205,11 +221,20 @@
             <p class="text-center main-description">预定开启，官方特典限量</p>
             <div class="flex lh-container">
                 <div class="lh-left">
-                    <div class="absolute lh-msg-wrap">
-                        <p class="text-center lg-price">限时特价：69/个 118/对</p>
-                        <a href="javascript: ;" class="bg-icon text-center btn btn-lh-buy" title="前往预定" onclick="PTTSendClick('btn','orderLh','预定灵狐者手办');">
-                            <span class="btn-text ">前往预定</span>
-                        </a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/linghu_1.jpg" alt="灵狐1"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/linghu_2.jpg" alt="灵狐2"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/linghu_3.jpg" alt="灵狐3"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/linghu_4.jpg" alt="灵狐4"></div>
+                            <div class="swiper-slide"><img class="aspect-img" src="ossweb-img/linghu_5.jpg" alt="灵狐5"></div>
+                        </div>
+                        <div class="absolute lh-msg-wrap">
+                            <p class="text-center lg-price">限时特价：69/个 118/对</p>
+                            <a href="javascript: alert('敬请期待！');" class="bg-icon text-center btn btn-lh-buy" title="前往预定" onclick="PTTSendClick('btn','orderLh','预定灵狐者手办');">
+                                <span class="btn-text ">前往预定</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="lh-right">
@@ -235,7 +260,7 @@
                 <div class="lottery-tips-wrap">
                     <p>10元预定即可参与抽奖</p>
                 </div>
-                <a href="javascript: ;" class="bg-icon text-center btn btn-lh-lottery" title="前往抽奖" onclick="PTTSendClick('btn','lotteryLh','前往灵狐手办抽奖');">
+                <a href="javascript: alert('敬请期待！');" class="bg-icon text-center btn btn-lh-lottery" title="前往抽奖" onclick="PTTSendClick('btn','lotteryLh','前往灵狐手办抽奖');">
                     <span class="btn-text ">前往抽奖</span>
                 </a>
             </div>
@@ -254,39 +279,56 @@
                     <span class="giftbag-item">沙鹰-修罗（30天）</span>
                     <span class="giftbag-item">麒麟刺（30天）</span>
                 </div>
-                <a href="javascript: ;" class="bg-icon text-center btn btn-giftbag-qm" title="前往购买" onclick="PTTSendClick('btn','gmQm','前往购买枪模');">
+                <a href="javascript: alert('敬请期待！');" class="bg-icon text-center btn btn-giftbag-qm" title="前往购买" onclick="PTTSendClick('btn','gmQm','前往购买枪模');">
                     <span class="btn-text ">前往购买</span>
                 </a>
                 <p class="text-center giftbag-tips-text">购枪模即可领取</p>
             </div>
-            <div class="flex mobile-game-wrap">
-                <i class="bg-icon btn mobile-game-icon"></i>
-                <p class="mobile-game-text">切换为手游，请先<a id="btn_logout" href="javascript:void(0)" title="退出">【退出】</a>，再重新登录</p>
+            <div class="dy-state">
+                <div class="flex mobile-game-wrap">
+                    <i class="bg-icon btn mobile-game-icon"></i>
+                    <p class="mobile-game-text">切换为端游，请先<a href="javascript:void(0)" title="退出">【退出】</a>，再重新登录</p>
+                </div>
+            </div>
+            <div class="sy-state">
+                <div class="flex mobile-game-wrap">
+                    <i class="bg-icon btn mobile-game-icon"></i>
+                    <p class="mobile-game-text">切换为手游，请先<a href="javascript:void(0)" title="退出">【退出】</a>，再重新登录</p>
+                </div>
             </div>
         </div>
         <div class="main2">
             <!-- 毁灭大转盘 -->
             <div class="bg main-title main-title6"></div>
             <p class="text-center main-description">满额抽奖</p>
-            <div class="lottery lottery-wrap" id="lotterycontent">
-                <img src="ossweb-img/lotter.png" alt="抽奖背景" />
-            </div>
-            <p class="text-center lottery-title">端游奖池&nbsp;&nbsp;&nbsp;&nbsp;剩余抽奖次数：<span>0</span></p>
-            <div class="flex lottery-btn-wrap2">
-                <div class="lottery-btn-left">
-                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-start" title="开始抽奖" onclick="PTTSendClick('btn','startLottery','开始抽奖');">
-                        <span class="btn-text">开始抽奖</span>
-                    </a>
-                    <p class="text-center lottery-tips-text1">消费每满150元可获得1次抽奖机会,<br/>每购买1把毁灭枪模可额外<br/>获得1次抽奖机会</p>
+            <div class="lottery-container">
+                <div class="absolute lottery dy-state lottery-wrap">
+                    <img src="ossweb-img/lotter_dy.png" alt="抽奖背景" />
                 </div>
-                <div class="lottery-btn-right">
-                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="中奖记录" onclick="PTTSendClick('btn','lotteryRecord','中奖记录');">
-                        <span class="btn-text">中奖记录</span>
-                    </a>
-                    <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="个人中心" onclick="PTTSendClick('btn','personCenter','个人中心');">
-                        <span class="btn-text">个人中心</span>
-                    </a>
-                    <p class="lottery-tips-text2">提示：所有实物商品，请进入“周边商城-个人中心”填写地址领取</p>
+                <div class="absolute lottery sy-state lottery-wrap">
+                    <img src="ossweb-img/lotter.png" alt="抽奖背景" />
+                </div>
+                <div class="absolute lottery-wrap" id="lotterycontent"></div>
+                <div class="absolute lottery-msg-wrap">
+                    <p class="text-center lottery-title dy-state">端游奖池&nbsp;&nbsp;&nbsp;&nbsp;剩余抽奖次数：<span>0</span></p>
+                    <p class="text-center lottery-title sy-state">手游奖池&nbsp;&nbsp;&nbsp;&nbsp;剩余抽奖次数：<span>0</span></p>
+                    <div class="flex lottery-btn-wrap2">
+                        <div class="lottery-btn-left">
+                            <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-start" title="开始抽奖" onclick="PTTSendClick('btn','startLottery','开始抽奖');">
+                                <span class="btn-text">开始抽奖</span>
+                            </a>
+                            <p class="text-center lottery-tips-text1">消费每满150元可获得1次抽奖机会,<br/>每购买1把毁灭枪模可额外<br/>获得1次抽奖机会</p>
+                        </div>
+                        <div class="lottery-btn-right">
+                            <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="中奖记录" onclick="PTTSendClick('btn','lotteryRecord','中奖记录');">
+                                <span class="btn-text">中奖记录</span>
+                            </a>
+                            <a href="javascript: ;" class="bg-icon text-center btn btn-lottery-record" title="个人中心" onclick="PTTSendClick('btn','personCenter','个人中心');">
+                                <span class="btn-text">个人中心</span>
+                            </a>
+                            <p class="lottery-tips-text2">提示：所有实物商品，请进入“周边商城-个人中心”填写地址领取</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- 擎苍枪模 收藏有礼 -->
@@ -319,41 +361,49 @@
             </ol>
         </div>
     </section>
-
-    <!--<a href="javascript:;" class="bm-btn icon hh" ontouchend="PTTSendClick('btn','bm-btn','???????');">???????</a>-->
-
-    <!--????-->
-    <div class="pop" id="popNote">
-        <a href="javascript:popHide();" class="btn-close hh">???</a>
-        <div class="pop-con">
-            <h3 class="pop-tit">????</h3>
-            <ul class="note-list">
-                <!--<li><span>2018.4.11 </span> <span>?????????30?????????30?????????30</span> </li>-->
-            </ul>
+    <!-- 弹窗 Start-->
+    <!-- 登录弹窗 -->
+    <div class="pop scale-pop dialog" id="popLogin">
+        <div><img src="ossweb-img/pop_top.png" alt="弹窗顶部"></div>
+        <div class="dia-con pop-con">
+            <p class="text-center select-tips1-text">请问您是端游玩家还是手游玩家？</p>
+            <p class="text-center select-tips2-text">选择后无法切换，并展示对应的礼包</p>
+            <img src="ossweb-img/pop-logo.png" class="select-logo" alt="logo">
+            <div class="flex select-btn-container">
+                <div class="select-left">
+                    <a href="javascript: ;" class="bg-icon text-center btn btn-select-dy" title="我是端游" onclick="PTTSendClick('btn','selectPc','我是端游');">
+                        <span class="btn-text">我是端游</span>
+                    </a>
+                    <p class="text-center select-tips1-text">页面将展示<span class="red-text">cf端游</span>礼包</p>
+                </div>
+                <div class="select-right">
+                    <a href="javascript: ;" class="bg-icon text-center btn btn-select-sy" title="我是手游" onclick="PTTSendClick('btn','selectMobile','我是手游');">
+                        <span class="btn-text">我是手游</span>
+                    </a>
+                    <p class="text-center select-tips1-text">页面将展示<span class="red-text">cf手游</span>礼包</p>
+                </div>
+            </div>
         </div>
+        <div><img src="ossweb-img/pop_bottom.png" alt="弹窗底部"></div>
+        <a class="bg absolute pop-close" href="javascript:showDialog.hide()" title="关闭">×</a>
     </div>
-    <!-- ?????????OL????????iPhone Xs max-->
-    <div class="pop pop9" id="pop9">
-        <a href="javascript:void(0);" class="close-btn icon hh" title="???"></a>
-        <div class="pop-con">
-            <h2 class="pop-tit2 pop-tit">?????????OL????????iPhone Xs max</h2>
-            <p class="p-txt">????齱???????????</p>
-            <a href="javascript:;" class="fri-btn icon p-com">??????????</a>
+    <!-- 签到弹窗 -->
+    <div class="pop scale-pop dialog" id="pop-qdao">
+        <div><img src="ossweb-img/pop_top.png" alt="弹窗顶部"></div>
+        <div class="dia-con pop-con">
+            <p class="text-center select-tips2-text">签到成功！<span class="red-text">抽奖机会+1</span></p>
         </div>
+        <div><img src="ossweb-img/pop_bottom.png" alt="弹窗底部"></div>
+        <a class="bg absolute pop-close" href="javascript:showDialog.hide()" title="关闭">×</a>
     </div>
-    <!-- ?????????OL????????iPhone Xs max-->
-    <div class="pop pop10" id="pop10" style="display: none;">
-        <a href="javascript:void(0);" class="close-btn icon hh" title="???"></a>
-        <div class="pop-con">
-            <h2 class="pop-tit2 pop-tit">iPhone Xs max</h2>
-            <p class="p-txt"> </br></p>
-            <a href="javascript:;" class="qcj-btn icon p-com">??齱</a>
+    <!-- 视频弹窗 -->
+    <div class="dialog pop-video" id="popVideo" style="display:none">
+        <div class="dia-con">
+            <div id="videoWrap"></div>
         </div>
+        <a class="bg video-close" href="javascript: ;" onclick="hidePopVideo();" title="关闭视频播放">×</a>
     </div>
-</div>
-<!--背景音乐-->
-<div id="musicBtn" class="music">
-    <audio id="bgm" src="http://i0.cy.com/kzgj/main/2019/0508/sound/bgm.mp3" preload="auto" autoplay loop=""></audio>
+    <!-- 弹窗 End-->
 </div>
 <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
@@ -363,13 +413,15 @@
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
 <script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
 <script src="js/a20190909test.js"></script>
 <script>
+
     milo.ready(function () {
         need("biz.login", function (LoginManager) {
             LoginManager.init({
                 appConfig: {
-                    "avoidConflict":"false",//默认值为空，判断是否需要校验微信登录态串号，设为true，为必须校验，设为false，为不校验，默认值""表示在微信环境下校验，其它app环境下不校验
+                    "avoidConflict" : "false",//默认值为空，判断是否需要校验微信登录态串号，设为true，为必须校验，设为false，为不校验，默认值""表示在微信环境下校验，其它app环境下不校验
                     "QQBrowserAppId": "xxx",  //在QQ浏览器端申请的APPID，联系内部同学
                     "WxAppId"       : "xxxxxxxxxxx",  //需要在微信申请openLink权限，联系内部同学
                     "AppName"       : "业务的中文名称",  //业务的中文名称
@@ -409,32 +461,47 @@
         });
     });
 
-    //????
-    var popIsShow = false;
-    var popDom = null;
-    function popShow(id) {
-        popHide();
-        var p = $('#'+id);
-        popDom = p;
-        if (p) {
-            p.show().css({
-                position: 'fixed',
-                top: '50%',
-                left: '50%',
-                marginTop: -popDom.height() / 2 + 'px',
-                marginLeft: -popDom.width() / 2 + 'px',
-                zIndex: 998
+    //视频播放
+    var player;
+    function playVideo(vid) {
+        if( player )return player.play();
+        player = new Txplayer({
+            containerId: 'videoWrap',
+            vid: vid,
+            width: '100%',
+            height: window.screen.availHeight / 3,
+            autoplay: true,
+            isHtml5UseAirPlay: true,
+            isHtml5UseFakeFullScreen: true
+        });
+    }
+    function showPopVideo(vid) {
+        TGDialogS('popVideo');
+        playVideo(vid);
+    }
+    function hidePopVideo() {
+        closeDialog();
+        player.pause();
+        player.seekTo(0);
+    }
+
+    function TGDialogS(e){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.show({
+                id: e,
+                bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
             });
-            p.attr('for', 'pop');
-            popIsShow = true;
-            if ($('[for="' + id + '"]').length >= 1) return;
-            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:997;background:rgba(0,0,0,0.8);"></div>');
-        }
+        });
     }
-    function popHide() {
-        $('[for="pop"]').hide().attr('style', '');
-        $('[name="overlay"]').remove();
+    function closeDialog(){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.hide();
+        });
     }
+
     window.addEventListener("resize", function () {
         if (!popIsShow)
             return;
@@ -446,31 +513,54 @@
             });
         }, 400)
     });
+    //开始抽奖lottery->js
+    function callJsToStart() {
+        lottery.disable();
+        calllotteryToRoll(4);
+    }
+    //开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+    function calllotteryToRoll(id) {
+        if (lottery) lottery.stopRoll(id);
+    }
+    //动画完成通知js lottery->js
+    function callJsToComplete() {
+        alert('恭喜你获得大奖哟！！');
+    }
 
-    //????
-    function popShow(e){
-        showDialog.show({
-            id:e, //?????????id????????????????div????????????
-            bgcolor:"#000",//??????????????????????"#FF6600"???????????"#fff"
-            opacity:80 //?????????????????????????10-100???????
-        });
-    }
-    function popHide(){
-        showDialog.hide();
-    }
+    //初始化抽奖的 可以不知道内部
+    var lottery = new Lottery({
+        'lighturl': './ossweb-img/lottery_active.png',//外部光圈png 不填写就用默认的效果
+        'starturl': '//ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+        'width': 7.15,//lottery 宽度
+        'height': 8.36,//lottery 高度
+        'total': 16,//抽奖产品的总数
+        'sbtnx': 0,// 开始抽奖按钮的位置x坐标
+        'sbtny': 6.93,// 开始抽奖按钮的位置y坐标
+        'sbtnw': 4.48,// 开始抽奖按钮的宽度
+        'sbtnh': 1.42,// 开始抽奖按钮的高度
+        'boxw': 1.71,// 奖品光效的宽度
+        'boxh': 1.43,//奖品光效的高度
+        'position': "0.01_0.01,1.83_0.01,3.63_0.01,5.44_0.01,0.01_1.54,1.83_1.54,3.63_1.54,5.44_1.54,0.01_3.07,1.83_3.07,3.63_3.07,5.44_3.07,0.01_4.60,1.83_4.6,3.63_4.6,5.44_4.6",
+        //奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+        'contentId': 'lotterycontent',//嵌入lottery 的div层的 id
+        'onClickRollEvent': callJsToStart,//对应上面接口
+        'onCompleteRollEvent': callJsToComplete, //对应上面接口
+        'unit': "rem",
+        'isResponsive':0
+    });
 
     //页面分享
     TGMobileShare({
-        shareTitle:'demo3分享标题', //不设置或设置为空时，页面有title，则调取title
-        shareDesc:'demo3分享详情', //不设置或设置为空时，页面有Description，则调取Description
-        shareImgUrl:'https://game.gtimg.cn/images/tgideas/act/a20151127tgmsdemo/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareTitle:'一发入魂', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'穿越火线,参与一发入魂，签到抽永久', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'./ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
         shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
-        actName:'a20151127tgmsdemo' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        actName:'a20190909test' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
     });
 
     //此段代码不能放到外链JS中，
     var setSite={ //设置网站属性
-        siteType:"a20160711xxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        siteType:"a20190909test", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
         pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
         pageName:"首页", //必填项:页面中文名
         project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;

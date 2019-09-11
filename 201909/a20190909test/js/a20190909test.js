@@ -16,19 +16,29 @@ $(function(){
             }
         }
     });
+    //点击名称切换巴雷特手办
+    $(".swiper-1 .swiper-description span").on("click", function(){
+        var index = parseInt($(this).index()+1);
+        barrett.slideTo(index);
+    });
+
+    //灵狐者手办
+    var lh = new Swiper('.lh-left .swiper-container', {
+        effect: 'fade',
+        autoplay: true,//可选选项，自动滑动
+        loop: true
+    });
     //灵狐者手办
     var lh = new Swiper('.lh-right .swiper-container', {
         autoplay: true,//可选选项，自动滑动
         loop: true,
         pagination: {
             el: '.lh-right .swiper-pagination',
-        },
-        on: {
-            slideChange: function(){
-                var index = this.realIndex;
-                $(".lh-left")[0].className = "lh-left lh-left-"+(index+1);
-            }
         }
     });
 
+    //切换端游&手游礼包
+    $(".mobile-game-icon").on("click", function(){
+        $(".dy-state,.sy-state").toggle();
+    });
 });
