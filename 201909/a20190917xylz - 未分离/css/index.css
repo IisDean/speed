@@ -77,7 +77,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
 .scale-pop {-webkit-animation: scale .4s ease-out;animation: scale .4s ease-out;}
 @keyframes scale { from {transform: scale(.4);} }
 @-webkit-keyframes scale { from {-webkit-transform: scale(.4);} }
-.video-close, .pop-close {display: block;width: .5rem;height: .5rem;background-image: url("//game.gtimg.cn/images/xylz/cp/a20190918xylz/close.png");}
+.video-close, .pop-close {display: block;width: .5rem;height: .5rem;background-image: url("../ossweb-img/close.png");}
 .video-close {position: fixed;top: .1rem;right: .1rem;}
 .pop-close {top: -.7rem;right: 0;}
 body,html{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none; -webkit-user-select:none;background: #a5c4ba;}
