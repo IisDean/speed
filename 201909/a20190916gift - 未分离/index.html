@@ -66,6 +66,7 @@
         #afooter a{ color: #6a6a6a;}
 
         #stage {
+            padding-top: 86px;
             min-width: 1200px;
             overflow: hidden;
         }
@@ -83,7 +84,7 @@
             display: block;
             background-image: url("ossweb-img/icon.png");
             background-repeat: no-repeat;
-            background-size: 434px 545px;
+            background-size: 414px 466px;
         }
         .float-left {
             float: left;
@@ -147,6 +148,7 @@
             display: none;
             top: 51px;
             left: 174px;
+            z-index: 999;
             width: 850px;
         }
         .btn-zhiyin:hover + .tips-wrap {
@@ -154,7 +156,7 @@
         }
         .bg1 .title-wrap {
             margin: 59px auto 0;
-            width: 434px;
+            width: 415px;
             height: 65px;
             background-position: 0 0;
         }
@@ -176,6 +178,7 @@
             color: #c83d41;
         }
         .inset-wrap .prize-icon {
+            position: relative;
             margin-right: 180px;
             width: 100px;
         }
@@ -188,7 +191,7 @@
         }
         .bg2 .title-wrap {
             margin: 138px auto 0;
-            width: 434px;
+            width: 335px;
             height: 65px;
             background-position: 0 -70px;
         }
@@ -341,7 +344,7 @@
         /* 板块4 假期专属任务 */
         .bg4 {
             width: 100%;
-            height: 854px;
+            height: 1172px;
             background-image: url("ossweb-img/bg4.jpg");
             overflow: hidden;
         }
@@ -356,7 +359,7 @@
             margin-left: -5px;
             padding: 61px 60px 0;
             width: 1210px;
-            height: 741px;
+            height: 1054px;
             box-sizing: border-box;
             background-image: url("ossweb-img/task_bg.png");
         }
@@ -455,7 +458,7 @@
         }
     </style>
 </head>
-<body data-nav="1">
+<body data-nav="2">
 <h1 class="hide">玩转黄金周 好礼享不停</h1>
 <!--topbar-->
 <div class="topbar">
@@ -503,6 +506,7 @@
                 </div>
                 <div class="float-right full-img prize-icon">
                     <img src="./ossweb-img/prize_1.jpg" alt="圆环图腾纹身(右臂)" width="100" height="100">
+                    <i class="absolute icon-bg prize-num">7天</i>
                 </div>
             </div>
         </div>
@@ -566,7 +570,7 @@
                 <li class="bg float-left activity-item c">
                     <div class="float-left activity-left">
                         <h3 class="activity-title-text">王朝升星大作战</h3>
-                        <p class="activity-description-text">10月1日-1 0月7日，每日<br/><span>在排位赛-王朝模式中获得首胜</span>，<br/>即可<span>+1星</span></p>
+                        <p class="activity-description-text">10月1日-10月7日，每日<br/><span>在排位赛-王朝模式中获得首胜</span>，<br/>即可<span>+1星</span></p>
                     </div>
                     <div class="float-right full-img activity-img1">
                         <img src="./ossweb-img/add1.jpg" alt="首胜+1星" width="135" height="43" />
@@ -583,7 +587,7 @@
                     </div>
                 </li>
             </ul>
-            <p class="text-center activity-tips-text">* 排位赛活动针对所有段位玩家，但不包含晋级赛</p>
+            <p class="text-center activity-tips-text">* 排位赛活动不包含晋级赛</p>
         </div>
     </div>
     <!-- 假期专属任务 -->
@@ -593,6 +597,24 @@
                 <h2 class="hide">假期专属任务</h2>
             </div>
             <ul class="bg task-list">
+                <li class="task-item c">
+                    <div class="float-left task-name-text">
+                        10月1日-10月7日每日，<span>在快速或排位赛制-任意模式(除经理模式)获得首胜</span>，且跃等级达到10级，<span class="task-gift-text">普通级假期福袋*1</span>
+                    </div>
+                    <div class="float-right full-img prize-icon task-icon">
+                        <img src="./ossweb-img/task_4.jpg" alt="黄金游戏包" width="100" height="100" />
+                        <i class="absolute icon-bg prize-num">x1</i>
+                    </div>
+                </li>
+                <li class="task-item c">
+                    <div class="float-left task-name-text">
+                        10月1日-10月7日每日，<span>在快速或排位赛制-任意模式(除经理模式)获得首胜</span>，且跃等级达到25级，<span class="task-gift-text">精英级假期福袋*1</span>
+                    </div>
+                    <div class="float-right full-img prize-icon task-icon">
+                        <img src="./ossweb-img/task_5.jpg" alt="黄金游戏包" width="100" height="100" />
+                        <i class="absolute icon-bg prize-num">x1</i>
+                    </div>
+                </li>
                 <li class="task-item c">
                     <div class="float-left task-name-text">
                         10月2日-10月4日,任意赛制下王朝模式中，<span>累计获得75分 + 12篮板 + 18助攻</span>，即可获得：<span class="task-gift-text">黄金游戏包*1</span>
