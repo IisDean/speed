@@ -1,0 +1,82 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}
+/*页面样式*/
+.clearfix:before,.c:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+.hide {display: none;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';text-align:justify;min-width:1200px;}
+a {text-decoration:none;overflow:visible;}
+a:hover {text-decoration:none;}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.absolute {
+    position: absolute;
+}
+.text-center {
+    text-align: center;
+}
+.text-hidden {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.t {
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.trans {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.icons {
+    display: block;
+    background-image: url("../images/icons.png");
+    background-size: 999px 416px;
+    background-repeat: no-repeat;
+}
+.bold {
+    font-weight: bold;
+}
+.bg {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.full-img img {
+    display: inline-block;
+    width: 100%;
+}
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.con {
+    width: 100%;
+    background-position: top center;
+    background-size: 1920px auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
