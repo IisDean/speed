@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="2019全新追风系列套装上线">
+    <meta name="Keywords" content="nba2k,NBA2K Online 2,nba2kol2,2019全新追风系列套装上线,追风-魔力嘻哈,追风-紫金之影">
+    <meta itemprop="name" content="追风少年" />
+    <meta itemprop="description" content="2019全新追风系列套装上线" />
+    <meta itemprop="image" content="//game.gtimg.cn/images/nba2kx/cp/a20191008newtz/share.jpg" />
+    <title>追风少年 新套装上线-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2019/10/08 -->
+    <style>
+        body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0; padding: 0;}
+        body,button,input,select,textarea{font:14px/1.5 \5FAE\8F6F\96C5\9ED1,sans-serif;}
+        h1,h2,h3,h4,h5,h6{font-size:100%;}
+        em,b,i{font-style:normal;}
+        a{text-decoration:none;outline:none;}
+        img{border:0; display: block;}
+        button,input,select,textarea{font-size:100%;outline:none}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th,ul,ol,li{padding:0;list-style:none;}
+        .c:after{content:"\0020";height:0;display:block;clear:both;}
+        .c{zoom:1;}
+        .hide{font-size:0;height:0;line-height:0;visibility:hidden;display:none;}
+        .hh{ overflow:hidden; text-indent:-999em; display:block;}
+        .pr{position:relative;}
+        .pa{position: absolute;}
+        /*topbar*/
+        .topbar{ background:#1d1d1e; width: 100%; height: 63px; margin: 0 auto; min-width: 1000px; position: relative; z-index: 100;}
+        .top-l .logo{width: 155px;  height:44px;  position: absolute;  left: 50px;  top: 9px;  background: url(./ossweb-img/logo.png) center center no-repeat;  z-index: 2;}
+        .top-l .logo a{ width: 100%; height: 100%; display: block;}
+        .login{padding: 17px 0 0 450px; }
+        .login a {  background: #111114;  border-radius: 20px;  display: inline-block;  padding: 0 15px;  height: 30px;  line-height: 30px;  color: #adadad;}
+        .login a:hover{color:#fff;}
+        .top-r{  position: absolute;  top: 16px; right: 38px;}
+        .gw-btn,.down-btn{ width: 105px; height: 30px; line-height: 30px;margin-right: 18px; text-align: center; color: #d7c66c; border-radius: 15px; border: 1px #d7c66c solid; float: left; font-size: 14px; display: block;}
+        .gw-btn:hover,.down-btn:hover{ color: #c7af31;}
+        .top-ico-box{ width: 188px;float: left;}
+        .top-ico{ background: url("./ossweb-img/top-ico.png") no-repeat; width: 37px; height: 37px; display: block; float: left; margin-right: 9px;position: relative;}
+        .top-ico-box .top-ico img{width: 200px;height:200px;position: absolute;z-index: 100;left:50%;top:50px;margin-left:-100px;display: none;}
+        .top-ico-box .ico1{ background-position: 0 0;}
+        .top-ico-box .ico2{ background-position: -46px 0;}
+        .top-ico-box .ico3{ background-position: -92px 0;}
+        .top-ico-box .ico4{ background-position: -137px 0;}
+        .top-ico-box .ico1:hover{ background-position: 0 -47px;}
+        .top-ico-box .ico2:hover{ background-position: -46px -47px;}
+        .top-ico-box .ico3:hover{ background-position: -92px -47px;}
+        .top-ico-box .ico4:hover{ background-position: -137px -47px;}
+        .top-ico-box a:hover{ transition: .2s background-position ease-in-out;  -webkit-transition: .2s background-position ease-in-out;}
+        /*.top-l .hdlogo{ background: url("//game.gtimg.cn/images/nba2kx/cp/a20190916gift/logo2.png") no-repeat;  width: 118px;  height: 44px;  position: absolute;  left: 240px;  top: 9px;  }*/
+        .top-l .hdlogo { width: 187px;  height: 42px;   position: absolute;  left: 230px; top: 9px; display: block;  background: url("./ossweb-img/logo_wegame.png") no-repeat;  }
+        /*public*/
+        .ost_box{min-width: 1000px;}
+        body{padding-top:42px;background:#0e0e0e;color:#fff;min-width:1000px; font-size: 16px; }
+        .mid{ width:1000px; margin:0 auto; font-family:'\5FAE\8F6F\96C5\9ED1'; text-align: center;}
+        .head-a a:hover,.box .lqjl-btn:hover{filter: brightness(1.1);-webkit-filter: brightness(1.1);}
+        /*** footer  **/
+        #afooter{min-width:1000px; text-align:center; font-size:12px; line-height:20px;padding: 20px 0; color: #6a6a6a;background:#0e0e0e;}
+        #afooter .copyright span a,#footer .copyright span a:hover{ margin:0 5px;}
+        #afooter .notice{ display:none;}
+        #afooter a{ color: #6a6a6a;}
+
+        #stage {
+            min-width: 1200px;
+            overflow: hidden;
+        }
+        .absolute {
+            position: absolute;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .bg {
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+        .icons {
+            display: block;
+            background-image: url("./ossweb-img/icons.png");
+            background-repeat: no-repeat;
+            background-size: 795px 462px;
+        }
+        .t {
+            text-indent: -9999em;
+            overflow: hidden;
+        }
+        .float-left {
+            float: left;
+        }
+        .float-right {
+            float: right;
+        }
+        .ani {
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+        .full-img img {
+            display: block;
+            width: 100%;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .text-overflow {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .wrap {
+            position: relative;
+            margin: 0 auto;
+            width: 1200px;
+            height: auto;
+        }
+        .btn-hover:hover {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+        /* 板块1 一键领取假期赠礼 */
+        .bg1 {
+            width: 100%;
+            height: 530px;
+            background-image: url("./ossweb-img/bg1.jpg");
+        }
+        .title-wrap {
+            position: relative;
+            top: 135px;
+            left: 262px;
+            width: 675px;
+        }
+        .bg1-sub {
+            width: 100%;
+            height: 537px;
+            background-image: url("./ossweb-img/bg1_sub.jpg");
+        }
+        .block-wrap1 {
+            position: relative;
+            left: 59px;
+            top: 170px;
+            padding: 127px 120px 0 75px;
+            width: 1097px;
+            height: 359px;
+            background-image: url("./ossweb-img/block_1.png");
+            box-sizing: border-box;
+        }
+        .block-wrap1 .block-img {
+            margin-right: 28px;
+            width: 174px;
+        }
+        .description-text {
+            line-height: 32px;
+            font-size: 20px;
+            color: #e7e8ff;
+        }
+        .blue-text {
+            color: #49d9ff;
+        }
+        .violet-text {
+            color: #dfb2ff;
+        }
+        .bg2 {
+            width: 100%;
+            height: 1734px;
+            background-image: url("./ossweb-img/bg2.jpg");
+        }
+        .title-icon1 {
+            width: 469px;
+            height: 186px;
+            background-position: 0 0;
+        }
+        .tz-container1 {
+            margin: 0 auto;
+            width: 1036px;
+        }
+        .person-icon1 {
+            margin: 0 -16px;
+        }
+        .tz-wrap {
+            margin-top: 90px;
+        }
+        .prize-wrap {
+            margin-top: 6px;
+            margin-left: 25px;
+        }
+        .prize-icon1 {
+            margin-top: 16px;
+            width: 321px;
+            height: 61px;
+            background-position: -474px 0;
+        }
+        .prize-tips-text {
+            margin-top: 14px;
+            line-height: 1;
+            font-size: 16px;
+            color: #969cff;
+        }
+        .play-btn {
+            display: block;
+            width: 119px;
+            height: 107px;
+            cursor: pointer;
+        }
+        .play-btn1 {
+            margin-left: 15px;
+            background-image: url("./ossweb-img/play_btn_bg.png");
+        }
+        .play-icon {
+            margin-top: 35px;
+            margin-left: 45px;
+            width: 32px;
+            height: 41px;
+            background-position: -402px -384px;
+        }
+        .fz-title-icon {
+            margin-top: 70px;
+            width: 151px;
+            height: 37px;
+        }
+        .fz-title-icon1 {
+            background-position: -187px -384px;
+        }
+        .fz-show-list {
+            margin-top: 18px;
+            margin-left: 25px;
+            width: 394px;
+        }
+        .fz-show-item {
+            position: relative;
+            margin-top: 13px;
+            width: 191px;
+            cursor: grab;
+        }
+        .fz-show-item1,
+        .fz-show-item3 {
+            margin-right: 12px;
+        }
+        .fz-show-item:hover .zoom-icon {
+            opacity: 1;
+        }
+        .zoom-icon {
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-image: url("./ossweb-img/zoomIn.png");
+            background-position: center center;
+            opacity: 0;
+        }
+        .zoom-container {
+            z-index: 9999;
+            width: 580px;
+            height: 435px;
+            pointer-events: none;
+        }
+        .zoom-container1 {
+            top: 528px;
+            left: 527px;
+        }
+        .block-wrap2 {
+            position: relative;
+            z-index: 1;
+            margin-top: -86px;
+            margin-left: 68px;
+            padding: 104px 80px 0;
+            box-sizing: border-box;
+            width: 1091px;
+            height: 763px;
+            background-image: url("./ossweb-img/block_2.png");
+        }
+        .block-wrap2 .description-text,
+        .block-wrap3 .description-text {
+            margin-top: 10px;
+        }
+        .fujian-list {
+            margin-top: 59px;
+            width: 100%;
+        }
+        .fujian-item {
+            margin-bottom: 65px;
+            width: 50%;
+        }
+        .fujian-img {
+            width: 179px;
+            height: 179px;
+            overflow: hidden;
+        }
+        .fujian-wrap {
+            margin-left: 16px;
+        }
+        .fujian-title {
+            margin-top: 5px;
+            width: 233px;
+            height: 27px;
+        }
+        .fujian-title1 {
+            background-position: -474px -216px;
+        }
+        .fujian-title2 {
+            background-position: -474px -248px;
+        }
+        .fujian-title3 {
+            background-position: -474px -280px;
+        }
+        .fujian-title4 {
+            background-position: -474px -312px;
+        }
+        .prize-28b {
+            width: 234px;
+            height: 45px;
+            background-position: -474px -66px;
+        }
+        .prize-18b {
+            width: 227px;
+            height: 45px;
+            background-position: -474px -117px;
+        }
+        .prize-8b {
+            width: 195px;
+            height: 45px;
+            background-position: -474px -167px;
+        }
+        .fujian-prize {
+            margin-top: 16px;
+        }
+        .get-detail {
+            margin-top: 23px;
+            width: 182px;
+            height: 58px;
+            background-position: 0 -384px;
+        }
+        .bg3 {
+            width: 100%;
+            height: 1823px;
+            background-image: url("./ossweb-img/bg3.jpg");
+        }
+        .title-icon2 {
+            margin-left: 36px;
+            width: 444px;
+            height: 185px;
+            background-position: 0 -191px;
+        }
+        .tz-container2 {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .tz-wrap2 {
+            margin-top: 56px;
+        }
+        .play-btn2 {
+            margin-right: 15px;
+            background-image: url("./ossweb-img/play_btn_bg2.png");
+        }
+        .fz-title-icon2 {
+            margin-left: 329px;
+            background-position: -187px -426px;
+        }
+        .zoom-container2 {
+            top: 492px;
+            right: 520px;
+        }
+        .fz-show-list2 {
+            margin-top: 18px;
+            margin-left: 86px;
+            width: 394px;
+        }
+        .block-wrap3 {
+            position: relative;
+            z-index: 1;
+            top: -132px;
+            left: 68px;
+            padding: 104px 80px 0;
+            box-sizing: border-box;
+            width: 1091px;
+            height: 763px;
+            background-image: url("./ossweb-img/block_3.png");
+        }
+        .fujian-title5 {
+            background-position: -474px -345px;
+        }
+        .fujian-title6 {
+            background-position: -474px -376px;
+        }
+        .fujian-title7 {
+            background-position: -474px -408px;
+        }
+        .zoom-container3 {
+            top: 492px;
+            right: 520px;
+        }
+        .play-btn {
+            -webkit-animation: scaleBtn 1s infinite forwards;
+            -moz-animation: scaleBtn 1s infinite forwards;
+            -ms-animation: scaleBtn 1s infinite forwards;
+            -o-animation: scaleBtn 1s infinite forwards;
+            animation: scaleBtn 1s infinite forwards;
+        }
+        @-webkit-keyframes scaleBtn {
+            0% {-webkit-transform: scale(0.8);}
+            50% {-webkit-transform: scale(1);}
+            100% {-webkit-transform: scale(0.8);}
+        }
+        @-moz-keyframes scaleBtn {
+            0% {-moz-transform: scale(0.8);}
+            50% {-moz-transform: scale(1);}
+            100% {-moz-transform: scale(0.8);}
+        }
+        @-ms-keyframes scaleBtn {
+            0% {-ms-transform: scale(0.8);}
+            50% {-ms-transform: scale(1);}
+            100% {-ms-transform: scale(0.8);}
+        }
+        @-o-keyframes scaleBtn {
+            0% {-o-transform: scale(0.8);}
+            50% {-o-transform: scale(1);}
+            100% {-o-transform: scale(0.8);}
+        }
+        @keyframes scaleBtn {
+            0% {transform: scale(0.8);}
+            50% {transform: scale(1);}
+            100% {transform: scale(0.8);}
+        }
+        .pop {
+            width: 700px;
+            height: 525px;
+        }
+        .close-btn {
+            width: 51px;
+            height: 51px;
+            background-position: -348px -424px;
+            top: 0;
+            right: -51px;
+        }
+    </style>
+</head>
+<body data-nav="2">
+<h1 class="hide">追风少年 2019 全新追风系列套装上线</h1>
+<!--topbar-->
+<div class="topbar">
+    <div class="top-l">
+        <h2 class="logo">
+            <a href="//nba2k2.qq.com/" target="_blank" class="hd" onclick="PTTSendClick('btn','hd','NBA2K online2')" title="NBA2K online2"></a>
+        </h2>
+        <div class="login">
+            <!--登录前状态 Start-->
+            <p id="unlogin"><a href="javascript:;" id="btn_qqlogin">登录</a></p>
+            <!--登录前状态 End-->
+            <!--登录后状态 Start-->
+            <p id="logined" style="display: none">欢迎，<span id='login_qq_span'></span>，<a href="javascript:;" id="btn_logout">注销</a></p>
+            <!--登录后状态 End-->
+        </div>
+        <a href="//www.wegame.com.cn/" target="_blank" class="hdlogo" onclick="PTTSendClick('btn','hdlogo','NBA2K online')" title="WeGame"></a>
+    </div>
+    <div class="top-r">
+        <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')" class="gw-btn" target="_blank" title="官网首页">官网首页</a>
+        <a href="//nba2k2.qq.com/events.html" onclick="PTTSendClick('btn','hd-btn','活动中心')" class="down-btn" target="_blank" title="活动中心">活动中心</a>
+        <div class="top-ico-box">
+            <a href="//nba2k2.gamebbs.qq.com/forum.php" class="ico1 top-ico" target="_blank" title="官方论坛" onclick="PTTSendClick('btn','ico1','官方论坛')" ></a>
+            <a href="javascript:;" class="ico2 top-ico" title="官方微信" onclick="PTTSendClick('btn','ico2','官方微信')" ><img src="//game.gtimg.cn/images/nba2kx/cp/a20190916gift/weixin.jpg" alt="官方微信" /></a>
+            <a href="javascript:;" class="ico3 top-ico" title="兴趣部落" onclick="PTTSendClick('btn','ico3','兴趣部落')" ><img src="//game.gtimg.cn/images/nba2kx/cp/a20190916gift/buluo.jpg" alt="兴趣部落" /></a>
+            <a href="//weibo.com/nba2kol2" class="ico4 top-ico" target="_blank" title="官方微博" onclick="PTTSendClick('btn','ico4','官方微博')"></a>
+        </div>
+    </div>
+</div>
+<!-- //topbar -->
+<div id="stage">
+    <!-- 追风少年 -->
+    <div class="bg bg1">
+        <div class="wrap">
+            <div class="full-img title-wrap">
+                <img src="./ossweb-img/title.png" width="675" height="532" alt="追风少年">
+            </div>
+        </div>
+    </div>
+    <div class="bg bg1-sub">
+        <div class="wrap">
+            <div class="bg block-wrap block-wrap1 c">
+                <div class="float-left full-img block-img">
+                    <img src="./ossweb-img/goods_1.jpg" width="174" height="125" alt="品牌追风">
+                </div>
+                <div class="block-msg">
+                    <p class="description-text">NBA2KOL2推出<span class="blue-text">首个套装品牌「追风」</span>，主打嘻哈潮流风格，彰显你的球场个性！</p>
+                    <p class="description-text" style="text-indent: -10px;"><span class="blue-text">「追风」品牌</span>首次发布了两套全新套装，后续还将不定期推出新套装，敬请期待！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 追风 魔力嘻哈 -->
+    <div class="bg bg2">
+        <div class="wrap">
+            <div class="tz-container1 c">
+                <div class="tz-wrap float-left">
+                    <h2 class="icons title-icon1 t">追风-魔力嘻哈</h2>
+                    <div class="prize-wrap c">
+                        <div class="float-left">
+                            <i class="icons prize-icon1"></i>
+                            <p class="prize-tips-text">更新后-11月10日23:59游戏内商城出售</p>
+                        </div>
+                        <a href="javascript: TGDialogS('pop1');" class="bg play-btn play-btn1 float-right" onclick="PTTSendClick('btn','play1','视频播放-魔力嘻哈')"><i class="icons play-icon"></i></a>
+                    </div>
+                    <!-- 服装细节 -->
+                    <h3 class="icons fz-title-icon fz-title-icon1"></h3>
+                    <ul class="fz-show-list c">
+                        <li class="full-img fz-show-item fz-show-item1 float-left">
+                            <img src="./ossweb-img/zs_1.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item float-left">
+                            <img src="./ossweb-img/zs_2.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item fz-show-item3 float-left">
+                            <img src="./ossweb-img/zs_3.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item float-left">
+                            <img src="./ossweb-img/zs_4.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                    </ul>
+                    <ul class="absolute zoom-container zoom-container1" style="display: none;">
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_1_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_2_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_3_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_4_zoom.jpg" alt="放大">
+                        </li>
+                    </ul>
+                </div>
+                <div class="full-img person-icon1 float-left">
+                    <img src="./ossweb-img/person1.png" alt="人">
+                </div>
+            </div>
+            <div class="bg block-wrap block-wrap2">
+                <p class="description-text">
+                    自建球员还可穿戴专属套装附件，注意NBA球员不可穿着以下附件。<br/>
+                    更新后-<span class="blue-text">11月x日23:59</span>游戏内商城出售
+                </p>
+                <div style="position: relative">
+                    <ul class="fujian-list c">
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_2.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title1 t">魔力嘻哈套装墨镜</h3>
+                                <i class="icons prize-28b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_3.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title2 t">魔力嘻哈套装护臂</h3>
+                                <i class="icons prize-8b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_4.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title3 t">魔力嘻哈套装手套</h3>
+                                <i class="icons prize-18b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_5.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title4 t">魔力嘻哈套装腕带</h3>
+                                <i class="icons prize-8b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="absolute zoom-container" style="display: none;">
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_2_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_3_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_4_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_5_zoom.jpg" alt="放大">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  追风 紫金之影-->
+    <div class="bg bg3">
+        <div class="wrap">
+            <div class="tz-container2 c">
+                <div class="tz-wrap2 float-right">
+                    <h2 class="icons title-icon2 t">追风-魔力嘻哈</h2>
+                    <div class="prize-wrap c">
+                        <div class="float-right">
+                            <i class="icons prize-icon1"></i>
+                            <p class="prize-tips-text">更新后-11月10日23:59游戏内商城出售</p>
+                        </div>
+                        <a href="javascript: TGDialogS('pop2');" class="bg play-btn play-btn2 float-left" onclick="PTTSendClick('btn','play2','视频播放-紫金之影')"><i class="icons play-icon"></i></a>
+                    </div>
+                    <!-- 服装细节 -->
+                    <h3 class="icons fz-title-icon fz-title-icon2"></h3>
+                    <ul class="fz-show-list fz-show-list2 c">
+                        <li class="full-img fz-show-item fz-show-item1 float-left">
+                            <img src="./ossweb-img/zs_5.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item float-left">
+                            <img src="./ossweb-img/zs_6.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item fz-show-item3 float-left">
+                            <img src="./ossweb-img/zs_7.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                        <li class="full-img fz-show-item float-left">
+                            <img src="./ossweb-img/zs_8.png" width="191" height="191" alt="服装展示">
+                            <div class="absolute bg zoom-icon"></div>
+                        </li>
+                    </ul>
+                    <ul class="absolute zoom-container zoom-container2" style="display: none;">
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_5_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_6_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_7_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/zs_8_zoom.jpg" alt="放大">
+                        </li>
+                    </ul>
+                </div>
+                <div class="full-img person-icon2 float-left">
+                    <img src="./ossweb-img/person2.png" alt="人">
+                </div>
+            </div>
+            <div class="bg block-wrap block-wrap3">
+                <p class="description-text">
+                    自建球员还可穿戴专属套装附件，注意NBA球员不可穿着以下附件。<br/>
+                    更新后-<span class="violet-text">11月x日23:59</span>游戏内商城出售
+                </p>
+                <div style="position: relative;">
+                    <ul class="fujian-list c">
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_6.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title5 t">紫金之影套装墨镜</h3>
+                                <i class="icons prize-28b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                        <li class="fujian-item float-left c">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_7.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title6 t">紫金之影头带</h3>
+                                <i class="icons prize-18b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                        <li class="fujian-item float-left c" data-type="1">
+                            <div class="full-img fujian-img float-left">
+                                <img src="./ossweb-img/goods_8.jpg" width="179" height="179" alt="附件">
+                            </div>
+                            <div class="fujian-wrap float-left">
+                                <h3 class="icons fujian-title fujian-title7 t">紫金之影套装袜子</h3>
+                                <i class="icons prize-8b fujian-prize"></i>
+                                <a href="javascript: ;" class="icons get-detail btn-hover t">查看穿戴细节</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="absolute zoom-container zoom-container4" style="display: none;">
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_6_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_7_zoom.jpg" alt="放大">
+                        </li>
+                        <li class="full-img" style="display: none;">
+                            <img src="./ossweb-img/goods_8_zoom.jpg" alt="放大">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pop pr" id="pop1" style="display: none;">
+    <a href="javascript:showDialog.hide();" class="icons pa t close-btn pause-btn">X</a>
+    <div class="video-cent" id="video-cent1">
+
+    </div>
+</div>
+<div class="pop pr" id="pop2" style="display: none;">
+    <a href="javascript:showDialog.hide();" class="icons pa t close-btn pause-btn">X</a>
+    <div class="video-cent" id="video-cent2">
+
+    </div>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<!--<script src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>-->
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+
+    //魔力嘻哈 视频播放
+    var player = null;
+    $(".play-btn1").on("click", function(){
+        player = new Txplayer({
+            containerId: 'video-cent1',
+            vid: '84564', //视频id
+            width: '700',
+            height: '525',
+            autoplay: true
+        });
+    });
+    //紫金之影 视频播放
+    $(".play-btn2").on("click", function(){
+        player = new Txplayer({
+            containerId: 'video-cent2',
+            vid: '84564', //视频id
+            width: '700',
+            height: '525',
+            autoplay: true
+        });
+    });
+
+    //暂停视频
+    $(".pause-btn").on("click", function(){
+        player.pause();
+    });
+
+    function TGDialogS(e){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.show({
+                id:e,
+                bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        });
+    }
+    function closeDialog(){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.hide();
+        });
+    }
+
+    milo.ready(function () {
+        need("biz.login",function(LoginManager){
+            //QQ登录
+            milo.addEvent(g('btn_qqlogin'),'click',function(e){
+                LoginManager.login();
+            });
+            LoginManager.checkLogin(function() {
+                g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+            });
+            //注销
+            milo.addEvent(g("btn_logout"),"click",function(){
+                LoginManager.logout();
+            });
+        });
+    });
+
+    //放大
+    $(".fz-show-list li").hover(function() {
+        var index = $(this).index();
+        $(this).parent().next('.zoom-container').show().find('li').eq(index).toggle();
+    });
+
+    //附件放大
+    $(".fujian-list li .get-detail").hover(function(){
+        var $this = $(this).parents('li');
+        var index = $this.index();
+        var $zoomWrap = $this.parent().next('.zoom-container');
+        $zoomWrap.show().find('li').eq(index).toggle();
+        var top = $this.position().top + $this.height();
+        var left = $this.position().left;
+        if($this.attr("data-type") == '1'){
+            top -= $zoomWrap.height() - $this.height();
+        }
+        $zoomWrap.css({
+            'top': top+'px',
+            'left': left+'px'
+        });
+    });
+
+    //二维码
+    $('.top-ico-box .top-ico').hover(function(){
+        $(this).find('img').show();
+    },function(){
+        $(this).find('img').hide();
+    })
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20191008newtz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+</body>
+</html>

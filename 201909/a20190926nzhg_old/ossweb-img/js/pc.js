@@ -23,7 +23,6 @@ wheel = {
     mods: $('.part'),
     fnav: $('.float-menu-list li'),
     se: 0,
-    max: 4,
     loaded: [false, false, false, false],
     turn: false,
     len: $('.part-n').length,
@@ -31,19 +30,12 @@ wheel = {
         if (wheel.turn || e == wheel.se) return;
         wheel.turn = true;
         wheel.fnav.eq(e).siblings().removeClass('active').end().addClass('active');
-        if(e==wheel.max){
+        if(e>=4){
             setTimeout(function(){
                 $('#footer_ieg').show();
             },1000);
-            $pageBtn.find(".next-btn").addClass('off');
         }else{
             $('#footer_ieg').hide();
-            $pageBtn.find(".next-btn").removeClass('off');
-        }
-        if(e==0){
-            $pageBtn.find(".prev-btn").addClass('off');
-        }else {
-            $pageBtn.find(".prev-btn").removeClass('off');
         }
         wheel.mods.eq(e).css({ top: (e < wheel.se ? -1 : 1) * wheel.h, zIndex: 3 }).stop(true, true).animate({ top: 0 }, 300, 'easeInOutExpo', function () {
             $(this).css({ zIndex: 2 });
@@ -62,7 +54,6 @@ wheel = {
                 var n = 0;
                 if (delta > 0 && wheel.se > 0) { n = wheel.se - 1; wheel.roll(n); }
                 if (delta < 0 && wheel.se < wheel.len) { n = wheel.se + 1; wheel.roll(n); }
-                console.log(wheel.se);
             }
         });
     }
@@ -73,7 +64,11 @@ $('.page-btn-wrap .next-btn').on('click',function(){
 });
 //上一页
 $('.page-btn-wrap .prev-btn').on('click',function(){
-    wheel.se<wheel.len&&wheel.roll(wheel.se-1);
+    var type = $(this).attr('data-type');
+    if( type == 'end' ){
+        $('#footer_ieg').slideUp(300);
+    }
+    wheel.se<=wheel.len&&wheel.roll(wheel.se-1);
 });
 //侧导航
 $(document).ready(wheel.init);
