@@ -27,7 +27,15 @@
         <!-- 已登录 -->
         <div class="text-center login-wrap" id="logined" style="display: none;  ">
             欢迎您，<span id="login_qq_span"></span>
-            <span id="ams_user_headimg"></span>　
+             <div id="spanNotBind_609720">
+				<a href="javascript:amsInit(259686, 609719);">  绑定大区</a>
+			</div>
+			<div id="spanBind_609720" style="display:none">
+				<span id="area_info_609720"></span>
+				<span id="role_info_609720"></span>
+				<a href="javascript:amsInit(259686, 609719);">更改绑定</a>
+			</div>
+			<a href="javascript:getGiftList()">我的礼包</a>
             【<a id="btn_logout" href="javascript:void(0)" title="注销">注销</a>】
         </div>
     </div>
@@ -35,35 +43,35 @@
 <!-- 侧边栏 -->
 <ul class="float-menu-list">
     <li class="float-menu-item active clearfix moveRight" date-page="1">
-        <div class="icons menu-icon menu-icon1 text-center float-left"></div>
+        <div class="ui-icon menu-icon menu-icon1 text-center float-left"></div>
         <div class="float-left menu-title">
             <p class="menu-title-text">首页</p>
             <p class="menu-title-sub">H O M E</p>
         </div>
     </li>
     <li class="float-menu-item clearfix moveRight delay-dot1" date-page="2">
-        <div class="icons menu-icon menu-icon2 text-center float-left"></div>
+        <div class="ui-icon menu-icon menu-icon2 text-center float-left"></div>
         <div class="float-left menu-title">
             <p class="menu-title-text">回归有礼</p>
             <p class="menu-title-sub">R E G R E S S I O N</p>
         </div>
     </li>
     <li class="float-menu-item clearfix moveRight delay-dot2" date-page="3">
-        <div class="icons menu-icon menu-icon3 text-center float-left"></div>
+        <div class="ui-icon menu-icon menu-icon3 text-center float-left"></div>
         <div class="float-left menu-title">
             <p class="menu-title-text">老兵任务</p>
             <p class="menu-title-sub">V E T E R A N</p>
         </div>
     </li>
     <li class="float-menu-item clearfix moveRight delay-dot3" date-page="4">
-        <div class="icons menu-icon menu-icon4 text-center float-left"></div>
+        <div class="ui-icon menu-icon menu-icon4 text-center float-left"></div>
         <div class="float-left menu-title">
             <p class="menu-title-text">专属福利</p>
             <p class="menu-title-sub">E X C L U S I V E</p>
         </div>
     </li>
     <li class="float-menu-item clearfix moveRight delay-dot4" date-page="5">
-        <div class="icons menu-icon menu-icon5 text-center float-left"></div>
+        <div class="ui-icon menu-icon menu-icon5 text-center float-left"></div>
         <div class="float-left menu-title">
             <p class="menu-title-text">游戏新内容</p>
             <p class="menu-title-sub">N E W &nbsp; C O N T E N T</p>
@@ -79,70 +87,70 @@
         <!-- 翻页提示 -->
         <div class="absolute arrows-tips-wrap">
             <p class="text-center time-text">9.26~10.31</p>
-            <div class="icons tips-icon movesDown t">箭头</div>
+            <div class="ui-icon tips-icon movesDown t">箭头</div>
         </div>
         <div class="absolute page-btn-wrap">
-            <a href="javascript: ;" class="icons page-btn next-btn t" title="下一页">下一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn next-btn t" title="下一页">下一页</a>
         </div>
     </div>
     <div class="part part-n part-2">
         <div class="container">
-            <h2 class="icons title-icon2 move-down t">回归有礼</h2>
+            <h2 class="ui-icon title-icon2 move-down t">回归有礼</h2>
             <ul class="prize-list clearfix J-hg-gift">
                 <li class="prize-item prize-item1 move-up delay-dot1 float-left">
                     <div class="full-img prize-icon">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/goods_1.png" alt="奖品1">
                     </div>
                     <p class="text-center prize-name-text">纪元之辰(5天)  SCAR-朱雀(5天)<br/>魅惑女巫-初霜(5天) 陷阱全能体验卡(3天)</p>
-                    <div class="icons text-center prize-label">回归第1天</div>
-                    <a href="javascript: ;" class="icons btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift1','领取回归礼1天');">领取</a>
+                    <div class="ui-icon text-center prize-label">回归第1天</div>
+                    <a href="javascript:back_reward(1);" class="ui-icon btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift1','领取回归礼1天');">领取</a>
                 </li>
                 <li class="prize-item move-up delay-dot2 float-left">
                     <div class="full-img prize-icon">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/goods_2.png" alt="奖品1">
                     </div>
                     <p class="text-center prize-name-text">Q币或Q钻或购物券</p>
-                    <div class="icons text-center prize-label">回归第2天</div>
-                    <a href="javascript: ;" class="icons btn-hover get-btn get-btn-none t" title="领取" onclick="PTTSendClick('btn','get-gift2','领取回归礼2天');">领取</a>
+                    <div class="ui-icon text-center prize-label">回归第2天</div>
+                    <a href="javascript:back_reward(2);" class="ui-icon btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift2','领取回归礼2天');">领取</a>
                 </li>
                 <li class="prize-item move-up delay-dot3 float-left">
                     <div class="full-img prize-icon">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/goods_3.png" alt="奖品1">
                     </div>
                     <p class="text-center prize-name-text">礼物券*1、礼品券*1<br/>翡翠龙舟尼泊尔（永久）</p>
-                    <div class="icons text-center prize-label">回归第3天</div>
-                    <a href="javascript: ;" class="icons btn-hover get-btn get-btn-none t" title="领取" onclick="PTTSendClick('btn','get-gift3','领取回归礼3天');">领取</a>
+                    <div class="ui-icon text-center prize-label">回归第3天</div>
+                    <a href="javascript:back_reward(3);" class="ui-icon btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift3','领取回归礼3天');">领取</a>
                 </li>
                 <li class="prize-item move-up delay-dot4 float-left">
                     <div class="full-img prize-icon">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/goods_4.png" alt="奖品1">
                     </div>
                     <p class="text-center prize-name-text">Q币或Q钻或购物券</p>
-                    <div class="icons text-center prize-label">回归第4天</div>
-                    <a href="javascript: ;" class="icons btn-hover get-btn get-btn-none t" title="领取" onclick="PTTSendClick('btn','get-gift4','领取回归礼4天');">领取</a>
+                    <div class="ui-icon text-center prize-label">回归第4天</div>
+                    <a href="javascript:back_reward(4);" class="ui-icon btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift4','领取回归礼4天');">领取</a>
                 </li>
                 <li class="prize-item prize-item5 move-up delay-dot5 float-left">
                     <div class="full-img prize-icon">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/goods_5.png" alt="奖品1">
                     </div>
                     <p class="text-center prize-name-text">纪元之辰(7天) SCAR-朱雀(7天)<br/>魅惑女巫-初霜(7天)  防弹头盔(7天)<br/>防弹背心(7天)</p>
-                    <div class="icons text-center prize-label">回归第5天</div>
-                    <a href="javascript: ;" class="icons btn-hover get-btn get-btn-none t" title="领取" onclick="PTTSendClick('btn','get-gift5','领取回归礼5天');">领取</a>
+                    <div class="ui-icon text-center prize-label">回归第5天</div>
+                    <a href="javascript:back_reward(5);" class="ui-icon btn-hover get-btn t" title="领取" onclick="PTTSendClick('btn','get-gift5','领取回归礼5天');">领取</a>
                 </li>
             </ul>
         </div>
         <!-- 翻页提示 -->
         <div class="absolute arrows-tips-wrap">
-            <div class="icons tips-icon movesDown t">箭头</div>
+            <div class="ui-icon tips-icon movesDown t">箭头</div>
         </div>
         <div class="absolute page-btn-wrap">
-            <a href="javascript: ;" class="icons page-btn prev-btn t" title="上一页">上一页</a>
-            <a href="javascript: ;" class="icons page-btn next-btn t" title="下一页">下一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn prev-btn t" title="上一页">上一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn next-btn t" title="下一页">下一页</a>
         </div>
     </div>
     <div class="part part-n part-3">
         <div class="container">
-            <h2 class="icons title-icon3 move-down t">老兵任务</h2>
+            <h2 class="ui-icon title-icon3 move-down t">老兵任务</h2>
             <!-- 进度条 -->
             <div class="bg progress-container move-down delay-dot1">
                 <div class="progress-con" style="width: 50%;"></div>
@@ -153,35 +161,35 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/pro_prize_1.png" alt="老兵任务奖品1">
                         <p class="absolute text-center pro-prize-name">经验加成卡（3天）<br/>+4宝箱掉落卡(2小时)</p>
                     </div>
-                    <a href="javascript: ;" class="icons get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
+                    <a href="javascript:huoyue_reward(1);" class="ui-icon get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
                 </li>
                 <li class="full-img pro-prize-item float-left">
                     <div style="position: relative">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/pro_prize_2.png" alt="老兵任务奖品2">
                         <p class="absolute text-center pro-prize-name">200战令经验<br/>魔法手杖（永久）</p>
                     </div>
-                    <a href="javascript: ;" class="icons get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
+                    <a href="javascript:huoyue_reward(2);" class="ui-icon get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
                 </li>
                 <li class="full-img pro-prize-item float-left">
                     <div style="position: relative">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/pro_prize_3.png" alt="老兵任务奖品3">
                         <p class="absolute text-center pro-prize-name">AR15-魔法少女(永久)<br/>魔法手环（15天）</p>
                     </div>
-                    <a href="javascript: ;" class="icons get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
+                    <a href="javascript:huoyue_reward(3);" class="ui-icon get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
                 </li>
                 <li class="full-img pro-prize-item float-left">
                     <div style="position: relative">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/pro_prize_4.png" alt="老兵任务奖品4">
                         <p class="absolute text-center pro-prize-name">1000NZ点购物券</p>
                     </div>
-                    <a href="javascript: ;" class="icons get-btn get-btn-none btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
+                    <a href="javascript:huoyue_reward(4);" class="ui-icon get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
                 </li>
                 <li class="full-img pro-prize-item float-left">
                     <div style="position: relative">
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/pro_prize_5.png" alt="老兵任务奖品5">
                         <p class="absolute text-center pro-prize-name">悠悠（永久）</p>
                     </div>
-                    <a href="javascript: ;" class="icons get-btn get-btn-none btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
+                    <a href="javascript:huoyue_reward(5);" class="ui-icon get-btn btn-hover t" title="领取" onclick="PTTSendClick('btn','get-prize','领取奖品1');">领取</a>
                 </li>
             </ul>
             <!-- 任务 -->
@@ -196,7 +204,7 @@
                             <p class="task-title-text">任务描述</p>
                             <p class="task-msg-text">每日在线15分钟</p>
                         </div>
-                        <a href="javascript: ;" class="icons get-btn btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task1','领取任务1');">领取</a>
+                        <a href="javascript:get_huoyue(1);" class="ui-icon get-btn btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task1','领取任务1');">领取</a>
                     </div>
                 </li>
                 <li class="bg task-item float-left">
@@ -209,7 +217,7 @@
                             <p class="task-title-text">任务描述</p>
                             <p class="task-msg-text">每日完成一局猎场</p>
                         </div>
-                        <a href="javascript: ;" class="icons get-btn get-btn-none btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task2','领取任务2');">领取</a>
+                        <a href="javascript:get_huoyue(2);" class="ui-icon get-btn btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task2','领取任务2');">领取</a>
                     </div>
                 </li>
                 <li class="bg task-item float-left">
@@ -222,7 +230,7 @@
                             <p class="task-title-text">任务描述</p>
                             <p class="task-msg-text">每日完成一局塔防</p>
                         </div>
-                        <a href="javascript: ;" class="icons get-btn get-btn-none btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task3','领取任务3');">领取</a>
+                        <a href="javascript:get_huoyue(3);" class="ui-icon get-btn btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task3','领取任务3');">领取</a>
                     </div>
                 </li>
                 <li class="bg task-item float-left">
@@ -235,23 +243,23 @@
                             <p class="task-title-text">任务描述</p>
                             <p class="task-msg-text">竞技模式杀敌5人</p>
                         </div>
-                        <a href="javascript: ;" class="icons get-btn get-btn-none btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task4','领取任务4');">领取</a>
+                        <a href="javascript:get_huoyue(4);" class="ui-icon get-btn btn-hover float-right t" title="领取" onclick="PTTSendClick('btn','get-task4','领取任务4');">领取</a>
                     </div>
                 </li>
             </ul>
         </div>
         <!-- 翻页提示 -->
         <div class="absolute arrows-tips-wrap">
-            <div class="icons tips-icon movesDown t">箭头</div>
+            <div class="ui-icon tips-icon movesDown t">箭头</div>
         </div>
         <div class="absolute page-btn-wrap">
-            <a href="javascript: ;" class="icons page-btn prev-btn t" title="上一页">上一页</a>
-            <a href="javascript: ;" class="icons page-btn next-btn t" title="下一页">下一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn prev-btn t" title="上一页">上一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn next-btn t" title="下一页">下一页</a>
         </div>
     </div>
     <div class="part part-n part-4">
         <div class="container">
-            <h2 class="icons title-icon4 move-down t">专属福利</h2>
+            <h2 class="ui-icon title-icon4 move-down t">专属福利</h2>
             <!-- 购买礼包 -->
             <ul class="get-gift-list clearfix J-buy-gift">
                 <li class="bg get-gift-item get-gift-item1 move-up float-left">
@@ -260,9 +268,9 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/gift_1.png" alt="礼包">
                     </div>
                     <p class="text-center gift-money-text"><span class="money-label">￥</span>6</p>
-                    <a href="javascript: ;" class="icons buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift1','购买6元基础礼包');">立即购买</a>
+                    <a href="javascript:buy(1);" class="ui-icon buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift1','购买6元基础礼包');">立即购买</a>
                     <p class="text-center gift-tips-text">限购（0/1）</p>
-                    <div class="absolute icons gift-label">3<span>折</span></div>
+                    <div class="absolute ui-icon gift-label">3<span>折</span></div>
                 </li>
                 <li class="bg get-gift-item get-gift-item2 move-up delay-dot1 float-left">
                     <h4 class="text-center gift-title-text">88元进阶礼包</h4>
@@ -270,9 +278,9 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/gift_2.png" alt="礼包">
                     </div>
                     <p class="text-center gift-money-text"><span class="money-label">￥</span>88</p>
-                    <a href="javascript: ;" class="icons buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift2','购买88元进阶礼包');">立即购买</a>
+                    <a href="javascript:buy(2);" class="ui-icon buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift2','购买88元进阶礼包');">立即购买</a>
                     <p class="text-center gift-tips-text">限购（0/1）</p>
-                    <div class="absolute icons gift-label">5<span>折</span></div>
+                    <div class="absolute ui-icon gift-label">5<span>折</span></div>
                 </li>
                 <li class="bg get-gift-item move-up delay-dot2 float-left">
                     <h4 class="text-center gift-title-text">288元豪华碎片礼包</h4>
@@ -280,9 +288,9 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/gift_3.png" alt="礼包">
                     </div>
                     <p class="text-center gift-money-text"><span class="money-label">￥</span>288</p>
-                    <a href="javascript: ;" class="icons buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift4','购买288元豪华礼包');">立即购买</a>
+                    <a href="javascript:buy(3);" class="ui-icon buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift4','购买288元豪华礼包');">立即购买</a>
                     <p class="text-center gift-tips-text">限购（0/1）</p>
-                    <div class="absolute icons gift-label">5<span>折</span></div>
+                    <div class="absolute ui-icon gift-label">5<span>折</span></div>
                 </li>
                 <li class="bg get-gift-item move-up delay-dot3 float-left">
                     <h4 class="text-center gift-title-text">666元至尊礼包</h4>
@@ -290,24 +298,24 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/gift_4.png" alt="礼包">
                     </div>
                     <p class="text-center gift-money-text"><span class="money-label">￥</span>666</p>
-                    <a href="javascript: ;" class="icons buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift5','购买666元至尊礼包');">立即购买</a>
+                    <a href="javascript:buy(4);" class="ui-icon buy-btn t" title="立即购买" onclick="PTTSendClick('btn','buy-gift5','购买666元至尊礼包');">立即购买</a>
                     <p class="text-center gift-tips-text">限购（0/1）</p>
-                    <div class="absolute icons gift-label">4<span>折</span></div>
+                    <div class="absolute ui-icon gift-label">4<span>折</span></div>
                 </li>
             </ul>
         </div>
         <!-- 翻页提示 -->
         <div class="absolute arrows-tips-wrap">
-            <div class="icons tips-icon movesDown t">箭头</div>
+            <div class="ui-icon tips-icon movesDown t">箭头</div>
         </div>
         <div class="absolute page-btn-wrap">
-            <a href="javascript: ;" class="icons page-btn prev-btn t" title="上一页">上一页</a>
-            <a href="javascript: ;" class="icons page-btn next-btn t" title="下一页">下一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn prev-btn t" title="上一页">上一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn next-btn t" title="下一页">下一页</a>
         </div>
     </div>
     <div class="part part-n part-5">
         <div class="container">
-            <h2 class="icons title-icon5 move-down t">游戏新内容</h2>
+            <h2 class="ui-icon title-icon5 move-down t">游戏新内容</h2>
             <!-- 新内容 -->
             <ul class="news-list clearfix">
                 <li class="news-item news-item1 float-left">
@@ -315,7 +323,8 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/role_1.png" alt="新内容">
                     </div>
                     <a href="javascript: alert('敬请期待！');" class="full-img move-down delay-dot2 news-item-wrap" title="查看新内容" onclick="PTTSendClick('btn','look-news1','查看新内容1');">
-                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_bg3.png" alt="新内容">
+                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_img1.gif" alt="新内容">
+                        <p class="text-center news-title-text">全新猎场-长白天境</p>
                     </a>
                 </li>
                 <li class="news-item news-item2 float-left">
@@ -323,7 +332,8 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/role_2.png" alt="新内容">
                     </div>
                     <a href="javascript: alert('敬请期待！');" class="full-img move-down delay-dot3 news-item-wrap" title="查看新内容" onclick="PTTSendClick('btn','look-news2','查看新内容2');">
-                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_bg3.png" alt="新内容">
+                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_img2.gif" alt="新内容">
+                        <p class="text-center news-title-text">全新天梯、猎场排位赛</p>
                     </a>
                 </li>
                 <li class="news-item news-item3 float-left">
@@ -331,19 +341,64 @@
                         <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/role_3.png" alt="新内容">
                     </div>
                     <a href="javascript: alert('敬请期待！');" class="full-img move-down delay-dot4 news-item-wrap" title="查看新内容" onclick="PTTSendClick('btn','look-news3','查看新内容3');">
-                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_bg3.png" alt="新内容">
+                        <img src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/plank_img3.gif" alt="新内容">
+                        <p class="text-center news-title-text">全新福利系统</p>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="absolute page-btn-wrap">
-            <a href="javascript: ;" class="icons page-btn prev-btn t" title="上一页" data-type="end">上一页</a>
+            <a href="javascript: ;" class="ui-icon page-btn prev-btn t" title="上一页" data-type="end">上一页</a>
         </div>
     </div>
 </div>
-
+<div class="nz_dr_pop c" id="showMyGiftContent" style="display:none;">
+	<h4 class="nz_dr_pop-hd">我的礼包记录</h4>
+	<div class="nz_dr_pop-bd">
+		<table class="nz_dr_pop-tb1">
+		<thead>
+			<tr>
+				<th>领取时间</th>
+				<th>领取大区</th>
+				<th>领取礼包</th>
+			</tr>
+		</thead>
+		<tbody id="getGiftContent"></tbody>
+		<tfoot>
+			<tr>
+				<td id="getGiftPageContent" align="right" colspan="3"></td>
+			</tr>
+		</tfoot>
+		</table>
+		<p class="nz_dr_pop-mt1">
+		<strong class="nz_dr_pop-txt1">温馨提示</strong>
+		虚拟道具奖品将在24小时内发到您的游戏内仓库,请耐心等候,谢谢您的理解与支持!
+		</p>
+	</div>
+	<a onclick="giftDialogHide()" class="nz_dr_pop-close" title="关闭">关闭</a>
+</div>
+<script type="text/html" id="getGiftTemplate">
+	{if MyGiftListObject.iRet!='0'}
+	<tr>
+		<td colspan="3" align="center">${MyGiftListObject.sMsg}</td>
+	</tr>
+	{else}
+		{for giftInfo in MyGiftListObject.myGiftList}
+		<tr>
+			<td>${giftInfo.getTime}</td>
+			<td>${giftInfo.areaName}</td>
+			<td>${giftInfo.packageName}{if giftInfo.iPackageNum>1}（${giftInfo.iPackageNum}个）{/if}</td>
+		</tr>
+		{forelse}
+		<tr>
+			<td colspan="3" align="center">您尚未获得任何礼包</td>
+		</tr>
+		{/for}
+	{/if}
+</script>
+<script src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/ams/atm/reporting.js?action=259686"></script>
 <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
-<!--<script src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>-->
 <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/title.js"></script>
 <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
@@ -351,23 +406,8 @@
 <script src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/js/pc.js"></script>
 <script src="//game.gtimg.cn/images/nz/cp/a20190926nzhg/js/index.js"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//nz.qq.com/cp/a20190926nzhg/js/index.js"></script>
 <script>
-    milo.ready(function () {
-        need("biz.login",function(LoginManager){
-            //QQ登录
-            milo.addEvent(g('btn_qqlogin'),'click',function(e){
-                LoginManager.login();
-            });
-            LoginManager.checkLogin(function() {
-                g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
-            });
-            //注销
-            milo.addEvent(g("btn_logout"),"click",function(){
-                LoginManager.logout();
-            });
-        });
-    });
-
     //此段代码不能放到外链JS中，
     var setSite = { //设置网站属性
         siteType: "a20190926nzhg", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx

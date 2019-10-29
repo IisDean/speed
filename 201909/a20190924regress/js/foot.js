@@ -10,7 +10,7 @@
                 '<div class="copyright"> ' +
                     ' <p> ' +
                         '&copy;2016－2019，All rights reserved 深圳市爱玩游戏科技有限公司 ' +
-                        '<span>粤ICP备18053351号 </span> ' +
+                        '<a href="#">粤ICP备18053351号 </a> ' +
                         '<span> | 粤网文{2019}2715-712号 </span> ' +
                     ' </p> ' +
                 '</div> ' +

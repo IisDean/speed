@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="《御龙在天》是腾讯第一国战手游，由腾讯第一国战网游-御龙在天官方团队倾力打造，在手机端延续激情经典的国战战火。游戏世界观设定在半架空的三国历史中，真实的社会体系、丰富多样的玩法、国家间的对抗与合作以及多人PK的超激情体验，是御龙在天手游独有的魅力。" >
+    <meta name="Keywords" content="御龙在天手游、御龙在天、御龙在天手游官网、腾讯御龙在天手游、御龙在天手游下载" >
+    <title>边境入侵 捍卫荣耀-腾讯第一国战手游-腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/css/index.css">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <h1 class="hide">边境入侵 捍卫荣耀</h1>
+    <header class="bg head">
+        <div class="absolute full-img logo-wrap">
+            <img src="ossweb-img/logo.png" alt="御龙在天logo">
+        </div>
+        <div class="absolute login-box">
+            <!-- 登录信息 -->
+            <div id="ams_loginbar">
+                <div id="unlogin">
+                    亲爱的玩家，请【<a id="LoginBtn" href="javascript:;" style="cursor: pointer;">登录</a>】
+                </div>
+                <div id="logined" style="display: none;">
+                    <span>欢迎您，</span>
+                    <span id="userinfo"></span>
+                    【<a id="ptLogoutBtn" href="javascript:;" style="cursor: pointer;">注销</a>】
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg bg2">
+        <h2 class="icons title title-1 t">边境入侵赢好礼</h2>
+        <p class="title-msg-text text-center">每轮入侵达到100分，即可领取所有奖励并点亮该国边境大旗</p>
+        <!-- 国家列表 -->
+        <ul class="state-list">
+            <!-- 益州 -->
+            <li class="state-item">
+                <div class="flex state-head">
+                    <div class="full-img flag-icon">
+                        <img src="ossweb-img/flag1.png" alt="益州国旗">
+                    </div>
+                    <div class="state-msg flex-1">
+                        <h3 class="icons title-sub title-sub-1 t">益州边境入侵</h3>
+                        <div class="flex activity-wrap" data-start="2019-10-23 12:00" data-end="2019-10-23 14:00">
+                            <p class="flex-1 title-msg-text">10月23日，下午12点-14点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="flex activity-wrap" data-start="2019-10-23 12:00" data-end="2019-10-23 20:00">
+                            <p class="flex-1 title-msg-text">10月23日，下午12点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分 -->
+                <div class="progress-container">
+                    <!-- 宝箱 -->
+                    <ul class="absolute bx-list">
+                        <li class="absolute bx-item" style="left: 15%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx1.png" alt="青铜宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 50%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">50积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 85%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">100积分</p>
+                        </li>
+                    </ul>
+                    <div class="bg progress-wrap">
+                        <div class="progress-line">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <i class="absolute icons tips-start"></i>
+                    <i class="absolute icons tips-end"></i>
+                </div>
+            </li>
+            <!-- 青州 -->
+            <li class="state-item">
+                <div class="flex state-head">
+                    <div class="full-img flag-icon">
+                        <img src="ossweb-img/flag2.png" alt="青州国旗">
+                    </div>
+                    <div class="state-msg flex-1">
+                        <h3 class="icons title-sub title-sub-2 t">青州边境入侵</h3>
+                        <div class="flex activity-wrap" data-start="2019-10-24 15:00" data-end="2019-10-24 20:00">
+                            <p class="flex-1 title-msg-text">10月24日，下午19点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="flex activity-wrap" data-start="2019-10-24 15:00" data-end="2019-10-24 20:00">
+                            <p class="flex-1 title-msg-text">10月24日，下午19点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分 -->
+                <div class="progress-container">
+                    <!-- 宝箱 -->
+                    <ul class="absolute bx-list">
+                        <li class="absolute bx-item" style="left: 15%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx1.png" alt="青铜宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 50%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 85%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                    </ul>
+                    <div class="bg progress-wrap">
+                        <div class="progress-line">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <i class="absolute icons tips-start"></i>
+                    <i class="absolute icons tips-end"></i>
+                </div>
+            </li>
+            <!-- 扬州 -->
+            <li class="state-item">
+                <div class="flex state-head">
+                    <div class="full-img flag-icon">
+                        <img src="ossweb-img/flag3.png" alt="扬州国旗">
+                    </div>
+                    <div class="state-msg flex-1">
+                        <h3 class="icons title-sub title-sub-3 t">扬州边境入侵</h3>
+                        <div class="flex activity-wrap" data-start="2019-10-25 15:00" data-end="2019-10-25 20:00">
+                            <p class="flex-1 title-msg-text">10月25日，下午17点-18点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="flex activity-wrap" data-start="2019-10-25 15:00" data-end="2019-10-25 20:00">
+                            <p class="flex-1 title-msg-text">10月25日，下午19点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分 -->
+                <div class="progress-container">
+                    <!-- 宝箱 -->
+                    <ul class="absolute bx-list">
+                        <li class="absolute bx-item" style="left: 15%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx1.png" alt="青铜宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 50%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 85%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                    </ul>
+                    <div class="bg progress-wrap">
+                        <div class="progress-line">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <i class="absolute icons tips-start"></i>
+                    <i class="absolute icons tips-end"></i>
+                </div>
+            </li>
+            <!-- 豫州 -->
+            <li class="state-item">
+                <div class="flex state-head">
+                    <div class="full-img flag-icon">
+                        <img src="ossweb-img/flag4.png" alt="豫州国旗">
+                    </div>
+                    <div class="state-msg flex-1">
+                        <h3 class="icons title-sub title-sub-4 t">豫州边境入侵</h3>
+                        <div class="flex activity-wrap" data-start="2019-10-26 15:00" data-end="2019-10-26 20:00">
+                            <p class="flex-1 title-msg-text">10月26日，下午17点-18点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="flex activity-wrap" data-start="2019-10-26 19:00" data-end="2019-10-26 20:00">
+                            <p class="flex-1 title-msg-text">10月26日，下午19点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分 -->
+                <div class="progress-container">
+                    <!-- 宝箱 -->
+                    <ul class="absolute bx-list">
+                        <li class="absolute bx-item" style="left: 15%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx1.png" alt="青铜宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 50%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 85%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                    </ul>
+                    <div class="bg progress-wrap">
+                        <div class="progress-line">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <i class="absolute icons tips-start"></i>
+                    <i class="absolute icons tips-end"></i>
+                </div>
+            </li>
+            <!-- 荆州 -->
+            <li class="state-item">
+                <div class="flex state-head">
+                    <div class="full-img flag-icon">
+                        <img src="ossweb-img/flag5.png" alt="荆州国旗">
+                    </div>
+                    <div class="state-msg flex-1">
+                        <h3 class="icons title-sub title-sub-5 t">荆州边境入侵</h3>
+                        <div class="flex activity-wrap" data-start="2019-10-27 17:00" data-end="2019-10-27 18:00">
+                            <p class="flex-1 title-msg-text">10月27日，下午17点-18点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="flex activity-wrap" data-start="2019-10-27 19:00" data-end="2019-10-27 20:00">
+                            <p class="flex-1 title-msg-text">10月27日，下午19点-20点</p>
+                            <p class="title-msg-text">未开始</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分 -->
+                <div class="progress-container">
+                    <!-- 宝箱 -->
+                    <ul class="absolute bx-list">
+                        <li class="absolute bx-item" style="left: 15%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx1.png" alt="青铜宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 50%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                        <li class="absolute bx-item" style="left: 85%">
+                            <div class="full-img bx-icon">
+                                <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                            </div>
+                            <p class="bx-state-text text-center">已领取</p>
+                            <i class="icons node-icon"></i>
+                            <p class="integral-text text-center">10积分</p>
+                        </li>
+                    </ul>
+                    <div class="bg progress-wrap">
+                        <div class="progress-line">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <i class="absolute icons tips-start"></i>
+                    <i class="absolute icons tips-end"></i>
+                </div>
+            </li>
+        </ul>
+        <h2 class="icons title title-2 t">边境入侵赢好礼</h2>
+        <p class="title-msg-text text-center">集齐5面边境大旗，领终极大奖</p>
+        <!-- 集国旗 -->
+        <ul class="flag-list">
+            <li class="absolute flag-item">
+                <div class="full-img flag-icon">
+                    <img src="ossweb-img/flag1.png" alt="益州国旗">
+                </div>
+                <p class="text-center get-status-text">已拥有</p>
+            </li>
+            <li class="absolute flag-item">
+                <div class="full-img flag-icon">
+                    <img src="ossweb-img/flag2.png" alt="国旗">
+                </div>
+                <p class="text-center get-status-text">已拥有</p>
+            </li>
+            <li class="absolute flag-item filter">
+                <div class="full-img flag-icon">
+                    <img src="ossweb-img/flag3.png" alt="国旗">
+                </div>
+                <p class="text-center get-status-text">未获得</p>
+            </li>
+            <li class="absolute flag-item filter">
+                <div class="full-img flag-icon">
+                    <img src="ossweb-img/flag4.png" alt="国旗">
+                </div>
+                <p class="text-center get-status-text">未获得</p>
+            </li>
+            <li class="absolute flag-item filter">
+                <div class="full-img flag-icon">
+                    <img src="ossweb-img/flag5.png" alt="国旗">
+                </div>
+                <p class="text-center get-status-text">未获得</p>
+            </li>
+            <!-- 宝箱-->
+            <li class="absolute full-img flag-bx">
+                <img src="ossweb-img/bx3.png" alt="宝箱">
+            </li>
+        </ul>
+        <!-- 点击领取 集旗终极大礼 -->
+        <a href="javascript: ;" class="icons btn get-flag-btn"></a>
+        <h2 class="icons title title-3 t">国家边境守卫奖励</h2>
+        <p class="title-msg-text text-center">活动期间，将个人积分注入，可累计本国边境<br/>积分，达到对应积分可领取奖励</p>
+        <p class="text-center my-integral-text">我的边境积分：<span id="integral">200</span></p>
+        <!-- 我的边境积分进度 -->
+        <div class="progress-container pro-2">
+            <!-- 宝箱 -->
+            <ul class="absolute bx-list">
+                <li class="absolute bx-item" style="left: 15%;pointer-events: none;">
+                    <div class="full-img long-icon">
+                        <img src="ossweb-img/long.png" alt="龙">
+                    </div>
+                    <i class="icons node-icon"></i>
+                    <p class="integral-text text-center">本国累计积分</p>
+                </li>
+                <li class="absolute bx-item" style="left: 50%">
+                    <div class="full-img bx-icon">
+                        <img src="ossweb-img/bx2.png" alt="白银宝箱">
+                    </div>
+                    <p class="bx-state-text text-center">已领取</p>
+                    <i class="icons node-icon"></i>
+                    <p class="integral-text text-center">5000积分</p>
+                </li>
+                <li class="absolute bx-item" style="left: 85%">
+                    <div class="full-img bx-icon">
+                        <img src="ossweb-img/bx3.png" alt="黄金宝箱">
+                    </div>
+                    <p class="bx-state-text text-center">已领取</p>
+                    <i class="icons node-icon"></i>
+                    <p class="integral-text text-center">10000积分</p>
+                </li>
+            </ul>
+            <div class="bg progress-wrap">
+                <div class="progress-line">
+                    <div style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex btn-container">
+            <a class="icons btn btn-2 J-inject-btn"></a>
+            <!--<a href="javascript: ;" class="icons btn btn-3"></a>-->
+        </div>
+    </section>
+    <section class="bg bg3">
+        <h2 class="icons title title-4 t">每日踩边任务</h2>
+        <ul class="flex task-list">
+            <li class="bg task-item text-center">
+                <p class="task-num-text">- 01 -</p>
+                <p class="task-title-text">击杀官员达到10次</p>
+                <p class="task-tips-text">增加10点积分</p>
+                <p class="task-pro-text">进度：0/10</p>
+            </li>
+            <li class="bg task-item text-center">
+                <p class="task-num-text">- 02 -</p>
+                <p class="task-title-text">连续击杀5人</p>
+                <p class="task-tips-text">增加10点积分</p>
+                <p class="task-pro-text">进度：0/10</p>
+            </li>
+            <li class="bg task-item text-center">
+                <p class="task-num-text">- 03 -</p>
+                <p class="task-title-text">分享请求增援</p>
+                <p class="task-tips-text">增加10点积分</p>
+                <a href="javascript: ;" class="share-btn">去分享</a>
+            </li>
+        </ul>
+        <h2 class="icons title title-5 t">活动规则</h2>
+        <ul class="rule-list">
+            <li class="rule-item">1、活动开启时间内，在对应国家的边境区域击杀其它国家的玩家即可获得边境积分。</li>
+            <li class="rule-item">2、每轮边境入侵中，击杀1人可获得1积分，总分100分。</li>
+            <li class="rule-item">3、根据获得积分值，不仅可以领取对应的累计奖励，达到100分，还可以解锁该国家的边境大旗。</li>
+            <li class="rule-item">4、同时，完成每轮边境踩边任务可获得额外积分，踩边任务当日刷新。</li>
+            <li class="rule-item">5、收集激活5个国家的边境大旗，即可领取边境大奖。</li>
+            <li class="rule-item">6、同时，将军每天也可将自己获得的积分注入到本国边境积分池中，可累计本国边境积分，达到对应积分可领取奖励</li>
+            <li class="rule-item">7、请将军们注意，积分进度条有一定延迟，需要刷新页面。</li>
+        </ul>
+    </section>
+<!--    <div class="bq-tips text-center">腾讯公司保留在法律规定的范围内对此活动解释的权利</div>-->
+</div>
+
+<!-- 绑定角色弹窗 -->
+<div class="dialog bg pop pop-1" id="pop1" style="display: none">
+    <div class="dia-con">
+        <h2 class="icons pop-title-1 t">请先绑定角色在打造</h2>
+        <p class="title-msg-text text-center">（角色绑定后不可更换）</p>
+        <ul class="form-list">
+            <li class="form-item">
+                <select name="" id="qudao" class="text-center">
+                    <option value="渠道">渠道：安卓</option>
+                    <option value="渠道">渠道：IOS</option>
+                </select>
+            </li>
+            <li class="form-item">
+                <select name="" id="pingtai" class="text-center">
+                    <option value="平台">平台：xxxx服</option>
+                    <option value="平台">平台：xxxx服</option>
+                </select>
+            </li>
+            <li class="form-item">
+                <select name="" id="qufu" class="text-center">
+                    <option value="区服">区服：xxxx服</option>
+                    <option value="区服">区服：xxxx服</option>
+                </select>
+            </li>
+            <li class="form-item">
+                <select name="" id="user" class="text-center">
+                    <option value="角色">角色：xxxx</option>
+                    <option value="角色">角色：xxxx</option>
+                </select>
+            </li>
+        </ul>
+        <div class="flex btn-pop-con">
+            <a href="javascript: ;" class="icons btn pop-btn-1"></a>
+            <a href="javascript: closeDialog();" class="icons btn pop-btn-2"></a>
+        </div>
+    </div>
+    <a class="icons absolute close-btn t" href="javascript: closeDialog();;" title="关闭弹窗">×</a>
+</div>
+<!-- 您已领取该档奖励 -->
+<div class="dialog bg pop pop-2" id="pop2" style="display: none">
+    <div class="dia-con">
+        <h2 class="icons pop-title-2 t">您已领取该档奖励</h2>
+        <a href="javascript: closeDialog();" class="icons btn pop-btn-3"></a>
+    </div>
+    <a class="icons absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+</div>
+<!-- 您还未达到领取该档奖励的积分 -->
+<div class="dialog bg pop pop-2" id="pop3" style="display: none">
+    <div class="dia-con">
+        <h2 class="icons pop-title-3 t">您还未达到领取该档奖励的积分</h2>
+        <a href="javascript: closeDialog();" class="icons btn pop-btn-3"></a>
+    </div>
+    <a class="icons absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+</div>
+<!-- 获得边境大奖 -->
+<div class="dialog bg pop pop-2" id="pop4" style="display: none">
+    <div class="dia-con">
+        <h2 class="icons pop-title-4 t">获得边境大奖</h2>
+        <a href="javascript: closeDialog();" class="icons btn pop-btn-3"></a>
+    </div>
+    <a class="icons absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+</div>
+<!-- 您的边境印记未集齐 -->
+<div class="dialog bg pop pop-2" id="pop5" style="display: none">
+    <div class="dia-con">
+        <h2 class="icons pop-title-5 t">您的边境印记未集齐</h2>
+        <a href="javascript: closeDialog();" class="icons btn pop-btn-3"></a>
+    </div>
+    <a class="icons absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+</div>
+<!-- 分享 -->
+<div class="dialog share-pop" id="pop6" ontouchend="closeDialog()" style="display: none">
+    <div class="absolute full-img share-img">
+        <img src="ossweb-img/share_pop.png" alt="">
+    </div>
+</div>
+<!-- 弹窗 End-->
+<!--wrapper End-->
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script>
+
+    //登录
+    $("#LoginBtn").on("click", function(){
+        PTTSendClick('btn','login','登录');
+        TGDialogS('pop1');
+    });
+
+    //领取积分奖励
+    var a = 1;
+    $(".bx-list .bx-item").on("click", function(){
+        PTTSendClick('btn','getPrize','领取积分奖励');
+        if( a == 1 ){
+            //您已领取该档奖励
+            TGDialogS('pop2');
+        }else {
+            //您还未达到领取该档奖励的积分
+            TGDialogS('pop3');
+        }
+    });
+
+    //注入边境点
+    $(".J-inject-btn").on("click", function(){
+        PTTSendClick('btn','addDot','增加边境点数');
+        var $integral = $("#integral");
+        $integral.text(parseInt($integral.text())+10);
+        alert('成功注入10点');
+    });
+
+    //领取集旗终极大礼
+    var b = 1;
+    $(".get-flag-btn").on("click", function(){
+        PTTSendClick('btn','getFlagPrize','领取边境大礼');
+        if( b == 1 ){
+            //获得终极大礼
+            TGDialogS('pop4');
+        }else {
+            //您的边境印记未集齐
+            TGDialogS('pop5');
+        }
+    });
+
+    //去分享
+    $(".share-btn").on("click", function(){
+        PTTSendClick('btn','goShare','去分享');
+        TGDialogS('pop6');
+    });
+
+    /* 活动进行状态 ，根据活动时间判断活动的状态，
+    * 需要在实例化的dom对象上添加活动时间
+    * data-start为活动开始时间
+    * data-end 为活动结束时间
+    * */
+    function SetStatus(options){
+        this.timeList = [];
+        this.setTimer = null;
+        this.dom = $(options.dom);
+        this.init = function(){
+            var $this = this;
+            this.timeList = this.getTime();
+            this.setTimer = setInterval(function(){
+                $this.timeList.forEach(function(ev, index){
+                    if( $this.timeList[index].istype != 2 ){
+                        var status = $this.isTimeSetion(ev.start, ev.end);
+                        var $dom = $this.dom.eq(index).find('p:last-child');
+                        if( status == 0 ){
+                            $dom.text('未开始');
+                        }else if( status == 1 ){
+                            $dom.text('战斗中');
+                        }else if( status == 2 ){
+                            $dom.text('已结束');
+                            $this.timeList[index].istype = 2;
+                        }
+                    }
+                });
+            }, 1000);
+        }
+        this.init();
+    }
+    SetStatus.prototype = {
+        getTime: function(){
+            var $this = this,
+                result = [];
+            $this.dom.each(function(index, ev){
+                result[index] = {
+                    start: $(ev).attr('data-start'),
+                    end  : $(ev).attr('data-end')
+                }
+            });
+            return result;
+        },
+        isTimeSetion: function(start, end){
+            // 返回值 0 = 未开始，1 = 战斗中， 2 = 已结束
+            var s = new Date(start.replace("-", "/").replace("-", "/")),
+                e = new Date(end.replace("-", "/").replace("-", "/")),
+                now = new Date();
+            if( now < s ){
+                return 0;
+            }else if( now > s && now < e ){
+                return 1;
+            }else if( now > e ){
+                return 2;
+            }
+        }
+    }
+    var timer = new SetStatus({
+        dom: '.activity-wrap',
+    });
+
+    //登录
+    milo.ready(function () {
+        need("biz.login", function (LoginManager) {
+            LoginManager.init({
+            });
+            //QQ登录
+            milo.addEvent(g('ptLoginBtn'), 'click', function (e) {
+                LoginManager.login();
+            });
+            //检查登录态
+            LoginManager.checkLogin(function(userInfo){
+                //console.log("已登录");
+                //console.log("登录信息：",userInfo);
+            },function(){
+                console.log("未登录");
+            });
+            //注销
+            milo.addEvent(g("ptLogoutBtn"),"click",function(){
+                LoginManager.logout(
+                    {
+                        logoutCallback:function(){
+                            alert("已注销");
+                        }
+                    }
+                );
+            })
+        });
+    });
+
+    function TGDialogS(e){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.show({
+                id: e,
+                bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        });
+    }
+    function closeDialog(){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.hide();
+        });
+    }
+
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script>
+    TGMobileShare({
+        shareTitle:'边境入侵 捍卫荣耀', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'腾讯第一国战手游，由腾讯第一国战网游-御龙在天官方团队倾力打造，在手机端延续激情经典的国战战火。', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20191022invadebj' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+    //统计
+    var setSite = {
+        siteType:"a20191022invadebj",
+        pageType:"index",
+        pageName:"首页",
+        osact:0,
+        ingame:0,
+        stayTime:0
+    };
+    if(typeof(pgvMain)=='function')pgvMain();
+</script>
+</body>
+</html>

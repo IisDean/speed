@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="《王者荣耀》王者四周岁特别版本，王者模拟战,你从未玩过的全新模式" />
+<meta name="Keywords" content="王者荣耀,王者四周岁特别版本,英雄竞技手游,王者模拟战,新皮肤,新野怪,新装备" />
+<title>嗨！我邀请你-王者荣耀官方网站-腾讯游戏</title>
+<!-- 设计：CP | 重构：CP | 创建：2019/10/12 -->
+<script>
+    //屏幕适应
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            var html = document.documentElement;
+            var k =640;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+<style>
+/*reset*/
+html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {margin:0;padding:0;box-sizing: border-box;}
+body,html{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none; -webkit-user-select:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,li{list-style:none;}
+table{border-collapse:collapse;  border-spacing:0;}
+a{text-decoration:none;}
+input[type="text"], input[type="password"], select { -webkit-appearance: none;appearance:none; outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0); border-radius:0;box-sizing: border-box;}
+a:focus,a:active,a{outline:none;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+a{text-decoration:none;blr:expression(this.onFocus=this.blur());outline:none;}
+html{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a,button, input{ -webkit-tap-highlight-color: rgba(255,0,0,0); }
+em,i,b{font-style: normal;}
+fieldset,img{border:0;display:block;}
+img{ width: 100%;}
+.c:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
+.hh{display:block;text-indent:-999em;overflow:hidden;}
+.hide{width:0;height:0;overflow:hidden;display:none;}
+.pr{position: relative;}
+.pa{ position: absolute;}
+html{font-size:100px;}
+body,html{width: 100%;height:auto;}
+body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; background:#294e7b; font-size:0.18rem; color: #c2c2c2; position: relative; overflow-x: hidden;}
+.flex{display: flex;  display: -webkit-box;   display: -webkit-flex;  flex-flow: wrap;  -webkit-flex-flow: wrap;}
+/*public*/
+.wrap{ width: 100%; height: auto; overflow-x: hidden;}
+header{ background: url("ossweb-img/head.jpg") center top no-repeat; background-size:100% auto; width: 100%; height:6.66rem; position: relative; }
+section{ background: url("ossweb-img/bg.jpg") center top no-repeat; background-size:100% auto; width: 100%; height:auto; padding-bottom: .86rem; margin-top: -1px;}
+/*foot*/
+#afooter{ text-align:center; font-size:0.2rem; line-height:0.3rem; color: #9e9e9e;background:#0e0e0e; padding: 0.3rem 0;}
+#afooter .copyright span a,#footer .copyright span a:hover{ margin:0 0.06rem;}
+#gfooter{ background: #0e0e0e;}
+
+/**/
+.login-box{ text-align: center; width: 100%; position: absolute; left: 0; bottom: .26rem;}
+.login-box,.login-box a { color: #c2c2c2;}
+.slg{ width: 100%; position: absolute; left: 0; top: 3.56rem; z-index: 2;}
+.slg img{ width: 6.4rem; height: 2.54rem;}
+.tit{ background: url("ossweb-img/tit.png") no-repeat; background-size: 7.5rem auto; width: 6.4rem; height: .56rem; margin: 0 auto;  display: block; text-indent: -999em;}
+.tit1{ height: 1.22rem; background-position: center 0;}
+.tit2{  background-position: center -1.4rem;}
+.tit3{  background-position: center -2.1rem;}
+.tit4{  background-position: center -2.92rem;}
+.m-txt{text-align: center; line-height: .26rem; margin: .1rem auto;}
+.mod-bg{  width: 5.73rem; height: 3.37rem; background-repeat: no-repeat; background-size: 5.73rem auto; padding-top: .1rem; box-sizing: border-box; margin: 0 auto; position: relative;}
+.mod-bg img{ width: 5.55rem; height: auto; margin: 0 auto; }
+.main1 .mod-bg{ background-image: url("ossweb-img/s-bg1.png");  margin-bottom: .4rem;}
+
+/*nav-wrap*/
+.nav-wrap.navFix{ width: 100%; position: fixed; left: 0; bottom: 0;  z-index: 999;}
+.nav-height{ width: 100%; height: .76rem; margin: 0 auto; position: relative; z-index: 999; }
+.nav-wrap{width: 100%; text-align: center; font-size: 0; justify-content: center;}
+.comm{ width: 2.61rem; height: .76rem; line-height: .76rem; background: url("ossweb-img/btn-com.png") no-repeat; background-size: 2.61rem auto; font-size: .28rem;
+    color: #ffefd9; font-weight: bold; text-align: center; text-shadow: 0 0 .02rem #5b2b00; display: block;}
+.nav-wrap a{ margin: 0 .12rem;}
+.fh-fd{ background: url("ossweb-img/return.png") no-repeat; background-size: .52rem auto; width: .52rem; height: 1.16rem; position: fixed; z-index: 1001; right: .15rem; bottom: 1.6rem;}
+/*main2*/
+.main2,.main3,.main4{margin-top: .6rem;}
+.main2 .mod-bg{ background-image: url("ossweb-img/s-bg2.png"); height: 3.29rem; padding-top: .11rem; }
+.main3 .mod-bg{ background-image: url("ossweb-img/s-bg3.png"); height: 7.18rem; }
+.m3-img-box .img-after,.m3-img-box .img-before{position: absolute; left: 50%; margin-left: -2.775rem; bottom: .11rem; width: 5.55rem; height: 6.95rem; overflow: hidden;}
+.m3-img-box img{ height: 6.95rem;}
+.m3-img-box .img-before{ background: url("ossweb-img/s-img3_1.jpg") bottom center no-repeat; background-size:5.55rem auto; z-index: 2; }
+.m3-img-box .img-after{  background: url("ossweb-img/s-img3_2.jpg") bottom center no-repeat; background-size:5.55rem auto; }
+.main4 .mod-bg{ background-image: url("ossweb-img/s-bg4.png"); height: 3.51rem; }
+
+/*pop*/
+.pop{background:url("ossweb-img/popbg.png") no-repeat; background-size: 5.73rem auto;  position:relative; font-size:0.18rem;color:#a0bbe2;
+    width: 5.73rem; height: 4.36rem; text-align: center; display:none;  }
+.pop-con{ padding-top: .3rem;}
+.pop .btn-close{ background: url("ossweb-img/close.png") no-repeat; background-size: .6rem auto; position: absolute; width:0.6rem; height:0.6rem;  top:-.6rem; right:-0.12rem; z-index: 20;}
+.pop .dj-list{ justify-content: center;}
+.pop .dj-list li{ margin: 0 .06rem; background: url("ossweb-img/dj-bg.png") no-repeat; background-size: 1.6rem auto; width: 1.6rem; height: 1.43rem; position: relative; }
+.pop .dj-list li span{ line-height: .2rem; width: 1.24rem;  position: absolute; left: 50%; margin-left: -.62rem; bottom: .12rem;  }
+.ljlq-btn{margin: .36rem auto 0;}
+.pop .pop-tit1{width: 5.73rem; height: .62rem; background-position: -.86rem -3.59rem;}
+
+
+
+.progress-box{width: 5.55rem;height: .24rem; position: absolute; left: 50%; margin-left: -2.775rem; top: .67rem; z-index: 10;}
+.pro-jind,.progress{width: 5.55rem; height: .1rem; position: absolute; top: .07rem; left: 0; overflow: hidden;}
+.pro-jind{ background: url("ossweb-img/pro1.png") top right no-repeat; background-size: 5.55rem auto; }
+.progress{ background: url("ossweb-img/pro2.png") top right no-repeat; background-size: 5.55rem auto; width: auto; height: .1rem; top: 0; }
+.pro-cir{  background: url("ossweb-img/pro-cir.png") no-repeat; background-size: .24rem auto;width: .24rem;height: .24rem; position: absolute;top: 0;left: -1%;}
+
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header id="header">
+        <div class="slg">
+            <img src="ossweb-img/slg.png" alt="嗨！我邀请你" />
+        </div>
+
+        <div class="login-box" style="display: none">
+            <!-- 登录信息 -->
+            <div id="ams_loginbar">
+                <div id="unlogin">
+                    亲爱的玩家，请【<a id="ptLoginBtn" href="javascript:;" style="cursor: pointer;">登录</a>】
+                </div>
+                <div id="logined" style="display: none;">
+                    <span>欢迎您，</span>
+                    <span id="userinfo"></span>
+                    【<a id="ptLogoutBtn" href="javascript:;" style="cursor: pointer;">注销</a>】
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main1">
+            <h2 class="tit1 tit hh">王者模拟战 你从未玩过的全新模式</h2>
+            <p class="m-txt">熟悉的英雄，全新的战斗模式，英雄升星免费体验稀有皮肤<br>自主搭配阵容，一键摆放，自动战斗，下棋也能上王者</p>
+            <div class="mod-bg">
+                <img src="ossweb-img/s-img1.jpg" alt="" />
+            </div>
+            <div class="nav-height" id="navHeight">
+                <div class="nav-wrap flex" id="nav-wrap">
+                    <a href="javascript:;" class="start-btn comm" ontouchend="PTTSendClick('btn','start','立即上手')">立即上手</a>
+                    <a href="javascript:;" class="lq-btn comm" ontouchend="PTTSendClick('btn','lq','领取礼包')">领取礼包</a>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <h2 class="tit2 tit hh">新皮肤 新野怪 新装备</h2>
+            <p class="m-txt">更多乐趣，更多战术选择</p>
+            <div class="mod-bg">
+                <img src="ossweb-img/s-img2.jpg" alt="" />
+            </div>
+        </div>
+        <div class="main3" id="main3">
+            <h2 class="tit3 tit hh">探索王者新赛季</h2>
+            <p class="m-txt">分路调整!战坦VS战坦，射手VS射手，同职业对抗更爽快<br>新赛季主题！全新王者印记，集段位积分升级赛季皮肤标签</p>
+            <div class="mod-bg" id="mod3">
+                <!-- 进度-->
+                <div class="progress-box">
+                    <div class="pro-jind">
+                        <div class="progress" style="width: 12%;"></div>
+                    </div>
+                    <div class="pro-cir" style="left: 9%;"></div>
+                </div>
+               <!-- 峡谷图-->
+               <div class="m3-img-box">
+                   <div class="img-before" style="height:88%;"></div>
+                   <div class="img-after"></div>
+               </div>
+            </div>
+        </div>
+        <div class="main4">
+            <h2 class="tit4 tit hh">王者荣耀峡谷新CG片《盟友》</h2>
+            <p class="m-txt">李白强势出击，一挑三毫无压力？铠终极变身，峡谷大战一触即发！</p>
+            <div class="mod-bg">
+                <img src="ossweb-img/s-img4.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- 返回顶部-->
+    <a href="javascript:;" class="fh-fd" id="fh-fd"></a>
+
+
+    <!-- 以下为弹窗部分-->
+    <!--礼包-->
+    <div class="pop" id="pop-1">
+        <a href="javascript:popHide();" class="btn-close hh">关闭</a>
+        <div class="pop-con">
+            <h3 class="pop-tit1 tit hh">送你礼包 轻松上分</h3>
+            <p class="m-txt">玩家登录游戏即可领取礼包，单用户即领一份</p>
+            <ul class="dj-list flex">
+                <li>
+                    <img src="ossweb-img/dj1.png" alt="" /><span>阿珂-节奏热浪x1天</span>
+                </li>
+                <li>
+                    <img src="ossweb-img/dj2.png" alt="" /><span>阿珂-节奏热浪x1天</span>
+                </li>
+                <li>
+                    <img src="ossweb-img/dj3.png" alt="" /><span>钻石x18</span>
+                </li>
+            </ul>
+            <a href="javascript:;" class="ljlq-btn comm" ontouchend="PTTSendClick('btn','ljlq','立即领取')">立即领取</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+
+    //定位
+    $(window).on('scroll',function(){
+        var t = $(this).scrollTop() + $(window).height();
+        var initH = $('#mod3').offset().top;
+        var boxH = $('#mod3').height();
+        if(t >= initH && t <= initH + boxH ){
+            var scrollH = t-initH;
+            console.log(parseInt(scrollH/boxH*100));
+        }
+    });
+
+    // 返回顶部
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop >100) {
+            document.getElementById("fh-fd").style.display = "block";
+        } else {
+            document.getElementById("fh-fd").style.display = "none";
+        }
+    };
+    $(".fh-fd").on('click',function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+
+
+
+
+    //popShow('pop-1');
+
+    //启动游戏双端识别
+    if(isWeiXin()){
+        $(".start-btn").attr("href","https://game.weixin.qq.com/cgi-bin/h5/static/gamecenter/detail.html?appid=wx95a3a4d7c627e07d&ssid=39&autoinstall=1&type=1#wechat_redirect");
+    }else if(isQQ()){
+        $(".start-btn").attr("href","https://speed.gamecenter.qq.com/pushgame/v1/detail?appid=1104466820&_wv=2164260896&_wwv=448&autodownload=1&autolaunch=1&autosubscribe=1");
+    }
+
+
+    //判断微信
+    // var ua = window.navigator.userAgent.toLowerCase();
+    // function isWeiXin(){
+    //     if (ua.match(/MicroMessenger/i) == "micromessenger") {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    //
+    // //判断打开页面的客户端是否为QQ
+    // function isQQ(){
+    //     var sUserAgent = navigator.userAgent;
+    //     var REGEXP_IOS_QQ = new RegExp("(iPad|iPhone|iPod).*? (IPad)?QQ\\/([\\d\\.]+)");
+    //     var REGEXP_ANDROID_QQ =  new RegExp("\\bV1_AND_SQI?_([\\d\\.]+)(.*? QQ\\/([\\d\\.]+))?","ig");
+    //     //判断是否是IOSQQ 或者 AndroidQQ打开
+    //     var isIphoneOs_QQ = REGEXP_IOS_QQ.test(sUserAgent) ;
+    //     var isAndroid_QQ = REGEXP_ANDROID_QQ.test(sUserAgent);
+    //
+    //     if (isIphoneOs_QQ ||isAndroid_QQ) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+
+    //登录
+    milo.ready(function () {
+        need("biz.login", function (LoginManager) {
+            LoginManager.init({
+            });
+            //QQ登录
+            milo.addEvent(g('ptLoginBtn'), 'click', function (e) {
+                LoginManager.login();
+            });
+            //检查登录态
+            LoginManager.checkLogin(function(userInfo){
+                //console.log("已登录");
+                //console.log("登录信息：",userInfo);
+            },function(){
+                console.log("未登录");
+            });
+            //注销
+            milo.addEvent(g("ptLogoutBtn"),"click",function(){
+                LoginManager.logout(
+                    {
+                        logoutCallback:function(){
+                            alert("已注销");
+                        }
+                    }
+                );
+            })
+        });
+    });
+
+    //弹窗
+    var popIsShow = false;
+    var popDom = null;
+    function popShow(id) {
+        popHide();
+        var p = $('#'+id);
+        popDom = p;
+        if (p) {
+            p.show().css({
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 9998
+            });
+            p.attr('for', 'pop');
+            popIsShow = true;
+            if ($('[for="' + id + '"]').length >= 1) return;
+            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:9997;background:rgba(0,0,0,0.8);"></div>');
+        }
+    }
+    function popHide() {
+        $('[for="pop"]').hide().attr('style', '');
+        $('[name="overlay"]').remove();
+    }
+    window.addEventListener("resize", function () {
+        if (!popIsShow)
+            return;
+        setTimeout(function () {
+            popDom.css({
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 9998
+            });
+        }, 400)
+    });
+
+
+    //分享
+    TGMobileShare({
+        shareTitle:'《王者荣耀》王者四周岁特别版本',
+        shareDesc:'王者模拟战,你从未玩过的全新模式',
+        shareImgUrl:'ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'',
+        actName:'a20191012edition'
+    });
+
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20191012edition", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+        pageName:"首页", //必填项:页面中文名
+        project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+        osact:0 //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
+    };
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

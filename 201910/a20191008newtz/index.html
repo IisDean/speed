@@ -54,8 +54,9 @@
         /*.top-l .hdlogo{ background: url("//game.gtimg.cn/images/nba2kx/cp/a20190916gift/logo2.png") no-repeat;  width: 118px;  height: 44px;  position: absolute;  left: 240px;  top: 9px;  }*/
         .top-l .hdlogo { width: 187px;  height: 42px;   position: absolute;  left: 230px; top: 9px; display: block;  background: url("./ossweb-img/logo_wegame.png") no-repeat;  }
         /*public*/
-        .ost_box{min-width: 1000px;}
-        body{padding-top:42px;background:#0e0e0e;color:#fff;min-width:1000px; font-size: 16px; }
+        html,body {position: relative;min-width: 1200px;}
+        .ost_box{min-width: 1200px !important;}
+        body{padding-top:42px;background:#0e0e0e;color:#fff; font-size: 16px; }
         .mid{ width:1000px; margin:0 auto; font-family:'\5FAE\8F6F\96C5\9ED1'; text-align: center;}
         .head-a a:hover,.box .lqjl-btn:hover{filter: brightness(1.1);-webkit-filter: brightness(1.1);}
         /*** footer  **/
@@ -130,10 +131,137 @@
             background-image: url("./ossweb-img/bg1.jpg");
         }
         .title-wrap {
-            position: relative;
-            top: 135px;
+            top: 134px;
+            left: 278px;
+            width: 653px;
+            -webkit-animation: slideInUp .5s ease both;
+            -moz-animation: slideInUp .5s ease both;
+            -ms-animation: slideInUp .5s ease both;
+            -o-animation: slideInUp .5s ease both;
+            animation: slideInUp .5s ease both;
+            opacity: 0;
+        }
+        @keyframes slideInDown {
+            0% {
+                transform: translate3d(0,-100%,0);
+                visibility: visible;
+            }
+            100% {
+                transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes slideInDown {
+            0% {
+                -webkit-transform: translate3d(0,-100%,0);
+                visibility: visible;
+            }
+            100% {
+                -webkit-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes slideInDown {
+            0% {
+                -moz-transform: translate3d(0,-100%,0);
+                visibility: visible;
+            }
+            100% {
+                -moz-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-ms-keyframes slideInDown {
+            0% {
+                -ms-transform: translate3d(0,-100%,0);
+                visibility: visible;
+            }
+            100% {
+                -ms-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-o-keyframes slideInDown {
+            0% {
+                -o-transform: translate3d(0,-100%,0);
+                visibility: visible;
+            }
+            100% {
+                -o-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        .slogan-icon-1 {
+            top: 210px;
+            left: 305px;
+            width: 564px;
+            -webkit-animation: slideInDown .5s ease both 1s;
+            -moz-animation: slideInDown .5s ease both 1s;
+            -ms-animation: slideInDown .5s ease both 1s;
+            -o-animation: slideInDown .5s ease both 1s;
+            animation: slideInDown .5s ease both 1s;
+            opacity: 0;
+        }
+        .slogan-icon-2 {
+            top: 469px;
             left: 262px;
             width: 675px;
+            -webkit-animation: slideInUp .6s ease both .6s;
+            -moz-animation: slideInUp .6s ease both .6s;
+            -ms-animation: slideInUp .6s ease both .6s;
+            -o-animation: slideInUp .6s ease both .6s;
+            animation: slideInUp .6s ease both .6s;
+            opacity: 0;
+        }
+        @keyframes slideInUp {
+            0% {
+                transform: translate3d(0,100%,0);
+                visibility: visible;
+            }
+            100% {
+                transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes slideInUp {
+            0% {
+                -webkit-transform: translate3d(0,100%,0);
+                visibility: visible;
+            }
+            100% {
+                -webkit-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes slideInUp {
+            0% {
+                -moz-transform: translate3d(0,100%,0);
+                visibility: visible;
+            }
+            100% {
+                -moz-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-ms-keyframes slideInUp {
+            0% {
+                -ms-transform: translate3d(0,100%,0);
+                visibility: visible;
+            }
+            100% {
+                -ms-transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+        @-o-keyframes slideInUp {
+            0% {
+                -o-transform: translate3d(0,100%,0);
+                visibility: visible;
+            }
+            100% {
+                -o-transform: translateZ(0);
+                opacity: 1;
+            }
         }
         .bg1-sub {
             width: 100%;
@@ -178,6 +306,11 @@
         .tz-container1 {
             margin: 0 auto;
             width: 1036px;
+        }
+        .person-icon1,
+        .person-icon2 {
+            position: relative;
+            z-index: 99;
         }
         .person-icon1 {
             margin: 0 -16px;
@@ -474,8 +607,14 @@
     <!-- 追风少年 -->
     <div class="bg bg1">
         <div class="wrap">
-            <div class="full-img title-wrap">
-                <img src="./ossweb-img/title.png" width="675" height="532" alt="追风少年">
+            <div class="absolute full-img slogan-icon-1">
+                <img src="./ossweb-img/title_sub2.png" width="564" height="456" alt="slogan">
+            </div>
+            <div class="absolute full-img title-wrap">
+                <img src="./ossweb-img/title.png" width="653" height="433" alt="追风少年">
+            </div>
+            <div class="absolute full-img slogan-icon-2">
+                <img src="./ossweb-img/title_sub.png" width="675" height="111" alt="追风少年">
             </div>
         </div>
     </div>
@@ -663,8 +802,8 @@
                 </div>
             </div>
             <div class="bg block-wrap block-wrap3">
-                <p class="description-text">
-                    自建球员还可穿戴专属套装附件，注意NBA球员不可穿着以下附件。<br/>
+                <p class="description-text" style="text-align: right;">
+                    自建球员还可穿戴专属套装附件，注意NBA球员不可穿着以下附件<br/>
                     更新后-<span class="violet-text">11月x日23:59</span>游戏内商城出售
                 </p>
                 <div style="position: relative;">
@@ -800,17 +939,20 @@
     });
 
     //放大
+    var $zoomWrap = null;
     $(".fz-show-list li").hover(function() {
         var index = $(this).index();
-        $(this).parent().next('.zoom-container').show().find('li').eq(index).toggle();
+        $zoomWrap = $(this).parent().next('.zoom-container');
+        $zoomWrap.show().find('li').eq(index).show();
+    }, function(){
+        $zoomWrap.hide().find('li').hide();
     });
-
     //附件放大
     $(".fujian-list li .get-detail").hover(function(){
         var $this = $(this).parents('li');
         var index = $this.index();
-        var $zoomWrap = $this.parent().next('.zoom-container');
-        $zoomWrap.show().find('li').eq(index).toggle();
+        $zoomWrap = $this.parent().next('.zoom-container');
+        $zoomWrap.show().find('li').eq(index).show();
         var top = $this.position().top + $this.height();
         var left = $this.position().left;
         if($this.attr("data-type") == '1'){
@@ -820,6 +962,12 @@
             'top': top+'px',
             'left': left+'px'
         });
+    }, function(){
+        $zoomWrap.hide().find('li').hide();
+    });
+
+    $("body").on("touchstart", function(){
+        $(".zoom-container:visible").hide().find('li').hide();
     });
 
     //二维码

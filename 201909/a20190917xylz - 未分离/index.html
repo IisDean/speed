@@ -12,7 +12,7 @@
     <meta name="Keywords" content="雪鹰领主，超凡集结 预约开启，腾讯次时代开放战斗手游。全新开放战斗手游，精美画质 真实世界。" >
     <title>雪鹰领主预约开启</title>
     <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="ossweb-img/css/index.css">
     <script>
         //屏幕适应
         (function (win, doc) {
@@ -36,7 +36,7 @@
 <body>
 <div class="wrapper">
     <div class="head pr">
-        <a href="javascript:;"  class="icons btn order-btn scale-line t" ontouchend="PTTSendClick('btn','game-order','立即预约')">立即预约</a>
+        <a href="javascript:;"  class="icons btn order-btn scale-line t" ontouchend="PTTSendClick('btn','game-order','参与测试')">参与测试</a>
     </div>
     <div class="wrapper-box">
         <!--  预约即可领取专属预约礼包  -->
@@ -62,6 +62,7 @@
                     <p class="text-center gift-text">绑银<br/>x10000</p>
                 </li>
             </ul>
+            <a href="javascript:;"  class="icons btn get-pize-btn scale-line t" ontouchend="PTTSendClick('btn','order-getprize','预约领奖')">立即预约</a>
         </div>
         <!--  精美画质 真实世界  -->
         <div class="wrap wrap2">
@@ -113,7 +114,7 @@
         <div class="wrap wrap5">
             <h2 class="icons title title5 t">活动规则</h2>
             <ul>
-                <li class="rule-text">1、活动时间：2019年9月23日-11月23日；</li>
+                <li class="rule-text">1、活动时间：10月17日-11月6日，如时间有调整，请以官网公告信息为准。</li>
                 <li class="rule-text">2、活动期间，每位用户成功预约即可领取预约礼包，单用户限领1次。</li>
                 <li class="rule-text">3、预约礼包将在游戏不删档后15个工作日内发放。</li>
             </ul>
@@ -158,6 +159,16 @@
         player.pause();
         player.seekTo(0);
     }
+
+    //参与测试
+    $(".order-btn").on("click", function(){
+        alert('敬请期待！');
+    });
+
+    //预约领奖
+    $(".get-pize-btn").on("click", function(){
+        alert('敬请期待！');
+    });
 
     function TGDialogS(e){
         // 利用milo库引入dialog组件

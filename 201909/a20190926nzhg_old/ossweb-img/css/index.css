@@ -279,7 +279,7 @@ body::-webkit-scrollbar { width: 0 !important;-ms-overflow-style: none;overflow:
     bottom: 70px;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: -1;
 }
 .tips-icon {
     position: relative;
@@ -386,7 +386,7 @@ body::-webkit-scrollbar { width: 0 !important;-ms-overflow-style: none;overflow:
     background-position: 0 -251px;
 }
 .progress-container {
-    margin: 70px auto 0;
+    margin: 85px auto 0;
     padding: 31px 9px 8px 6px;
     box-sizing: border-box;
     width: 1151px;
@@ -593,6 +593,13 @@ body::-webkit-scrollbar { width: 0 !important;-ms-overflow-style: none;overflow:
     top: -180px;
     right: -55px;
     z-index: 1;
+}
+.news-title-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #ffe419;
 }
 
 /*.part .move-up,.part .move-right,.part .move-left,.moveRight,.part .move-down {*/
