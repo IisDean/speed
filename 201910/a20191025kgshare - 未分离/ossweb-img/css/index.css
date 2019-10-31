@@ -33,7 +33,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
 #afooter .copyright span a,#footer .copyright span a:hover{ margin:0 0.06rem;}
 #gfooter{ background: #0e0e0e;}
 #afooter p {line-height: .3rem;font-size: .12rem;}
-.ui-icon {display: block;background: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/icons.png")no-repeat;background-size: 6.98rem auto;}
+.ui-icon {display: block;background: url("../icons.png")no-repeat;background-size: 6.98rem auto;}
 .bg {background-position: top center;background-size: 100% auto;background-repeat: no-repeat;}
 .pr {position: relative;}
 .absolute {position: absolute;}
@@ -75,7 +75,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     height: 4.22rem;
 }
 .video-wrap {
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/video_bg.jpg");
+    background-image: url("../video_bg.jpg");
 }
 .danmu-wrap {
     top: 0;
@@ -97,7 +97,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
 .user-plank-wrap {
     width: 100%;
     height: 1.36rem;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_plank_bg.png");
+    background-image: url("../user_plank_bg.png");
 }
 .user-head {
     margin-top: .18rem;
@@ -106,7 +106,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     height: 1rem;
     border-radius: 99px;
     border: 1px solid #4d4b99;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png");
+    background-image: url("../user_default.png");
 }
 .user-head,
 .user-head div {
@@ -167,7 +167,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
 .vote-wrap {
     width: 100%;
     height: 2.33rem;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/vote_plank_bg.jpg");
+    background-image: url("../vote_plank_bg.jpg");
     overflow: hidden;
 }
 .vote-tips-text {
@@ -247,7 +247,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_bg.png");
+    background-image: url("../song_bg.png");
     background-size: 100% auto;
     background-position: top center;
     pointer-events: none;
@@ -424,7 +424,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     right: 0;
     width: 1.27rem;
     height: 3.66rem;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/inset.png");
+    background-image: url("../inset.png");
     pointer-events: none;
 }
 
@@ -432,7 +432,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
 .pop {
     width: 5.41rem;
     height: 3.35rem;
-    background-image: url("//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/pop_bg.png");
+    background-image: url("../pop_bg.png");
     outline: none;
 }
 .pop-title-text {
