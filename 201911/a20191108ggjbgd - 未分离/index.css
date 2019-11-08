@@ -1,0 +1,237 @@
+/*reset*/
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+body{padding-top:42px}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}/*public*/
+html,body {position: relative;min-width: 1200px;}
+body{padding-top:42px;background:#0e0e0e;color:#fff;font-size: 16px; }
+.wap {left: 0;right: 0;margin: 0 auto;}
+.wap a:link,.wap a:visited{text-decoration: none;color:#e33e04;}.wap a:hover,.wap a:active{text-decoration:none;color:#ff4200;}
+.top-nav a:link,.top-nav a:visited{ color:#fff;}.top-nav a:hover,.top-nav a:active{ color:#95ca07;}
+.none{ display:none;}.dis-il{ display:inline-block;}.p-a{ position:absolute;}.p-r{ position:relative;}
+.sprite-common{ background-image:url(http://game.gtimg.cn/images/codo/act/sprites_common_black_1.png);background-repeat:no-repeat;}
+/* LOGO+头部按钮 */
+.top-bar{width:970px; margin:0 auto; text-align:right; height:38px; position:relative; z-index:100; background-position:380px 0;}
+.top-bar a{ width:150px; height:35px; text-indent:58px; text-align:left; font-size:14px;font-weight:bold; line-height:32px; }.top-bar a.wb{ width:137px;}
+.top-bar .logo{width:157px;height:71px;background-position:0 -38px;left:6px;top:10px;z-index:200; margin:0; padding:0;}
+.top-bar a:link,.top-bar a:visited{ color:#fff;}.top-bar a:hover,.top-bar a:active{ color:#109ddf;}
+/*** footer  **/
+#afooter{min-width:1200px; text-align:center; font-size:12px; line-height:20px;padding: 20px 0; color: #6a6a6a;background:#0e0e0e;}
+#afooter .copyright span a,#footer .copyright span a:hover{ margin:0 5px;}
+#afooter .notice{ display:none;}
+#afooter a{ color: #6a6a6a;}
+#afooter p {line-height: 20px;}
+.c:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
+.hh{display:block;text-indent:-999em;overflow:hidden;}
+.hide{width:0;height:0;overflow:hidden;display:none;}
+.pr{position: relative;}
+.pa{ position: absolute;}
+.ui-icon {display: block;background: url("../icons.png")no-repeat;background-size: 6.42rem auto;}
+.bg {background-position: top center;background-size: auto 100%;background-repeat: no-repeat;}
+.pr {position: relative;}
+.absolute {position: absolute;}
+.ab-center {position: absolute;top: 50%;left: 0;right: 0;margin: 0 auto;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.t {display: block;text-indent: -9999em;overflow: hidden;}
+.mr-0 {margin: 0 !important;}
+.btn {display: block;}
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+.text-center {text-align: center;}
+.text-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.luban-template-bg {
+    display: none;
+}
+.luban-template {
+    margin: 0;
+}
+.lb-tmp-1 {
+    position: relative;
+    height: 870px;
+}
+.lb-tmp-1:before,
+.lb-tmp-1:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: top center;
+}
+.lb-tmp-1:before {
+    top: 0;
+    height: 450px;
+    background-image: url("ossweb-img/bg1_top.jpg");
+}
+.lb-tmp-1:after {
+    bottom: 0;
+    height: 420px;
+    background-image: url("ossweb-img/bg1_bottom.jpg");
+}
+.luban-template-45 {
+    z-index: 1;
+}
+.lb-tmp-2 {
+    height: 933px;
+    background-image: url("ossweb-img/bg2.jpg");
+    background-position: top center;
+}
+.lb-tmp-3 {
+    height: 737px;
+    background-image: url("ossweb-img/bg3.jpg");
+    background-position: top center;
+}
+.lb-tmp-4 {
+    height: 936px;
+    background-image: url("ossweb-img/bg4.jpg");
+    background-position: top center;
+}
+.luban-template-45 {
+    height: 100%;
+}
+.luban-template-45 .btns>a {
+
+}
+.luban-button.head-btn {
+    width: 272px;
+    height: 58px;
+}
+.luban-button.luban-button-big, .luban-button.luban-button-big span {
+    background-color: transparent;
+}
+.luban-button.luban-button-big span {
+    width: 100%;
+    height: 100%;
+}
+.logo-icon {
+    top: 35px;
+    left: 20px;
+    width: 158px;
+}
+.slogan-icon {
+    top: 540px;
+    left: 52px;
+    width: 894px;
+}
+.luban-template-45 .btns {
+    bottom: 60px;
+}
+.login-container {
+    top: 855px;
+    z-index: 1;
+}
+.login-container .luban-color-text,
+.login-container .luban-color-text a {
+    font-size: 16px;
+    color: #fff;
+}
+.title-icon-1 {
+    margin: 78px auto 0 !important;
+    width: 433px;
+    height: 55px;
+    background-image: url("ossweb-img/title_icon_1.png");
+}
+.title-icon-2 {
+    margin: 93px auto 0 !important;
+    width: 494px;
+    height: 55px;
+    background-image: url("ossweb-img/title_icon_2.png");
+}
+.title-icon-3 {
+    margin: 100px auto 0 !important;
+    width: 494px;
+    height: 55px;
+    background-image: url("ossweb-img/title_icon_3.png");
+}
+.luban-text.description-text {
+    font-size: 16px;
+    color: #fff;
+}
+.yellow-text {
+    color: #eebd48;
+}
+.img1.prize-wrap-1 {
+    margin: 22px auto 0;
+    width: 960px;
+    height: auto;
+}
+.luban-button.extract-btn {
+    width: 262px;
+    height: 79px;
+}
+.luban-template-71 .template-box,
+.luban-template-71 .template-box .template-box-item {
+    height: auto;
+}
+.luban-template-71 .luban-button-mini {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 12px;
+}
+.line-fenge {
+    margin: 20px auto 0;
+    width: 960px;
+}
+.gg-num {
+    top: 2840px;
+    z-index: 1;
+}
+.luban-template-71 .template-boxs {
+    margin-top: 50px;
+}
+.theme1 .luban-color-text {
+    color: #fff;
+}
+.theme1 .luban-color-text .luban-jf {
+    color: #f6d626;
+}
+.luban-template-71 .template-box {
+    margin: 5px 20px;
+    width: 209px;
+}
+.template-box-item .duih-btn {
+    width: 205px;
+    height: 60px;
+    background-color: transparent;
+}
+.luban-template-71 .template-box {
+    margin: 5px 20px 35px;
+}
+.grey-cover {
+    opacity: 0;
+}
+.template-box-item .btn-zhih {
+    background-image: url("ossweb-img/duihuan_btn_gray.png");
+    background-size: 100%;
+}
+.btn-zhih .luban-button-bg {
+    opacity: 0;
+}
+.luban-button {
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.luban-button:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+    filter: alpha(opacity=90)\0;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+}
+.extract-btn.btn-zhih {
+    background-image: url("ossweb-img/extract_btn_gray.png");
+    background-size: 100%;
+}
