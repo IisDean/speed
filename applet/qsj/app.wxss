@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+} 
+.border_yellow{
+  box-shadow: 0rpx 6rpx 0rpx #ffe4b1, 0rpx 6rpx 18rpx #888888;
+}
+.border_pink{
+  box-shadow: 0rpx 6rpx 0rpx #ffbab1, 0rpx 6rpx 18rpx #888888;
+}
+.border_green{
+  box-shadow: 0rpx 6rpx 0rpx #b1ffba, 0rpx 6rpx 18rpx #888888;
+}
+.border_blue{
+  box-shadow: 0rpx 6rpx 0rpx #b1dbff, 0rpx 6rpx 18rpx #888888;
+}

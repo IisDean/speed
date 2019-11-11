@@ -1,0 +1,74 @@
+<!--pages/send/send.wxml-->
+<view class='send'>
+  <bg></bg>
+  <view class='message' catchtap='sendFun'>
+    <image class='msg_bg' src='../../assets/images/msg.png'></image>
+    <view class='msg_cont'>
+      <image class='msg_icon' src='../../assets/images/fabiao.png'></image>
+      发表
+    </view>
+  </view>
+  <view class='form'>
+    <view class='form_block' catchtap='choseBlock' >
+      <view class='left' >
+        <view class='left_item1'>
+        选择板块
+        </view>
+        <view class='left_item2'>
+        选择合适的板块会让更多人看到哦
+        </view>
+      </view>
+      <image src='../../assets/images/right_arr.png' class='right_arr'></image>
+    </view>
+    <view class='form_title'>
+      <input class='' placeholder='标题（20字以内）'></input>
+    </view>
+    <view>
+      <!-- <editor id="editor" class="ql-container"  placeholder="内容" showImgSize showImgResize bindstatuschange="onStatusChange" bindready="onEditorReady">
+      </editor> -->
+      <textarea class="ql-container" placeholder="内容"></textarea>
+    </view>
+  </view> 
+  <view class='footer'>
+  
+    <view class='upload_list' >
+      <view  class='upload_btn' wx:if='{{imgSrc.length > 0}}' wx:for="{{imgSrc}}" wx:key="item">
+        
+        <image src='{{item}}' mode='aspectFill' class="upload_img"></image>
+        <view class='close' bindtap="delImg" data-idx='{{index}}'>
+          <image src='../../assets/images/close_w.png'></image>
+        </view>
+      </view>
+      
+      <view class='upload' wx:if='{{type=="img" && imgSrc.length != 9}}'>
+        <image src='../../assets/images/upload.png' class='upload_btn' bindtap="insertImage"></image>
+      </view>
+    </view>
+    <view class='upload_video' wx:if='{{type=="video"}}'>
+      <view class='left'>视频链接</view>
+      <textarea class='right'></textarea>
+    </view>
+    <view class='tool_bar'>
+      <view class='tool'>
+        <image class='tool_icon' src='../../assets/images/idit_icon2.png' catchtap='showExpressionFn' wx:if='{{type=="img"}}'></image>
+      </view>
+    
+    </view>
+    <view class='expression' wx:if="{{showExpression}}">
+      <image wx:for="{{emoticon}}" wx:key="item" src='{{item}}' data-imgURL='{{item}}' class="expression_item" catchtap='addExpression'></image>
+    </view>
+  </view>
+  <view class='pop' wx:if="{{showFlag}}">
+    <view class='pop_cont'>
+      <view class='pop_cancel'  catchtap='hidePop'>
+        <image src='../../assets/images/close_w.png' class='close_icon'></image>
+      </view>
+      <view class='pop_title'>
+        发表{{successFlag?"成功":"失败"}}
+      </view>
+    
+    </view>
+  </view>
+  
+
+</view>

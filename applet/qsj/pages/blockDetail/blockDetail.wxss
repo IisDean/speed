@@ -1,0 +1,130 @@
+/* pages/blockDetail/blockDetail.wxss */
+.head{
+  display: flex;
+  background: #fff;
+  font-size:28rpx;
+  color: #15273d;
+  align-items: center;
+  height: 160rpx;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+}
+.block_name{
+  font-size:38rpx;
+  font-weight: bold;
+}
+.right{
+  color: #fac110;
+  border: 2px solid #fac110;
+  border-radius: 50rpx;
+  height: 45rpx;
+  width: 130rpx;
+  text-align: center;
+}
+.tab_title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  padding: 0rpx 20rpx;
+  margin-top: 20rpx;
+}
+.title_item{
+  width:170rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background: #fff;
+  border-radius: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #15273d;
+}
+.title_item:first-child{
+}
+.title_item.active{
+  background: #fac110;
+  color: #fff;
+}
+.message{
+  position: fixed;
+  right: 0;
+  width: 162rpx;
+  height: 70rpx;
+  bottom:60rpx;
+  z-index: 2;
+}
+.msg_bg{
+  width: 162rpx;
+  height: 70rpx;
+}
+.msg_cont{
+  position: absolute;
+  font-size:30rpx;
+  color: #fff;
+  width: 162rpx;
+  height: 70rpx;
+  top:0;
+  line-height: 70rpx;
+  text-align: center;
+}
+.msg_icon{
+  width: 41rpx;
+  height: 41rpx;
+  vertical-align:middle;
+  margin-right:10rpx;
+  margin-top:-3rpx;
+}
+.send_post{
+  padding: 0 20rpx;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  box-shadow: 0rpx -6rpx 0rpx #b1dbff;
+  padding: 30rpx 0 120rpx;
+}
+.send_post .pop_cancel{
+  position: absolute;
+  width: 140rpx;
+  height: 140rpx;
+  right: -70rpx;
+  top:-70rpx;
+  border-radius: 50%;
+  background: #40a4fe;
+}
+.send_post .close_icon{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  bottom:30rpx;
+  left: 30rpx;
+}
+.send_post .send_type{
+  display: flex;
+  
+}
+.send_post .send_item{
+  width:50%;
+  text-align: center;
+}
+.send_post .send_icon{
+  width: 84rpx;
+  height: 75rpx;
+  display: block;
+  margin: 0 auto 20rpx;
+}
+.send_post.hide_pop{
+  bottom: -350rpx;
+  transition: bottom 0.3s;
+}
+.send_post.show_pop{
+  bottom: 0rpx;
+  transition: bottom 0.3s;
+}

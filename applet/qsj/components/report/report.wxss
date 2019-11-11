@@ -1,0 +1,108 @@
+.report{
+  padding: 0 20rpx;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mask{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: transparent;
+}
+.report_box{
+  background: #fff;
+}
+.report_item{
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  box-shadow: 0rpx -6rpx 0rpx #b1dbff;
+  text-align: center;
+  padding: 0rpx 42rpx;
+  font-size:40rpx;
+  transition: bottom 0.3s;
+}
+.report_item .report_title{
+  padding: 20rpx;
+  color: #a6aaaf;
+  font-size:24rpx;
+}
+.report_item .report_list_item{
+  padding: 20rpx 0;
+  border-top:1rpx solid #ddd;
+}
+.report_item2{
+  font-weight: bold;
+  padding-bottom: 25rpx;
+  margin-top: 20rpx;
+}
+.report_item2 .cancel{
+  padding: 20rpx 0;
+  border-bottom:1rpx solid #ddd;
+}
+.report.hide_report{
+  bottom: -550rpx;
+  transition: bottom 0.3s;
+}
+.report.show_report{
+  bottom: 0rpx;
+  transition: bottom 0.3s;
+}
+.pop{
+  position: fixed;
+  width:585rpx;
+  height:228rpx;
+  background: #fff;
+  overflow: hidden;
+  top:20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20rpx;
+ box-shadow:  0rpx 6rpx 18rpx #ddd;
+}
+.pop .pop_cancel{
+  position: absolute;
+  width: 140rpx;
+  height: 140rpx;
+  right: -70rpx;
+  top:-70rpx;
+  border-radius: 50%;
+  background: #40a4fe;
+}
+.pop .close_icon{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  bottom:30rpx;
+  left: 30rpx;
+ 
+}
+.pop .pop_title{
+  font-size: 38rpx;
+  text-align: center;
+  padding: 40rpx
+}
+.pop .btns{
+  font-size:34rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90rpx;
+}
+.pop .btns .btn{
+  width:140rpx;
+  height: 58rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
+.pop .btns .can_btn{
+  background: #d1d5d9;
+}
+.pop .btns .com_btn{
+  background: #40a4fe;
+}

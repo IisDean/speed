@@ -1,0 +1,43 @@
+<!--pages/edit/edit.wxml-->
+<view class='edit_page'>
+  <bg></bg>
+  <view class='edit_list'>
+    <view class='edit_item'>
+      <view class=''>头像</view>
+      <view class='right_item'>
+        <image src='{{avatar}}' class='avatar' catchtap='chooseImage'></image>
+        <image src='../../assets/images/right_arr.png' class='right_arr'></image>
+      </view>
+    </view>
+    <view class='edit_item'>
+      <view class=''>社区昵称</view>
+      <view class='right_item'>
+        <input  value="{{nick_name}}" >
+        </input>
+        <image src='../../assets/images/right_arr.png' class='right_arr' ></image>
+      </view>
+    </view>
+    <view class='edit_item'>
+      <view class=''>游戏区服</view>
+      <view class='right_item'>
+      <picker bindchange="bindPickerChange" value="{{item}}" range="{{array}}">
+        <view class="picker">
+         {{qf}}
+        </view>
+      </picker>
+        <image src='../../assets/images/right_arr.png' class='right_arr' ></image>
+      </view>
+    </view>
+    <view class='edit_item'>
+      <view class=''>游戏ID</view>
+      <view class='right_item'>
+      <picker bindchange="bindPickerName" value="{{item}}" range="{{id_arr}}">
+        <view class="picker">
+         {{yx_id}}
+        </view>
+      </picker>
+        <image src='../../assets/images/right_arr.png' class='right_arr' ></image>
+      </view>
+    </view>
+  </view>
+</view>

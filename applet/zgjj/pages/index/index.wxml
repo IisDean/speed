@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="p-r head-container">
+        <image class="head-bg" src="{{assets + 'images/head_bg.jpg'}}" mode="widthFix"></image>
+        <view class="p-a head-wrap flex-wrap">
+            <view class="p-r head-avatar">
+                <image class="avatar-img"
+                    src="{{assets + 'images/head_img.png'}}"
+                    mode="aspectFill">
+                </image>
+                <image class="p-a avatar-border" 
+                    src="{{assets + 'images/head_border.png'}}" 
+                    mode="aspectFill">
+                </image>
+                <text class="p-a t-c level-text">Lv17</text>
+            </view>
+            <view class="user-msg-wrap flex-1">
+                <view class="flex-wrap flex-between">
+                    <text class="user-name-text">湯普SEN</text>
+                    <text class="season-text">S1賽季</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

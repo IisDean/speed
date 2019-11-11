@@ -1,0 +1,50 @@
+<!--pages/history/history.wxml-->
+<view class='history_page'>
+  <bg></bg>
+  <view class='history_list'>
+    <view class='list_item border_yellow'>
+      <view class='post_name'>
+        <text class='icon'>活动</text>
+        <view class='name'>
+          海德薇莉的救赎开放公告
+        </view>
+      </view>
+      <view class='post_cont'>
+        2017即将结束，感谢各位特工热情参与《枪神纪》官网及社区
+      </view>
+    </view>
+    <view class='list_item border_pink'>
+      <view class='post_name'>
+        <text class='icon'>活动</text>
+        <view class='name'>
+          海德薇莉的救赎开放公告
+        </view>
+      </view>
+      <view class='post_cont'>
+        2017即将结束，感谢各位特工热情参与《枪神纪》官网及社区
+      </view>
+    </view>
+    <view class='list_item border_blue'>
+      <view class='post_name'>
+        <text class='icon'>活动</text>
+        <view class='name'>
+          海德薇莉的救赎开放公告
+        </view>
+      </view>
+      <view class='post_cont'>
+        2017即将结束，感谢各位特工热情参与《枪神纪》官网及社区
+      </view>
+    </view>
+    <view class='list_item border_green'>
+      <view class='post_name'>
+        <text class='icon'>活动</text>
+        <view class='name'>
+          海德薇莉的救赎开放公告
+        </view>
+      </view>
+      <view class='post_cont'>
+        2017即将结束，感谢各位特工热情参与《枪神纪》官网及社区
+      </view>
+    </view>
+  </view>
+</view>

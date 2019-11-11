@@ -1,0 +1,319 @@
+<!--pages/my/my.wxml-->
+<view class='my'>
+  <bg></bg>
+  <!-- <view class='header'>
+    <image src='../../assets/images/sq_head.png'  class='head_bg'></image>
+  </view>
+  <view class='avatar'>
+    <view class='message'>
+      <image class='msg_bg' src='../../assets/images/msg.png'>
+      </image>
+      <navigator url="/pages/message/message" class='msg_cont'>
+        <image class='msg_icon' src='../../assets/images/msg_icon.png'></image>
+      消息
+      </navigator>
+    </view>
+    <navigator url="/pages/edit/edit" >
+      <image class='avatar_img' src='../../assets/images/test_head.jpeg'></image>
+    </navigator>
+    <navigator url="/pages/edit/edit" class='user_info'>
+        社区ID123456  <text class='lv'>Lv9</text>
+    </navigator>
+    <view class='ch'>
+    称号称号称号
+    </view>
+    <view class='integral'>
+      <navigator class='left'  url='/pages/medal/medal'>
+        <image src='../../assets/images/ry_icon.png' class='ry'></image> 荣誉值 <text>120</text>
+      </navigator>
+      <navigator class='right'  url='/pages/integral/integral'>
+        <image src='../../assets/images/jf_icon.png' class='jf'></image>积分<text>1123 </text> 
+      </navigator>
+    </view>
+  </view> -->
+  <view class='header'>
+    <image src='../../assets/images/head_bg.png' class='head_bg'></image>
+    <view class='header_cont'>
+      <navigator url="/pages/edit/edit">
+      <image class='avatar' src='../../assets/images/test_head.jpeg'></image>
+      </navigator>
+      <view class='head_right'>
+        <navigator url="/pages/edit/edit" class='user_info'>
+          社区ID123456  <text class='lv'>Lv9</text>
+        </navigator>
+        <view class='sign'>
+          <text>
+            称号称号
+          </text>
+        </view>
+        <view class='integral'>
+          <navigator  url='/pages/medal/medal' class='left'  >
+            <image src='../../assets/images/ry_icon.png' class='ry'></image> 荣誉值 <text>120</text>
+          </navigator>
+          <navigator  url='/pages/integral/integral'  class='right'  >
+            <image src='../../assets/images/jf_icon.png' class='jf'></image>积分<text>1123 </text> 
+          </navigator>
+        </view>
+        <view class='huizhang'>
+          <view class='total'>
+            <image class='hz_img' src='../../assets/images/huizhang.png'></image>
+            <view>
+              10枚
+            </view>
+          </view>
+          <navigator url='/pages/medal/medal' class='hz_list'>
+            <image class='hz_icon' src='../../assets/images/xz_icon.png'></image>
+            <image class='hz_icon' src='../../assets/images/xz_icon.png'></image>
+            <image class='hz_icon' src='../../assets/images/xz_icon.png'></image>
+            <image class='hz_icon' src='../../assets/images/xz_icon.png'></image>
+            <image class='hz_icon' src='../../assets/images/xz_icon.png'></image>
+          </navigator>
+          
+          <navigator url='/pages/medal/medal' class='right_arr'>
+            <image class='hz_icon' src='../../assets/images/right_arr_w.png'></image>
+          </navigator>
+        </view>
+      </view>
+      <view class='lahei' >
+            <navigator url="/pages/message/message" class='msg_cont'>
+        <image class='msg_icon' mode='widthFix' src='../../assets/images/xf.png'></image>
+      消息
+      </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='tab' >
+    <view id="the-id" class='tab_title {{isTop == true ? "isTop":""}}' >
+      <view class='title_item {{0 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='0'>
+        <view>
+          <text>回帖</text>
+          <view class='num'>  
+            8825
+          </view>
+        </view>
+        <hr  />
+      </view>
+      
+      <view class='title_item {{1 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='1'>
+        <view>
+          <text>发帖</text>
+          <view class='num'>  
+            8825
+          </view>
+        </view>
+      </view>
+      <view class='title_item  {{2 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='2'>
+        <view>
+          <text>推荐</text>
+          <view class='num'>  
+            8825
+          </view>
+        </view>
+      </view>
+      <view class='title_item {{3== currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='3'>
+        <view>
+          <text>收藏</text>
+          <view class='num'>  
+            8825
+          </view>  
+        </view>
+      </view>
+  </view>
+
+  <!--内容布局-->
+  <view class='swiper'>
+    <view class='swiper_item' wx:if='{{currentIndex == 0}}'>
+      <!-- <view class='defect'>
+        <image src='../../assets/images/queshen.png' class='qs_img'></image>
+        <view>
+          <view>
+            暂无回复的内容 
+          </view>
+          <view>
+            点击帖子 <text>右下角</text> <image src='../../assets/images/hf_icon.png' class='star'></image>     可以回复帖子哦  
+          </view>
+        </view>
+      </view>   -->
+      <view class='reply_list'>
+        <view class='reply_item border_yellow'>
+          <view class='swiper_title'>
+            <view class='left'>
+              <text class='icon'>帖子</text>
+                你在 <text class='link'>帖子标题帖子标题帖子标题...</text>中的
+            </view>
+            <view class='right'>
+              10小时前
+            </view>
+          </view>
+          <view class='reply_info'>
+            <view>
+              <image src='../../assets/images/test_head.jpeg' class='head_img'></image>
+            </view>
+            <view class='reply_right'>
+              <view class='name'>
+                我的ID123456
+              </view>
+              <view class='post_info'>
+                <view class='post_info_item1'>
+                  引用11楼@用户ID1234发表的：
+                </view>
+                <view class='post_info_item2'>
+                  他发表的内容
+                </view>
+
+              </view>
+              <view class='my_reply'>
+                我回复的内容我回复的内容
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='reply_item border_pink'>
+          <view class='swiper_title'>
+            <view class='left'>
+              <text class='icon'>帖子</text>
+                你在 <text class='link'>帖子标题帖子标题帖子标题...</text>中的
+            </view>
+            <view class='right'>
+              10小时前
+            </view>
+          </view>
+          <view class='reply_info'>
+            <view>
+              <image src='../../assets/images/test_head.jpeg' class='head_img'></image>
+            </view>
+            <view class='reply_right'>
+              <view class='name'>
+                我的ID123456
+              </view>
+              <view class='post_info'>
+                <view class='post_info_item1'>
+                  引用11楼@用户ID1234发表的：
+                </view>
+                <view class='post_info_item2'>
+                  他发表的内容
+                </view>
+
+              </view>
+              <view class='my_reply'>
+                我回复的内容我回复的内容
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='reply_item border_blue'>
+          <view class='swiper_title'>
+            <view class='left'>
+              <text class='icon'>帖子</text>
+                你在 <text class='link'>帖子标题帖子标题帖子标题...</text>中的
+            </view>
+            <view class='right'>
+              10小时前
+            </view>
+          </view>
+          <view class='reply_info'>
+            <view>
+              <image src='../../assets/images/test_head.jpeg' class='head_img'></image>
+            </view>
+            <view class='reply_right'>
+              <view class='name'>
+                我的ID123456
+              </view>
+              <view class='post_info'>
+                <view class='post_info_item1'>
+                  引用11楼@用户ID1234发表的：
+                </view>
+                <view class='post_info_item2'>
+                  他发表的内容
+                </view>
+
+              </view>
+              <view class='my_reply'>
+                我回复的内容我回复的内容
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='reply_item border_green'>
+          <view class='swiper_title'>
+            <view class='left'>
+              <text class='icon'>帖子</text>
+                你在 <text class='link'>帖子标题帖子标题帖子标题...</text>中的
+            </view>
+            <view class='right'>
+              10小时前
+            </view>
+          </view>
+          <view class='reply_info'>
+            <view>
+              <image src='../../assets/images/test_head.jpeg' class='head_img'></image>
+            </view>
+            <view class='reply_right'>
+              <view class='name'>
+                我的ID123456
+              </view>
+              <view class='post_info'>
+                <view class='post_info_item1'>
+                  引用11楼@用户ID1234发表的：
+                </view>
+                <view class='post_info_item2'>
+                  他发表的内容
+                </view>
+
+              </view>
+              <view class='my_reply'>
+                我回复的内容我回复的内容
+              </view>
+            </view>
+          </view>
+        </view>
+       </view>
+    </view>
+    <view class='swiper_item'  wx:if='{{currentIndex == 1}}'>
+      <!-- <view class='defect'>
+        <image src='../../assets/images/queshen.png' class='qs_img'></image>
+        <view>
+          <view>
+            暂无发表的内容 
+          </view>
+          <view>
+            点击帖子 <text>右下角</text> <image src='../../assets/images/fb_icon.png' style='width:90rpx;height:36rpx;' class='star'></image>     可以回复帖子哦  
+          </view>
+        </view>
+      </view> -->
+       <postlist2></postlist2>
+    </view>
+    <view class='swiper_item'  wx:if='{{currentIndex == 2}}'>
+      <!-- <view class='defect'>
+        <image src='../../assets/images/queshen.png' class='qs_img'></image>
+        <view>
+          <view>
+            暂无推荐的内容 
+          </view>
+          <view>
+            点击帖子 <text>右下角</text> <image src='../../assets/images/tj.png'  class='star'></image>     可以推荐帖子哦  
+          </view>
+        </view>
+      </view> -->
+      <postlist></postlist>
+    </view>
+    <view class='swiper_item' wx:if='{{currentIndex == 3}}'>
+      <view class='collect'>
+        <!-- <view class='defect'>
+          <image src='../../assets/images/queshen.png' class='qs_img'></image>
+          <view>
+            <view>
+              暂无收藏的内容 
+            </view>
+            <view>
+              点击帖子 <text>右下角</text> <image src='../../assets/images/star.png' class='star'></image>     可以收藏帖子哦  
+            </view>
+          </view>
+        </view>       -->
+         <postlist></postlist>
+      </view>
+
+    </view>
+  </view>
+  </view>
+</view>

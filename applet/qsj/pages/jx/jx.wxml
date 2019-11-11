@@ -1,0 +1,65 @@
+<!--pages/jx/jx.wxml-->
+<view>
+  <bg></bg>
+  <view class='top'>
+    <header></header>
+    <view class='tab'>
+      <view class='tab_title'>
+        <view class='title_item {{0 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='0'>
+          <view>
+            <text>综合讨论</text>
+          </view>
+        </view>
+        
+        <view class='title_item {{1 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='1'>
+          <view>
+            <text>视频攻略</text>
+          </view>
+        </view>
+        <view class='title_item {{2 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='2'>
+          <view>
+            <text>图片专区</text>
+          </view>
+        </view>
+        <view class='title_item {{3 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='3'>
+          <view>
+            <text>建议反馈</text>
+          </view>
+        </view>
+        <view class='title_item {{4 == currentIndex ? "active" : ""}}' bindtap='titleClick' data-idx='4'>
+          <view>
+            <text>官方公告</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+  <view class='jx_list'>
+    <postlist></postlist>
+  </view>
+  <view class='message' wx:if="{{!popFlag}}" catchtap='showPop'>
+    <image class='msg_bg' src='../../assets/images/msg.png'></image>
+    <view class='msg_cont'>
+      <image class='msg_icon' src='../../assets/images/fabiao.png'></image>
+     发表
+    </view>
+  </view>
+  <view class="send_post  {{popFlag == true? 'show_pop':'hide_pop'}}">
+    <view class='pop_cancel'  catchtap='hidePop'>
+      <image src='../../assets/images/close_w.png' class='close_icon'></image>
+    </view>
+    <view class='send_type'>
+      <navigator url='/pages/send/send?type=img' class='send_img send_item'>
+        <image src='../../assets/images/send_icon1.png' class='send_icon'></image>
+        发图文
+      </navigator>
+      <navigator url='/pages/send/send?type=video' class='send_video send_item'>
+        <image src='../../assets/images/send_icon2.png' class='send_icon'></image>
+        发视频
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bg": "/components/bg/bg",
+    "postlist": "/components/postList/postList",
+    "postlist2": "/components/postList2/postList",
+    "report": "/components/report/report"
+  }
+}

@@ -1,0 +1,38 @@
+<!--pages/talk/talk.wxml-->
+<view class='talk_page'>
+<bg></bg>
+  <view class='talk'>
+    <view wx:for="{{list}}"  wx:key="{{index}}">
+      <view class='talk_item type1' wx:if="{{item.type==1}}">
+        <image src='{{item.img}}' class='avatar'></image>
+        <view class='talk_cont'>
+          <image src='../../assets/images/talk_arr2.png' class='talk_arr'></image>
+          <view class='talk_text'>
+          {{item.text}}
+          </view>
+        </view>
+      
+      </view>
+      <view class='talk_item type2'  wx:if="{{item.type==2}}">
+      
+        <view class='talk_cont'>
+
+          <view class='talk_text'>
+            {{item.text}}
+          </view>
+          <image src='../../assets/images/talk_arr1.png' class='talk_arr'></image>
+        </view>
+        <image src='{{item.img}}' class='avatar'></image>
+      </view>
+    
+    </view>
+     
+  </view>
+  <form>
+    <view class='talk_form'>
+        <image class='tool_icon' src='../../assets/images/idit_icon2.png'></image>
+        <input confirm-type="send" bindconfirm="bindConfirm" placeholder='我来评论'  value='{{inputValue}}'></input>
+        <image class='tool_icon insertImage' src='../../assets/images/idit_icon3.png' bindtap="insertImage"></image>  
+    </view>
+  </form>
+</view>

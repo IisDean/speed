@@ -1,0 +1,96 @@
+<!--pages/integral/integral.wxml-->
+<view>
+  <view class='bg'><image src='../../assets/images/jf_bg.jpg' class='bg-img'></image></view>
+  <view class='integral_page'>
+    <view class='header'>
+      <view>
+        <image src='../../assets/images/jf_icon_big.png' class='jf_icon'></image>
+        <text>4250</text>
+      </view>
+      <view class='right'>
+      签到记录
+      </view>
+      <view class='qd'>
+        <image src='../../assets/images/btn_bg.png'></image>
+        <button class='btn'>
+          立即签到
+       </button> 
+      </view>
+    </view>
+    <view>
+      <view class='tj'>
+        <view class='tj_head' catchtap='toggleShow'>
+          <view class='tj_head_item'>
+            <view class='num'>
+              12513 
+            </view>    
+            <view>
+            已获得积分
+            </view>
+            <view wx:if="{{show == false}}">
+              <image src='../../assets/images/arr_down.png' class='arr_icon'></image>
+            </view>
+          </view>
+          <view class='tj_head_item'>
+            <view class='num'>
+              8000
+            </view>    
+            <view>
+            已消耗积分
+            </view>
+            <view wx:if="{{show == false}}">
+              <image src='../../assets/images/arr_down.png' class='arr_icon'></image>
+            </view>
+          </view>
+          <view class='tj_head_item'>
+            <view class='num'>
+              1001
+            </view>    
+            <view>
+            荣誉点
+            </view>
+          </view>
+        </view>
+        <view class='tj_body'  wx:if="{{show == true}}" catchtap='toggleShow'>
+          <view class='tj_body_item'>
+            <view>
+            登录游戏
+            </view>
+            <view>
+            +10分
+            </view>
+            <view>
+            +1分
+            </view>
+          </view>
+          <view class='tj_body_item'>
+            <view>
+            登录游戏
+            </view>
+            <view>
+            +10分
+            </view>
+            <view>
+            +1分
+            </view>
+          </view>
+          <image src='../../assets/images/arr_down.png' class='arr_icon tj_body_item'></image>
+        </view>
+      </view>
+      <view class='jl'>
+        <navigator class='jl_item'>
+          <image src='../../assets/images/libao.png'></image>
+          <view>
+          游戏礼包
+          </view>
+        </navigator>
+        <navigator class='jl_item'>
+          <image src='../../assets/images/jf_icon2.png'></image>
+          <view>
+          积分任务
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

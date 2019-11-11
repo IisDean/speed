@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 
+.flex-wrap {
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-between {
+    align-content: space-between;
+    -webkit-align-content: space-between;
+}
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+.p-a {
+    position: absolute;
+}
+.p-r {
+    position: relative;
+}
+.t-c {
+    text-align: center;
+}

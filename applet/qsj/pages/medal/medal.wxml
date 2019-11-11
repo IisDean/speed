@@ -1,0 +1,105 @@
+<!--pages/medal/medal.wxml-->
+<view>
+  <view class='bg'><image src='../../assets/images/bg2.jpg' class='bg-img'></image></view>
+  <view class='medal_page'>
+    <view class='header'>
+      
+      <circle id='circle1' class='circle'
+      bg='circle_bg1'    
+      draw='circle_draw1'      
+      bind:runEvent="_runEvent" >
+        <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+        <view class="circle_info" bindtap="changeTime">
+          <!-- <view class="circle_dot"></view>   -->
+          <view>
+            <view class='circle_txt_head'>
+            <text class='circle_txt'> 称号称号  </text>
+            </view>
+            
+            <text class='circle_txt2'> {{txt}}  </text>
+          </view>
+        
+        </view>
+      </circle>  
+      <view class='right' catchtap='showPopFn'>
+      提升方法
+      </view>
+    </view>
+    <view class='my_medal' style="height:{{eheight}}px" >
+      <view class='list_title'>
+      我的勋章
+      </view>
+      <view class='list'>
+      
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      <view class='list_item' catchtap='showToggleFn'>
+        <image src="../../assets/images/hz_icon.png"></image>
+        <view>
+          勋章1
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+  <cover-view class='method {{show ? "show": "hide"}}' catchtap='showToggleFn'>
+    <cover-view class='big_icon'>
+      <cover-image src="../../assets/images/hz_icon.png"></cover-image>
+    </cover-view>
+    <cover-view class='medal_name'>
+    勋章1
+    </cover-view>
+    <cover-view class='text'>
+    获得途径获得途径获得途 径获得途径获得途径
+    </cover-view>
+  </cover-view>
+  <myDialog show="{{showPop}}">
+    提升方法提升方法提升方法提升方法 提升方法提升方法提升方法提升方法 提升方法提升方法提升方法提升方法  
+  </myDialog>
+</view>

@@ -1,0 +1,148 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <bg></bg>
+  <view class='header'>
+    <image src='../../assets/images/sq_head.png' class='head_bg'></image>
+    <view class='header_cont'>
+      <navigator url="/pages/search/search" class='search_box'>
+        <image src='../../assets/images/search.png' class='search_icon'></image>
+        <text class='hot_search'>搜索版块</text>
+      </navigator>
+    </view>
+  </view>
+  <view class='community_cont'>
+    <view class='list'>
+      <view class='list_head'>
+        大板块1
+      </view>
+      <view class='list_item_box'>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        
+      </view>
+    </view>
+       <view class='list'>
+      <view class='list_head'>
+        大板块2
+      </view>
+      <view class='list_item_box'>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        
+      </view>
+    </view>
+       <view class='list'>
+      <view class='list_head'>
+        大板块3
+      </view>
+      <view class='list_item_box'>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        <view class='list_item'>
+          <view>
+            <image></image>
+          </view>
+          <text >版块1</text>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+</view>

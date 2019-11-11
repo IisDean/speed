@@ -1,0 +1,65 @@
+<!--components/report/report.wxml-->
+    <view class='mask' wx:if="{{more}}" catchtap='cancelFn'></view>
+    <view wx:if='{{showReport}}' class="report {{more == true? 'show_report':'hide_report'}}">
+      <view class='report_box'>
+        <view class='report_item report_item1'>
+          <view class='report_title'>
+            请选择举报理由
+          </view>
+          <view class='report_list_item'>
+          该账号发布色情/违法等不良信息
+          </view>
+          <view class='report_list_item'>
+          该账号存在欺诈骗钱行为 
+          </view>
+          <view class='report_list_item'>
+          该账号对我进行骚扰
+          </view>
+        </view>
+        <view class='report_item report_item2'>
+          <view class='cancel' catchtap='cancelFn'>
+          取消
+          </view>
+        
+        </view>
+      </view>
+    </view>
+    <view wx:if='{{showChose}}' class="report {{more == true? 'show_report':'hide_report'}}">
+      <view class='chose report_box'>
+        <view class='report_item report_item1'>
+          <view class='report_title'>
+            社区ID：6312651
+          </view>
+          <view class='report_list_item' catchtap='showReportFn'>
+          举报
+          </view>
+          <view class='report_list_item' catchtap='showLaheiFn'>
+          取消点赞 
+          </view>
+        </view>
+        <view class='report_item report_item2'>
+          <view class='cancel' catchtap='cancelFn'>
+          取消
+          </view>
+        
+        </view>
+      </view>
+    </view> 
+    <view class='pop' wx:if="{{showLahei}}">
+      <view class='pop_cont'>
+        <view class='pop_cancel'  catchtap='hideLahei'>
+          <image src='../../assets/images/close_w.png' class='close_icon'></image>
+        </view>
+        <view class='pop_title'>
+          加入黑名单
+        </view>
+        <view class='btns'>
+          <view class='can_btn btn' catchtap='showPop'>
+          取消
+          </view>
+          <view class='com_btn btn'>
+          确认
+          </view>
+        </view>
+      </view>
+    </view>  

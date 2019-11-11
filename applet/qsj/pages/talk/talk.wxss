@@ -1,0 +1,80 @@
+/* pages/talk/talk.wxss */
+.talk_page{
+  font-size: 30rpx;
+  color: #15273d;
+}
+.talk_form{
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  background: #f6f8f9;
+}
+.talk{
+  padding: 50rpx 20rpx;
+}
+.talk_item{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40rpx;
+}
+.avatar{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50rpx;
+  margin-right: 10rpx;
+}
+.talk_arr{
+  width: 11rpx;
+  height: 22rpx;
+  position: relative;
+  top:30rpx;
+}
+.talk_cont{
+  display: flex;
+  width: 500rpx;
+  color: #15273d;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.talk_text{
+  border-radius: 20rpx;
+  padding: 20rpx;
+  width: 539rpx;
+}
+.talk_item.type1 .talk_text{
+  background: #fff;
+}
+.talk_item.type2 .talk_text{
+  background: #61b4ff;
+}
+.talk_item.type2 .avatar{
+  margin-right: 0;
+  margin-left: 10rpx;
+}
+.talk_item.type2{
+  justify-content: flex-end;
+}
+.talk_form .tool_icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.talk_form input{
+  background: #fff;
+  height: 60rpx;
+  border:1px solid #ddd;
+  border-radius: 60rpx;
+  padding: 0 20rpx;
+  flex: 1;
+}
+.talk_form .tool_icon.insertImage{
+  width: 55rpx;
+  margin-right: 0;
+  margin-left: 20rpx
+}

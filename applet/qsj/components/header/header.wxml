@@ -1,0 +1,11 @@
+<!--components/header/header.wxml-->
+<view class='header'>
+  <image src='../../assets/images/sq_head.png' class='head_bg'></image>
+  <view class='header_cont'>
+    <image src='../../assets/images/logo.png' class='head_logo'></image>
+    <navigator url="/pages/search/search" class='search_box'>
+      <image src='../../assets/images/search.png' class='search_icon'></image>
+      <text class='hot_search'>热搜1 | 热搜2</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,155 @@
+<!--pages/postDetail/postDetail.wxml-->
+<view class='postDetail_page'>
+<bg></bg>
+<view class="reply_list">
+  <view class='list_item'>
+    <view class='item_title'>
+      <view class='item_left'>
+        <image src='../../assets/images/test_head.jpeg' class='avatar_img'></image>
+        <view>
+          <view class='item_id'>
+          我的ID123456
+          </view>
+          <view class='time'>
+          一小时前
+          </view>
+        </view>
+      </view>
+      <view class='item_right' catchtap='showMore'>
+        <image src="../../assets/images/more.png"></image>
+      </view>
+    </view>
+    <view class='reply_body'>
+      <view class='reply_who'>
+        <view class='reply_who_cont {{showAll? "all_show":""}}'>
+          <view class='reply_name'>
+            我的ID123456
+          </view>
+          <view class='item2'>
+            评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论 评论评论评论评评论评论评论评论评论... 
+          </view>
+        </view>
+        <view class='show_all_btn  ' catchtap='showToggle' >
+          {{showAll?'收起':'全部'}} <image src='../../assets/images/arr3.png' class='arr {{showAll? "arr_up" : "arr_down"}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='reply_item2'>
+    <view class='cont'>
+     回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内
+    </view>
+     
+      
+    <!-- 一般状态图片显示-->      
+    <view class='imgs'>
+        <image  wx:for='{{resourceObj}}' wx:key="item" data-photUrl='{{item.img}}' src="{{item.img}}" style="width:{{item.eWidth}}rpx;height:{{item.eHeight}}rpx;" catchtap='LookPhoto' bindload="imgDetail"></image>
+    </view>
+    <!-- 4张图片时-->
+    </view>
+    <view class='reply_item3'>
+      <view class='left'>
+        <view class='left_item tuijian'>
+          <image src='../../assets/images/post_icon5.png' class='icon'></image>
+          2.2w
+        </view>
+        <view class='left_item pinglun'>
+          <image src='../../assets/images/post_icon2.png' class='icon'></image>
+          99
+        </view>
+        <view class='left_item huifu' catchtap='showFormFun'>
+          <image src='../../assets/images/post_icon1.png' class='icon'></image>
+          回复
+        </view>
+      </view>
+      <view class='right'>
+      
+        <view class='right_item fx'>
+          <image src='../../assets/images/post_icon3.png' class='icon'></image>
+          分享
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='all_reply'>
+全部回复
+</view>
+<view class='reply_list'>
+  <view class='list_item' >
+    <view class='item_title'>
+      <view class='item_left'>
+        <image src='../../assets/images/test_head.jpeg' class='avatar_img'></image>
+        <view>
+          <view class='item_id'>
+          我的ID123456
+          </view>
+          <view class='time'>
+          一小时前
+          </view>
+        </view>
+      </view>
+      <!-- <view class='item_right' catchtap='showMore'>
+        <image src="../../assets/images/more.png"></image>
+      </view> -->
+    </view>
+    <view class='reply_body'>
+      <view class='reply_who'>
+        <view class='reply_who_cont {{showAll? "all_show":""}}'>
+          <view class='reply_name'>
+            我的ID123456
+          </view>
+          <view class='item2'>
+            评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论 评论评论评论评评论评论评论评论评论... 
+          </view>
+        </view>
+        <view class='show_all_btn  ' catchtap='showToggle' >
+          {{showAll?'收起':'全部'}} <image src='../../assets/images/arr3.png' class='arr {{showAll? "arr_up" : "arr_down"}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='reply_item2'>
+    
+      <view class='cont'>
+      回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内
+      </view>
+     
+      <!-- 一般状态图片显示-->      
+      <view class='imgs'>
+          <image  wx:for='{{resourceObj}}' wx:key="item" data-photUrl='{{item.img}}' src="{{item.img}}" style="width:{{item.eWidth}}rpx;height:{{item.eHeight}}rpx;" catchtap='LookPhoto' bindload="imgDetail"></image>
+      </view>
+    </view>
+    <view class='reply_item3'>
+      <view class='left'>
+        <view class='left_item tuijian'>
+          <image src='../../assets/images/post_icon5.png' class='icon'></image>
+          2.2w
+        </view>
+        <view class='left_item pinglun'>
+          <image src='../../assets/images/post_icon2.png' class='icon'></image>
+          99
+        </view>
+        <view class='left_item huifu' catchtap='showFormFun'>
+          <image src='../../assets/images/post_icon1.png' class='icon'></image>
+          回复
+        </view>
+      </view>
+      <view class='right'>
+      
+        <view class='right_item fx'>
+          <image src='../../assets/images/post_icon3.png' class='icon'></image>
+          分享
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='comment_form' wx:if='{{showForm}}'>
+    <navigator class='input' url="/pages/senReport/senReport">写点评论吧</navigator>
+    <!-- <image src='../../assets/images/post_icon4.png' class='icon'></image>
+    <image src='../../assets/images/post_icon6.png' style='margin-top:-6rpx;' class='icon'></image>
+    <image src='../../assets/images/post_icon7.png' class='icon'></image> -->
+  </view>
+</view>
+ 
+ <report more='{{more}}' showReport='{{showReport}}' showChose='{{showChose}}' showLahei='{{showLahei}}'></report>
+
+</view>
