@@ -2,7 +2,11 @@
 $(".play-btn").on("click", function () {
     $(this).fadeOut(300);
     document.getElementById("video").play();
+    if (audioStatus) {
+        $(".audio-btn").click();
+    }
 });
+
 //切换人物
 $(".tab-list li").on("click", function () {
     var $this = $(this),
@@ -53,29 +57,27 @@ window.RAF = (function () {
         window.setTimeout(callback, 1000 / 60);
     };
 })();
+var audioStatus = true;
+var maxWidth = 0;
+var $newsUl = $(".news-ul");
+var firstW = $newsUl.find(".news-item").width();
+$newsUl.find(".news-item").each(function (index, ev) {
+    maxWidth += $(ev).width();
+});
 
-(function () {
-    var maxWidth = 0;
-    var $newsUl = $(".news-ul");
-    var firstW = $newsUl.find(".news-item").width();
-    $newsUl.find(".news-item").each(function (index, ev) {
-        maxWidth += $(ev).width();
+var moveLeft = 0;
+var firstClone = $newsUl.find(".news-item").eq(0).clone();
+$newsUl.append(firstClone).width(maxWidth + firstW + 'px');
+
+function dropInteval() {
+    RAF(function () {
+        $newsUl.css("transform", "translateX(" + moveLeft-- + "px)");
+        if (moveLeft < -maxWidth) moveLeft = 0;
+        //这里调用需要执行的方法
+        if (audioStatus) dropInteval();
     });
-
-    var moveLeft = 0;
-    var firstClone = $newsUl.find(".news-item").eq(0).clone();
-    $newsUl.append(firstClone).width(maxWidth + firstW + 20 + 'px');
-
-    function dropInteval() {
-        RAF(function () {
-            $newsUl.css("transform", "translateX(" + moveLeft-- + "px)");
-            if (moveLeft < -maxWidth) moveLeft = 0;
-            //这里调用需要执行的方法
-            dropInteval();
-        });
-    };
-    dropInteval();
-})();
+};
+dropInteval();
 
 // 页面动效
 $(window).on('load scroll', function () {
@@ -85,4 +87,28 @@ $(window).on('load scroll', function () {
             $(this).addClass('show');
         }
     })
+    var t = $(this).scrollTop();
+    var wt = $(window).height();
+    var initH = $('.video-wrap').offset().top;
+    var boxH = $('.video-wrap').height();
+    if (t + wt < initH || t > initH + boxH) {
+        document.getElementById("video").pause();
+    }
 });
+
+var audioWrap = $("#audio-wrap")[0];
+$(".audio-btn").on("click", function () {
+    if (audioStatus) {
+        audioWrap.pause();
+        audioStatus = false;
+        $(this).find('i').addClass('pause');
+    } else {
+        audioWrap.play();
+        audioStatus = true;
+        dropInteval();
+        $(this).find('i').removeClass('pause');
+    }
+});
+document.addEventListener("WeixinJSBridgeReady", function () {
+    audioWrap.play();
+}, false);

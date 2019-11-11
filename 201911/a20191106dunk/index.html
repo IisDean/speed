@@ -13,7 +13,7 @@
     <meta name="Keywords" content="灌篮高手 正版手游授权 12月5日首发 天才训练营 预约抽奖 预约福利">
     <title>灌篮高手</title>
     <link rel="stylesheet" href="css/swiper.min.css?jv=1.0">
-    <link rel="stylesheet" href="css/index.css?jv=1.0">
+    <link rel="stylesheet" href="css/index.css?jv=1.0.1">
     <script>
         //屏幕适应
         (function (win, doc) {
@@ -41,13 +41,17 @@
     <a href="javascript: alert('敬请期待！');" class="bg float-icon"></a>
     <header class="pr bg bg1">
         <div class="pa bg logo-icon"></div>
-        <div class="pa red-block flex">
-            <i class="bg red-icon"></i>
-            <i class="bg red-icon"></i>
+        <div class="pa red-block ">
+            <div class="flex red-wrap">
+                <i class="bg red-icon"></i>
+                <i class="bg red-icon"></i>
+            </div>
         </div>
-        <div class="pa black-block flex">
-            <i class="bg black-icon"></i>
-            <i class="bg black-icon"></i>
+        <div class="pa black-block">
+            <div class="flex black-wrap">
+                <i class="bg black-icon"></i>
+                <i class="bg black-icon"></i>
+            </div>
         </div>
         <div class="pa full-img person-icon">
             <img src="img/person.png?jv=1.0" alt="球员">
@@ -65,11 +69,15 @@
     <section class="bg bg2 pr">
         <!-- 跑马灯 -->
         <div class="news-scroll flex flex-center">
-            <i class="ui-icon news-icon"></i>
+            <div class="audio-btn">
+                <i class="ui-icon news-icon"></i>
+                <audio id="audio-wrap" src="audio/music_bg.mp3" autoplay></audio>
+            </div>
             <div class="pr news-list">
                 <ul class="news-ul flex">
-                    <li class="news-item">直到世界的尽头,直到世界的尽头</li>
-                    <li class="news-item">直到世界的尽头,直到世界的尽头</li>
+                    <li class="news-item">直到世界的尽头</li>
+                    <li class="news-item">直到世界的尽头</li>
+                    <li class="news-item">直到世界的尽头</li>
                 </ul>
             </div>
         </div>
@@ -124,12 +132,13 @@
     <section class="bg bg4 pr part">
         <h2 class="ui-icon title-icon title-icon-3 move-up t">游戏视频</h2>
         <div class="pr bg video-wrap move-right delay-dot3">
-            <video controlslist="nodownload" id="video">
+            <video controlslist="nodownload" id="video" x5-playsinline controls playsinline="true"
+                -webkit-playsinline="true" poster="img/video_poster.jpg">
                 <source
                     src="https://hiapp-strm.dbankcdn.com/e21d7a4cvodtransgzp1253437192/6978c5f85285890794464419374/v.f40.mp4"
                     type="video/mp4">
             </video>
-            <a href="javascript: ;" class="pa ui-icon play-btn"></a>
+            <a href="javascript: ;" class="pa ui-icon play-btn" style="opacity: 0;"></a>
         </div>
         <h2 class="ui-icon title-icon title-icon-4 move-up delay-dot6 t">人物介绍</h2>
     </section>

@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
-    <meta charset="gbk"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -9,7 +11,8 @@
     <meta name="author" content="Tencent-CP" />
     <meta name="Copyright" content="Tencent" />
     <meta name="Description" content="龙族幻想K歌分享">
-    <meta name="Keywords" content="龙族幻想,龙族幻想官网,龙族幻想预约,腾讯龙族幻想官网,龙族幻想下载,虚幻4,龙族幻想官方网站,龙族幻想手游,腾讯龙族幻想,腾讯龙族幻想手游,腾讯龙族幻想下载,代号夏娃,代号夏娃下载,代号夏娃官网,腾讯代号夏娃" >
+    <meta name="Keywords"
+        content="龙族幻想,龙族幻想官网,龙族幻想预约,腾讯龙族幻想官网,龙族幻想下载,虚幻4,龙族幻想官方网站,龙族幻想手游,腾讯龙族幻想,腾讯龙族幻想手游,腾讯龙族幻想下载,代号夏娃,代号夏娃下载,代号夏娃官网,腾讯代号夏娃">
     <title>龙族幻想K歌分享-龙族幻想-腾讯游戏</title>
     <link rel="stylesheet" href="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/css/index.css">
     <script>
@@ -17,6 +20,7 @@
         (function (win, doc) {
             if (!win.addEventListener) return;
             var html = document.documentElement;
+
             function setFont() {
                 var html = document.documentElement;
                 var k = 750;
@@ -32,466 +36,476 @@
         })(window, document);
     </script>
 </head>
+
 <body>
-<div class="wrapper">
-    <h1 class="hide">K歌分享</h1>
-    <header class="head">
-        <div class="flex topbar-wrap flex-between">
-            <div class="full-img logo-wrap">
-                <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/logo.png" alt="龙族幻想">
-            </div>
-            <a href="https://dna.qq.com/m/m201812/main.shtml" class="ui-icon download-btn" ontouchend="PTTSendClick('btn','guanwang','进入官网')"></a>
-        </div>
-        <div class="pr bg video-wrap">
-            <video src="#" id="video" autoplay="autoplay"></video>
-            <div class="absolute danmu-wrap"></div>
-            <div class="absolute ui-icon play-btn"></div>
-        </div>
-        <div class="bg user-plank-wrap flex">
-            <div class="user-head">
-                <div style="background-image: url('#')"></div>
-            </div>
-            <div class="flex-1 user-name-wrap">
-                <p class="user-name-text text-hide">可米莉亚</p>
-                <p class="qufu-text">微信3区</p>
-            </div>
-            <div class="user-msg-wrap">
-                <div class="flex data-wrap">
-                    <i class="ui-icon play-num-icon"></i>
-                    <span style="margin-right: .36rem;">5800</span>
-                    <i class="ui-icon comment-num-icon"></i>
-                    <span>1.3万</span>
+    <div class="wrapper">
+        <h1 class="hide">K歌分享</h1>
+        <header class="head">
+            <div class="flex topbar-wrap flex-between">
+                <div class="full-img logo-wrap">
+                    <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/logo.png" alt="龙族幻想">
                 </div>
-                <div class="flex data-wrap2">
-                    <span>当前得票：</span>
-                    <span class="number-text">2252</span>
-                    <span style="margin-left: .34rem;">排名：</span>
-                    <span class="number-text">23</span>
+                <a href="https://dna.qq.com/m/m201812/main.shtml" class="ui-icon download-btn"
+                    ontouchend="PTTSendClick('btn','guanwang','进入官网')"></a>
+            </div>
+            <div class="pr bg video-wrap">
+                <video src="#" id="video" autoplay="autoplay"></video>
+                <div class="absolute danmu-wrap"></div>
+                <div class="absolute ui-icon play-btn"></div>
+            </div>
+            <div class="bg user-plank-wrap flex">
+                <div class="user-head">
+                    <div style="background-image: url('#')"></div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <section>
-        <div class="bg vote-wrap">
-            <p class="vote-tips-text text-center">老铁，还差<span>2</span>票就超过上一名了，考验友情的时候到了！</p>
-            <div class="vote-btn-container flex">
-                <a href="javascript: ;" class="ui-icon vote-btn t" ontouchend="PTTSendClick('btn','vote','我要支持TA')">我要支持TA</a>
-<!--                <a href="javascript: ;" class="ui-icon get-vote-btn t" ontouchend="PTTSendClick('btn','get-vote','领取投票券')">领取投票券</a>-->
-            </div>
-            <p class="text-center vote-tips-text">预计增加<span>20/100</span>票</p>
-        </div>
-        <!-- tab切换 -->
-        <div id="tabCut" class="tab-wrap">
-            <div class="hd">
-                <ul class="flex tab-btn-wrap">
-                    <li class="ui-icon flex-1 tab-btn on t">金曲榜</li>
-                    <li class="ui-icon flex-1 tab-btn t">贡献榜</li>
-                </ul>
-            </div>
-            <div class="bd">
-                <div class="tab-panel" style="display: block;">
-                    <ul class="song-list rank-list first flex">
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="absolute ui-icon rank-num">1</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="absolute ui-icon rank-num">2</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="absolute ui-icon rank-num">3</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="absolute ui-icon rank-num">4</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                        <li class="pr song-item rank-item">
-                            <div class="song-wrap">
-                                <div class="bg song-head" style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')"></div>
-                                <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
-                                <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
-                            </div>
-                            <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
-                        </li>
-                    </ul>
-                    <div class="page-list flex">
-                        <a href="javascript: ;" class="page-item page-prev"><</a>
-                        <span class="page-item page-btn active">1</span>
-                        <span class="page-item page-btn">2</span>
-                        <span class="page-item page-btn">3</span>
-                        <span class="page-item page-btn">4</span>
-                        <span class="page-item page-btn">5</span>
-                        <a href="javascript: ;" class="page-item page-next">></a>
+                <div class="flex-1 user-name-wrap">
+                    <p class="user-name-text text-hide">可米莉亚</p>
+                    <p class="qufu-text">微信3区</p>
+                </div>
+                <div class="user-msg-wrap">
+                    <div class="flex data-wrap">
+                        <i class="ui-icon play-num-icon"></i>
+                        <span style="margin-right: .36rem;">5800</span>
+                        <i class="ui-icon comment-num-icon"></i>
+                        <span>1.3万</span>
                     </div>
-                </div>
-                <div class="tab-panel">
-                    <!-- first类名为控制第一页的前三名 皇冠图标，切换至大于第2页时请删除 first 类名 -->
-                    <ul class="ranking-list rank-list first">
-                        <li class="ranking-item rank-item flex">
-                            <div class="ui-icon rank-num">1</div>
-                            <div class="rank-head">
-                                <div style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')"></div>
-                            </div>
-                            <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
-                            <i class="ui-icon ticket-icon"></i>
-                            <span class="flex-1 rank-ticket-text">99999</span>
-                        </li>
-                        <li class="ranking-item rank-item flex">
-                            <div class="ui-icon rank-num">2</div>
-                            <div class="rank-head">
-                                <div style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')"></div>
-                            </div>
-                            <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
-                            <i class="ui-icon ticket-icon"></i>
-                            <span class="flex-1 rank-ticket-text">99999</span>
-                        </li>
-                        <li class="ranking-item rank-item flex">
-                            <div class="ui-icon rank-num">3</div>
-                            <div class="rank-head">
-                                <div style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')"></div>
-                            </div>
-                            <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
-                            <i class="ui-icon ticket-icon"></i>
-                            <span class="flex-1 rank-ticket-text">99999</span>
-                        </li>
-                        <li class="ranking-item rank-item flex">
-                            <div class="ui-icon rank-num">4</div>
-                            <div class="rank-head">
-                                <div style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')"></div>
-                            </div>
-                            <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
-                            <i class="ui-icon ticket-icon"></i>
-                            <span class="flex-1 rank-ticket-text">99999</span>
-                        </li>
-                    </ul>
-                    <div class="page-list flex">
-                        <a href="javascript: ;" class="page-item page-prev"><</a>
-                        <span class="page-item page-btn active">1</span>
-                        <span class="page-item page-btn">2</span>
-                        <span class="page-item page-btn">3</span>
-                        <span class="page-item page-btn">4</span>
-                        <span class="page-item page-btn">5</span>
-                        <a href="javascript: ;" class="page-item page-next">></a>
+                    <div class="flex data-wrap2">
+                        <span>当前得票：</span>
+                        <span class="number-text">2252</span>
+                        <span style="margin-left: .34rem;">排名：</span>
+                        <span class="number-text">23</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 赛事规则 -->
-        <div class="rule-title-icon">
-            <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/rule_icon.png" alt="赛事规则">
-        </div>
-        <div class="pr">
-            <div class="absolute bg inset-icon"></div>
-        </div>
-        <ul class="rule-list">
-            <li class="rule-item">1、活动时间：2019年11月30日-2019年12月11日；</li>
-            <li class="rule-item" style="margin-top: .1rem;">2、分享规则：游戏内玩家可将作品分享至平台并邀请好友支持，每份作品最多可接受十位玩家的页面支持；</li>
-            <li class="rule-item" style="margin-top: .1rem;">3、支持规则：游戏活跃用户方可点击“我要支持TA”按钮支持该作品，每位玩家仅可支持一份作品，若该玩家为活动开启后的新注册用户，可为所支持的作品涨100票，若非新注册用户，则仅可为所支持的作品涨20票。</li>
-        </ul>
-        <a href="javascript: alert('敬请期待！');" class="open-app" ontouchend="PTTSendClick('btn','open-app','打开龙族幻想')">
-            <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/foot_open_app.png" alt="打开龙族幻想">
-        </a>
-    </section>
-</div>
-
-<!-- 投票 -->
-<div class="dialog bg pop pop-1" id="pop1" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1">投票支持</p>
-        <div class="flex vote-count-wrap">
-            <div class="pop-head">
-                <div style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/pop_default.jpg')"></div>
-            </div>
-            <div class="vote-count">
-                <div class="flex count-btn-wrap">
-                    <a href="javascript: ;" class="ui-icon count-btn count-subtract t">-</a>
-                    <span class="count-content text-center" id="ticketNum">1</span>
-                    <a href="javascript: ;" class="ui-icon count-btn count-add t">+</a>
+        </header>
+        <section>
+            <div class="bg vote-wrap">
+                <p class="vote-tips-text text-center">老铁，还差<span>2</span>票就超过上一名了，考验友情的时候到了！</p>
+                <div class="vote-btn-container flex">
+                    <a href="javascript: ;" class="ui-icon vote-btn t"
+                        ontouchend="PTTSendClick('btn','vote','我要支持TA')">我要支持TA</a>
+                    <!--                <a href="javascript: ;" class="ui-icon get-vote-btn t" ontouchend="PTTSendClick('btn','get-vote','领取投票券')">领取投票券</a>-->
                 </div>
-                <p class="count-tips-text text-center">当前剩余<span id="maxTicketNum">30</span>票</p>
+                <p class="text-center vote-tips-text">预计增加<span>20/100</span>票</p>
             </div>
-            <a href="javascript: ;" class="ui-icon confirm-btn vote-confirm-btn t" ontouchend="PTTSendClick('btn','vote-confirm','投票确认')">确认</a>
-        </div>
+            <!-- tab切换 -->
+            <div id="tabCut" class="tab-wrap">
+                <div class="hd">
+                    <ul class="flex tab-btn-wrap">
+                        <li class="ui-icon flex-1 tab-btn on t">金曲榜</li>
+                        <li class="ui-icon flex-1 tab-btn t">贡献榜</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <div class="tab-panel" style="display: block;">
+                        <ul class="song-list rank-list first flex">
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="absolute ui-icon rank-num">1</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="absolute ui-icon rank-num">2</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="absolute ui-icon rank-num">3</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="absolute ui-icon rank-num">4</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                            <li class="pr song-item rank-item">
+                                <div class="song-wrap">
+                                    <div class="bg song-head"
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/song_default.jpg')">
+                                    </div>
+                                    <div class="absolute ui-icon ticket-wrap text-center">9999票</div>
+                                    <div class="pr text-hide text-center song-name-wrap">歌曲名字七个字</div>
+                                </div>
+                                <p class="text-hide text-center user-name2-text">玩家名字七个字</p>
+                            </li>
+                        </ul>
+                        <div class="page-list flex">
+                            <a href="javascript: ;" class="page-item page-prev">
+                                <</a> <span class="page-item page-btn active">1</span>
+                                    <span class="page-item page-btn">2</span>
+                                    <span class="page-item page-btn">3</span>
+                                    <span class="page-item page-btn">4</span>
+                                    <span class="page-item page-btn">5</span>
+                                    <a href="javascript: ;" class="page-item page-next">></a>
+                        </div>
+                    </div>
+                    <div class="tab-panel">
+                        <!-- first类名为控制第一页的前三名 皇冠图标，切换至大于第2页时请删除 first 类名 -->
+                        <ul class="ranking-list rank-list first">
+                            <li class="ranking-item rank-item flex">
+                                <div class="ui-icon rank-num">1</div>
+                                <div class="rank-head">
+                                    <div
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')">
+                                    </div>
+                                </div>
+                                <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
+                                <i class="ui-icon ticket-icon"></i>
+                                <span class="flex-1 rank-ticket-text">99999</span>
+                            </li>
+                            <li class="ranking-item rank-item flex">
+                                <div class="ui-icon rank-num">2</div>
+                                <div class="rank-head">
+                                    <div
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')">
+                                    </div>
+                                </div>
+                                <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
+                                <i class="ui-icon ticket-icon"></i>
+                                <span class="flex-1 rank-ticket-text">99999</span>
+                            </li>
+                            <li class="ranking-item rank-item flex">
+                                <div class="ui-icon rank-num">3</div>
+                                <div class="rank-head">
+                                    <div
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')">
+                                    </div>
+                                </div>
+                                <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
+                                <i class="ui-icon ticket-icon"></i>
+                                <span class="flex-1 rank-ticket-text">99999</span>
+                            </li>
+                            <li class="ranking-item rank-item flex">
+                                <div class="ui-icon rank-num">4</div>
+                                <div class="rank-head">
+                                    <div
+                                        style="background-image: url('//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/user_default.png')">
+                                    </div>
+                                </div>
+                                <p class="rank-name-text text-hide">玩家昵称七个字玩家昵称七个字玩家昵称七个字</p>
+                                <i class="ui-icon ticket-icon"></i>
+                                <span class="flex-1 rank-ticket-text">99999</span>
+                            </li>
+                        </ul>
+                        <div class="page-list flex">
+                            <a href="javascript: ;" class="page-item page-prev">
+                                <</a> <span class="page-item page-btn active">1</span>
+                                    <span class="page-item page-btn">2</span>
+                                    <span class="page-item page-btn">3</span>
+                                    <span class="page-item page-btn">4</span>
+                                    <span class="page-item page-btn">5</span>
+                                    <a href="javascript: ;" class="page-item page-next">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 赛事规则 -->
+            <div class="rule-title-icon">
+                <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/rule_icon.png" alt="赛事规则">
+            </div>
+            <div class="pr">
+                <div class="absolute bg inset-icon"></div>
+            </div>
+            <ul class="rule-list">
+                <li class="rule-item">1、活动时间：2019年11月30日-2019年12月11日；</li>
+                <li class="rule-item" style="margin-top: .1rem;">2、分享规则：游戏内玩家可将作品分享至平台并邀请好友支持，每份作品最多可接受十位玩家的页面支持；</li>
+                <li class="rule-item" style="margin-top: .1rem;">
+                    3、支持规则：游戏活跃用户方可点击“我要支持TA”按钮支持该作品，每位玩家仅可支持一份作品，若该玩家为活动开启后的新注册用户，可为所支持的作品涨100票，若非新注册用户，则仅可为所支持的作品涨20票。
+                </li>
+            </ul>
+            <a href="javascript: alert('敬请期待！');" class="open-app" ontouchend="PTTSendClick('btn','open-app','打开龙族幻想')">
+                <img src="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/foot_open_app.png" alt="打开龙族幻想">
+            </a>
+        </section>
     </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();;" title="关闭弹窗">×</a>
-</div>
-<!-- 投票 当前未检测到账号信息 -->
-<div class="dialog bg pop pop-1" id="pop2" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1">投票支持</p>
-        <p class="pop-description-text text-center">当前未检测到账号信息</p>
-        <a href="javascript: ;" class="ui-icon open-app-btn t" ontouchend="PTTSendClick('btn','open-app','打开龙族幻想')">打卡龙族幻想</a>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();;" title="关闭弹窗">×</a>
-</div>
-<!-- 领取投票券 -->
-<div class="dialog bg pop pop-1" id="pop3" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1">领取投票券</p>
-        <ul class="task-list">
-            <li class="task-item flex">
-                <p class="task-msg-text flex-1">登录游戏： <span> 1/1</span></p>
-                <span class="task-prize-text">+1</span>
-                <a href="javascript: ;"  ontouchend="PTTSendClick('btn','task-1','任务1')" class="ui-icon task-btn task-btn-3"></a>
-            </li>
-            <li class="task-item flex">
-                <p class="task-msg-text flex-1">参与屠龙： <span> 0/1</span></p>
-                <span class="task-prize-text">+5</span>
-                <a href="javascript: ;"  ontouchend="PTTSendClick('btn','task-2','任务2')" class="ui-icon task-btn task-btn-1"></a>
-            </li>
-            <li class="task-item flex">
-                <p class="task-msg-text flex-1">参与 K歌： <span> 1/1</span></p>
-                <span class="task-prize-text">+5</span>
-                <a href="javascript: ;"  ontouchend="PTTSendClick('btn','task-3 ','任务3')" class="ui-icon task-btn task-btn-2"></a>
-            </li>
-        </ul>
-        <div class="text-center">
-            <a href="javascript: alert('敬请期待！');" class="open-mall-btn" ontouchend="PTTSendClick('btn','open-mall','打开游戏商城')">打开游戏商城获取更多投票券</a>
-        </div>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
-</div>
-<!-- 领取投票券 当前未检测到账号信息 -->
-<div class="dialog bg pop pop-1" id="pop4" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1">领取投票券</p>
-        <p class="pop-description-text text-center">当前未检测到账号信息</p>
-        <a href="javascript: ;" class="ui-icon open-app-btn t" ontouchend="PTTSendClick('btn','open-app','打卡龙族幻想')">打卡龙族幻想</a>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();;" title="关闭弹窗">×</a>
-</div>
-<!-- 支持成功 已为好友增加20票 -->
-<div class="dialog bg pop pop-1" id="pop5" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
-        <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">恭喜支持成功，<br/>已为好友增加20票</p>
-        <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
-</div>
-<!-- 支持成功 已为好友增加100票 -->
-<div class="dialog bg pop pop-1" id="pop6" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
-        <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">恭喜支持成功，<br/>已为好友增加100票</p>
-        <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
-</div>
-<!-- 投票重复 -->
-<div class="dialog bg pop pop-1" id="pop7" style="display: none">
-    <div class="dia-con">
-        <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
-        <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">您已支持过该作品或其他作品，<br/>无法重复支持哦！</p>
-        <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
-    </div>
-    <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
-</div>
-<!-- 弹窗 End-->
-<!--wrapper End-->
-<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
-<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
-<script src="//game.gtimg.cn/images/js/su/danMu.beta.min.js"></script>
-<script>
 
-    //播放音频
-    var video = document.getElementById('video'),
-        $playBtn = $(".play-btn");
-    $playBtn.on("click", function(){
+    <!-- 弹窗开始 -->
+    <!-- 支持成功 已为好友增加20票 -->
+    <div class="dialog bg pop pop-1" id="pop5" style="display: none">
+        <div class="dia-con">
+            <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
+            <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">
+                恭喜支持成功，<br />已为好友增加20票</p>
+            <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
+        </div>
+        <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+    </div>
+    <!-- 支持成功 已为好友增加100票 -->
+    <div class="dialog bg pop pop-1" id="pop6" style="display: none">
+        <div class="dia-con">
+            <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
+            <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">
+                恭喜支持成功，<br />已为好友增加100票</p>
+            <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
+        </div>
+        <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+    </div>
+    <!-- 投票重复 -->
+    <div class="dialog bg pop pop-1" id="pop7" style="display: none">
+        <div class="dia-con">
+            <p class="pop-title-text flex-1" style="opacity: 0;">投票成功</p>
+            <p class="pop-description-text text-center" style="margin-top: .24rem;line-height: .52rem;">
+                您已支持过该作品或其他作品，<br />无法重复支持哦！</p>
+            <a href="javascript: closeDialog();" class="ui-icon ok-btn t">好的</a>
+        </div>
+        <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+    </div>
+    <!-- 选择登录方式 -->
+    <div class="dialog bg pop pop-1" id="pop8" style="display: none">
+        <div class="dia-con">
+            <p class="pop-title-text flex-1">请选择登录方式</p>
+            <div class="flex login-wrap flex-between">
+                <a href="javascript: closeDialog();" class="login-icon full-img">
+                    <img src="ossweb-img/wx.png" alt="qq">
+                    <p class="text-center">微信登录</p>
+                </a>
+                <a href="javascript: closeDialog();" class="login-icon full-img">
+                    <img src="ossweb-img/qq.png" alt="qq">
+                    <p class="text-center">qq登录</p>
+                </a>
+            </div>
+        </div>
+        <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+    </div>
+    <!-- 绑定角色 -->
+    <div class="dialog bg pop pop-2" id="pop9" style="display: none">
+        <div class="dia-con">
+            <p class="pop-title-text flex-1">绑定角色</p>
+            <div class="flex form-wrap" style="margin-top: .3rem;;">
+                <label>系统：</label>
+                <select class="flex-1" name="" id="">
+                    <option value="1">苹果(Ios)</option>
+                    <option value="1">安卓(Android)</option>
+                </select>
+            </div>
+            <div class="flex form-wrap">
+                <label>大区：</label>
+                <select class="flex-1" name="" id="">
+                    <option value="1">微信1区</option>
+                    <option value="1">微信2区</option>
+                </select>
+            </div>
+            <div class="flex form-wrap">
+                <label>角色：</label>
+                <select class="flex-1" name="" id="">
+                    <option value="1">角色名称七个字</option>
+                </select>
+            </div>
+            <a href="javascript: closeDialog();" class="ui-icon confirm-btn t"
+                ontouchend="PTTSendClick('btn','vote-confirm','提交')">提交</a>
+        </div>
+        <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
+    </div>
+    <!-- 弹窗 End-->
+    <!--wrapper End-->
+    <script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//game.gtimg.cn/images/js/su/danMu.beta.min.js"></script>
+    <script>
+        //播放音频
+        var video = document.getElementById('video'),
+            $playBtn = $(".play-btn");
+        $playBtn.on("click", function () {
+            video.play();
+            $playBtn.fadeOut(300);
+        });
         video.play();
-        $playBtn.fadeOut(300);
-    });
-    video.play();
-    $(video).on("click", function(){
-        video.pause();
-        $playBtn.fadeIn(300);
-    });
+        $(video).on("click", function () {
+            video.pause();
+            $playBtn.fadeIn(300);
+        });
 
-    //榜单切换
-    $("#tabCut .hd ul li").on("click", function(){
-        var index = $(this).index();
-        $(this).addClass('on').siblings('li').removeClass('on');
-        $("#tabCut .bd .tab-panel").hide().eq(index).show();
-    });
+        //榜单切换
+        $("#tabCut .hd ul li").on("click", function () {
+            var index = $(this).index();
+            $(this).addClass('on').siblings('li').removeClass('on');
+            $("#tabCut .bd .tab-panel").hide().eq(index).show();
+        });
 
-    //投票计数
-    var ticketNum = 1;
-    var maxTicketNum = parseInt($("#maxTicketNum").text());
-    $(".count-btn-wrap .count-btn").on("click", function(){
-        $(this).hasClass('count-subtract') ? ticketNum-- : ticketNum++;
-        countTicket();
-    });
-    function countTicket(){
-        maxTicketNum = parseInt($("#maxTicketNum").text());
-        ticketNum < 1 ? ticketNum = 1 : ticketNum;
-        ticketNum > maxTicketNum ? ticketNum = maxTicketNum : ticketNum;
-        $("#ticketNum").text(ticketNum);
-    }
+        //投票计数
+        var ticketNum = 1;
+        var maxTicketNum = parseInt($("#maxTicketNum").text());
+        $(".count-btn-wrap .count-btn").on("click", function () {
+            $(this).hasClass('count-subtract') ? ticketNum-- : ticketNum++;
+            countTicket();
+        });
 
-    //投票 弹出弹窗
-    $(".vote-btn").on("click", function(){
-        $(this).addClass('vote-btn-filter');
-        TGDialogS('pop5');//支持20票
-        //TGDialogS('pop6');//支持100票
-        //TGDialogS('pop7');//已经支持过了
-    });
-    //投票确认
-    $(".vote-confirm-btn").on("click", function(){
-        var voteNum = parseInt( $("#ticketNum").text() );//票数
-        closeDialog();
-        TGDialogS('pop5');//支持20票
-        //TGDialogS('pop6');//支持100票
-        //TGDialogS('pop7');//已经支持过了
-    });
+        function countTicket() {
+            maxTicketNum = parseInt($("#maxTicketNum").text());
+            ticketNum < 1 ? ticketNum = 1 : ticketNum;
+            ticketNum > maxTicketNum ? ticketNum = maxTicketNum : ticketNum;
+            $("#ticketNum").text(ticketNum);
+        }
 
-    //领取投票券，弹窗弹窗
-    $(".get-vote-btn").on("click", function(){
-        TGDialogS('pop3');
-    });
-    //领取投票券
-    $(".task-btn-2").on("click", function(){
-        $(this).addClass("task-btn-3").removeClass('task-btn-2');
-    });
+        //投票 弹出弹窗
+        $(".vote-btn").on("click", function () {
+            $(this).addClass('vote-btn-filter');
+            TGDialogS('pop5'); //支持20票
+            //TGDialogS('pop6');//支持100票
+            //TGDialogS('pop7');//已经支持过了
+        });
+        //投票确认
+        $(".vote-confirm-btn").on("click", function () {
+            var voteNum = parseInt($("#ticketNum").text()); //票数
+            closeDialog();
+            TGDialogS('pop5'); //支持20票
+            //TGDialogS('pop6');//支持100票
+            //TGDialogS('pop7');//已经支持过了
+        });
 
-    function TGDialogS(e){
-        // 利用milo库引入dialog组件
-        need("biz.dialog",function(Dialog){
-            Dialog.show({
-                id: e,
-                bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
-                opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        //领取投票券，弹窗弹窗
+        $(".get-vote-btn").on("click", function () {
+            TGDialogS('pop3');
+        });
+        //领取投票券
+        $(".task-btn-2").on("click", function () {
+            $(this).addClass("task-btn-3").removeClass('task-btn-2');
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
             });
-        });
-    }
-    function closeDialog(){
-        // 利用milo库引入dialog组件
-        need("biz.dialog",function(Dialog){
-            Dialog.hide();
-        });
-    }
+        }
 
-    //初始的弹幕数据
-    var danmuData = [
-        '哈哈哈哈哈哈哈',
-        '弹幕来袭~',
-        '前面的 你肥皂掉了！！',
-        "前方高能，一大波弹幕来袭！",
-        "不约，叔叔我们不约~",
-        "今天没吃药，感觉自己萌萌哒",
-        "走开，让专业的来",
-        "23333333333~~~~~",
-        "请允许我做一个悲伤的表情",
-        "警察叔叔，就是这个人",
-        "为什么放弃治疗",
-        "放开那个人，让我来",
-        "噗……节操去了哪里啊都！！",
-        "膜拜老司机",
-        "你咋不上天呢",
-        "666",
-        "666666666666666666666666~~~",
-        "放开她，让我来！！！",
-        "德里克。。。。test 。。。",
-        "666~~~~~~~~~！！！！！",
-        "前方高能 非战斗人员紧急撤离",
-        "妈妈问我为什么跪着看电脑_(:_」∠)_",
-        "他说的好有道理 我竟无言以对",
-        '小六 你好靓吖',
-        '我基本是只废猫(≥◇≤)',
-        '这个是真的耶',
-        '弹幕走一波~~~~~~~~~~~~~~~~~~~~~~~~~~',
-        '我似乎听到有人说我帅',
-        '什么？！你刚才说我帅？',
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~我是天空中最亮的星星~~~~~~~~~~~~~~~~~~~~~',
-        '好多人啊',
-        '喂，妖妖灵吗，这里有人在装逼。。',
-        '对方不想和你说话,并向你扔了一条狗。。。',
-        '前面那个说我帅的别走啊啊啊啊',
-        '你们玩，我静静地看着',
-        '我就静静看着你',
-        '超级羞羞',
-        '好想你',
-        '我想你！',
-        '你真帅~',
-        '你肚子好大！！',
-        '最近变胖了，悲伤'
-    ];
-    //实例化弹幕
-    var dm = new danMu({
-        device:'m',
-        stage: $(".danmu-wrap"),
-        comments: danmuData,
-        danMuHtml: "<span>{comment}</span>",
-        colors: ["#fff","#00ccff","#ff0000","#00ff00","#fef500"],
-        flyTime:7000,
-        timeInterval:1200,
-        randomSort:true
-    });
-    dm.play();
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
 
-</script>
-<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
-<script>
-    window.getRandom = function(max, min){
-        return Math.floor( Math.random() * (max-min) + min );
-    };
-    //分享随机文案
-    var shareText = [
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~1',
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~2',
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~3',
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~4',
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~5',
-        '这首歌也太太太特别了吧，讲真，记得把声音开小一点~6'
-    ];
-    TGMobileShare({
-        shareTitle: shareText[getRandom(0, shareText.length)], //不设置或设置为空时，页面有title，则调取title
-        shareDesc:'可米莉亚', //不设置或设置为空时，页面有Description，则调取Description
-        shareImgUrl:'https://game.gtimg.cn/images/xiawa/cp/a20191025kgshare/share.jpg', //分享图片尺寸200*200，且填写绝对路径
-        shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
-        actName:'a20191025kgshare' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
-    });
-    //统计
-    var setSite = {
-        siteType:"a20191025kgshare",
-        pageType:"index",
-        pageName:"首页",
-        osact:0,
-        ingame:0,
-        stayTime:0
-    };
-    if(typeof(pgvMain)=='function')pgvMain();
-</script>
+        //初始的弹幕数据
+        var danmuData = [
+            '哈哈哈哈哈哈哈',
+            '弹幕来袭~',
+            '前面的 你肥皂掉了！！',
+            "前方高能，一大波弹幕来袭！",
+            "不约，叔叔我们不约~",
+            "今天没吃药，感觉自己萌萌哒",
+            "走开，让专业的来",
+            "23333333333~~~~~",
+            "请允许我做一个悲伤的表情",
+            "警察叔叔，就是这个人",
+            "为什么放弃治疗",
+            "放开那个人，让我来",
+            "噗……节操去了哪里啊都！！",
+            "膜拜老司机",
+            "你咋不上天呢",
+            "666",
+            "666666666666666666666666~~~",
+            "放开她，让我来！！！",
+            "德里克。。。。test 。。。",
+            "666~~~~~~~~~！！！！！",
+            "前方高能 非战斗人员紧急撤离",
+            "妈妈问我为什么跪着看电脑_(:_」∠)_",
+            "他说的好有道理 我竟无言以对",
+            '小六 你好靓吖',
+            '我基本是只废猫(≥◇≤)',
+            '这个是真的耶',
+            '弹幕走一波~~~~~~~~~~~~~~~~~~~~~~~~~~',
+            '我似乎听到有人说我帅',
+            '什么？！你刚才说我帅？',
+            '~~~~~~~~~~~~~~~~~~~~~~~~~~我是天空中最亮的星星~~~~~~~~~~~~~~~~~~~~~',
+            '好多人啊',
+            '喂，妖妖灵吗，这里有人在装逼。。',
+            '对方不想和你说话,并向你扔了一条狗。。。',
+            '前面那个说我帅的别走啊啊啊啊',
+            '你们玩，我静静地看着',
+            '我就静静看着你',
+            '超级羞羞',
+            '好想你',
+            '我想你！',
+            '你真帅~',
+            '你肚子好大！！',
+            '最近变胖了，悲伤'
+        ];
+        //实例化弹幕
+        var dm = new danMu({
+            device: 'm',
+            stage: $(".danmu-wrap"),
+            comments: danmuData,
+            danMuHtml: "<span>{comment}</span>",
+            colors: ["#fff", "#00ccff", "#ff0000", "#00ff00", "#fef500"],
+            flyTime: 7000,
+            timeInterval: 1200,
+            randomSort: true
+        });
+        dm.play();
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script>
+        window.getRandom = function (max, min) {
+            return Math.floor(Math.random() * (max - min) + min);
+        };
+        //分享随机文案
+        var shareText = [
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~1',
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~2',
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~3',
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~4',
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~5',
+            '这首歌也太太太特别了吧，讲真，记得把声音开小一点~6'
+        ];
+        TGMobileShare({
+            shareTitle: shareText[getRandom(0, shareText.length)], //不设置或设置为空时，页面有title，则调取title
+            shareDesc: '可米莉亚', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https://game.gtimg.cn/images/xiawa/cp/a20191025kgshare/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20191025kgshare' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        });
+        //统计
+        var setSite = {
+            siteType: "a20191025kgshare",
+            pageType: "index",
+            pageName: "首页",
+            osact: 0,
+            ingame: 0,
+            stayTime: 0
+        };
+        if (typeof (pgvMain) == 'function') pgvMain();
+    </script>
 </body>
+
 </html>
