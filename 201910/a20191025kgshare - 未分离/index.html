@@ -288,27 +288,31 @@
         <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
     </div>
     <!-- 绑定角色 -->
-    <div class="dialog bg pop pop-2" id="pop9" style="display: none">
+    <div class="dialog bg pop pop-3" id="pop9" style="display: none">
         <div class="dia-con">
             <p class="pop-title-text flex-1">绑定角色</p>
-            <div class="flex form-wrap" style="margin-top: .3rem;;">
+            <div class="form-wrap" style="margin-top: .3rem;">
+                <label>平台：</label>
+                <select class="flex-1" id="channelContentId">
+                    <option>请选择平台</option>
+                </select>
+            </div>
+            <div class="form-wrap">
                 <label>系统：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">苹果(Ios)</option>
-                    <option value="1">安卓(Android)</option>
+                <select class="flex-1" id="systemContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
-            <div class="flex form-wrap">
+            <div class="form-wrap">
                 <label>大区：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">微信1区</option>
-                    <option value="1">微信2区</option>
+                <select id="areaContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
-            <div class="flex form-wrap">
+            <div class="form-wrap">
                 <label>角色：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">角色名称七个字</option>
+                <select id="roleContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
             <a href="javascript: closeDialog();" class="ui-icon confirm-btn t"

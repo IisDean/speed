@@ -15,6 +15,7 @@
         content="龙族幻想,龙族幻想官网,龙族幻想预约,腾讯龙族幻想官网,龙族幻想下载,虚幻4,龙族幻想官方网站,龙族幻想手游,腾讯龙族幻想,腾讯龙族幻想手游,腾讯龙族幻想下载,代号夏娃,代号夏娃下载,代号夏娃官网,腾讯代号夏娃">
     <title>龙族幻想K歌分享-龙族幻想-腾讯游戏</title>
     <link rel="stylesheet" href="//game.gtimg.cn/images/xiawa/cp/a20191025kgshare/css/index.css">
+    <script type='text/javascript' src='//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152'></script>
     <script>
         //屏幕适应
         (function (win, doc) {
@@ -302,40 +303,54 @@
         <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
     </div>
     <!-- 绑定角色 -->
-    <div class="dialog bg pop pop-2" id="pop9" style="display: none">
+    <div class="dialog bg pop pop-3" id="pop9" style="display: none">
         <div class="dia-con">
             <p class="pop-title-text flex-1">绑定角色</p>
-            <div class="flex form-wrap" style="margin-top: .3rem;;">
+            <div class="form-wrap" style="margin-top: .3rem;">
+                <label>平台：</label>
+                <select class="flex-1" id="channelContentId">
+                    <option>请选择平台</option>
+                </select>
+            </div>
+            <div class="form-wrap">
                 <label>系统：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">苹果(Ios)</option>
-                    <option value="1">安卓(Android)</option>
+                <select class="flex-1" id="systemContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
-            <div class="flex form-wrap">
+            <div class="form-wrap">
                 <label>大区：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">微信1区</option>
-                    <option value="1">微信2区</option>
+                <select id="areaContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
-            <div class="flex form-wrap">
+            <div class="form-wrap">
                 <label>角色：</label>
-                <select class="flex-1" name="" id="">
-                    <option value="1">角色名称七个字</option>
+                <select id="roleContentId">
+                    <option>请选择平台</option>
                 </select>
             </div>
-            <a href="javascript: closeDialog();" class="ui-icon confirm-btn t"
+            <a href="javascript:;" class="ui-icon confirm-btn t" id="myGiftMainBtn"
                 ontouchend="PTTSendClick('btn','vote-confirm','提交')">提交</a>
         </div>
         <a class="ui-icon absolute close-btn t" href="javascript: closeDialog();" title="关闭弹窗">×</a>
     </div>
     <!-- 弹窗 End-->
     <!--wrapper End-->
+
+    <!-- h5 js start -->
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <!-- h5 js end -->
+
+    <!--
     <script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
     <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	-->
     <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
     <script src="//game.gtimg.cn/images/js/su/danMu.beta.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script>
         //播放音频
         var video = document.getElementById('video'),
@@ -472,10 +487,7 @@
             randomSort: true
         });
         dm.play();
-    </script>
-    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
-    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
-    <script>
+
         window.getRandom = function (max, min) {
             return Math.floor(Math.random() * (max - min) + min);
         };
@@ -495,6 +507,235 @@
             shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
             actName: 'a20191025kgshare' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
         });
+
+        /***** H5 start **********************/
+        var ua = window.navigator.userAgent.toLowerCase()
+        var UA = navigator.userAgent
+        var REGEXP_IOS_QQ = /(iPad|iPhone|iPod).*? QQ\/([\d\.]+)/
+        var REGEXP_ANDROID_QQ = /\bV1_AND_SQI?_([\d\.]+)(.*? QQ\/([\d\.]+))?/
+
+        function isWeiXin() {
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        function isQQ() {
+            var sUserAgent = navigator.userAgent
+            var REGEXP_IOS_QQ = new RegExp('(iPad|iPhone|iPod).*? (IPad)?QQ\\/([\\d\\.]+)')
+            var REGEXP_ANDROID_QQ = new RegExp('\\bV1_AND_SQI?_([\\d\\.]+)(.*? QQ\\/([\\d\\.]+))?', 'ig')
+
+            var isIphoneOs_QQ = REGEXP_IOS_QQ.test(sUserAgent)
+            var isAndroid_QQ = REGEXP_ANDROID_QQ.test(sUserAgent)
+
+            if (isIphoneOs_QQ || isAndroid_QQ) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        function isIos() {
+            return /iphone|ipod|ipad/i.test(ua)
+        }
+
+        function isAndroid() {
+            return /android/i.test(ua)
+        }
+
+        var actLinkM = window.location.protocol + '//dna.qq.com/cp/a20191025kgshare/index_wq.html',
+            _server_url = '',
+            serviceType = 'xiawa',
+            qqappid = '1106940691',
+            wxappidM = 'wx1cd4fbe9335888fe',
+            ams_targetappid = 'wxebffc92f0b100397'
+
+        var sData = {},
+            sArea = '',
+            sPlatId = '',
+            sPartition = '',
+            sRoleId = '',
+            sRoleName = '',
+            isLogin = 0,
+            isBind = 0,
+            binData = {},
+            isLoad = 0,
+            goGame = window.location.protocol + '//speedm.qq.com/d/a20180212lester/play.html'; // 拉起游戏连接
+
+
+
+        var activityUrl = actLinkM + '?acctype=wx&appid=' + wxappidM
+
+        // 拉起QQ 登录
+        function amsQQLogin() {
+            if (!REGEXP_IOS_QQ.test(UA) && !REGEXP_ANDROID_QQ.test(UA)) {
+                setTimeout(function () {
+                    window.location.href = 'mqqapi://forward/url?url_prefix=' + btoa(actLinkM + '?_wv=49957') +
+                        '&version=1&src_type=web'
+                }, 200)
+            } else {
+                window.location.href = actLinkM + '?_wv=49957'
+            }
+        }
+
+        // 拉起微信登录
+        function amsWXLogin() {
+            // openLink 尚未提供
+        }
+
+        // 角色选择器
+        function selectRole(id) {
+            if (isWeiXin()) {
+                _server_url = window.location.protocol + '//gameact.qq.com/comm-htdocs/js/game_area/' + id +
+                    '_WX_server_select.js'
+            } else {
+                _server_url = window.location.protocol + '//gameact.qq.com/comm-htdocs/js/game_area/' + id +
+                    '_SQ_server_select.js'
+            }
+            include(_server_url + '?_rand=' + Math.random(), function () {
+                checkLoop(id)
+            })
+        }
+
+        // 角色选择后执行。
+        function checkLoop(gameId) {
+            need(['biz.roleselector'], function (RoleSelector) {
+                var roleobj = cloneClass(RoleSelector)
+                roleobj.init({
+                    'type': 'html',
+                    'gameId': gameId,
+                    'isQueryRole': true,
+                    // '_everyRead': true,
+                    'area1ContentId': 'area1ContentId', // 如果为2级大区，则该值必须设置
+                    'areaContentId': 'areaContentId',
+                    'channelContentId': 'channelContentId', // 如果用不到可以删除
+                    'systemContentId': 'systemContentId', // 如果用不到可以删除
+                    'roleContentId': 'roleContentId',
+                    'confirmButtonId': 'myGiftMainBtn',
+                    'openToOpen': {
+                        'sAMSTrusteeship': 1,
+                        'ams_targetappid': ams_targetappid
+                    },
+                    'submitEvent': function (roleObj) {
+                        isBind = true
+                        sData.sRoleId = roleObj.submitData.roleid;
+                        sData.sArea = roleObj.submitData.areaid;
+                        sData.sPlatId = roleObj.submitData.sPlatId;
+                        sData.sPartition = roleObj.submitData.sPartition;
+                        console.log(roleObj);
+                        alert(1);
+                    }
+                })
+                roleobj.show()
+            })
+        }
+
+        // 按钮并发锁
+        var myLock = 0
+
+        function btnLock() {
+            myLock = 1
+            console.log('do lock:' + myLock)
+            setTimeout(function () {
+                myLock = 0
+                console.log('del lock:' + myLock)
+            }, 2000)
+        }
+
+        sPlatId = isIos() ? '0' : (isAndroid() ? '1' : '')
+
+        window.ams_login_avoid_conflict = true
+
+        // ready
+        milo.ready(function () {
+            selectRole(serviceType);
+            need('biz.login', function (LoginManager) {
+                LoginManager.init({
+                    appConfig: {
+                        avoidConflict: true,
+                        WxAppId: wxappidM,
+                        scope: 'snsapi_userinfo'
+                    }
+                })
+
+                LoginManager.checkLogin(function (userInfo) {
+                    var acctype = milo.cookie.get('acctype')
+                    if ((isWeiXin() && acctype != 'wx') || (isQQ() && acctype == 'wx')) {
+                        LoginManager.logout({
+                            logoutCallback: function () {
+                                location.reload(true)
+                            }
+                        })
+                        return
+                    } else {
+                        isLogin = true
+                        if (isWeiXin()) {
+                            appid = wxappidM
+                            sArea = 1;
+                            sData = {
+                                'appid': appid,
+                                'sArea': sArea,
+                                'sServiceType': 'txyxhdh',
+                                'ams_targetappid': ams_targetappid
+                            }
+                            LoginManager.getUserInfoByWxOpenId({
+                                'openid': milo.cookie.get('openid'),
+                                'access_token': milo.cookie.get('access_token')
+                            }, function (wxuser) {
+                                sRoleName = wxuser.nickname.replace(
+                                    /<span[^>]*>([\s\S]*?)<\/span>/g, '')
+                                sRoleName = milo.xss.filter(sRoleName);
+                                //$(".myRoleName").text(sRoleName);
+                            }, function () {
+                                LoginManager.logout({
+                                    logoutCallback: function () {
+                                        location.reload(true)
+                                    }
+                                })
+                            })
+                        } else {
+                            // qq登录
+                            appid = qqappid
+                            sArea = 2;
+                            sData = {
+                                'appid': appid,
+                                'sArea': sArea,
+                                'sServiceType': serviceType
+                            }
+                            sRoleName = LoginManager.getUin();
+                            //$(".myRoleName").text(sRoleName);
+                        }
+
+                        alert('已登录');
+                    }
+                }, function () {
+                    isLogin = false
+                    if (isWeiXin()) {
+                        LoginManager.loginByWX({
+                            redirect_wx_url: window.location.protocol +
+                                "//iu.qq.com/wxauth/redirect.html?url=" +
+                                encodeURIComponent(activityUrl),
+                            scope: 'snsapi_userinfo ' //scope:snsapi_base,snsapi_userinfo  根据实际需要设置
+                        })
+                    } else if (isQQ() || milo.request('isQQ') == '1') {
+                        LoginManager.login();
+                    } else {
+                        alert('未登录');
+                    }
+                }, {
+                    appConfig: {
+                        WxAppId: wxappidM,
+                        scope: 'snsapi_userinfo'
+                    }
+                })
+            })
+        })
+        /***** H5 end **********************/
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
         //统计
         var setSite = {
             siteType: "a20191025kgshare",

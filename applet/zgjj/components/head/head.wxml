@@ -1,0 +1,41 @@
+<!--components/head/head.wxml-->
+<view class="p-r head-container">
+    <image class="head-bg" src="{{assets + 'images/head_bg.jpg'}}" mode="widthFix"></image>
+    <view class="p-a head-wrap flex-wrap">
+        <view class="p-r head-avatar">
+            <image class="avatar-img" src="{{assets + 'images/head_img.png'}}" mode="aspectFill">
+            </image>
+            <image class="p-a avatar-border" src="{{assets + 'images/head_border.png'}}" mode="aspectFill">
+            </image>
+            <text class="p-a t-c level-text">Lv17</text>
+        </view>
+        <view class="user-msg-wrap flex-1">
+            <view class="flex-wrap flex-between">
+                <view class="flex-wrap">
+                    <text class="user-name-text">湯普SEN</text>
+                    <text class="season-text">S1賽季</text>
+                </view>
+                <view class="p-r btn-wrap btn-zb">
+                    <image src="{{assets + 'images/btn_zb.png'}}" mode="aspectFill">
+                    </image>
+                    <text class="p-a btn-text t-c">用户周报</text>
+                </view>
+            </view>
+            <view class="flex-wrap flex-between dw-container">
+                <view>
+                    <text class="dw-title-text">当前段位：</text>
+                    <image class="dw-icon" src="{{assets + 'images/dw_1.png'}}"></image>
+                    <text class="dw-msg-text">战车六段</text>
+                </view>
+                <view>
+                    <text class="dw-title-text">|</text>
+                </view>
+                <view>
+                    <text class="dw-title-text">最高段位：</text>
+                    <image class="dw-icon" src="{{assets + 'images/dw_2.png'}}"></image>
+                    <text class="dw-msg-text">骑士七段</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

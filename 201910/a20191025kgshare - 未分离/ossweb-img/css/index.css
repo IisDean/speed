@@ -735,6 +735,13 @@ body {
     outline: none;
 }
 
+.pop-3 {
+    width: 5.41rem;
+    height: 4.56rem;
+    background-image: url("../pop_bg_2.png");
+    outline: none;
+}
+
 .pop-title-text {
     margin-left: .38rem;
     font-weight: bold;
@@ -906,15 +913,18 @@ body {
 }
 
 .form-wrap label {
+    display: inline-block;
+    min-width: .8rem;
     line-height: .5rem;
     font-size: .22rem;
     color: #fff;
 }
 
 .form-wrap select {
-    display: block;
+    display: inline-block;
     padding: 0 .1rem;
     line-height: .5rem;
+    width: 2.4rem;
     height: .5rem;
     background-color: #2b3475;
     border: none;

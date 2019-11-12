@@ -1,54 +1,283 @@
 /**index.wxss**/
-.head-container,
-.head-wrap,
-.head-bg {
-    width: 100%;
+.container {
+    background-color: #e6e6e6;
 }
-.head-wrap {
-    top: 145rpx;
-    left: 0rpx;
-    padding: 0 35rpx;
-    width: 750rpx;
-}
-.head-avatar {
-    width: 110rpx;
-}
-.avatar-img {
-    width: 110rpx;
-    height: 110rpx;
+.tab-container {
+    padding: 0 35rpx 40rpx;
     box-sizing: border-box;
-    border: 2px solid #ba8c52;
-    border-radius: 99rpx;
+    background-color: #0d1e32;
 }
-.avatar-border {
-    top: -6rpx;
-    left: -6rpx;
-    width: 120rpx;
-    height: 128rpx;
+.tab-bg,
+.tab-list {
+    width: 680rpx;
+    height: 72rpx;
 }
-.level-text {
-    bottom: -8rpx;
-    left: 0;
-    width: 100%;
+.tab-list {
+    top: 0;
+    left: 35rpx;
+    background-image: linear-gradient(top, #122b4a, #184175); 
+}
+.tab-item {
+    line-height: 72rpx;
     font-size: 24rpx;
-    color: #32445a;
+    color: #adc2d3;
 }
-.user-msg-wrap {
-    margin-left: 24rpx;
+.tab-item-active {
+    top: 0;
+    left: 0rpx;
+    margin-left: 37rpx;
+    width: 168rpx;
+    height: 72rpx;
 }
-.user-name-text {
+.tab-item-active.tab-active-1 {
+    left: 0rpx;
+}
+.tab-item-active.tab-active-2 {
+    left: 169rpx;
+}
+.tab-item-active.tab-active-3 {
+    left: 339rpx;
+}
+.tab-item-active.tab-active-4 {
+    left: 509rpx;
+}
+.tab-item-active.tab-active-1 + .tab-list .tab-item:nth-child(1),
+.tab-item-active.tab-active-2 + .tab-list .tab-item:nth-child(2),
+.tab-item-active.tab-active-3 + .tab-list .tab-item:nth-child(3),
+.tab-item-active.tab-active-4 + .tab-list .tab-item:nth-child(4) {
+    color: #fbfdfe;
+}
+
+.overview-container {
+    margin-top: 40rpx;
+
+}
+.overview-tab {
+    display: none;
+}
+.overview-tab-1 .overview-tab:nth-child(1),
+.overview-tab-2 .overview-tab:nth-child(2),
+.overview-tab-3 .overview-tab:nth-child(3),
+.overview-tab-4 .overview-tab:nth-child(4) {
+    display: block;
+}
+.overview-list {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    height: 148rpx;
+    overflow: hidden;
+}
+.overview-list.active {
+    height: auto;
+}
+.overview-item,
+.overview-bg,
+.overview-wrap {
+    width: 140rpx;
+    height: 108rpx;
+}
+.overview-group,
+.overview-group-bg {
+    width: 40rpx;
+    height: 108rpx;
+}
+.overview-item {
+    margin-bottom: 40rpx;
+}
+.overview-wrap,
+.overview-group-wrap {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.group-wrap {
+    width: 100%;
+}
+.overview-group-text {
+    line-height: 54rpx;
+    font-size: 24rpx;
+    color: #adc2d3;
+}
+.overview-msg-text {
+    display: block;
+    line-height: 63rpx;
+    font-size: 36rpx;
+    color: #dea55f;
+}
+.overview-title-text {
+    line-height: 43rpx;
+    font-size: 24rpx;
+    color: #adc2d3;
+}
+.open-list-btn {
+    width: 100%;
+    height: 48rpx;
+    border: 1rpx solid #204169;
+    border-radius: 4rpx;
+}
+.open-list-btn text {
+    margin-right: 10rpx;
+    line-height: 48rpx;
+    font-size: 24rpx;
+    color: #dea55f;
+}
+.arrow-icon {
+    margin-top: 15rpx;
+    width: 18rpx;
+    height: 19rpx;
+}
+/* 功能 */
+.menu-list {
+    width: 100%;
+    height: 173rpx;
+}
+.menu-item {
+    width: 165rpx;
+    height: 100%;
+}
+.menu-icon {
+    display: block;
+    margin: 38rpx auto 0;
+    width: 54rpx;
+    height: 54rpx;
+}
+.menu-text {
+    margin-top: 24rpx;
+    font-size: 24rpx;
+    color: #333;
+}
+/* 近20场比赛排名 */
+.group-rank-title {
+    margin-top: 40rpx;
+}
+.group-rank-title .group-label {
+    margin-right: 6rpx;
+    padding: 0 10rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    font-size: 24rpx;
+}
+.group-rank-text {
+    font-size: 24rpx;
+    color: #333;
+}
+.group-rank-text text {
+    color: #b59064;
+}
+.fenge-line {
+    display: block;
     margin-top: 20rpx;
-    font-size: 40rpx;
+    width: 680rpx;
+    height: 5rpx;
+}
+.rank-list {
+    margin-top: 22rpx;
+    padding-bottom: 10rpx;
+    flex-wrap: wrap;
+}
+.rank-list::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 20rpx);
+    width: 100%;
+    height: 1rpx;
+    background-color: #d1d1d1;
+}
+.rank-item {
+    display: block;
+    margin-right: 15rpx;
+    margin-bottom: 40rpx;
+    width: 50rpx;
+    height: 50rpx;
+    box-sizing: border;
+    line-height: 50rpx;
+    font-size: 24rpx;
     color: #fff;
 }
-.season-text {
-    margin-top: 37rpx;
-    margin-left: 10rpx;
-    padding: 0 10rpx;
-    height: 24rpx;
-    line-height: 24rpx;
-    font-size: 20rpx;
-    color: #dea55f;
-    border: 1px solid #dea55f;
-    border-radius: 99rpx;
+.rank-list .rank-item:nth-child(10n) {
+    margin-right: 0;
+}
+.rank-item.up {
+    background-color: #db5852;
+    border: 1rpx solid #c44c47;
+}
+.rank-item.down {
+    background-color: #474747;
+    border: 1rpx solid #333;
+}
+/* 历史战绩 */
+.btn-look-flock {
+    margin-top: 40rpx;
+}
+.btn-look-flock,
+.btn-look-flock image {
+    width: 202rpx;
+    height: 48rpx;
+}
+.btn-look-flock .btn-text {
+    line-height: 48rpx;
+}
+.ls-record-title {
+    width: 100%;
+    height: 46rpx;
+    background-color: #e4e4e4;
+    border: 1rpx solid #ccc;
+}
+.ls-title-text {
+    line-height: 46rpx;
+    font-size: 24rpx;
+    color: #333;
+}
+.ls-item-1 {
+    width: 93rpx;
+}
+.ls-item-3 {
+    width: 177rpx;
+}
+.ls-record-title .ls-item-2::before,
+.ls-record-title .ls-item-2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10rpx;
+    width: 1rpx;
+    height: 28rpx;
+    background-color: #ccc;
+}
+.ls-record-title .ls-item-2::before {
+    left: 0;
+}
+.ls-record-title .ls-item-2::after {
+    right: 0;
+}
+.ls-record-list .group-label {
+    margin-top: 30rpx;
+    padding: 0 3rpx;
+    height: 25rpx;
+    line-height: 25rpx;
+    font-size: 18rpx;
+}
+.ls-num-text {
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #b59064;
+}
+.ls-time-text {
+    margin-top: 25rpx;
+    font-size: 18rpx;
+    color: #999;
+}
+.zhenr-list {
+    margin-top: 5rpx;
+}
+.zhenr-icon {
+    display: block;
+    margin-right: 2rpx;
+    width: 36rpx;
+    height: 36rpx;
+}
+.zhenr-list .zhenr-icon:first-child {
+    margin-left: 14rpx;
 }

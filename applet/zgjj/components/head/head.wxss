@@ -1,0 +1,88 @@
+/* components/head/head.wxss */
+.head-container,
+.head-wrap,
+.head-bg {
+    width: 100%;
+}
+.head-bg {
+    display: block;
+}
+.head-wrap {
+    top: 145rpx;
+    left: 0rpx;
+    padding: 0 35rpx;
+    box-sizing: border-box;
+    width: 750rpx;
+}
+.head-avatar {
+    width: 110rpx;
+    height: 110rpx;
+}
+.avatar-img {
+    width: 110rpx;
+    height: 110rpx;
+    box-sizing: border-box;
+    border: 2px solid #ba8c52;
+    border-radius: 99rpx;
+}
+.avatar-border {
+    top: -6rpx;
+    left: -6rpx;
+    width: 120rpx;
+    height: 128rpx;
+}
+.level-text {
+    bottom: -15rpx;
+    left: 0;
+    width: 100%;
+    font-size: 24rpx;
+    color: #32445a;
+}
+.user-msg-wrap {
+    margin-left: 24rpx;
+}
+.user-name-text {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+    color: #fff;
+}
+.season-text {
+    margin-top: 37rpx;
+    margin-left: 10rpx;
+    padding: 0 10rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    font-size: 20rpx;
+    color: #dea55f;
+    border: 1px solid #dea55f;
+    border-radius: 99rpx;
+}
+.btn-zb {
+    margin-top: 22rpx;
+}
+.btn-zb,
+.btn-zb image {
+    width: 180rpx;
+    height: 54rpx;
+}
+.btn-zb .btn-text {
+    line-height: 54rpx;
+}
+.dw-container {
+    margin-top: 10rpx;
+}
+.dw-icon {
+    margin-left: 5rpx;
+    vertical-align: middle;
+    width: 25rpx;
+    height: 30rpx;
+}
+.dw-title-text {
+    font-size: 24rpx;
+    color: #adc2d3;
+}
+.dw-msg-text {
+    margin-left: 10rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
