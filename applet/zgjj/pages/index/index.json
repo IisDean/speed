@@ -1,5 +1,10 @@
 {
     "usingComponents": {
-        "head": "/components/head/head"
+        "head": "/components/head/head",
+        "menu": "/components/menu/menu",
+        "ls-record": "/components/ls-record/ls-record",
+        "friends-rank": "/components/friends-rank/friends-rank",
+        "look-more": "/components/look-more/look-more",
+        "often-use": "/components/often-use/often-use"
     }
 }

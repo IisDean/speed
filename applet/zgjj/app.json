@@ -1,7 +1,8 @@
 {
     "pages": [
         "pages/index/index",
-        "components/head/menu"
+        "components/head/head",
+        "components/menu/menu"
     ],
     "window": {
         "backgroundTextStyle": "light",

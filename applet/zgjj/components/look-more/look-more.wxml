@@ -1,0 +1,7 @@
+<!--components/look-more/look-more.wxml-->
+<view class="flex-wrap look-more">
+    <navigator class="look-more-btn" href="{{href}}">
+        {{name}}
+        <image class="arrow-right" src="{{assets + 'images/arrow_right.png'}}"></image>
+    </navigator>
+</view>

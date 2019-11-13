@@ -1,4 +1,5 @@
 <!--components/head/head.wxml-->
+<!-- 头部 -->
 <view class="p-r head-container">
     <image class="head-bg" src="{{assets + 'images/head_bg.jpg'}}" mode="widthFix"></image>
     <view class="p-a head-wrap flex-wrap">

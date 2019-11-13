@@ -126,25 +126,9 @@
     width: 18rpx;
     height: 19rpx;
 }
-/* 功能 */
-.menu-list {
-    width: 100%;
-    height: 173rpx;
-}
-.menu-item {
-    width: 165rpx;
-    height: 100%;
-}
-.menu-icon {
-    display: block;
-    margin: 38rpx auto 0;
-    width: 54rpx;
-    height: 54rpx;
-}
-.menu-text {
-    margin-top: 24rpx;
-    font-size: 24rpx;
-    color: #333;
+.arrow-icon.active {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 /* 近20场比赛排名 */
 .group-rank-title {
@@ -206,78 +190,4 @@
 .rank-item.down {
     background-color: #474747;
     border: 1rpx solid #333;
-}
-/* 历史战绩 */
-.btn-look-flock {
-    margin-top: 40rpx;
-}
-.btn-look-flock,
-.btn-look-flock image {
-    width: 202rpx;
-    height: 48rpx;
-}
-.btn-look-flock .btn-text {
-    line-height: 48rpx;
-}
-.ls-record-title {
-    width: 100%;
-    height: 46rpx;
-    background-color: #e4e4e4;
-    border: 1rpx solid #ccc;
-}
-.ls-title-text {
-    line-height: 46rpx;
-    font-size: 24rpx;
-    color: #333;
-}
-.ls-item-1 {
-    width: 93rpx;
-}
-.ls-item-3 {
-    width: 177rpx;
-}
-.ls-record-title .ls-item-2::before,
-.ls-record-title .ls-item-2::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 10rpx;
-    width: 1rpx;
-    height: 28rpx;
-    background-color: #ccc;
-}
-.ls-record-title .ls-item-2::before {
-    left: 0;
-}
-.ls-record-title .ls-item-2::after {
-    right: 0;
-}
-.ls-record-list .group-label {
-    margin-top: 30rpx;
-    padding: 0 3rpx;
-    height: 25rpx;
-    line-height: 25rpx;
-    font-size: 18rpx;
-}
-.ls-num-text {
-    font-weight: bold;
-    font-size: 32rpx;
-    color: #b59064;
-}
-.ls-time-text {
-    margin-top: 25rpx;
-    font-size: 18rpx;
-    color: #999;
-}
-.zhenr-list {
-    margin-top: 5rpx;
-}
-.zhenr-icon {
-    display: block;
-    margin-right: 2rpx;
-    width: 36rpx;
-    height: 36rpx;
-}
-.zhenr-list .zhenr-icon:first-child {
-    margin-left: 14rpx;
 }

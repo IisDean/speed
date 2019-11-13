@@ -6,7 +6,7 @@ Page({
     data: {
         currentIndex: 1,
         assets: app.globalData.assets,
-        overviewData: [
+        overviewData: [//战绩概览数据
             {
                 name: '经典',
                 isOpen: false,
@@ -186,6 +186,37 @@ Page({
                     data: [5, 6, 5, 7, 2, 3, 8, 1, 2, 7, 4, 1, 7, 8, 1, 1, 7, 5, 1, 6]
                 }
             }
+        ],
+        lsRecordData: [//历史战绩数据
+            {
+                groupName: '极速对决',
+                groupType: 1,
+                rank: 1,
+                time: '2019.09.18 19:12',
+                caseList: [],
+                fetter: ['4德鲁伊', '2野兽', '6骑士', '审判者']
+            }, {
+                groupName: '经典竞技',
+                groupType: 2,
+                rank: 3,
+                time: '2019.09.18 19:12',
+                caseList: [],
+                fetter: ['4德鲁伊', '2野兽', '6骑士', '审判者']
+            }, {
+                groupName: '军团争霸',
+                groupType: 3,
+                rank: 3,
+                time: '2019.09.18 19:12',
+                caseList: [],
+                fetter: ['4德鲁伊', '2野兽', '6骑士', '审判者']
+            }, {
+                groupName: '合作对抗',
+                groupType: 4,
+                rank: 1,
+                time: '2019.09.18 19:12',
+                caseList: [],
+                fetter: ['4德鲁伊', '2野兽', '6骑士', '审判者']
+            }
         ]
     },
     onLoad() {
@@ -197,10 +228,12 @@ Page({
             currentIndex: e.currentTarget.dataset.idx
         })
     },
-    openHeight(e) {
-        let tabIdx = e.currentTarget.dataset.tabIdx;
+    openHeight(e) {//展开
+        let tabIdx = e.currentTarget.dataset.idx;
+        let obj = "overviewData["+tabIdx+"].isOpen";
+        let val = !this.data.overviewData[tabIdx].isOpen;
         this.setData({
-
+            [obj]: val
         });
     }
 })

@@ -16,7 +16,7 @@
                 wx:for="{{overviewData}}" 
                 wx:for-index="tabIdx" 
                 wx:for-item="tabitem">
-                <view class="flex-wrap flex-between overview-list {{!tabitem.isOpen ? 'active' : ''}}">
+                <view class="flex-wrap flex-between overview-list {{tabitem.isOpen ? 'active' : ''}}">
                     <block 
                         wx:for="{{tabitem.dataList}}" 
                         wx:for-index="listIdx" wx:for-item="listItem">
@@ -60,31 +60,16 @@
                 <!-- 点击展开 -->
                 <view class="open-list-btn flex-wrap flex-center" 
                     bindtap="openHeight" data-idx="{{tabIdx}}">
-                    <text>展开</text>
-                    <image class="arrow-icon" src="{{assets + 'images/open_arrow.png'}}"></image>
+                    <text>{{tabitem.isOpen ? '收起' : '展开'}}</text>
+                    <image class="arrow-icon {{tabitem.isOpen ? 'active' : ''}}" 
+                        src="{{assets + 'images/open_arrow.png'}}">
+                    </image>
                 </view>
             </view>
         </view>
     </view>
-    <!-- 功能 -->
-    <view class="flex-wrap flex-between menu-list plank-wrap">
-        <navigator class="t-c menu-item" url="#">
-            <image class="menu-icon" src="{{assets + 'images/menu_1.png'}}"></image>
-            <text class="menu-text">竞技大数据</text>
-        </navigator>
-        <navigator class="t-c menu-item" url="#">
-            <image class="menu-icon" src="{{assets + 'images/menu_2.png'}}"></image>
-            <text class="menu-text">竞技大神</text>
-        </navigator>
-        <navigator class="t-c menu-item" url="#">
-            <image class="menu-icon" src="{{assets + 'images/menu_3.png'}}"></image>
-            <text class="menu-text">图鉴及教学</text>
-        </navigator>
-        <navigator class="t-c menu-item" url="#">
-            <image class="menu-icon" src="{{assets + 'images/menu_4.png'}}"></image>
-            <text class="menu-text">游戏下载</text>
-        </navigator>
-    </view>
+    <!-- 菜单 -->
+    <menu assets="{{assets}}"></menu>
     <!-- 近20场比赛 -->
     <block
         wx:for="{{overviewData}}" 
@@ -112,44 +97,10 @@
             </view>
         </view>
     </block>
-    <view class="plank-wrap ls-record-wrap">
-        <view class="flex-wrap flex-between">
-            <text class="plank-title-text">历史战绩</text>
-            <navigator class="p-r btn-wrap btn-look-flock" url="#">
-                <image src="{{assets + 'images/lool_rank_btn.png'}}" mode="aspectFill">
-                </image>
-                <text class="p-a btn-text t-c">查看我的群排名</text>
-            </navigator>
-        </view>
-        <!-- 战绩列表 -->
-        <view class="flex-wrap t-c ls-record-title">
-            <text class="ls-title-text ls-item-1">排名</text>
-            <text class="p-r flex-1 ls-title-text ls-item-2">阵容</text>
-            <text class="ls-title-text ls-item-3">羁绊</text>
-        </view>
-        <view class="t-c ls-record-list">
-            <view class="flex-wrap flex-between ls-record-item">
-                <view class="ls-item-1">
-                    <view class="group-label group-label-1">极速对决</view>
-                    <text class="ls-num-text">1</text>
-                </view>
-                <view class="ls-item-2 flex-1">
-                    <text class="ls-time-text">2019.09.18 19:12</text>
-                    <view class="flex-wrap zhenr-list">
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                        <image class="zhenr-icon" src="{{assets + 'images/zhenr_1.jpg'}}"></image>
-                    </view>
-                </view>
-                <view class="ls-item-3"></view>
-            </view>
-        </view>
-    </view>
+    <!-- 历史战绩 -->
+    <ls-record assets="{{assets}}" lsRecordData="{{lsRecordData}}"></ls-record>
+    <!-- 好友排名 -->
+    <friends-rank assets="{{assets}}"></friends-rank>
+    <!-- 常用棋子 & 常用羁绊 -->
+    <often-use assets="{{assets}}"></often-use>
 </view>
