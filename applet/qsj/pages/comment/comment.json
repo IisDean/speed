@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-      "bg": "/components/bg/bg",
-      "report": "/components/report/report"
-    }
-}

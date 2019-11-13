@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "bg": "/components/bg/bg",
-    "postlist": "/components/postList/postList",
-    "postlist2": "/components/postList2/postList",
-    "myDialog": "/components/myDialog/myDialog"
-  }
-}

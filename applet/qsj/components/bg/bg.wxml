@@ -1,4 +1,0 @@
-<!--components/bg/bg.wxml-->
-<view class='bg'>
-  <image src='../../assets/images/bj.jpg' class='bg-img'></image>
-</view>
