@@ -796,3 +796,24 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
+
+.pop-login-title {
+    margin: .5rem auto 0;
+    width: 2.61rem;
+    height: .35rem;
+    background-position: 0 -8.87rem;
+}
+
+.login-wrap {
+    margin-top: .6rem;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.login-wrap .login-icon:last-child {
+    margin-left: .65rem;
+}
+
+.login-icon {
+    width: 1.21rem;
+}

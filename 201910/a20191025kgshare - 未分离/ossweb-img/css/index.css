@@ -297,6 +297,25 @@ body {
     background-image: url("../video_bg.jpg");
 }
 
+.pointer-container {
+    top: 0;
+    left: 0;
+}
+
+.pointer-container,
+.pointer-container .swiper-container,
+.pointer-container .swiper-slide {
+    width: 100%;
+    height: 100%;
+    pointer-events: none !important;
+}
+
+.pointer-container .swiper-container .swiper-slide {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 .danmu-wrap {
     top: 0;
     left: 0;
