@@ -45,7 +45,7 @@ var mySwiper2 = new Swiper('.swiper2', {
     effect: 'coverflow',
     slidesPerView: 1.8,
     centeredSlides: true,
-    autoplay: 3000,
+    autoplay: false,
     coverflow: {
         rotate: 0,
         stretch: 100,

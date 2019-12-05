@@ -1,68 +1,279 @@
 /*reset*/
-html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {margin:0;padding:0;box-sizing: border-box;}
-body,html{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none; -webkit-user-select:none;}
-h1,h2,h3,h4,h5,h6{font-size:100%;}
-ul,li{list-style:none;}
-table{border-collapse:collapse;  border-spacing:0;}
-a{text-decoration:none;}
-input[type="text"], input[type="password"], select { -webkit-appearance: none;appearance:none; outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0); border-radius:0;box-sizing: border-box;}
-a:focus,a:active,a{outline:none;}
-input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
-a{text-decoration:none;blr:expression(this.onFocus=this.blur());outline:none;}
-html{-webkit-tap-highlight-color:rgba(0,0,0,0);}
-a,button, input{ -webkit-tap-highlight-color: rgba(255,0,0,0); }
-em,i,b{font-style: normal;}
-fieldset,img{border:0;display:block;}
-img{ width: 100%;}
-.c:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
-.hh{display:block;text-indent:-999em;overflow:hidden;}
-.hide{width:0;height:0;overflow:hidden;display:none;}
-.pr{position: relative;}
-.pa{ position: absolute;}
-html{font-size:100px;}
-body,html{width: 100%;height:auto;}
-body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; background:#1f272d; font-size:0.24rem; color: #a8b4cc; position: relative; overflow-x: hidden;}
-.flex{display: flex;  display: -webkit-box;   display: -webkit-flex;  flex-flow: wrap;  -webkit-flex-flow: wrap;}
-.flex-1 {flex: 1;-webkit-flex: 1;}
+html,
+body,
+div,
+section,
+p,
+ul,
+li,
+form,
+table,
+td,
+a,
+dl,
+dt,
+dd,
+em,
+i,
+span,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+a:focus,
+a:active,
+a {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+em,
+i,
+b {
+    font-style: normal;
+}
+
+fieldset,
+img {
+    border: 0;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.c:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.hh {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+html {
+    font-size: 100px;
+}
+
+body,
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #1f272d;
+    font-size: 0.24rem;
+    color: #a8b4cc;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 1.25rem;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    flex-flow: wrap;
+    -webkit-flex-flow: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
 .flex-between {
     justify-content: space-between;
     -webkit-justify-content: space-between;
 }
+
+.flex-around {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
 /*foot*/
-#afooter{ text-align:center; font-size:0.2rem; line-height:0.3rem; color: #9e9e9e;background:#0e0e0e; padding: 0.3rem 0;}
-#afooter .copyright span a,#footer .copyright span a:hover{ margin:0 0.06rem;}
-#gfooter{ background: #0e0e0e;}
-#afooter p {line-height: .3rem;font-size: .16rem;}
-.ui-icon {display: block;background: url("//game.gtimg.cn/images/xylz/cp/a20191031team/icons.png")no-repeat;background-size: 6.42rem auto;}
-.bg {background-position: top center;background-size: 100% auto;background-repeat: no-repeat;}
-.pr {position: relative;}
-.absolute {position: absolute;}
-.ab-center {position: absolute;top: 50%;left: 0;right: 0;margin: 0 auto;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
-.t {display: block;text-indent: -9999em;overflow: hidden;}
-.btn {display: block;}
+#afooter {
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #9e9e9e;
+    background: #0e0e0e;
+    padding: 0.3rem 0;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 0.06rem;
+}
+
+#gfooter {
+    background: #0e0e0e;
+}
+
+#afooter p {
+    line-height: .3rem;
+    font-size: .16rem;
+}
+
+.ui-icon {
+    display: block;
+    background: url("//game.gtimg.cn/images/xylz/cp/a20191031team/icons.png")no-repeat;
+    background-size: 6.42rem auto;
+}
+
+.bg {
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.pr {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.ab-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.t {
+    display: block;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+}
+
 .btn-hover:active {
     transform: scale(.95);
     -webkit-transform: scale(.95);
 }
-.text-center {text-align: center;}
+
+.text-center {
+    text-align: center;
+}
+
 .text-hide {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 .bg1 {
     width: 100%;
     height: 8.24rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/bg1.jpg");
     overflow: hidden;
 }
-.wx-icon {
-    top: .35rem;
-    right: 0;
-    width: 2.23rem;
-    height: .53rem;
-    background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/wx_bs.png");
-}
+
 .rule-btn {
     top: 1.36rem;
     right: 2rem;
@@ -70,6 +281,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     height: .41rem;
     background-position: -4.92rem -8.18rem;
 }
+
 .open-game-btn {
     top: 1.36rem;
     right: .44rem;
@@ -77,6 +289,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     height: .41rem;
     background-position: -4.9rem -9.15rem;
 }
+
 .slogan-icon {
     top: .81rem;
     left: 0;
@@ -84,58 +297,95 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     height: 6.22rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/slogan.png");
 }
+
 .btn-container {
     margin: 7.35rem .8rem 0;
 }
+
 .start-btn,
 .share-btn {
     width: 2.75rem;
     height: .66rem;
 }
+
 .start-btn {
     background-position: -2.41rem -9.58rem;
 }
+
 .share-btn {
     background-position: 0 -10.29rem;
 }
+
 .bg2 {
     width: 100%;
-    height: 8.37rem;
+    height: 9.33rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/bg2.jpg");
 }
+
 .title-icon-1 {
     margin: 0 auto;
     width: 6.39rem;
     height: 1.42rem;
     background-position: 0 0;
 }
+
 .description-text {
     line-height: .3rem;
     font-size: .22rem;
     color: #000;
 }
-.title-icon-1 + .description-text {
+
+.title-icon-1+.description-text {
     margin-top: .07rem;
 }
+
 .team-list {
     margin: .26rem .36rem 0;
     justify-content: center;
     -webkit-justify-content: center;
 }
+
 .team-item {
     margin: 0 .06rem .27rem;
     width: 1.57rem;
     height: 2.32rem;
     overflow: hidden;
 }
-.ui-icon2 {display: block;background: url("//game.gtimg.cn/images/xylz/cp/a20191031team/prize_plank.png")no-repeat;background-size: 6.43rem auto;}
-.team-color-1 {background-position: 0 0;}
-.team-color-2 {background-position: -1.62rem 0;}
-.team-color-3 {background-position: -3.24rem 0;}
-.team-color-4 {background-position: -4.86rem 0;}
-.team-color-5 {background-position: 0 -2.37rem;}
-.team-color-6 {background-position: -1.62rem -2.37rem;}
-.team-color-7 {background-position: -3.24rem -2.37rem;}
+
+.ui-icon2 {
+    display: block;
+    background: url("//game.gtimg.cn/images/xylz/cp/a20191031team/prize_plank.png")no-repeat;
+    background-size: 6.43rem auto;
+}
+
+.team-color-1 {
+    background-position: 0 0;
+}
+
+.team-color-2 {
+    background-position: -1.62rem 0;
+}
+
+.team-color-3 {
+    background-position: -3.24rem 0;
+}
+
+.team-color-4 {
+    background-position: -4.86rem 0;
+}
+
+.team-color-5 {
+    background-position: 0 -2.37rem;
+}
+
+.team-color-6 {
+    background-position: -1.62rem -2.37rem;
+}
+
+.team-color-7 {
+    background-position: -3.24rem -2.37rem;
+}
+
 .friends-head {
     margin-top: .2rem;
     margin-left: .24rem;
@@ -145,6 +395,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     background-size: cover;
     overflow: hidden;
 }
+
 .plank-name-text {
     margin-top: .06rem;
     line-height: .4rem;
@@ -152,6 +403,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     font-weight: bold;
     color: #fff;
 }
+
 .friends-name-text {
     margin-top: .08rem;
     padding: 0 .05rem;
@@ -159,142 +411,231 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     font-size: .18rem;
     color: #fff;
 }
+
 .exit-btn {
     margin: .15rem auto 0;
     width: 2.33rem;
     height: .66rem;
     background-position: -2.83rem -10.29rem;
 }
+
+.bs-btn {
+    margin: .15rem auto 0;
+    width: 2.73rem;
+    height: .66rem;
+    background-position: 0 -11.78rem;
+}
+
+.bs-tips-text {
+    margin-top: .25rem;
+    line-height: 1;
+    font-size: .18rem;
+    color: #000;
+}
+
 .bg3 {
     width: 100%;
-    height: 17.66rem;
+    height: 19.56rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/bg3.jpg");
     overflow: hidden;
 }
+
 .title-icon-2,
 .title-icon-3,
-.title-icon-4 {
+.title-icon-4,
+.title-icon-5 {
+    margin: -.3rem auto 0;
     width: 5.38rem;
     height: 1.42rem;
 }
+
 .title-icon-2 {
-    margin: .43rem auto 0;
     background-position: 0 -1.47rem;
 }
+
 .title-icon-3 {
-    margin: .4rem auto 0;
     background-position: 0 -2.94rem;
 }
+
 .title-icon-4 {
-    margin: .4rem auto 0;
     background-position: 0 -4.41rem;
 }
+
 .title-icon-5 {
-    margin: .4rem auto 0;
+    margin-left: -.22rem;
     width: 6.42rem;
     height: 1.42rem;
     background-position: 0 -5.86rem;
 }
+
 .prize-plank {
-    margin: .13rem auto 0;
+    margin: .6rem auto 0;
     padding-top: .17rem;
     box-sizing: border-box;
-    width: 6.48rem;
-    background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/prize_bg.png");
+    width: 6.17rem;
+    height: 4.23rem;
+    background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/prize_bg_1.png");
 }
+
+.bg3 .prize-plank:nth-child(1) {
+    margin-top: .2rem;
+}
+
 .goods-container {
     margin-top: .05rem;
     justify-content: center;
     -webkit-justify-content: center;
 }
+
 .goods-wrap {
-    margin: 0 0.25rem;
+    margin: 0 .1rem;
+    width: 1.73rem;
+    height: 1.72rem;
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191031team/prize_item_bg.png');
 }
+
+.bg3 .prize-plank:nth-child(2n+1) .goods-container .goods-wrap:nth-child(2n+1) {
+    margin-top: .54rem;
+}
+
+.bg3 .prize-plank:nth-child(2n) .goods-container .goods-wrap:nth-child(2n) {
+    margin-top: .54rem;
+}
+
 .goods-icon {
-    margin: 0 auto;
+    margin: .2rem auto 0;
     width: .92rem;
     height: .9rem;
 }
-.goods-text {
-    font-size: .18rem;
-    color: #523b7c;
+
+.goods-icon-sub {
+    margin: -.2rem -.7rem 0 -.37rem;
+    width: 3.28rem;
 }
+
+
+.goods-text {
+    line-height: 1;
+    font-size: .18rem;
+    color: #fff;
+}
+
+.goods-icon-sub .goods-text {
+    bottom: .78rem;
+    left: .66rem;
+    right: .99rem;
+}
+
 .get-prize-btn {
     margin: .19rem auto 0;
     width: 2.33rem;
     height: .66rem;
     background-position: 0 -9.58rem;
 }
+
 .bg4 {
     width: 100%;
     height: 5.25rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/bg4.jpg");
     overflow: hidden;
 }
+
 .title-icon-6 {
     margin: 0 auto;
     width: 4.59rem;
     height: 1.42rem;
     background-position: 0 -7.33rem;
 }
+
 .feature-wrap {
     margin: .1rem auto 0;
-    width: 6.59rem;
-    height: 3.21rem;
+    padding: .06rem;
+    box-sizing: border-box;
+    width: 6.19rem;
+    height: 3.56rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/inset.png");
 }
+
 .open-game-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
     padding: .26rem 0 .23rem;
     background-color: #cfd7f5;
 }
+
 .prize-tips-btn {
     margin: 0 auto;
     width: 4.86rem;
     height: .73rem;
     background-position: 0 -8.8rem;
 }
+
+.create-team-btn {
+    width: 2.56rem;
+    height: .73rem;
+    background-position: 0 -11rem;
+}
+
+.push-team-btn {
+    width: 2.66rem;
+    height: .73rem;
+    background-position: -2.62rem -11rem;
+}
+
 /* 弹窗 */
 .pop {
     outline: none;
 }
+
 .pop-1 {
     padding: .12rem;
     width: 4.5rem;
     height: 2rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/pop_1.png");
 }
+
 .pop-2 {
     padding: .12rem;
     width: 4.5rem;
     height: 2.8rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/pop_2.png");
 }
+
 .pop-3 {
     padding: .12rem;
     width: 5.04rem;
     height: 4.1rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/pop_3.png");
 }
+
 .pop-4 {
     padding: .12rem;
     width: 5.3rem;
     height: 3.41rem;
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/pop_4.png");
 }
+
 .pop-title-text {
     line-height: 1;
     font-size: .26rem;
     color: #523b7c;
 }
+
 .p-t-1 {
     margin-top: .24rem;
 }
+
 .p-t-2 {
     margin: .45rem 0;
 }
+
 .p-t-3 {
     margin: .22rem 0 0 .48rem;
 }
+
 .sin-text {
     margin-top: .2rem;
     line-height: 1;
@@ -302,26 +643,31 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     font-size: .3rem;
     color: #e12b79;
 }
+
 .confirm-btn {
     margin: .2rem auto 0;
     width: 1.54rem;
     height: .45rem;
     background-position: -4.90rem -8.65rem;
 }
+
 .login-list {
     margin-top: .3rem;
     justify-content: center;
     -webkit-justify-content: center;
 }
+
 .login-item {
     margin: 0 .3rem;
 }
+
 .login-btn {
     width: 1rem;
     height: 1rem;
     border-radius: .5rem;
     border: 1px solid #cec8d5;
 }
+
 .wx-icon,
 .qq-icon {
     margin-top: .19rem;
@@ -330,22 +676,28 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     width: .68rem;
     height: .56rem;
 }
+
 .wx-icon {
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/wx_icon.png");
 }
+
 .qq-icon {
     background-image: url("//game.gtimg.cn/images/xylz/cp/a20191031team/qq_icon.png");
 }
+
 .login-text {
     font-size: .2rem;
     color: #523b7c;
 }
+
 .form-list {
     margin: .2rem 0 0 .2rem;
 }
+
 .form-item {
     margin-bottom: .16rem;
 }
+
 .form-name-text {
     display: inline-block;
     text-align: right;
@@ -354,12 +706,14 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     font-size: .2rem;
     color: #523b7c;
 }
+
 .select-wrap {
     margin-left: .2rem;
     width: 2.34rem;
     height: .45rem;
     background-color: #cfcfcf;
 }
+
 .select-wrap select {
     display: block;
     padding: 0 .2rem;
@@ -370,6 +724,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     border: none;
     color: #523b7c;
 }
+
 .select-icon {
     top: .13rem;
     right: .13rem;
@@ -378,6 +733,7 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     background-position: -5.2rem -9.58rem;
     pointer-events: none;
 }
+
 .pop-share {
     position: fixed;
     top: .66rem !important;
@@ -385,13 +741,36 @@ body{font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-s
     right: .44rem !important;
     margin: 0 !important;
 }
+
 .share-tips-icon {
     width: 5.11rem;
 }
+
 .rule-list {
     margin: .18rem .22rem 0;
 }
+
 .rule-item {
     font-size: .18rem;
     color: #523b7c;
+}
+
+.page-btn {
+    top: 50%;
+    z-index: 99;
+    margin-top: -.25rem;
+    width: .3rem;
+    height: .51rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.page-btn.next {
+    right: -.5rem;
+    background-position: -5.97rem -9.54rem;
+}
+
+.page-btn.prev {
+    left: -.5rem;
+    background-position: -5.58rem -9.54rem;
 }

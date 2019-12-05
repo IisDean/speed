@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>copy example</title>
+</head>
+
+<body>
+
+    <a id="selector">123的撒上大</a>
+    <button id="copy">点击复制</button>
+
+
+</body>
+
+
+<script>
+    var aEle = document.querySelector('#copy');
+    aEle.addEventListener('click', function () {
+        var copyDOM = document.querySelector('#selector');
+        var range = document.createRange();
+        range.selectNode(copyDOM);
+        window.getSelection().addRange(range);
+        var successful = document.execCommand('copy');
+        try {
+            var msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Copy email command was ' + msg);
+        } catch (err) {
+            console.log('Oops, unable to copy');
+        }
+        window.getSelection().removeAllRanges();
+    }, false);
+</script>
+
+</html>

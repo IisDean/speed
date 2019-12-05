@@ -34,48 +34,37 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-<style type="text/css">
-		.wx-mask{
-			position:fixed;z-index:98;
-			-webkit-backface-visibility:hidden;
-			width:100%;height:100%;bottom:0;left:0;
-			background-color: rgba(0, 0, 0, 0.3);
-			-webkit-transition:all .5s;
-			transition:all .5s;
-		}
-		
-		.tip{ position:absolute; right:8px; top:0; width:168px;}
-	</style>
+    <style type="text/css">
+        .wx-mask {
+            position: fixed;
+            z-index: 98;
+            -webkit-backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .tip {
+            position: absolute;
+            right: 8px;
+            top: 0;
+            width: 168px;
+        }
+    </style>
 </head>
 
 <body>
     <h1 class="hide">灌篮高手 预约抽奖</h1>
-    <a href="https://uowap.hicloud.com/appdl-uomp-cn/campaignpreview/65d63600-8366-49de-be69-8ab4c09c2939/index.html?campaignId=25947" class="bg float-icon"></a>
+    <a href="https://uowap.hicloud.com/appdl-uomp-cn/campaignpreview/65d63600-8366-49de-be69-8ab4c09c2939/index.html?campaignId=25947"
+        class="bg float-icon"></a>
     <header class="pr bg bg1">
         <div class="pa bg logo-icon"></div>
-        <div class="pa red-block ">
-            <div class="flex red-wrap">
-                <i class="bg red-icon"></i>
-                <i class="bg red-icon"></i>
-            </div>
-        </div>
-        <div class="pa black-block">
-            <div class="flex black-wrap">
-                <i class="bg black-icon"></i>
-                <i class="bg black-icon"></i>
-            </div>
-        </div>
-        <div class="pa full-img person-icon">
-            <img src="img/person.png?jv=1.0" alt="球员">
-        </div>
-        <div class="pa bg flex app-js">
-            <div class="flex-1">
-                <p class="app-msg-text">灌篮高手 正版授权手游</p>
-                <p class="app-msg-text" style="font-size: .28rem;">12月5日 首发</p>
-            </div>
-            <a href='hiapp://com.huawei.appmarket?activityName=activityModule|Section@@@section_detail_activity&params={"params":[{"name":"Uri","type":"String","value":"forum|forum_detail|1000876"}]}&thirdId=4026620"'
-                class="ui-icon forum-btn btn-hover t">进入论坛</a>
-        </div>
+        <a href='hiapp://com.huawei.appmarket?activityName=activityModule|Section@@@section_detail_activity&params={"params":[{"name":"Uri","type":"String","value":"forum|forum_detail|1000876"}]}&thirdId=4026620"'
+            class="pa ui-icon forum-btn btn-hover t">进入论坛</a>
     </header>
     <section class="bg bg2 pr">
         <!-- 跑马灯 -->
@@ -93,7 +82,7 @@
             </div>
         </div>
         <div class="part">
-            <h2 class="ui-icon title-icon title-icon-1 move-up t">预约抽奖</h2>
+            <h2 class="pa ui-icon title-icon title-icon-1 move-up t">预约抽奖</h2>
             <ul class="prize-list flex flex-center">
                 <li class="full-img prize-item zoomIn delay-dot1">
                     <img src="img/prize_1.png?jv=1.0" alt="奖品">
@@ -114,15 +103,11 @@
         </div>
         <div class="part">
             <i class="pa bg person-icon-1 move-right"></i>
-            <div class="pa bg bubble-wrap delay-dot4 rotate-up">
-                <p class="bubble-text">1.点击预约即可参与抽奖</p>
-                <p class="bubble-text">2.游戏首发后将在华为论坛中心公布中奖名单</p>
-            </div>
+            <div class="pa bg bubble-wrap delay-dot4 rotate-up"></div>
         </div>
-        <i class="pa bg shade-icon"></i>
     </section>
     <section class="bg bg3 pr part">
-        <h2 class="ui-icon title-icon title-icon-2 move-up t">预约福利</h2>
+        <h2 class="pa ui-icon title-icon title-icon-2 move-up t">预约福利</h2>
         <ul class="flex goods-list flex-center">
             <li class="full-img goods-item move-right delay-dot1">
                 <img src="img/goods_1.png?jv=1.0" alt="预约福利奖品">
@@ -133,25 +118,16 @@
             <li class="full-img goods-item move-right delay-dot3">
                 <img src="img/goods_3.png?jv=1.0" alt="预约福利奖品">
             </li>
+            <li class="full-img goods-item move-right delay-dot4" style="margin-right: .2rem;">
+                <img src="img/goods_4.png?jv=1.0" alt="预约福利奖品">
+            </li>
+            <li class="full-img goods-item move-right delay-dot5">
+                <img src="img/goods_5.png?jv=1.0" alt="预约福利奖品">
+            </li>
         </ul>
-        <div class="yy-rule-wrap">
-            <p class="yy-rule-text move-up delay-dot4">1.预约即可获得精美礼包，游戏首发后登录礼包中心领取</p>
-            <p class="yy-rule-text move-up delay-dot5">2.已预约用户将在第一时间获得游戏最新动态</p>
-            <p class="yy-rule-text move-up delay-dot6">3.已预约用户在游戏上线后享有WIFI智能下载能力</p>
+        <div class="full-img gift-rule-wrap move-up">
+            <img src="img/gift_rule.png?jv=1.0" alt="预约福利说明">
         </div>
-    </section>
-    <section class="bg bg4 pr part">
-        <h2 class="ui-icon title-icon title-icon-3 move-up t">游戏视频</h2>
-        <div class="pr bg video-wrap move-right delay-dot3">
-            <video controlslist="nodownload" id="video" x5-playsinline controls playsinline="true"
-                -webkit-playsinline="true" poster="img/video_poster.jpg">
-                <source
-                    src="https://hiapp-strm.dbankcdn.com/e21d7a4cvodtransgzp1253437192/6978c5f85285890794464419374/v.f40.mp4"
-                    type="video/mp4">
-            </video>
-            <a href="javascript: ;" class="pa ui-icon play-btn" style="opacity: 0;"></a>
-        </div>
-        <h2 class="ui-icon title-icon title-icon-4 move-up delay-dot6 t">人物介绍</h2>
     </section>
     <section class="bg bg5 pr part">
         <ul class="tab-list flex flex-between move-up">
@@ -695,24 +671,45 @@
             </li>
         </ul>
     </section>
+    <section class="bg bg4 pr part">
+        <h2 class="pa ui-icon title-icon title-icon-3 move-up t">游戏视频</h2>
+        <div class="pr bg video-wrap move-right delay-dot3">
+            <video controlslist="nodownload" id="video" x5-playsinline controls playsinline="true"
+                -webkit-playsinline="true" poster="img/video_poster.jpg">
+                <source
+                    src="https://hiapp-strm.dbankcdn.com/e21d7a4cvodtransgzp1253437192/6978c5f85285890794464419374/v.f40.mp4"
+                    type="video/mp4">
+            </video>
+            <a href="javascript: ;" class="pa ui-icon play-btn" style="opacity: 0;"></a>
+        </div>
+    </section>
     <section class="bg bg6 pr part">
-        <h2 class="ui-icon title-icon title-icon-5 move-up t">游戏展示</h2>
         <div class="swiper-container swiper2 move-up delay-dot3">
             <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/0101.jpg?jv=1.0">
+                <div class="bg swiper-slide swiper-slide1">
+                    <div class="full-img">
+                        <img src="img/0101.jpg?jv=1.0">
+                    </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/0202.jpg?jv=1.0">
+                <div class="bg swiper-slide swiper-slide1">
+                    <div class="full-img">
+                        <img src="img/0202.jpg?jv=1.0">
+                    </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/0303.jpg?jv=1.0">
+                <div class="bg swiper-slide swiper-slide1">
+                    <div class="full-img">
+                        <img src="img/0303.jpg?jv=1.0">
+                    </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/0404.jpg?jv=1.0">
+                <div class="bg swiper-slide swiper-slide1">
+                    <div class="full-img">
+                        <img src="img/0404.jpg?jv=1.0">
+                    </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/0505.jpg?jv=1.0">
+                <div class="bg swiper-slide swiper-slide1">
+                    <div class="full-img">
+                        <img src="img/0505.jpg?jv=1.0">
+                    </div>
                 </div>
             </div>
         </div>
@@ -724,78 +721,76 @@
     <script>
 
     </script>
-<!-- 下载提示蒙版箭头 -->
-	<div class="wx-mask" id="wxm" style="display:none;">
-    	<img src="img/tip.png" class="tip" />
+    <!-- 下载提示蒙版箭头 -->
+    <div class="wx-mask" id="wxm" style="display:none;">
+        <img src="img/tip.png" class="tip" />
     </div>
     <!-- 下载提示蒙版箭头 end-->
-	</body>
+</body>
 
 <script type="text/javascript">
+    $(document).ready(function () {
 
-    $(document).ready(function(){
-    	
-		if(!window.HiSpaceObject)
-		{
-			 var isWeixin = is_weixin();
-			if(isWeixin)
-			{
-				document.getElementById("wxm").style.display = "";
-				//设置下载提示蒙版箭头图片点击事件
-				document.getElementById("wxm").onclick = function(){
-					window.setTimeout(function(){ document.getElementById("wxm").style.display = "none"; }, 550);
-				};
-			}
-			else
-			{
-				openClient();
-			} 
-		}
+        if (!window.HiSpaceObject) {
+            var isWeixin = is_weixin();
+            if (isWeixin) {
+                document.getElementById("wxm").style.display = "";
+                //设置下载提示蒙版箭头图片点击事件
+                document.getElementById("wxm").onclick = function () {
+                    window.setTimeout(function () {
+                        document.getElementById("wxm").style.display = "none";
+                    }, 550);
+                };
+            } else {
+                openClient();
+            }
+        }
     });
-    
-    function openClient()
-    {
-    	var delayTime = 3000;
-    	
+
+    function openClient() {
+        var delayTime = 3000;
+
         // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
         // 否则打开a标签的href链接
         var ifr = document.createElement('iframe');
         document.body.appendChild(ifr);
         ifr.style.display = 'none';
-        
-        var orderUrl = "https://a.vmall.com/order/app?appId=C100723999%26pkgName=com.denachina.g13002010.huawei";//TODO
-        ifr.src = "hiapp://com.huawei.appmarket?activityName=activityUri|webview.activity&params={\"params\":[{\"name\":\"url\",\"type\":\"String\",\"value\":\""+ orderUrl +"\"},{\"name\":\"uri\",\"type\":\"String\",\"value\":\"external_webview\"}]}&channelId=123412";
-        
+
+        var orderUrl = "https://a.vmall.com/order/app?appId=C100723999%26pkgName=com.denachina.g13002010.huawei"; //TODO
+        ifr.src =
+            "hiapp://com.huawei.appmarket?activityName=activityUri|webview.activity&params={\"params\":[{\"name\":\"url\",\"type\":\"String\",\"value\":\"" +
+            orderUrl + "\"},{\"name\":\"uri\",\"type\":\"String\",\"value\":\"external_webview\"}]}&channelId=123412";
+
         ifr.style.display = 'none';
-        
-        setTimeout(function(){
-   		 $.ajax({
-   				url:"https://a.vmall.com/uc/getAppIdByPkg?packageName=com.huawei.appmarket",
-   				type:"get",
-   				dataType:"json",
-   				data:{},
-   				success:function(data){
-   					if(data){
-   						document.body.removeChild(ifr);
-   						window.location.href = data.app.url;
-   					}				
-   				}
-   			});
-   		},delayTime);
-        
-        
+
+        setTimeout(function () {
+            $.ajax({
+                url: "https://a.vmall.com/uc/getAppIdByPkg?packageName=com.huawei.appmarket",
+                type: "get",
+                dataType: "json",
+                data: {},
+                success: function (data) {
+                    if (data) {
+                        document.body.removeChild(ifr);
+                        window.location.href = data.app.url;
+                    }
+                }
+            });
+        }, delayTime);
+
+
     }
-    
-  	//是否微信打开
-    function is_weixin()
-    {  
-        var ua = navigator.userAgent.toLowerCase();  
-        if(ua.match(/MicroMessenger/i)=="micromessenger" 
-        		|| ua.match(/WeiBo/i) == "weibo") {  
-            return true;  
-        } else {  
-            return false;  
-        }  
-    }  
+
+    //是否微信打开
+    function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger" ||
+            ua.match(/WeiBo/i) == "weibo") {
+            return true;
+        } else {
+            return false;
+        }
+    }
 </script>
+
 </html>
