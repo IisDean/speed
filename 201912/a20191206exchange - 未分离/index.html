@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="higame-image" content="img/share.png?jv=1.0" />
+    <meta name="Description" content="使命召唤手游-经典3A大作使命召唤移动端续作">
+    <meta name="Keywords" content="使命召唤手游,codm,使命召唤,cod,神秘大作,使命召唤OL,codol">
+    <title>使命召唤手游-经典3A大作使命召唤移动端续作-腾讯游戏</title>
+    <script>
+    </script>
+    <style>
+        /*reset*/
+        html,
+        body,
+        div,
+        section,
+        p,
+        ul,
+        li,
+        form,
+        table,
+        td,
+        a,
+        dl,
+        dt,
+        dd,
+        em,
+        i,
+        span,
+        img,
+        input,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: none;
+            -webkit-user-select: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            -webkit-appearance: none;
+            appearance: none;
+            outline: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            border-radius: 0;
+            box-sizing: border-box;
+        }
+
+        a:focus,
+        a:active,
+        a {
+            outline: none;
+        }
+
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            blr: expression(this.onFocus=this.blur());
+            outline: none;
+        }
+
+        html {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        a,
+        button,
+        input {
+            -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+        }
+
+        em,
+        i,
+        b {
+            font-style: normal;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .c:after {
+            content: '\20';
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .hh {
+            display: block;
+            text-indent: -999em;
+            overflow: hidden;
+        }
+
+        .hide {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            display: none;
+        }
+
+        .pr {
+            position: relative;
+        }
+
+        .pa {
+            position: absolute;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #1f272d;
+            font-size: 0.24rem;
+            color: #a8b4cc;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .flex {
+            display: flex;
+            display: -webkit-flex;
+        }
+
+        .flex-1 {
+            flex: 1;
+            -webkit-flex: 1;
+        }
+
+        .flex-center {
+            justify-content: center;
+            -webkit-justify-content: center;
+        }
+
+        .flex-middle {
+            align-items: center;
+        }
+
+        /*foot*/
+        #afooter {
+            text-align: center;
+            font-size: 0.2rem;
+            line-height: 0.3rem;
+            color: #9e9e9e;
+            background: #0e0e0e;
+            padding: 0.3rem 0;
+        }
+
+        #afooter .copyright span a,
+        #footer .copyright span a:hover {
+            margin: 0 0.06rem;
+        }
+
+        #gfooter {
+            background: #0e0e0e;
+        }
+
+        #afooter p {
+            line-height: .3rem;
+            font-size: .16rem;
+        }
+
+        h1,
+        h2,
+        p {
+            line-height: 1;
+        }
+
+        .bg {
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        .btn-hover:hover {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+
+        .wrapper {
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+        }
+
+        .container {
+            padding-left: 13rem;
+            box-sizing: border-box;
+            width: 20rem;
+            height: 10rem;
+            background-image: url('./ossweb-img/page_bg.jpg');
+            overflow: hidden;
+        }
+
+        .page-title-text {
+            margin-top: 1.04rem;
+            font-size: .72rem;
+            color: #fcd701;
+        }
+
+        .form-title-text {
+            margin-top: 1.28rem;
+            margin-left: .22rem;
+            font-size: .45rem;
+            color: #fff;
+        }
+
+        .cdk-input {
+            display: block;
+            margin-top: .42rem;
+            margin-bottom: .3rem;
+            margin-left: .22rem;
+            padding: 0 .2rem;
+            width: 5.92rem;
+            height: 1rem;
+            background-color: transparent;
+            border-radius: 4px !important;
+            border: 1px solid #f8a100;
+            color: #fff;
+        }
+
+        .code-input {
+            display: block;
+            margin-right: .42rem;
+            margin-left: .22rem;
+            box-sizing: border-box;
+            padding: 0 .2rem;
+            width: 4.17rem;
+            height: .53rem;
+            background-color: #fff;
+            border: none;
+        }
+
+        .code-img {
+            display: block;
+            width: 1.3rem;
+            height: .53rem;
+        }
+
+        .exchange-btn {
+            display: block;
+            margin-top: 1.6rem;
+            margin-left: 1.05rem;
+            width: 4.47rem;
+            height: 1rem;
+            background-image: url('./ossweb-img/exchange_btn.png');
+        }
+
+        .dialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            font-size: 0;
+            font-family: '\5FAE\8F6F\96C5\9ED1';
+            text-align: center;
+            display: none;
+        }
+
+        .dialog::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .dia-con {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            margin: 0 auto;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            box-sizing: border-box;
+            width: 7rem;
+            height: 4rem;
+            border: 1px solid #f9ad01;
+            background-color: #1f1f1f;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: .73rem;
+            height: .71rem;
+            background-image: url('./ossweb-img/close_btn.png');
+        }
+
+        .pop-msg-text {
+            height: auto;
+            font-size: .48rem;
+            color: #fff;
+        }
+
+        .pop-msg2-text {
+            display: block;
+            line-height: .52rem;
+            font-size: .4rem;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="hide">使命召唤手游 兑换中心</h1>
+        <section class="bg container">
+            <h2 class="page-title-text">兑换中心</h2>
+            <p class="form-title-text">请输入您的CDK兑换码：</p>
+            <input type="text" id="cdk" value="" class="cdk-input" />
+            <div class="flex">
+                <input type="text" class="code-input" id="code" placeholder="请输入验证码...">
+                <img src="./ossweb-img/code.png" class="code-img" alt="验证码">
+            </div>
+            <a class="bg exchange-btn btn-hover" onclick="PTTSendClick('btn','exchange','立即兑换');"></a>
+        </section>
+
+        <!-- 兑换成功 Start-->
+        <div class="dialog" id="success" style="display:none">
+            <div class="dia-con flex flex-center flex-middle">
+                <p class="pop-msg-text">兑换成功！</p>
+                <a href="javascript: popHide();" class="bg close-btn"></a>
+            </div>
+        </div>
+        <!-- 兑换码错误 Start-->
+        <div class="dialog" id="fail" style="display:none">
+            <div class="dia-con flex flex-center flex-middle">
+                <p class="pop-msg-text">兑换码错误！</p>
+                <a href="javascript: popHide();" class="bg close-btn"></a>
+            </div>
+        </div>
+        <!-- 操作频繁 Start-->
+        <div class="dialog" id="often" style="display:none">
+            <div class="dia-con flex flex-center flex-middle">
+                <p class="pop-msg2-text">您的尝试过于频繁！<br />请稍后再次输入！</p>
+                <a href="javascript: popHide();" class="bg close-btn"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script type="text/javascript">
+    $("#afooter").appendTo(".wrapper");
+    $('body').on('blur', "input,select,textarea", function () {
+        if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+            setTimeout(() => {
+                const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+            }, 100);
+        }
+    })
+    var ptype = 'page';
+    // 强制横屏 适配
+    var addEvent = (function () {
+        if (document.addEventListener) {
+            return function (e, type, fn) {
+                e.addEventListener(type, fn, false);
+            };
+        } else {
+            return function (e, type, fn) {
+                e.attachEvent('on' + type, function () {
+                    return fn.call(e, window.event);
+                });
+            }
+        }
+    })();
+    window.addEventListener('resize', function () {
+        screenchange.init();
+    });
+    var $wrap = $(".wrapper"),
+        height = 0,
+        zoom = 1,
+        myScroll = {},
+        rate = 0;
+    var screenchange = {
+        width: 2000, //设计稿宽度
+        resize: function () {
+            var html = document.documentElement;
+            var w = html.clientWidth,
+                h = html.clientHeight;
+            if (this.w != w || this.h != h) {
+                if (h <
+                    w) { //横屏 
+                    html.style.fontSize = w / this.width * 100 + "px";
+                    $wrap.css({
+                        "width": w,
+                        "height": h,
+                        "transform": "none"
+                    });
+                    height = h;
+                    zoom = w / this.width;
+                } else { //竖屏 
+                    html.style.fontSize = h / this.width * 100 + "px";
+                    $wrap.css({
+                        "width": h,
+                        "height": w,
+                        "transform": "rotate(90deg) translate3d(0," + -w + "px,0)"
+                    });
+                    height = w;
+                    zoom = h / this.width;
+                }
+                this.w = w;
+                this.h = h;
+            }
+        },
+        set: null,
+        fn: function () {
+            var self = screenchange;
+            clearTimeout(self.set);
+            self.resize();
+            self.set = setTimeout(function () {
+                self.resize();
+            }, 300);
+        },
+        init: function () {
+            window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", this.fn,
+                false);
+            this.fn();
+        }
+    }
+    screenchange.init();
+
+    $(".exchange-btn").on("click", function () {
+        var val = $("#cdk").val();
+        popShow("often");
+    });
+
+    //弹窗
+    function popShow(id) {
+        var p = $('#' + id);
+        if (p) {
+            p.show();
+        }
+    }
+
+    function popHide() {
+        $('.dialog').hide();
+    }
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //统计
+    var setSite = {
+        siteType: "a20191206exchange",
+        pageType: "index",
+        pageName: "首页",
+        osact: 0,
+        ingame: 0,
+        stayTime: 0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+
+</html>

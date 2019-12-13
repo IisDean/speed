@@ -14,93 +14,384 @@
     <meta itemprop="name" content="新赛季开场 狂欢正当时" />
     <title>冬季时装周 文创暖流年-天涯明月刀-官方网站-腾讯游戏</title>
     <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
-    <link rel="stylesheet" href="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/css/index.css">
+    <link rel="stylesheet" href="index.css">
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2019/12/04 -->
 </head>
 
-<body>
+<body style="padding-top: 45px;">
     <h1 class="hide">新赛季开场 狂欢正当时</h1>
+    <div class="blacktop">
+        <!-- <a class="blacktop_logo" href="//wuxia.qq.com/?ADTAG=EventBlackTop.button.logo" title="天涯明月刀官方网站"
+            target="_blank">天涯明月刀官方网站</a> -->
+        <div class="blacktop_topsilder">
+            <ul class="blacktop_btnavs">
+                <li class="blacktop_btnav">
+                    <a class="blacktop_bta blacktop_tohome"
+                        href="//wuxia.qq.com/main.shtml?ADTAG=EventBlackTop.button.btnav.enter" target="_blank">返回官网</a>
+                </li>
+                <li class="blacktop_btnav">
+                    <a class="blacktop_bta blacktop_toevent"
+                        href="//wuxia.qq.com/events.shtml?ADTAG=EventBlackTop.button.btnav.ecter"
+                        target="_blank">活动中心</a>
+                </li>
+            </ul>
+            <div class="logstate">
+                <div id="unlogin">亲爱的用户，请
+                    <a href="javascript:;" id="dologin">[登录]</a>
+                </div>
+                <div style="display:none;" id="logined">欢迎您，
+                    <span id="userinfo"></span>
+                    <span id="spanNotBind_567482"><a href="javascript:;" class="bindArea bang logfrg">[绑定大区]</a></span>
+                    <span id="spanBind_567482" class="areainfo logfrg" style="display:none">
+                        <span id="area_info_567482"></span>
+                        <span id="role_info_567482"></span>
+                        <a href="javascript:;" class="bindArea rebang">[更改绑定]</a>
+                    </span>
+                    <a href="javascript:;" id="record">[抽奖记录]</a>
+                    <a href="javascript:;" id="dologout" class="dologout logfrg">[注销]</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="stage">
         <!-- 头部 -->
         <div class="bg bg1">
             <div class="wrap">
                 <a href="https://wuxia.qq.com/?ADTAG=EventBlackTop.button.logo" target="_blank"
                     class="full-img logo-wrap">
-                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/logo.png" alt="logo">
+                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/logo.png" alt="logo">
                 </a>
                 <div class="p-r full-img slogan-wrap">
-                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/slogan.png" alt="标题">
-                    <div class="p-a t-c time-wrap">12月9日-1月5日24时</div>
+                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/slogan.png" alt="标题">
+                    <div class="p-a t-c time-wrap">12月9日-12月18日24时</div>
                 </div>
                 <h2 class="icons title-icon t-i-1 t">禅宗少林版本外装上新</h2>
-                <div class="p-r video-container">
-                    <div class="video-wrap" id="videoWrap"></div>
-                    <div class="p-a video-title-wrap">
-                        <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
-                            少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
-                            《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                <div class="p-r video-container J-tab-list3">
+                    <!-- 外装展示视频 -->
+                    <div class="J-tab-item3" style="display: block;">
+                        <div class="video-wrap" id="videoWrap"></div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                        <a href="javascript:showVideo('c0873w3okr1');" class="p-a icons play-btn t"
+                            onclick="PTTSendClick('btn','video','播放');">播放按钮</a>
                     </div>
-                    <a href="javascript:showVideo('c0873w3okr1');" class="p-a icons play-btn t"
-                        onclick="PTTSendClick('btn','video','播放');">播放按钮</a>
+                    <!-- 心王·华裳九州 -->
+                    <div class="J-tab-item3">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_4_1.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_4_2.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_4_3.jpg"
+                                        alt="时装">
+                                </div>
+                            </div>
+                            <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                            <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                        </div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                    </div>
+                    <!-- 漫道·铃兰香 -->
+                    <div class="J-tab-item3">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_6_1.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_6_2.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_6_3.jpg"
+                                        alt="时装">
+                                </div>
+                            </div>
+                            <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                            <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                        </div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                    </div>
+                    <!-- 漫道·独孤雪 -->
+                    <div class="J-tab-item3">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_5_1.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_5_2.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_5_3.jpg"
+                                        alt="时装">
+                                </div>
+                            </div>
+                            <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                            <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                        </div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                    </div>
+                    <!-- 小流年系列 -->
+                    <div class="J-tab-item3">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_8_1.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_8_2.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_8_3.jpg"
+                                        alt="时装">
+                                </div>
+                            </div>
+                            <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                            <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                        </div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                    </div>
+                    <!-- 全新妆容系统 -->
+                    <div class="J-tab-item3">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_1.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_2.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_3.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_4.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_5.jpg"
+                                        alt="时装">
+                                </div>
+                                <div class="p-r full-img swiper-slide">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_7_6.jpg"
+                                        alt="时装">
+                                </div>
+                            </div>
+                            <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                            <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                        </div>
+                        <div class="p-a video-title-wrap">
+                            <p class="video-title-text">陌上尘，沧海风。花间吟，世外咏。陌上风雅三年路，繁花盛时又相逢。天刀三周年昆曲主题外观。<br />
+                                少。谁愿待秋光老，人好花堪笑。家住仙岛，一望山高；沧海飞尘，因缘未了。”弱柳身段，碎云步伐。如花姿态，如玉精神。一曲国风浸酿的
+                                《陌上风雅》，由李玉刚老师倾情献唱；一件风流宛转的古典衣裳，为每一个多情的你增添容光。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-a full-img video-node-wrap">
-                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/video_title.png" alt="视频节点标题">
-                </div>
+                <ul class="p-a full-img video-node-list">
+                    <li class="p-r bg video-node-item v-n-1 active"></li>
+                    <li class="p-r bg video-node-item v-n-2"></li>
+                    <li class="p-r bg video-node-item v-n-3"></li>
+                    <li class="p-r bg video-node-item v-n-4"></li>
+                    <li class="p-r bg video-node-item v-n-5"></li>
+                    <li class="p-r bg video-node-item v-n-6"></li>
+                </ul>
             </div>
         </div>
         <div class="bg bg2">
             <div class="wrap">
                 <h2 class="icons title-icon t-i-2 t">冬季时装周 文创暖流年</h2>
-                <div class="c">
-                    <div class="fashion-container float-left">
+                <div class="c fashion-con-list J-tab-list">
+                    <div class="fashion-container float-left J-tab-item" style="display: block;">
                         <ul class="fashion-list c">
                             <li class="p-r fashion-item float-left">
                                 <div class="p-r full-img fashion-img">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/fashion_1.jpg"
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_1.jpg"
                                         alt="时装图片">
                                     <div class="p-a bg shadow-wrap">
-                                        <h4 class="icons shadow-title s-1 t">心王·折子戏</h4>
+                                        <h4 class="icons shadow-title s-1 t">心王·华裳九州</h4>
                                         <div class="t-c charm-wrap">收藏获魅力值：<span>50</span>点</div>
                                     </div>
                                 </div>
-                                <a href="#" class="p-a icons look-img t">查看大图</a>
+                                <a class="p-a icons look-img t">查看大图</a>
                             </li>
                             <li class="p-r fashion-item float-left">
                                 <div class="p-r full-img fashion-img">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/fashion_2.jpg"
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_2.jpg"
                                         alt="时装图片">
                                     <div class="p-a bg shadow-wrap">
-                                        <h4 class="icons shadow-title s-2 t">心王·瓶中色</h4>
+                                        <h4 class="icons shadow-title s-2 t">心王·云中三希堂</h4>
                                         <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
                                     </div>
                                 </div>
-                                <a href="#" class="p-a icons look-img t">查看大图</a>
+                                <a class="p-a icons look-img t">查看大图</a>
                             </li>
                             <li class="p-r fashion-item float-left">
                                 <div class="p-r full-img fashion-img">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/fashion_3.jpg"
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_3.jpg"
                                         alt="时装图片">
                                     <div class="p-a bg shadow-wrap">
-                                        <h4 class="icons shadow-title s-3 t">圣绣·曼醉</h4>
+                                        <h4 class="icons shadow-title s-3 t">圣绣·婵娟</h4>
                                         <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
                                     </div>
                                 </div>
-                                <a href="#" class="p-a icons look-img t">查看大图</a>
+                                <a class="p-a icons look-img t">查看大图</a>
                             </li>
                             <li class="p-r fashion-item float-left">
                                 <div class="p-r full-img fashion-img">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/fashion_4.jpg"
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_4.jpg"
                                         alt="时装图片">
                                     <div class="p-a bg shadow-wrap">
-                                        <h4 class="icons shadow-title s-4 t">圣绣·昭华</h4>
+                                        <h4 class="icons shadow-title s-4 t">圣绣·香蒲</h4>
                                         <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
                                     </div>
                                 </div>
-                                <a href="#" class="p-a icons look-img t">查看大图</a>
+                                <a class="p-a icons look-img t">查看大图</a>
                             </li>
                         </ul>
                         <div class="bg fashion-explain">
-                            <p class="t-c fashion-explain-text">蓝紫色系的主题服饰中，折子戏联动京剧，鸣唱传统文化之声；瓶中色联动青花瓷，描绘传统文化之形。<br />
+                            <p class="fashion-explain-text">金绿色系的主题服饰中，华裳九州是携手汉元素服饰的尝试之作；云中三希堂则是与故宫官方授权合作的创新系列。<br />
+                                而婵娟以纪中秋，香蒲香飘端午，均是团圆聚庆之时。<br />
+                                古人今人，与子同袍；明月宫墙，九州节庆。传统文化犹如风中之焰，传承往续，生生不息。</p>
+                        </div>
+                    </div>
+                    <div class="fashion-container float-left J-tab-item">
+                        <ul class="fashion-list c">
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_5.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-5 t">心王·不良人</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>50</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_6.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-6 t">心王·天行九歌</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_7.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-7 t">圣绣·红阑</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_8.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-8 t">圣绣·落梅</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                        </ul>
+                        <div class="bg fashion-explain">
+                            <p class="fashion-explain-text">
+                                红粉色系的主题服饰中，两大联手国漫之作：不良人与天刀讲述的白玉京的故事同脉而异流；天行九歌中的红莲剑舞是万千观<br />
+                                众心中最初的美好。<br />
+                                此外圣绣·红阑以鹤为舞艳烈，圣绣·落梅是铸神谷中的青涩时光。多少爱与多少嗔凝成故事，是你我心头的朱砂痣。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fashion-container float-left J-tab-item">
+                        <ul class="fashion-list c">
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_9.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-9 t">心王·折子戏</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>50</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_10.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-10 t">心王·瓶中色</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_11.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-11 t">圣绣·曼醉</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                            <li class="p-r fashion-item float-left">
+                                <div class="p-r full-img fashion-img">
+                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_12.jpg"
+                                        alt="时装图片">
+                                    <div class="p-a bg shadow-wrap">
+                                        <h4 class="icons shadow-title s-12 t">圣绣·无缺</h4>
+                                        <div class="t-c charm-wrap">收藏获魅力值：<span>45</span>点</div>
+                                    </div>
+                                </div>
+                                <a class="p-a icons look-img t">查看大图</a>
+                            </li>
+                        </ul>
+                        <div class="bg fashion-explain">
+                            <p class="fashion-explain-text">蓝紫色系的主题服饰中，折子戏联动京剧，鸣唱传统文化之声；瓶中色联动青花瓷，描绘传统文化之形。<br />
                                 而圣绣·曼醉是移花宗主沈醉花与萧曼声笛音酬唱中的天作之合；圣绣·无缺是绝代双骄中花无缺铁心兰的百年之契。<br />
                                 多少流年声色如烟，一抹紫色微云，暖了人间。</p>
                         </div>
@@ -113,66 +404,216 @@
                     </ul>
                 </div>
                 <!--  -->
-                <h3 class="icons title-2-sub t">赠礼·声色</h3>
-                <div class="c">
-                    <div class="float-left ss-container">
-                        <div class="p-r ss-fashion">
-                            <div class="full-img ss-fashion-img">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/fashion_h_1.jpg"
-                                    alt="时装图片">
+                <div class="J-tab-list2">
+                    <!-- 赠礼·声色 -->
+                    <div class="J-tab-item2" style="display: block;">
+                        <h3 class="icons title-2-sub2 t">赠礼·声色</h3>
+                        <div class="c">
+                            <div class="float-left ss-container">
+                                <div class="p-r ss-fashion">
+                                    <div class="full-img ss-fashion-img">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_h_3.jpg"
+                                            alt="时装图片">
+                                    </div>
+                                    <div class="p-a bg ss-shadow c">
+                                        <h4 class="icons ss-fashion-title ss-f-t3 float-left t">小流年·紫云烟</h4>
+                                        <div class="float-right charm-wrap">收藏获魅力值：<span>25</span>点</div>
+                                    </div>
+                                    <a class="p-a icons look-img t">查看大图</a>
+                                </div>
                             </div>
-                            <div class="p-a bg ss-shadow c">
-                                <h4 class="icons ss-fashion-title float-left t">小流年·紫云烟</h4>
-                                <div class="float-right charm-wrap">收藏获魅力值：<span>25</span>点</div>
+                            <div class="float-left">
+                                <ul class="ss-goods-list">
+                                    <li class="ss-goods-item s-1">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_8.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">专属称号：声色</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_11.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">点染·蓝瓷*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_2.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">瑶光颜料*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_12.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">步步生泽兰*7天</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_4.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">修为*300万</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_5.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">碎银*500金</p>
+                                    </li>
+                                </ul>
+                                <p class="ss-explain-text">
+                                    全部集齐<span>【流年·声色】</span>篇章时装，可获得专属背饰<span>【小流年·紫云烟】</span>、称号<span>【云烟】</span>、<br />定制色染料<span>【点染·蓝瓷】</span>、脚步特效<span>【步步生泽兰】</span>等好礼。本礼包单角色限领1次。
+                                </p>
+                                <a href="javascript:AmsLq(1);" class="icons get-gift-btn filter btn-hover t"
+                                    onclick="PTTSendClick('btn','getGift1','领取礼包1');">领取礼包</a>
                             </div>
-                            <a href="#" class="p-a icons look-img t">查看大图</a>
                         </div>
                     </div>
-                    <div class="float-left">
-                        <ul class="ss-goods-list">
-                            <li class="ss-goods-item s-1">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_bg.png"
-                                        alt="物品">
+                    <!-- 赠礼·爱嗔 -->
+                    <div class="J-tab-item2">
+                        <h3 class="icons title-2-sub3 t">赠礼·爱嗔</h3>
+                        <div class="c">
+                            <div class="float-left ss-container">
+                                <div class="p-r ss-fashion">
+                                    <div class="full-img ss-fashion-img">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_h_2.jpg"
+                                            alt="时装图片">
+                                    </div>
+                                    <div class="p-a bg ss-shadow c">
+                                        <h4 class="icons ss-fashion-title ss-f-t2 float-left t">小流年·朱砂红</h4>
+                                        <div class="float-right charm-wrap">收藏获魅力值：<span>25</span>点</div>
+                                    </div>
+                                    <a class="p-a icons look-img t">查看大图</a>
                                 </div>
-                                <p class="t-c goods-name-text">专属称号：云烟</p>
-                            </li>
-                            <li class="ss-goods-item">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/zl_1.png" alt="物品">
+                            </div>
+                            <div class="float-left">
+                                <ul class="ss-goods-list">
+                                    <li class="ss-goods-item s-1">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_7.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">专属称号：爱嗔</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_9.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">点染·红烬*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_2.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">瑶光颜料*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_10.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">步步生花*7天</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_4.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">修为*300万</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_5.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">碎银*500金</p>
+                                    </li>
+                                </ul>
+                                <p class="ss-explain-text">
+                                    全部集齐<span>【流年·爱嗔】</span>篇章时装，可获得专属背饰<span>【小流年·朱砂红】</span>、称号<span>【朱砂】</span>、<br />定制色染料<span>【点染·红烬】</span>、脚步特效<span>【步步生花】</span>等好礼。本礼包单角色限领1次。
+                                </p>
+                                <a href="javascript: AmsLq(2);" class="icons get-gift-btn btn-hover t"
+                                    onclick="PTTSendClick('btn','getGift2','领取礼包2');">领取礼包</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 赠礼·古今 -->
+                    <div class="J-tab-item2">
+                        <h3 class="icons title-2-sub1 t">赠礼·古今</h3>
+                        <div class="c">
+                            <div class="float-left ss-container">
+                                <div class="p-r ss-fashion">
+                                    <div class="full-img ss-fashion-img">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/fashion_h_1.jpg"
+                                            alt="时装图片">
+                                    </div>
+                                    <div class="p-a bg ss-shadow c">
+                                        <h4 class="icons ss-fashion-title ss-f-t1 float-left t">小流年·风里焰</h4>
+                                        <div class="float-right charm-wrap">收藏获魅力值：<span>25</span>点</div>
+                                    </div>
+                                    <a class="p-a icons look-img t">查看大图</a>
                                 </div>
-                                <p class="t-c goods-name-text">点染·蓝瓷*10个</p>
-                            </li>
-                            <li class="ss-goods-item">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/zl_2.png" alt="物品">
-                                </div>
-                                <p class="t-c goods-name-text">瑶光颜料*10个</p>
-                            </li>
-                            <li class="ss-goods-item">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/zl_3.png" alt="物品">
-                                </div>
-                                <p class="t-c goods-name-text">步步生泽兰*7天</p>
-                            </li>
-                            <li class="ss-goods-item">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/zl_4.png" alt="物品">
-                                </div>
-                                <p class="t-c goods-name-text">修为*300万</p>
-                            </li>
-                            <li class="ss-goods-item">
-                                <div class="bg full-img goods-wrap">
-                                    <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/zl_5.png" alt="物品">
-                                </div>
-                                <p class="t-c goods-name-text">碎银*500金</p>
-                            </li>
-                        </ul>
-                        <p class="ss-explain-text">
-                            全部集齐<span>【流年·声色】</span>篇章时装，可获得专属背饰<span>【小流年·紫云烟】</span>、称号<span>【云烟】</span>、<br />定制色染料<span>【点染·蓝瓷】</span>、脚步特效<span>【步步生泽兰】</span>等好礼。本礼包单角色限领1次。
-                        </p>
-                        <a href="javascript: alert('敬请期待！');" class="icons get-gift-btn btn-hover t"
-                            onclick="PTTSendClick('btn','getGift','领取礼包');">领取礼包</a>
+                            </div>
+                            <div class="float-left">
+                                <ul class="ss-goods-list">
+                                    <li class="ss-goods-item s-1">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_6.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">专属称号：风焰</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_1.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">点染·金莹*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_2.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">瑶光颜料*10个</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_3.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">步步生金雪*7天</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_4.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">修为*300万</p>
+                                    </li>
+                                    <li class="ss-goods-item">
+                                        <div class="bg full-img goods-wrap">
+                                            <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/zl_5.png"
+                                                alt="物品">
+                                        </div>
+                                        <p class="t-c goods-name-text">碎银*500金</p>
+                                    </li>
+                                </ul>
+                                <p class="ss-explain-text">
+                                    全部集齐<span>【流年·古今】</span>篇章时装，可获得专属背饰<span>【小流年·风里焰】</span>、称号<span>【风焰】</span>、<br />定制色染料<span>【点染·金莹】</span>、脚步特效<span>【步步生金雪】</span>等好礼。本礼包单角色限领1次。
+                                </p>
+                                <a href="javascript:AmsLq(3);" class="icons get-gift-btn btn-hover t"
+                                    onclick="PTTSendClick('btn','getGift3','领取礼包3');">领取礼包</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,10 +628,10 @@
                 <div class="c cc-container">
                     <div class="float-left">
                         <div class="p-r fashion-swiper">
-                            <div class="swiper-container">
+                            <div class="swiper-container active">
                                 <div class="swiper-wrapper">
                                     <div class="p-r full-img swiper-slide">
-                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/swiper_1.jpg"
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_1_1.jpg"
                                             alt="时装">
                                         <div class="p-a c slide-wrap">
                                             <div class="float-left fs-title-wrap">
@@ -204,11 +645,11 @@
                                         </div>
                                     </div>
                                     <div class="p-r full-img swiper-slide">
-                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/swiper_1.jpg"
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_1_2.jpg"
                                             alt="时装">
                                         <div class="p-a c slide-wrap">
                                             <div class="float-left fs-title-wrap">
-                                                <h4 class="icons fs-t-2 t">圣绣·碧落</h4>
+                                                <h4 class="icons fs-t-1 t">圣绣·青狼</h4>
                                                 <p class="fs-explain-text">刀锋起，溅铁蹄。青狼主，目如炬。</p>
                                             </div>
                                             <div class="float-right t-c ml-wrap">
@@ -218,11 +659,11 @@
                                         </div>
                                     </div>
                                     <div class="p-r full-img swiper-slide">
-                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/swiper_1.jpg"
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_1_3.jpg"
                                             alt="时装">
                                         <div class="p-a c slide-wrap">
                                             <div class="float-left fs-title-wrap">
-                                                <h4 class="icons fs-t-3 t">灵殊·柴雪相闻</h4>
+                                                <h4 class="icons fs-t-1 t">圣绣·青狼</h4>
                                                 <p class="fs-explain-text">刀锋起，溅铁蹄。青狼主，目如炬。</p>
                                             </div>
                                             <div class="float-right t-c ml-wrap">
@@ -235,83 +676,191 @@
                                 <div class="p-a icons page-btn prev btn-hover t">上一页</div>
                                 <div class="p-a icons page-btn next btn-hover t">下一页</div>
                             </div>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_2_1.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-2 t">圣绣·碧落</h4>
+                                                <p class="fs-explain-text">夜天子，玉诸侯。揽碧落，少年游。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_2_2.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-2 t">圣绣·碧落</h4>
+                                                <p class="fs-explain-text">夜天子，玉诸侯。揽碧落，少年游。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_2_3.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-2 t">圣绣·碧落</h4>
+                                                <p class="fs-explain-text">夜天子，玉诸侯。揽碧落，少年游。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                                <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                            </div>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_3_1.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-3 t">灵殊·柴雪相闻</h4>
+                                                <p class="fs-explain-text">日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_3_2.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-3 t">灵殊·柴雪相闻</h4>
+                                                <p class="fs-explain-text">日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-r full-img swiper-slide">
+                                        <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/swiper_3_3.jpg"
+                                            alt="时装">
+                                        <div class="p-a c slide-wrap">
+                                            <div class="float-left fs-title-wrap">
+                                                <h4 class="icons fs-t-3 t">灵殊·柴雪相闻</h4>
+                                                <p class="fs-explain-text">日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。</p>
+                                            </div>
+                                            <div class="float-right t-c ml-wrap">
+                                                <p class="ml-text">收藏获魅力值</p>
+                                                <p class="ml-text"><span>25</span>点</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-a icons page-btn prev btn-hover t">上一页</div>
+                                <div class="p-a icons page-btn next btn-hover t">下一页</div>
+                            </div>
                         </div>
-                        <ul class="t-c c swiper-node-list">
-                            <li class="p-r icons swiper-node-item s-n-1"></li>
-                            <li class="p-r icons swiper-node-item s-n-2"></li>
-                            <li class="p-r icons swiper-node-item s-n-3"></li>
+                        <ul class="t-c c bg swiper-node-list">
+                            <li class="float-left bg swiper-node-item s-n-1 active"></li>
+                            <li class="float-left bg swiper-node-item s-n-2"></li>
+                            <li class="float-left bg swiper-node-item s-n-3"></li>
                         </ul>
                     </div>
                     <ul class="float-right cc-goods-list">
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_1.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_1.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">照性丹</p>
                         </li>
                         <li class="cc-goods-item s-1">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_2.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_2.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">随机四盟质料</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_3.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_3.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">缘材·初</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_4.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_4.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">武学精要·紫</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_5.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_5.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">金色砭石兑换券</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_6.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_6.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">唯一砭石残片</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_7.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_7.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">八级灵玉</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_8.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_8.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">八级天工精要</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_9.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_9.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">高级铸神宝箱</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_10.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_10.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">通用心法残页·紫</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_11.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_11.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">名师帖·武艺</p>
                         </li>
                         <li class="cc-goods-item">
                             <div class="bg full-img goods-wrap">
-                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191204fashion/goods_12.png" alt="物品">
+                                <img src="//game.gtimg.cn/images/actdaoju/act/a20191205fashionweek/goods_12.png"
+                                    alt="物品">
                             </div>
                             <p class="t-c goods-name-text">铸神令</p>
                         </li>
@@ -320,22 +869,103 @@
             </div>
         </div>
     </div>
+
     <div class="dialog" id="test1" style="display: none;">
         <div class="dia-con">
             <div class="img">
-                <img src="//game.gtimg.cn/images/actdaoju/act/a20190512tdipszn/new/p2-02-h.png" alt="">
+                <img src="" alt="">
             </div>
         </div>
         <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
     </div>
-    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+
+    <!-- 查看大图 -->
+    <div class="dialog" id="test1" style="display: none;">
+        <div class="dia-con">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+
+    <!-- 领取成功 -->
+    <div class="dialog" id="test2" style="display: none;">
+        <div class="dia-con">
+            <div class="bg img">
+                <!--领取成功S-->
+                <div class="success">
+                    <h3 class="pop-title-wrap t-c">领取成功</h3>
+                    <p class="pop-msg-text t-c">礼包道具将随后发送至您的邮箱中，注意查收！</p>
+                </div>
+                <!--领取成功E-->
+                <!--领取失败S-->
+                <!-- <div class="failure">
+                    <h3 class="pop-title-wrap t-c">领取失败</h3>
+                    <p class="pop-msg-text t-c">该篇章中您尚有部分时装未收集，请收集全齐全，再来领取哦！</p>
+                </div> -->
+                <!--领取失败E-->
+                <a href="javascript:showDialog.hide()" class="icons confirm-btn btn-hover t">确定</a>
+            </div>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+
+    <script src="//js01.daoju.qq.com/common/js/act/dj_header_v2.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>-
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
     <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
     <script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
-    <script src="//ossweb-img.qq.com/images/js/title.js"></script>
-    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+
     <script>
+        //立即领取
+        $(".get-gift-btn").on("click", function () {
+            TGDialogS("test2");
+        });
+        //时装切换
+        $(".video-node-list li").on("click", function () {
+            var idx = $(this).index();
+            $(this).addClass("active").siblings('li').removeClass('active');
+            $(".J-tab-list3 .J-tab-item3").eq(idx).show().siblings(".J-tab-item3").hide();
+        });
+
+        //时装切换
+        $(".fashion-tab-list li").on("click", function () {
+            var idx = $(this).index();
+            $(this).addClass("active").siblings('li').removeClass('active');
+            $(".J-tab-list .J-tab-item").eq(idx).show().siblings(".J-tab-item").hide();
+            $(".J-tab-list2 .J-tab-item2").eq(idx).show().siblings(".J-tab-item2").hide();
+        });
+
+        //轮播
+        var fashionSwiper = null;
+
+        function swiperBanner(name, container, next, prev) {
+            var name = new Swiper(container, {
+                autoplay: true, //可选选项，自动滑动
+                loop: true,
+                navigation: {
+                    nextEl: next,
+                    prevEl: prev,
+                },
+                spaceBetween: 30,
+                observer: true,
+                observeParents: true,
+            });
+        }
+
+        swiperBanner('swiper', '.swiper-container', '.page-btn.next', '.page-btn.prev');
+
+        //切换轮播
+        $(".swiper-node-list li").on("click", function () {
+            var idx = $(this).index();
+            $(this).addClass("active").siblings('li').removeClass('active');
+            $(".fashion-swiper .swiper-container").eq(idx).addClass('active').siblings(".swiper-container")
+                .removeClass("active");
+        });
+
         function showVideo(e) {
             var player = new Txplayer({
                 containerId: 'videoWrap',
@@ -348,18 +978,11 @@
         }
         //查看大图
         $('.look-img').click(function () {
-            $('#test1 .img img').attr('src', $(this).siblings('div').find("img").attr('src'));
+            var src = $(this).siblings('div').find("img").attr('src');
+            var b = src.substring(0, src.length - 4) + "_big" + src.substr(src.length - 4, src.length);
+            $('#test1 .img img').attr('src', b);
             TGDialogS("test1");
         })
-        //轮播
-        var mySwiper = new Swiper('.swiper-container', {
-            autoplay: true, //可选选项，自动滑动
-            loop: true,
-            navigation: {
-                nextEl: '.page-btn.next',
-                prevEl: '.page-btn.prev',
-            },
-        });
 
         function TGDialogS(e) {
             // 利用milo库引入dialog组件
@@ -379,9 +1002,52 @@
             });
         }
 
+        milo.ready(function () {
+            need("daoju.mo", function (mo) {
+                window.alert = function (msg) {
+                    $("#dia17 .cont-box .p1").text(msg);
+                    TGDialogS("dia17")
+                };
+                //频率限制
+                mo.onBuy2 = function () {
+                    if (mo._onBuy == undefined) mo._onBuy = !1; //第一次进来为_onBuy为undefined
+                    if (mo._onBuy) {
+                        console.warn("api limit");
+                        return true;
+                    }
+                    mo._onBuy = true;
+                    setTimeout(function () {
+                        mo._onBuy = false;
+                    }, 1000);
+                    return false;
+                };
+                mo({
+                    type: "pc,h5", //活动类型，pt登录"pc,h5"，openid登录"qq,wx"，手游内嵌活动"gamein"
+                    biz: "wuxia", //业务
+                    iActivityId: "226752", //AMS活动号
+                    iQueryFlowId: "567482", //查询大区流程号
+                    iSubmitFlowId: "567481", //绑定大区流程号
+                    callback: function (bindedInfo, LoginManager) {
+                        //绑定大区成功
+                        //D.mo.bindInfo对应绑定区服信息
+                        D.mo.sUin = bindedInfo.Fuin;
+                        enter(1);
+                        enter2(1);
+                        w.show528top();
+                        w.selectZfList(0, 1);
+                    }
+                });
+                //mo.appid包含eas上报
+                setTimeout(function () { //IE兼容问题
+                    mo.appid("wuxia", "12469", function (_app_id) {});
+                }, 1000);
+            });
+        });
+
+
         //此段代码不能放到外链JS中，
         var setSite = { //设置网站属性
-            siteType: "a20191204fashion", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            siteType: "a20191205fashionweek", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
             pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
             pageName: "首页", //必填项:页面中文名
             osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置

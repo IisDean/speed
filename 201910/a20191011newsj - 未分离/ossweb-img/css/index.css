@@ -126,7 +126,7 @@ h1,h2,h3,p {line-height: 1;}
     /*-ms-animation: scaleSlogan .8s ease forwards;*/
     /*-o-animation: scaleSlogan .8s ease forwards;*/
     /*animation: scaleSlogan .8s ease forwards;*/
-    /*opacity: 0;*/
+    /* opacity: 0; */
 }
 .slogan-icon img {
     visibility: hidden;
