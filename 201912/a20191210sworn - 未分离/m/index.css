@@ -249,7 +249,7 @@ body {
 
 .icons {
     display: block;
-    background-image: url("//game.gtimg.cn/images/ylzt/cp/a20191210sworn/icons.png");
+    background-image: url("./ossweb-img/icons.png");
     background-repeat: no-repeat;
     background-size: 6.43rem auto;
 }
@@ -307,12 +307,12 @@ a {
 .bg1 {
     width: 100%;
     height: 5.62rem;
-    background-image: url(//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg1.jpg);
+    background-image: url(./ossweb-img/bg1.jpg);
 }
 
 .bg2 {
     min-height: 42.2rem;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg2.jpg');
+    background-image: url('./ossweb-img/bg2.jpg');
     background-size: 100% 100%;
     overflow: hidden;
 }
@@ -356,7 +356,7 @@ a {
     box-sizing: border-box;
     width: 6.95rem;
     min-height: 40.37rem;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_1.png');
+    background-image: url('./ossweb-img/plank_1.png');
     background-size: 100% 100%;
     overflow: hidden;
 }
@@ -396,7 +396,7 @@ a {
     box-sizing: border-box;
     width: 6.45rem;
     background-color: rgba(0, 0, 0, .56);
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg.png');
+    background-image: url('./ossweb-img/plank_bg.png');
     background-size: 100%;
 }
 
@@ -515,7 +515,7 @@ a {
 }
 
 .prize-content {
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg2.png');
+    background-image: url('./ossweb-img/plank_bg2.png');
     background-size: cover;
     overflow: hidden;
 }
