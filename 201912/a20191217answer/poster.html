@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="Description" content="《雪鹰领主》手游——超凡入圣，破界成神！">
+    <meta name="Keywords" content="雪鹰领主预约站,雪鹰领主,官方手游,漫游联动,官网,短视频社交城战,自创技能">
+    <title>方言测试-雪鹰领主官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="./ossweb-img/css/common.css">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <style>
+        .stage {
+            background-image: url('./ossweb-img/p_bg_0.jpg');
+            background-position: center center;
+            background-size: 100% auto;
+        }
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            width: 100%;
+            height: 12rem;
+        }
+
+        .poster-container {
+            margin: 0 auto;
+            width: 6.73rem;
+            height: 10.25rem;
+            overflow: hidden;
+        }
+
+        .poster-wrap {
+            width: 6.73rem;
+            height: 11.64rem;
+        }
+
+        .sava-tips-text {
+            margin-top: .1rem;
+            margin-bottom: .14rem;
+            font-weight: bold;
+            font-size: .22rem;
+            color: #462b1f;
+        }
+
+        .again-btn,
+        .share-btn {
+            display: block;
+            width: 2.37rem;
+            height: .76rem;
+        }
+
+        .again-btn {
+            background-position: 0 -.9rem;
+        }
+
+        .share-btn {
+            margin-left: .78rem;
+            background-position: 0 -1.7rem;
+        }
+
+        .poster-share {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 6.73rem;
+        }
+    </style>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2019/12/17 -->
+</head>
+
+<body>
+    <h1 class="hide">方言测试</h1>
+    <div class="stage" id="stage">
+        <div class="wrap">
+            <div class="poster-container">
+                <div class="poster-wrap">
+                    <canvas class="canvas" width="673" height="1164"></canvas>
+                </div>
+                <div id="qrcode" style="display: none;"></div>
+            </div>
+            <p class="t-c sava-tips-text">长按图片保存至相册</p>
+            <div class="flex flex-center">
+                <a href="answer.html" class="icons again-btn btn-hover t">重新测试</a>
+                <a class="icons share-btn btn-hover t">分享</a>
+            </div>
+            <div class="pa full-img poster-share" style="display: none;"></div>
+        </div>
+    </div>
+</body>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="./ossweb-img/js/hidpi-canvas.min.js"></script>
+<script src="./ossweb-img/js/qrcode.min.js"></script>
+<script src="./ossweb-img/js/poster.js"></script>
+<script>
+    //生成海报二维码,需引入qrcode.min.js文件
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 111,
+        height: 111
+    });
+    qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
+    var grade = 20, //答题所得分数
+        wxName = '微信昵称微信昵称', //用户微信昵称
+        nameTextColor = '#494e46'; //微信昵称颜色
+    //微信名称过长截断
+    if (wxName.length > 4) wxName = wxName.substring(0, 4) + '...';
+    //海报姓名颜色判断
+    if (grade == 0) {
+        nameTextColor = '#494e46';
+    } else if (grade >= 10 && grade <= 60) {
+        nameTextColor = '#2e2341';
+    } else if (grade >= 70 && grade <= 100) {
+        nameTextColor = '#622405';
+    }
+    //绘制海报
+    var $posterWrap = $(".poster-wrap");
+    var poster = drawPoster.init({
+        canvas: document.querySelector('canvas'),
+        cWidth: $posterWrap.width(), //海报宽度
+        cHeight: $posterWrap.height(), //海报高度
+        imgList: [{
+            src: './ossweb-img/avatar.png', //微信头像,需传入
+            x: 44,
+            y: 26,
+            w: 75,
+            h: 75
+        }, {
+            src: './ossweb-img/poster_' + grade + '.png', //海报背景,需传入答题分数
+            x: 0,
+            y: 0,
+            w: 673,
+            h: 1164
+        }],
+        qrcode: {
+            obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+            x: 67,
+            y: 1038,
+            w: 111,
+            h: 111
+        },
+        textList: [{
+            name: wxName, //需要在上面传入微信昵称,此处不用修改
+            nameTextColor: nameTextColor,
+            font: 'bold 30px Arial',
+            textAlign: 'center',
+            textBaseline: 'top',
+            x: 205,
+            y: 55
+        }],
+        callback: function (ref) {
+            //ref为海报img对象
+            console.log(ref);
+            $(".poster-share").append(ref);
+        }
+    });
+
+    //分享
+    $(".share-btn").on("click", function () {
+        $(".poster-share").show(300);
+    });
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //统计
+    var setSite = {
+        siteType: "a20191217answer",
+        pageType: "poster",
+        pageName: "海报页",
+        osact: 0,
+        ingame: 0,
+        stayTime: 0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+
+</html>

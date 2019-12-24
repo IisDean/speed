@@ -160,7 +160,7 @@ span {
 
 .icons {
     display: block;
-    background-image: url("//game.gtimg.cn/images/ylzt/cp/a20191210sworn/icons.png");
+    background-image: url("//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/icons.png");
     background-repeat: no-repeat;
     background-size: 559px auto;
 }
@@ -219,12 +219,22 @@ a {
 .head-up {
     margin-bottom: -1px;
     height: 445px;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg1_up.jpg');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/bg1_up.jpg');
+}
+
+.gohome-btn {
+    display: block;
+    top: 84px;
+    right: 0;
+    width: 145px;
+    height: 38px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/gw_btn.png');
+    background-size: 100% auto;
 }
 
 .head-down {
     height: 446px;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg1_down.jpg');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/bg1_down.jpg');
     overflow: hidden;
 }
 
@@ -234,7 +244,7 @@ a {
 
 .bg2 {
     height: 2899px;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg2.jpg');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/bg2.jpg');
 }
 
 .pq-list {
@@ -277,7 +287,7 @@ a {
     padding: 44px 59px;
     width: 1109px;
     height: 2818px;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_1.png');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/plank_1.png');
 }
 
 .tab-title-list {
@@ -313,7 +323,7 @@ a {
     box-sizing: border-box;
     width: 985px;
     background-color: rgba(0, 0, 0, .56);
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg.png');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/plank_bg.png');
     background-size: 100%;
 }
 
@@ -336,7 +346,7 @@ a {
     width: 100%;
     height: 985px;
     height: 404px;
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg_sub.png');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/plank_bg_sub.png');
 }
 
 .plank-inset {
@@ -445,7 +455,7 @@ a {
 }
 
 .prize-content {
-    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg2.png');
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191215jydmpc/plank_bg2.png');
     overflow: hidden;
 }
 

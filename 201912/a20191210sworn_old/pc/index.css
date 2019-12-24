@@ -1,0 +1,545 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol,
+li,
+span {
+    padding: 0;
+    list-style: none;
+}
+
+.c:after {
+    content: "\0020";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.c {
+    zoom: 1;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/*** footer  **/
+#afooter {
+    min-width: 1200px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0;
+    color: #6a6a6a;
+    background: #0e0e0e;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 5px;
+}
+
+#afooter .notice {
+    display: none;
+}
+
+#afooter a {
+    color: #6a6a6a;
+}
+
+#afooter p {
+    line-height: 20px;
+}
+
+#stage {
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+#stage h1,
+#stage h2,
+#stage h3,
+#stage p,
+#stage span,
+#stage div {
+    line-height: 1;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.icons {
+    display: block;
+    background-image: url("//game.gtimg.cn/images/ylzt/cp/a20191210sworn/icons.png");
+    background-repeat: no-repeat;
+    background-size: 559px auto;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+a {
+    cursor: pointer;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img,
+.full-img img {
+    display: block;
+}
+
+.full-img img {
+    width: 100%;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.t-h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.head-up {
+    margin-bottom: -1px;
+    height: 445px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg1_up.jpg');
+}
+
+.head-down {
+    height: 446px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg1_down.jpg');
+    overflow: hidden;
+}
+
+.bg1 {
+    z-index: 1;
+}
+
+.bg2 {
+    height: 2899px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/bg2.jpg');
+}
+
+.pq-list {
+    margin-top: 305px;
+}
+
+.pq-item {
+    display: inline-block;
+    width: 205px;
+}
+
+.pq-icon {
+    margin: 0 auto;
+    width: 120px;
+    height: 62px;
+}
+
+.pq-i-1 {
+    background-position: 0 0;
+}
+
+.pq-i-2 {
+    background-position: -127px 0;
+}
+
+.pq-i-3 {
+    background-position: -253px 0;
+}
+
+.pq-time-text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 赛事奖励 */
+.ss-container {
+    margin-left: -4px;
+    box-sizing: border-box;
+    padding: 44px 59px;
+    width: 1109px;
+    height: 2818px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_1.png');
+}
+
+.tab-title-list {
+    width: 990px;
+    height: 70px;
+}
+
+.tab-title-item {
+    width: 495px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.tab-title-item.t-t-1.active {
+    background-position: 0 -67px;
+}
+
+.tab-title-item.t-t-1 {
+    background-position: 0 -141px;
+}
+
+.tab-title-item.t-t-2.active {
+    background-position: 0 -215px;
+}
+
+.tab-title-item.t-t-2 {
+    background-position: 0 -289px;
+}
+
+.plank1-container,
+.plank2-container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 985px;
+    background-color: rgba(0, 0, 0, .56);
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg.png');
+    background-size: 100%;
+}
+
+.plank1-container {
+    padding: 40px 17px 0;
+    border: 3px solid #423729;
+}
+
+.plank2-container {
+    padding: 45px 80px 0;
+}
+
+.p-c-sub::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 985px;
+    height: 404px;
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg_sub.png');
+}
+
+.plank-inset {
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 177px;
+    height: 33px;
+    background-position: -380px 0;
+}
+
+.title-text {
+    font-weight: lighter;
+    font-size: 36px;
+    color: #c79e5f;
+}
+
+.title-down {
+    margin: 12px auto 0;
+    width: 550px;
+    height: 33px;
+    background-position: 0 -363px;
+}
+
+.prize-plank-list {
+    z-index: 1;
+}
+
+.prize-plank-item {
+    margin-bottom: 48px;
+}
+
+.title-icon {
+    margin: 0 auto;
+    height: 46px;
+}
+
+.t-i-1 {
+    width: 253px;
+    background-position: 0 -402px;
+}
+
+.t-i-2 {
+    width: 253px;
+    background-position: 0 -453px;
+}
+
+.t-i-3 {
+    width: 253px;
+    background-position: 0 -504px;
+}
+
+.t-i-4 {
+    width: 253px;
+    background-position: 0 -555px;
+}
+
+.t-i-5 {
+    width: 253px;
+    background-position: 0 -605px;
+}
+
+.t-i-6 {
+    margin-top: 12px;
+    width: 240px;
+    background-position: 0 -605px;
+    background-position: -274px -402px;
+}
+
+.t-i-7 {
+    margin-top: 12px;
+    width: 240px;
+    background-position: 0 -605px;
+    background-position: -274px -452px;
+}
+
+.prize-plank-item {
+    display: inline-block;
+}
+
+.prize-plank-wrap {
+    margin-top: 12px;
+    box-sizing: border-box;
+    padding: 2px 1px;
+}
+
+.prize-plank-wrap,
+.prize-list {
+    font-size: 0;
+    border: 1px solid #433725;
+}
+
+.prize-list-1,
+.prize-list-2 {
+    padding: 16px 0;
+}
+
+.prize-list-3,
+.prize-list-4 {
+    padding: 56px 0;
+}
+
+.prize-list-5 {
+    padding: 56px 40px;
+}
+
+.prize-content {
+    background-image: url('//game.gtimg.cn/images/ylzt/cp/a20191210sworn/plank_bg2.png');
+    overflow: hidden;
+}
+
+.prize-item {
+    display: inline-block;
+}
+
+.prize-list-1 .prize-item,
+.prize-list-2 .prize-item {
+    width: 33.33%;
+}
+
+.prize-list-3 li,
+.prize-list-4 li {
+    margin: 0 10px;
+}
+
+.prize-list-3 .ch-item,
+.prize-list-4 .ch-item {
+    display: inline-block;
+    width: 172px;
+}
+
+.prize-icon {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    border: 3px solid #af8c55;
+}
+
+.prize-name-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #998d7a;
+}
+
+.ch-icon {
+    margin: 20px auto 0;
+    width: 166px;
+    height: 72px;
+    border: 3px solid #af8c55;
+}
+
+.table-wrap {
+    margin: 0 auto;
+    width: 586px;
+    border: 1px solid #816841;
+}
+
+.table-wrap tr th,
+.table-wrap tr td {
+    line-height: 38px;
+    font-size: 18px;
+    border-color: #4e412c;
+}
+
+.table-wrap tr th {
+    color: #896e44;
+}
+
+.table-wrap tr td {
+    color: #938775;
+}
+
+.table-wrap tr.tuchu td {
+    color: #896e44;
+}
+
+.title-msg-text {
+    margin: 12px 0;
+    font-size: 18px;
+    color: #938775;
+}
+
+.fg-line {
+    margin: 20px auto 0;
+}
+
+.rule-title-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #c79e5f;
+}
+
+.rule-item {
+    line-height: 24px;
+    font-size: 14px;
+    color: #938775;
+}
+
+.rule-list {
+    margin-top: 5px;
+}
+
+.rule-list.red .rule-item {
+    color: #e22a2a;
+}

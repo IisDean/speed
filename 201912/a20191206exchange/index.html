@@ -291,6 +291,7 @@
             padding: 0 .2rem;
             width: 5.92rem;
             height: 1rem;
+            font-size: .45rem;
             background-color: transparent;
             border-radius: 4px !important;
             border: 1px solid #f8a100;
@@ -299,20 +300,22 @@
 
         .code-input {
             display: block;
-            margin-right: .42rem;
+            margin-right: 0.54rem;
             margin-left: .22rem;
             box-sizing: border-box;
             padding: 0 .2rem;
-            width: 4.17rem;
-            height: .53rem;
+            width: 2.96rem;
+            height: 1rem;
+            font-size: .42rem;
             background-color: #fff;
+            border-radius: 4px !important;
             border: none;
         }
 
         .code-img {
             display: block;
-            width: 1.3rem;
-            height: .53rem;
+            width: 2.4rem;
+            height: 1rem;
         }
 
         .exchange-btn {
@@ -393,12 +396,15 @@
         <section class="bg container">
             <h2 class="page-title-text">兑换中心</h2>
             <p class="form-title-text">请输入您的CDK兑换码：</p>
-            <input type="text" id="cdk" value="" class="cdk-input" />
+            <input type="text" id="exchangeCDKeyValue" value="" class="cdk-input" />
             <div class="flex">
-                <input type="text" class="code-input" id="code" placeholder="请输入验证码...">
-                <img src="//game.gtimg.cn/images/codm/cp/a20191206exchange/code.png" class="code-img" alt="验证码">
+                <input type="text" class="code-input" id="verifyCode" placeholder="请输入验证码">
+                <a id="changeVerifyImg" href="javascript:void(0);">
+                    <img src="" class="code-img" id="imgVerify">
+                </a>
             </div>
-            <a class="bg exchange-btn btn-hover" onclick="PTTSendClick('btn','exchange','立即兑换');"></a>
+            <a class="bg exchange-btn btn-hover" id="btn_exchange_627692"
+                onclick="PTTSendClick('btn','exchange','立即兑换');"></a>
         </section>
 
         <!-- 兑换成功 Start-->
@@ -418,14 +424,16 @@
         <!-- 操作频繁 Start-->
         <div class="dialog" id="often" style="display:none">
             <div class="dia-con flex flex-center flex-middle">
-                <p class="pop-msg2-text">您的尝试过于频繁！<br />请稍后再次输入！</p>
+                <p class="pop-msg2-text" id="showAlertContent"></p>
                 <a href="javascript: popHide();" class="bg close-btn"></a>
             </div>
         </div>
     </div>
 </body>
-<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+
 <script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
 <script type="text/javascript">
     $("#afooter").appendTo(".wrapper");
@@ -508,10 +516,24 @@
     }
     screenchange.init();
 
-    $(".exchange-btn").on("click", function () {
-        var val = $("#cdk").val();
-        popShow("often");
-    });
+    // $(".exchange-btn").on("click", function () {
+    //     var val = $("#cdk").val();
+    //     popShow("often");
+    // });
+
+    window.alert = function (s) {
+        if (s == 'undefined') {
+            console.error('s is undefined!');
+            return;
+        }
+        popShow('often');
+
+        document.getElementById('showAlertContent').innerHTML = s;
+        resetFlash()
+    }
+
+
+
 
     //弹窗
     function popShow(id) {
@@ -524,6 +546,87 @@
     function popHide() {
         $('.dialog').hide();
     }
+
+    function getUrlParam1(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURIComponent(r[2]);
+        return null;
+    }
+
+
+    function doAmsAction(a, b) {
+        need("biz.login", function (LoginManager) {
+            LoginManager.checkLogin(function (user) {
+                if (myarea == 1 || myarea == 2 || myarea == 9012) {
+                    amsSubmit(a, b);
+                }
+
+            }, function () {
+                alert('抱歉，请重新进入页面参加活动!');
+
+            });
+        });
+    }
+
+    var myopenid = milo.request('myopenid');
+    var myplatid = milo.request('platid');
+    var myarea = milo.request('areaid');
+
+    milo.ready(function () {
+
+        need("biz.login", function (LoginManager) {
+            LoginManager.init();
+
+            LoginManager.checkLogin(function (user) {
+
+                amsCfg_627692.sData.sArea = myarea;
+                amsCfg_627692.sData.sPlatId = myplatid;
+
+                doAmsAction(273971, 627692);
+
+            }, function () {
+                alert('抱歉，请重新进入页面参加活动');
+            });
+        });
+
+
+        // if(location.protocol == "https:"){
+        //     $("#imgVerify").attr('src','https://ssl.ptlogin2.qq.com/getimage?aid=21000104');
+        // }else{
+        //     $("#imgVerify").attr('src','http://ptlogin2.qq.com/getimage?aid=21000104');
+        // }
+
+        // $("#exchangeCDKeyValue").val('FYYJGAAAAAAUZtPT');
+        $("#exchangeCDKeyValue").val(window.location.href);
+        // $("#exchangeCDKeyValue").val('');
+
+
+        $("#btn_exchange_627692").click(function () {
+            if (getUrlParam1('itopencodeparam') == null) {
+                alert("抱歉，请登录CODM手游，在游戏内参与");
+                return -1;
+            } else {
+                doAmsAction(273971, 627692);
+            }
+
+        });
+    });
+
+
+    // 兑换CDK配置参数
+    amsCfg_627692 = {
+        'iAMSActivityId': '273971', // AMS活动号
+        'iLotteryFlowId': '627692', //  兑换CDK流程号
+        'activityId': '2334', // 模块实例号
+        '_everyRead': true,
+        "sData": {
+            "sPlatId": 0,
+            "sArea": 0
+        },
+        'gameId': 'codm', //业务类型
+        'isQueryRole': false // 查询角色 true：强制选择角色  false:不选择角色,
+    };
 </script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
