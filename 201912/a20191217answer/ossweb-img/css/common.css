@@ -388,6 +388,11 @@ a {
     align-items: center;
 }
 
+.top-logo {
+    margin-right: .22rem;
+    width: .41rem;
+}
+
 .game-title-text {
     line-height: 1;
     font-size: .22rem;
