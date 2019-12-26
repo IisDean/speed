@@ -1,6 +1,6 @@
 var mySwiper = new Swiper('.swiper-container', {
     effect: 'fade',
-    initialSlide: 2,
+    initialSlide: 0,
     navigation: {
         nextEl: '.next-topic-btn'
     },
@@ -130,7 +130,7 @@ function isCurrent(num, idx, that) {
         that.addClass('fail').parent().find('.topic-item').eq(answer[num].current).addClass('current');
     }
     if (num + 1 >= answer.length) {
-        alert('答题结束');
+        window.location.href = 'poster.html';
     } else {
         that.parent().next().css('display', 'block'); //放出下一题按钮
     }

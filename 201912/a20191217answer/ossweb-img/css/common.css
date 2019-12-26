@@ -297,3 +297,117 @@ a {
     filter: brightness(1.1);
     -webkit-filter: brightness(1.1);
 }
+
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+.pop {
+    display: none;
+    overflow: hidden;
+}
+
+.pop-login {
+    width: 6.38rem;
+    height: 7.77rem;
+    background-image: url('../pop_bg.jpg');
+}
+
+.pop-logo {
+    margin: .22rem auto 0;
+    width: 2.12rem;
+}
+
+.pop-title-text {
+    position: relative;
+    margin: 1rem 0 0 .4rem;
+    line-height: .48rem;
+    font-size: .38rem;
+    color: #6d3d2d;
+}
+
+.pop-title-text::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../mask.png');
+    pointer-events: none;
+}
+
+.pop-msg-text {
+    margin: 0 .4rem;
+    line-height: .42rem;
+    font-size: .22rem;
+    color: #6e3c2b;
+}
+
+.login-btn {
+    display: block;
+    margin: 0 auto;
+    width: 4.32rem;
+    height: .79rem;
+    background-image: url('../login_icon.png');
+}
+
+.wx-login {
+    margin-top: .86rem;
+    background-position: 0 0;
+}
+
+.qq-login {
+    margin-top: .25rem;
+    background-position: 0 -.84rem;
+}
+
+.close-btn {
+    display: block;
+    top: .44rem;
+    right: .45rem;
+    box-sizing: content-box;
+    padding: .1rem;
+    width: .3rem;
+    height: .3rem;
+    background-position: -2.35rem -2.3rem;
+}
+
+.top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-sizing: border-box;
+    padding: 0 .44rem;
+    width: 100%;
+    height: 0.8rem;
+    background-color: #5e4e3e;
+    align-items: center;
+}
+
+.game-title-text {
+    line-height: 1;
+    font-size: .22rem;
+    color: #fff;
+}
+
+.game-msg-text {
+    margin-top: .06rem;
+    line-height: 1;
+    font-size: .15rem;
+    color: #fff;
+}
+
+.download-game {
+    width: 1.5rem;
+    border-radius: 4px;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #5e4e3e;
+    background-color: #ead3a9;
+}

@@ -10,11 +10,12 @@
     position: absolute;
     top: 50%;
     left: 0;
+    margin-top: -.5rem;
     z-index: 1;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     width: 100%;
-    height: 12rem;
+    height: 11rem;
 }
 
 .logo-wrap {
@@ -151,12 +152,12 @@
 }
 
 .topic-list .topic-item.active {
-    color: #fd5603;
+    color: #d7642a;
 }
 
 .topic-list .topic-item.current {
     background-color: rgba(209, 163, 76, .59);
-    color: #fd5603;
+    color: #d7642a;
 }
 
 .topic-list .topic-item.fail {
@@ -180,7 +181,7 @@
 
 .topic-list .topic-item.active::before,
 .topic-list .topic-item.current::before {
-    border-color: #fd5603;
+    border-color: #d7642a;
 }
 
 .topic-list .topic-item.fail::before {

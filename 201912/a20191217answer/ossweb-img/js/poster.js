@@ -30,7 +30,7 @@ var drawPoster = {
         };
         that.ratio = getPixelRatio(that.ctx);
         that.loadImg(function () {
-            console.log('执行绘制操作');
+            // console.log('执行绘制操作');
             that.drawImg();
         });
     },
@@ -75,7 +75,7 @@ var drawPoster = {
                 that.imgList[this.idx].obj = this;
                 that.imgLoad++;
                 if (that.imgLoad >= that.imgList.length) {
-                    console.log('图片载入完成');
+                    // console.log('图片载入完成');
                     if (callback) callback();
                 }
             }
