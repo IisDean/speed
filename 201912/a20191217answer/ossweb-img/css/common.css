@@ -243,7 +243,7 @@ body {
 
 .icons {
     display: block;
-    background-image: url("../icons.png");
+    background-image: url("//game.gtimg.cn/images/xylz/cp/a20191217answer/icons.png");
     background-repeat: no-repeat;
     background-size: 2.84rem auto;
 }
@@ -311,7 +311,7 @@ a {
 .pop-login {
     width: 6.38rem;
     height: 7.77rem;
-    background-image: url('../pop_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/pop_bg.jpg');
 }
 
 .pop-logo {
@@ -335,7 +335,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../mask.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/mask.png');
     pointer-events: none;
 }
 
@@ -351,7 +351,7 @@ a {
     margin: 0 auto;
     width: 4.32rem;
     height: .79rem;
-    background-image: url('../login_icon.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/login_icon.png');
 }
 
 .wx-login {
@@ -383,14 +383,14 @@ a {
     box-sizing: border-box;
     padding: 0 .44rem;
     width: 100%;
-    height: 0.8rem;
+    height: 0.68rem;
     background-color: #5e4e3e;
     align-items: center;
 }
 
 .top-logo {
     margin-right: .22rem;
-    width: .41rem;
+    width: .5rem;
 }
 
 .game-title-text {
@@ -409,10 +409,12 @@ a {
 .download-game {
     width: 1.5rem;
     border-radius: 4px;
-    height: .5rem;
-    line-height: .5rem;
+    height: 0.45rem;
+    background-color: #ead3a9;
+}
+
+.download-game span {
     text-align: center;
     font-size: .2rem;
     color: #5e4e3e;
-    background-color: #ead3a9;
 }

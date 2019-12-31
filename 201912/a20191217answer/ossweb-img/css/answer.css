@@ -10,22 +10,20 @@
     position: absolute;
     top: 50%;
     left: 0;
-    margin-top: -.5rem;
     z-index: 1;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     width: 100%;
-    height: 11rem;
+    height: 12rem;
 }
 
 .logo-wrap {
-    margin-top: .16rem;
+    margin-top: 1.36rem;
     margin-left: .28rem;
     width: 1.62rem;
 }
 
 .voice-container {
-    margin-top: .1rem;
     margin-right: .62rem;
     margin-bottom: .48rem;
     justify-content: flex-end;
@@ -37,7 +35,13 @@
 .voice-bubble {
     width: 2.32rem;
     height: .52rem;
-    background-image: url('../voice_icon.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/voice_icon.png');
+}
+
+.voice-bubble span {
+    padding-left: .2rem;
+    line-height: .52rem;
+    font-size: .2rem;
 }
 
 .voice-bo {
@@ -56,12 +60,14 @@
 }
 
 .voice-container.active .voice-bubble {
-    display: none;
+    /* display: none; */
 }
 
 .voice-text {
     display: none;
+    margin-top: -0.4rem;
     margin-left: .6rem;
+    padding-right: 2rem;
     font-weight: bold;
     font-size: .24rem;
     color: #d76532;
@@ -76,7 +82,7 @@
     background-position: -2.45rem -1.57rem;
 }
 
-.voice-container.active .voice-text,
+.voice-container.active+.voice-text,
 .voice-container.active .voice-icon {
     display: block;
 }
@@ -85,7 +91,7 @@
     margin-left: .22rem;
     width: 1.13rem;
     height: 1.14rem;
-    background-image: url('../voice_head.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/voice_head.png');
 }
 
 .title-text {
@@ -109,7 +115,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../mask.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/mask.png');
     pointer-events: none;
 }
 
@@ -198,7 +204,7 @@
     margin-top: -.15rem;
     width: .4rem;
     height: .3rem;
-    background-image: url('../icons.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/icons.png');
     background-size: 2.84rem auto;
 }
 
