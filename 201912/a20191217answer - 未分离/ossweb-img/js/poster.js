@@ -60,6 +60,7 @@ var drawPoster = {
     toDataUrl: function () {
         var that = this,
             img = new Image();
+        img.setAttribute("crossOrigin", 'anonymous');
         img.src = that.canvas.toDataURL('image/jpg');
         img.onload = function () {
             if (that.callback) that.callback(this);

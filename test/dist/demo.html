@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <!-- 私有样式 开始 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 私有样式 结束 -->
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+
+    <style>
+        #app .actModules {
+            margin: 1.4rem 0;
+        }
+
+        #app .actTop_info {
+            margin: 1.4rem 0;
+        }
+
+        #app .actModal {
+            position: static;
+        }
+
+        #app .actModal_content,
+        #app .actModal_wechatContent,
+        #app .actModal_share {
+            position: static;
+            transform: translate(0, 0);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div id="app">
+    <section>
+        <div class="ceiba-comp-0">
+            <!-- 顶部banner开始 -->
+            <div class="actTop_Banner">
+                <div class="actTop_BtnWrap">
+                    <a href="javascript:;" class="actTop_Btn">x</a>
+                    <a href="javascript:;" class="actTop_Btn">x</a>
+                    <a href="javascript:;" class="actTop_Btn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部banner结束 -->
+        <div class="ceiba-comp-1">
+            <!-- 登录信息开始 -->
+            <div class="actTop_info">
+                <div class="actTop_infoText">活动时间：2019年11月11日——2019年12月11日(24px)</div>
+                <div class="actTop_infoText">您好，请<a href="" class="actTop_login">【微信登录】</a>或<a href=""
+                                                                                               class="actTop_login">【QQ登录】(24px)</a>
+                </div>
+                <div class="actTop_InfoUser">
+                    <a href="javascript:;" class="actTop_InfoLink">绑定大区</a>
+                    <a href="javascript:;" class="actTop_InfoLink">个人信息</a>
+                    <a href="javascript:;" class="actTop_InfoLink">领奖记录(24px)</a>
+                </div>
+            </div>
+        </div>
+        <!-- 登录信息结束 -->
+
+        <div class="ceiba-comp-2">
+            <!-- 通用领取开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-7">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="actSlider_content_h">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用领取结束-->
+
+        <div class="ceiba-comp-3">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-6">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="actSlider_content_h">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-3">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-5">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="actSlider_content_h">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-4">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-4">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="actSlider_content_h">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-5">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-3">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-6">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <div class="actSlider_tab_h actSlider_tab-2">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">x</a>
+                    </div>
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-7">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">活动期间，下载心悦专属游戏客户端并体验游戏的玩家可获得新手专享礼包1份，单账号限领取1次。(24px)</p>
+                <div class="actSlider">
+                    <!--<div class="actSlider_tab_h two">-->
+                    <!--<a href="javascript:;" class="actSlider_tabItems_h active">x</a>-->
+                    <!--</div>-->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="actSlider_content_h">
+                                    <div class="actSlider_contentItems_h">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-8">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actSlider_v" >
+                    <div class="actSlider_tab_v">
+                        <a href="javascript:;" class="actSlider_tabItems_v active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v ">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                    </div>
+                    <div class="actSlider_content_v">
+                        <div class="actSlider_contentItems">
+                            <img src="ossweb-img/actSliderVertical_contentItems.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="actModules_btnWrap">
+                    <a href="javascript:;" class="actModules_btn_v">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-9">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actSlider_v " >
+                    <div class="actSlider_tab_v">
+                        <a href="javascript:;" class="actSlider_tabItems_v active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v ">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                    </div>
+                    <div class="actSlider_content_v">
+                        <div class="actSlider_contentItems">
+                            <img src="ossweb-img/actSliderVertical_contentItems.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="actModules_btnWrap">
+                    <a href="javascript:;" class="actModules_btn_v">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-10">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actSlider_v " >
+                    <div class="actSlider_tab_v">
+                        <a href="javascript:;" class="actSlider_tabItems_v active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v ">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v">x</a>
+                    </div>
+                    <div class="actSlider_content_v">
+                        <div class="actSlider_contentItems">
+                            <img src="ossweb-img/actSliderVertical_contentItems.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="actModules_btnWrap">
+                    <a href="javascript:;" class="actModules_btn_v">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+        <div class="ceiba-comp-11">
+            <!-- 通用展示开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actSlider_v" >
+                    <div class="actSlider_tab_v">
+                        <a href="javascript:;" class="actSlider_tabItems_v active">x</a>
+                        <a href="javascript:;" class="actSlider_tabItems_v ">x</a>
+                    </div>
+                    <div class="actSlider_content_v">
+                        <div class="actSlider_contentItems">
+                            <img src="ossweb-img/actSliderVertical_contentItems.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="actModules_btnWrap">
+                    <a href="javascript:;" class="actModules_btn_v">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 通用展示结束-->
+
+
+        <div class="ceiba-comp-12">
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <ul class="actInvite_Wrap">
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                </ul>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                </div>
+                <div class="actLoterrt_time">当前抽奖次数：<span>0</span>(24px)</div>
+                <div class="lottery" id="lotterycontent">
+                    <img src="ossweb-img/loterry.png">
+                </div>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+        <div class="ceiba-comp-13">
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <ul class="actInvite_Wrap">
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                </ul>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                </div>
+                <div class="actLoterrt_time">当前抽奖次数：<span>0</span>(24px)</div>
+                <div class="lottery" id="lotterycontent">
+                    <img src="ossweb-img/loterry.png">
+                </div>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+
+        <div class="ceiba-comp-14">
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                </div>
+                <div class="actLoterrt_time">当前抽奖次数：<span>0</span>(24px)</div>
+                <div class="lottery" id="lotterycontent">
+                    <img src="ossweb-img/loterry.png">
+                </div>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+        <div class="ceiba-comp-15">
+
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_l">x</a>
+                    </div>
+                </div>
+                <div class="actLoterrt_time">当前抽奖次数：<span>0</span>(24px)</div>
+                <div class="lottery" id="lotterycontent">
+                    <img src="ossweb-img/loterry.png">
+                </div>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+        <div class="ceiba-comp-16">
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actLoterrt_time">当前抽奖次数：<span>0</span>(24px)</div>
+                <div class="lottery" id="lotterycontent">
+                    <img src="ossweb-img/loterry.png">
+                </div>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+        <div class="ceiba-comp-16">
+            <!-- 签到开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <ul class="actSign_Wrap">
+                    <li class="actSign_List">
+                        <p class="actSign_day">第一天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第二天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第三天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第四天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第五天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第六天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                    <li class="actSign_List">
+                        <p class="actSign_day">第七天(24px)</p>
+                        <div class="actSign_icon"></div>
+                        <div class="actSign_name">
+                            <span>道具名称(22px)</span>
+                            <span>x888(22px)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 签到结束-->
+
+        <div class="ceiba-comp-17">
+            <!-- 签到开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_textItems">
+                        累计签到：<span>x</span>天(24px)
+                    </div>
+                    <div class="actModules_btnItems">
+                        <a href="javascript:;" class="actModules_btn_s">x</a>
+                    </div>
+                </div>
+                <ul class="actSignIn_Wrap">
+                    <li class="actSignIn_List">
+                        <p class="actSignIn_text">自定义文案(22px)</p>
+                        <div class="actSign_icon"></div>
+                        <div>
+                            <a href="javascript:;" class="actSignIn_btn">x</a>
+                        </div>
+                    </li>
+                    <li class="actSignIn_List">
+                        <p class="actSignIn_text">自定义文案(22px)</p>
+                        <div class="actSign_icon"></div>
+                        <div>
+                            <a href="javascript:;" class="actSignIn_btn">x</a>
+                        </div>
+                    </li>
+                    <li class="actSignIn_List">
+                        <p class="actSignIn_text">自定义文案(22px)</p>
+                        <div class="actSign_icon"></div>
+                        <div>
+                            <a href="javascript:;" class="actSignIn_btn">x</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 签到结束-->
+
+        <div class="ceiba-comp-18">
+            <!-- 邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。(24px)</p>
+                <ul class="actInvite_Wrap">
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                    <li class="actInvite_list"><img src="ossweb-img/actInvite_list.png"/></li>
+                </ul>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_btnItems">
+                        <p class="actModules_btnDescript">自定义文案：自定义文案自定义文案(24px)</p>
+                        <a href="javascript:;" class="actModules_btn_i">x</a>
+                    </div>
+                </div>
+                <ul class="actInvite_boxWrap">
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">自定义邀请人数礼包名称(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actInvite_boxBtnWrap">
+                                <a href="javascript:;" class="actInvite_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">自定义邀请人数礼包名称(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actInvite_boxBtnWrap">
+                                <a href="javascript:;" class="actInvite_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">自定义邀请人数礼包名称(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actInvite_boxBtnWrap">
+                                <a href="javascript:;" class="actInvite_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 邀请好友结束-->
+
+        <div class="ceiba-comp-19">
+            <!-- 抽奖邀请好友开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则(24px)：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。</p>
+                <div class="actModules_btnWrap">
+                    <div class="actModules_textItems">
+                        已充值：<span>x(24px)</span>
+                    </div>
+                    <div class="actModules_btnItems">
+                        <a href="javascript:;" class="actModules_btn_c">x</a>
+                    </div>
+                </div>
+                <ul class="actInvite_boxWrap">
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">已充值<span>xxx</span>元可以领取(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actCharge_boxBtnWrap">
+                                <a href="javascript:;" class="actCharge_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">已充值<span>xxx</span>元可以领取(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actCharge_boxBtnWrap">
+                                <a href="javascript:;" class="actCharge_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="actInvite_boxList">
+                        <p class="actInvite_boxTitle">已充值<span>xxx</span>元可以领取(24px)</p>
+                        <div class="actInvite_boxContent">
+                            <div class="actInvite_boxImg">
+                                <img src="ossweb-img/actInvite_boxImg.png"/>
+                            </div>
+                            <div class="actCharge_boxBtnWrap">
+                                <a href="javascript:;" class="actCharge_boxBtn">x</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 抽奖邀请好友结束-->
+
+        <div class="ceiba-comp-20">
+
+            <!-- 充值模块开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <p class="actModules_descripe">
+                    活动规则(24px)：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案。</p>
+                <p class="actModules_subDescripe">充值金额：xxx元(24px)</p>
+                <div class="actSlider" id="swiper3">
+                    <div class="actSlider_tab_h ">
+                        <a href="javascript:;" class="actSlider_tabItems_h active">3</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">3</a>
+                        <a href="javascript:;" class="actSlider_tabItems_h">3</a>
+                    </div>
+                    <div class="actSlider_content_h">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="actSlider_contentItems">
+                                        <img src="ossweb-img/actSlider_contentItems.png"/>
+                                    </div>
+                                    <div class="actModules_btnWrap">
+                                        <a href="javascript:;" class="actModules_btn_h">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 充值模块结束-->
+
+        <div class="ceiba-comp-21">
+            <!-- 规则开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <div class="actRules">
+                    <p>1、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)<br>
+                        2、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)<br>
+                        3、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)<br>
+                        4、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)<br>
+                        5、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)<br>
+                        6、规则规则规则规则规则规则规则规则规则规则规则规规则(24px)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 规则结束-->
+
+        <div class="ceiba-comp-22">
+            <!-- 卖场轮播图开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <div class="swiper-container sellBanner" id="banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="actRules">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案文案自定义文案自定义文案自定义文案自定义文案自定义文案文案自定义文案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案。（24px）
+                </div>
+            </div>
+        </div>
+        <!-- 卖场轮播图结束-->
+
+        <div class="ceiba-comp-23">
+            <!-- 卖场轮播图开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字(36px)</h3>
+                <div class="actModules_descripe">
+                    活动规则：自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案文案自定义文案自定义文案自定义文案自定义文案自定义文案文案自定义文案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案案自定义文案自定义文案自定义文案自定义文案。（24px）
+                </div>
+                <div class="swiper-container sellBanner" id="banner2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                        <div class="swiper-slide"><img src="ossweb-img/actSliderOne_contentItems.png"></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 卖场轮播图结束-->
+
+        <div class="ceiba-comp-24">
+            <!-- 视频开始-->
+            <div class="actModules">
+                <h3 class="actModules_title">模块名字</h3>
+                <p class="actModules_descripe">自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案</p>
+                <div class="videoWrap">
+                    <img class="videoPoster" id="videoPoster" src="ossweb-img/cover.jpg">
+                    <div class="videoLayer" id="video"></div>
+                </div>
+            </div>
+            <!-- 视频结束-->
+        </div>
+        <!-- 卖场轮播图结束-->
+
+
+        <!-- 固定按钮开始 -->
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>立即预约(40px)</span>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>已预约(40px)</span>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>下载游戏(40px)</span>
+            <em class="actModules_actionBtnTips">成功下载安装游戏可领心悦专属好礼(26px)</em>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>正在下载62%</span>
+            <div class="actModules_DownLoadBar" style="width:62%">
+                <div class="actModules_DownLoadBarProcess">
+                    <span>正在下载62%</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>继续下载63%</span>
+            <div class="actModules_DownLoadBar" style="width:40%">
+                <div class="actModules_DownLoadBarProcess">
+                    <span>继续下载63%</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>腾讯认证 正版安装(40px)</span>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>启动游戏(40px)</span>
+        </a>
+
+        <a href="javascript:;" class="actModules_actionBtn">
+            <span>更新游戏(40px)</span>
+        </a>
+        <!-- 固定按钮结束 -->
+
+
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content otherContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+                <div class="actModal_header">
+                    <h3>模块标题(30px)</h3>
+                </div>
+                <div class="actModal_body">
+                    <ul class="actModal_ul">
+                        <li class="actModal_li">
+                            <div>自定义内容(24px)</div>
+                            <i class="actModal_liIcon"></i>
+                        </li>
+                        <li class="actModal_li">
+                            <div>自定义内容(24px)</div>
+                            <i class="actModal_liIcon"></i>
+                        </li>
+                        <li class="actModal_li">
+                            <div>自定义内容(24px)</div>
+                            <i class="actModal_liIcon"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actModal_footer">
+                    <a href="javascript:;" class="actModal_footerBtn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content areaContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+                <div class="actModal_header">
+                    <h3>模块标题(30px)</h3>
+                </div>
+                <div class="actModal_body">
+                    <ul class="actModal_ul">
+                        <li class="actModal_li">
+                            <select>
+                                <option value="21区">21区(24px)</option>
+                                <option value="22区">22区(24px)</option>
+                                <option value="23区">23区(24px)</option>
+                                <option value="24区">24区(24px)</option>
+                            </select>
+                        </li>
+                        <li class="actModal_li">
+                            <select>
+                                <option value="21区">法师(24px)</option>
+                                <option value="22区">射手(24px)</option>
+                                <option value="23区">战士(24px)</option>
+                                <option value="24区">辅助(24px)</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actModal_footer">
+                    <a href="javascript:;" class="actModal_footerBtn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+        <br>
+        <br>
+        <br>
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content recordContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+                <div class="actModal_header">
+                    <h3>模块标题(30px)</h3>
+                </div>
+                <div class="actModal_body">
+                    <div class="actModal_awardsList">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td width="140">道具名称(26px)</td>
+                                <td width="200">领取时间(26px)</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>暴击(24px)</td>
+                                <td>2019-01-12 23:12:00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="actModal_awardsPages">
+                        <a href="javascript:;"
+                           class="actModal_awardsPagesBtn actModal_awardsPagesPrev">上一页(24px)</a>
+                        <input placeholder="" class="actModal_awardsPagesInput">
+                        <a href="javascript:;"
+                           class="actModal_awardsPagesBtn actModal_awardsPagesNext">下一页(24px)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+        <br>
+        <br>
+        <br>
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content bookContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+                <div class="actModal_body">
+                    <div class="actModal_bodyTitle">
+                        恭喜你！预约成功！(30px)<br>游戏开放时将通过以下手机通知你
+                    </div>
+                    <div class="actModal_bodyInput phoneNum">
+                        <input type="text" placeholder="请输入手机号(24px)">
+                    </div>
+                    <div class="actModal_bodyDescribe">
+                        <label>
+                            <input type="checkbox">
+                            游戏开放时将通过以下手机通知你(20px)
+                        </label>
+                    </div>
+                </div>
+                <div class="actModal_footer">
+                    <a href="javascript:;" class="actModal_footerBtn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+        <br>
+        <br>
+        <br>
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content codeContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+
+                <div class="actModal_body">
+                    <div class="actModal_codeImg">
+                        <img src="ossweb-img/code.jpg"/>
+                    </div>
+                    <p class="actModal_codeText">扫码参与活动(30px)</p>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+        <br>
+        <br>
+        <br>
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content textContent">
+                <div class="actModal_header">
+                    <h3>模块标题(30px)</h3>
+                </div>
+                <div class="actModal_body">
+                    <div class="actModal_bodyTitle">
+                        自定义自定义自定义自定义自定 自定义自定义自定义自定(28px)
+                    </div>
+                </div>
+                <div class="actModal_footer">
+                    <a href="javascript:;" class="actModal_footerBtn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+        <br>
+        <br>
+        <br>
+        <!-- 弹窗开始 -->
+        <div class="actModal" style="display:">
+            <div class="actModal_content giftContent">
+                <a href="javascript:;" class="actModal_closeBtn">
+                    <span></span>
+                </a>
+                <div class="actModal_body">
+                    <div class="actModal_bodyTitle">
+                        恭喜你获得xxx礼包(28px)
+                    </div>
+                    <div class="actModal_bodyInput awards">
+                        <input type="text" placeholder="SKXORS123684WEONA(24px)" disabled>
+                    </div>
+                    <div class="actModal_bodyDescribe">
+                        <a href="javascript:;" class="actModal_awardsBtn">复制兑换码(24px)</a>
+                    </div>
+                </div>
+                <div class="actModal_footer">
+                    <a href="javascript:;" class="actModal_footerBtn">x</a>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗结束 -->
+
+    </section>
+</div>
+
+
+</body>
+
+
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'>
+</script>
+<script>
+    function _id(idName) {
+        return document.getElementById(idName)
+    }
+
+    _id('videoPoster').addEventListener('click', function (e) {
+        e.target.style.display = 'none';
+        player.play();
+    })
+
+    var player = new Txplayer({
+        containerId: 'video',
+        vid: 'x0839g6lwzn',
+        width: '',
+        height: '',
+        loop: true,
+        autoplay: false
+    });
+</script>
+
+
+</html>
