@@ -235,14 +235,20 @@
 }
 
 #app .actModules_btn_h.disabled {
-    background-position: -7.83rem -12.23rem;
-    width: 2.4rem;
-    height: .7rem
+    background-position: 0 -8.82rem;
+    width: 2.37rem;
+    height: .82rem
+}
+
+#app .ceiba-comp-1 .swiper-wrapper .swiper-slide:nth-child(1) .actModules_btn_h {
+    width: 2.37rem;
+    height: .83rem;
+    background-position: 0 -7.94rem;
 }
 
 #app .actModules_btn_h {
-    background-position: 0 -7.94rem;
-    width: 2.37rem;
+    background-position: -2.48rem -8.78rem;
+    width: 2.97rem;
     height: .83rem;
 }
 
@@ -338,13 +344,13 @@
 
 #app .actSlider_tab-5 .actSlider_tabItems_h.active {
     background-position: 0 -7.32rem;
-    width: 1.42rem;
+    width: 1.72rem;
     height: .57rem;
 }
 
 #app .actSlider_tab-5 .actSlider_tabItems_h {
-    background-position: -1.49rem -7.32rem;
-    width: 1.42rem;
+    background-position: -1.79rem -7.32rem;
+    width: 1.72rem;
     height: .57rem;
 }
 
@@ -847,7 +853,7 @@
 }
 
 #app .actModules_btn_h.disabled {
-    color: #fff
+    color: #fff;
 }
 
 #app .actSlider_v {
@@ -1330,7 +1336,7 @@
 #app .actSign_List {
     float: none;
     width: 1.74rem;
-    /* height: 2.6rem; */
+    /* height: 3.5rem; */
     padding: .1rem 0;
     background-image: url('../ossweb-img/plank_bg.png');
     background-size: 100% auto;
@@ -1377,7 +1383,7 @@
 #app .actSign_btn {
     display: block;
     margin: 0.4rem auto 0;
-    background-position: -2.94rem -7.32rem;
+    background-position: -3.54rem -7.32rem;
     width: 1.54rem;
     height: .57rem;
 }
@@ -1631,13 +1637,14 @@
 }
 
 #app .ceiba-comp-4 .actModules_title {
-    margin-top: 1.21rem;
+    margin-top: .6rem;
     width: 5.83rem;
     background-position: 0 -3.71rem;
 }
 
 #app .ceiba-comp-4 .actModules_descripe {
     margin: .3rem auto 0;
+    padding: 0 .4rem;
     color: #625539;
 }
 
@@ -1658,4 +1665,22 @@
     margin: 0.6rem auto 0.9rem;
     font-weight: bold;
     color: #bb2d26;
+}
+
+#app .ceiba-comp-4 .actSlider_tabItems_h {
+    line-height: .71rem;
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#app .ceiba-comp-4 .actModules_subDescripe {
+    margin: .36rem auto;
+    font-size: .24rem;
+    color: #874744;
+}
+
+#app .ceiba-comp-4 .actSlider_content_h,
+#app .ceiba-comp-4 .sellBanner {
+    margin-top: 0;
 }
