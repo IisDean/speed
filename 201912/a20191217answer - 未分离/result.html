@@ -536,7 +536,7 @@
         height: 111
     });
     qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
-    var grade = parseInt(Math.random() * 10) * 10, //答题所得分数
+    var grade = localStorage.getItem("grade"), //答题所得分数
         wxName = '微信昵称微信昵称', //用户微信昵称
         nameTextColor = '#494e46', //微信昵称颜色
         $state = $(".stage");

@@ -134,6 +134,7 @@ function isCurrent(num, idx, that) {
     }
     //已答完所有题目
     if (num + 1 >= answer.length) {
+        localStorage.setItem("grade", current + 10);
         window.location.href = 'result.html';
     } else {
         that.parent().next().css('display', 'block'); //放出下一题按钮

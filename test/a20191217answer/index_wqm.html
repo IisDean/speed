@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="Description" content="《雪鹰领主》手游——超凡入圣，破界成神！">
+    <meta name="Keywords" content="雪鹰领主预约站,雪鹰领主,官方手游,漫游联动,官网,短视频社交城战,自创技能">
+    <title>方言测试-雪鹰领主官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="//game.gtimg.cn/images/xylz/cp/a20191217answer/css/common.css">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <style>
+        .loading-container {
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/loading_bg.jpg');
+            background-position: center center;
+            background-size: 100% auto;
+        }
+
+        .load-lsj {
+            margin: 3.08rem auto 0;
+            width: 2.81rem;
+            height: 4.28rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/loading_inset.png');
+        }
+
+        .load-person {
+            top: -1.2rem;
+            right: -.3rem;
+            width: 2.32rem;
+            height: 3.63rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/loading_person.png');
+            transform-origin: 17% 77%;
+            -webkit-transform-origin: 17% 77%;
+            animation: personScale .6s ease 1s forwards;
+            -webkit-animation: personScale .6s ease 1s forwards;
+            opacity: 0;
+        }
+
+        @keyframes personScale {
+            0% {
+                opacity: 0;
+                transform: scale(.1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes personScale {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(.1);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+            }
+        }
+
+        .load-icon {
+            display: block;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/loading_text.png');
+            background-size: 3.13rem auto;
+            animation: loadTextFade 4s linear infinite forwards;
+            opacity: 0;
+        }
+
+        @keyframes loadTextFade {
+
+            0%,
+            60%,
+            100% {
+                opacity: 0;
+            }
+
+            10%,
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .licon-1 {
+            top: 3.3rem;
+            left: 5.5rem;
+            width: 1.33rem;
+            height: .42rem;
+            background-position: 0 0;
+            animation-delay: .8s;
+        }
+
+        .licon-2 {
+            top: 1.83rem;
+            left: 4.2rem;
+            width: 1.05rem;
+            height: .39rem;
+            background-position: -.79rem -.47rem;
+            animation-delay: 1.2s;
+        }
+
+        .licon-3 {
+            top: 2.85rem;
+            left: 1.6rem;
+            width: .88rem;
+            height: .39rem;
+            background-position: -1.89rem -.47rem;
+            animation-delay: .8s;
+        }
+
+        .licon-4 {
+            top: 4.54rem;
+            left: .98rem;
+            width: 1.72rem;
+            height: .42rem;
+            background-position: -1.39rem 0;
+            animation-delay: 1.2s;
+        }
+
+        .licon-5 {
+            top: 5.26rem;
+            left: 5.3rem;
+            width: .74rem;
+            height: .39rem;
+            background-position: 0 -.47rem;
+            animation-delay: 1.6s;
+        }
+
+        .loading-text {
+            margin-top: .42rem;
+            font-weight: bold;
+            font-size: .34rem;
+            color: #615953;
+        }
+
+        .logo-icon {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 2.19rem;
+        }
+
+        .stage {
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/idx_bg.jpg');
+            background-position: center center;
+            background-size: 100% auto;
+        }
+
+        .logo-wrap {
+            top: 1rem;
+            right: .28rem;
+            width: 1.62rem;
+        }
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            width: 100%;
+            height: 12rem;
+        }
+
+        .idx-btn {
+            top: 10.83rem;
+            left: 2.38rem;
+            width: 2.84rem;
+            height: .84rem;
+            background-position: 0 0;
+        }
+    </style>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2019/12/17 -->
+</head>
+
+<body>
+    <h1 class="hide">方言测试</h1>
+    <div class="pa loading-container">
+        <div class="wrap">
+            <div class="pr bg load-lsj">
+                <div class="pa bg load-person"></div>
+            </div>
+            <p class="loading-text t-c">0%</p>
+            <i class="pa load-icon licon-1"></i>
+            <i class="pa load-icon licon-2"></i>
+            <i class="pa load-icon licon-3"></i>
+            <i class="pa load-icon licon-4"></i>
+            <i class="pa load-icon licon-5"></i>
+            <div class="pa full-img logo-icon">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="雪鹰领主手游">
+            </div>
+        </div>
+    </div>
+    <div class="flex top-menu">
+        <div class="full-img top-logo">
+            <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo_2.png" alt="">
+        </div>
+        <div class="flex-1">
+            <p class="game-title-text">雪鹰领主</p>
+            <p class="game-msg-text">腾讯2019收官大作</p>
+        </div>
+        <a href="javascript: alert('即将开启，敬请期待！');" onclick="PTTSendClick('btn','opengame1','进入游戏');"
+            class="flex flex-center flex-middle download-game">
+            <span>进入游戏</span>
+        </a>
+    </div>
+    <div class="stage" id="stage" style="display: none;">
+        <div class="pa full-img logo-wrap"><img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png"
+                alt="logo"></div>
+        <div class="wrap">
+            <a href="javascript:;" class="pa icons idx-btn btn-hover t">开始测试</a>
+        </div>
+    </div>
+    <!-- pop以下是弹出层信息 -->
+    <div class="bg pop pop-login" id="loginPop">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="雪鹰领主手游">
+            </div>
+            <h1 class="pop-title-text">请选择登录方式：</h1>
+            <a href="javascript: popHide();" id="wxloginBtn" class="bg login-btn wx-login btn-hover t">微信登录</a>
+            <a href="javascript: popHide();" id="ptLoginBtn" class="bg login-btn qq-login btn-hover t">qq登录</a>
+        </div>
+    </div>
+</body>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"  ></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js" ></script>
+<script src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script>
+
+    $(function () {
+
+        var imgList = [
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_1.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_2.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_3.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_4.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_5.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_6.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_7.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_8.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_9.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_10.jpg',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_1_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_2_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_3_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_4_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_5_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_6_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_7_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_8_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_9_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/answer_bg_10_sub.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/icons.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/mask.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_1_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_1_2.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_1_3.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_2_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_3_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_4_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_5_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_6_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_7_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_8_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_9_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/t_10_1.png',
+            '//game.gtimg.cn/images/xylz/cp/a20191217answer/voice_icon.png',
+        ];
+        function loadImg() {
+            var that = this,
+                $pro = $(".loading-text"),
+                imgLoad = 0;
+            imgList.forEach(function (ev, index) {
+                var img = new Image();
+                img.src = ev;
+                img.idx = index;
+                img.onload = function () {
+                    imgList[this.idx].obj = this;
+                    imgLoad++;
+                    $pro.text(parseInt(imgLoad / imgList.length * 100) + '%');
+                    if (imgLoad >= imgList.length) {
+                        setTimeout(function () {
+                            $(".loading-container").fadeOut(300);
+                            $(".stage").show();
+                        }, 500);
+                    }
+                }
+            });
+        }
+        loadImg();
+
+    });
+
+    //弹窗
+    var popIsShow = false;
+    var popDom = null;
+    function popShow(id) {
+        popHide();
+        var p = $('#' + id);
+        popDom = p;
+        if (p) {
+            p.show().css({
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+            p.attr('for', 'pop');
+            popIsShow = true;
+            if ($('[for="' + id + '"]').length >= 1) return;
+            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:997;background:rgba(0,0,0,0.8);"></div>');
+        }
+    }
+    function popHide() {
+        $('[for="pop"]').hide().attr('style', '');
+        $('[name="overlay"]').remove();
+    }
+    window.addEventListener("resize", function () {
+        if (!popIsShow)
+            return;
+        setTimeout(function () {
+            popDom.css({
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+        }, 400)
+    });
+
+
+</script>
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/index_wqm.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //统计
+    var setSite = {
+        siteType: "a20191217answer",
+        pageType: "index",
+        pageName: "首页",
+        osact: 0,
+        ingame: 0,
+        stayTime: 0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+
+</html>

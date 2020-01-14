@@ -175,7 +175,7 @@
 #app .actSign_btn,
 #app .actModules_title,
 #app .textContent {
-    background-image: url(../ossweb-img/sprites.png);
+    background-image: url(//game.gtimg.cn/images/xylz/cp/a20200109newversion/sprites.png);
     background-size: 5.83rem auto;
     background-repeat: no-repeat;
 }
@@ -1338,7 +1338,7 @@
     width: 1.74rem;
     /* height: 3.5rem; */
     padding: .1rem 0;
-    background-image: url('../ossweb-img/plank_bg.png');
+    background-image: url('//game.gtimg.cn/images/xylz/cp/a20200109newversion/plank_bg.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin: .08rem .03rem;
@@ -1445,7 +1445,7 @@
 #app .actTop_Banner {
     width: 7.5rem;
     height: 7.26rem;
-    background: url(../ossweb-img/actTop_banner.jpg) no-repeat center top;
+    background: url(//game.gtimg.cn/images/xylz/cp/a20200109newversion/actTop_banner.jpg) no-repeat center top;
     background-size: 7.5rem 7.26rem;
     margin: 0 auto;
     overflow: hidden;
@@ -1522,7 +1522,7 @@
 #app section {
     height: 100%;
     width: 100%;
-    background: url(../ossweb-img/bg.jpg) no-repeat;
+    background: url(//game.gtimg.cn/images/xylz/cp/a20200109newversion/bg.jpg) no-repeat;
     background-size: 7.5rem 60rem;
 }
 

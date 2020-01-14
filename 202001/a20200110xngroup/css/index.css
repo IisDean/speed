@@ -32,7 +32,7 @@ body,
 html {
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
 }
 
 h1,
@@ -243,7 +243,7 @@ body {
 
 .icons {
     display: block;
-    background-image: url("../ossweb-img/icons.png");
+    background-image: url("//game.gtimg.cn/images/dp/cp/a20200110xngroup/icons.png");
     background-repeat: no-repeat;
     background-size: 7.5rem auto;
 }
@@ -314,32 +314,37 @@ a {
 
 .wrap-1 {
     height: 8.26rem;
-    background-image: url('../ossweb-img/bg1.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg1.jpg');
 }
 
 .wrap-2 {
+    height: 5.28rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg2.jpg');
+}
+
+.wrap-2.join-status {
     height: 9.58rem;
-    background-image: url('../ossweb-img/bg2.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg2_sub.jpg');
 }
 
 .wrap-3 {
     height: 10.86rem;
-    background-image: url('../ossweb-img/bg3.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg3.jpg');
 }
 
 .wrap-4 {
     height: 6.75rem;
-    background-image: url('../ossweb-img/bg4.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg4.jpg');
 }
 
 .wrap-5 {
     height: 10.34rem;
-    background-image: url('../ossweb-img/bg5.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg5.jpg');
 }
 
 .wrap-6 {
     height: 8.21rem;
-    background-image: url('../ossweb-img/bg6.jpg');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/bg6.jpg');
 }
 
 .title-icon {
@@ -381,17 +386,20 @@ a {
     background-color: rgba(255, 255, 255, .78);
 }
 
-.login-msg-text {
+.login-name-text {
     font-size: .22rem;
     color: #313131;
 }
 
-.login-msg-text a {
+.login-name-text a {
     display: inline-block;
     color: #d94249;
 }
 
 .rule-btn {
+    top: .2rem;
+    right: .2rem;
+    z-index: 1;
     width: 1.45rem;
     height: .49rem;
     background-position: -2.92rem -10.99rem;
@@ -410,6 +418,7 @@ a {
     line-height: .46rem;
     border-radius: 99px;
     background-color: #e18e3d;
+    border: none;
     font-size: .24rem;
     color: #650f16;
 }
@@ -425,10 +434,11 @@ a {
 }
 
 .avatar-wrap {
+    display: block;
     margin: 0 auto;
     width: 1.37rem;
     height: 1.41rem;
-    background-image: url('../ossweb-img/avatar_bg.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/avatar_bg.png');
 }
 
 .avatar-head {
@@ -446,7 +456,7 @@ a {
     left: 0;
     width: 1.46rem;
     height: .65rem;
-    background-image: url('../ossweb-img/avatar_cloud.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/avatar_cloud.png');
 }
 
 .return-icon {
@@ -466,11 +476,36 @@ a {
     color: #f26f74;
 }
 
+.wrap-2.join-status .break-ranks-btn,
+.wrap-2.join-status .team-list-wrap {
+    display: block !important;
+}
+
 .break-ranks-btn {
     margin: .12rem auto 0;
     width: 2.86rem;
     height: .82rem;
     background-position: 0 -10.99rem;
+}
+
+.wrap-2.join-status .create-wrap {
+    display: none;
+}
+
+.create-wrap {
+    margin-top: .7rem;
+}
+
+.create-team-btn {
+    width: 2.38rem;
+    height: .68rem;
+    background-position: -5.12rem -12.07rem;
+}
+
+.push-team-btn {
+    width: 2.38rem;
+    height: .68rem;
+    background-position: -5.12rem -12.8rem;
 }
 
 /* 小队共赢 */
@@ -525,7 +560,7 @@ a {
     margin: 0 auto;
     width: 1.66rem;
     height: 1.66rem;
-    background-image: url('../ossweb-img/goods_bg.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/goods_bg.png');
     overflow: hidden;
 }
 
@@ -565,8 +600,7 @@ a {
     padding-top: 1.22rem;
     box-sizing: border-box;
     width: 6.8rem;
-    height: 2.94rem;
-    background-image: url('../ossweb-img/gift_plank.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/gift_plank.png');
 }
 
 .gift-item {
@@ -624,7 +658,7 @@ a {
     margin: 0 .06rem;
     width: 1.61rem;
     height: 2.89rem;
-    background-image: url('../ossweb-img/mission_plank.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/mission_plank.png');
 }
 
 .mission-num-text {
@@ -690,16 +724,44 @@ a {
     background-position: -3.4rem -12.62rem;
 }
 
+.pop {
+    outline: none;
+}
+
 .pop-1 {
     width: 6.3rem;
     height: 4.11rem;
-    background-image: url('../ossweb-img/pop_1.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_1.png');
 }
 
 .pop-2 {
     width: 5.66rem;
     height: 4.84rem;
-    background-image: url('../ossweb-img/pop_2.png');
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_2.png');
+}
+
+.pop-3 {
+    width: 6.3rem;
+    height: 5.7rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_3.png');
+}
+
+.pop-4 {
+    width: 6.3rem;
+    height: 3.25rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_4.png');
+}
+
+.pop-5 {
+    width: 6.3rem;
+    height: 2.63rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_5.png');
+}
+
+.pop-6 {
+    width: 6.3rem;
+    height: 4.4rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_6.png');
 }
 
 .pop-title {
@@ -716,6 +778,45 @@ a {
 .pop-title-2 {
     margin-top: .66rem;
     background-position: 0 -7.9rem;
+}
+
+.pop-title-3 {
+    margin-top: .32rem;
+    background-position: 0 -8.69rem;
+}
+
+.pop-title-4 {
+    margin-top: .64rem;
+    background-position: 0 -9.07rem;
+}
+
+.pop-title-5 {
+    margin-top: .64rem;
+    background-position: 0 -9.46rem;
+}
+
+.pop-title-6 {
+    margin-top: .64rem;
+    background-position: 0 -9.84rem;
+}
+
+.pop-title-7 {
+    margin-top: .64rem;
+    background-position: 0 -10.21rem;
+}
+
+.pop-title-8 {
+    margin-top: .64rem;
+    background-position: 0 -10.61rem;
+}
+
+.pop-flower {
+    top: -.3rem;
+    left: -.3rem;
+    width: .94rem;
+    height: .85rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/pop_flower.png');
+    pointer-events: none;
 }
 
 .login-list {
@@ -754,4 +855,133 @@ a {
     width: 2.03rem;
     height: .64rem;
     background-position: -5.38rem -7.9rem;
+}
+
+.rule-list {
+    margin: .2rem .34rem 0;
+    height: 4.6rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.rule-msg-text {
+    line-height: .38rem;
+    font-size: .2rem;
+    color: #313131;
+}
+
+.share-code-wrap {
+    margin-top: .8rem;
+}
+
+.share-code-wrap .dw-code-text {
+    font-size: .24rem;
+}
+
+.share-href-wrap {
+    margin: .34rem .6rem;
+}
+
+.share-href-text {
+    font-size: .2rem;
+    color: #313131;
+}
+
+.share-title-text {
+    margin: .52rem auto 0;
+    font-size: .24rem;
+    color: #d64247;
+}
+
+.share-title-text+p {
+    margin: .14rem .6rem 0;
+}
+
+.input-wrap {
+    margin-top: .44rem;
+}
+
+.input-wrap span {
+    font-size: .2rem;
+    color: #313131;
+}
+
+.input-wrap input {
+    display: block;
+    padding: 0 .15rem;
+    width: 3.05rem;
+    height: .5rem;
+    border: 1px solid #4a4a4a;
+    background-color: transparent;
+}
+
+.submit-code-btn {
+    margin: .28rem auto 0;
+    width: 2.03rem;
+    height: .64rem;
+    background-position: -5.38rem -7.9rem;
+}
+
+.confirm-join-text {
+    margin: .8rem .86rem 0;
+    line-height: .28rem !important;
+    font-size: .2rem;
+    color: #313131;
+}
+
+.cancel-btn {
+    width: 2.03rem;
+    height: .64rem;
+    background-position: -5.38rem -9.98rem;
+}
+
+.confirm-btn {
+    width: 2.03rem;
+    height: .64rem;
+    background-position: -5.38rem -8.6rem;
+}
+
+.pop-msg-text {
+    margin-top: .32rem;
+    line-height: .4rem !important;
+    font-size: .2rem;
+    color: #313131;
+}
+
+.goods-list {
+    margin-top: .36rem;
+}
+
+.goods-item {
+    margin: 0 .1rem;
+}
+
+.goods-icon2 {
+    margin: 0 auto;
+    width: 1.26rem;
+    background-image: url('//game.gtimg.cn/images/dp/cp/a20200110xngroup/goods_bg2.png');
+    background-position: top center;
+}
+
+.goods-msg-text {
+    margin-top: .12rem;
+    font-size: .2rem;
+    color: #313131;
+}
+
+.get-btn {
+    margin: .2rem auto 0;
+    width: 2.03rem;
+    height: .64rem;
+    background-position: -5.38rem -9.29rem;
+}
+
+.pop-share {
+    position: fixed !important;
+    top: .2rem !important;
+    right: .2rem !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: 5.3rem !important;
+    transform: translate(0) !important;
 }

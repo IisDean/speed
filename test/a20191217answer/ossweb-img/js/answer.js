@@ -121,6 +121,19 @@ $(".topic-list .topic-item").on("click", function () {
     }, 800);
 });
 
+var isMsdk = true;
+var msdk = milo.xss.filter(milo.request('msdkEncodeParam'));
+if(msdk == '' || msdk == undefined || msdk == 'undefined' || temp_appid == '' || sPlatId == '' || sArea == '' || sPartition == '' || sRoleId == ''){
+    isMsdk = false;
+}
+
+function ismsdk() {
+    if (ua.match(/msdk/i) || milo.request('msdkEncodeParam') != '') {
+        return true;
+    } else {
+        return false;
+    }
+}
 //判断选择正确与否
 var current = 0; //回答正确题数
 function isCurrent(num, idx, that) {
@@ -134,7 +147,13 @@ function isCurrent(num, idx, that) {
     }
     //已答完所有题目
     if (num + 1 >= answer.length) {
-        window.location.href = 'result.html';
+        if (!isMsdk || !ismsdk()) {
+            alert(1)
+            window.location.href = 'result_wqm.html?grade='+ current;
+        } else {
+            alert(2)
+            window.location.href = 'result_g.html?grade='+ current;
+        }
     } else {
         that.parent().next().css('display', 'block'); //放出下一题按钮
     }

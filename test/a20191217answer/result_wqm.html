@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- ???????????????????¦Ä????????????????   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="Description" content="?????????????¦±??????????????????">
+    <meta name="Keywords" content="?????????,??????,???????,????????,????,??????ÁW???,???????">
+    <title>???????-????????????-??????</title>
+    <link rel="stylesheet" href="//game.gtimg.cn/images/xylz/cp/a20191217answer/css/common.css">
+    <script>
+        //??????
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <style>
+        #stage {
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_0.jpg');
+            background-position: center center;
+            background-size: 100% auto;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @media screen and (min-height: 668px) {
+            .wrap {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 1;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-height: 667px) {
+            .wrap {
+                margin: .8rem 0 .4rem;
+            }
+        }
+
+        .poster-container {
+            margin: 0rem auto 0;
+            width: 6.73rem;
+            overflow: hidden;
+        }
+
+        .poster-wrap {
+            width: 6.73rem;
+            height: 9.6rem;
+        }
+
+        .sava-tips-text {
+            margin: 0.25rem 0;
+            font-weight: bold;
+            font-size: .22rem;
+            color: #462b1f;
+        }
+
+        .again-btn,
+        .share-btn,
+        .cj-btn {
+            display: block;
+            width: 2.37rem;
+            height: .76rem;
+        }
+
+        .again-btn {
+            background-position: 0 -.9rem;
+        }
+
+        .share-btn {
+            margin-left: .78rem;
+            background-position: 0 -1.7rem;
+        }
+
+        .cj-btn {
+            background-position: 0 -7.11rem;
+        }
+
+        .poster-share {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 6.73rem;
+        }
+
+        .pop1 {
+            width: 6.38rem;
+            height: 7.87rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/pop_bg1.jpg');
+        }
+
+        .pop2 {
+            width: 6.38rem;
+            height: 9.17rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/pop_bg2.jpg');
+        }
+
+        .pop3 {
+            width: 6.38rem;
+            height: 7.99rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/pop_bg3.jpg');
+        }
+
+        .pop4 {
+            width: 6.38rem;
+            height: 6.31rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/pop_bg4.jpg');
+        }
+
+        .pop-title-text {
+            margin-top: .65rem;
+        }
+
+        .success-text {
+            margin-top: 1.1rem;
+            line-height: 1;
+            font-size: .6rem;
+            color: #6e3c2b;
+        }
+
+        .fail-text {
+            margin-top: 1.8rem;
+            line-height: 1;
+            font-size: .45rem;
+            color: #6e3c2b;
+        }
+
+        .pop-msg-text {
+            text-align: justify;
+        }
+
+        .prize-gift1 {
+            margin: .54rem auto;
+            width: 3.51rem;
+        }
+
+        .prize-gift2 {
+            margin: .35rem auto;
+            width: 2.66rem;
+        }
+
+        .get-btn {
+            margin: .48rem auto 0;
+            width: 2.37rem;
+            height: .73rem;
+            background-position: 0 -3.14rem;
+        }
+
+        .open-btn,
+        .confirm-btn,
+        .gl-btn,
+        .get-confirm-btn {
+            width: 2.37rem;
+            height: .72rem;
+        }
+
+        .open-btn {
+            margin: 1.04rem auto 0;
+            background-position: 0 -4.71rem;
+        }
+
+        .confirm-btn {
+            margin: 1.04rem auto 0;
+            background-position: 0 -3.93rem;
+        }
+
+        .gl-btn {
+            margin: .8rem auto 0;
+            background-position: 0 -5.5rem;
+        }
+
+        .get-confirm-btn {
+            margin: .7rem auto 0;
+            background-position: 0 -6.29rem;
+        }
+
+        .pop-share {
+            position: absolute;
+            top: .4rem !important;
+            right: .4rem !important;
+            left: auto !important;
+            margin: 0 !important;
+            width: 4.51rem;
+        }
+
+        .select-wrap,
+        .input-wrap {
+            margin: .4rem auto 0;
+            width: 5.3rem;
+            height: .62rem;
+        }
+
+        .select-wrap {
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/select_bg.png');
+        }
+
+        .input-wrap {
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/input_bg.png');
+        }
+
+        .select-wrap select,
+        .input-wrap input {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            font-size: .3rem;
+            color: #6e3c2b;
+            border: none;
+            background-color: transparent;
+        }
+
+        .select-wrap select {
+            padding: 0 1rem 0 .28rem;
+        }
+
+        .input-wrap input {
+            padding: 0 .28rem;
+        }
+
+        .input-wrap input::-webkit-input-placeholder {
+            color: #6e3c2b;
+        }
+
+        .light-wrap {
+            position: relative;
+            height: 3.9rem;
+            overflow: hidden;
+        }
+
+        .light-icon {
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: -2.5rem auto 0;
+            width: 5rem;
+            height: 5rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/light.png');
+        }
+
+        .lottery-btn {
+            display: block;
+            position: relative;
+            z-index: 1;
+            margin: .9rem auto 0;
+            width: 2.12rem;
+            height: 2.12rem;
+            background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/get_prize.png');
+        }
+
+        .lottery-btn {
+            animation: scaleBtn .8s linear infinite;
+            -webkit-animation: scaleBtn .8s linear infinite;
+        }
+
+        @keyframes scaleBtn {
+
+            0%,
+            100% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes scaleBtn {
+
+            0%,
+            100% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        .light-icon {
+            animation: light 10s linear infinite;
+            -webkit-animation: light 10s linear infinite;
+        }
+
+        @keyframes light {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes light {
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- ??????: cp | ????????? cp | ?????? 2019/12/17 -->
+</head>
+
+<body>
+    <h1 class="hide">???????</h1>
+    <div class="flex top-menu">
+        <div class="full-img top-logo">
+            <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo_2.png" alt="">
+        </div>
+        <div class="flex-1">
+            <p class="game-title-text">??????</p>
+            <p class="game-msg-text">???2019??????</p>
+        </div>
+        <a href="javascript: alert('???????????????????');" onclick="PTTSendClick('btn','opengame1','???????');"
+            class="flex flex-center flex-middle download-game">
+            <span>???????</span>
+        </a>
+    </div>
+    <div class="stage" id="stage">
+        <div class="wrap">
+            <div class="poster-container">
+                <div class="poster-wrap">
+                    <canvas class="canvas" width="673" height="1164"></canvas>
+                </div>
+                <div id="qrcode" style="display: none;"></div>
+            </div>
+            <p class="t-c sava-tips-text">???????????????</p>
+            <div class="flex flex-center" style="margin: .2rem 0 0;">
+                <!-- <a href="answer.html" class="icons again-btn btn-hover t"
+                    onclick="PTTSendClick('btn','again','???????');">???????</a> -->
+                <a href="javascript: ;" class="icons cj-btn btn-hover t"
+                    onclick="PTTSendClick('btn','goLottery','???????');">???????</a>
+                <a href="javascript: popShow('popShare');" class="icons share-btn btn-hover t"
+                    onclick="PTTSendClick('btn','share','????');">????</a>
+            </div>
+        </div>
+    </div>
+    <!-- pop?????????????? -->
+    <!-- 100????E?? -->
+    <div class="bg pop pop1" id="pop1" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">?????????</h1>
+            <div class="full-img prize-gift1">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/prize_1.png" alt="">
+            </div>
+            <p class="pop-msg-text">???§Ý?????200?????????100?????????50?????????30?Q?????10?Q????????18???????????</p>
+            <a href="javascript: popShow('pop7');" class="pop-btn icons get-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- 15??????? -->
+    <div class="bg pop pop2" id="pop2" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">?????????</h1>
+            <div class="full-img prize-gift2">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/prize_2.png" alt="">
+            </div>
+            <a href="javascript: ;" class="pop-btn icons get-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- 18??????? -->
+    <div class="bg pop pop3" id="pop3" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">?????????</h1>
+            <div class="full-img prize-gift2">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/prize_3.png" alt="">
+            </div>
+            <a href="javascript: popHide();" class="pop-btn icons confirm-btn t">???</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ????? ????§Ý????? -->
+    <div class="bg pop pop4" id="pop10" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="fail-text t-c">???????????§Ý???????</h1>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ?????? ??????? -->
+    <div class="bg pop pop4" id="pop4" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="success-text t-c">????????</h1>
+            <a href="javascript: alert('?????????????????!');" class="pop-btn icons open-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ?????? ??? -->
+    <div class="bg pop pop4" id="pop5" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="success-text t-c">????????</h1>
+            <a href="javascript: popHide();" class="pop-btn icons confirm-btn t">???</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ??????? -->
+    <div class="bg pop pop2" id="pop6" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <div class="bg select-wrap" style="margin-top: .96rem;">
+                <select id="channelContentId">
+                    <option value="?????">???????</option>
+                </select>
+            </div>
+            <div class="bg select-wrap">
+                <select id="systemContentId">
+                    <option value="?????">???????</option>
+                </select>
+            </div>
+            <div class="bg select-wrap">
+                <select id="areaContentId">
+                    <option value="?????">?????????</option>
+                </select>
+            </div>
+            <div class="bg select-wrap">
+                <select id="roleContentId">
+                    <option value="?????">?????</option>
+                </select>
+            </div>
+            <a href="javascript: popHide();" id="bind" class="pop-btn icons gl-btn J-gl-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ???????E?? ???????? -->
+    <div class="bg pop pop3" id="pop7" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <p class="pop-msg-text" style="margin-top: .74rem;">
+                ??????????????????????????????????????????????????????????</p>
+            <div class="bg input-wrap" style="margin-top: .5rem;">
+                <input type="text" placeholder="????" id="userName" />
+            </div>
+            <div class="bg input-wrap">
+                <input type="tel" placeholder="???????" id="userMobile" />
+            </div>
+            <a href="javascript: popHide();" class="pop-btn icons get-confirm-btn get-ecard-btn t things"
+                id="btn_sure_add">??????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- ????ýw -->
+    <div class="bg pop pop3" id="pop8" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <div class="light-wrap">
+                <div class="pa bg light-icon"></div>
+                <a href="javascript: ;" class="btn bg lottery-btn"></a>
+            </div>
+            <p class="pop-msg-text">?§Ý?????200?????????100?????????50?????????30?Q?????10?Q????????18?????????????</p>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- 200????E?? -->
+    <div class="bg pop pop1" id="pop9" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">?????????</h1>
+            <div class="full-img prize-gift1">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/prize_4.png" alt="">
+            </div>
+            <p class="pop-msg-text">???§Ý?????200?????????100?????????50?????????30?Q?????10?Q????????18???????????</p>
+            <a href="javascript: popShow('pop7');" class="pop-btn icons get-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <!-- 50????E?? -->
+    <div class="bg pop pop1" id="pop11" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">?????????</h1>
+            <div class="full-img prize-gift1">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/prize_5.png" alt="">
+            </div>
+            <p class="pop-msg-text">???§Ý?????200?????????100?????????50?????????30?Q?????10?Q????????18???????????</p>
+            <a href="javascript: popShow('pop7');" class="pop-btn icons get-btn t">???????</a>
+        </div>
+        <a href="javascript: popHide();" class="pa icons close-btn t">??????</a>
+    </div>
+    <div class="bg pop pop-login" id="loginPop" style="display: none;">
+        <div class="pop-con">
+            <div class="full-img pop-logo">
+                <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/logo.png" alt="??????????">
+            </div>
+            <h1 class="pop-title-text">????????????</h1>
+            <a href="javascript: ;" id="wxloginBtn" class="bg login-btn wx-login btn-hover t">?????</a>
+            <a href="javascript: ;" id="ptLoginBtn" class="bg login-btn qq-login btn-hover t">qq???</a>
+        </div>
+    </div>
+    <!-- ???????? -->
+    <div class="pop full-img pop-share" id="popShare" onclick="popHide()" style="display: none;">
+        <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/share_pop.png" alt="">
+    </div>
+</body>
+
+
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/hidpi-canvas.min.js"></script>
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/qrcode.min.js"></script>
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/poster.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/result_wqm.js"></script>
+<script>
+
+    //???????
+    function lotteryPrize() {
+        popHide();
+        // var idx = Math.round(getRandom(1, 3));
+        popShow("pop" + idx);
+    }
+
+    //????????
+    function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    //???????
+    // $(".J-gl-btn").on("click", function () {
+    //     alert('???????');
+    //     window.location.href = 'poster.html';
+    // });
+
+    //???????E??,????????
+    $(".get-ecard-btn").on("click", function () {
+        var name = $("#userName").val(),
+            mobile = $("#userMobile").val();
+        if (name == '') return alert('??????????????');
+        if (mobile == '') return alert('?????????????????');
+        // window.location.href = 'poster.html';
+    });
+
+    //????????????,??????qrcode.min.js???
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 111,
+        height: 111
+    });
+    qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //???????????
+
+    var grade = milo.request('grade') * 10, //???????¡Â???
+        wxName = '', //?????????
+        nameTextColor = '#494e46', //?????????
+        $state = $(".stage");
+
+    //?????????????
+    if (wxName.length > 4) wxName = wxName.substring(0, 4) + '... ???';
+    //????????????§Ø?
+    if (grade == 0) {
+        nameTextColor = '#494e46';
+    } else if (grade >= 10 && grade <= 30) {
+        nameTextColor = '#2e2341';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_10.jpg)');
+    } else if (grade >= 40 && grade <= 60) {
+        nameTextColor = '#2e2341';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_60.jpg)');
+    } else if (grade >= 70 && grade <= 90) {
+        nameTextColor = '#622405';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_90.jpg)');
+    } else if (grade >= 100) {
+        nameTextColor = '#622405';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_100.jpg)');
+    }
+    //???????
+    var $posterWrap = $(".poster-wrap");
+    var poster = drawPoster.init({
+        canvas: document.querySelector('canvas'),
+        cWidth: $posterWrap.width(), //????????
+        cHeight: $posterWrap.height(), //???????
+        imgList: [{
+            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/avatar.png', //??????,?Æ¶??
+            x: 44,
+            y: 26,
+            w: 75,
+            h: 75
+        }, {
+            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/poster_' + grade + '.png', //????????,?Æ¶????????
+            x: 0,
+            y: 0,
+            w: 673,
+            h: 1164
+        }],
+        qrcode: {
+            obj: $("#qrcode img")[0], //??????????????????????????????
+            x: 67,
+            y: 1038,
+            w: 111,
+            h: 111
+        },
+        textList: [{
+            name: wxName, //????????äª????????,??????????
+            nameTextColor: nameTextColor,
+            font: 'bold 30px Arial',
+            textAlign: 'left',
+            textBaseline: 'top',
+            x: 135,
+            y: 55
+        }],
+        callback: function (ref) {
+            //ref?????img????
+            $(".poster-wrap").empty().append(ref);
+        }
+    });
+
+    //???????????
+    $("body").on("click", "div[for='popShare']", function () {
+        $("#popShare").click();
+    });
+
+    //????
+    var popIsShow = false;
+    var popDom = null;
+    function popShow(id) {
+        popHide();
+        var p = $('#' + id);
+        popDom = p;
+        if (p) {
+            p.show().css({
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+            p.attr('for', 'pop');
+            popIsShow = true;
+            if ($('[for="' + id + '"]').length >= 1) return;
+            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:997;background:rgba(0,0,0,0.8);"></div>');
+        }
+    }
+    function popHide() {
+        $('[for="pop"]').hide().attr('style', '');
+        $('[name="overlay"]').remove();
+    }
+    window.addEventListener("resize", function () {
+        if (!popIsShow)
+            return;
+        setTimeout(function () {
+            popDom.css({
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 998
+            });
+        }, 400)
+    });
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //???
+    var setSite = {
+        siteType: "a20191217answer",
+        pageType: "poster",
+        pageName: "?????",
+        osact: 0,
+        ingame: 0,
+        stayTime: 0
+    };
+    if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+
+</html>
