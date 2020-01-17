@@ -270,6 +270,40 @@
             background-image: url('//game.gtimg.cn/images/xylz/cp/a20191217answer/get_prize.png');
         }
 
+        .pop-share-select {
+            top: auto !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            margin: 0 !important;
+            width: 100%;
+            height: 3rem;
+            border-top-left-radius: .2rem;
+            border-top-right-radius: .2rem;
+            background-color: #fff;
+            transform: translate(0);
+        }
+
+        .select-share-list {
+            height: 100%;
+            height: 3rem;
+        }
+
+        .select-share-btn {
+            margin: 0 .3rem;
+        }
+
+        .select-share-icon {
+            margin: 0 auto;
+            width: .81rem;
+        }
+
+        .select-share-text {
+            margin-top: .22rem;
+            line-height: .3rem;
+            font-size: .24rem;
+            color: #3d3d3d;
+        }
+
         .lottery-btn {
             animation: scaleBtn .8s linear infinite;
             -webkit-animation: scaleBtn .8s linear infinite;
@@ -340,7 +374,7 @@
                 <div class="poster-wrap">
                     <canvas class="canvas" width="673" height="1164"></canvas>
                 </div>
-                <div id="qrcode" style="display: none;"></div>
+                <div id="qrcode" style="height: 0;"></div>
             </div>
             <p class="t-c sava-tips-text">长按图片保存至相册</p>
             <div class="flex flex-center" style="margin: .2rem 0 0;">
@@ -348,7 +382,7 @@
                     onclick="PTTSendClick('btn','again','重新测试');">重新测试</a> -->
                 <a href="javascript: ;" class="icons cj-btn btn-hover t"
                     onclick="PTTSendClick('btn','goLottery','抽取奖励');">抽取奖励</a>
-                <a href="javascript: popShow('popShare');" class="icons share-btn btn-hover t"
+                <a href="javascript: popShow('popShareSelect');" class="icons share-btn btn-hover t"
                     onclick="PTTSendClick('btn','share','分享');">分享</a>
             </div>
         </div>
@@ -467,12 +501,13 @@
             </div>
             <p class="pop-msg-text" style="margin-top: .74rem;">我们将再三个工作日之内将奖品的兑换码发送至您的手机，请留下您的信息！</p>
             <div class="bg input-wrap" style="margin-top: .5rem;">
-                <input type="text" placeholder="姓名" id="userName"/>
+                <input type="text" placeholder="姓名" id="userName" />
             </div>
             <div class="bg input-wrap">
-                <input type="tel" placeholder="手机号码" id="userMobile"/>
+                <input type="tel" placeholder="手机号码" id="userMobile" />
             </div>
-            <a href="javascript: popHide();" class="pop-btn icons get-confirm-btn get-ecard-btn t things" id="btn_sure_add">确认领取</a>
+            <a href="javascript: popHide();" class="pop-btn icons get-confirm-btn get-ecard-btn t things"
+                id="btn_sure_add">确认领取</a>
         </div>
         <a href="javascript: popHide();" class="pa icons close-btn t">关闭弹窗</a>
     </div>
@@ -534,17 +569,55 @@
     <div class="pop full-img pop-share" id="popShare" onclick="popHide()" style="display: none;">
         <img src="//game.gtimg.cn/images/xylz/cp/a20191217answer/share_pop.png" alt="">
     </div>
+    <!-- 分享至 -->
+    <div class="pop pop-share-select" id="popShareSelect" style="display: none;">
+        <div class="flex flex-center flex-middle select-share-list">
+            <a href="javascript: popHide();" id="WXHY" class="full-img select-share-btn btn-hover">
+                <div class="full-img select-share-icon"><img
+                        src="//game.gtimg.cn/images/xylz/cp/a20191217answer/icon_wx.png" alt="分享图标"></div>
+                <p class="select-share-text t-c">分享到微<br />信好友</p>
+            </a>
+            <a href="javascript: popHide();" id="WXKJ" class="full-img select-share-btn btn-hover">
+                <div class="full-img select-share-icon"><img
+                        src="//game.gtimg.cn/images/xylz/cp/a20191217answer/icon_wx_q.png" alt="分享图标"></div>
+                <p class="select-share-text t-c">分享到朋<br />友圈</p>
+            </a>
+            <a href="javascript: popHide();" id="QQHY" class="full-img select-share-btn btn-hover">
+                <div class="full-img select-share-icon"><img
+                        src="//game.gtimg.cn/images/xylz/cp/a20191217answer/icon_qq.png" alt="分享图标"></div>
+                <p class="select-share-text t-c">分享到<br />QQ好友</p>
+            </a>
+            <a href="javascript: popHide();" id="QQKJ" class="full-img select-share-btn btn-hover">
+                <div class="full-img select-share-icon"><img
+                        src="//game.gtimg.cn/images/xylz/cp/a20191217answer/icon_qq_k.png" alt="分享图标"></div>
+                <p class="select-share-text t-c">分享到<br />QQ空间</p>
+            </a>
+        </div>
+    </div>
 </body>
-
 
 <script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/hidpi-canvas.min.js"></script>
 <script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/qrcode.min.js"></script>
-<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/poster.js"></script>
-<script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"  ></script>
-<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js" ></script>
+<script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/poster.js?id=1"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script src="//img.ssl.msdk.qq.com/wiki/msdkJsAdapter.js"></script>
+
 <script src="//game.gtimg.cn/images/xylz/cp/a20191217answer/js/result_g.js"></script>
 <script>
+
+    //监测用户保存海报
+    var setTimer = null;
+    $(".poster-wrap").on("touchstart", "img", function () {
+        console.log('1');
+        setTimer = setTimeout(function () {
+            PTTSendClick('btn', 'savaImg', '长按保存海报');
+        }, 800);
+    });
+    $(".poster-wrap").on("touchend", "img", function () {
+        clearTimeout(setTimer);
+    });
 
     //抽取奖励
     function lotteryPrize() {
@@ -573,80 +646,8 @@
         // window.location.href = 'poster.html';
     });
 
-    //生成海报二维码,需引入qrcode.min.js文件
-    var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width: 111,
-        height: 111
-    });
-    qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
-
-    var grade = parseInt(Math.random() * 10) * 10, //答题所得分数
-        wxName = '', //用户微信昵称
-        nameTextColor = '#494e46', //微信昵称颜色
-        $state = $(".stage");
-
-    //微信名称过长截断
-    if (wxName.length > 4) wxName = wxName.substring(0, 4) + '... 荣获';
-    //海报姓名颜色判断
-    if (grade == 0) {
-        nameTextColor = '#494e46';
-    } else if (grade >= 10 && grade <= 30) {
-        nameTextColor = '#2e2341';
-        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_10.jpg)');
-    } else if (grade >= 40 && grade <= 60) {
-        nameTextColor = '#2e2341';
-        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_60.jpg)');
-    } else if (grade >= 70 && grade <= 90) {
-        nameTextColor = '#622405';
-        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_90.jpg)');
-    } else if (grade >= 100) {
-        nameTextColor = '#622405';
-        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_100.jpg)');
-    }
-    //绘制海报
-    var $posterWrap = $(".poster-wrap");
-    var poster = drawPoster.init({
-        canvas: document.querySelector('canvas'),
-        cWidth: $posterWrap.width(), //海报宽度
-        cHeight: $posterWrap.height(), //海报高度
-        imgList: [{
-            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/avatar.png', //微信头像,需传入
-            x: 44,
-            y: 26,
-            w: 75,
-            h: 75
-        }, {
-            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/poster_' + grade + '.png', //海报背景,需传入答题分数
-            x: 0,
-            y: 0,
-            w: 673,
-            h: 1164
-        }],
-        qrcode: {
-            obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
-            x: 67,
-            y: 1038,
-            w: 111,
-            h: 111
-        },
-        textList: [{
-            name: wxName, //需要在上面传入微信昵称,此处不用修改
-            nameTextColor: nameTextColor,
-            font: 'bold 30px Arial',
-            textAlign: 'left',
-            textBaseline: 'top',
-            x: 135,
-            y: 55
-        }],
-        callback: function (ref) {
-            //ref为海报img对象
-            $(".poster-wrap").empty().append(ref);
-        }
-    });
-
-
     //隐藏分享遮罩
-    $("body").on("click", "div[for='popShare']", function () {
+    $("body").on("click", "div[for='popShareSelect']", function () {
         $("#popShare").click();
     });
 

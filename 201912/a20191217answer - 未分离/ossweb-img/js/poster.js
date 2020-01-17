@@ -70,6 +70,7 @@ var drawPoster = {
         var that = this;
         that.imgList.forEach(function (ev, index) {
             var img = new Image();
+            img.setAttribute("crossOrigin", 'anonymous');
             img.src = ev.src;
             img.idx = index;
             img.onload = function () {

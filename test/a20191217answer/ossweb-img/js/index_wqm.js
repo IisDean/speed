@@ -91,7 +91,7 @@ $('#wxloginBtn').on('click', function () {
     if (isWeiXin()) {
         window.location.href = authUrl;
     } else {
-        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90236428&appid=wxd4dcf1b3730a2fb7&url=http%3A%2F%2Fqyn.qq.com%2Fcp%2Fa20191211jcy%2Findex_wqm.html";
+        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90238026&appid=wx7fa53c237760c335&url=https%3A%2F%2Fxylz.qq.com%2Fcp%2Fa20191217answer%2Fresult_wqm.html";
     }
 })
 

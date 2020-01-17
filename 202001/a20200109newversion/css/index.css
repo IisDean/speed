@@ -11,6 +11,7 @@
 #app .actModal_wechatContent:after,
 #app .actModal_wechatContent:before,
 #app .actModules_DownLoadBarProcess,
+#app .actSign_List.disabled .actSigned,
 #app .actModules_actionBtn,
 #app .actModules_actionBtnTips,
 #app .actSign_Wrap:after,
@@ -30,8 +31,13 @@
 #app .actModules_btnItems,
 #app .actModules_textItems,
 #app .actSignIn_List,
+#app .actSign_List,
 #app .actSign_List {
     display: inline-block
+}
+
+#app .actSigned {
+    display: none;
 }
 
 #app .actCharge_boxBtn,
@@ -73,6 +79,8 @@
 #app .actModal_share,
 #app .actModal_wechatContent,
 #app .actModules_DownLoadBar,
+#app .actSigned,
+#app .actSigned span,
 #app .actModules_DownLoadBarProcess,
 #app .videoPoster {
     position: absolute
@@ -81,6 +89,7 @@
 #app .actCharge_boxBtnWrap,
 #app .actInvite_boxBtnWrap,
 #app .actModal_li,
+#app .actSign_List,
 #app .actModules_actionBtn,
 #app .videoWrap {
     position: relative
@@ -235,9 +244,9 @@
 }
 
 #app .actModules_btn_h.disabled {
-    background-position: 0 -8.82rem;
-    width: 2.37rem;
-    height: .82rem
+    background-position: 0 -8.82rem !important;
+    width: 2.37rem !important;
+    height: .82rem !important;
 }
 
 #app .ceiba-comp-1 .swiper-wrapper .swiper-slide:nth-child(1) .actModules_btn_h {
@@ -250,6 +259,21 @@
     background-position: -2.48rem -8.78rem;
     width: 2.97rem;
     height: .83rem;
+}
+
+#app .ceiba-comp-4 .actModules_btn_h {
+    width: 2.37rem;
+    height: .83rem;
+    background-position: 0 -7.94rem;
+}
+
+#app .actSigned {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 2;
 }
 
 #app .actModules_btn_i.disabled {
@@ -1473,14 +1497,14 @@
 
 #app .actModules_actionBtn {
     font-size: .4rem;
-    background-color: transparent;
+    background-color: #169bd4;
     -webkit-box-align: center;
     box-align: center;
     -webkit-box-pack: center;
     box-pack: center;
     -webkit-box-orient: vertical;
     box-orient: vertical;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #app .actModules_actionBtn span {
@@ -1507,21 +1531,22 @@
     width: 7.5rem;
     left: 0;
     top: 0;
-    background: #ffc919;
-    border: 1px solid #ffc919;
+    background: #169bd4;
+    border: #169bd4;
     -webkit-box-align: center;
     box-align: center;
     -webkit-box-pack: center;
-    box-pack: center
+    box-pack: center;
 }
 
 #app .actModules_DownLoadBarProcess span {
-    color: #000
+    color: #fff;
 }
 
 #app section {
     height: 100%;
     width: 100%;
+    padding-bottom: 1.28rem;
     background: url(//game.gtimg.cn/images/xylz/cp/a20200109newversion/bg.jpg) no-repeat;
     background-size: 7.5rem 60rem;
 }
@@ -1683,4 +1708,32 @@
 #app .ceiba-comp-4 .actSlider_content_h,
 #app .ceiba-comp-4 .sellBanner {
     margin-top: 0;
+}
+
+#app .actSigned span {
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: .2rem;
+}
+
+#app .ceiba-comp-3 .actModules_btn_l {
+    width: 2.37rem;
+    height: .79rem;
+    background-position: -2.45rem -7.94rem;
+}
+
+#app .actModules_actionBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 7.5rem;
+    height: 1.28rem;
+    z-index: 99;
 }

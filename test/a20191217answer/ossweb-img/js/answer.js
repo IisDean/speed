@@ -120,15 +120,29 @@ $(".topic-list .topic-item").on("click", function () {
         isCurrent(num, idx, that);
     }, 800);
 });
-
+var sPlatId = milo.xss.filter(milo.request('platid'));  //用于存储手机系统  默认1
+var sArea = milo.xss.filter(milo.request('areaid'));  //用于存储平台，微信为1，手Q为2，默认为手Q:2
+var sPartition = milo.xss.filter(milo.request('partition'));
+var sRoleId = milo.xss.filter(milo.request('roleid'));
+var temp_appid = milo.xss.filter(milo.request('appid'));
+var gameid = milo.xss.filter(milo.request('gameid'));
+var itopencodeparam = milo.xss.filter(milo.request('itopencodeparam'));
+var os = milo.xss.filter(milo.request('os'));
+var channelid = milo.xss.filter(milo.request('channelid'));
+var seq = milo.xss.filter(milo.request('seq'));
+var ts = milo.xss.filter(milo.request('ts'));
+var version = milo.xss.filter(milo.request('version'));
+var source = milo.xss.filter(milo.request('source'));
+var sig = milo.xss.filter(milo.request('sig'));
 var isMsdk = true;
-var msdk = milo.xss.filter(milo.request('msdkEncodeParam'));
+var msdk = milo.xss.filter(milo.request('itopencodeparam'));
+var ua = window.navigator.userAgent.toLowerCase();
 if(msdk == '' || msdk == undefined || msdk == 'undefined' || temp_appid == '' || sPlatId == '' || sArea == '' || sPartition == '' || sRoleId == ''){
     isMsdk = false;
 }
 
 function ismsdk() {
-    if (ua.match(/msdk/i) || milo.request('msdkEncodeParam') != '') {
+    if (ua.match(/msdk/i) || milo.request('itopencodeparam') != '') {
         return true;
     } else {
         return false;
@@ -145,14 +159,17 @@ function isCurrent(num, idx, that) {
     } else {
         that.addClass('fail').parent().find('.topic-item').eq(answer[num].current).addClass('current');
     }
+
     //已答完所有题目
     if (num + 1 >= answer.length) {
         if (!isMsdk || !ismsdk()) {
-            alert(1)
             window.location.href = 'result_wqm.html?grade='+ current;
         } else {
-            alert(2)
-            window.location.href = 'result_g.html?grade='+ current;
+            window.location.href = 'result_g.html?grade='+ current + '&platid='+ sPlatId + '&partition=' + sPartition + '&roleid=' + sRoleId
+                + '&areaid=' + sArea + '&appid=' + temp_appid + '&os=' + os
+                +'&gameid=' + gameid
+                +  '&channelid=' + channelid + '&seq=' + seq + '&ts=' + ts
+                + '&version=' + version + '&source=' + source + '&sig=' + sig + '&itopencodeparam=' + msdk;
         }
     } else {
         that.parent().next().css('display', 'block'); //放出下一题按钮

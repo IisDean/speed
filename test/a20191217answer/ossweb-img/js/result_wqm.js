@@ -27,6 +27,7 @@ var isLogin = false;//是否登录
 var authUrl = mUrl;//跳转链接
 var ua = navigator.userAgent.toLowerCase();
 
+
 function isWeiXin() {
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {
         return true;
@@ -91,7 +92,7 @@ $('#wxloginBtn').on('click', function () {
     if (isWeiXin()) {
         window.location.href = authUrl;
     } else {
-        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90236428&appid=wxd4dcf1b3730a2fb7&url=http%3A%2F%2Fqyn.qq.com%2Fcp%2Fa20191211jcy%2Findex_wqm.html";
+        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90238026&appid=wx7fa53c237760c335&url=https%3A%2F%2Fxylz.qq.com%2Fcp%2Fa20191217answer%2Fresult_wqm.html";
     }
 })
 
@@ -242,11 +243,12 @@ milo.ready(function () {
 
                 include(_server_url + "?_rand=" + Math.random(), function () {
                     need(["biz.roleselector"], function (RoleSelector) {
-                        // if (isQQ()){
-                        //     $('#channelContentId').html('<option value="2">手Q</option>')
-                        // }else{
-                        //     $('#channelContentId').html('<option value="1">微信</option>')
-                        // }
+                        if (isQQ()) {
+                            XYLZServerSelect.STD_CHANNEL_DATA = [{t: "手Q", v: "2", sk: "", k: "qq"}]
+                        }
+                        if (isWeiXin()) {
+                            XYLZServerSelect.STD_CHANNEL_DATA = [{t:"微信", v:"1", sk:"", k:"weixin"}]
+                        }
                         var roleobj = cloneClass(RoleSelector);
                         roleobj.init({
                             openToOpen: {
@@ -319,6 +321,7 @@ amsCfg_637692 = {
         giftChance = res.sOutValue1;
         writeChance = res.sOutValue2;
         giftId = res.sOutValue3;
+
         return;
     },
     "fFlowSubmitFailed":function(res){
@@ -389,6 +392,8 @@ amsCfg_638429 = {
         }
         giftChance = 1;
         lotteryPrize(idx);
+
+
 
     }
 };
@@ -496,7 +501,40 @@ function setSharedata() {
 }
 
 function userInfo(){
+
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 111,
+        height: 111
+    });
+    qrcode.makeCode("https://xylz.qq.com/cp/a20191217answer/index_wqm.html"); //海报二维码地址
+    var grade = milo.request('grade') * 10, //答题所得分数
+        nameTextColor = '#494e46', //微信昵称颜色
+        $state = $(".stage");
+
+    //微信名称过长截断
+    if (nickName.length > 4) nickName = nickName.substring(0, 4) + '... 荣获';
+    //海报姓名颜色判断
+    if (grade == 0) {
+        nameTextColor = '#494e46';
+    } else if (grade >= 10 && grade <= 30) {
+        nameTextColor = '#2e2341';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_10.jpg)');
+    } else if (grade >= 40 && grade <= 60) {
+        nameTextColor = '#2e2341';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_60.jpg)');
+    } else if (grade >= 70 && grade <= 90) {
+        nameTextColor = '#622405';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_90.jpg)');
+    } else if (grade >= 100) {
+        nameTextColor = '#622405';
+        $state.css("background-image", 'url(//game.gtimg.cn/images/xylz/cp/a20191217answer/p_bg_100.jpg)');
+    }
+
+    var $posterWrap = $(".poster-wrap");
     drawPoster.init({
+        canvas: document.querySelector('canvas'),
+        cWidth: $posterWrap.width(), //海报宽度
+        cHeight: $posterWrap.height(), //海报高度
         imgList: [{
             src: headPic, //微信头像,需传入
             x: 44,
@@ -510,6 +548,13 @@ function userInfo(){
             w: 673,
             h: 1164
         }],
+        qrcode: {
+            obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+            x: 67,
+            y: 1038,
+            w: 111,
+            h: 111
+        },
         textList: [{
             name: nickName, //需要在上面传入微信昵称,此处不用修改
             nameTextColor: nameTextColor,
@@ -518,7 +563,11 @@ function userInfo(){
             textBaseline: 'top',
             x: 135,
             y: 55
-        }]
+        }],
+        callback: function (ref) {
+            //ref为海报img对象
+            $(".poster-wrap").empty().append(ref);
+        }
     });
 }
 

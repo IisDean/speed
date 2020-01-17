@@ -28,8 +28,7 @@ var drawPoster = {
                 context.backingStorePixelRatio || 1;
             return (window.devicePixelRatio || 1) / backingStore;
         };
-        // that.ratio = getPixelRatio(that.ctx);
-        that.ratio = 0;
+        that.ratio = getPixelRatio(that.ctx);
         that.loadImg(function () {
             // console.log('执行绘制操作');
             that.drawImg();

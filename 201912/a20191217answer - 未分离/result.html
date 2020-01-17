@@ -341,7 +341,7 @@
                 <div class="poster-wrap">
                     <canvas class="canvas" width="673" height="1164"></canvas>
                 </div>
-                <div id="qrcode" style="display: none;"></div>
+                <div id="qrcode" style="height: 0;"></div>
             </div>
             <p class="t-c sava-tips-text">长按图片保存至相册</p>
             <div class="flex flex-center" style="margin: .2rem 0 0;">
@@ -530,13 +530,25 @@
         window.location.href = 'poster.html';
     });
 
+    var setTimer = null;
+    $(".poster-wrap").on("touchstart", "img", function () {
+        console.log('1');
+        setTimer = setTimeout(function () {
+            PTTSendClick('btn', 'savaImg', '长按保存海报');
+        }, 800);
+    });
+
+    $(".poster-wrap").on("touchend", "img", function () {
+        clearTimeout(setTimer);
+    });
+
     //生成海报二维码,需引入qrcode.min.js文件
     var qrcode = new QRCode(document.getElementById("qrcode"), {
         width: 111,
         height: 111
     });
     qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
-    var grade = localStorage.getItem("grade"), //答题所得分数
+    var grade = 60, //答题所得分数
         wxName = '微信昵称微信昵称', //用户微信昵称
         nameTextColor = '#494e46', //微信昵称颜色
         $state = $(".stage");
@@ -565,7 +577,7 @@
         cWidth: $posterWrap.width(), //海报宽度
         cHeight: $posterWrap.height(), //海报高度
         imgList: [{
-            src: './ossweb-img/avatar.png', //微信头像,需传入
+            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/avatar.png', //微信头像,需传入
             x: 44,
             y: 26,
             w: 75,
