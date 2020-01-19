@@ -1,36 +1,36 @@
-var appid = 'wx1cd4fbe9335888fe';//X8助手微信appid
-var wx_appid = 'wx7fa53c237760c335';//微信appid
-var qq_appid = '1106396765';//QQ appid
-var gzh_appid = 'wx36896ec6df7cd95e';//微信公众号业务服务号appid  //
+var appid = 'wx1cd4fbe9335888fe'; //X8助手微信appid
+var wx_appid = 'wx7fa53c237760c335'; //微信appid
+var qq_appid = '1106396765'; //QQ appid
+var gzh_appid = 'wx36896ec6df7cd95e'; //微信公众号业务服务号appid  //
 var temp_appid = milo.xss.filter(milo.request('appid'));
-var sTerminal = 1;//用于存储当前页面为PC端或移动端，PC端为0，移动端为1，默认为PC端
+var sTerminal = 1; //用于存储当前页面为PC端或移动端，PC端为0，移动端为1，默认为PC端
 var nickNum = '' //qq或微信账号
-var headPic = '';//头像URL
-var pcUrl = location.protocol + '//hyrz.qq.com/cp/a20191023orderm/index_p.html';//PC端
-var mUrl = location.protocol + '//xylz.qq.com/cp/a20191217answer/index_wqm.html';//手机端
+var headPic = ''; //头像URL
+var pcUrl = location.protocol + '//hyrz.qq.com/cp/a20191023orderm/index_p.html'; //PC端
+var mUrl = location.protocol + '//xylz.qq.com/cp/a20191217answer/index_wqm.html'; //手机端
 var chanel = milo.request('adtag');
 var perNum = '';
 var buttonStep = 1
 var shareStatue = ''
 var sData = {};
 var isBind = 0;
-var sPlatId = milo.xss.filter(milo.request('platid'));  //用于存储手机系统  默认1
-var sArea = milo.xss.filter(milo.request('areaid'));  //用于存储平台，微信为1，手Q为2，默认为手Q:2
+var sPlatId = milo.xss.filter(milo.request('platid')); //用于存储手机系统  默认1
+var sArea = milo.xss.filter(milo.request('areaid')); //用于存储平台，微信为1，手Q为2，默认为手Q:2
 var sPartition = milo.xss.filter(milo.request('partition'));
 var sRoleId = milo.xss.filter(milo.request('roleid'));
-var nickName = '';  //昵称
+var nickName = ''; //昵称
 var giftChance = '';
 var idx = '';
 var giftId = '';
 var writeChance = '';
-var isLogin = false;//是否登录
-var authUrl = mUrl;//跳转链接
+var isLogin = false; //是否登录
+var authUrl = mUrl; //跳转链接
 var ua = navigator.userAgent.toLowerCase();
 
 var isMsdk = true;
 var msdk = milo.xss.filter(milo.request('itopencodeparam'));
 
-if(msdk == '' || msdk == undefined || msdk == 'undefined' || temp_appid == '' || sPlatId == '' || sArea == '' || sPartition == '' || sRoleId == ''){
+if (msdk == '' || msdk == undefined || msdk == 'undefined' || temp_appid == '' || sPlatId == '' || sArea == '' || sPartition == '' || sRoleId == '') {
     isMsdk = false;
 }
 
@@ -64,42 +64,42 @@ if (isAndroid()) {
 }
 
 
-$('.cj-btn').on('click',function(){
+$('.cj-btn').on('click', function () {
     if (isLogin == false) {
         popShow('loginPop');
         return;
     }
-    if(giftChance == 0){
+    if (giftChance == 0) {
         popShow('pop8')
-    }else{
+    } else {
         if (giftId == '1717048' || giftId == '1717049' || giftId == '1717050') {
             if (writeChance == 0) {
                 popShow('pop7')
             } else {
                 alert('您已经填写过领奖信息了~');
             }
-        } else{
+        } else {
             alert('您已经抽过奖励了~');
         }
     }
 })
 
-$('.lottery-btn').on('click',function(){
+$('.lottery-btn').on('click', function () {
     if (isLogin == false) {
         popShow('loginPop');
         return;
     }
 
-    if(giftChance == 0){
+    if (giftChance == 0) {
         amsCfg_638429.sData = sData;
         amsSubmit(282311, 638429);
-    }else{
+    } else {
         alert('您已经抽过奖励了~');
     }
 
 })
 
-$('.things').on('click',function(){
+$('.things').on('click', function () {
     sData.sName = $("#userName").val();
     sData.sMobile = $("#userMobile").val();
     //实物信息填写
@@ -107,11 +107,11 @@ $('.things').on('click',function(){
     amsSubmit(282311, 638431);
 })
 
-$('#QQKJ,#QQHY,#WXHY,#WXKJ').on('click',function(){
+$('#QQKJ,#QQHY,#WXHY,#WXKJ').on('click', function () {
     shareID = $(this).attr('id');
     setTimeout(function () {
         shareInGame(shareID);
-    },400)
+    }, 400)
 })
 
 if (!isMsdk || !ismsdk()) {
@@ -131,13 +131,13 @@ if (!isMsdk || !ismsdk()) {
                     return;
                 }
 
-                isLogin = true;	//登录状态
+                isLogin = true; //登录状态
                 amsCfg_637692.sData = sData;
                 amsSubmit(282311, 637692);
 
                 amsCfg_639873.sData = sData;
                 amsSubmit(282311, 639873);
-                
+
             }, function () {
                 alert('登录超时，请重新从游戏内进入！');
                 return;
@@ -149,10 +149,10 @@ if (!isMsdk || !ismsdk()) {
 }
 
 amsCfg_637692 = {
-    '_everyRead':true,//_everyRead参数用于控制缓存，设为true表示每次发请求都会读取amsCfg参数的值，建议加上
+    '_everyRead': true, //_everyRead参数用于控制缓存，设为true表示每次发请求都会读取amsCfg参数的值，建议加上
     "iActivityId": 282311, //活动id
-    "iFlowId":    637692, //流程id
-    "fFlowSubmitEnd": function(res){
+    "iFlowId": 637692, //流程id
+    "fFlowSubmitEnd": function (res) {
         console.log(res)
         giftChance = res.sOutValue1;
         writeChance = res.sOutValue2;
@@ -160,7 +160,7 @@ amsCfg_637692 = {
 
         return;
     },
-    "fFlowSubmitFailed":function(res){
+    "fFlowSubmitFailed": function (res) {
         //失败会走到这个函数
         //条件不满足，ame返回大于0是后走到这里
         alert(res.sMsg);
@@ -168,15 +168,15 @@ amsCfg_637692 = {
 };
 
 amsCfg_639873 = {
-    '_everyRead':true,//_everyRead参数用于控制缓存，设为true表示每次发请求都会读取amsCfg参数的值，建议加上
+    '_everyRead': true, //_everyRead参数用于控制缓存，设为true表示每次发请求都会读取amsCfg参数的值，建议加上
     "iActivityId": 282311, //活动id
-    "iFlowId":    639873, //流程id
-    "fFlowSubmitEnd": function(res){
+    "iFlowId": 639873, //流程id
+    "fFlowSubmitEnd": function (res) {
         nickName = decodeURIComponent(res.sOutValue1);
         userInfo(nickName)
         return;
     },
-    "fFlowSubmitFailed":function(res){
+    "fFlowSubmitFailed": function (res) {
         //失败会走到这个函数
         //条件不满足，ame返回大于0是后走到这里
         alert(res.sMsg);
@@ -186,28 +186,28 @@ amsCfg_639873 = {
 
 // 抽奖领取主功能初始化
 amsCfg_638429 = {
-    'iAMSActivityId' : '282311', // AMS活动号
-    'activityId' : '327224', // 模块实例号
-    'onBeginGetGiftEvent' : function(){
+    'iAMSActivityId': '282311', // AMS活动号
+    'activityId': '327224', // 模块实例号
+    'onBeginGetGiftEvent': function () {
         return 0; // 抽奖前事件，返回0表示成功
     },
-    'onGetGiftFailureEvent' : function(callbackObj){// 抽奖失败事件
+    'onGetGiftFailureEvent': function (callbackObj) { // 抽奖失败事件
         alert(callbackObj.sMsg);
     },
-    'onGetGiftSuccessEvent' : function(callbackObj){// 抽奖成功事件
+    'onGetGiftSuccessEvent': function (callbackObj) { // 抽奖成功事件
 
         var giftId = callbackObj.iPackageId ? callbackObj.iPackageId.split(',') : '';
         if (giftId && giftId.length > 1) {
             LotteryManager.alert(callbackObj.sMsg);
             return;
         }
-        if(giftId == '1717051'){    //道具礼包
+        if (giftId == '1717051') { //道具礼包
             idx = 3;
-        }else if(giftId == '1717048'){   //200元礼包
+        } else if (giftId == '1717048') { //200元礼包
             idx = 9;
-        }else if(giftId == '1717049'){   //100元礼包
+        } else if (giftId == '1717049') { //100元礼包
             idx = 1;
-        }else if(giftId == '1717050'){   //50元礼包
+        } else if (giftId == '1717050') { //50元礼包
             idx = 11;
         }
         giftChance = 1;
@@ -218,16 +218,16 @@ amsCfg_638429 = {
 
 
 amsCfg_638431 = {
-    'iActivityId' : '282311', // AMS活动号
-    'iFlowId' : '638431', // 流程号
-    '_everyRead' : true,
-    'success': function(res){ //提交成功的回调
+    'iActivityId': '282311', // AMS活动号
+    'iFlowId': '638431', // 流程号
+    '_everyRead': true,
+    'success': function (res) { //提交成功的回调
         console.log(res)
-        if(typeof res.jData == "object") { //返回已经提交的数据，填充页面
-            need(["biz.provincecityselector", "util.form"], function(pcs, FormManager) {
+        if (typeof res.jData == "object") { //返回已经提交的数据，填充页面
+            need(["biz.provincecityselector", "util.form"], function (pcs, FormManager) {
                 console.log(FormManager)
                 //提交按钮事件
-                g('btn_sure_add').onclick = function(){
+                g('btn_sure_add').onclick = function () {
                     var name = $("#userName").val(),
                         mobile = $("#userMobile").val();
                     if (name == '') {
@@ -251,13 +251,13 @@ amsCfg_638431 = {
                     amsCfg_638431.sData = sData;
                     amsCfg_638431.sData.sName = name;
                     amsCfg_638431.sData.sMobile = mobile;
-                    amsSubmit(282311,638431);
+                    amsSubmit(282311, 638431);
                 }
 
             });
 
         } else {
-            need(["biz.widget.dialog"],function(Dialog){
+            need(["biz.widget.dialog"], function (Dialog) {
                 if (res.iRet == 0) {
                     //提交成功
                     writeChance = 1;
@@ -269,18 +269,19 @@ amsCfg_638431 = {
         }
     }
 };
+
 function connectWebViewJavascriptBridge(callback) {
     if (window.WebViewJavascriptBridge) {
         callback(WebViewJavascriptBridge)
     } else {
-        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+        document.addEventListener('WebViewJavascriptBridgeReady', function () {
             callback(WebViewJavascriptBridge)
         }, false)
     }
 }
 // 初始化msdkiOSHandler，iOS方法
-connectWebViewJavascriptBridge(function(bridge) {
-    bridge.init(function(message, responseCallback) {
+connectWebViewJavascriptBridge(function (bridge) {
+    bridge.init(function (message, responseCallback) {
         log('JS got a message', message)
         var data = {
             'Javascript Responds': 'Wee!'
@@ -300,7 +301,7 @@ function msdkCall(data) {
     }
 }
 
-function  shareInGame(k) {
+function shareInGame(k) {
     var JSON_BEGIN = '{';
     var JSON_END = '}';
     var JSON_DOT = ',';
@@ -308,35 +309,35 @@ function  shareInGame(k) {
     var METHOD_SEND = '"MsdkMethod":"sendMsgWebView"';
     var CHANNEL_QQ = '"channel":"QQ"';
     var CHANNEL_WECHAT = '"channel":"WeChat"';
-    var imgUrl =  'https://game.gtimg.cn/images/xylz/cp/a20191217answer/logo_2.png';
+    var imgUrl = 'https://game.gtimg.cn/images/xylz/cp/a20191217answer/logo_2.png';
     var desc = '来测测你是否就是传说中的方言王中王~参与即抽JD卡、珍稀道具哦~';
     var title = '过山龙遇下山虎，方言鬼才我做主';
     var mUrlN = 'https://xylz.qq.com/cp/a20191217answer/index_wqm.html';
 
-    var DATA_SHARE_TEXT = '"actionReport":"MSG_INVITE","desc":"'+ desc +'","link":"'+ mUrlN + '","thumbPath":"'+ imgUrl + '","title":"'+ title +'","type":10001,"user":""';
+    var DATA_SHARE_TEXT = '"actionReport":"MSG_INVITE","desc":"' + desc + '","link":"' + mUrlN + '","thumbPath":"' + imgUrl + '","title":"' + title + '","type":10001,"user":""';
     var QQKJ = JSON_BEGIN + CHANNEL_QQ + JSON_DOT + METHOD_SHARE + JSON_DOT + DATA_SHARE_TEXT + JSON_END;
 
-    var local_data_send_qq_link = '"actionReport":"MSG_INVITE","desc":"'+ desc +'", "link":"'+ mUrlN +'","thumbPath":"'+ imgUrl + '","title":"'+ title +'","type":10001,"user":""';
+    var local_data_send_qq_link = '"actionReport":"MSG_INVITE","desc":"' + desc + '", "link":"' + mUrlN + '","thumbPath":"' + imgUrl + '","title":"' + title + '","type":10001,"user":""';
     var QQHY = JSON_BEGIN + CHANNEL_QQ + JSON_DOT + METHOD_SEND + JSON_DOT + local_data_send_qq_link + JSON_END;
 
-    var DATA_SHARE_TEXT_WX = '"actionReport":"MSG_INVITE","desc":"'+ desc +'","link":"'+ mUrlN +'","thumbPath":"'+ imgUrl + '","title":"'+ title +'","type":10001,"user":""';
+    var DATA_SHARE_TEXT_WX = '"actionReport":"MSG_INVITE","desc":"' + desc + '","link":"' + mUrlN + '","thumbPath":"' + imgUrl + '","title":"' + title + '","type":10001,"user":""';
     var WXKJ = JSON_BEGIN + CHANNEL_WECHAT + JSON_DOT + METHOD_SHARE + JSON_DOT + DATA_SHARE_TEXT_WX + JSON_END;
 
-    var local_data_send_wx_link = '"actionReport":"MSG_INVITE","desc":"'+ desc +'", "link":"'+ mUrlN +'","thumbPath":"'+ imgUrl + '","title":"'+ title +'","type":10001,"user":""';
+    var local_data_send_wx_link = '"actionReport":"MSG_INVITE","desc":"' + desc + '", "link":"' + mUrlN + '","thumbPath":"' + imgUrl + '","title":"' + title + '","type":10001,"user":""';
     var WXHY = JSON_BEGIN + CHANNEL_WECHAT + JSON_DOT + METHOD_SEND + JSON_DOT + local_data_send_wx_link + JSON_END;
 
     if (k == 'QQKJ') {
         msdkCall(QQKJ);
-    }else if (k == 'QQHY') {
+    } else if (k == 'QQHY') {
         msdkCall(QQHY);
-    }else if (k == 'WXKJ') {
+    } else if (k == 'WXKJ') {
         msdkCall(WXKJ);
-    }else if (k == 'WXHY') {
+    } else if (k == 'WXHY') {
         msdkCall(WXHY);
     }
 }
 
-function userInfo(GameName){
+function userInfo(GameName) {
     var qrcode = new QRCode(document.getElementById("qrcode"), {
         width: 111,
         height: 111
@@ -383,14 +384,20 @@ function userInfo(GameName){
             y: 0,
             w: 673,
             h: 1164
-        }],
-        qrcode: {
-            obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+        }, {
+            src: '//game.gtimg.cn/images/xylz/cp/a20191217answer/poster_code.png', //海报背景,需传入答题分数
             x: 67,
             y: 1038,
             w: 111,
             h: 111
-        },
+        }],
+        // qrcode: {
+        //     obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+        //     x: 67,
+        //     y: 1038,
+        //     w: 111,
+        //     h: 111
+        // },
         textList: [{
             name: nickName, //需要在上面传入微信昵称,此处不用修改
             nameTextColor: nameTextColor,
@@ -410,7 +417,3 @@ function userInfo(GameName){
 
 
 /* #t6Hl8#8F0494603B3E34E94C2B8221B4583604 */
-
-
-
-

@@ -67,7 +67,7 @@
 
         .poster-wrap {
             width: 6.73rem;
-            height: 9.6rem;
+            /* height: 9.6rem; */
         }
 
         .sava-tips-text {
@@ -543,11 +543,11 @@
     });
 
     //生成海报二维码,需引入qrcode.min.js文件
-    var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width: 111,
-        height: 111
-    });
-    qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
+    // var qrcode = new QRCode(document.getElementById("qrcode"), {
+    //     width: 111,
+    //     height: 111
+    // });
+    // qrcode.makeCode("http://192.168.9.53/speed/201912/a20191217answer/poster.html"); //海报二维码地址
     var grade = 60, //答题所得分数
         wxName = '微信昵称微信昵称', //用户微信昵称
         nameTextColor = '#494e46', //微信昵称颜色
@@ -572,6 +572,8 @@
     }
     //绘制海报
     var $posterWrap = $(".poster-wrap");
+    // alert($("#qrcode img").length);
+    // $("#qrcode img")[0].onload = function () {
     var poster = drawPoster.init({
         canvas: document.querySelector('canvas'),
         cWidth: $posterWrap.width(), //海报宽度
@@ -588,14 +590,20 @@
             y: 0,
             w: 673,
             h: 1164
-        }],
-        qrcode: {
-            obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+        }, {
+            src: './ossweb-img/poster_code.png', //海报背景,需传入答题分数
             x: 67,
             y: 1038,
             w: 111,
             h: 111
-        },
+        }],
+        // qrcode: {
+        //     obj: $("#qrcode img")[0], //需要在上面代码生成二维码，此处不用修改
+        //     x: 67,
+        //     y: 1038,
+        //     w: 111,
+        //     h: 111
+        // },
         textList: [{
             name: wxName, //需要在上面传入微信昵称,此处不用修改
             nameTextColor: nameTextColor,
@@ -610,6 +618,8 @@
             $(".poster-wrap").empty().append(ref);
         }
     });
+
+    // }
 
     //隐藏分享遮罩
     $("body").on("click", "div[for='popShare']", function () {

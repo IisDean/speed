@@ -91,7 +91,7 @@ $('#wxloginBtn').on('click', function () {
     if (isWeiXin()) {
         window.location.href = authUrl;
     } else {
-        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90238026&appid=wx7fa53c237760c335&url=https%3A%2F%2Fxylz.qq.com%2Fcp%2Fa20191217answer%2Fresult_wqm.html";
+        window.location.href = location.protocol + "//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90238026&appid=wx7fa53c237760c335&url=https%3A%2F%2Fxylz.qq.com%2Fcp%2Fa20191217answer%2Findex_wqm.html";
     }
 })
 
@@ -217,10 +217,10 @@ function setSharedata() {
     var shareUrl = mUrl ;    //分享链接
 
     var shareInfo = {
-        'title': '庆余年手游预约开启-加入监察院-领入职大礼', //分享标题
-        'desc': '通过层层考验，你将有机会加入一处在范提司手下当差，也有可能进入五处成为一名黑骑横扫八方，赶快来监察院一试身手吧！', //分享描述
+        'title': '过山龙遇下山虎，方言鬼才我做主', //分享标题
+        'desc': '来测测你是否就是传说中的方言王中王~参与即抽JD卡、珍稀道具哦~', //分享描述
         'url': shareUrl,    //分享链接
-        'imgUrl': location.protocol + '//game.gtimg.cn/images/qyn/cp/a20191211jcy/share.jpg'   //分享icon
+        'imgUrl': location.protocol + '//game.gtimg.cn/images/xylz/cp/a20191217answer/logo_2.png'   //分享icon
     };
 
     //方式二（首选）

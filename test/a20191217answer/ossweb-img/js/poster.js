@@ -1,15 +1,15 @@
-//éœ€å¼•å…¥hidpi-canvas.min.jsæ–‡ä»¶
+//ĞèÒıÈëhidpi-canvas.min.jsÎÄ¼ş
 var drawPoster = {
-    canvas: null, //canvaså®¹å™¨
-    cWidth: 0, //æµ·æŠ¥å®½åº¦
-    cHeight: 0, //æµ·æŠ¥é«˜åº¦
+    canvas: null, //canvasÈİÆ÷
+    cWidth: 0, //º£±¨¿í¶È
+    cHeight: 0, //º£±¨¸ß¶È
     ctx: null,
     ratio: null,
-    imgLoad: 0, //å›¾ç‰‡åŠ è½½è¿›åº¦
-    imgList: [], //å›¾ç‰‡åˆ—è¡¨
-    textList: [], //æ–‡æœ¬
-    qrcode: null, //æµ·æŠ¥äºŒç»´ç åœ°å€
-    callback: null, //å›è°ƒï¼Œä¼ å›æµ·æŠ¥å›¾ç‰‡
+    imgLoad: 0, //Í¼Æ¬¼ÓÔØ½ø¶È
+    imgList: [], //Í¼Æ¬ÁĞ±í
+    textList: [], //ÎÄ±¾
+    qrcode: null, //º£±¨¶şÎ¬ÂëµØÖ·
+    callback: null, //»Øµ÷£¬´«»Øº£±¨Í¼Æ¬
     init: function (options) {
         for (var item in options) {
             this[item] = options[item];
@@ -18,7 +18,7 @@ var drawPoster = {
         that.ctx = that.canvas.getContext('2d');
         that.canvas.style.width = that.cWidth + 'px';
         that.canvas.style.height = that.cHeight + 'px';
-        // polyfill æä¾›äº†è¿™ä¸ªæ–¹æ³•ç”¨æ¥è·å–è®¾å¤‡çš„ pixel ratio
+        // polyfill Ìá¹©ÁËÕâ¸ö·½·¨ÓÃÀ´»ñÈ¡Éè±¸µÄ pixel ratio
         var getPixelRatio = function (context) {
             var backingStore = context.backingStorePixelRatio ||
                 context.webkitBackingStorePixelRatio ||
@@ -30,14 +30,14 @@ var drawPoster = {
         };
         that.ratio = getPixelRatio(that.ctx);
         that.loadImg(function () {
-            // console.log('æ‰§è¡Œç»˜åˆ¶æ“ä½œ');
+            // console.log('Ö´ĞĞ»æÖÆ²Ù×÷');
             that.drawImg();
         });
     },
     drawImg: function () {
         var that = this,
             ratio = that.ratio;
-        // æ³¨æ„ï¼Œè¿™é‡Œçš„ width å’Œ height å˜æˆäº† width * ratio å’Œ height * ratio
+        // ×¢Òâ£¬ÕâÀïµÄ width ºÍ height ±ä³ÉÁË width * ratio ºÍ height * ratio
         that.imgList.forEach(function (ev, idx) {
             that.ctx.drawImage(ev.obj, ratio * ev.x, ratio * ev.y, ratio * ev.w, ratio * ev.h);
         });
@@ -77,7 +77,7 @@ var drawPoster = {
                 that.imgList[this.idx].obj = this;
                 that.imgLoad++;
                 if (that.imgLoad >= that.imgList.length) {
-                    // console.log('å›¾ç‰‡è½½å…¥å®Œæˆ');
+                    // console.log('Í¼Æ¬ÔØÈëÍê³É');
                     if (callback) callback();
                 }
             }
