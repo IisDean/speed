@@ -1,0 +1,262 @@
+/* H5 暂存箱的弹窗 */
+.z_c_box{
+    background: #fff;
+    display: inline-block;
+}
+.z_c_box .act_pop_table th{
+    background-color: #f2f6ff;
+    color:#535456;
+    font-weight: bold;
+    text-align: center
+}
+.z_c_box .act_pop_table td{
+    color: #868686;
+    border: 1px solid #eeeeee
+}
+.z_c_box .noPackage td{
+    color: #7c95b8;
+}
+.z_c_box .cz_td span{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.z_c_box thead tr{
+    border: 1px solid #eee;
+    border-bottom:none;
+}
+.z_c_box .text_c{
+    color: #868686;
+}
+/* H5 暂存箱的弹窗 */
+/*�ֻ�����ʽ*/
+.luban-template-45>img {
+    width: 100%;
+    height: 3.6rem;
+}
+.luban-template-45>span {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 0;
+    font-size: 0.24rem;
+    color: #999999;
+    width: 100%;
+    text-align: center;
+    min-height: 0.36rem;
+}
+.luban-template-45 .btns {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    width: 100%;
+}
+.luban-template-45 .btns>a {
+    margin: 0 0.2rem;
+}
+.luban-template-23>div {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+}
+.luban-template-23 p {
+    line-height: .36rem;
+    font-size: .24rem;
+}
+.luban-template-23 .color-red {
+    color: red;
+}
+.luban-template-85 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-50 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-50 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-50 .group-box {
+    width: 3.4rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+.luban-template-50 .img1 {
+    width: 100%;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-50 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-50 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-60 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-60 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-60 .template-boxs {
+    width: 100%;
+    margin-top: 0.26rem;
+    display: flex;
+    justify-content: center;
+}
+.luban-template-60 .template-box {
+    width: 1.92rem;
+    height: 2.86rem;
+}
+.luban-template-60 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-60 .template-box .template-box-item .img-bg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+}
+.luban-template-60 .template-box .good-text {
+    display: block;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #555555;
+    height: 0.6rem;
+}
+.luban-template-60 .luban-button {
+    margin-top: 0.1rem;
+}
+.luban-template-60 .text2 {
+    margin-top: 0.14rem;
+    margin-bottom: 0.45rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-116 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-116 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-116 .template-boxs {
+    width: 100%;
+    margin-top: 0.26rem;
+    display: flex;
+    justify-content: center;
+}
+.luban-template-116 .template-box {
+    width: 1.92rem;
+    height: 2.86rem;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #555555;
+    height: 0.6rem;
+}
+.luban-template-116 .luban-button {
+    margin-top: 0.1rem;
+}
+.luban-template-116 .text2 {
+    margin-top: 0.14rem;
+    margin-bottom: 0.45rem;
+}
+.luban-template-116 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-116 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-116 .template-boxs {
+    width: 100%;
+    margin-top: 0.26rem;
+    display: flex;
+    justify-content: center;
+}
+.luban-template-116 .template-box {
+    width: 1.92rem;
+    height: 2.86rem;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #555555;
+    height: 0.6rem;
+}
+.luban-template-116 .luban-button {
+    margin-top: 0.1rem;
+}
+.luban-template-116 .text2 {
+    margin-top: 0.14rem;
+    margin-bottom: 0.45rem;
+}
+.luban-template-116 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-116 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-116 .template-boxs {
+    width: 100%;
+    margin-top: 0.26rem;
+    display: flex;
+    justify-content: center;
+}
+.luban-template-116 .template-box {
+    width: 1.92rem;
+    height: 2.86rem;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #555555;
+    height: 0.6rem;
+}
+.luban-template-116 .luban-button {
+    margin-top: 0.1rem;
+}
+.luban-template-116 .text2 {
+    margin-top: 0.14rem;
+    margin-bottom: 0.45rem;
+}
+.luban-template{margin-top:0.2rem;}

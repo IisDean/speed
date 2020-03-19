@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- ossweb-img/m/ -->
+    <!-- //game.gtimg.cn/images/dp/cp/a20191225dp/m/ -->
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>樱花主题上线-周大福珠宝</title>
+    <!-- 设计：cp | 重构：| 创建：2020-03-18 | 更新：| 团队博客：://tgideas.qq.com/ -->
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 背景音乐 -->
+    <audio loop autoplay="autoplay" id="musicWrap">
+        <source src="./audio/music.mp3" type="audio/mpeg" />
+    </audio>
+    <a class="p-a flex flex-center flex-middle play-icon">
+        <i class="bg"></i>
+    </a>
+    <div class="p-r stage">
+        <div class="p-a load-wrap">
+            <div class="p-a bg load-pro flex flex-center flex-middle">
+                <span class="load-text">0%</span>
+            </div>
+        </div>
+        <div class="p-a bg page-container">
+            <!-- 最终页 -->
+            <div class="wrap wrap-1">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <i class="p-a bg xl-icon"></i>
+                <div class="p-a end-title-wrap">
+                    <p class="end-title-text">我是第</p>
+                    <p class="end-title-text" style="margin-top: .16rem;"><span class="J-qf-num">999999</span> 位祈福者！</p>
+                    <p class="end-title-text" style="margin-top: .22rem;">我为 <span class="J-user-name">名字</span> 祈福</p>
+                </div>
+                <div class="p-a bg result-wrap">
+                    <p class="result-title-text">愿你：</p>
+                    <p class="result-msg-text">孩子，我会守护你健康成长</p>
+                </div>
+                <a href="javascript: alert('敬请期待！');" class="p-a bg create-poster-btn t">生成我的祈福海报</a>
+                <i class="p-a bg logo-icon moveInit delay-1"></i>
+            </div>
+            <!-- 春暖花开 我们能感受这份美好 -->
+            <div class="p-r wrap wrap-2">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <ul class="p-a p2-list">
+                    <li class="bg p2-item moveInit delay-1"></li>
+                    <li class="bg p2-item moveInit delay-2"></li>
+                    <li class="bg p2-item moveInit delay-3"></li>
+                    <li class="bg p2-item moveInit delay-4"></li>
+                </ul>
+            </div>
+            <!-- 让爱起航 -->
+            <div class="p-r wrap wrap-3 ">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <i class="p-a bg qzh-5 delay-1"></i>
+                <i class="p-a bg qzh-4 delay-2"></i>
+                <i class="p-a bg qzh-3 delay-3"></i>
+                <i class="p-a bg qzh-2 delay-1"></i>
+                <i class="p-a bg qzh-1 delay-2"></i>
+                <i class="p-a bg flower-icons"></i>
+                <!-- 祈福数 -->
+                <div class="p-a bg qifu-wrap">
+                    <span class="qifu-text t-c">999999</span>
+                    <span class="p-a add-one">+1</span>
+                </div>
+                <a class="p-a bg qihang-btn moveInit delay-5 t">让爱起航</a>
+            </div>
+            <!-- 选择您的祈福语 -->
+            <div class="p-r wrap wrap-4 active">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <i class="p-a bg five-inset"></i>
+                <i class="p-a bg flower-dz"></i>
+                <i class="p-a bg flower-icon flower-icon1"></i>
+                <!-- 祈福语列表 -->
+                <ul class="qifu-list">
+                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
+                        <span>孩子，我会守护你健康成长</span>
+                    </li>
+                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
+                        <span>孩子，我会守护你健康成长</span>
+                    </li>
+                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
+                        <span>孩子，我会守护你健康成长</span>
+                    </li>
+                </ul>
+                <!-- 换一批 -->
+                <a class="bg change-qifu-btn moveInit delay-2 btn-hover t">换一批</a>
+                <p class="qifu-tips-text moveInit delay-3 t-c">请点击会话框选择您的祈福语</p>
+            </div>
+            <!-- 为爱祈福 -->
+            <div class="p-r wrap wrap-5">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <i class="p-a bg flower-icon flower-icon1"></i>
+                <i class="p-a bg flower-icon delay-1 flower-icon2"></i>
+                <div class="p-a bg zhi-icon">
+                    <i class="p-a bg xin-text moveInit delay-1 xin-text-1"></i>
+                    <i class="p-a bg xin-text moveInit delay-2 xin-text-2"></i>
+                    <i class="p-a bg xin-text moveInit delay-3 xin-text-3"></i>
+                    <i class="p-a bg xin-text moveInit delay-4 xin-text-4"></i>
+                </div>
+                <i class="p-a bg qzh-zhi-icon"></i>
+                <i class="p-a bg pingzi-icon"></i>
+                <i class="p-a bg bi-icon"></i>
+                <input type="text" class="p-r input-wrap moveInit delay-4 t-c" id="userName" placeholder="请输入昵称" />
+                <a class="p-a bg submit-btn btn-hover moveInit delay-5 t">为爱祈福</a>
+            </div>
+            <!-- 一件首饰 一份守护 -->
+            <div class="p-r wrap wrap-6">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+                <i class="p-a bg sh-icon moveInit t">一件首饰</i>
+            </div>
+            <div class="p-r wrap-7">
+                <i class="p-a bg star-1"></i>
+                <i class="p-a bg star-2"></i>
+                <i class="p-a bg star-3"></i>
+            </div>
+            <div class="p-a bg angle-icon">
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/tween.min.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

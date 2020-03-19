@@ -1,0 +1,832 @@
+/*reset*/
+html,
+body,
+div,
+section,
+p,
+ul,
+li,
+form,
+table,
+td,
+a,
+dl,
+dt,
+dd,
+em,
+i,
+span,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    /* -webkit-user-select: none; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+a:focus,
+a:active,
+a {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+em,
+i,
+b {
+    font-style: normal;
+}
+
+fieldset,
+img {
+    border: 0;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.c:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.hh {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.p-r {
+    position: relative;
+}
+
+.p-a {
+    position: absolute;
+}
+
+html {
+    font-size: 100px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #1f272d;
+    font-size: 0.24rem;
+    color: #a8b4cc;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.flex-middle {
+    align-items: center;
+}
+
+/*foot*/
+#afooter {
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #9e9e9e;
+    background: #0e0e0e;
+    padding: 0.3rem 0;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 0.06rem;
+}
+
+#gfooter {
+    background: #0e0e0e;
+}
+
+#afooter p {
+    line-height: .3rem;
+    font-size: .16rem;
+}
+
+.stage {
+    width: 100%;
+    height: 28.14rem;
+    overflow: hidden;
+    background-image: url('./page_bg_m.jpg');
+}
+
+.stage h1,
+.stage h2,
+.stage h3,
+.stage p,
+.stage span,
+.stage div {
+    line-height: 1;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.bg {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.icons {
+    display: block;
+    background-image: url("./icons_m.png");
+    background-repeat: no-repeat;
+    background-size: 7.5rem auto;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+a {
+    cursor: pointer;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img,
+.full-img img {
+    display: block;
+}
+
+.full-img img {
+    width: 100%;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.t-h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+/* 头部标题栏 */
+.header-topbar {
+    width: 100%;
+    height: .74rem;
+    background-color: #1f1f1f;
+}
+
+.logo-icon1 {
+    margin-top: .44rem;
+    margin-left: .38rem;
+    width: 1.55rem;
+    height: .44rem;
+    background-image: url('./logo.png');
+}
+
+.logo-icon2 {
+    margin-top: .44rem;
+    margin-left: .15rem;
+    width: 1.41rem;
+    height: .42rem;
+    background-image: url('./djc.png');
+}
+
+.login-wrap {
+    margin-right: .6rem;
+}
+
+.login-wrap,
+.login-wrap a {
+    display: inline-block;
+    line-height: .74rem;
+    font-size: .16rem;
+    color: #f9dc80;
+}
+
+/* 头部 */
+.head-container {
+    height: 5.56rem;
+    overflow: hidden;
+}
+
+.time-msg-text {
+    margin-top: 4.11rem;
+    font-size: .22rem;
+    color: #fff;
+}
+
+.btn-container {
+    margin-top: .3rem;
+}
+
+.btn-container .btn-wrap {
+    width: 2.34rem;
+    height: .6rem;
+}
+
+.gw-btn {
+    background-position: 0 -2.68rem;
+}
+
+.download-btn {
+    margin-left: .3rem;
+    background-position: -2.39rem -2.68rem;
+}
+
+/* 活动流程 */
+.step-container {
+    height: 2.31rem;
+    overflow: hidden;
+}
+
+.step-title-icon {
+    margin: .13rem auto 0;
+    width: 1.94rem;
+    height: .58rem;
+    background-position: -4.78rem -2.68rem;
+}
+
+.step-list {
+    margin: .07rem 0 0 .09rem;
+    padding-top: .5rem;
+    width: 7.41rem;
+    height: 1.38rem;
+    background-image: url('./step_bg_m.png');
+}
+
+.step-item {
+    box-sizing: border-box;
+    line-height: .24rem;
+    font-size: .18rem;
+    color: #c4d9ff;
+}
+
+.step-item span {
+    color: #f3eaaf;
+}
+
+.step-list .step-item:nth-child(1) {
+    padding-left: .14rem;
+    width: 2.64rem;
+}
+
+.step-list .step-item:nth-child(2) {
+    margin-left: .07rem;
+    padding-left: .07rem;
+    width: 2.25rem;
+}
+
+.step-list .step-item:nth-child(3) {
+    margin-left: .07rem;
+    padding-left: .07rem;
+}
+
+/* 完成任务，免费领惊喜福袋 */
+.fd-container {
+    height: 6.32rem;
+    overflow: hidden;
+}
+
+.title-icon {
+    margin: 0 auto;
+    width: 7.46rem;
+    height: 1.28rem;
+}
+
+.title-icon-1 {
+    margin-top: .29rem;
+    background-position: 0 0;
+}
+
+.title-msg-text {
+    font-size: .2rem;
+    color: #fff;
+}
+
+.title-icon-1+.title-msg-text {
+    margin-top: .17rem;
+}
+
+.rw-container {
+    margin: .16rem auto 0;
+    box-sizing: border-box;
+    width: 7.15rem;
+    height: 3.33rem;
+    border: .01rem solid #3672eb;
+}
+
+.rw-left {
+    width: 100%;
+    height: .86rem;
+    background-color: #09245a;
+    overflow: hidden;
+}
+
+.rw-title-text {
+    margin-top: .15rem;
+    line-height: 1;
+    font-size: .24rem;
+    color: #82aeff;
+}
+
+.rw-msg-text {
+    margin-top: .16rem;
+    font-size: .2rem;
+    color: #fff;
+}
+
+.rw-right {
+    width: 100%;
+}
+
+.rw-container .rw-prize-list {
+    margin-top: .19rem;
+}
+
+.rw-prize-item {
+    width: 1.21rem;
+    height: 1.21rem;
+    border: .01rem solid #4c88f2;
+}
+
+.rw-prize-num {
+    bottom: -1px;
+    left: -1px;
+    box-sizing: border-box;
+    padding-right: .12rem;
+    width: .49rem;
+    height: .27rem;
+    background-position: -6.18rem -3.34rem;
+    line-height: .27rem;
+    font-size: .2rem;
+    color: #fff;
+}
+
+.add-icon {
+    margin: 0 .2rem;
+    width: .2rem;
+    height: .2rem;
+    background-position: -6.71rem -3.34rem;
+}
+
+.ticket-icon {
+    top: 0;
+    left: 0;
+    width: .86rem;
+    height: .26rem;
+    background-position: -5.27rem -3.35rem;
+}
+
+.rw-prize-text {
+    margin-top: .22rem;
+    font-size: .18rem;
+    color: #fff;
+}
+
+.rw-prize-btn {
+    margin: .11rem auto 0;
+    width: 1.94rem;
+    height: .38rem;
+    background-position: -3.28rem -3.33rem;
+}
+
+.arrow-down {
+    margin: .19rem auto 0;
+    width: .41rem;
+    height: .48rem;
+    background-position: -6.91rem -2.68rem;
+}
+
+/* 打开幸运之盒 开启专属好运 */
+.lucky-container {
+    height: 8.1rem;
+    overflow: hidden;
+}
+
+.title-icon-2 {
+    background-position: 0 -1.35rem;
+}
+
+.lucky-container .title-msg-text {
+    margin-top: .19rem;
+}
+
+.lucky-gift-list {
+    margin-top: .3rem;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.lucky-gift-item {
+    margin: .25rem .06rem 0;
+    width: 1.74rem;
+    height: 1.36rem;
+    background-image: url('./gift_bg.png');
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.gift-icon,
+.gift-icon-2 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1.74rem;
+    pointer-events: none;
+}
+
+.gift-icon-2 {
+    display: none;
+    z-index: 1;
+}
+
+.open-gift-btn {
+    display: none;
+    bottom: -.2rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0 auto;
+    width: 1.55rem;
+    height: .41rem;
+    background-position: 0 -3.72rem;
+    cursor: pointer;
+}
+
+.lucky-gift-item.active {
+    pointer-events: none;
+}
+
+.lucky-gift-item.active .gift-icon-2,
+.lucky-gift-item.hover .gift-icon-2,
+.lucky-gift-item.hover .open-gift-btn {
+    display: block;
+}
+
+.lucky-gift-item.active .gift-icon-1,
+.lucky-gift-item.hover .gift-icon-1 {
+    display: none;
+}
+
+/* 幸运之盒奖励一览 */
+.lucky-prize-container {
+    margin: .44rem auto 0;
+    box-sizing: border-box;
+    width: 7.38rem;
+    height: 2.17rem;
+    border: 1px solid #4c88f2;
+}
+
+.prize-title-icon {
+    width: 1.92rem;
+    height: .34rem;
+    background-position: 0 -3.33rem;
+}
+
+.swiper-1 {
+    margin: .12rem auto 0;
+}
+
+.swiper-1,
+.swiper-1 .swiper-container {
+    width: 6.4rem;
+    height: 1.53rem;
+}
+
+.swiper-1 .lucky-msg-item {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1.45rem;
+    height: 1.53rem;
+    border: 0.01rem solid #4175d6;
+    background-image: url('./dj_bg_m.png');
+}
+
+.lucky-msg-wrap {
+    bottom: .04rem;
+    left: 0;
+    width: 100%;
+}
+
+.lp-title-text {
+    line-height: .16rem !important;
+    font-size: .14rem;
+    color: #f2f2f2;
+}
+
+.page-btn {
+    top: 1rem;
+    width: .28rem;
+    height: .32rem;
+}
+
+.swiper1-prev-btn {
+    left: 0;
+    background-position: -1.97rem -3.33rem;
+}
+
+.swiper1-prev-btn:active {
+    background-position: -2.61rem -3.33rem;
+}
+
+.swiper1-next-btn {
+    right: 0;
+    background-position: -2.29rem -3.33rem;
+}
+
+.swiper1-next-btn:active {
+    background-position: -2.95rem -3.33rem;
+}
+
+/* 活动说明 */
+.rule-container {
+    padding: 0 .2rem;
+}
+
+.rule-title-text {
+    margin-top: .5rem;
+    line-height: 1;
+    font-size: .32rem;
+    color: #2ab8e0;
+}
+
+.rule-list {
+    margin-top: .24rem;
+}
+
+.rule-item {
+    margin-bottom: .12rem;
+    line-height: .24rem !important;
+    font-size: .16rem;
+    color: #fff;
+}
+
+.look-detail-btn {
+    color: #2ab8e0;
+}
+
+.look-detail-btn:hover {
+    text-decoration: underline;
+}
+
+.foot-share-wrap {
+    margin: .4rem auto 0;
+    width: 7.12rem;
+}
+
+.foot-share-item {
+    margin-left: .22rem;
+    width: 1.61rem;
+    height: 1.39rem;
+    background-image: url("./foot_share_m.png");
+    background-size: 7.12rem auto;
+}
+
+.code-wrap {
+    display: none;
+    margin: .1rem auto 0;
+    width: 1.2rem;
+}
+
+.foot-share-wrap .foot-share-item1 {
+    margin-left: 0;
+    background-position: 0 0;
+}
+
+.foot-share-item2 {
+    background-position: -1.84rem 0;
+}
+
+.foot-share-item3 {
+    background-position: -3.67rem 0;
+}
+
+.foot-share-item4 {
+    background-position: -5.51rem 0;
+}
+
+.foot-share-item2:hover .code-wrap,
+.foot-share-item3:hover .code-wrap {
+    display: block;
+}
+
+/* 弹窗 */
+.pop {
+    display: none;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.pop-1 {
+    left: .99rem;
+    margin-top: -3.3rem;
+    padding: .13rem .24rem .51rem .16rem;
+    width: 5.52rem;
+    height: 2.88rem;
+    background-image: url('./pop_1.png');
+}
+
+.pop-2 {
+    left: .54rem;
+    margin-top: -3.2rem;
+    padding: .13rem .24rem .51rem .16rem;
+    width: 6.42rem;
+    height: 2.68rem;
+    background-image: url('./pop_2.png');
+}
+
+.pop-title-text {
+    margin-top: .12rem;
+    margin-left: .2rem;
+    line-height: .26rem !important;
+    font-size: .2rem;
+    color: #fff;
+}
+
+.pop-title-text span {
+    color: #83b0ff;
+}
+
+.rw-prize-container {
+    margin-left: .1rem;
+}
+
+.pop .rw-prize-list {
+    margin-top: .12rem;
+    font-size: 0;
+}
+
+.pop .rw-prize-list li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pop .rw-prize-list li.add-icon {
+    margin: .4rem .06rem 0;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin: .42rem auto 0;
+    width: 1.94rem;
+    height: .43rem;
+    background-position: -1.6rem -3.72rem;
+}
+
+.pop-prize-text {
+    margin-top: .12rem;
+    font-size: .16rem;
+    color: #fff;
+}
+
+.arrow-icon {
+    display: block;
+    bottom: .2rem;
+    left: 0;
+    width: .52rem;
+    height: .32rem;
+    background-image: url('./pop_arrow.png');
+}
+
+.pop .rw-prize-item {
+    width: 1rem;
+    height: 1rem;
+}

@@ -1,0 +1,596 @@
+/*  */
+.swiper-page-con {
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 952px;
+}
+
+.swiper-page-con .swiper-page {
+    width: 100%;
+    height: 100%;
+}
+
+.page-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.home-wrap video {
+    width: 100%;
+}
+
+.video-btn {
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 185px;
+    height: 122px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/video_btn.jpg');
+    cursor: pointer;
+}
+
+.play-wrap1 {
+    display: block;
+    margin: 2px auto 0;
+    width: 181px;
+    height: 97px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.play-icon1 {
+    margin: 36px auto 0;
+    z-index: 1;
+    width: 19px;
+    height: 27px;
+    background-position: -272px -624px;
+}
+
+.down-btn {
+    top: 660px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 76px;
+    height: 30px;
+    background-position: -357px -852px;
+    -webkit-animation: fadeOutRight 1s ease both infinite;
+    -moz-animation: fadeOutRight 1s ease both infinite;
+    -ms-animation: fadeOutRight 1s ease both infinite;
+    -o-animation: fadeOutRight 1s ease both infinite;
+    animation: fadeOutRight 1s ease both infinite;
+}
+
+/* 新模式 */
+.swiper-xms {
+    width: 100%;
+    height: 100%;
+}
+
+.title-wrap {
+    margin-left: 400px;
+}
+
+.title-icon {
+    margin: 0 auto;
+}
+
+.title-1 {
+    width: 196px;
+    height: 67px;
+    background-position: 0 0;
+}
+
+.title-2 {
+    width: 405px;
+    height: 64px;
+    background-position: 0 -72px;
+}
+
+.title-3 {
+    width: 316px;
+    height: 112px;
+    background-position: 0 -191px;
+}
+
+.title-4 {
+    width: 431px;
+    height: 118px;
+    background-position: 0 -308px;
+}
+
+.title-5 {
+    width: 376px;
+    height: 115px;
+    background-position: 0 -431px;
+}
+
+.lantie-icon {
+    margin-left: 44px;
+    width: 166px;
+    height: 57px;
+    background-position: -216px 0;
+}
+
+.xms-wrap {
+    margin-top: 54px;
+}
+
+.video-wrap {
+    margin-left: 16px;
+    width: 634px;
+    height: 357px;
+}
+
+.play-wrap2 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 634px;
+    height: 357px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.video-border {
+    top: -11px;
+    left: 0;
+    width: 643px;
+    height: 452px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/video_poster.png');
+}
+
+.prev-btn-xms,
+.next-btn-xms {
+    top: 138px;
+    width: 45px;
+    height: 64px;
+}
+
+.prev-btn-xms {
+    left: -26px;
+    background-position: -330px -783px;
+}
+
+.next-btn-xms {
+    right: -26px;
+    background-position: -381px -783px;
+}
+
+.prev-btn-xms.off {
+    background-position: -330px -714px;
+}
+
+.next-btn-xms.off {
+    background-position: -381px -714px;
+}
+
+.inset-hd {
+    top: 258px;
+    left: -68px;
+    width: 96px;
+    height: 95px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/inset_hd.png');
+}
+
+.title-1-1 {
+    width: 124px;
+    height: 24px;
+    background-position: 0 -685px;
+}
+
+.title-1-2 {
+    width: 149px;
+    height: 24px;
+    background-position: -133px -685px;
+}
+
+.xms-msg-con {
+    width: 634px;
+}
+
+.ldms-icon {
+    margin: 0 auto;
+    width: 182px;
+    height: 26px;
+    background-position: 0 -1143px;
+}
+
+.xms-msg-text {
+    margin-top: 8px;
+    line-height: 22px !important;
+    font-size: 14px;
+    color: #a2a6b3;
+}
+
+.xms-msg-text span {
+    color: #ebe7fc;
+}
+
+.xms-right1 {
+    margin-right: 12px;
+    width: 474px;
+}
+
+.xms-right2 {
+    margin-top: -18px;
+    margin-right: 60px;
+    width: 409px;
+}
+
+.xms-map-wrap {
+    display: inline-block;
+    width: 270px;
+}
+
+.xms-msg-wrap {
+    display: inline-block;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.play-icon-xms {
+    margin: 154px auto 0;
+    width: 24px;
+    height: 31px;
+    background-position: -167px -873px;
+}
+
+/* 新角色 */
+.person-1 {
+    bottom: 0;
+    left: 220px;
+    width: 931px;
+    height: 915px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/person_1.png');
+}
+
+.person-2 {
+    bottom: 0;
+    left: 1141px;
+    width: 759px;
+    height: 868px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/person_2.png');
+}
+
+.jt-icon {
+    bottom: 0;
+    left: 0;
+    width: 1920px;
+    height: 396px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/inset_jt.png');
+    pointer-events: none;
+}
+
+.pq-icon {
+    bottom: 0;
+    left: 0;
+    width: 1300px;
+    height: 727px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/inset_pq.png');
+    pointer-events: none;
+}
+
+.wp-icon {
+    top: 196px;
+    left: 938px;
+    width: 643px;
+    height: 558px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/xjs_goods.png');
+    pointer-events: none;
+}
+
+.label-icon1 {
+    top: 250px;
+    left: 756px;
+    width: 40px;
+    height: 196px;
+    background-position: -198px -873px;
+    pointer-events: none;
+}
+
+.label-icon2 {
+    top: 250px;
+    left: 1180px;
+    width: 40px;
+    height: 196px;
+    background-position: -245px -873px;
+    pointer-events: none;
+}
+
+.label-icon3 {
+    top: 250px;
+    left: 1234px;
+    width: 40px;
+    height: 296px;
+    background-position: -291px -873px;
+    pointer-events: none;
+}
+
+/* 新赛季 */
+.xsj-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.title-2-1 {
+    margin: 17px auto 0;
+    width: 396px;
+    height: 19px;
+    background-position: 0 -141px;
+}
+
+.title-2-2 {
+    margin: 17px auto 0;
+    width: 296px;
+    height: 20px;
+    background-position: 0 -165px;
+}
+
+.qiang-title-icon {
+    display: block;
+    width: 1207px;
+    height: 412px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/qiang_title.png');
+}
+
+.prev-btn-page,
+.next-btn-page {
+    top: 330px;
+    z-index: 1;
+    width: 78px;
+    height: 153px;
+}
+
+.prev-btn-page {
+    left: 380px;
+    background-position: -166px -714px;
+}
+
+.next-btn-page {
+    right: 380px;
+    background-position: -247px -714px;
+}
+
+/* 新地图 */
+.xdt-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.xdt-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.map-title-list {
+    margin-top: 376px;
+}
+
+.map-item {
+    display: none;
+    margin: 0 auto;
+    width: 266px;
+    height: 40px;
+}
+
+.map-item1 {
+    background-position: 0 -550px;
+}
+
+.map-item2 {
+    background-position: 0 -595px;
+}
+
+.map-item3 {
+    background-position: 0 -640px;
+}
+
+.map-img-list {
+    margin-top: 20px;
+}
+
+.map-img-item {
+    display: inline-block;
+    margin: 0 17px;
+    width: 208px;
+    height: 121px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.map-title-text {
+    display: inline-block;
+    margin-top: 92px;
+    margin-left: 8px;
+    padding: 0 4px;
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 16px;
+    color: #302f28;
+    background-color: #9a9471;
+}
+
+.shadow-icon {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/fg.png');
+}
+
+.map-img-item.active .map-title-text {
+    background-color: #07e431;
+}
+
+.map-img-item:hover .shadow-icon,
+.map-img-item.active .shadow-icon {
+    display: none;
+}
+
+.map-new-icon {
+    margin: 64px auto 0;
+    width: 409px;
+}
+
+/* 新武器 */
+.wuqi-list {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wuqi-icon {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1500px;
+}
+
+.wuqi-1-1 {
+    top: 34px;
+}
+
+.wuqi-1-2 {
+    top: 298px;
+}
+
+/* 新系统 */
+.banner-container {
+    margin: 40px auto 0;
+    width: 1195px;
+    height: 532px;
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/banner_bg.png');
+}
+
+.tab-list {
+    width: 86px;
+    height: 532px;
+}
+
+.tab-item {
+    padding: 40px 26px 0;
+    width: 100%;
+    height: 266px;
+    box-sizing: border-box;
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #a5bebe;
+}
+
+.tab-item.active {
+    background-image: url('//game.gtimg.cn/images/cfm/cp/a20200225march/tab_active.png');
+}
+
+.tab-content {
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 1101px;
+    height: 524px;
+}
+
+/* 导航栏 */
+.nav-list-container {
+    top: 128px;
+    right: 125px;
+    z-index: 1;
+    width: 164px;
+    height: 952px;
+}
+
+.nav-list-container .line {
+    display: block;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    opacity: .3;
+}
+
+.nav-list {
+    top: 50%;
+    margin-top: -400px;
+    width: 164px;
+}
+
+.nav-item {
+    z-index: 1;
+    margin-bottom: 40px;
+    padding-right: 28px;
+    box-sizing: border-box;
+    width: 164px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    background-position: 164px 30px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    background-position: 1px -872px;
+}
+
+.nav-item i {
+    display: block;
+    top: 50%;
+    right: 0;
+    margin-top: -4.5px;
+    margin-right: -4.5px;
+    width: 9px;
+    height: 9px;
+    background-position: -392px -550px;
+}
+
+.code-wrap {
+    margin-left: 49px;
+    width: 115px;
+}
+
+.download-ios-btn,
+.download-android-btn {
+    margin-top: 9px;
+    margin-left: 49px;
+    width: 115px;
+    height: 31px;
+}
+
+.download-ios-btn {
+    background-position: -272px -550px;
+}
+
+.download-android-btn {
+    background-position: -272px -586px;
+}
+
+.pop1 {
+    width: 1140px;
+    height: 640px;
+}
+
+.dialog .dia-close {
+    width: 29px;
+    height: 29px;
+    right: 17px;
+    top: 17px;
+    position: absolute;
+    background-position: -392px -564px;
+    z-index: 999;
+}
+
+.opa {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.pop-wq .dia-con {
+    width: 1000px;
+}

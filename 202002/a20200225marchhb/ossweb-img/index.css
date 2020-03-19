@@ -1,0 +1,510 @@
+
+#stage {
+}
+/*  */
+#stage,
+.swiper-page-con {
+    width: 100%;
+    height: 100%;
+}
+.swiper-page-con .swiper-page {
+    width: 100%;
+    height: 100%;
+}
+.swiper-page-con .swiper-slide {
+    overflow: hidden;
+}
+.page-wrap {
+    width: 100%;
+    height: 100%;
+}
+.home-wrap {
+    overflow: hidden;
+}
+.logo-icon {
+    display: block;
+    top: .32rem;
+    left: .66rem;
+    width: 2.11rem;
+    height: .61rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/logo.png');
+}
+.back-sq-btn {
+    display: block;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    z-index: 3;
+    width: 1.87rem;
+    height: .31rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/back_sq_btn.png');
+}
+.gift-icon {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+    width: 1.44rem;
+    height: 1.11rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/gift_icon.png');
+}
+.title-icon-home {
+    margin: .8rem auto 0;
+    width: 6.75rem;
+    height: 2.69rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/title_icon.png');
+}
+.video-btn {
+    display: block;
+    margin: .2rem auto 0;
+    width: 2.05rem;
+    height: 1.26rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/video_btn.jpg');
+    cursor: pointer;
+}
+.play-wrap1 {
+    margin: .02rem auto 0;
+    width: 2.02rem;
+    height: .98rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.play-icon1 {
+    z-index: 1;
+    width: .19rem;
+    height: .27rem;
+    background-position: -2.72rem -6.24rem;
+}
+.down-btn {
+    margin: .2rem auto 0;
+    width: .76rem;
+    height: .3rem;
+    background-position: -3.57rem -8.52rem;
+    -webkit-animation: fadeOutRight 1s ease both infinite;
+    -moz-animation: fadeOutRight 1s ease both infinite;
+    -ms-animation: fadeOutRight 1s ease both infinite;
+    -o-animation: fadeOutRight 1s ease both infinite;
+    animation: fadeOutRight 1s ease both infinite;
+}
+.opa {
+    visibility: hidden;
+    pointer-events: none;
+}
+/* ??? */
+.page-footer {
+    bottom: .24rem;
+    right: .1rem;
+    z-index: 1;
+    width: .5rem;
+    height: .51rem;
+}
+.pf-1 {
+    background-position: 0 -9.09rem;
+}
+.pf-2 {
+    background-position: -.56rem -9.09rem;
+}
+.pf-3 {
+    background-position: -1.12rem -9.09rem;
+}
+.pf-4 {
+    background-position: 0 -9.65rem;
+}
+.pf-5 {
+    background-position: -.56rem -9.65rem;
+}
+.pf-6 {
+    background-position: -1.12rem -9.65rem;
+}
+.pf-7 {
+    background-position: 0 -10.21rem;
+}
+/* ???? */
+.swiper-xms {
+    width: 100%;
+    height: 100%;
+}
+.title-wrap {
+    
+}
+.title-icon {
+    margin: 0 auto;
+}
+.title-1 {
+    margin: 0;
+    width: 1.92rem;
+    height: .67rem;
+    background-position: 0 0;
+}
+.title-2 {
+    width: 4.05rem;
+    height: .64rem;
+    background-position: 0 -.72rem;
+}
+.title-3 {
+    width: 3.16rem;
+    height: 1.12rem;
+    background-position: 0 -1.91rem;
+}
+.title-4 {
+    width: 4.31rem;
+    height: 1.18rem;
+    background-position: 0 -3.08rem;
+}
+.title-5 {
+    width: 3.76rem;
+    height: 1.15rem;
+    background-position: 0 -4.31rem;
+}
+.lantie-icon {
+    margin-left: .44rem;
+    width: 1.66rem;
+    height: .57rem;
+    background-position: -2.16rem 0;
+}
+.xms-wrap {
+    margin-top: .15rem;
+}
+.video-wrap {
+    margin-left: .16rem;
+    width: 6.34rem;
+    height: 4.52rem;
+}
+.play-wrap2 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 6.34rem;
+    height: 3.58rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+.video-border {
+    top: -.11rem;
+    left: 0;
+    width: 6.43rem;
+    height: 4.52rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/video_poster.png');
+}
+.prev-btn-xms,
+.next-btn-xms {
+    top: 1.38rem;
+    width: .45rem;
+    height: .64rem;
+}
+.prev-btn-xms {
+    left: -.26rem;
+    background-position: -3.3rem -7.83rem;
+}
+.next-btn-xms {
+    right: -.26rem;
+    background-position: -3.81rem -7.83rem;
+}
+.prev-btn-xms.off {
+    background-position: -3.30rem -7.14rem;
+}
+.next-btn-xms.off {
+    background-position: -3.81rem -7.14rem;
+}
+.inset-hd {
+    top: 2.58rem;
+    left: -.68rem;
+    width: .96rem;
+    height: .95rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/inset_hd.png');
+}
+.title-1-1 {
+    width: 1.24rem;
+    height: .24rem;
+    background-position: 0 -6.85rem;
+}
+.title-1-2 {
+    width: 1.49rem;
+    height: .24rem;
+    background-position: -1.33rem -6.85rem;
+}
+.xms-msg-con {
+    width: 7rem;
+}
+.xms-msg-text {
+    margin-top: .08rem;
+    line-height: .22rem !important;
+    font-size: .18rem;
+    color: #a2a6b3;
+}
+.xms-msg-text span {
+    color: #ebe7fc;
+}
+.xms-right1 {
+    margin-right: .12rem;
+    width: 4.74rem;
+}
+.xms-right2 {
+    margin-top: -.18rem;
+    margin-right: .6rem;
+    width: 3.8rem;
+}
+.xms-map-wrap {
+    display: inline-block;
+    width: 3.8rem;
+}
+.xms-msg-wrap {
+    display: inline-block;
+    margin-left: .3rem;
+    width: 2.8rem;
+}
+.play-icon-xms {
+    top: 1.55rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: .24rem;
+    height: .31rem;
+    background-position: -1.67rem -8.73rem;
+}
+/* ???? */
+.title-iccon-ps {
+    display: block;
+    margin: 0 auto;
+    width: 3.41rem;
+    height: 1.25rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/title_person.png');
+}
+.person-1 {
+    bottom: 0;
+    left: 0;
+    width: 6.2rem;
+    height: 5.56rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/person_1.png');
+}
+.person-2 {
+    right: 0;
+    bottom: 0;
+    width: 3.95rem;
+    height: 5.3rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/person_2.png');
+}
+.jt-icon {
+    bottom: 0;
+    left: .77rem;
+    width: 4.68rem;
+    height: 1.53rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/inset_jt.png');
+}
+.pq-icon {
+    bottom: 0;
+    left: 0;
+    width: 8rem;
+    height: 4.17rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/inset_pq.png');
+    pointer-events: none;
+}
+.wp-icon {
+    bottom: -.3rem;
+    left: 7.25rem;
+    width: 5.14rem;
+    height: 4.46rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/xjs_goods.png');
+    pointer-events: none;
+}
+.label-icon1 {
+    top: 2rem;
+    left: 4rem;
+    width: .40rem;
+    height: 1.96rem;
+    background-position: -1.98rem -8.73rem;
+    pointer-events: none;
+}
+.label-icon2 {
+    top: 2rem;
+    left: 9.2rem;
+    width: .4rem;
+    height: 1.96rem;
+    background-position: -2.45rem -8.73rem;
+    pointer-events: none;
+}
+.label-icon3 {
+    top: 2rem;
+    left: 9.74rem;
+    width: .4rem;
+    height: 2.96rem;
+    background-position: -2.91rem -8.73rem;
+    pointer-events: none;
+}
+/* ?????? */
+.xsj-swiper {
+    width: 100%;
+    height: 100%;
+}
+.title-2-1 {
+    margin: .17rem auto 0;
+    width: 3.96rem;
+    height: .19rem;
+    background-position: 0 -1.41rem;
+}
+.title-2-2 {
+    margin: .17rem auto 0;
+    width: 2.96rem;
+    height: .2rem;
+    background-position: 0 -1.65rem;
+}
+.qiang-title-icon {
+    display: block;
+    margin-top: -.5rem;
+    width: 9.65rem;
+    height: 2.65rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/qiang_title.png');
+}
+.prev-btn-page,
+.next-btn-page {
+    top: 2.62rem;
+    z-index: 1;
+    width: .78rem;
+    height: 1.53rem;
+}
+.prev-btn-page {
+    left: .85rem;
+    background-position: -1.66rem -7.14rem;
+}
+.next-btn-page {
+    right: .85rem;
+    background-position: -2.47rem -7.14rem;
+}
+/* ???? */
+.xdt-swiper {
+    width: 100%;
+    height: 100%;
+}
+.xdt-wrap {
+    margin: 0 auto;
+    z-index: 1;
+}
+.map-list-wrap {
+    bottom: .4rem;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+.map-item {
+    display: none;
+    margin: 0 auto;
+    width: 2.66rem;
+    height: .4rem;
+}
+.map-item1 {
+    background-position: 0 -5.5rem;
+}
+.map-item2 {
+    background-position: 0 -5.95rem;
+}
+.map-item3 {
+    background-position: 0 -6.4rem;
+}
+.map-img-list {
+    margin-top: .2rem;
+}
+.map-img-item {
+    display: inline-block;
+    margin: 0 .17rem;
+    width: 2.08rem;
+    height: 1.21rem;
+    text-align: left;
+    cursor: pointer;
+}
+.map-title-text {
+    display: inline-block;
+    margin-top: .92rem;
+    margin-left: .08rem;
+    padding: 0 .04rem;
+    font-weight: bold;
+    line-height: .21rem;
+    font-size: .16rem;
+    color: #302f28;
+    background-color: #9a9471;
+}
+.shadow-icon {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/fg.png');
+}
+.map-img-item.active .map-title-text {
+    background-color: #07e431;
+}
+.map-img-item:hover .shadow-icon,
+.map-img-item.active .shadow-icon {
+    display: none;
+}
+.map-new-icon {
+    margin: .15rem auto 0;
+    width: 4.09rem;
+}
+/* ?????? */
+.wuqi-list {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wuqi-icon {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 13rem;
+}
+.wuqi-1-1 {
+    top: .14rem;
+}
+.wuqi-1-2 {
+    top: 2.18rem;
+}
+/* ???? */
+.banner-container {
+    margin: .2rem auto 0;
+    width: 10rem;
+    height: 4.45rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/banner_bg.png');
+}
+.tab-list {
+    width: .86rem;
+    height: 4.45rem;
+}
+.tab-item {
+    padding: .2rem .26rem 0;
+    width: 100%;
+    height: 2.22rem;
+    box-sizing: border-box;
+    line-height: .38rem;
+    font-size: .3rem;
+    font-weight: bold;
+    color: #a5bebe;
+}
+.tab-item.active {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/tab_active.png');
+}
+.tab-content {
+    margin-top: .06rem;
+    margin-left: .04rem;
+    width: 9.05rem;
+    height: 4.31rem;
+}
+.pop1 {
+    width: 10rem;
+    height: 5.61rem;
+}
+.dialog .dia-close {
+    width: .29rem;
+    height: .29rem;
+    right: .17rem;
+    top: .17rem;
+    position: absolute;
+    background-position: -3.92rem -5.64rem;
+    z-index: 999;
+}
+/*ipx????*/
+.wrap {
+    -webkit-transform: scale(.75) ;
+    transform: scale(.75);
+} 
+.pop-wq .dia-con {
+    width: 10rem;
+}

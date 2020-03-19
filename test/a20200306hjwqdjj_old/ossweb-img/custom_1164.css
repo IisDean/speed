@@ -1,0 +1,321 @@
+/* pc 暂存箱的弹窗 */
+.z_c_box{
+    background: #fff;
+    display: inline-block;
+}
+.z_c_box .act_pop_table th{
+    background-color: #f2f6ff;
+    color:#535456;
+    font-weight: bold;
+    text-align: center
+}
+.z_c_box .act_pop_table td{
+    color: #868686;
+    border: 1px solid #eeeeee
+}
+.z_c_box .cz_td {
+    width: 300px;   
+}
+.z_c_box .cz_td span{
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    padding: 0 8px;
+    margin: 0 4px;
+}
+.z_c_box .noPackage td{
+    color: #7c95b8;
+}
+.z_c_box thead tr{
+    border: 1px solid #eee;
+    border-bottom:none;
+}
+.z_c_box .text_c{
+    color: #868686;
+}
+/* pc 暂存箱的弹窗 */
+/*PC����ʽ*/
+.luban-template-45>img {
+    width: 1000px;
+    height: 480px;
+}
+.luban-template-45>span {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    min-height: 32px;
+}
+.luban-template-45 .btns {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+.luban-template-45 .btns>a {
+    margin: 0 80px;
+}
+.luban-template-23>div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.luban-template-23 p {
+    line-height: 24px;
+    font-size: 20px;
+}
+.luban-template-23 .color-red {
+    color: red;
+}
+.luban-template-85 .text2 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.luban-template-50 h2 {
+    margin-top: 36px;
+}
+.luban-template-50 .text1 {
+    margin-top: 10px;
+}
+.luban-template-50 .group-box {
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.luban-template-50 .img1 {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.luban-template-50 .luban-button {
+    margin-top: 26px;
+}
+.luban-template-50 .text2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.luban-template-60 h2 {
+    margin-top: 36px;
+}
+.luban-template-60 .text1 {
+    margin-top: 10px;
+}
+.luban-template-60 .template-boxs {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+.luban-template-60 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+.luban-template-60 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-60 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.luban-template-60 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+.luban-template-60 .luban-button {
+    margin-top: 4px;
+}
+.luban-template-60 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+.luban-template-84 .text2 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+.luban-template{margin-top:0px;}
+
+* { margin: 0; padding: 0;}
+body { font: normal 14px/1.6 "Microsoft Yahei","simsun"; color: #fff;background:#000;}
+ol,ul { list-style: none;}
+img { border: none; display: block;}
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden}
+.clearfix{*zoom:1}
+a:link,a:visited{text-decoration: none;}a:hover,a:active{text-decoration:none;}
+.top-nav a:link,.top-nav a:visited{ color:#fff;}.top-nav a:hover,.top-nav a:active{ color:#95ca07;}
+.none{ display:none;}.dis-il{ display:inline-block;}.p-a{ position:absolute;}.p-r{ position:relative;}
+.sprite-common{ background-image:url(//game.gtimg.cn/images/codo/act/sprites_common_black_1.png);background-repeat:no-repeat;}
+/* LOGO+头部按钮 */
+.top-bar{ width:1000px; padding-right:30px; margin:0 auto; text-align:right; height:38px; position:relative; z-index:100; background-position:380px 0;}
+.top-bar a{ width:150px; height:35px; text-indent:58px; text-align:left; font-size:14px;font-weight:bold; line-height:32px; }.top-bar a.wb{ width:137px;}
+.top-bar .logo{width:157px;height:71px;background-position:0 -38px;left:20px;top:35px;z-index:200; margin:0; padding:0;}
+.top-bar a:link,.top-bar a:visited{ color:#fff;}.top-bar a:hover,.top-bar a:active{ color:#109ddf;}
+/* 关注 */
+/* .atten{width: 100%; margin:0 auto; padding: 50px 0; background: #151517; border-top: #5a6f92 1px solid;}
+.atten ul{ width: 500px; margin: 0 auto;}
+.atten ul li{float: left; width: 101px;  margin: 0 30px;display: inline; background-image: url(//game.gtimg.cn/images/codo/act/other/act_atten20160330.png); background-repeat: no-repeat;}
+.atten a,.atten span{ display: block; height: 30px;padding-top: 108px; line-height: 30px;font-size: 15px; color: #dbf3fe; text-align: left; text-indent: 30px;}
+.atten .zs{background-position:-147px 0;}
+.atten .wx{background-position:-296px 0;}
+.atten .text{font-size: 18px; color: #617f9f; text-align: center; padding-top: 25px;}
+.atten a:link,.atten a:visited{text-decoration: none;color:#dbf3fe;}.atten a:hover,.atten a:active{text-decoration:none;color:#0a85bd;} */
+.atten{width: 100%;min-width: 1000px;height: 450px;margin-bottom: 30px;margin-top:-12px; background: url('//ossweb-img.qq.com/images/codo/act/other/atten-bg.png') center top no-repeat;}
+.atten .clearfix{width: 1000px;height: 100%;margin: 0 auto;position: relative;overflow: hidden;}
+.code-area{width: 295px;position: absolute;top: 65px;right: 100px;}
+.code-area p{font-size: 25px;color: #d1d3e1;text-align: center;letter-spacing:6px;margin-top: 8px}
+
+.hide{display:none;overflow:hidden;font-size:0;height:0;}
+.t{display:block;text-indent:-9999px;overflow:hidden;}
+.bg_top{height:769px;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/bg_top.jpg) center top no-repeat;margin-top:-38px;}
+.bg_day{height:581px;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/bg_day.jpg) center top no-repeat;}
+.bg_rw{height:552px;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/bg_rw.jpg) center top no-repeat;}
+.bg_gift{height:1229px;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/bg_gift.jpg) center top no-repeat;}
+
+.head{height:769px;width:1000px;margin:0 auto;position:relative;}
+.bg_dl{height:60px;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/bg_dl.jpg) center top no-repeat;min-width:1000px;text-align:center;overflow:hidden;color:#fff;}
+.theme1 .luban-color-text{color:#623809;font-size:18px;}
+.theme1 .luban-color-text a{color:#623809;}
+
+.bg_day .theme1 .luban-color-text{color:#623809;}
+.bz{color:#623809;font-size:16px;line-height:24px;padding-top:70px;}
+.btn,.luban-template-50 .luban-button,.luban-template-60 .luban-button,.luban-template-116 .luban-button{transition: all .3s;-webkit-transition: all .3s;background:url(//game.gtimg.cn/images/codo/lbact/a20200306hjwqdjj/btn.png) no-repeat;display:block;text-indent:-999px;overflow:hidden;}
+.btn:hover,.luban-template-50 .luban-button:hover,.luban-template-60 .luban-button:hover,.luban-template-116 .luban-button:hover{filter: brightness(1.1);-webkit-filter: brightness(1.1);filter:alpha(opacity=90)\0;transform: translateY(-5px);-webkit-transform: translateY(-5px);}
+
+.luban-template-50 .group-box{width:495px;position:relative;margin:0;}
+.luban-template-50 .img1{width:490px;height:351px;margin:0 auto;}
+.luban-template-50 .luban-button{width:227px;height:70px;background-position:0 0;position:absolute;top:255px;left:50%;margin-left:-113px;margin-top:0px;}
+
+.luban-template-60 .template-box .good-text,.luban-template-116 .template-box .good-text{display:none;}
+.luban-template-60 .template-boxs{width:1000px;}
+.luban-template-60 .template-box{width:250px;position:relative;}
+.luban-template-60 .template-box .template-box-item .img-bg{width:240px;height:340px;margin:0 auto;}
+.luban-template-60 .luban-button{width:195px;height:60px;background-position:0 -70px;position:absolute;top:255px;left:50%;margin-left:-97px;margin-top:0px;}
+
+.luban-template-116 .template-boxs{width:1000px;margin:0;}
+.luban-template-116 .template-box{width:200px;position:relative;}
+.luban-template-116 .template-box .template-box-item .img-bg{width:190px;height:320px;margin:0 auto;}
+.luban-template-116 .luban-button{width:165px;height:60px;background-position:0 -140px;position:absolute;top:255px;left:50%;margin-left:-83px;margin-top:0px;}

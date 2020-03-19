@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-cn"> 
+<head>
+<meta charset="gbk" />
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=contain">
+<meta name="format-detection" content="telephone=no">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="测测你的元宵节开运馅" />
+<title>测测你的元宵节开运馅</title>
+<!-- 设计：CP | 重构：CP | 创建：2020/02/03 -->
+<script>
+    //屏幕适应
+    (function (win, doc) {
+		if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+			handleFontSize();
+		} else {
+			if (document.addEventListener) {
+				document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+			} else if (document.attachEvent) {
+				document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+				document.attachEvent("onWeixinJSBridgeReady", handleFontSize);  }
+		}
+		function handleFontSize() {
+			// 设置网页字体为默认大小
+			WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
+			// 重写设置网页字体大小的事件
+			WeixinJSBridge.on('menu:setfont', function() {
+				WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
+			});
+		}
+        if (!win.addEventListener) return;
+        function setFont() {
+            var html = document.documentElement;
+            var k =640;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+<link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+<link type="text/css" rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+<div class="wrap">
+<!-- mid为安全高度区域-->
+        <!-- cont1-启动 -->
+        <div class="cont cont1 pr show">
+            <div class="mid">
+                <div class="floa1 pa fade_jump"></div>
+                <div class="logo pa"></div>
+                <a href="javascript: openHd();" ontouchend="PTTSendClick('btn','openHd','开启活动');" class="t open-btn pa twinkling"></a>
+                <div class="floa pa fade_jump"></div>
+            </div>
+        </div>
+        <!-- cont2-科普页 -->
+        <div class="cont cont2 pr ">
+            <!-- <div class="mid"> -->
+                <!-- <div class="pa cont_top moveIn"></div>
+                <div class="sta pa flash"></div> -->
+                <!-- <div class="swiper-container moveIn delay-1" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi4.png" alt="">
+                        </div>
+                    </div>
+				</div> -->
+				<div class="swiper-container" id="swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="mid">
+								<div class="pa cont_top moveIns"></div>
+								<div class="sta pa flash"></div>
+								<img class="moveIns delay-1" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi1.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mid">
+								<div class="pa cont_top moveIns"></div>
+								<div class="sta pa flash"></div>
+								<img class="moveIns delay-1" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mid">
+								<div class="pa cont_top moveIns"></div>
+								<div class="sta pa flash"></div>
+								<img class="moveIns delay-1" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi3.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mid">
+								<div class="pa cont_top moveIns"></div>
+								<div class="sta pa flash"></div>
+								<img class="moveIns delay-1" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/swi4.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							
+						</div>
+					</div>
+					<div class="floa pa fade_jump"></div>
+					<a href="javascript:mySwiper.slideNext();" class="down-btn t fade_jump"></a>
+				</div>
+                <div class="floa pa fade_jump"></div>
+                <a href="javascript: cutPage();" class="down-btn t fade_jump"></a>
+            <!-- </div> -->
+        </div>
+
+        <!-- cont3-问题页 -->
+        <div class="cont cont3 pr">
+            <div class="mid">
+                <div class="sta2 pa flash"></div>
+                <img class="moveIn" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/cont3-pic.png">
+                <!-- 选择choosed 未选择unchoose 选择后on-->
+                <div class="choose-box moveIn delay-1">
+                    <div class="choosed">
+                        <div class="process-bg btns pr moveIn">
+                            <div class="process-line pr btns">
+                                <p class="yx-pro pa">55%</p>
+                                <div class="pa small-pice">
+
+                                    <span class="btns b-light"></span>
+                                    <span>元宵</span>
+                                    <span class="light"></span>
+                                    <span>汤圆</span>
+                                    <span class="btns r-light"></span>
+
+                                </div>
+                            </div>
+                            <p class="ty-pro pa">40%</p>
+                        </div>
+                        <div class="btn-box flex-c moveIn delay-1">
+                            <a href="javascript: openSharePop();" ontouchend="PTTSendClick('btn','btn-share','点击分享');" class="btns t yq-btn"></a>
+                            <a href="javascript: openSelectPage();" class="btns t next-btn"></a>
+                        </div>
+                    </div>
+                    <div class="unchoose moveIn">
+                        <div class="btn-box flex-c">
+                            <a href="javascript: selectType(1);" ontouchend="PTTSendClick('btn','selectYx','选择元宵');" class="btns t yx-btn"></a>
+                            <a href="javascript: selectType(2);" ontouchend="PTTSendClick('btn','selectTy','选择汤圆');" class="btns t ty-btn"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="floa pa fade_jump up"></div>
+            </div>
+        </div>
+
+	<!-- cont4-选择页 -->
+	<div class="cont cont4">
+		<div class="mid">
+			<div class="c-light1 c-light flash"></div>
+			<div class="c-light2 c-light flash"></div>
+			<div class="c4-tit s-icon moveIn" title="选一张代表元宵节的图"><i class="ty-ico s-icon t"></i></div>
+			<ul class="sel-list flex">
+				<li class="on moveIn delay-1" ontouchend="PTTSendClick('btn','select-sd','选择赏灯');">
+					<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/c4-sel1.png" alt="蓦然回首那人却在灯火阑珊处" />
+					<i class="sel-ico s-icon t"></i>
+					<i class="sel-bor"></i>
+				</li>
+				<li class="moveIn delay-2" ontouchend="PTTSendClick('btn','select-ty','选择团圆');">
+					<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/c4-sel2.png" alt="团团圆圆过元宵" />
+					<i class="sel-ico s-icon t"></i>
+					<i class="sel-bor"></i>
+				</li>
+				<li class="moveIn delay-3" ontouchend="PTTSendClick('btn','select-gz','选择工作');">
+					<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/c4-sel3.png" alt="啥节日都是工作最重要" />
+					<i class="sel-ico s-icon t"></i>
+					<i class="sel-bor"></i>
+				</li>
+				<li class="moveIn delay-4" ontouchend="PTTSendClick('btn','select-yx','选择游戏');">
+					<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/c4-sel4.png" alt="放假当然打游戏啦" />
+					<i class="sel-ico s-icon t"></i>
+					<i class="sel-bor"></i>
+				</li>
+			</ul>
+			<a href="javascript: selectConfirm();" class="quer-btn s-icon t moveIn delay-5" title="确认"></a>
+			<div class="c4-tag fade_jump"></div>
+		</div>
+	</div>
+	<!-- cont5-获得页 -->
+	<div class="cont cont5">
+		<div class="pa poster-container p-c-1">
+			<div class="pa poster-dh" style="background-image: url(//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_1.png);"></div>
+			<!-- logo -->
+			<div class="pa poster-logo">
+				<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_logo.png" alt="logo">
+			</div>
+			<!-- 用户信息 -->
+			<div class="pa flex flex-b user-wrap">
+				<div class="head-wrap">
+					<img class="head-img j-head-img" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/s-tx.jpg" alt="头像">
+				</div>
+				<p class="user-name-text j-user-name">用户名用户名用户名用户名用户名</p>
+			</div>
+			<!-- 标题图 -->
+			<i class="pa inset-1 moveIn" style="background-image: url(//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_inset_1.png);"></i>
+			<i class="pa inset-2 moveIn" style="background-image: url(//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_inset_1_sub.png);"></i>
+		</div>
+		<div class="pa poster-container" id="poster" style="top: 100%;">
+			<!-- logo -->
+			<div class="pa poster-logo">
+				<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_logo.png" alt="logo">
+			</div>
+			<!-- 用户信息 -->
+			<div class="pa flex flex-b user-wrap">
+				<div class="head-wrap">
+					<img class="head-img" id="headimgurl" src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/s-tx.jpg" alt="头像">
+				</div>
+				<p class="user-name-text" id="username">用户名用户名用户名用户名用户名</p>
+			</div>
+			<!-- 标题图 -->
+			<i class="pa inset-1"></i>
+			<i class="pa inset-2"></i>
+			<!-- 二维码 -->
+			<div class="pa code-container">
+				<div class="code-wrap">
+					<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/code.jpg" alt="二维码">
+					<p class="pa code-tips-text" style="top: 1.5rem;">
+						扫码了解：<br/>
+						秒速区分元宵和汤圆；<br/>
+						测测你的元宵节专属开运馅；<br/>
+						体验足不出户送祝福。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="pa btn-plank b-p-1 moveIn delay-2">
+			<p class="sava-tips-text">（长按保存图片）</p>
+			<!-- 按钮 -->
+			<div class="flex flex-c btn-container">
+				<a href="javascript: giveFriends();" ontouchend="PTTSendClick('btn','give-friends','送朋友祝福');" class="s-icon give-btn t" title="送朋友祝福"></a>
+				<a href="https://zhuimeng.qq.com/act/1187/4a3e7948d2ca6fb0/a20190909zm/detail-game.html?gameId=15&from=singlemessage&isappinstalled=0&client=tim&ADUIN=2142702192&ADSESSION=1580800987&ADTAG=CLIENT.QQ.5603_.0&ADPUBNO=26933" onclick="openLink();" ontouchend="PTTSendClick('btn','open-link','了解更多元宵故事');" class="s-icon more-btn t" title="了解更多元宵故事"></a>
+			</div>
+		</div>
+		<div class="pa btn-plank b-p-2 moveIn delay-2">
+			<p class="sava-tips-text">（长按保存图片，送云元宵祝福好友）</p>
+			<!-- 按钮 -->
+			<div class="flex flex-c btn-container">
+				<a href="javascript: btnPrev();" class="s-icon prev-btn filter t" title="上一页"></a>
+				<a href="javascript: btnNext();" class="s-icon next-btn t" title="下一页"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 呼朋唤友弹窗 -->
+<div class="_fix" onclick="closeSharePop();">
+	<div class="share" id="share">
+		<img src="//game.gtimg.cn/images/duty/cp/a20200203dumpling/share_guide.png" alt="">
+	</div>
+</div>
+
+<script src="//game.gtimg.cn/images/js/zepto/zepto1.2.js"></script>
+<script src="//game.gtimg.cn/images/js/su/TGLogin.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/headImgBase64/headImgBase64.min.js"></script>
+<script src="//game.gtimg.cn/images/js/dom2img/1.0.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+	function is_weixn(){
+		var ua = navigator.userAgent.toLowerCase();
+		if(ua.match(/MicroMessenger/i)=="micromessenger") {
+			$('.btn-more').attr('href','//game.weixin.qq.com/cgi-bin/h5/static/detail_v2/index.html?wechat_pkgid=detail_v2&appid=wx3038e0875c1bcffe&type=1&show_bubble=0&ssid=2304&abt=0&rpt_allpath=2304');
+		}
+	};
+	is_weixn();
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	}
+
+	var _DheadImg = document.getElementById("headimgurl"),
+		_DuserName = document.getElementById("username"),
+		_ChannelId = getQueryString('channelid');
+
+
+	//id：wx3038e0875c1bcffe
+	TGLogin.init({
+		lang: 'zh_CN', //配置返回的用户信息的省份信息是什么语言，zh_CN 简体，zh_TW 繁体，en 英语
+		wxAppId: 'wx9cd281ab1f4fbae2' //游戏在微信平台的appId
+	}, function (TGLoginManager) {
+		//打印API列表
+		console.log(TGLoginManager.apiList);
+
+
+		//一开始设置默认的分享信息
+		setShareInfo();
+
+		//获取当前平台类型(wx/qq/other)
+		var platform = TGLoginManager.mGetPlatformType();
+
+		var setInfo = function (info) {
+			_DuserName.innerText = info.nickname;
+			_DheadImg.src = info.headimgurl;
+			$(".j-head-img").attr('src', info.headimgurl);
+			$(".j-user-name").text(info.nickname);
+			new HeadImgBase64({
+				"imgUrl": info.headimgurl,
+				"headImgId": "headimgurl",
+				"callback": function () {
+					console.log('ok')
+				}
+			});
+		};
+		if (platform === 'wx') {
+			//微信平台 - 进行微信登录
+			TGLoginManager.mWXLogin(function (uinfo) {
+				setInfo(uinfo);
+			});
+		} else if (platform === 'qq') {
+			//QQ平台 - 进行手Q登录
+			TGLoginManager.mQQLogin(function (uinfo) {
+				setInfo(uinfo);
+			});
+		} else {
+			//非微信、QQ平台
+			if (_ChannelId == 1)
+				//进行微信登录
+				setTimeout(function () {
+					window.location.href = 'https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90239134&appid=wx3038e0875c1bcffe&url=https%3A%2F%2Fzhuimeng.qq.com%2Fcp%2Fa20200203dumpling%2Findex.html';
+				}, 200);
+			else
+				//拉起手QAPP打开页面
+				TGLoginManager.mOpenQQ();
+		}
+	});
+
+	// //分享组件
+	function setShareInfo() {
+		TGMobileShare({
+			shareTitle:'元宵汤圆大pk',
+			shareDesc:'改变战局就靠你了！还能测试元宵节开运馅！',
+			shareImgUrl:'https://game.gtimg.cn/images/duty/cp/a20200203dumpling/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+			shareLink:'',
+			actName:'a20200203dumpling'
+		});
+	}
+	function pathToBase64(u, f) {
+		var c = document.createElement("canvas"),
+			g = c.getContext('2d'),
+			d = 92,
+			i = new Image();
+		c.width = d;
+		c.height = d;
+		i.crossOrigin = 'Anonymous';
+		i.src = u;
+		i.onload = function () {
+			g.drawImage(this, 0, 0, this.width, this.height, 0, 0, d, d);
+			f(c.toDataURL());
+		};
+	}
+
+	var mySwiper ;
+	//开启
+	var click_sum = 0;
+	function openHd() {
+		$(".cont1").removeClass("show").next().addClass("show");
+		mySwiper = new Swiper('#swiper1', {
+			direction: 'vertical',
+			effect: 'fade',
+			onTransitionStart: function(){
+				click_sum = mySwiper.realIndex;
+				if (click_sum >= 4) {
+					//切换科普页
+					$(".cont2").removeClass("show").next().addClass("show");
+				}
+			}
+		})
+	}
+	
+	//切换到科普页
+	function cutPage(){
+		if (click_sum >= 3) {
+			//切换科普页
+			$(".cont2").removeClass("show").next().addClass("show");
+		}else {
+			mySwiper.slideNext();
+		}
+	}
+
+	//答题
+	$(".unchoose .btn-box .btns").on("click", function () {
+		$(".choose-box").addClass("on")
+		$(".cont3").css("background-position","center 60%");
+		$(".cont3 .floa").removeClass("up")
+		var ra_index = Math.floor(Math.random() * 3);
+		if (ra_index == 0) {
+			$(".yx-pro").html("49%");
+			$(".ty-pro").html("51%");
+			$(".process-line").css("width", "49%");
+		} else if (ra_index == 1) {
+			$(".yx-pro").html("50%");
+			$(".ty-pro").html("50%");
+			$(".process-line").css("width", "50%");
+		} else {
+			$(".yx-pro").html("51%");
+			$(".ty-pro").html("49%");
+			$(".process-line").css("width", "51%");
+		}
+	});
+
+	//进入选择页
+	function openSelectPage(){
+		$(".cont3").removeClass("show").next().addClass("show");
+	}
+
+	//弹窗呼朋唤友弹窗
+	function openSharePop(){
+		$("._fix").show();
+	}
+
+	//关闭呼朋唤友弹窗
+	function closeSharePop(){
+		$("._fix").hide();
+	}
+
+	/**
+	 * 1 = 豆沙
+	 * 2 = 枣泥
+	 * 3 = 玫瑰
+	 * 4 = 花生
+	 * 5 = 年桔
+	 * 6 = 什锦
+	 * 7 = 芝麻
+	 * 8 = 流沙
+	 * 9 = 鸡肉 
+	 * yx = 元宵
+	 * ty = 汤圆
+	 * */ 
+	var arr = [
+		{//赏灯
+			yx: [1, 2],
+			ty: [3]
+		}, {//团圆
+			yx: [2],
+			ty: [4, 5]
+		}, {//工作
+			yx: [6],
+			ty: [7, 8]
+		},{//游戏
+			yx: [6],
+			ty: [9, 5]
+		}
+	];
+
+	var type = localStorage.getItem("yxYtype") || 1; // 1 = 元宵， 2 = 汤圆
+	//选择元宵or汤圆
+	function selectType(idx) {
+		type = idx;
+		localStorage.setItem("yxYtype", type);
+		$(".inset-1").css("background-image", "url(//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_inset_"+ type +".png)");
+		$(".inset-2").css("background-image", "url(//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_inset_"+ type +"_sub.png)");
+	}
+
+	var sIdx = 0;// 0 = 赏灯， 1 = 团圆， 2 = 工作， 3 = 游戏
+	var pIdx = 1;//海报背景
+
+	//选择代表 
+	$(".sel-list li").on("click", function(){
+		var $this = $(this);
+		sIdx = $this.index();
+		$this.addClass("on").siblings('li').removeClass('on');
+	});
+
+	//选择确认
+	function selectConfirm() {
+		$(".cont4").removeClass("show")
+			.next().addClass("show");
+		if( type == 1 ){
+			//选择元宵时
+			pIdx = arr[sIdx].yx[getRandom(0, arr[sIdx].yx.length-1) ];
+		}else if( type == 2 ){
+			//选择汤圆时
+			pIdx = arr[sIdx].ty[ getRandom(0, arr[sIdx].ty.length-1) ];
+		}
+		createPoster(pIdx);
+		localStorage.setItem("pIdx", pIdx);
+	}
+
+	//打开链接
+	function openLink(){
+		sessionStorage.setItem('isOpenLink', '1');
+	}
+
+	if( sessionStorage.getItem("isOpenLink") == '1' ){
+		$(".cont4").removeClass("show")
+			.next().addClass("show");
+		pIdx = localStorage.getItem("pIdx");
+		createPoster(pIdx);
+		sessionStorage.setItem('isOpenLink', '0');
+	}
+
+	//获取随机数
+	function getRandom(min, max) {
+		return Math.round( Math.random() * (max- min) + min);
+	}
+
+	//生成海报
+	var $posterWrap = $(".poster-container");
+	function createPoster(idx){
+		var src = "//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_"+idx+".png";
+		var img = document.createElement("img");
+		img.src = src;
+		img.onload = function(){
+			$posterWrap.css("background-image", "url("+ src +")");
+			setTimeout(function(){
+				dom2img('#poster');
+			}, 30);
+		};
+	}
+
+	var posterArr = [];
+	//送朋友祝福
+	function giveFriends() {
+		$(".cont5").addClass("on");
+		posterArr.push(pIdx);
+		for(var i=1;i<10;i++){
+			if(i!=pIdx)posterArr.push(i);
+		}
+	}
+
+	var pageIdx = 0;
+	var $prevBtn = $(".prev-btn");
+	var $nextBtn = $(".next-btn");
+	//上一张
+	function btnPrev(){
+		$(".dom2img-result").remove();
+		$(".next-btn").removeClass("filter");
+		if(pageIdx>1){
+			$prevBtn.removeClass("filter");
+			pageIdx--;
+			movePoster(posterArr[pageIdx]);
+		}else {
+			$prevBtn.addClass("filter");
+		}
+	}
+
+	//下一张
+	function btnNext(){
+		$(".dom2img-result").remove();
+		$prevBtn.removeClass("filter");
+		if(pageIdx<8){
+			$(".next-btn").removeClass("filter");
+			pageIdx++;
+			movePoster(posterArr[pageIdx]);
+		}else {
+			$(".next-btn").addClass("filter");			
+		}
+	}
+
+	//海报
+	function movePoster(idx){
+		var src = "//game.gtimg.cn/images/duty/cp/a20200203dumpling/poster_"+idx+".png";
+		$(".poster-dh").hide();
+		$(".poster-dh").css("background-image", "url("+ src +")").show();
+		setTimeout(function(){
+			createPoster(idx);
+			setTimeout(function(){
+				$(".poster-dh").hide();
+			},800);
+		},100);
+	}
+
+	//图预加载
+	var pageFun = {
+		path: '//game.gtimg.cn/images/duty/cp/a20200203dumpling/',
+		imgList: ['poster_1.png', 'poster_2.png', 'poster_3.png', 'poster_4.png', 'poster_5.png', 'poster_6.png', 'poster_7.png', 'poster_8.png', 'poster_9.png']
+	}
+	function preloadImg(imgUrllist) {
+		var imageSourceArray = [];
+		for (i in imgUrllist) {
+			imageSourceArray.push(new Image());
+			imageSourceArray[i].src = pageFun.path + imgUrllist[i];
+		}
+
+	}
+	preloadImg(pageFun.imgList);
+	
+    // 此段代码不能放到外链JS中
+    var setSite={
+        siteType:"a20200203dumpling",
+        pageType:"index",
+        pageName:"首页",
+        project:"other",
+        osact:0
+    };
+    if(typeof(pgvMain)=='function')pgvMain();
+</script>
+</body>
+</html>

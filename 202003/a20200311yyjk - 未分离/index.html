@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="使命召唤手游-经典3A大作使命召唤移动端续作" />
+    <meta name="Keywords" content="使命召唤手游,codm,使命召唤,cod,神秘大作,使命召唤OL,codol" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- ossweb-img/m/ -->
+    <!-- //game.gtimg.cn/images/dp/cp/a20191225dp/m/ -->
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>使命召唤手游-经典3A大作使命召唤移动端续作-腾讯游戏</title>
+    <!-- 设计：cp | 重构：| 创建：2019-12-25 | 更新：| 团队博客：://tgideas.qq.com/ -->
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <audio loop autoplay="autoplay" id="musicWrap">
+        <source src="./ossweb-img/music.mp3" type="audio/mpeg" />
+    </audio>
+    <a href="javascript: musicSwitch();" class="flex flex-center flex-middle play-icon">
+        <i class="icons"></i>
+    </a>
+    <div class="stage">
+        <!-- 头部 -->
+        <div class="bg wrap head-wrap">
+            <div class="p-a full-img head-bg"></div>
+            <div class="p-r btn-container">
+                <p class="head-msg-text t-c">预约用户可随机获得<span>1</span>个零件</p>
+                <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','order-btn','立即预约')"
+                    class="icons order-btn t" title="立即预约">立即预约</a>
+                <!-- <a class="icons order-btn active t" title="已预约">已预约</a> -->
+            </div>
+        </div>
+        <!-- 使命召唤手游QQ专属枪械  -->
+        <div class="bg wrap wrap-2">
+            <ul class="flex flex-center qx-list">
+                <li class="qx-item full-img">
+                    <img src="./ossweb-img/q_1.png" alt="ak47">
+                </li>
+                <li class="qx-item full-img">
+                    <img src="./ossweb-img/q_2.png" alt="ak47">
+                </li>
+            </ul>
+            <!-- 枪械资料库 -->
+            <div class="bg qx-detail-container"></div>
+        </div>
+        <!-- 轻松得配件 组装赢永久  -->
+        <div class="bg wrap wrap-3">
+            <p class="friends-msg-text t-c">今日已邀请 <span>0</span> 名好友预约</p>
+            <!-- 配件列表 -->
+            <ul class="flex flex-center parts-list">
+                <li class="parts-item">
+                    <div class="p-r bg parts-wrap" style="background-image: url('./ossweb-img/lj_1.png');">
+                        <span class="t-c parts-num">+5</span>
+                        <p class="parts-title-text t-c">扩容弹夹</p>
+                    </div>
+                    <div class="flex parts-btn-container">
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','sy-btn1','索要配件1')"
+                            class="icons blag-btn btn-hover t">索要</a>
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','zs-btn1','赠送配件1')"
+                            class="icons give-btn btn-hover t">赠送</a>
+                    </div>
+                </li>
+                <li class="parts-item">
+                    <div class="p-r bg parts-wrap" style="background-image: url('./ossweb-img/lj_2.png');">
+                        <span class="t-c parts-num">+5</span>
+                        <p class="parts-title-text t-c">快速握把</p>
+                    </div>
+                    <div class="flex parts-btn-container">
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','sy-btn2','索要配件2')"
+                            class="icons blag-btn btn-hover t">索要</a>
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','zs-btn2','赠送配件2')"
+                            class="icons give-btn btn-hover t">赠送</a>
+                    </div>
+                </li>
+                <li class="parts-item">
+                    <div class="p-r bg parts-wrap" style="background-image: url('./ossweb-img/lj_3.png');">
+                        <span class="t-c parts-num">+5</span>
+                        <p class="parts-title-text t-c">枪托</p>
+                    </div>
+                    <div class="flex parts-btn-container">
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','sy-btn3','索要配件3')"
+                            class="icons blag-btn btn-hover t">索要</a>
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','zs-btn3','赠送配件3')"
+                            class="icons give-btn btn-hover t">赠送</a>
+                    </div>
+                </li>
+                <li class="parts-item">
+                    <div class="p-r bg parts-wrap" style="background-image: url('./ossweb-img/lj_4.png');">
+                        <span class="t-c parts-num">+5</span>
+                        <p class="parts-title-text t-c">消声器</p>
+                    </div>
+                    <div class="flex parts-btn-container">
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','sy-btn4','索要配件4')"
+                            class="icons blag-btn btn-hover t">索要</a>
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','zs-btn4','赠送配件4')"
+                            class="icons give-btn btn-hover t">赠送</a>
+                    </div>
+                </li>
+                <li class="parts-item">
+                    <div class="p-r bg parts-wrap" style="background-image: url('./ossweb-img/lj_5.png');">
+                        <span class="t-c parts-num">+5</span>
+                        <p class="parts-title-text t-c">激光指示器</p>
+                    </div>
+                    <div class="flex parts-btn-container">
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','sy-btn5','索要配件5')"
+                            class="icons blag-btn btn-hover t">索要</a>
+                        <a href="javascript: TGDialogS('pop8');" onclick="PTTSendClick('btn','zs-btn5','赠送配件5')"
+                            class="icons give-btn btn-hover t">赠送</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="javascript: TGDialogS('popHc6');" onclick="PTTSendClick('btn','hc-btn','立即合成')"
+                class="icons hc-btn btn-hover t">立即合成</a>
+            <div class="t-c">
+                <a href="javascript: TGDialogS('pop7');" onclick="PTTSendClick('btn','look-more-btn','点击查看全部奖励')"
+                    class="look-more-btn btn-hover">点击查看全部奖励</a>
+            </div>
+        </div>
+        <!-- 集齐5张配件卡片合成道具  -->
+        <div class="bg wrap wrap-4">
+            <h3 class="bg task-title-icon t">完成任务得配件</h3>
+            <div class="p-r bg task-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- 任务1 -->
+                        <div class="swiper-slide">
+                            <div class="task-item">
+                                <h4 class="icons task-title-text"></h4>
+                                <div class="flex flex-middle task-wrap">
+                                    <div class="task-left-wrap flex-1">
+                                        <h5 class="task-name-text">分享一次本活动</h5>
+                                        <i class="fg-line"></i>
+                                        <p class="task-msg-text">可随机获得1个配件</p>
+                                    </div>
+                                    <!-- <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','go-task-btn1','去完成任务1')"
+                                        class="icons finish-task-btn btn-hover t">去完成</a> -->
+                                    <!-- <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','get-prize-btn','领取')"
+                                        class="icons get-prize-btn btn-hover t">领取</a> -->
+                                    <a onclick="PTTSendClick('btn','get-prize-btn2','已完成')"
+                                        class="icons finish-task-btn2 t">已完成</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 任务2 -->
+                        <div class="swiper-slide">
+                            <div class="task-item">
+                                <h4 class="icons task-title-text"></h4>
+                                <div class="flex flex-middle task-wrap">
+                                    <div class="task-left-wrap flex-1">
+                                        <h5 class="task-name-text">成功邀请3位好友预约</h5>
+                                        <i class="fg-line"></i>
+                                        <p class="task-msg-text">可随机获得2个配件</p>
+                                    </div>
+                                    <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','go-task-btn2','去完成任务2')"
+                                        class="icons finish-task-btn btn-hover t">去完成</a>
+                                    <!-- <a href="javascript: alert('敬请期待！');"
+                                            onclick="PTTSendClick('btn','get-prize-btn','领取')"
+                                            class="icons get-prize-btn btn-hover t">领取</a>
+                                    <a onclick="PTTSendClick('btn','get-prize-btn2','已完成')"
+                                        class="icons finish-task-btn2 t">已完成</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 任务3 -->
+                        <div class="swiper-slide">
+                            <div class="task-item">
+                                <h4 class="icons task-title-text"></h4>
+                                <div class="flex flex-middle task-wrap">
+                                    <div class="task-left-wrap flex-1">
+                                        <h5 class="task-name-text">关注使命召唤兴趣部落</h5>
+                                        <i class="fg-line"></i>
+                                        <p class="task-msg-text">可随机获得3个配件</p>
+                                    </div>
+                                    <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','go-task-btn3','去完成任务3')"
+                                        class="icons finish-task-btn btn-hover t">去完成</a>
+                                    <!-- <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','get-prize-btn','领取')"
+                                                class="icons get-prize-btn btn-hover t">领取</a>
+                                    <a onclick="PTTSendClick('btn','get-prize-btn2','已完成')"
+                                            class="icons finish-task-btn2 t">已完成</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 任务4 -->
+                        <div class="swiper-slide">
+                            <div class="task-item">
+                                <h4 class="icons task-title-text"></h4>
+                                <div class="flex flex-middle task-wrap">
+                                    <div class="task-left-wrap flex-1">
+                                        <h5 class="task-name-text">关注使命召唤兴趣部落</h5>
+                                        <i class="fg-line"></i>
+                                        <p class="task-msg-text">可随机获得3个配件</p>
+                                    </div>
+                                    <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','go-task-btn3','去完成任务3')"
+                                        class="icons finish-task-btn btn-hover t">去完成</a>
+                                    <!-- <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','get-prize-btn','领取')"
+                                                                        class="icons get-prize-btn btn-hover t">领取</a>
+                                                            <a onclick="PTTSendClick('btn','get-prize-btn2','已完成')"
+                                                                    class="icons finish-task-btn2 t">已完成</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 任务5 -->
+                        <div class="swiper-slide">
+                            <div class="task-item">
+                                <h4 class="icons task-title-text"></h4>
+                                <div class="flex flex-middle task-wrap">
+                                    <div class="task-left-wrap flex-1">
+                                        <h5 class="task-name-text">关注使命召唤兴趣部落</h5>
+                                        <i class="fg-line"></i>
+                                        <p class="task-msg-text">可随机获得3个配件</p>
+                                    </div>
+                                    <a href="javascript: alert('敬请期待！');"
+                                        onclick="PTTSendClick('btn','go-task-btn3','去完成任务3')"
+                                        class="icons finish-task-btn btn-hover t">去完成</a>
+                                    <!-- <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','get-prize-btn','领取')"
+                                                                                                class="icons get-prize-btn btn-hover t">领取</a>
+                                                                                    <a onclick="PTTSendClick('btn','get-prize-btn2','已完成')"
+                                                                                            class="icons finish-task-btn2 t">已完成</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 图片列表 -->
+            <ul class="img-list">
+                <li class="bg img-item"></li>
+                <li class="bg img-item"></li>
+                <li class="bg img-item"></li>
+            </ul>
+            <!-- 活动规则 -->
+            <a href="javascript: TGDialogS('rulePop');" onclick="PTTSendClick('btn','rule-btn','活动规则')"
+                class="icons rule-btn btn-hover t">活动规则</a>
+        </div>
+    </div>
+
+    <!-- 恭喜获得弹夹 -->
+    <div class="p-a bg pop pop-1" id="popLj1">
+        <div class="pop-con">
+            <div class="flex flex-center flex-middle lj-container">
+                <div class="p-r light-wrap1">
+                    <i class="p-a bg light-icon-1"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/pop_lj_1.png" alt="配件">
+                    </div>
+                </div>
+                <div class="lj-right">
+                    <h5 class="lj-name-text">扩容弹匣</h5>
+                    <i class="fg-line"></i>
+                    <p class="lj-msg-text">更快的换弹速度</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜获得握把 -->
+    <div class="p-a bg pop pop-1" id="popLj2">
+        <div class="pop-con">
+            <div class="flex flex-center flex-middle lj-container">
+                <div class="p-r light-wrap1">
+                    <i class="p-a bg light-icon-1"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/pop_lj_2.png" alt="配件">
+                    </div>
+                </div>
+                <div class="lj-right">
+                    <h5 class="lj-name-text">快速握把</h5>
+                    <i class="fg-line"></i>
+                    <p class="lj-msg-text">增加瞄准速度</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 恭喜获得枪托 -->
+    <div class="p-a bg pop pop-1" id="popLj3">
+        <div class="pop-con">
+            <div class="flex flex-center flex-middle lj-container">
+                <div class="p-r light-wrap1">
+                    <i class="p-a bg light-icon-1"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/pop_lj_3.png" alt="配件">
+                    </div>
+                </div>
+                <div class="lj-right">
+                    <h5 class="lj-name-text">枪托</h5>
+                    <i class="fg-line"></i>
+                    <p class="lj-msg-text">举镜瞄准的移动速度加快</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 恭喜获得握把 -->
+    <div class="p-a bg pop pop-1" id="popLj4">
+        <div class="pop-con">
+            <div class="flex flex-center flex-middle lj-container">
+                <div class="p-r light-wrap1">
+                    <i class="p-a bg light-icon-1"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/pop_lj_4.png" alt="配件">
+                    </div>
+                </div>
+                <div class="lj-right">
+                    <h5 class="lj-name-text">消声器</h5>
+                    <i class="fg-line"></i>
+                    <p class="lj-msg-text">枪声小，开火不于雷达中显示</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 恭喜获得握把 -->
+    <div class="p-a bg pop pop-1" id="popLj5">
+        <div class="pop-con">
+            <div class="flex flex-center flex-middle lj-container">
+                <div class="p-r light-wrap1">
+                    <i class="p-a bg light-icon-1"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/pop_lj_5.png" alt="配件">
+                    </div>
+                </div>
+                <div class="lj-right">
+                    <h5 class="lj-name-text">激光指示器</h5>
+                    <i class="fg-line"></i>
+                    <p class="lj-msg-text">降低枪械开火发散度</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成AK47-繁花迷彩 -->
+    <div class="p-a bg pop pop-2" id="popHc1">
+        <div class="pop-con">
+            <div class="p-r light-wrap1 wq-light-wrap">
+                <i class="p-a bg light-icon-1"></i>
+                <div class="p-r full-img lj-img">
+                    <img src="./ossweb-img/wq_1.png" alt="武器">
+                </div>
+                <p class="p-a result-name-text t-c">AK47-繁花迷彩</p>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成武器经t验卡-精良 -->
+    <div class="p-a bg pop pop-2" id="popHc2">
+        <div class="pop-con">
+            <div class="p-r light-wrap1 wq-light-wrap">
+                <i class="p-a bg light-icon-1"></i>
+                <div class="p-r full-img lj-img">
+                    <img src="./ossweb-img/wq_2.png" alt="武器">
+                </div>
+                <p class="p-a result-name-text t-c">武器经验卡-精良<br />金币</p>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成表情动作-欧耶 -->
+    <div class="p-a bg pop pop-2" id="popHc3">
+        <div class="pop-con">
+            <div class="p-r light-wrap1 wq-light-wrap">
+                <i class="p-a bg light-icon-1"></i>
+                <div class="p-r full-img lj-img">
+                    <img src="./ossweb-img/wq_3.png" alt="武器">
+                </div>
+                <p class="p-a result-name-text t-c">表情动作-欧耶</p>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成手雷-红点 -->
+    <div class="p-a bg pop pop-2" id="popHc4">
+        <div class="pop-con">
+            <div class="p-r light-wrap1 wq-light-wrap">
+                <i class="p-a bg light-icon-1"></i>
+                <div class="p-r full-img lj-img">
+                    <img src="./ossweb-img/wq_4.png" alt="武器">
+                </div>
+                <p class="p-a result-name-text t-c">手雷-红点<br />(1天/永久)</p>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成烟雾弹-枫叶 -->
+    <div class="p-a bg pop pop-2" id="popHc5">
+        <div class="pop-con">
+            <div class="p-r light-wrap1 wq-light-wrap">
+                <i class="p-a bg light-icon-1"></i>
+                <div class="p-r full-img lj-img">
+                    <img src="./ossweb-img/wq_5.png" alt="武器">
+                </div>
+                <p class="p-a result-name-text t-c">烟雾弹-枫叶</p>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 全部奖励 -->
+    <div class="p-a bg pop pop-3" id="pop7">
+        <div class="pop-con">
+            <ul class="flex flex-center wq-list">
+                <li class="p-r light-wrap2">
+                    <i class="p-a bg light-icon-2"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/wq_1.png" alt="武器">
+                    </div>
+                    <p class="p-a result-name-text t-c">AK47-繁花迷彩</p>
+                </li>
+                <li class="p-r light-wrap2">
+                    <i class="p-a bg light-icon-2"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/wq_2.png" alt="武器">
+                    </div>
+                    <p class="p-a result-name-text t-c">武器经验卡-精良<br />金币</p>
+                </li>
+                <li class="p-r light-wrap2">
+                    <i class="p-a bg light-icon-2"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/wq_3.png" alt="武器">
+                    </div>
+                    <p class="p-a result-name-text t-c">表情动作-欧耶</p>
+                </li>
+                <li class="p-r light-wrap2">
+                    <i class="p-a bg light-icon-2"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/wq_4.png" alt="武器">
+                    </div>
+                    <p class="p-a result-name-text t-c">手雷-红点<br />(1天/永久)</p>
+                </li>
+                <li class="p-r light-wrap2">
+                    <i class="p-a bg light-icon-2"></i>
+                    <div class="p-r full-img lj-img">
+                        <img src="./ossweb-img/wq_5.png" alt="武器">
+                    </div>
+                    <p class="p-a result-name-text t-c">烟雾弹-枫叶</p>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 恭喜您合成 -->
+    <div class="p-a pop pop-share" onclick="closeDialog();" id="pop8">
+        <img src="./ossweb-img/pop_share.png" alt="">
+    </div>
+
+    <!-- 活动规则 -->
+    <div class="p-a bg pop pop-4" id="rulePop">
+        <div class="pop-con rule-wrap">
+            <ul class="rule-list">
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+                <li class="rule-item">1、活动规则内容活动规则内容活动规则内容活动规则</li>
+            </ul>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!--下面是横屏提示-->
+    <div id="orientLayer" class="mod-orient-layer">
+        <div class="mod-orient-layer_content">
+            <div class="mod-orient-layer_desc"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script>
+
+        //加载帧图
+        var imgList = [
+            './ossweb-img/zt_1.png',
+            './ossweb-img/zt_2.png',
+            './ossweb-img/zt_3.png',
+            './ossweb-img/zt_4.png',
+            './ossweb-img/zt_5.png',
+            './ossweb-img/zt_6.png',
+            './ossweb-img/zt_7.png',
+            './ossweb-img/zt_8.png',
+            './ossweb-img/zt_9.png',
+            './ossweb-img/zt_10.png',
+            './ossweb-img/zt_11.png',
+            './ossweb-img/zt_12.png',
+            './ossweb-img/zt_13.png',
+            './ossweb-img/zt_14.png',
+            './ossweb-img/zt_15.png',
+        ];
+        function loadImg() {
+            var that = this,
+                imgLoad = 0;
+            imgList.forEach(function (ev, index) {
+                var img = new Image();
+                img.src = ev;
+                img.style.position = 'absolute';
+                img.idx = index;
+                img.onload = function () {
+                    imgList[this.idx].obj = this;
+                    imgLoad++;
+                    if (imgLoad >= imgList.length) {
+                        ztPlay();
+                    }
+                }
+                $(img).appendTo(".head-bg");
+            });
+        }
+        loadImg();
+
+        //播放帧图
+        function ztPlay() {
+            var $headWrap = $(".head-bg img"),
+                idx = 0;
+            var setTimer = setInterval(function () {
+                $headWrap.eq(idx).show();
+                idx++;
+                if (idx > $headWrap.length) {
+                    $headWrap.hide();
+                    idx = 0;
+                }
+            }, 3000 / 15);
+        }
+
+        //播放音乐
+        var music = document.getElementById('musicWrap');
+        music.play();
+        $(window).one('touchstart', function () {
+            music.play();
+        });
+        //微信下兼容处理
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            music.play();
+        }, false);
+        //音乐开关
+        var switchMusic = $(".play-icon");
+        function musicSwitch() {
+            if (switchMusic.hasClass('off')) {
+                music.play();
+                switchMusic.removeClass("off");
+            } else {
+                music.pause();
+                switchMusic.addClass("off");
+            }
+        }
+
+        //完成任务得配件
+        var taskSwiper = new Swiper('.swiper-container', {
+            // autoplay: 5000,//可选选项，自动滑动
+            pagination: '.swiper-pagination',
+        });
+
+        //关闭引导分享
+        $("html,body").on("touchstart", '#_overlay_', function () {
+            closeDialog();
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        };
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200311yyjk", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>

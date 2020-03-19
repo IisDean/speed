@@ -1,0 +1,260 @@
+/* H5 暂存箱的弹窗 */
+.z_c_box{
+    background: #fff;
+    display: inline-block;
+}
+.z_c_box .act_pop_table th{
+    background-color: #f2f6ff;
+    color:#535456;
+    font-weight: bold;
+    text-align: center
+}
+.z_c_box .act_pop_table td{
+    color: #868686;
+    border: 1px solid #eeeeee
+}
+.z_c_box .noPackage td{
+    color: #7c95b8;
+}
+.z_c_box .cz_td span{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.z_c_box thead tr{
+    border: 1px solid #eee;
+    border-bottom:none;
+}
+.z_c_box .text_c{
+    color: #868686;
+}
+/* H5 暂存箱的弹窗 */
+/*�ֻ�����ʽ*/
+.luban-template-35>div {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+}
+.luban-template-35 p {
+    line-height: .36rem;
+    font-size: .24rem;
+}
+.luban-template-35 .color-red {
+    color: red;
+}
+.luban-template-63 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-63 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-63 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-63 .luban-button {
+    margin: 0.36rem 0.25rem 0;
+}
+.luban-template-63 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-84 .text2 {
+    margin-top: .14rem;
+    margin-bottom: .14rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template-48 h2 {
+    margin-top: 0.44rem;
+}
+.luban-template-48 .text1 {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 5.6rem;
+}
+.luban-template-48 .img1 {
+    width: 6.9rem;
+    height: 3.45rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+}
+.luban-template-48 .luban-button {
+    margin-top: 0.36rem;
+}
+.luban-template-48 .text2 {
+    margin-top: 0.12rem;
+    margin-bottom: 0.46rem;
+}
+.luban-template{margin-top:0.2rem;}

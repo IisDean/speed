@@ -1,0 +1,580 @@
+/* pc 暂存箱的弹窗 */
+.z_c_box {
+    background: #fff;
+    display: inline-block;
+}
+
+.z_c_box .act_pop_table th {
+    background-color: #f2f6ff;
+    color: #535456;
+    font-weight: bold;
+    text-align: center
+}
+
+.z_c_box .act_pop_table td {
+    color: #868686;
+    border: 1px solid #eeeeee
+}
+
+.z_c_box .cz_td {
+    width: 300px;
+}
+
+.z_c_box .cz_td span {
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    padding: 0 8px;
+    margin: 0 4px;
+}
+
+.z_c_box .noPackage td {
+    color: #7c95b8;
+}
+
+.z_c_box thead tr {
+    border: 1px solid #eee;
+    border-bottom: none;
+}
+
+.z_c_box .text_c {
+    color: #868686;
+}
+
+/* pc 暂存箱的弹窗 */
+/*PC����ʽ*/
+.luban-template-45>img {
+    width: 1000px;
+    height: 480px;
+}
+
+.luban-template-45>span {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    min-height: 32px;
+}
+
+.luban-template-45 .btns {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.luban-template-45 .btns>a {
+    margin: 0 80px;
+}
+
+.luban-template-23>div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.luban-template-23 p {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.luban-template-23 .color-red {
+    color: red;
+}
+
+.luban-template-85 .text2 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.luban-template-50 h2 {
+    margin-top: 36px;
+}
+
+.luban-template-50 .text1 {
+    margin-top: 10px;
+}
+
+.luban-template-50 .group-box {
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.luban-template-50 .img1 {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.luban-template-50 .luban-button {
+    margin-top: 26px;
+}
+
+.luban-template-50 .text2 {
+    margin-top: 12px;
+    margin-bottom: 46px;
+}
+
+.luban-template-60 h2 {
+    margin-top: 36px;
+}
+
+.luban-template-60 .text1 {
+    margin-top: 10px;
+}
+
+.luban-template-60 .template-boxs {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.luban-template-60 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+
+.luban-template-60 .template-box .template-box-item {
+    position: relative;
+}
+
+.luban-template-60 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.luban-template-60 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+
+.luban-template-60 .luban-button {
+    margin-top: 4px;
+}
+
+.luban-template-60 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.luban-template-84 .text2 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.luban-template-116 h2 {
+    margin-top: 36px;
+}
+
+.luban-template-116 .text1 {
+    margin-top: 10px;
+}
+
+.luban-template-116 .template-boxs {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.luban-template-116 .template-box {
+    width: 192px;
+    height: 266px;
+    float: left;
+}
+
+.luban-template-116 .template-box .template-box-item {
+    position: relative;
+}
+
+.luban-template-116 .template-box .template-box-item .img-bg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.luban-template-116 .template-box .good-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #555555;
+    height: 50px;
+}
+
+.luban-template-116 .luban-button {
+    margin-top: 4px;
+}
+
+.luban-template-116 .text2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.luban-template {
+    margin-top: 20px;
+}
+
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol,
+li,
+span {
+    padding: 0;
+    list-style: none;
+}
+
+.c:after {
+    content: "\0020";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.c {
+    zoom: 1;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.hh {
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+}
+
+/*public*/
+.ost_box {
+    min-width: 1200px;
+}
+
+html,
+body {
+    position: relative;
+    min-width: 1200px;
+}
+
+body {
+    padding-top: 42px;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.mid {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    text-align: center;
+}
+
+.head-a a:hover,
+.box .lqjl-btn:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+/*** footer  **/
+#afooter {
+    min-width: 1200px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0;
+    color: #6a6a6a;
+    background: #0e0e0e;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 5px;
+}
+
+#afooter .notice {
+    display: none;
+}
+
+#afooter a {
+    color: #6a6a6a;
+}
+
+#afooter p {
+    line-height: 20px;
+}
+
+#stage h1,
+#stage h2,
+#stage h3,
+#stage p,
+#stage span {
+    line-height: 1;
+}
+
+#stage {
+    margin-top: 87px;
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.icons {
+    display: block;
+    background-image: url("//game.gtimg.cn/images/cfm/cp/a20200225march/icons.png");
+    background-repeat: no-repeat;
+    background-size: 432px auto;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img img {
+    display: block;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.t-of {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.btn-hover:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.luban-head {
+    height: 769px;
+    background-image: url('./bg1.jpg');
+}
+
+.luban-dl {
+    margin-top: 0;
+    height: 60px;
+    background-image: url('./bg_dl.jpg');
+}
+
+.luban-day {
+    margin-top: 0;
+    height: 581px;
+    background-image: url('./bg_day.jpg');
+}

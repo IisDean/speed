@@ -1,0 +1,882 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+.c:after {
+    content: "\0020";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.c {
+    zoom: 1;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.hh {
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+}
+
+/*topbar*/
+.topbar {
+    background: #1d1d1e;
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    min-width: 1000px;
+    position: relative;
+    z-index: 100;
+}
+
+.top-l .logo {
+    width: 155px;
+    height: 44px;
+    position: absolute;
+    left: 50px;
+    top: 9px;
+    background: url(./logo.png) center center no-repeat;
+    z-index: 2;
+}
+
+.top-l .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.login {
+    padding: 17px 0 0 400px;
+}
+
+.login a {
+    background: #111114;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #adadad;
+}
+
+.login a:hover {
+    color: #fff;
+}
+
+.top-r {
+    position: absolute;
+    top: 16px;
+    right: 38px;
+}
+
+.gw-btn,
+.down-btn {
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 18px;
+    text-align: center;
+    color: #d7c66c;
+    border-radius: 15px;
+    border: 1px #d7c66c solid;
+    float: left;
+    font-size: 14px;
+    display: block;
+}
+
+.gw-btn:hover,
+.down-btn:hover {
+    color: #c7af31;
+}
+
+.top-ico-box {
+    width: 188px;
+    float: left;
+}
+
+.top-ico {
+    background: url("./top-ico.png") no-repeat;
+    width: 37px;
+    height: 37px;
+    display: block;
+    float: left;
+    margin-right: 9px;
+    position: relative;
+}
+
+.top-ico-box .top-ico img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50px;
+    margin-left: -100px;
+    display: none;
+}
+
+.top-ico-box .ico1 {
+    background-position: 0 0;
+}
+
+.top-ico-box .ico2 {
+    background-position: -46px 0;
+}
+
+.top-ico-box .ico3 {
+    background-position: -92px 0;
+}
+
+.top-ico-box .ico4 {
+    background-position: -137px 0;
+}
+
+.top-ico-box .ico1:hover {
+    background-position: 0 -47px;
+}
+
+.top-ico-box .ico2:hover {
+    background-position: -46px -47px;
+}
+
+.top-ico-box .ico3:hover {
+    background-position: -92px -47px;
+}
+
+.top-ico-box .ico4:hover {
+    background-position: -137px -47px;
+}
+
+.top-ico-box a:hover {
+    transition: .2s background-position ease-in-out;
+    -webkit-transition: .2s background-position ease-in-out;
+}
+
+/*.top-l .hdlogo{ background: url("//game.gtimg.cn/images/nba2kx/cp/a20190916gift/logo2.png") no-repeat;  width: 118px;  height: 44px;  position: absolute;  left: 240px;  top: 9px;  }*/
+.top-l .hdlogo {
+    width: 141px;
+    height: 42px;
+    position: absolute;
+    left: 230px;
+    top: 9px;
+    display: block;
+    background: url("./djc.png") no-repeat;
+}
+
+/*public*/
+html,
+body {
+    position: relative;
+    min-width: 1200px;
+}
+
+.ost_box {
+    min-width: 1200px !important;
+}
+
+body {
+    padding-top: 42px;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.head-a a:hover,
+.box .lqjl-btn:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+/*** footer  **/
+#afooter {
+    min-width: 1000px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0;
+    color: #6a6a6a;
+    background: #0e0e0e;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 5px;
+}
+
+#afooter .notice {
+    display: none;
+}
+
+#afooter a {
+    color: #6a6a6a;
+}
+
+#stage {
+    min-width: 1200px;
+    height: 2825px;
+    background-image: url('./page_bg.jpg');
+    overflow: hidden;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.icons {
+    display: block;
+    background-image: url("./icons.png");
+    background-repeat: no-repeat;
+    background-size: 973px auto;
+}
+
+.t {
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img img {
+    display: block;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.t-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.pop {
+    width: 700px;
+    height: 525px;
+}
+
+.close-btn {
+    width: 51px;
+    height: 51px;
+    background-position: -348px -424px;
+    top: 0;
+    right: -51px;
+}
+
+/* 头部 */
+.head-wrap {
+    height: 637px;
+    overflow: hidden;
+}
+
+.time-msg-text {
+    margin-top: 467px;
+    line-height: 1;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn-container {
+    margin-top: 30px;
+    font-size: 0;
+}
+
+.btn-container .btn-wrap {
+    display: inline-block;
+    width: 234px;
+    height: 60px;
+}
+
+.push-gw-btn {
+    background-position: 0 -299px;
+}
+
+.download-btn {
+    margin-left: 30px;
+    background-position: -239px -299px;
+}
+
+/* 活动流程 */
+.step-container {
+    height: 214px;
+    overflow: hidden;
+}
+
+.step-list {
+    margin: 42px auto 0;
+    width: 1000px;
+    height: 130px;
+    background-image: url('./step_bg.png');
+    overflow: hidden;
+}
+
+.step-list .step-item {
+    margin-top: 58px;
+    padding: 0 24px 0 13px;
+    box-sizing: border-box;
+}
+
+.step-list .step-item.s-i-1 {
+    margin-left: 120px;
+    width: 329px;
+}
+
+.step-list .step-item.s-i-2 {
+    margin-left: 10px;
+    width: 267px;
+}
+
+.step-list .step-item.s-i-3 {
+    margin-left: 10px;
+}
+
+.step-msg-text {
+    line-height: 28px;
+    font-size: 16px;
+    color: #c4d9ff;
+}
+
+.step-msg-text span {
+    color: #f3eaaf;
+}
+
+/* 完成任务，免费领惊喜福袋 */
+.fd-container {
+    height: 484px;
+    overflow: hidden;
+}
+
+.title-icon {
+    margin: 0 auto;
+    width: 973px;
+    height: 141px;
+}
+
+.title-icon-1 {
+    margin-top: 20px;
+    background-position: 0 0;
+}
+
+.title-msg-text {
+    line-height: 22px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.title-icon-1 .title-msg-text {
+    margin-top: 10px;
+}
+
+.rw-container {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 190px;
+    border: 1px solid #3672eb;
+}
+
+.rw-left {
+    width: 403px;
+    height: 188px;
+    background-color: #09245a;
+}
+
+.rw-title-text {
+    margin-top: 42px;
+    line-height: 1;
+    font-size: 24px;
+    color: #82aeff;
+}
+
+.rw-msg-text {
+    margin-top: 21px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.rw-right {
+    width: 595px;
+}
+
+.rw-container .rw-prize-list {
+    margin-top: 13px;
+    margin-left: 32px;
+}
+
+.rw-prize-item {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #4c88f2;
+}
+
+.rw-prize-num {
+    bottom: -1px;
+    left: -1px;
+    box-sizing: border-box;
+    padding-right: 7px;
+    width: 38px;
+    height: 21px;
+    background-position: -673px -364px;
+    line-height: 21px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.add-icon {
+    margin: 40px 16px 0;
+    width: 16px;
+    height: 16px;
+    background-position: -716px -364px;
+}
+
+.ticket-icon {
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 20px;
+    background-position: -600px -364px;
+}
+
+.rw-prize-text {
+    margin-top: 3px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.rw-prize-btn {
+    margin: 0 auto;
+    width: 194px;
+    height: 38px;
+    background-position: -402px -364px;
+}
+
+.arrow-down {
+    margin: 10px auto 0;
+    width: 41px;
+    height: 48px;
+    background-position: -695px -299px;
+}
+
+/* 打开幸运之盒 开启专属好运 */
+.lucky-container {
+    height: 961px;
+    overflow: hidden;
+}
+
+.title-icon-2 {
+    background-position: 0 -146px;
+}
+
+.lucky-container .title-msg-text {
+    margin-top: 10px;
+}
+
+.lucky-gift-list {
+    margin-top: 40px;
+}
+
+.lucky-gift-item {
+    margin-top: 25px;
+    margin-right: 17px;
+    width: 237px;
+    height: 185px;
+    background-image: url('./gift_bg.png');
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.lucky-gift-item.mr-0 {
+    margin-right: 0;
+}
+
+.gift-icon,
+.gift-icon-2 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 232px;
+    pointer-events: none;
+}
+
+.gift-icon-2 {
+    display: none;
+    z-index: 1;
+}
+
+.open-gift-btn {
+    display: none;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0 auto;
+    width: 212px;
+    height: 55px;
+    background-position: -479px -299px;
+    cursor: pointer;
+}
+
+.lucky-gift-item.active {
+    pointer-events: none;
+}
+
+.lucky-gift-item.active .gift-icon-2,
+.lucky-gift-item:hover .gift-icon-2,
+.lucky-gift-item:hover .open-gift-btn {
+    display: block;
+}
+
+.lucky-gift-item.active .gift-icon-1,
+.lucky-gift-item:hover .gift-icon-1 {
+    display: none;
+}
+
+/* 幸运之盒奖励一览 */
+.lucky-prize-container {
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 273px;
+    border: 1px solid #4c88f2;
+}
+
+.prize-title-icon {
+    width: 228px;
+    height: 45px;
+    background-position: 0 -364px;
+}
+
+.swiper-1 {
+    margin: 30px auto 0;
+}
+
+.swiper-1,
+.swiper-1 .swiper-container {
+    width: 900px;
+    height: 166px;
+}
+
+.swiper-1 .lucky-msg-item {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 196px;
+    height: 166px;
+    border: 1px solid #4175d6;
+    background-image: url('./dj_bg.jpg');
+}
+
+.lucky-msg-wrap {
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+}
+
+.lp-title-text {
+    line-height: 20px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+.page-btn {
+    top: 125px;
+    width: 37px;
+    height: 42px;
+}
+
+.swiper1-perv-btn {
+    left: 0;
+    background-position: -233px -364px;
+}
+
+.swiper1-perv-btn:hover {
+    background-position: -317px -364px;
+}
+
+.swiper1-next-btn {
+    right: 0;
+    background-position: -275px -364px;
+}
+
+.swiper1-next-btn:hover {
+    background-position: -359px -364px;
+}
+
+/* 活动说明 */
+.rule-title-text {
+    margin-top: 50px;
+    line-height: 1;
+    font-size: 32px;
+    color: #2ab8e0;
+}
+
+.rule-list {
+    margin-top: 18px;
+}
+
+.rule-item {
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.look-detail-btn {
+    color: #2ab8e0;
+}
+
+.look-detail-btn:hover {
+    text-decoration: underline;
+}
+
+.foot-share-wrap {
+    margin: 20px auto 0;
+    width: 1000px;
+}
+
+.foot-share-item {
+    margin-left: 33px;
+    width: 225px;
+    height: 155px;
+    background-image: url("./foot_share.png");
+    background-size: 1000px auto;
+}
+
+.code-wrap {
+    display: none;
+    margin: 18px auto 0;
+    width: 120px;
+}
+
+.foot-share-wrap .foot-share-item1 {
+    margin-left: 0;
+    background-position: 0 0;
+}
+
+.foot-share-item2 {
+    background-position: -258px 0;
+}
+
+.foot-share-item3 {
+    background-position: -517px 0;
+}
+
+.foot-share-item4 {
+    background-position: -775px 0;
+}
+
+.foot-share-item2:hover .code-wrap,
+.foot-share-item3:hover .code-wrap {
+    display: block;
+}
+
+/* 弹窗 */
+.pop {
+    display: none;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.pop-1 {
+    margin-top: -470px;
+    padding: 13px 24px 51px 16px;
+    width: 552px;
+    height: 288px;
+    background-image: url('./pop_1.png');
+}
+
+.pop-2 {
+    margin-top: -446px;
+    padding: 13px 24px 51px 16px;
+    width: 642px;
+    height: 268px;
+    background-image: url('./pop_2.png');
+}
+
+.pop-title-text {
+    margin-top: 12px;
+    margin-left: 20px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.pop-title-text span {
+    color: #83b0ff;
+}
+
+.rw-prize-container {
+    margin-left: 20px;
+}
+
+.pop .rw-prize-list {
+    margin-top: 17px;
+}
+
+.pop .rw-prize-list li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pop .rw-prize-list li.add-icon {
+    margin: 40px 6px 0;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin: 42px auto 0;
+    width: 194px;
+    height: 43px;
+    background-position: -737px -364px;
+}
+
+.pop-prize-text {
+    margin-top: 14px;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+.code-fixed {
+    position: fixed;
+    top: 272px;
+    right: 100px;
+    z-index: 9999;
+    width: 158px;
+}
+
+.arrow-icon {
+    display: block;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 52px;
+    height: 32px;
+    background-image: url('./pop_arrow.png');
+}
+
+.pop.left .arrow-icon {
+    left: 164px;
+    right: auto;
+    margin: 0;
+}

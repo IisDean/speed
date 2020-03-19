@@ -1,0 +1,1184 @@
+/*reset*/
+html,
+body,
+div,
+section,
+p,
+ul,
+li,
+form,
+table,
+td,
+a,
+dl,
+dt,
+dd,
+em,
+i,
+span,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    /* -webkit-user-select: none; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+a:focus,
+a:active,
+a {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+em,
+i,
+b {
+    font-style: normal;
+}
+
+fieldset,
+img {
+    border: 0;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.c:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.hh {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.p-r {
+    position: relative;
+}
+
+.p-a {
+    position: absolute;
+}
+
+html {
+    font-size: 100px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #1f272d;
+    font-size: 0.24rem;
+    color: #a8b4cc;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.flex-middle {
+    align-items: center;
+}
+
+.stage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* overflow: scroll; */
+}
+
+.stage h1,
+.stage h2,
+.stage h3,
+.stage p,
+.stage span,
+.stage div {
+    line-height: 1;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.bg {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.icons {
+    display: block;
+    background-image: url("./icons.png");
+    background-repeat: no-repeat;
+    background-size: 7.5rem auto;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+a {
+    cursor: pointer;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img,
+.full-img img {
+    display: block;
+}
+
+.full-img img {
+    width: 100%;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.t-h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+/* 加载页 */
+.load-wrap {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/load_bg.jpg');
+    background-size: 100% auto;
+    background-position: bottom center;
+}
+
+.load-pro {
+    top: 50%;
+    left: 50%;
+    margin-top: -.8rem;
+    margin-left: -1.5rem;
+    width: 3rem;
+    height: 1.55rem;
+    background-image: url('../img/load_icon.png');
+}
+
+.load-text {
+    margin-top: .2rem;
+    font-size: .34rem;
+    color: #fff;
+}
+
+/* 音乐 */
+.play-icon {
+    top: .2rem;
+    right: .2rem;
+    z-index: 1;
+}
+
+.play-icon,
+.play-icon i {
+    width: .69rem;
+    height: .69rem;
+}
+
+.play-icon i {
+    background-image: url('../img/music_on.png');
+}
+
+.play-icon.off i {
+    background-image: url('../img/music_off.png');
+}
+
+/* 内容 */
+.page-container {
+    /* margin-top: -55rem; */
+    bottom: 0;
+    width: 100%;
+    height: 90.52rem;
+    background-image: url('../img/page_bg.jpg');
+}
+
+.angle-icon {
+    top: 65%;
+    left: -25%;
+    z-index: 9999;
+    width: 2rem;
+    height: 2rem;
+}
+
+.angle-icon img {
+    display: none;
+}
+
+.angle-icon {
+    top: 65%;
+    left: -25%;
+    z-index: 9999;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/angle.png');
+    background-size: 8rem auto;
+    animation: anglePlay 1.2s steps(1, start) infinite;
+    -webkit-animation: anglePlay 1.2s steps(1, start) infinite;
+}
+
+@keyframes anglePlay {
+
+    0%,
+    5.2% {
+        background-position: 0 0;
+    }
+
+    10.4% {
+        background-position: -2rem 0;
+    }
+
+    15.6% {
+        background-position: -4rem 0;
+    }
+
+    20.8% {
+        background-position: -6rem 0;
+    }
+
+    26% {
+        background-position: 0 -2rem;
+    }
+
+    31.2% {
+        background-position: -2rem -2rem;
+    }
+
+    36.4% {
+        background-position: -4rem -2rem;
+    }
+
+    41.6% {
+        background-position: -6rem -2rem;
+    }
+
+    46.8% {
+        background-position: 0 -4rem;
+    }
+
+    52% {
+        background-position: -2rem -4rem;
+    }
+
+    57.2% {
+        background-position: -4rem -4rem;
+    }
+
+    62.4% {
+        background-position: -6rem -4rem;
+    }
+
+    67.6% {
+        background-position: 0 -6rem;
+    }
+
+    72.8% {
+        background-position: -2rem -6rem;
+    }
+
+    78% {
+        background-position: -4rem -6rem;
+    }
+
+    83.2% {
+        background-position: -6rem -6rem;
+    }
+
+    88.4% {
+        background-position: 0 -8rem;
+    }
+
+    93.6% {
+        background-position: -2rem -8rem;
+    }
+
+    100% {
+        background-position: -4rem -8rem;
+    }
+}
+
+@-webkit-keyframes anglePlay {
+
+    0%,
+    5.2% {
+        background-position: 0 0;
+    }
+
+    10.4% {
+        background-position: -2rem 0;
+    }
+
+    15.6% {
+        background-position: -4rem 0;
+    }
+
+    20.8% {
+        background-position: -6rem 0;
+    }
+
+    26% {
+        background-position: 0 -2rem;
+    }
+
+    31.2% {
+        background-position: -2rem -2rem;
+    }
+
+    36.4% {
+        background-position: -4rem -2rem;
+    }
+
+    41.6% {
+        background-position: -6rem -2rem;
+    }
+
+    46.8% {
+        background-position: 0 -4rem;
+    }
+
+    52% {
+        background-position: -2rem -4rem;
+    }
+
+    57.2% {
+        background-position: -4rem -4rem;
+    }
+
+    62.4% {
+        background-position: -6rem -4rem;
+    }
+
+    67.6% {
+        background-position: 0 -6rem;
+    }
+
+    72.8% {
+        background-position: -2rem -6rem;
+    }
+
+    78% {
+        background-position: -4rem -6rem;
+    }
+
+    83.2% {
+        background-position: -6rem -6rem;
+    }
+
+    88.4% {
+        background-position: 0 -8rem;
+    }
+
+    93.6% {
+        background-position: -2rem -8rem;
+    }
+
+    100% {
+        background-position: -4rem -8rem;
+    }
+}
+
+
+.angle-icon img {
+    display: none;
+}
+
+.star-1,
+.star-2,
+.star-3 {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.star-1 {
+    background-image: url('../img/star_1.png');
+    animation: star 1s linear infinite;
+}
+
+.star-2 {
+    background-image: url('../img/star_2.png');
+    animation: star 1s 1s linear infinite;
+}
+
+.star-3 {
+    background-image: url('../img/star_3.png');
+}
+
+@keyframes star {
+
+    0%,
+    100% {
+        opacity: .3;
+    }
+
+    40%,
+    55% {
+        opacity: 1;
+    }
+}
+
+/* 最终页 */
+.wrap-1 {
+    height: 14.27rem;
+    overflow: hidden;
+}
+
+.end-title-wrap {
+    top: 3.22rem;
+    left: 1.12rem;
+}
+
+.end-title-text {
+    font-weight: bold;
+    font-size: .32rem;
+    color: #fff;
+}
+
+.end-title-text span {
+    font-size: .92rem;
+    color: #ff6c8c;
+}
+
+.result-wrap {
+    top: 6.6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: .24rem .1rem 0 .7rem;
+    box-sizing: border-box;
+    width: 5.34rem;
+    height: 1.79rem;
+    background-image: url('../img/result_bg.png');
+}
+
+.result-title-text {
+    font-size: .32rem;
+    color: #3b71a9;
+}
+
+.result-msg-text {
+    margin-top: .1rem;
+    line-height: .4rem !important;
+    font-size: .32rem;
+    color: #e37597;
+}
+
+.create-poster-btn {
+    top: 12rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 2.91rem;
+    height: .75rem;
+    background-image: url('../img/p4_btn.png');
+}
+
+.logo-icon {
+    display: none;
+    top: 13rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 3.81rem;
+    height: .86rem;
+    background-image: url('../img/logo.png');
+}
+
+/* 春暖花开 我们能感受这份美好 */
+.wrap-2 {
+    height: 8.51rem;
+    overflow: hidden;
+}
+
+.p2-list {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 5.36rem;
+    height: 1.65rem;
+}
+
+.p2-list .p2-item {
+    margin-bottom: .24rem;
+    width: 100%;
+    height: .24rem;
+    background-image: url('../img/p3_text.png');
+}
+
+.p2-list .p2-item:nth-child(1) {
+    background-position: 0 0;
+}
+
+.p2-list .p2-item:nth-child(2) {
+    background-position: 0 -.48rem;
+}
+
+.p2-list .p2-item:nth-child(3) {
+    background-position: 0 -.94rem;
+}
+
+.p2-list .p2-item:nth-child(4) {
+    background-position: 0 -1.42rem;
+}
+
+/* 祈福数 & 让爱起航 */
+.wrap-3 {
+    height: 14.24rem;
+    overflow: hidden;
+}
+
+.qzh-5 {
+    top: 1.6rem;
+    left: 2.5rem;
+    width: 1.12rem;
+    height: .67rem;
+    background-image: url('../img/qzh_5.png');
+}
+
+.qzh-4 {
+    top: 2.2rem;
+    left: 4.06rem;
+    width: 2.12rem;
+    height: 1.28rem;
+    background-image: url('../img/qzh_4.png');
+}
+
+.qzh-3 {
+    top: 2.04rem;
+    left: 5.52rem;
+    width: 3.49rem;
+    height: 2.3rem;
+    background-image: url('../img/qzh_3.png');
+}
+
+.qzh-2 {
+    top: 3.9rem;
+    left: -.04rem;
+    width: 4.03rem;
+    height: 2.8rem;
+    background-image: url('../img/qzh_2.png');
+}
+
+.qzh-1 {
+    top: 5.1rem;
+    left: 2.05rem;
+    width: 5.47rem;
+    height: 3.91rem;
+    background-image: url('../img/qzh_1.png');
+}
+
+.flower-icons {
+    top: 5.9rem;
+    left: 0;
+    width: 7.5rem;
+    height: 5.23rem;
+    background-image: url('../img/flower.png');
+}
+
+.qifu-wrap {
+    top: 2.14rem;
+    left: .54rem;
+    width: 3.44rem;
+    height: 1.13rem;
+    background-image: url('../img/p3_count_bg.png');
+}
+
+.qifu-text {
+    display: block;
+    margin-top: .72rem;
+    font-size: .36rem;
+    color: #fff;
+}
+
+.add-one {
+    display: none;
+    top: .2rem;
+    left: 44%;
+    font-weight: bold;
+    font-size: .48rem;
+    color: #fff;
+    animation: addOne .6s linear forwards;
+    -webkit-animation: addOne .6s linear forwards;
+}
+
+@keyframes addOne {
+    to {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes addOne {
+    to {
+        -webkit-transform: translateY(-15px);
+        opacity: 0;
+    }
+}
+
+.qihang-btn {
+    display: block;
+    top: 9.94rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 2.91rem;
+    height: .75rem;
+    background-image: url('../img/p3_btn.png');
+}
+
+/* 请选择您的祈福语 */
+.wrap-4 {
+    height: 16.52rem;
+    overflow: hidden;
+}
+
+.five-inset {
+    top: 2.68rem;
+    left: 2.61rem;
+    width: 2.11rem;
+    height: 1.96rem;
+    background-image: url('../img/xinzhi_inset.png');
+}
+
+.flower-dz {
+    top: 1.06rem;
+    width: 7.35rem;
+    height: 12.85rem;
+    background-image: url('../img/flower_dz.png');
+}
+
+.wrap-4 .flower-icon1 {
+    top: 8.2rem;
+    left: .68rem;
+}
+
+.wrap-4 .flower-icon2 {
+    top: 3.3rem;
+    left: .4rem;
+}
+
+.qifu-list {
+    margin-top: 4.6rem;
+}
+
+.qifu-item {
+    margin-bottom: .64rem;
+    padding: 0 .1rem .28rem .5rem;
+    box-sizing: border-box;
+    width: 3.98rem;
+    height: 1.34rem;
+    background-image: url('../img/select_bg.png');
+}
+
+.qifu-item.active {
+    background-image: url('../img/select_active_bg.png');
+}
+
+.qifu-list .qifu-item:nth-child(1) {
+    margin-left: 2.26rem;
+}
+
+.qifu-list .qifu-item:nth-child(2) {
+    margin-left: 2.75rem;
+}
+
+.qifu-list .qifu-item:nth-child(3) {
+    margin-left: 1.82rem;
+}
+
+.qifu-item span {
+    font-weight: bold;
+    line-height: .28rem;
+    font-size: .24rem;
+    color: #3b71a9;
+}
+
+.change-qifu-btn {
+    display: block;
+    margin: .16rem auto 0;
+    width: 1.4rem;
+    height: 1.62rem;
+    background-image: url('../img/p2_btn.png');
+}
+
+.qifu-tips-text {
+    margin: .34rem auto 0;
+    font-size: .24rem;
+    color: #fff;
+}
+
+/* 为爱祈福 */
+.wrap-5 {
+    height: 14.25rem;
+    overflow: hidden;
+}
+
+.flower-icon1 {
+    width: 1.6rem;
+    height: 1.54rem;
+    background-image: url('../img/flower_2.png');
+}
+
+.flower-icon2 {
+    width: 1.04rem;
+    height: 1.01rem;
+    background-image: url('../img/flower_1.png');
+}
+
+.wrap-5 .flower-icon1 {
+    top: 3.82rem;
+    left: -.7rem;
+}
+
+.wrap-5 .flower-icon2 {
+    top: 3.3rem;
+    left: .4rem;
+}
+
+.zhi-icon {
+    top: 5.38rem;
+    left: .85rem;
+    width: 6.01rem;
+    height: 8.63rem;
+    background-image: url('../img/zhi.png');
+}
+
+.xin-text {
+    left: .64rem;
+    width: 4.68rem;
+    background-image: url('../img/xin_text.png');
+}
+
+.xin-text-1 {
+    top: 2.52rem;
+    background-position: 0 0;
+    height: .25rem;
+}
+
+.xin-text-2 {
+    top: 3rem;
+    background-position: 0 -.47rem;
+    height: .25rem;
+}
+
+.xin-text-3 {
+    top: 3.83rem;
+    background-position: 0 -1.29rem;
+    height: .32rem;
+}
+
+.xin-text-4 {
+    top: 4.35rem;
+    background-position: 0 -1.81rem;
+    height: .39rem;
+}
+
+.qzh-zhi-icon {
+    top: 4.66rem;
+    left: 2.33rem;
+    z-index: 1;
+    width: 2.72rem;
+    height: 2.12rem;
+    background-image: url('../img/zhi_qzh.png');
+}
+
+.bi-icon {
+    top: 10.4rem;
+    right: 0;
+    z-index: 1;
+    width: 3.66rem;
+    height: 2.27rem;
+    background-image: url('../img/bi.png');
+}
+
+.pingzi-icon {
+    top: 3.82rem;
+    left: 1.32rem;
+    z-index: 1;
+    width: 2.55rem;
+    height: 3.93rem;
+    background-image: url('../img/pingzi.png');
+}
+
+.input-wrap {
+    z-index: 1;
+    margin-top: 9.6rem;
+    margin-left: 3rem;
+    width: 2rem;
+    height: .58rem;
+    border: none;
+    background-color: transparent;
+    font-size: .3rem;
+    color: #e08fa1;
+}
+
+.input-wrap::-webkit-input-placeholder {
+    color: #e08fa1;
+}
+
+.submit-btn {
+    display: block;
+    top: 10.64rem;
+    left: 2.14rem;
+    width: 1.66rem;
+    height: 1.45rem;
+    background-image: url('../img/p1_btn.png');
+}
+
+.submit-btn::after {
+    display: block;
+    margin-top: -.1rem;
+    margin-left: -.08rem;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-image: url('../img/tap.png');
+    background-size: 100% 100%;
+    opacity: .8;
+    pointer-events: none;
+}
+
+/* 一件首饰 一份守护 */
+.wrap-6 {
+    height: 8.5rem;
+}
+
+.sh-icon {
+    display: block;
+    top: 1.4rem;
+    left: 1.24rem;
+    width: 4.46rem;
+    height: 6.42rem;
+    background-image: url('../img/p1_text.png');
+    animation-delay: 2s !important;
+}
+
+
+.wrap-7 {
+    height: 14.25rem;
+}
+
+.xl-icon {
+    top: 6.7rem;
+    right: 0;
+    width: 2.9rem;
+    height: 4.34rem;
+    background-image: url('../img/p4_sp.png');
+}
+
+/* 动画 */
+.input-wrap,
+.submit-btn,
+.xin-text-1,
+.xin-text-2,
+.xin-text-3,
+.xin-text-4,
+.sh-icon,
+.qihang-btn,
+.p2-item,
+.logo-icon {
+    opacity: 0;
+    transform: translateY(.3rem);
+    -webkit-transform: translateY(.3rem);
+}
+
+/* .pingzi-icon,
+.qzh-zhi-icon {
+    transform: translate(-.2rem, -.2rem);
+    -webkit-transform: translate(-.2rem, -.2rem);
+    opacity: 0;
+} */
+
+.qifu-list .qifu-item {
+    opacity: 0;
+    transform: translateX(.3rem);
+    -webkit-transform: translateX(.3rem);
+}
+
+.delay-1 {
+    animation-delay: .2s !important;
+    -webkit-animation-delay: .2s !important;
+}
+
+.delay-2 {
+    animation-delay: .4s !important;
+    -webkit-animation-delay: .4s !important;
+}
+
+.delay-3 {
+    animation-delay: .6s !important;
+    -webkit-animation-delay: .6s !important;
+}
+
+.delay-4 {
+    animation-delay: .8s !important;
+    -webkit-animation-delay: .8s !important;
+}
+
+.delay-5 {
+    animation-delay: 1s !important;
+    -webkit-animation-delay: 1s !important;
+}
+
+.wrap.active .moveInit {
+    animation: moveInit .8s ease forwards;
+    -webkit-animation: moveInit .8s ease forwards;
+}
+
+.wrap.active .sh-icon {
+    animation: moveInit 1.5s ease forwards;
+    /* -webkit-animation: moveInit .8s ease forwards; */
+}
+
+@keyframes moveInit {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes moveInit {
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+.qzh-2 {
+    animation: flutter 1.2s ease-in-out infinite alternate;
+    -webkit-animation: flutter 1.2s ease-in-out infinite alternate;
+}
+
+.flower-icon {
+    animation: flutter3 1.2s ease-in-out infinite alternate;
+    -webkit-animation: flutter3 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes flutter {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(10px, 0);
+    }
+}
+
+@-webkit-keyframes flutter {
+
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(10px, 0);
+    }
+}
+
+@keyframes flutter3 {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(5px, 0);
+    }
+}
+
+@-webkit-keyframes flutter3 {
+
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(5px, 0);
+    }
+}
+
+.qifu-wrap,
+.qzh-3,
+.qzh-4,
+.qzh-5 {
+    animation: flutter2 1s ease-in-out infinite alternate;
+    -webkit-animation: flutter2 1s ease-in-out infinite alternate;
+}
+
+.five-inset {
+    animation: flutter2 1.5s ease-in-out infinite alternate;
+    -webkit-animation: flutter2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutter2 {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
+@-webkit-keyframes flutter2 {
+
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px);
+    }
+}

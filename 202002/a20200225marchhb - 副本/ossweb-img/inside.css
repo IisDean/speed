@@ -1,0 +1,207 @@
+.header-wrap {
+    width: 100%;
+    height: 3.93rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/ny_top.jpg');
+    overflow: hidden;
+}
+
+.wrap {
+    height: auto !important;
+}
+
+.back-home-btn {
+    display: block;
+    position: fixed;
+    top: .4rem;
+    right: 0;
+    z-index: 9999;
+    width: 1.87rem;
+    height: .31rem;
+}
+
+.top-logo {
+    margin: .3rem auto;
+    width: 3.07rem;
+}
+
+.main-wrap {
+    width: 100%;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/inside_bg.jpg');
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.is-title-text {
+    margin-top: .32rem;
+    font-size: .2rem;
+    color: #636363;
+}
+
+.is-msg-text {
+    margin-top: .13rem;
+    line-height: .26rem !important;
+    font-size: .18rem;
+    color: #636363;
+}
+
+.title-text-2 {
+    margin-top: .54rem;
+    font-size: .34rem;
+    color: #d04f32;
+}
+
+.line-icon {
+    display: block;
+    margin-top: .27rem;
+    width: 100%;
+    height: .1rem;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.title-left-icon,
+.title-right-icon {
+    display: inline-block;
+    width: 1.3rem;
+    height: .16rem;
+}
+
+.title-left-icon {
+    background-position: 0 -10.77rem;
+}
+
+.title-right-icon {
+    background-position: -1.56rem -10.77rem;
+}
+
+.title-text-3 {
+    display: inline-block;
+    margin: 0 .08rem;
+    font-size: .3rem;
+    color: #636363;
+}
+
+.wuqi-list {
+    margin: .15rem auto 0;
+}
+
+.wuqi-item {
+    margin-right: .28rem;
+    width: 2.76rem;
+}
+
+.wuqi-list.wl-2 {
+    width: 10.85rem;
+}
+
+.wuqi-list.wl-2 .wuqi-item {
+    margin-right: 1.08rem;
+    width: 4.86rem;
+}
+
+.wuqi-wrap {
+    width: 2.76rem;
+}
+
+.wuqi-wrap2 {
+    width: 4.86rem;
+}
+
+.wuqi-img {
+    margin: 0 auto;
+    width: 2.76rem;
+}
+
+.wq-bg1 {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/wq_plank_1.png');
+}
+
+.wq-bg2 {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/wq_plank_2.png');
+}
+
+.wq-bg3 {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/wq_plank_3.png');
+}
+
+.wq-bg4 {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/wq_plank_green.png');
+}
+
+.wq-bg5 {
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/wq_plank_5.png');
+}
+
+.wq-name-text {
+    margin-bottom: .09rem;
+    font-style: italic;
+    line-height: .36rem !important;
+    font-size: .2rem;
+    color: #fff;
+}
+
+.wq-msg-text,
+.wq-msg-text p {
+    line-height: .22rem !important;
+    font-size: .18rem;
+    color: #636363;
+}
+
+.wq-i-4n {
+    margin-right: 0 !important;
+}
+
+.t-j {
+    text-align: justify;
+}
+
+.left-wrap,
+.right-wrap {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.left-wrap {
+    padding-right: .1rem;
+}
+
+.right-wrap {
+    padding-left: .1rem;
+}
+
+.wq-msg2-text {
+    line-height: .26rem !important;
+}
+
+.wq-msg3-text {
+    line-height: .26rem !important;
+}
+
+.green-text {
+    font-weight: bold;
+    font-size: .18rem;
+    color: #4bab2c;
+}
+
+.bg {
+    background-position: top center;
+}
+
+.rule-list {
+    margin: .27rem auto 0;
+    padding: .06rem 0 .06rem .3rem;
+    box-sizing: border-box;
+    width: 7.16rem;
+    min-height: 3.27rem;
+    background-image: url('//game.gtimg.cn/images/cfm/ingame/cp/a20200225marchhb/rule_bg.png');
+    background-size: 100% 100%;
+}
+
+.rule-list .text-right {
+    width: 6.2rem !important;
+}
+
+.none-tips-icon {
+    margin: .48rem auto;
+    width: 2.21rem;
+}
