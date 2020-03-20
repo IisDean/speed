@@ -1,218 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-cn">
 
 <head>
-    <meta charset="gbk" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all">
-    <meta name="author" content="Tencent-CP" />
-    <meta name="Copyright" content="Tencent" />
+    <meta charset="gbk">
     <meta name="Description"
-        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。">
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
     <meta name="Keywords"
-        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏">
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta itemprop="name" content="NBA2KOL2幸运之盒等你开启" />
+    <meta itemprop="description" content="多重惊喜限时领，好运不等人！" />
+    <meta itemprop="image" content="https://game.gtimg.cn/images/actdaoju/act/a20200306marchstar/share.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- ossweb-img/m/ -->
+    <!-- //game.gtimg.cn/images/dp/cp/a20191225dp/m/ -->
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
     <title>幸运之盒等你开启-NBA2KOL2官方网站-腾讯游戏</title>
-    <!--[if lte IE 11]>
-    <script>alert("您的浏览器版本过低，为获得更好体验，请使用QQ浏览器或者谷歌浏览器等体验活动");</script>
-    <![endif]-->
-    <link rel="stylesheet" href="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/idangerous.swiper.css">
-    <link rel="stylesheet" href="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/index.css">
-    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/03/06 -->
+    <!-- 设计：cp | 重构：| 创建：2019-12-25 | 更新：| 团队博客：://tgideas.qq.com/ -->
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/mobile.css" rel="stylesheet" />
 </head>
 
-<body data-nav="2">
-    <h1 class="hide">幸运之盒等你开启</h1>
-    <!--topbar-->
-    <div class="topbar">
-        <div class="top-l">
-            <h2 class="logo">
-                <a href="//nba2k2.qq.com/" target="_blank" class="hd" onclick="PTTSendClick('btn','hd','NBA2K online2')"
-                    title="NBA2K online2"></a>
-            </h2>
-            <div class="login">
-                <!--登录前状态 Start-->
-                <p id="unlogin"><a href="javascript:;" id="btn_qqlogin">登录</a></p>
-                <!--登录前状态 End-->
-                <!--登录后状态 Start-->
-                <p id="logined" style="display: none">欢迎，
-                    <span id='login_qq_span'></span>，
-                    <span id="spanNotBind_649402">
-                        <a href="javascript:;" class="bindArea"> 绑定大区</a>
-                    </span>
-                    <span id="spanBind_649402" style="display:none">
-                        <span id="area_info_649402"></span>
-                        <span id="role_info_649402"></span>
-                        <a href="javascript:;" class="bindArea">更改绑定</a>
-                        <!--                        <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>-->
-                    </span>
-                    <a href="javascript:;" id="btn_logout">注销</a></p>
-                <!--登录后状态 End-->
-            </div>
-            <a href="//daoju.qq.com/mall/" target="_blank" class="hdlogo" onclick="PTTSendClick('btn','djc','进入道具城')"
-                title="道具城"></a>
-        </div>
-        <div class="top-r">
-            <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')" class="gw-btn" target="_blank"
-                title="官网首页">官网首页</a>
-            <a href="//nba2k2.qq.com/events.html" onclick="PTTSendClick('btn','hd-btn','活动中心')" class="down-btn"
-                target="_blank" title="活动中心">活动中心</a>
-            <div class="top-ico-box">
-                <a href="//nba2k2.gamebbs.qq.com/forum.php" class="ico1 top-ico" target="_blank" title="官方论坛"
-                    onclick="PTTSendClick('btn','ico1','官方论坛')"></a>
-                <a href="javascript:;" class="ico2 top-ico" title="官方微信"
-                    onclick="PTTSendClick('btn','ico2','官方微信')"><img
-                        src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/weixin.jpg" alt="官方微信" /></a>
-                <a href="javascript:;" class="ico3 top-ico" title="兴趣部落"
-                    onclick="PTTSendClick('btn','ico3','兴趣部落')"><img
-                        src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/buluo.jpg" alt="兴趣部落" /></a>
-                <a href="//weibo.com/nba2kol2" class="ico4 top-ico" target="_blank" title="官方微博"
-                    onclick="PTTSendClick('btn','ico4','官方微博')"></a>
-            </div>
+<body>
+    <div class="flex header-topbar">
+        <a href="//nba2k2.qq.com/" class="bg logo-icon1" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+            title="NBA2K online2">
+        </a>
+        <a href="//daoju.qq.com/mall/" class="bg logo-icon2" onclick="PTTSendClick('btn','djc','进入道具城')" title="道具城">
+        </a>
+        <div class="flex-1 login t-r login-wrap">
+            <!--登录前状态 Start-->
+            <p id="unlogin">你好，请<a href="javascript:;" id="btn_qqlogin">[登录]</a></p>
+            <!--登录前状态 End-->
+            <!--登录后状态 Start-->
+            <p id="logined" style="display: none;width: max-content">欢迎，
+                <span id='login_qq_span'></span>，
+                <span id="spanNotBind_649402">
+                    <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                </span>
+                <span id="spanBind_649402" style="display:none">
+                    <span id="area_info_649402"></span>
+                    <span id="role_info_649402"></span>
+                    <!--                        <a href="javascript:;" class="bindArea">更改绑定</a>-->
+                    <!--                        <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>-->
+                </span>
+                <!--                <a href="javascript:;"id="btn_logout">注销</a>-->
+            </p>
+            <!--登录后状态 End-->
         </div>
     </div>
-    <!-- //topbar -->
-    <div class="bg" id="stage">
+    <div class="bg stage">
         <div class="wrap">
-            <!-- 顶部 -->
-            <div class="head-wrap">
+            <!-- 头部 -->
+            <div class="head-container">
                 <p class="time-msg-text t-c">活动时间：2020年3月20日 14:00-2020年4月6日 23:59</p>
-                <div class="t-c btn-container">
-                    <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')"
-                        class="icons btn-wrap push-gw-btn btn-hover t" target="_blank" title="进入官网">进入官网</a>
-                    <a href="//nba2k2.qq.com/download.html" onclick="PTTSendClick('btn','download','下载游戏')"
-                        class="icons btn-wrap download-btn btn-hover t" target="_blank" title="下载游戏">下载游戏</a>
+                <div class="flex flex-center btn-container">
+                    <a href="//nba2k2.qq.com/" class="icons btn-wrap gw-btn btn-hover t"
+                        onclick="PTTSendClick('btn','gw-btn','进入官网')">进入官网</a>
+                    <a href="//nba2k2.qq.com/download.html" class="icons btn-wrap download-btn btn-hover t"
+                        onclick="PTTSendClick('btn','download','下载游戏')">下载游戏</a>
                 </div>
             </div>
             <!-- 活动流程 -->
             <div class="step-container">
-                <div class="bg step-list c">
-                    <li class="step-item s-i-1 f-l">
-                        <p class="step-msg-text">完成指定任务，即可免费领取惊喜福袋，并获赠一次打开幸运之盒的机会</p>
+                <h2 class="icons step-title-icon t">活动流程</h2>
+                <ul class="bg step-list flex">
+                    <li class="step-item">
+                        完成指定任务，即可免费<br />
+                        领取惊喜福袋，并获赠一次<br />
+                        打开幸运之盒的机会
                     </li>
-                    <li class="step-item s-i-2 f-l">
-                        <p class="step-msg-text">打开幸运之盒，获得专属<br />幸运礼盒的购买资格</p>
+                    <li class="step-item">
+                        打开幸运之盒，获得专属<br />
+                        幸运礼盒的购买资格
                     </li>
-                    <li class="step-item s-i-3 f-l">
-                        <p class="step-msg-text">购买该礼盒<br />所有礼盒 <span>统一售价为19.8Q币</span></p>
+                    <li class="step-item">
+                        购买该礼盒<br />
+                        所有礼盒<br />
+                        <span>统一售价为19.8Q币</span>
                     </li>
-                </div>
+                </ul>
             </div>
             <!-- 完成任务 免费领惊喜福袋 -->
             <div class="fd-container">
                 <h2 class="icons title-icon title-icon-1 t">完成任务 免费领惊喜福袋</h2>
                 <p class="t-c title-msg-text"></p>
-                <div class="rw-container c">
-                    <div class="rw-left f-l">
+                <div class="rw-container">
+                    <div class="rw-left">
                         <h3 class="rw-title-text t-c">MISSION</h3>
-                        <p class="rw-msg-text t-c">当天，在快速或排位赛制下<br />任意模式（除经理人）累计获胜2场</p>
+                        <p class="rw-msg-text t-c">当天，在快速或排位赛制下任意模式（除经理人）累计获胜2场</p>
                     </div>
-                    <div class="rw-right f-r">
-                        <ul class="rw-prize-list c">
-                            <li class="p-r full-img rw-prize-item f-l">
+                    <div class="rw-right">
+                        <ul class="rw-prize-list flex flex-center flex-middle">
+                            <li class="p-r full-img rw-prize-item">
                                 <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/dj_1.png" alt="任务奖品">
                                 <span class="p-a icons rw-prize-num t-c">x2</span>
                             </li>
                             <li class="icons add-icon f-l"></li>
-                            <li class="p-r full-img rw-prize-item f-l">
+                            <li class="p-r full-img rw-prize-item">
                                 <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/dj_2.png" alt="任务奖品">
                                 <span class="p-a icons rw-prize-num t-c">x2</span>
                             </li>
                             <li class="icons add-icon f-l"></li>
-                            <li class="p-r full-img rw-prize-item f-l">
+                            <li class="p-r full-img rw-prize-item">
                                 <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/dj_3.png" alt="任务奖品">
                                 <span class="p-a icons rw-prize-num t-c">x1</span>
                             </li>
                             <li class="icons add-icon f-l"></li>
-                            <li class="p-r full-img rw-prize-item f-l">
+                            <li class="p-r full-img rw-prize-item">
                                 <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/dj_0.png" alt="任务奖品">
                                 <i class="p-a icons ticket-icon"></i>
                                 <span class="p-a icons rw-prize-num t-c">x1</span>
                             </li>
                         </ul>
                         <p class="rw-prize-text t-c">现役优秀球星包*2+活跃度福袋*2+特训精华(2个)*1+打开1次幸运之盒</p>
-                        <a href="javascript: amsSubmit(290791,649400);"
-                            onclick="PTTSendClick('btn','get-rw-prize','完成任务领取奖励')"
-                            class="icons btn-wrap rw-prize-btn btn-hover t" title="完成任务领取奖励">完成任务领取奖励</a>
                     </div>
+                    <a href="javascript: amsSubmit(290791,649400);"
+                        onclick="PTTSendClick('btn','get-rw-prize','完成任务领取奖励')"
+                        class="icons btn-wrap rw-prize-btn btn-hover t" title="完成任务领取奖励">完成任务领取奖励</a>
                 </div>
                 <i class="icons arrow-down"></i>
             </div>
             <!-- 打开幸运之盒 开启专属好运 -->
             <div class="lucky-container">
                 <h2 class="icons title-icon title-icon-2 t">打开幸运之盒 开启专属好运</h2>
-                <p class="t-c title-msg-text">点击【打开幸运之盒】按钮，获得你的专属幸运礼盒<br />幸运机会仅有一次，请细心挑选</p>
-                <ul class="lucky-gift-list c">
-                    <li class="p-r lucky-gift-item gift1 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript: " onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift2 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript: " onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift3 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift4 f-l mr-0">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift5 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift6 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift7 f-l">
-                        <div class="p-a full-img gift-icon">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4.png" alt="礼盒">
-                        </div>
-                        <div class="p-a full-img gift-icon-2">
-                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4_start.png" alt="礼盒">
-                        </div>
-                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
-                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
-                    </li>
-                    <li class="p-r lucky-gift-item gift8 f-l mr-0">
+                <p class="t-c title-msg-text">点击【打开幸运之盒】按钮，获得你的专属幸运礼盒幸运机会仅有一次，请细心挑选</p>
+                <ul class="lucky-gift-list flex">
+                    <li class="p-r lucky-gift-item gift1">
                         <div class="p-a full-img gift-icon">
                             <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3.png" alt="礼盒">
                         </div>
@@ -220,6 +154,76 @@
                             <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3_start.png" alt="礼盒">
                         </div>
                         <a href="javascript:" onclick="PTTSendClick('btn','open-gift-1','打开礼盒1')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item gift2">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-2','打开礼盒2')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item gift3">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-3','打开礼盒3')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item mr-0 gift4">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-4','打开礼盒4')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item gift5">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_1_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-5','打开礼盒5')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item gift6">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_2_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-6','打开礼盒6')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item gift7">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_4_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-7','打开礼盒7')"
+                            class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
+                    </li>
+                    <li class="p-r lucky-gift-item mr-0 gift8">
+                        <div class="p-a full-img gift-icon">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3.png" alt="礼盒">
+                        </div>
+                        <div class="p-a full-img gift-icon-2">
+                            <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/gift_3_start.png" alt="礼盒">
+                        </div>
+                        <a href="javascript:" onclick="PTTSendClick('btn','open-gift-8','打开礼盒8')"
                             class="p-a icons open-gift-btn btn-hover t" title="打开礼盒">打开礼盒</a>
                     </li>
                 </ul>
@@ -233,7 +237,7 @@
                                     <div class="p-r lucky-msg-item">
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_0.png"
                                             alt="幸运之盒奖品一览">
-                                        <div class="p-a lucky-msg-wrap">
+                                        <div class="p-a lucky-msg-wrap" style="bottom: .2rem;">
                                             <p class="lp-title-text t-c">现役球员惊喜礼盒</p>
                                         </div>
                                     </div>
@@ -242,7 +246,7 @@
                                     <div class="p-r lucky-msg-item">
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_0.png"
                                             alt="幸运之盒奖品一览">
-                                        <div class="p-a lucky-msg-wrap">
+                                        <div class="p-a lucky-msg-wrap" style="bottom: .2rem;">
                                             <p class="lp-title-text t-c">历史球员回馈礼盒</p>
                                         </div>
                                     </div>
@@ -252,7 +256,7 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_1.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">5万合同费包*1+S6历史<br />20人包*1+特训精华*5</p>
+                                            <p class="lp-title-text t-c">5万合同费包*1+<br />S6历史20人包*1+<br />特训精华*5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +265,7 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_2.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">5万合同费包*1+现役人气<br />30人包*1+球员训练卡*1</p>
+                                            <p class="lp-title-text t-c">5万合同费包*1+<br />现役人气30人包*1+<br />球员训练卡*1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,7 +274,7 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_3.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">10万合同费包*1+新年<br />合同费包*3+球员训练卡*1</p>
+                                            <p class="lp-title-text t-c">10万合同费包*1+<br />新年合同费包*3+<br />球员训练卡*1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -279,7 +283,7 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_4.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">20万合同费包*1+S6历史<br />30人包*1+特训精华*5</p>
+                                            <p class="lp-title-text t-c">20万合同费包*1+<br />S6历史30人包*1+<br />特训精华*5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -288,7 +292,7 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_5.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">20万合同费包*1+现役人气<br />50人包*1+特训精华*5</p>
+                                            <p class="lp-title-text t-c">20万合同费包*1+<br />现役人气50人包*1+<br />特训精华*5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +301,8 @@
                                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/xy_dj_6.png"
                                             alt="幸运之盒奖品一览">
                                         <div class="p-a lucky-msg-wrap">
-                                            <p class="lp-title-text t-c">10万合同费包*1+现役人气<br />40人包*1+球员训练卡*1</p>
+                                            <p class="lp-title-text t-c">10万合同费包*1+<br />现役人气40人包*1+<br />球员训练卡*1
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -305,8 +310,8 @@
                         </div>
                     </div>
                     <!-- 分页 -->
-                    <a href="javascript:;" class="p-a icons swiper1-perv-btn page-btn t">上一页</a>
-                    <a href="javascript:;" class="p-a icons swiper1-next-btn page-btn t">上一页</a>
+                    <a class="p-a icons swiper1-prev-btn page-btn t">上一页</a>
+                    <a class="p-a icons swiper1-next-btn page-btn t">上一页</a>
                 </div>
             </div>
             <!-- 活动说明 -->
@@ -314,7 +319,8 @@
                 <h2 class="rule-title-text">活动说明</h2>
                 <ul class="rule-list">
                     <li class="rule-item">
-                        1、所有玩家在活动期间均可参与，完成指定任务的当日，可在此页面免费领取一个惊喜福袋，同时获赠一次抽奖机会，单Q限领1次。当日未领取，领奖资格不保留，需隔日重新完成任务后再领取。</li>
+                        1、所有玩家在活动期间均可参与，完成指定任务的当日，可在此页面免费领取一个惊喜福袋，同时获赠一次抽奖机会，单Q限领1次。当日未领取，领奖资格不保留，需隔日重新完成任务后再领取。
+                    </li>
                     <li class="rule-item">
                         2、玩家凭抽奖机会参与抽奖，可获得所展示礼盒中的其中一款的购买资格，可购买礼盒的类型与包含道具以中奖界面所示为准，所有礼盒的售价统一为19.8Q币，单Q限购1次。</li>
                     <li class="rule-item">3、付费购买礼盒的玩家，登陆掌上道聚城APP，可再获得神秘礼品一份，单Q限领1次。</li>
@@ -343,8 +349,6 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
     <!-- 礼盒弹窗 40万合同费包*1 + 现役人气20人包*1 -->
     <div class="p-a bg pop pop-1" id="popGift7">
         <p class="pop-title-text"><span>好运降临！</span>恭喜您抽中现役球员惊喜礼盒<br />购买后即可获得以下全部奖励：</p>
@@ -364,10 +368,11 @@
                 <p class="pop-prize-text t-c">40万合同费包*1 + 现役人气20人包*1</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-1','购买奖励1')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .04rem;">购买</a>
             </div>
         </div>
-        <i class="p-a bg arrow-icon"></i>
+        <!--        <i class="p-a bg arrow-icon"></i>-->
     </div>
     <!-- 礼盒弹窗 15万合同费包*1 + S6历史10人包*1 -->
     <div class="p-a bg pop pop-1" id="popGift8">
@@ -388,8 +393,10 @@
                 <p class="pop-prize-text t-c">15万合同费包*1 + S6历史10人包*1</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-2','购买奖励2')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .08rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 20万合同费包*1 + S6历史30人包*1 + 特训精华*5 -->
@@ -416,8 +423,10 @@
                 <p class="pop-prize-text t-c">20万合同费包*1 + S6历史30人包*1 + 特训精华*5</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-3','购买奖励3')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .08rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 20万合同费包*1 + 现役人气50人包*1 + 特训精华*5 -->
@@ -444,8 +453,10 @@
                 <p class="pop-prize-text t-c">20万合同费包*1 + 现役人气50人包*1 + 特训精华*5</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-4','购买奖励4')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .08rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 5万合同费包*1 + 现役人气30人包*1 + 球员训练卡*1 -->
@@ -472,8 +483,10 @@
                 <p class="pop-prize-text t-c">5万合同费包*1 + 现役人气30人包*1 + 球员训练卡*1</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-5','购买奖励5')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .04rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 5万合同费包*1 + S6历史20人包*1 + 特训精华*5 -->
@@ -500,15 +513,17 @@
                 <p class="pop-prize-text t-c">5万合同费包*1 + S6历史20人包*1 + 特训精华*5</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 10px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-6','购买奖励6')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .12rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 10万合同费包*1 + 现役人气40人包*1 + 球员训练卡*1 -->
     <div class="p-a bg pop pop-2" id="popGift4">
         <p class="pop-title-text">恭喜您，您的幸运之盒包含如下奖励，购买后即可全部获得</p>
         <div class="c">
-            <div class="f-l rw-prize-container" style="margin-left: 4px;">
+            <div class="f-l rw-prize-container">
                 <ul class="rw-prize-list t-c">
                     <li class="p-r full-img rw-prize-item">
                         <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/dj_14.png" alt="任务奖品">
@@ -528,8 +543,10 @@
                 <p class="pop-prize-text t-c">10万合同费包*1 + 现役人气40人包*1 + 球员训练卡*1</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 5px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-7','购买奖励7')"
+                    class="icons buy-btn btn-hover t">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
     <!-- 礼盒弹窗 10万合同费包*1 + 新年合同费包*3 + 球员训练卡*1 -->
@@ -556,42 +573,86 @@
                 <p class="pop-prize-text t-c">10万合同费包*1 + 新年合同费包*3 + 球员训练卡*1</p>
             </div>
             <div class="f-l">
-                <a href="javascript: getPrize();" class="icons buy-btn btn-hover t" style="margin-left: 8px;">购买</a>
+                <a href="javascript: getPrize();" onclick="PTTSendClick('btn','puy-8','购买奖励8')"
+                    class="icons buy-btn btn-hover t" style="margin-left: .08rem;">购买</a>
             </div>
+            <!--            <i class="p-a bg arrow-icon"></i>-->
         </div>
     </div>
-    <!--  -->
-    <div class="full-img code-fixed">
-        <img src="//game.gtimg.cn/images/actdaoju/act/a20200306marchstar/fiexd_code.jpg" alt="">
+    <!--下面是横屏提示-->
+    <div id="orientLayer" class="mod-orient-layer">
+        <div class="mod-orient-layer_content">
+            <div class="mod-orient-layer_desc"></div>
+        </div>
     </div>
 
-    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
-    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
-    <!--<script src="//ossweb-img.qq.com/images/js/title.js"></script>-->
-    <script src="//js01.daoju.qq.com/common/js/act/dj_header_v2.js" charset="gbk"></script>
+
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
     <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
-    <script src="//ossweb-img.qq.com/images/js/swiper2_component/swiper2.min.js"></script>
-    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
-    <script src="index.js"></script>
+    <script src="//act.daoju.qq.com/act/a20200306marchstar/index.js"></script>
+
     <script>
-        (function () {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { var a = document.referrer, b = { "baidu.com": "seo_baidu", "sogou.com": "seo_sogou", "sm.cn": "seo_sm", "so.com": "seo_360", "bing.com": "seo_bing", "google.com": "seo_google" }, c; for (c in b) { if (-1 != a.indexOf(c)) { a = b[c]; if (window.sessionStorage) { sessionStorage.setItem("channel", a) } else { var d = d || 0, b = ""; 0 != d && (b = new Date, b.setTime(b.getTime() + 1000 * d), b = "; expires=" + b.toGMTString()); document.cookie = "channel=" + escape(a) + b + "; path=/" } break } } window.location.href = "https://app.daoju.qq.com/act/a20200306marchstar/index.html?plat_support=mqq" };
-        })();
+
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "https://act.daoju.qq.com/act/a20200306marchstar/index.html";
+        }
+
+        //判断横屏竖屏
+        var orientLayer = document.getElementById("orientLayer");
+
+        function checkDirect() {
+            if (document.documentElement.clientHeight >= document.documentElement.clientWidth) {
+                return "portrait";
+            } else {
+                return "landscape";
+            }
+        }
+        //显示屏幕方向提示浮层
+        function orientNotice() {
+            var orient = checkDirect();
+            if (orient == "portrait") {
+                orientLayer.style.display = "none";
+            } else {
+                orientLayer.style.display = "block";
+            }
+        }
+
+        function init() {
+            orientNotice();
+            window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+                setTimeout(orientNotice, 200);
+                window.location.reload();
+            })
+        }
+        init();
+
+        $(".lucky-gift-item").on("click", function () {
+            var $this = $(this);
+            if (!$this.hasClass('active') && !$this.hasClass('hover')) {
+                $this.addClass("hover");
+                $this.siblings('li').removeClass('hover');
+            } else if ($this.hasClass('hover')) {
+                $this.removeClass("hover");
+            }
+        });
 
         //打开礼盒
+        var leftArrow = [['8%', '28%', '53%', '80%'], ['8%', '24%', '54%', '83%']];
+        var leftPop = [['3%', '13%', '20%', '24%'], ['3%', '12%', '12%', '12%']];
         $(".open-gift-btn").on("click", function () {
-
             var $this = $(this),
-                bodyW = window.innerWidth,
-
+                top = $this.offset().top,
                 num = ($this.parent()).index() + 1, //弹出的弹窗编号
                 idx = $this.parents(".lucky-gift-item").index(),
-                w = $("#popGift" + num).width();
-
-
-            window.topsize = $this.offset().top + 110
-            window.leftsize = $this.offset().left + 85
-            window.leftsize -= w / 2;
+                zeroIdx = 0;
+            num > 2 ? window.zeroIdx = 1 : zeroIdx = 0;
+            window.topsize = $this.offset().top
+            window.idxx = idx
+            $(".pop").hide();
+            $this.hide().parents(".lucky-gift-item").addClass('active');
             if (!window.hasGift) {
                 $(".pop").hide();
                 // $(".gift" + num).addClass('active');
@@ -599,19 +660,10 @@
                 amsCfg_648236.sData.choseItem = num;
                 amsSubmit(290791, 648236)
             } else {
-                // alert('您已经开启过幸运之盒咯~')
+
                 // TGDialogS(allGoods[window.giftId][1]);
             }
-            // $(".pop").hide();
-            //
-            // $this.parents(".lucky-gift-item").addClass('active');
-            // $("#popGift" + num).show().css({
-            //     "top": top + 'px',
-            //     "left": left + 'px'
-            // });
-            //抽奖
-            // amsCfg_648236.sData.choseItem = $(this).index($(this).parent().children()) + 1;
-
+            console.log(zeroIdx);
         });
 
         //获取随机数
@@ -623,25 +675,38 @@
         var mySwiper = new Swiper('.swiper-1 .swiper-container', {
             slidesPerView: 4,
             autoplay: 3000,
-            loop: true
-        });
-        //切换
-        $(".swiper1-perv-btn").on("click", function () {
-            mySwiper.swipePrev();
-        });
-        $(".swiper1-next-btn").on("click", function () {
-            mySwiper.swipeNext();
+            loop: true,
+            prevButton: '.swiper1-prev-btn',
+            nextButton: '.swiper1-next-btn',
         });
 
 
         //完成任务 领取奖励
         function getPrize() {
-            // $(".pop").hide();
-            // closeDialog();
+
             //拉起支付
             amsSubmit(290791, 648235)
-
         }
+
+
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    $('#unlogin').hide();
+                    $('#logined').show();
+                    $("#login_qq_span").text(LoginManager.getUserUin());//????QQ??
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    LoginManager.logout();
+                });
+            });
+        });
+
 
         function TGDialogS(e) {
             // 利用milo库引入dialog组件
@@ -658,42 +723,31 @@
             need("biz.dialog", function (Dialog) {
                 Dialog.hide();
             });
-        }
-
-        milo.ready(function () {
-            need("biz.login", function (LoginManager) {
-                //QQ登录
-                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
-                    LoginManager.login();
-                });
-                LoginManager.checkLogin(function () {
-                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
-                });
-                //注销
-                milo.addEvent(g("btn_logout"), "click", function () {
-                    LoginManager.logout();
-                });
-            });
+        };
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //分享
+        TGMobileShare({
+            shareTitle: 'NBA2KOL2幸运之盒等你开启', //不设置或设置为空时，页面有title，则调取title
+            shareDesc: '多重惊喜限时领，好运不等人！', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https://game.gtimg.cn/images/actdaoju/act/a20200306marchstar/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20200306marchstar' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
         });
-
-
-        //二维码
-        $('.top-ico-box .top-ico').hover(function () {
-            $(this).find('img').show();
-        }, function () {
-            $(this).find('img').hide();
-        })
-        //此段代码不能放到外链JS中，
+        //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性
             siteType: "a20200306marchstar", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
-            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
-            pageName: "首页", //必填项:页面中文名
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
             osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
             ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
-            stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
-        };
-        if (typeof (pgvMain) == 'function') pgvMain();
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
     </script>
 </body>
+
 
 </html>

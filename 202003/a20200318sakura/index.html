@@ -30,9 +30,9 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-    <title>樱花主题上线-周大福珠宝</title>
+    <title>你守护世界，我守护你</title>
     <!-- 设计：cp | 重构：| 创建：2020-03-18 | 更新：| 团队博客：://tgideas.qq.com/ -->
-    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/index.css?v=202003202" rel="stylesheet" />
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     <audio loop autoplay="autoplay" id="musicWrap">
         <source src="./audio/music.mp3" type="audio/mpeg" />
     </audio>
-    <a class="p-a flex flex-center flex-middle play-icon">
+    <a class="flex flex-center flex-middle play-icon">
         <i class="bg"></i>
     </a>
     <div class="p-r stage">
@@ -49,23 +49,20 @@
                 <span class="load-text">0%</span>
             </div>
         </div>
-        <div class="p-a bg page-container">
+        <div class="p-a bg page-container" style="margin -top: -12rem;">
             <!-- 最终页 -->
             <div class="wrap wrap-1">
-                <i class="p-a bg star-1"></i>
                 <i class="p-a bg star-2"></i>
-                <i class="p-a bg star-3"></i>
                 <i class="p-a bg xl-icon"></i>
                 <div class="p-a end-title-wrap">
                     <p class="end-title-text">我是第</p>
-                    <p class="end-title-text" style="margin-top: .16rem;"><span class="J-qf-num">999999</span> 位祈福者！</p>
-                    <p class="end-title-text" style="margin-top: .22rem;">我为 <span class="J-user-name">名字</span> 祈福</p>
+                    <p class="end-title-text" style="margin-top: .12rem;"><span class="J-qf-num">999999</span> 位祈福者！</p>
+                    <p class="end-title-text" style="margin-top: .12rem;">我为 <span class="J-user-name">名字</span> 祈福</p>
                 </div>
                 <div class="p-a bg result-wrap">
-                    <p class="result-title-text">愿你：</p>
                     <p class="result-msg-text">孩子，我会守护你健康成长</p>
                 </div>
-                <a href="javascript: alert('敬请期待！');" class="p-a bg create-poster-btn t">生成我的祈福海报</a>
+                <a class="p-a bg create-poster-btn btn-light moveInit delay-5 t">生成我的祈福海报</a>
                 <i class="p-a bg logo-icon moveInit delay-1"></i>
             </div>
             <!-- 春暖花开 我们能感受这份美好 -->
@@ -74,10 +71,10 @@
                 <i class="p-a bg star-2"></i>
                 <i class="p-a bg star-3"></i>
                 <ul class="p-a p2-list">
-                    <li class="bg p2-item moveInit delay-1"></li>
-                    <li class="bg p2-item moveInit delay-2"></li>
-                    <li class="bg p2-item moveInit delay-3"></li>
-                    <li class="bg p2-item moveInit delay-4"></li>
+                    <li class="bg p2-item moveInit delay-1 t-c">春暖花开，我们能感受这份美好。</li>
+                    <li class="bg p2-item moveInit delay-2 t-c">是因为一群人的默默付出。</li>
+                    <li class="bg p2-item moveInit delay-3 t-c">他们是抗疫英雄，他们是白衣天使。</li>
+                    <li class="bg p2-item moveInit delay-4 t-c">希望这爱能幻化成一份礼物，守护在你和他们身边。</li>
                 </ul>
             </div>
             <!-- 让爱起航 -->
@@ -96,7 +93,7 @@
                     <span class="qifu-text t-c">999999</span>
                     <span class="p-a add-one">+1</span>
                 </div>
-                <a class="p-a bg qihang-btn moveInit delay-5 t">让爱起航</a>
+                <a class="p-a bg qihang-btn moveInit btn-light delay-5 t">让爱起航</a>
             </div>
             <!-- 选择您的祈福语 -->
             <div class="p-r wrap wrap-4 active">
@@ -107,15 +104,15 @@
                 <i class="p-a bg flower-dz"></i>
                 <i class="p-a bg flower-icon flower-icon1"></i>
                 <!-- 祈福语列表 -->
-                <ul class="qifu-list">
-                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
-                        <span>孩子，我会守护你健康成长</span>
+                <ul class="p-r qifu-list">
+                    <li class="p-r bg flex flex-center flex-middle delay-1 btn-hover qifu-item">
+                        <span></span>
                     </li>
-                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
-                        <span>孩子，我会守护你健康成长</span>
+                    <li class="p-r bg flex flex-center flex-middle delay-2 btn-hover qifu-item">
+                        <span></span>
                     </li>
-                    <li class="bg flex flex-center flex-middle moveInit btn-hover qifu-item">
-                        <span>孩子，我会守护你健康成长</span>
+                    <li class="p-r bg flex flex-center flex-middle delay-3 btn-hover qifu-item">
+                        <span></span>
                     </li>
                 </ul>
                 <!-- 换一批 -->
@@ -139,7 +136,7 @@
                 <i class="p-a bg pingzi-icon"></i>
                 <i class="p-a bg bi-icon"></i>
                 <input type="text" class="p-r input-wrap moveInit delay-4 t-c" id="userName" placeholder="请输入昵称" />
-                <a class="p-a bg submit-btn btn-hover moveInit delay-5 t">为爱祈福</a>
+                <a class="p-a bg submit-btn btn-hover btn-light moveInit delay-5 t">为爱祈福</a>
             </div>
             <!-- 一件首饰 一份守护 -->
             <div class="p-r wrap wrap-6">
@@ -147,20 +144,57 @@
                 <i class="p-a bg star-2"></i>
                 <i class="p-a bg star-3"></i>
                 <i class="p-a bg sh-icon moveInit t">一件首饰</i>
+                <i class="p-a bg sh-icon2 moveInit t">一件首饰</i>
             </div>
             <div class="p-r wrap-7">
                 <i class="p-a bg star-1"></i>
                 <i class="p-a bg star-2"></i>
                 <i class="p-a bg star-3"></i>
             </div>
-            <div class="p-a bg angle-icon">
+            <div class="p-a angle-icon"></div>
+        </div>
+        <!-- 祈福海报 -->
+        <div class="p-a pop-poster" style="display: none;">
+            <div class="p-a pop-mask"></div>
+            <div class="p-a pop-con">
+                <a href="javascript: $('.pop-poster').hide();" class="p-a bg close-btn t">关闭</a>
+                <div class="p-r full-img poster-con">
+                    <!-- 海报容器 -->
+                    <div class="p-a bg poster-container" id="poster">
+                        <i class="p-a bg xl-icon"></i>
+                        <div class="p-a end-title-wrap">
+                            <p class="end-title-text">我是第</p>
+                            <p class="end-title-text" style="margin-top: .12rem;"><span class="J-qf-num">999999</span>
+                                位祈福者！
+                            </p>
+                            <p class="end-title-text" style="margin-top: .12rem;">我为 <span class="J-user-name">名字</span>
+                                祈福
+                            </p>
+                        </div>
+                        <div class="p-a bg result-wrap">
+                            <p class="result-msg-text">孩子，我会守护你健康成长</p>
+                        </div>
+                        <div class="p-a qrcode-container">
+                            <div class="full-img qrcode-wrap" id="qrcode">
 
+                            </div>
+                            <p class="t-c qrcode-text">扫码为爱祈福</p>
+                            <div class="bg logo-hb-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container flex flex-center">
+                    <a download="" class="bg sava-hb-btn btn-hover t">长按保存海报</a>
+                    <a href="https://datayi.cn/w/YoX2OXzR" class="bg get-jk-btn btn-hover t">领取健康和平安</a>
+                </div>
             </div>
         </div>
 
         <script type="text/javascript" src="./js/jquery.js"></script>
         <script type="text/javascript" src="./js/tween.min.js"></script>
-        <script type="text/javascript" src="./js/index.js"></script>
+        <script type="text/javascript" src="./js/dom2img.1.0.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
+        <script type="text/javascript" src="./js/index.js?v=202003202"></script>
 </body>
 
 </html>
