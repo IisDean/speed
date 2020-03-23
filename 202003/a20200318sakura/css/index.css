@@ -546,6 +546,18 @@ a {
     overflow: hidden;
 }
 
+.sp-icon-2 {
+    top: 36%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 6.22rem;
+    height: 2.32rem;
+    background-image: url('../img/p3_sp.png');
+    animation-delay: 1.2s !important;
+    -webkit-animation-delay: 1.2s !important;
+}
+
 .p2-list {
     top: 50%;
     left: 50%;
@@ -558,9 +570,9 @@ a {
     margin-bottom: .26rem;
     width: 100%;
     font-weight: bold;
-    font-size: .28rem;
+    font-size: .32rem;
     color: #fff;
-    text-shadow: .04rem .04rem .02rem #b2b9d6;
+    text-shadow: .02rem .02rem .04rem #b7747d;
 }
 
 /* 祈福数 & 让爱起航 */
@@ -930,17 +942,17 @@ a {
 }
 
 .xl-icon {
-    top: 6.7rem;
-    right: 0;
-    width: 2.9rem;
-    height: 4.34rem;
+    top: 7.6rem;
+    right: .7rem;
+    width: 3.34rem;
+    height: 2.84rem;
     background-image: url('../img/p4_sp.png');
 }
 
 /* 海报 */
 .close-btn {
-    top: -.4rem;
-    right: .6rem;
+    top: -.7rem;
+    left: .2rem;
     z-index: 1;
     width: .6rem;
     height: .6rem;
@@ -961,8 +973,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #264e87;
-    opacity: .76;
+    background-color: #000;
+    opacity: .5;
 }
 
 .pop-con {
@@ -972,15 +984,38 @@ a {
     -webkit-transform: translate(-50%, -50%);
 }
 
+.poster-tips-text {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0;
+    font-size: .3rem;
+    color: #fff;
+}
+
 .poster-container {
     top: 10rem;
     width: 7.5rem;
-    height: 16.5rem;
+    height: 13.82rem;
     background-image: url('../img/poster_bg.jpg');
 }
 
+.poster-container .xl-icon {
+    top: 5.4rem;
+    right: .7rem;
+}
+
+.poster-container .end-title-wrap {
+    top: 1.9rem;
+}
+
+.poster-container .result-wrap {
+    top: 3.8rem;
+}
+
+
 .qrcode-container {
-    top: 12.76rem;
+    top: 10.5rem;
     width: 100%;
 }
 
@@ -1014,18 +1049,14 @@ a {
 
 .poster-con {
     margin: 0 auto;
-    width: 4.15rem;
-    height: 9.15rem;
+    width: 5rem;
+    height: 9.2rem;
     overflow: hidden;
-}
-
-.dom2img-result {
-    display: none;
 }
 
 /* 海报弹窗按钮 */
 .btn-container {
-    margin-top: .6rem;
+    margin-top: .4rem;
 }
 
 .sava-hb-btn {
@@ -1033,6 +1064,11 @@ a {
     width: 2.91rem;
     height: .75rem;
     background-image: url('../img/sava_hb_btn.png');
+    overflow: hidden;
+}
+
+.sava-hb-btn img {
+    opacity: 0;
 }
 
 .get-jk-btn {
@@ -1054,6 +1090,7 @@ a {
 .qihang-btn,
 .p2-item,
 .create-poster-btn,
+.sp-icon-2,
 .logo-icon {
     opacity: 0;
     transform: translateY(.3rem);

@@ -63,6 +63,7 @@ $(function () {
         './img/poster_bg.jpg',
         './img/tap.png',
         './img/xin_text.png',
+        './img/p3_sp.png',
     ];
 
     function loadImg() {
@@ -83,6 +84,7 @@ $(function () {
                 if (imgLoad >= imgList.length) {
                     Status = true;
                     $(".load-wrap").fadeOut(300);
+                    console.log('加载完成');
                     // ztPlay();
                     // 首屏移动
                     setTimeout(function () {
@@ -138,8 +140,8 @@ $(function () {
     function oneMove() {
         $(".load-wrap").fadeOut(300);
         $(".wrap-6").addClass('active');
-        pictureStart(0.1 * maxY, TWEEN.Easing.Quadratic.Out, 4000);
         // return false;
+        pictureStart(0.1 * maxY, TWEEN.Easing.Quadratic.Out, 4000);
         setTimeout(function () {
             $(".zhi-icon").fadeIn(300);
             pictureStart(0.22 * maxY, TWEEN.Easing.Quadratic.Out, 4000, function () {
@@ -304,12 +306,12 @@ $(function () {
         });
         setTimeout(function () {
             $(".wrap-2").addClass('active');
-        }, 3000);
+        }, 1500);
         setTimeout(function () {
             pictureStart(0.817 * maxY, TWEEN.Easing.Quadratic.Out, 4500, function () {
                 $(".wrap-1").addClass('active');
             });
-        }, 7500);
+        }, 8500);
     });
 
     //数字动画
@@ -327,13 +329,16 @@ $(function () {
     var url = window.location.href;
     $('#qrcode').qrcode(url);
 
-    // 生成海报
+    // 显示海报
     $(".create-poster-btn").on("click", function () {
-        dom2img('#poster');
         $(".pop-poster").show();
-        var src = $(".dom2img-result").attr('src');
-        // $('.poster-con img').attr('src', src);
-        // $(".sava-hb-btn").attr("href", src);
+        //生成海报
+        dom2img('#poster', {
+            ondone: function () {
+                $(".poster-tips-text").hide();
+                $(".dom2img-result").clone().appendTo('.sava-hb-btn');
+            }
+        });
     });
 
     //修复 IOS12，微信 6.7.4+ 键盘不回弹的问题
