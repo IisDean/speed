@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP" />
+	<meta name="Copyright" content="Tencent" />
+	<meta name="keywords"
+		content="完美手游官网-《完美世界》手游由腾讯游戏和完美世界联手打造，拥有次世代级别特效，还原端游经典情怀，浩瀚星空、苍茫大陆、无尽深海随你遨游探索，构建千万玩家心中的“完美世界”， 海陆空全区域无缝大世界自由翱翔，其战斗模式创新的采用自由飞行战斗方式，是腾讯首款自由飞行战斗手游！" />
+	<meta name="description" content="完美世界手游,完美手游,完美世界手游官网,腾讯完美世界,腾讯完美世界手游,完美世界官方手游,完美世界手机版,甜蜜放送 惊喜暴击" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>甜蜜放送 惊喜暴击-《完美世界》官方网站-腾讯游戏</title>
+	<!-- 私有样式 开始 -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 私有样式 结束 -->
+	<script>
+		//屏幕适应
+		(function (win, doc) {
+			if (!win.addEventListener) return;
+			var html = document.documentElement;
+			function setFont() {
+				var html = document.documentElement;
+				var k = 750;
+				html.style.fontSize = html.clientWidth / k * 100 + "px";
+			}
+			setFont();
+			setTimeout(function () {
+				setFont();
+			}, 300);
+			doc.addEventListener('DOMContentLoaded', setFont, false);
+			win.addEventListener('resize', setFont, false);
+			win.addEventListener('load', setFont, false);
+		})(window, document);
+	</script>
+</head>
+
+<body>
+	<div id="app">
+		<section>
+			<div class="ceiba-comp-0">
+				<div class="actTop_Banner"></div>
+			</div>
+			<div class="ceiba-comp-1">
+			    <!-- 登录信息开始 -->
+				<div class="actTop_info">
+					<div class="actTop_infoText"></div>
+					<div  id="logined" class="actTop_infoText ismobile"  style="display: none;">
+						<div>你好，
+							<span  id="userinfo" class="actTop_name"></span>
+							<span  class="actTop_name"></span>
+							<span  class="actTop_name"></span>
+						</div>
+						<div  class="actTop_InfoUser">
+							<a  href="javascript:;" class="actTop_InfoLink">绑定大区</a>
+							<a  href="javascript:;" class="actTop_InfoLink">领奖记录</a>
+						</div>
+						<div  style="display: none;">
+							<a  href="javascript:;" id="ptLogoutBtn" style="cursor: pointer;">退出</a>
+						</div>
+					</div>
+					<div  id="unlogin" class="actTop_infoText">
+						你好，请
+						<span><a  href="javascript:;" id="ptLoginBtn" class="actTop_login" style="cursor: pointer;">【QQ登录】</a></span>
+						<span>或<a  href="javascript:;" id="wxloginBtn" class="actTop_login">【微信登录】</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="ceiba-comp-2">
+				<div class="actModules">
+					<h3 class="actModules_title">2020首发新版 注册领专属礼</h3>
+					<p class="actModules_descripe">活动期间，在本活动下载安装游戏且成功创建角色的用户，</br>即可领取1份下载注册礼，单账号仅可领取1次</p>
+					<div class="actSlider">
+						<div class="actSlider_tab_h actSlider_tab-5">
+							<a href="javascript:;" class="actSlider_tabItems_h active">游戏家G1-G3</a>
+							<a href="javascript:;" class="actSlider_tabItems_h">游戏家G4</a>
+							<a href="javascript:;" class="actSlider_tabItems_h">心悦V1</a>
+							<a href="javascript:;" class="actSlider_tabItems_h">心悦V2</a>
+							<a href="javascript:;" class="actSlider_tabItems_h">心悦V3</a>
+						</div>
+						<div class="actSlider_content_h">
+							<div class="swiper-container ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="actSlider_contentItems_h">
+											<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actSlider_contentItems01.png" />
+										</div>
+										<div class="actModules_btnWrap">
+											<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="actSlider_contentItems_h">
+											<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actSlider_contentItems02.png" />
+										</div>
+										<div class="actModules_btnWrap">
+											<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="actSlider_contentItems_h">
+											<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actSlider_contentItems03.png" />
+										</div>
+										<div class="actModules_btnWrap">
+											<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="actSlider_contentItems_h">
+											<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actSlider_contentItems04.png" />
+										</div>
+										<div class="actModules_btnWrap">
+											<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="actSlider_contentItems_h">
+											<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actSlider_contentItems05.png" />
+										</div>
+										<div class="actModules_btnWrap">
+											<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ceiba-comp-3">
+				<div class="actModules">
+					<h3 class="actModules_title">2020 助力提升修为 赢永久时装</h3>
+					<p class="actModules_descripe">
+						活动期间，每日登录游戏可获得1次抽奖机会。此外成功邀请好友领取本活动注册礼，可额外获得10次抽奖机会。
+					</p>
+					<div class="actModules_btnWrap">
+						<div class="actModules_btnItems">
+							<p class="actModules_btnDescript"></p>
+							<a href="javascript:;" class="actModules_btn">邀请+1</a>
+						</div>
+						<div class="actModules_btnItems">
+							<p class="actModules_btnDescript"></p>
+							<a href="javascript:;" class="actModules_btn">邀请好友</a>
+						</div>
+					</div>
+					<div class="actLoterrt_time">当前抽奖次数：<span>0</span></div>
+					<div class="lottery" id="lotterycontent">
+						<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/loterry.png">
+					</div>
+				</div>
+			</div>
+			<div class="ceiba-comp-4">
+				<div class="actModules">
+					<h3 class="actModules_title">1月10日 新服等你来战</h3>
+					<a href="javascript:;" class="actModules_btn_h">立即领取</a>
+					<p class="actModules_descripe">心悦指挥官，带你称霸全服</p>
+				</div>
+			</div>
+			<div class="ceiba-comp-5">
+				<div class="actModules">
+					<h3 class="actModules_title">2020完美冰雪世界</h3>
+					<p class="actModules_descripe"></p>
+					<div class="videoWrap">
+						<img class="videoPoster" id="videoPoster" src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/cover.png">
+						<div id="video" class="videoLayer">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ceiba-comp-6">
+				<div class="actModules">
+				    <h3 class="actModules_title">甜蜜放送 连续登录好礼领不停</h3>
+				    <p class="actModules_descripe">每日登录游戏，可领取心悦专属福利，活动期间<br />每日签到礼单帐号限领1次。</p>
+				    <ul class="actSign_Wrap">
+				        <li class="actSign_List">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				        </li>
+				        <li class="actSign_List ">
+				            <div class="actSigned">
+				                <span>已签到</span>
+				            </div>
+				            <a hre="javascript:;" class="actSign_btn">x</a>
+				
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<div data-v-cf2a04d2="" class="ceiba-comp-7">
+				<div data-v-cf2a04d2="" class="actModules">
+					<h3 data-v-cf2a04d2="" class="actModules_title">冰雪大世界 挑战升级</h3>
+					<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/upgrade1.gif" class="actModules_gif1" alt="">
+					<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/upgrade2.gif" class="actModules_gif2" alt="">
+					<img src="//game.gtimg.cn/images/tgclub/act/a20200212wmsj/upgrade3.gif" class="actModules_gif3" alt="">
+				</div>
+			</div>
+			<div data-v-cf2a04d2="" class="ceiba-comp-8">
+				<div data-v-cf2a04d2="" class="actModules">
+					<h3 data-v-cf2a04d2="" class="actModules_title">活动规则</h3>
+					<div data-v-cf2a04d2="" class="actRules">
+						<p data-v-cf2a04d2="">
+							1、活动时间：2020年2月14日～3月5日<br/>
+							2、活动资格取消：若用户使用刷奖软件、雇佣他人参加活动等任何不正当手段或违法违规行为，活动参加资格和获奖资格将被取消。<br/>
+							
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			
+		
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>立即预约</span>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>已预约</span>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>下载游戏</span>
+				<em class="actModules_actionBtnTips">成功下载安装游戏可领心悦专属好礼</em>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn">
+				<span>正在下载50%</span>
+				<div class="actModules_DownLoadBar" style="width:50%">
+					<div class="actModules_DownLoadBarProcess">
+						<span>正在下载50%</span>
+					</div>
+				</div>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>继续下载63%</span>
+				<div class="actModules_DownLoadBar" style="width:40%">
+					<div class="actModules_DownLoadBarProcess">
+						<span>继续下载63%</span>
+					</div>
+				</div>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>腾讯认证 正版安装</span>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>启动游戏</span>
+			</a>
+			
+			<a href="javascript:;" class="actModules_actionBtn" style="display: none;">
+				<span>更新游戏</span>
+			</a>
+						
+			<!--选择大区-->
+			<div class="actModal" style="display:none">
+			    <div class="actModal_content areaContent">
+			        <a href="javascript:;" class="actModal_closeBtn">
+			            <span></span>
+			        </a>
+			        <div class="actModal_header">
+			            <h3>模块标题(30px)</h3>
+			        </div>
+			        <div class="actModal_body">
+			            <ul class="actModal_ul">
+			                <li class="actModal_li">
+			                    <select>
+			                        <option value="21区">21区(24px)</option>
+			                        <option value="22区">22区(24px)</option>
+			                        <option value="23区">23区(24px)</option>
+			                        <option value="24区">24区(24px)</option>
+			                    </select>
+			                </li>
+			                <li class="actModal_li">
+			                    <select>
+			                        <option value="21区">法师(24px)</option>
+			                        <option value="22区">射手(24px)</option>
+			                        <option value="23区">战士(24px)</option>
+			                        <option value="24区">辅助(24px)</option>
+			                    </select>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="actModal_footer">
+			            <a href="javascript:;" class="actModal_footerBtn">x</a>
+			        </div>
+			    </div>
+			</div>
+			
+			<!--获奖记录-->
+			<div class="actModal" style="display:none">
+				<div class="actModal_content recordContent">
+					<a href="javascript:;" class="actModal_closeBtn">
+						<span></span>
+					</a>
+					<div class="actModal_header">
+						<h3>领取记录</h3>
+					</div>
+					<div class="actModal_body">
+						<div class="actModal_awardsList">
+							<table>
+								<thead>
+									<tr>
+										<td width="140">道具名称</td>
+										<td width="200">领取时间</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+									<tr>
+										<td>暴击</td>
+										<td>2019-01-12 23:12:00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="actModal_awardsPages">
+							<a href="javascript:;" class="actModal_awardsPagesBtn actModal_awardsPagesPrev">上一页</a>
+							<input data-v-90882eb6="" readonly="readonly" class="actModal_awardsPagesInput" vaul="" value="1">
+							<!--<input placeholder="" class="actModal_awardsPagesInput">-->
+							<a href="javascript:;" class="actModal_awardsPagesBtn actModal_awardsPagesNext">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div data-v-235c3a84="" class="ceiba-comp-132 btnBox btnBoxFiexed">
+				<a href="javascript:;" class="actModules_btn">心悦完美霸服计划</a>
+			</div>
+			
+		</section>
+	</div>
+</body>
+
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+    function _id(idName) {
+        return document.getElementById(idName)
+    }
+
+    _id('videoPoster').addEventListener('click', function (e) {
+        e.target.style.display = 'none';
+        player.play();
+    })
+
+    var player = new Txplayer({
+        containerId: 'video',
+        vid: 'x0839g6lwzn',
+        width: '',
+        height: '',
+        loop: true,
+        autoplay: false
+    });
+</script>
+
+</html>

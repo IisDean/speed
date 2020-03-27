@@ -1,0 +1,349 @@
+
+#app .actInvite_boxBtn,#app .actInvite_boxContent:after,#app .actInvite_boxContent:before,#app .actModal_awardsPagesBtn,#app .actModal_awardsPagesInput,#app .actModal_bodyInput input,#app .actModal_closeBtn,#app .actModal_closeBtn span,#app .actModal_codeImg img,#app .actModal_liIcon,#app .actModal_wechatContent:after,#app .actModal_wechatContent:before,#app .actModules_DownLoadBarProcess,#app .actModules_actionBtn,#app .actModules_actionBtnTips,#app .actSign_List.disabled .actSigned,#app .actSign_Wrap:after,#app .actSign_Wrap:before,#app .actSign_btn,#app .actSign_name span,#app .actSlider_tab:after,#app .actSlider_tab:before,#app .actSlider_tabItems,#app .videoPoster,#app .videoWrap video,#loginStatusSyncFrame_ams_ame{display:block}
+#app .actInvite_list,#app .actModal_shareList,#app .actModules_btnItems,#app .actModules_textItems,#app .actSignIn_List,#app .actSign_List{display:inline-block}
+#app .actSigned{display:none}
+#app .actCharge_boxBtn,#app .actInvite_boxBtn,#app .actInvite_boxContent,#app .actModal_awardsPages,#app .actModal_footer,#app .actModal_footerBtn,#app .actModal_header,#app .actModal_li,#app .actModal_li select,#app .actModules_DownLoadBarProcess,#app .actModules_actionBtn,#app .actModules_btnWrap,#app .actModules_btn_c,#app .actModules_btn_h,#app .actModules_btn_i,#app .actModules_btn_l,#app .actModules_btn_s,#app .actModules_btn_v,#app .actSignIn_btn,#app .actSlider_tabItems_h,#app .actSlider_tabItems_v,#app .actSlider_tab_h,#app .actSlider_v,#app .actTop_Btn,#app .actTop_BtnWrap,#app .shareGet_btn,#app .textContent .actModal_body{display:-webkit-box;display:box}
+#app .actCharge_boxBtn,#app .actInvite_boxBtn,#app .actModal_closeBtn,#app .actModal_closeBtn span,#app .actModal_content,#app .actModal_liIcon,#app .actModal_share,#app .actModal_wechatContent,#app .actModules_DownLoadBar,#app .actModules_DownLoadBarProcess,#app .actSign_btn,#app .actSigned,#app .actSigned span,#app .shareSlider_row_left,#app .shareSlider_row_right,#app .videoPoster{position:absolute}
+#app .actCharge_boxBtnWrap,#app .actInvite_boxBtnWrap,#app .actModal_li,#app .actModules_actionBtn,#app .actSign_List,#app .videoWrap{position:relative}
+#app .actModal{position:fixed}
+#app .actInvite_boxContent:after,#app .actInvite_boxContent:before,#app .actModal_wechatContent:after,#app .actModal_wechatContent:before,#app .actSign_Wrap:after,#app .actSign_Wrap:before,#app .actSlider_tab:after,#app .actSlider_tab:before{content:''}
+#app .actInvite_boxContent,#app .actModal_wechatContent,#app .actSign_Wrap,#app .actSlider_tab{clear:both;height:auto}
+#app .actInvite_boxContent:after,#app .actInvite_boxContent:before,#app .actModal_wechatContent:after,#app .actModal_wechatContent:before,#app .actSign_Wrap:after,#app .actSign_Wrap:before,#app .actSlider_tab:after,#app .actSlider_tab:before{clear:both;overflow:hidden}
+#app .actModal_wechatShareInfo,#app .actModal_wechatShareStep,#app .actSlider_tabItems{float:left}
+#app .actCharge_boxBtnWrap,#app .actInvite_boxBtnWrap{float:right}
+#app .actCharge_boxBtn,#app .actCharge_boxBtn.disabled,#app .actInvite_boxBtn,#app .actInvite_boxBtn.disabled,#app .actModal_closeBtn span,#app .actModal_footerBtn,#app .actModules_actionBtn,#app .actModules_btn_c,#app .actModules_btn_c.disabled,#app .actModules_btn_h,#app .actModules_btn_h.disabled,#app .actModules_btn_l.disabled,#app .actModules_btn_i,#app .actModules_btn_i.disabled,#app .actModules_btn_l,#app .actModules_btn_s,#app .actModules_btn_v,#app .actModules_btn_v.disabled,#app .actSignIn_btn,#app .actSignIn_btn.disabled,#app .actSign_btn,#app .actSlider_tab-2 .actSlider_tabItems_h,#app .actSlider_tab-2 .actSlider_tabItems_h.active,#app .actSlider_tab-3 .actSlider_tabItems_h,#app .actSlider_tab-3 .actSlider_tabItems_h.active,#app .actSlider_tab-4 .actSlider_tabItems_h,#app .actSlider_tab-4 .actSlider_tabItems_h.active,#app .actSlider_tab-5 .actSlider_tabItems_h,#app .actSlider_tab-5 .actSlider_tabItems_h.active,#app .actSlider_tab-6 .actSlider_tabItems_h,#app .actSlider_tab-6 .actSlider_tabItems_h.active,#app .actSlider_tab-7 .actSlider_tabItems_h,#app .actSlider_tab-7 .actSlider_tabItems_h.active,#app .actSlider_tabItems_v,#app .actSlider_tabItems_v.active,#app .actTop_Btn,#app .areaContent,#app .bookContent,#app .codeContent,#app .giftContent,#app .otherContent,#app .recordContent,#app .shareGet_btn,#app .shareSlider_row_left,#app .shareSlider_row_right,#app .textContent, #app .actModules_title, #app .actModal_header,#app .actModules_btn,#app .actModules_btn_2{background-image:url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/sprite.png");background-size:10rem auto;background-repeat:no-repeat}
+#app .actCharge_boxBtn.disabled{background-position:-9.61rem -14.8rem;width:1.6rem;height:.6rem}
+#app .actCharge_boxBtn{background-position:-12.91rem -14.8rem;width:1.6rem;height:.6rem}
+#app .actInvite_boxBtn.disabled{background-position:-3.3rem -15.55rem;width:1.6rem;height:.6rem}
+#app .actInvite_boxBtn{background-position:-7.96rem -14.8rem;width:1.6rem;height:.6rem}
+#app .actModal_closeBtn span{background-position: 0 -26.4rem;width:.36rem;height:.36rem}
+#app .bookContent span,#app .codeContent span,#app .giftContent span{background-position: -.5rem -26.4rem;}
+#app .actModal_footerBtn{background-position:-.3rem -19.3rem;width:2.62rem;height:.72rem}
+#app .actModules_actionBtn{position: fixed; bottom: 0; left: 0; right: 0; background-position: 0 -11.9rem;width:7.5rem;height:1.28rem; z-index: 99;}
+#app .actModules_btn_c.disabled{background-position:-5.35rem -13.73rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_c{background-position:-7.8rem -13.73rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_h.disabled{background-position:-7rem -1.6rem;}
+#app .actModules_btn_l.disabled{background-position:-7rem -3.2rem;}
+#app .actModules_btn_h{background-position: 0 -2.68rem;width:2.35rem;height:.72rem}
+#app .ceiba-comp-6 .actModules_btn_h {background-position: 0 -1.6rem;}
+#app .actModules_btn_i.disabled{background-position:-7.8rem -12.98rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_i{background-position:-7.83rem -12.23rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_l{background-position:0 -15.37rem;width:3.1rem;height:.77rem;float: left;}
+#app .actModules_btn_2 {background-position: -6.07rem -2.7rem;width: 3.09rem;height: .77rem;float: left;}
+#app .actModules_btn_s{background-position:-10.25rem -13.73rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_v.disabled{background-position:-12.73rem -12.23rem;width:2.4rem;height:.7rem}
+#app .actModules_btn_v{background-position:-5.35rem -12.98rem;width:2.4rem;height:.7rem}
+
+#app .actSignIn_btn{background-position:0 -15.55rem;width:1.6rem;height:.6rem}
+#app .actSign_btn{background-position:-.1rem -9.24rem;width:1.6rem;height:.58rem}
+#app .actSign_btn.disabled{background-position:-1.96remrem -9.24rem;width:1.74rem;height:.58rem}
+#app .actSlider_tab-2 .actSlider_tabItems_h.active{background-position:-10.7rem -5.3rem;width:3.65rem;height:.7rem}
+#app .actSlider_tab-2 .actSlider_tabItems_h{background-position:-10.7rem -4.55rem;width:3.65rem;height:.7rem}
+#app .actSlider_tab-3 .actSlider_tabItems_h.active{background-position:-5rem -1.6rem;}
+#app .actSlider_tab-3 .actSlider_tabItems_h{background-position:-3rem -1.6rem;width:1.58rem;height:.45rem;}
+#app .actSlider_tab-4 .actSlider_tabItems_h.active{background-position:-4.04rem -14.8rem;width:1.82rem;height:.7rem}
+#app .actSlider_tab-4 .actSlider_tabItems_h{background-position:-2.17rem -14.8rem;width:1.82rem;height:.7rem}
+#app .actSlider_tab-5 .actSlider_tabItems_h.active{background-position: -7.93rem 0;color: #fff;}
+#app .actSlider_tab-5 .actSlider_tabItems_h{background-position: -6rem 0;width:1.56rem;height:.48rem; margin: 0 -.05rem; letter-spacing: -.01rem;}
+#app .actSlider_tab-6 .actSlider_tabItems_h.active{background-position:-16.05rem -2.25rem;width:1.21rem;height:.7rem}
+#app .actSlider_tab-6 .actSlider_tabItems_h{background-position:-16.05rem -1.5rem;width:1.21rem;height:.7rem}
+#app .actSlider_tab-7 .actSlider_tabItems_h.active{background-position:-16.05rem -3.75rem;width:1.04rem;height:.7rem}
+#app .actSlider_tab-7 .actSlider_tabItems_h{background-position:-16.05rem -3rem;width:1.04rem;height:.7rem}
+#app .actSlider_tabItems_v.active{background-position:-14.4rem -5.3rem;width:1.46rem;height:.7rem}
+#app .actSlider_tabItems_v{background-position:-16.05rem 0;width:1.46rem;height:.7rem}
+#app .actTop_Btn{background-position:0 0; width: 2.46rem; height:.73rem}
+#app .actTop_BtnWrap .actTop_Btn:last-child {background-position: -3.28rem 0;}
+#app .areaContent{background-position: 0 -11rem;width:5.3rem;height:4.2rem}
+#app .bookContent{background-position: 0 -11rem;width:5.3rem;height:4.2rem}
+#app .codeContent{background-position:0 -11rem;width:5.3rem;height:4.2rem}
+#app .giftContent{background-position:0 -21.6rem;width:5.3rem;height:3.85rem}
+#app .otherContent{background-position: 0 -15.3rem;width:5.3rem;height:6.2rem}
+#app .recordContent{background-position:-3.17rem -13.5rem;width:6.1rem;height:6rem}
+#app .shareGet_btn{background-position:-5.91rem -14.8rem;width:2rem;height:.6rem}
+#app .shareSlider_row_left{background-position:-17.14rem -3rem;width:.34rem;height:.46rem}
+#app .shareSlider_row_right{background-position:-17.14rem -3.75rem;width:.34rem;height:.46rem}
+#app .textContent{background-position:-10.7rem 0;width:5.3rem;height:4.5rem}
+#app .actModal_share,#app .actModal_wechatContent{background:#fff;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);border:1px solid #979797}
+#app .actModal_wechatContent{width:10rem;padding:.4rem}
+#app .actModal_shareList,#app .actSignIn_List{width:1.6rem;margin:0 .2rem}
+#app .actSignIn_text{font-size:.22rem;color:#a4a4a4}
+#app .actModal{width:100%;height:100%;left:0;top:0;z-index:6000}
+#app .actModal_content{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);padding-bottom:.44rem;border:none}
+#app .actModal_header{text-align:center;font-size:.3rem;color:#4a4a4a;padding:0;width: 5.3rem;height:.66rem; background-position: 0 -25.6rem;}
+#app .actModal_header h3 {width: 100%; line-height: .66rem; font-size: .3rem; color: #fff;}
+#app .actModal_ul{width: 4.8rem; margin: .38rem auto 0;}
+#app .actModal_li{-webkit-box-align:center;box-align:center;color:#fff;font-size:.24rem;width:4.02rem;height:.44rem; margin: 0 auto;}
+#app .actModal_li+.actModal_li{margin-top:.22rem}
+#app .actModal_li select{width:4.02rem;height:.44rem;appearance:none;-webkit-appearance:none;padding:0 .6rem 0 .16rem; color: #fff; background: url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/arrow.png") no-repeat; background-size:4.02rem auto; border: none; outline: none; cursor: pointer}
+#app .actModal_bodyDescribe{color:#356591;text-align:center;font-size:.24rem}
+#app .actModal_bodyDescribe input,#app .actModal_bodyDescribe label{vertical-align:middle}
+#app .actModal_liIcon{height:.22rem;width:.22rem;background:#fff;border: 1px solid #6e9adf;top:50%;right:.38rem;-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%);}
+#app .actModal_footer{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center}
+#app .actModal_footerBtn{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:0;color:#000;margin:.2rem .16rem 0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModal_closeBtn{width:.36rem;height:.36rem;right:.15rem;top:.15rem;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModal_closeBtn span{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+#app .actModal_awardsList{ width: 4.4rem; width: 4.6rem;margin: 1.2rem 0 0 .68rem;display:block;text-align:center;color:#fff;min-height:2.44rem;}
+#app .actModal_awardsList table{width:100%;border-top:1px solid #e0d1f3;border-left:1px solid #e0d1f3;background: #b099eb;}
+#app .actModal_awardsList td{border-right:1px solid #e0d1f3;border-bottom:1px solid #e0d1f3;padding:.1rem 0; line-height: .22rem; width:50%;}
+#app .actModal_awardsList thead{font-size:.26rem}
+#app .actModal_awardsList thead td{color:#ffffff;}
+#app .actModal_awardsList tbody{font-size:.2rem}
+#app .actModal_awardsList tbody td{color:#ffffff; font-size: .2rem;}
+
+#app .actModal_awardsPages{margin-top:.3rem;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center}
+#app .actModal_awardsPagesInput{width:.3rem;height:.3rem;border:1px solid #4a4a4a;text-align:center;vertical-align:middle;margin:0 .3rem}
+#app .actModal_awardsPagesBtn{color:#8984f1;font-size:.24rem; margin: 0 .5rem;}
+#app .bookContent{padding-top:.8rem}
+#app .textContent .actModal_body{-webkit-box-orient:vertical;box-orient:vertical;height:2.2rem;padding-top:.4rem;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center}
+#app .actModal_bodyTitle{font-size:.3rem;color:#356591;text-align:center;margin:0 .4rem 0; font-weight: bold;}
+#app .actModal_bodyInput{width:4.54rem;margin:.15rem auto}
+#app .actModal_bodyInput input{padding-left:.2rem;font-size:.24rem;width:100%;border:1px solid #6e9adf;background: #f1f6ff; text-align: center; color: #356591;}
+#app .actModal_bodyInput.phoneNum input{height:.68rem}
+#app .actModal_bodyInput.awards{margin-top:.2rem;margin-bottom:.06rem}
+#app .actModal_bodyInput.awards input{height:.68rem;text-align:center}
+#app .actModal_codeImg{width:2rem;height:2rem;margin:0 auto}
+#app .actModal_codeImg img{width:100%;height:100%}
+#app .codeContent{padding-top:.8rem}
+#app .giftContent{padding-top:.8rem}
+#app .actModal_codeText{font-size:.3rem;font-weight:bold;color:#356591;text-align:center;margin-top:.2rem}
+#app .actModal_awardsBtn{color:#356591;font-size:.24rem;text-decoration:underline}
+#app .actModal_wechatShareText{text-align:center;font-size:.4rem;color:#a4a4a4}
+#app .actModal_wechatShareInfo{width:3.4rem;margin-right:.5rem;padding-top:.5rem}
+#app .actModal_wechatShareTitle{font-size:.24rem;text-align:center;margin-top:.54rem}
+#app .actModal_wechatSharetitle{font-size:.22rem;text-align:center;margin-top:.16rem}
+#app .actModal_wechatShareIcon{width:2rem;height:2rem;margin:.2rem auto 0}
+#app .actModal_wechatShareIcon img{width:100%;height:100%}
+#app .actModal_wechatShareStep{width:5.18rem;height:5.2rem}
+#app .actModal_wechatShareStep img{width:100%;height:100%}
+#app .videoWrap{width:7.3rem;height:4.1rem;margin:-.1rem auto 0}
+#app .videoWrap video{width:100%}
+#app .videoLayer{    width: 7.28rem;height: 4.06rem;padding: .2rem; margin: 0 auto;}
+#app .videoPoster{width:100%;left:0;top:0;z-index:10}
+#app .actSlider{width:7.3rem;margin:.4rem auto 0;background-color:transparent}
+#app .actSlider img{width:100%}
+#app .actSlider_tab_h{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;}
+#app .actSlider_tabItems_h{color:#fff;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;-webkit-tap-highlight-color:rgba(0,0,0,0);float:none;background-color:transparent;border:none}
+#app .actSlider_tabItems_h.active{color:#000}
+#app .actSlider_contentItems_h{width:7.3rem;height:3.4rem;margin: 0 auto -.7rem;}
+#app .actSlider_content_h{width:7.3rem;-webkit-tap-highlight-color:rgba(0,0,0,0);padding:0}
+#app .ceiba-comp-2 .actSlider_content_h {margin: -.31rem auto 0;}
+#app .ceiba-comp-7 .actSlider_content_h {margin-top: .3rem}
+#app .actSlider_contentItems_h img {width:100%;height:100%; margin: 0 auto;}
+#app .actModules_btn_h{-webkit-box-pack:center;box-pack:center;-webkit-box-align:center;box-align:center;font-size:0;color:#000;margin:0 .42rem;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModules_btn_h.disabled{color:#fff;    background-position: -.3rem -20.24rem; width: 2.35rem; height: .72rem;}
+
+#app .actSlider_v{width:7.3rem;height:3.8rem;margin:.1rem auto 0;background:#4a4a4a;-webkit-box-pack:justify;box-pack:justify;-webkit-box-align:start;box-align:start}
+#app .actSlider_v img{width:100%}
+#app .actSlider_tab_v{width:1.5rem;padding:0;margin-top:.13rem}
+#app .actSlider_content_v{width:5.4rem;height:3rem;padding:0;margin-top:.4rem;margin-right:.22rem}
+#app .actSlider_tabItems_v{width:1.46rem;height:.7rem;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;color:#fff;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:0}
+#app .actSlider_tabItems_v.active{color:#000}
+#app .actSlider_tab.seven .actSlider_tabItems{width:14.285%}
+#app .actSlider_tab.six .actSlider_tabItems{width:16.66666%}
+#app .actSlider_tab.five .actSlider_tabItems{width:20%}
+#app .actSlider_tab.four .actSlider_tabItems{width:25%}
+#app .actSlider_tab.three .actSlider_tabItems{width:33.33333%}
+#app .actSlider_tab.two .actSlider_tabItems{width:50%}
+#app .actSlider_tabItems{height:.7rem;line-height:.7rem;font-size:.24rem;text-align:center;background:#a4a4a4;color:#4a4a4a;border:1px solid #666}
+#app .actSlider_tabItems.active{background:#d8d8d8}
+#app .vertical .actSlider_contentItems{width:5.4rem;height:3rem}
+#app .vertical .actSlider_contentItems img{width:100%;height:100%}
+#app .actModules_btn_v{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:.24rem;color:#4a4a4a;margin:0 .42rem;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModules_btn_v.disabled{color:#fff}
+#app .actRules{font-size:.24rem;color:#504bcf;width:94%;margin:.2rem auto 0}
+#app .common-footerWrap{margin-top:1rem}
+#app .sellBanner{width:7.3rem;margin:0 auto}
+#app .sellBanner img{width:100%}
+#app .actModules_btn_c{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:0;color:#000;margin:0 .42rem;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actInvite_Wrap{font-size:0;text-align:center;margin:.4rem 0}
+#app .actInvite_list{width:1.2rem;height:1.2rem;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;margin:0 .06rem}
+#app .actInvite_list img{width:100%;height:100%}
+#app .actModules_subDescripe{color:#4a4a4a;font-size:.24rem;margin:.3rem 0;text-align:center}
+#app .actInvite_boxList{width:100%}
+#app .actInvite_boxList+.actInvite_boxList{margin-top:.66rem}
+#app .actInvite_boxWrap{width:7.3rem;margin:.9rem auto 0}
+#app .actInvite_boxTitle{font-size:.24rem;color:#4a4a4a;margin-bottom:.1rem}
+#app .actCharge_boxBtnWrap{width:1.6rem;height:1.8rem}
+#app .actCharge_boxBtn{color:#000;left:50%;top:50%;font-size:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actCharge_boxBtn.disabled{color:#fff}
+#app .actModules_btn_i{-webkit-box-pack:center;box-pack:center;-webkit-box-align:center;box-align:center;font-size:0;color:#000;margin:0 .42rem;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModules_btn_i.disabled{color:#fff}
+#app .actInvite_Wrap{font-size:0;text-align:center;margin:.4rem 0}
+#app .actInvite_list{width:1.2rem;height:1.2rem;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;margin:0 .06rem}
+#app .actInvite_list img{width:100%;height:100%}
+#app .actModules_btnDescript{font-size:.24rem;color:#4a4a4a;text-align:center;max-width:3.2rem;margin:0 auto .1rem}
+#app .actLoterrt_time{font-size:.24rem;color:#0e60ad;text-align:center;margin-top:.82rem}
+#app .lottery{position:relative;width:7.1rem;height:7.1rem;margin:.2rem auto;overflow:hidden}
+#app .lottery img{width:7.1rem;height:7.1rem}
+#app .actInvite_boxList{width:100%}
+#app .actInvite_boxList+.actInvite_boxList{margin-top:.4rem}
+#app .actInvite_boxWrap{width:7.3rem;margin:.4rem auto 0}
+#app .actInvite_boxTitle{font-size:.24rem;color:#4a4a4a;margin-bottom:.1rem}
+#app .actInvite_boxBtnWrap{width:1.6rem;height:1.8rem}
+#app .actInvite_boxBtn{color:#4a4a4a;text-align:center;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actInvite_boxBtn.disabled{color:#fff}
+#app .actTop_infoText{font-size:.24rem;color:#000;text-align:center}
+#app .actTop_login{text-decoration:none;color:#000}
+#app .actTop_InfoUser{font-size:.24rem;text-align:center;margin-top:.18rem}
+#app .actTop_InfoLink{font-size:.24rem;color:#000;margin:0 .54rem}
+#app .actModules_btn_l{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:0;color:#000;margin:0 .22rem;-webkit-tap-highlight-color:rgba(0,0,0,0); display: none;}
+#app .actInvite_Wrap{font-size:0;text-align:center;margin:.4rem 0}
+#app .actInvite_list{width:1.2rem;height:1.2rem;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;margin:0 .06rem}
+#app .actInvite_list img{width:100%;height:100%}
+#app .actModules_btnDescript{font-size:.24rem;color:#4a4a4a;text-align:center;max-width:3.2rem;margin:0 auto .1rem}
+#app .actLoterrt_time{font-size:.26rem;font-weight:bold;color:#8475fd;text-align:center;margin-top:.26rem}
+#app .lottery{position:relative;width:7.1rem;height:7.1rem;margin:.3rem auto;overflow:hidden}
+#app .lottery img{width:7.1rem;height:7.1rem}
+#app .shareDate{font-size:.28rem;text-align:center;margin:.1rem 0 .16rem}
+#app .share_contentItems{width:5.9rem;height:2rem;margin:0 auto}
+#app .shareSlider_content_h{width:7.3rem;-webkit-tap-highlight-color:rgba(0,0,0,0);padding:0;height:3.5rem}
+#app .share_contentWrap{background:#e2e2e2;padding-top:.3rem;padding-bottom:.3rem}
+#app .shareGet_btn{margin:0 .2rem}
+#app .shareSlider_row_left{left:.3rem;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+#app .shareSlider_row_right{right:.3rem;top:50%;-webkit-transform:translate(50%,-50%);-moz-transform:translate(50%,-50%);-ms-transform:translate(50%,-50%);-o-transform:translate(50%,-50%);transform:translate(50%,-50%)}
+#app .shareSlider_row_left,#app .shareSlider_row_right{z-index:10}
+#app .actRules a,#app .actRules strong{color:#f4d556}
+#app .actModules_btn_s{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;font-size:0;color:#000;margin:0 .42rem}
+#app .actInvite_Wrap{font-size:0;text-align:center;margin:.4rem 0}
+#app .actInvite_list{width:1.2rem;height:1.2rem;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;margin:0 .06rem}
+#app .actInvite_list img{width:100%;height:100%}
+#app .actModules_btnItems,#app .actModules_textItems{vertical-align:middle}
+#app .actSign_Wrap{width:7.14rem;height: 5.03rem; margin:.96rem auto 0; text-align:center;font-size:0;}
+#app .actSign_List{width:1.68rem;height:2.62rem;vertical-align:top;margin-right: .1rem;margin-bottom: .03rem;}
+#app .actSign_List:last-child{width:3.42rem}
+#app .actSign_day{line-height: .4rem; font-size:.32rem; font-weight: bold; color:#ef6db4; text-align:center; position: relative;}
+#app .actSign_day:before,#app .actSign_day:after {position: absolute; top: .14rem; content: ''; width: .09rem; height: .09rem; }
+#app .actSign_day:before {left: .28rem;}
+#app .actSign_day:after {right: .3rem;}
+#app .actSign_List:nth-child(7) .actSign_day:before {left: 1.18rem;}
+#app .actSign_List:nth-child(7) .actSign_day:after {right: 1.2rem;}
+#app .actSign_icon{margin:.1rem auto 0}
+#app .actSign_icon{height:1.24rem;width:1.27rem;margin: 0 auto;}
+#app .actSign_icon img {display: block; width: 100%; height: 100%;}
+#app .actSign_List:last-child .actSign_icon {width:3.05rem}
+#app .actSign_name{text-align:center;font-size:.24rem;color:#4b48c6; margin-top: .04rem;}
+#app .actSign_name span{line-height:.3rem}
+#app .actSigned{left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:2}
+#app .actSigned span{color:#fff;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:.2rem}
+#app .actSignIn_btn{font-size:0;color:#000;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;margin:.4rem auto 0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actSign_List.disabled .actSignIn_btn{color:#fff}
+#app .actSignIn_Wrap{width:7.3rem;text-align:center;padding:.5rem .4rem}
+#app .actSignIn_Wrap{background:#d8d8d8;margin:.4rem auto 0}
+#app .actSignIn_List{width:1.6rem;margin:0 .1rem}
+#app .actSignIn_text{font-size:.22rem;color:#4a4a4a}
+#app .sellBanner{width:7.3rem;margin:0 auto}
+#app .sellBanner img{width:100%}
+#app .actTop_Banner{height:6.1rem;width:7.5rem;background:url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/actTop_banner.jpg") no-repeat center top;background-size:7.5rem 6.1rem;margin:0 auto}
+#app .actTop_BtnWrap{padding-top:5.44rem;font-size:0;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center}
+#app .actTop_Btn{-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;margin:0 .4rem;font-size:0;color:#000;background-color:transparent}
+#app .actModules_actionBtn{font-size:.4rem;background-color:transparent;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;-webkit-box-orient:vertical;box-orient:vertical;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actModules_actionBtn span{color:#fff}
+#app .actModules_actionBtnTips{font-size:.26rem;color:#fff;line-height:1.2}
+#app .actModules_DownLoadBar{width:100%;height:100%;left:0;top:0;overflow:hidden;z-index:10}
+#app .actModules_DownLoadBarProcess{height:100%;width:7.5rem;left:0;top:0;background:#8474f7;border:1px solid #8474f7;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center; opacity: .5;}
+#app .actModules_DownLoadBarProcess span{color:#fff}
+#app section{height:100%;width:100%;padding-bottom:1.28rem;background:url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/bg.jpg") no-repeat;background-size:7.5rem auto;overflow: hidden;}
+#app .actModules_btnWrap{margin-top:.38rem;font-size:0;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center}
+#app .actModules{margin:0;width:auto}
+#app .actSlider_content{width:7.3rem;padding:.2rem}
+#app .actInvite_boxContent{background:#a4a4a4;padding:0;height:2.3rem;-webkit-box-align:center;box-align:center;-webkit-box-pack:justify;box-pack:justify}
+#app .actModules_textItems{font-size:.24rem;color:#4a4a4a}
+#app .actInvite_boxImg{float:none}
+#app .actInvite_boxImg{width:5.1rem;height:1.8rem}
+#app .actInvite_boxImg img{width:100%;height:100%}
+#app .actModules_title{font-size:.36rem;color:#4a4a4a;text-align:center}
+#app .actModules_descripe{max-width:7.3rem; line-height: .3rem; text-align:center;margin:.1rem auto 0;font-size:.24rem;color:#504bcf}
+#app .actModules_descripe a,#app .actModules_descripe strong{color:#f4d556}
+#app .ceiba-comp-2 {height:6.94rem; padding-top: .3rem;  }
+#app .ceiba-comp-3 {height: 11.85rem;}
+#app .ceiba-comp-4{height: 6.74rem;position: relative;}
+#app .ceiba-comp-5 {height:5.87rem;}
+#app .ceiba-comp-6 {height:9.3rem;}
+#app .ceiba-comp-7 {height: 12.14rem;position: relative;}
+#app .ceiba-comp-8 {height: 4.6rem;margin-top: -.6rem;overflow: hidden;}
+#app .ceiba-comp-9 p{width: 94%; margin: 0 auto;}
+#app .actModules_title {height: 1.24rem; font-size: 0; margin: 0 auto;}
+#app .ceiba-comp-2 .actModules_title {width: 7.5rem; background-position: 0 -.87rem;}
+#app .ceiba-comp-3 .actModules_title {width: 7.5rem; background-position: 0 -3.47rem;}
+#app .ceiba-comp-4 .actModules_title {width: 7.5rem; background-position: 0 -4.86rem;}
+#app .ceiba-comp-4 .actModules_descripe{text-align: center;font-size: .24rem;color: #8475fd;font-weight: bold;padding-top: 4.85rem; display: none;}
+#app .ceiba-comp-4 .actModules_btn_h{width: 2.36rem;height: .69rem;background-position: -3.28rem -2.68rem;position: absolute; top: 5.3rem;left: 2.1rem;display: none;}
+#app .ceiba-comp-5 .actModules_title {width: 7.5rem; background-position: 0 -6.3rem;}
+#app .ceiba-comp-6 .actModules_title {width: 7.5rem;  background-position: 0 -7.84rem;}
+#app .ceiba-comp-8 .actModules_title {width: 7.5rem;  background-position: 0 -10.06rem;}
+#app .actSlider_tab_h .actSlider_tabItems_h {line-height: .46rem; font-size: .18rem; color: #c15e23;}
+#app .actSlider_tab-3 .actSlider_tabItems_h {font-size: .24rem; margin: 0 .2rem;}
+#app .actSign_List.disabled .actSign_btn{background-position:-1.96rem -9.24rem;}
+#app .ceiba-comp-3 .actModules_btnWrap{margin-top: .25rem;}
+#app .ceiba-comp-0{width: 7.5rem;height: 6.1rem;}
+#app .actModules_btn {position: fixed;top: 50%;right: 0;width: 1.99rem;height: 1.05rem;margin-top: -.52rem;background-position: 0 -13.71rem;font-size: 0;z-index: 999; display: none;}
+#app .ceiba-comp-7 .actModules_title{display: none;}
+#app .ceiba-comp-7 .actModules_gif1 {display: block;width: 4.67rem;height: 2.5rem;position: absolute;top: 1.5rem;left: .3rem;}
+#app .ceiba-comp-7 .actModules_gif2 {display: block;width: 4.67rem; height: 2.5rem;position: absolute;top: 4.8rem; left: 2.6rem;}
+#app .ceiba-comp-7 .actModules_gif3 {display: block;width: 4.67rem; height: 2.5rem; position: absolute; top: 8.1rem;left: .3rem;}
+#app .actTop_info{padding-top: 5.44rem;}
+
+
+#app .actModal_header h3{display: none; }
+#app .actModal_closeBtn{ width: .94rem; height: 1.92rem; right: -.32rem; top: 1.46rem; background-position: -.43rem -16.64rem; 
+background-image: url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/sprite.png"); background-size: 10rem auto; background-repeat: no-repeat}
+#app .actModal_ul{margin-top: 1.52rem;}
+#app .areaContent{background-position: -3.22rem -20.02rem; width: 6.1rem; height: 4.8rem;}
+#app .recordContent .actModal_closeBtn{top: 2.04rem;}
+#app .actTop_info{padding-top: 0; position: absolute; width: 100%;  left: 0;top: 5.4rem; }
+#app .actTop_InfoLink,#app .actTop_infoText,#app .actTop_infoText a,#app .actTop_login{color: #504bcf;}
+#app .actTop_login{background-position:0 0; width: 2.46rem; height:.73rem; margin: 0 .4rem; background-image: url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/sprite.png"); background-size: 10rem auto; background-repeat: no-repeat; display: inline-block; text-indent: -999em;}
+#app .actTop_login:last-child,#app #wxloginBtn {background-position: -3.28rem 0;}
+#app .actModules_actionBtn span {
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 1.28rem;
+}
+#app .actSign_Wrap{background:transparent;width:7.3rem;margin:0.44rem auto 0;padding:0;text-align:center;font-size:0;
+	background: url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/op_bg.png") no-repeat;background-size: 100%;height:5.78rem;padding-top: 0.1rem;}
+#app .actSign_List{float:none;width:1.6rem;height: 2rem;background:#f0f0f0;margin: .54rem .08rem 0;background: none;}
+#app .actSign_List:last-child{width:3.36rem;height: 2rem;background: none;}
+#app .actSign_day{font-size:.24rem;color:#ffc85b;text-align:center;font-weight: bold;}
+#app .actSign_icon{margin:0 auto 0}
+#app .actSign_icon{height:1.8rem;width:1.3rem;}
+#app .actSign_icon img{height:1.8rem;width:1.3rem;background-size: 100%;display: block;margin: 0 auto;}
+#app .actSign_name{text-align:center;font-size:.22rem;color:#4a4a4a;margin-top:.15rem}
+#app .actSign_name .actSign_lq{background-position: -9.41rem -.18rem;width: 1.6rem;height: .60rem;display: block;margin: 0.2rem auto 0;background-image:url(//game.gtimg.cn/images/tgclub/act/a20191216conquer/sprites.png);background-size:14.86rem 16.26rem;background-repeat:no-repeat;}
+#app .actSignIn_btn{font-size:0;color:#000;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;margin:.4rem auto 0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#app .actSignIn_btn.disabled{color:#fff}
+#app .actSignIn_Wrap{width:7.3rem;text-align:center;padding:.5rem .4rem}
+#app .actSignIn_Wrap{background:#d8d8d8;margin:.4rem auto 0}
+#app .actSignIn_List{width:1.6rem;margin:0 .2rem}
+#app .actSignIn_text{font-size:.22rem;color:#4a4a4a}
+#app .actSign_btn{   margin: 2.04rem auto 0;}
+#app .actSign_List.disabled .actSign_btn{background-position: -1.99rem -9.24rem;  }
+#app .actSign_List:last-child .actSign_btn{margin-left: .8rem;}
+
+#app .actModules_btn_l{display: block; background-position: 0 -21.10rem;}
+#app .actModules_btn_l.disabled{background-position: 0 -21.97rem;}
+
+#app .ceiba-comp-3 .actModules_btnItems .actModules_btn{ position: static; margin-top: auto;  }
+#app .ceiba-comp-3 .actModules_btnItems .actModules_btn{display: inline-block;vertical-align: middle; width:3.1rem; height:.77rem; }
+#app .ceiba-comp-3 .actModules_btnItems:nth-child(1) .actModules_btn{background-position: 0 -21.10rem;}
+#app .ceiba-comp-3 .actModules_btnItems:nth-child(1) .actModules_btn.disabled{background-position: 0 -21.97rem;}
+
+/*2.18*/
+#app .actSlider_tab_h{position: relative; z-index: 2;}
+#app .actTop_login{background: none; text-indent: 0; margin: 0; width: auto;height: auto; }
+#app .ceiba-comp-3 .actModules_btnItems .actModules_btn{ background: url("//game.gtimg.cn/images/tgclub/act/a20200212wmsj/sprite.png") no-repeat;  background-position: -6.07rem -2.7rem; background-size: 10rem auto;margin: 0;}
+#app .actSign_List{padding: 0;}
+#app .ceiba-comp-9.btnBox{ background: none; height:0;}
+#app .actRules{text-align: left;}
+#app .ceiba-comp-6 .actModules_descripe{ max-width: 5.2rem;}
+#app .ceiba-comp-2 .actModules_descripe{ max-width: 6.4rem;}
+
+#app section{position: relative;}
+#app .actTop_info{top: 5.4rem;}
+#app .actModal{background-color: rgba(0,0,0,.8);}
+#app .actTop_InfoLink, #app .actTop_infoText, #app .actTop_infoText a, #app .actTop_login {
+    color: #434163;
+}
+
+#app .actModal_awardsPagesInput{width: .3rem;height: .3rem; line-height: .3rem; background-color: #7972cc;border: none;padding: 0;margin: .05rem .3rem;font-size: .24rem;color: #fff;text-align: center;}
+#app .actModal_awardsPagesBtn{ padding: .05rem .1rem; margin: 0;}

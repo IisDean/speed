@@ -85,16 +85,12 @@ $(function () {
                     Status = true;
                     $(".load-wrap").fadeOut(300);
                     console.log('加载完成');
-                    // ztPlay();
                     // 首屏移动
                     setTimeout(function () {
                         oneMove();
                     }, 1000);
                 }
             }
-            // if (index <= 18) {
-            //     $(img).appendTo(".angle-icon");
-            // }
         });
     }
     loadImg();
@@ -116,10 +112,6 @@ $(function () {
     requestAnimationFrame(animate);
     //画面移动
     function pictureStart(y, ani, s, endCallback) {
-        // $pictureWrap.animate({
-        //     'bottom': -(y + bl) + 'px'
-        // }, s);
-        // return false;
         tween.to({
                 y: y + bl
             }, s)
@@ -220,7 +212,7 @@ $(function () {
             setTimeout(function () {
                 upNumber();
                 $(".wrap-3").addClass('active');
-            }, 3000);
+            }, 2000);
         }, 500);
     });
 
@@ -339,6 +331,20 @@ $(function () {
                 $(".dom2img-result").clone().appendTo('.sava-hb-btn');
             }
         });
+    });
+
+    //重新祈福
+    $(".again-btn").on("click", function () {
+        $(".wrap").removeClass('active');
+        $(".wrap-5").addClass('active');
+        $(".qifu-wrap").show();
+        $(".dom2img-result").remove();
+        $(".poster-tips-text").show();
+        pictureStart(.22 * maxY, TWEEN.Easing.Quadratic.Out, 4000);
+        angleMove({
+            x: 14.5,
+            y: 62.3
+        }, TWEEN.Easing.Quadratic.InOut, 4500);
     });
 
     //修复 IOS12，微信 6.7.4+ 键盘不回弹的问题
