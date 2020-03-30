@@ -482,22 +482,23 @@ a {
 }
 
 .end-title-wrap {
-    top: 4.2rem;
+    top: 6.6rem;
     left: 1.76rem;
 }
 
 .end-title-text {
-    font-size: .34rem;
-    color: #3b71a9;
+    font-size: .24rem;
+    color: #fff;
 }
 
 .end-title-text span {
-    font-size: .5rem;
-    color: #ff6c8c;
+    margin: 0 .1rem;
+    font-size: .24rem;
+    color: #7f8a96;
 }
 
 .result-wrap {
-    top: 6.1rem;
+    top: 4.6rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -516,11 +517,11 @@ a {
     line-height: .7rem !important;
     font-weight: 500;
     font-size: .5rem;
-    color: #ff6c8c;
+    color: #fff;
 }
 
 .create-poster-btn {
-    top: 11.9rem;
+    top: 12.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -530,7 +531,7 @@ a {
 }
 
 .again-btn {
-    top: 12.8rem;
+    top: 13.3rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -971,10 +972,10 @@ a {
 }
 
 .xl-icon {
-    top: 7.6rem;
-    right: .7rem;
-    width: 3.34rem;
-    height: 2.84rem;
+    top: 6.8rem;
+    right: 1.2rem;
+    width: 2.55rem;
+    height: 2.63rem;
     background-image: url('../img/p4_sp.png');
 }
 
@@ -1031,20 +1032,20 @@ a {
 
 .poster-container .xl-icon {
     top: 5.4rem;
-    right: .7rem;
+    right: 1.2rem;
 }
 
 .poster-container .end-title-wrap {
-    top: 1.9rem;
+    top: 5.2rem;
 }
 
 .poster-container .result-wrap {
-    top: 3.8rem;
+    top: 3.1rem;
 }
 
 
 .qrcode-container {
-    top: 10.5rem;
+    top: 11.2rem;
     width: 100%;
 }
 
