@@ -1,0 +1,1130 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+.c:after {
+    content: "\0020";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.c {
+    zoom: 1;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.hh {
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+}
+
+/*topbar*/
+.topbar {
+    background: #1d1d1e;
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    min-width: 1000px;
+    position: relative;
+    z-index: 100;
+}
+
+.top-l .logo {
+    width: 155px;
+    height: 44px;
+    position: absolute;
+    left: 50px;
+    top: 9px;
+    background: url(//game.gtimg.cn/images/nba2kx/cp/a20200402ver/logo.png) center center no-repeat;
+    z-index: 2;
+}
+
+.top-l .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.login {
+    padding: 17px 0 0 430px;
+}
+
+.login a {
+    background: #111114;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #adadad;
+}
+
+.login a:hover {
+    color: #fff;
+}
+
+.top-r {
+    position: absolute;
+    top: 16px;
+    right: 38px;
+}
+
+.gw-btn,
+.down-btn {
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 18px;
+    text-align: center;
+    color: #d7c66c;
+    border-radius: 15px;
+    border: 1px #d7c66c solid;
+    float: left;
+    font-size: 14px;
+    display: block;
+}
+
+.gw-btn:hover,
+.down-btn:hover {
+    color: #c7af31;
+}
+
+.top-ico-box {
+    width: 188px;
+    float: left;
+}
+
+.top-ico {
+    background: url("//game.gtimg.cn/images/nba2kx/cp/a20200402ver/top-ico.png") no-repeat;
+    width: 37px;
+    height: 37px;
+    display: block;
+    float: left;
+    margin-right: 9px;
+    position: relative;
+}
+
+.top-ico-box .top-ico img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50px;
+    margin-left: -100px;
+    display: none;
+}
+
+.top-ico-box .ico1 {
+    background-position: 0 0;
+}
+
+.top-ico-box .ico2 {
+    background-position: -46px 0;
+}
+
+.top-ico-box .ico3 {
+    background-position: -92px 0;
+}
+
+.top-ico-box .ico4 {
+    background-position: -137px 0;
+}
+
+.top-ico-box .ico1:hover {
+    background-position: 0 -47px;
+}
+
+.top-ico-box .ico2:hover {
+    background-position: -46px -47px;
+}
+
+.top-ico-box .ico3:hover {
+    background-position: -92px -47px;
+}
+
+.top-ico-box .ico4:hover {
+    background-position: -137px -47px;
+}
+
+.top-ico-box a:hover {
+    transition: .2s background-position ease-in-out;
+    -webkit-transition: .2s background-position ease-in-out;
+}
+
+.top-l .hdlogo {
+    width: 187px;
+    height: 42px;
+    position: absolute;
+    left: 230px;
+    top: 9px;
+    display: block;
+    background: url("//game.gtimg.cn/images/nba2kx/cp/a20200402ver/logo_wegame.png") no-repeat;
+}
+
+/*public*/
+html,
+body {
+    position: relative;
+    min-width: 1200px;
+    background-color: #09141f;
+}
+
+.ost_box {
+    min-width: 1200px !important;
+}
+
+body {
+    padding-top: 42px;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.head-a a:hover,
+.box .lqjl-btn:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+/*** footer  **/
+#afooter {
+    min-width: 1000px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0;
+    color: #6a6a6a;
+    background: #0e0e0e;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 5px;
+}
+
+#afooter .notice {
+    display: none;
+}
+
+#afooter a {
+    color: #6a6a6a;
+}
+
+#stage {
+    min-width: 1200px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/page_bg.jpg');
+    overflow: hidden;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.icons {
+    display: block;
+    background-image: url("//game.gtimg.cn/images/nba2kx/cp/a20200402ver/icons.png");
+    background-repeat: no-repeat;
+    background-size: 1000px auto;
+}
+
+.titles {
+    display: block;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/titles.png');
+    background-repeat: no-repeat;
+    background-size: 1183px auto;
+}
+
+.t {
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img img {
+    display: block;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.t-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.pop {
+    width: 700px;
+    height: 525px;
+}
+
+.close-btn {
+    width: 51px;
+    height: 51px;
+    background-position: -348px -424px;
+    top: 0;
+    right: -51px;
+}
+
+/* 头图 */
+.head-wrap {
+    height: 844px;
+}
+
+.head-icon {
+    margin: 10px auto 0;
+    width: 548px;
+}
+
+.head-btn-list {
+    margin: 12px auto 0;
+}
+
+.head-btn {
+    margin-right: 10px;
+    width: 393px;
+    height: 100px;
+    background-position: 0 0;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.head-btn.active,
+.head-btn:hover {
+    background-position: 0 -105px;
+}
+
+.head-btn3 {
+    margin-right: 0;
+}
+
+
+/* 荣誉简介 */
+.ti-c1-1 {
+    margin: 0 auto;
+    width: 853px;
+    height: 174px;
+    background-position: 0 0;
+}
+
+.plank-c1-p1 {
+    margin-top: 17px;
+    padding: 50px 78px 0;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 224px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c1_p1_bg.png');
+}
+
+.plank-msg-text {
+    margin-bottom: 6px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #c5d2e7;
+}
+
+.ti-c1-1 {
+    margin: 0 auto;
+    width: 853px;
+    height: 174px;
+    background-position: 0 0;
+}
+
+/* 荣誉类型 */
+.ti-c1-2 {
+    margin: 74px auto 0;
+    width: 853px;
+    height: 176px;
+    background-position: 0 -179px;
+}
+
+.titles-msg-text {
+    margin-top: -14px;
+    line-height: 1;
+    font-size: 16px;
+    color: #7d8694;
+}
+
+.type-list {
+    margin-top: 48px;
+    font-size: 0;
+}
+
+.type-item {
+    display: inline-block;
+    margin: 0 10px;
+    width: 270px;
+    height: 341px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c1_p2_icons_bg.png');
+}
+
+.type-title-text {
+    margin-top: 20px;
+    line-height: 1;
+    font-size: 24px;
+    color: #e1cd8c;
+}
+
+.type-msg-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #b1bdd0;
+}
+
+.type-img {
+    margin: 10px auto 0;
+    width: 155px;
+}
+
+/* 荣誉获取 */
+.ti-c1-3 {
+    margin: 92px auto 0;
+    width: 853px;
+    height: 176px;
+    background-position: 0 -360px;
+}
+
+.c1-p3-container {
+    margin-top: 28px;
+    overflow: hidden;
+}
+
+.c1-p3-container .left-wrap {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 624px;
+}
+
+.c1-p3-container .right-wrap {
+    margin: 62px 0 0 450px;
+    padding: 64px 20px 0 200px;
+    box-sizing: border-box;
+    width: 750px;
+    height: 380px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c1_p3_bg.jpg');
+}
+
+.plank-msg2-text {
+    text-align: justify;
+    line-height: 28px;
+    font-size: 16px;
+    color: #c5d2e7;
+}
+
+.plank-msg-text span,
+.plank-msg2-text span {
+    color: #ebd994;
+}
+
+.plank-msg3-text {
+    text-align: justify;
+    line-height: 28px;
+    font-size: 16px;
+    color: #edde9e;
+}
+
+.c1-p3-container .plank-msg2-text {
+    margin-bottom: 28px;
+}
+
+/* 荣誉等级 */
+.ti-c1-4 {
+    margin: 98px auto 0;
+    width: 853px;
+    height: 176px;
+    background-position: 0 -541px;
+}
+
+.level-img {
+    margin: -55px 0 0 -18px;
+    width: 1237px;
+    pointer-events: none;
+}
+
+.ry-tips {
+    margin: 16px auto 0;
+    width: 794px;
+    height: 68px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c1_p4_bg.png');
+    overflow: hidden;
+}
+
+.ry-tips .plank-msg2-text {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* 荣誉展示 */
+.ti-c1-5 {
+    margin: 110px auto 0;
+    width: 853px;
+    height: 176px;
+    background-position: 0 -722px;
+}
+
+.c1-p5-container {
+    margin-top: 28px;
+    margin-bottom: 100px;
+    height: 408px;
+    overflow: hidden;
+}
+
+.c1-p5-container .left-wrap {
+    margin-top: 75px;
+    box-sizing: border-box;
+    padding: 73px 284px 0 28px;
+    width: 750px;
+    height: 250px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c1_p5_bg.jpg');
+}
+
+.c1-p5-container .right-wrap {
+    top: 0;
+    left: 552px;
+    width: 622px;
+    height: 406px;
+    border: 1px solid #868686;
+}
+
+.prev-btn,
+.next-btn {
+    top: 50%;
+    z-index: 99;
+    margin-top: -34px;
+    width: 48px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    background-position: -398px 0;
+}
+
+.next-btn {
+    background-position: -451px 0;
+}
+
+.c1-p5-container .prev-btn {
+    left: -22px;
+}
+
+.c1-p5-container .next-btn {
+    right: -22px;
+}
+
+/* 侧栏菜单 */
+.celan-list {
+    position: fixed;
+    top: 50%;
+    right: 60px;
+    z-index: 99;
+    width: 128px;
+}
+
+.c1-celan-list {
+    margin-top: -306px;
+}
+
+.c2-celan-list {
+    margin-top: -204px;
+}
+
+
+.celan-item {
+    margin-bottom: 28px;
+    padding-right: 36px;
+    box-sizing: border-box;
+    width: 128px;
+    height: 74px;
+    background-position: 100px 100px;
+    cursor: pointer;
+}
+
+.c2-celan-list,
+.c2-celan-list .celan-item {
+    width: 199px;
+}
+
+.celan-item::before,
+.celan-item::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    right: 17px;
+    width: 2px;
+    height: 52px;
+    background-color: #2b334b;
+}
+
+.celan-item::before {
+    bottom: 61px;
+}
+
+.celan-item::after {
+    top: 61px;
+}
+
+.celan-item .celan-icon {
+    top: 15px;
+    right: -1px;
+    z-index: 1;
+    width: 38px;
+    height: 45px;
+    background-position: -398px -152px;
+}
+
+.celan-item:hover .celan-icon,
+.celan-item.active .celan-icon {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: -398px -73px;
+}
+
+.c2-celan-list .celan-item:hover .celan-icon,
+.c2-celan-list .celan-item.active .celan-icon {
+    background-position: -531px -73px;
+}
+
+.celan-msg-text {
+    z-index: 2;
+    line-height: 74px;
+    font-size: 18px;
+    color: #7a8295;
+}
+
+.celan-item:hover .celan-msg-text,
+.celan-item.active .celan-msg-text {
+    color: #fff;
+}
+
+/* 交易预定简介 */
+.ti-c2-1 {
+    margin: 0 auto;
+    width: 953px;
+    height: 176px;
+    background-position: 0 -903px;
+}
+
+.plank-c2-p1 {
+    margin: 16px auto 0;
+    padding: 62px 96px 0;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 224px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c2_p1_bg.jpg');
+}
+
+/* 如何进行交易预定 */
+.ti-c2-2 {
+    margin: 76px auto 0;
+    width: 1073px;
+    height: 166px;
+    background-position: 0 -1082px;
+}
+
+.c2-p2-container1 {
+    margin-top: 28px;
+    height: 354px;
+    overflow: hidden;
+}
+
+.c2-p2-container1 .left-wrap {
+    margin-top: 76px;
+    padding: 52px 105px 0 47px;
+    box-sizing: border-box;
+    width: 493px;
+    height: 224px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c2_p2_bg1.jpg');
+}
+
+.c2-p2-ti.ti-1 {
+    width: 305px;
+    height: 31px;
+    background-position: 0 -2148px;
+}
+
+.c2-p2-container1 .right-wrap {
+    top: 0;
+    left: 458px;
+    width: 642px;
+}
+
+.c2-p2-container2 {
+    margin-top: 72px;
+    height: 558px;
+    overflow: hidden;
+}
+
+.c2-p2-container2 .left-wrap {
+    top: 0;
+    left: 0;
+    width: 410px;
+}
+
+.c2-p2-container2 .right-wrap {
+    margin: 107px 0 0 376px;
+    padding: 77px 114px 0 118px;
+    box-sizing: border-box;
+    width: 746px;
+    height: 320px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c2_p2_bg2.jpg');
+}
+
+.c2-p2-ti.ti-2 {
+    width: 190px;
+    height: 31px;
+    background-position: 0 -2184px;
+}
+
+.c2-p2-container3 {
+    margin-top: 70px;
+    height: 354px;
+    overflow: hidden;
+}
+
+.c2-p2-container3 .left-wrap {
+    margin-top: 26px;
+    padding: 57px 52px 0 28px;
+    box-sizing: border-box;
+    width: 473px;
+    height: 303px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c2_p2_bg3.jpg');
+}
+
+.c2-p2-ti.ti-3 {
+    width: 159px;
+    height: 31px;
+    background-position: 0 -2220px;
+}
+
+.c2-p2-container3 .right-wrap {
+    top: 0;
+    left: 463px;
+    width: 640px;
+    height: 352px;
+    border: 1px solid #868686;
+
+}
+
+.c2-p2-container3 .prev-btn {
+    left: -25px;
+}
+
+.c2-p2-container3 .next-btn {
+    right: -25px;
+}
+
+/* 交易预定FAQ */
+.ti-c2-3 {
+    margin: 110px auto 0;
+    width: 953px;
+    height: 174px;
+    background-position: 0 -1253px;
+}
+
+.plank-c2-p3 {
+    margin: 17px auto 100px;
+    padding: 50px 48px 0;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 800px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c2_p3_bg.jpg');
+}
+
+.plank-c2-p3 .number-icon {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.plank-c2-p3 .number-1 {
+    background-position: -504px 0;
+}
+
+.plank-c2-p3 .number-2 {
+    background-position: -531px 0;
+}
+
+.plank-c2-p3 .number-3 {
+    background-position: -558px 0;
+}
+
+.plank-c2-p3 .number-4 {
+    background-position: -585px 0;
+}
+
+.faq-title-text {
+    line-height: 22px;
+    font-size: 20px;
+    color: #e1cd8c;
+}
+
+.faq-msg-text {
+    margin-top: 6px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #b1bdd0;
+}
+
+/* 屏3内容 */
+/* 赛季冲段奖励 */
+.ti-c3-1 {
+    margin: 0px auto;
+    width: 953px;
+    height: 174px;
+    background-position: 0 -1432px;
+}
+
+.plank-c3-p1 {
+    margin: 8px auto 0;
+    padding: 20px 30px 0;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 530px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c3_p1_bg.jpg');
+}
+
+/* 清明节专属活动 */
+.ti-c3-2 {
+    margin: 70px auto 0;
+    width: 993px;
+    height: 174px;
+    background-position: 0 -1612px;
+}
+
+.zy-btn {
+    width: 183px;
+    height: 50px;
+    background-position: 0 -208px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.c3-p2-title p,
+.c3-p2-title a {
+    display: inline-block;
+}
+
+.zy-tips-wrap {
+    display: none;
+    top: 100%;
+    right: 100px;
+    z-index: 99;
+    width: 1079px;
+}
+
+.zy-btn:hover+.zy-tips-wrap {
+    display: block;
+}
+
+.plank-c3-p2 {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 1200px;
+}
+
+.plank-c3-p2.bg-1 {
+    padding: 28px 90px 0;
+    height: 230px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c3_p2_bg1.png');
+}
+
+.plank-c3-p2.bg-2 {
+    padding: 40px 90px 0;
+    height: 200px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/c3_p2_bg3.png');
+}
+
+.plank-c3-p2 .ti-1 {
+    width: 308px;
+    height: 28px;
+    background-position: 0 -2257px;
+}
+
+.plank-c3-p2 .ti-2 {
+    width: 280px;
+    height: 28px;
+    background-position: 0 -2289px;
+}
+
+.plank-c3-p2 .ti-3 {
+    width: 308px;
+    height: 28px;
+    background-position: 0 -2322px;
+}
+
+.plank-c3-p2 .ti-4 {
+    width: 308px;
+    height: 28px;
+    background-position: 0 -2355px;
+}
+
+.plank-c3-p2 .ti-5 {
+    width: 308px;
+    height: 28px;
+    background-position: 0 -2388px;
+}
+
+.plank-c3-p2 .time-wrap {
+    margin-top: 12px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 158px;
+    height: 32px;
+    background-position: -641px -27px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.plank-c3-p2 .task-wrap {
+    margin-top: 14px;
+    margin-right: 30px;
+    padding: 7px 8px;
+    box-sizing: border-box;
+    background-color: #3f5777;
+    line-height: 1;
+    font-size: 18px;
+    color: #fff;
+}
+
+.prize-item {
+    margin-left: 35px;
+    width: 156px;
+    height: 156px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/prize_bg.png');
+}
+
+.login-num {
+    top: 0;
+    left: 0;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 82px;
+    height: 24px;
+    line-height: 24px;
+    background-position: -504px -27px;
+    font-size: 18px;
+    color: #c5d2e7;
+}
+
+.prize-num {
+    bottom: 0;
+    right: 0;
+    padding-left: 8px;
+    box-sizing: border-box;
+    width: 45px;
+    height: 22px;
+    background-position: -591px -27px;
+    line-height: 22px;
+    font-size: 18px;
+    color: #0d1929;
+}
+
+.prize-num.p-n-2 {
+    width: 57px;
+    background-position: -804px -27px;
+}
+
+.april-btn {
+    margin: 20px auto 0;
+}
+
+/* 比赛中显示实时网络情况 */
+.ti-c3-3 {
+    margin: 72px auto 0;
+    width: 1183px;
+    height: 174px;
+    background-position: 0 -1792px;
+}
+
+.fps-list {
+    margin: 34px auto 0;
+    font-size: 0;
+}
+
+.fps-item {
+    display: inline-block;
+    margin-right: 18px;
+    width: 360px;
+    height: 260px;
+    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200402ver/fps_bg.jpg');
+}
+
+.fps-img {
+    margin: 26px auto 0;
+    width: 140px;
+}
+
+.fps-title-text {
+    margin-top: 18px;
+    font-size: 24px;
+    color: #ecdb97;
+}
+
+.fps-item .plank-msg-text {
+    margin-top: 6px;
+    line-height: 24px;
+}
+
+.fps-img2 {
+    margin: 50px auto 0;
+    width: 941px;
+}
+
+/* 王朝人机赛新增多种难度选择 */
+.ti-c3-4 {
+    margin: 95px auto 0;
+    width: 1183px;
+    height: 174px;
+    background-position: 0 -1969px;
+}
+
+.wc-img {
+    margin: 36px auto 100px;
+    width: 680px;
+}
+
+.pop {
+    display: none;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .celan-list {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .celan-list {
+        display: none;
+    }
+}
