@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。">
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏">
+    <meta itemprop="name" content="4月2日新版本" />
+    <meta itemprop="description" content="全新荣誉系统上线，彰显个人非凡成就！交易市场推出预定功能，排位赛新增赛季中途冲段奖励！欢迎体验！" />
+    <meta itemprop="image" content="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/share.jpg" />
+    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!--[if lte IE 11]>
+    <script>alert("您的浏览器版本过低，为获得更好体验，请使用QQ浏览器或者谷歌浏览器等体验活动");</script>
+    <![endif]-->
+    <link rel="stylesheet" href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/idangerous.swiper.css">
+    <link rel="stylesheet" href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/index.css">
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+</head>
+
+<body data-nav="2">
+    <h1 class="hide">换个赛场，再战一场</h1>
+    <!--topbar-->
+    <div class="topbar">
+        <div class="top-l">
+            <h2 class="logo">
+                <a href="//nba2k2.qq.com/" target="_blank" class="hd" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+                    title="NBA2K online2"></a>
+            </h2>
+            <div class="login">
+                <!--登录前状态 Start-->
+                <p id="unlogin"><a href="javascript:;" id="btn_qqlogin">登录</a></p>
+                <!--登录前状态 End-->
+                <!--登录后状态 Start-->
+                <p id="logined" style="display: none">欢迎，
+                    <span id='login_qq_span'></span>，
+                    <span id="spanNotBind_649402">
+                        <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                    </span>
+                    <span id="spanBind_649402" style="display:none">
+                        <span id="area_info_649402"></span>
+                        <span id="role_info_649402"></span>
+                        <a href="javascript:;" class="bindArea">更改绑定</a>
+                        <!--                        <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>-->
+                    </span>
+                    <a href="javascript:;" id="btn_logout">注销</a></p>
+                <!--登录后状态 End-->
+            </div>
+            <!-- <a href="//www.wegame.com.cn/" target="_blank" class="hdlogo"
+                onclick="PTTSendClick('btn','wegame','进入wegame')" title="wegame"></a> -->
+        </div>
+        <div class="top-r">
+            <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')" class="gw-btn" target="_blank"
+                title="官网首页">官网首页</a>
+            <a href="//nba2k2.qq.com/events.html" onclick="PTTSendClick('btn','hd-btn','活动中心')" class="down-btn"
+                target="_blank" title="活动中心">活动中心</a>
+            <div class="top-ico-box">
+                <a href="//nba2k2.gamebbs.qq.com/forum.php" class="ico1 top-ico" target="_blank" title="官方论坛"
+                    onclick="PTTSendClick('btn','ico1','官方论坛')"></a>
+                <a href="javascript:;" class="ico2 top-ico" title="官方微信"
+                    onclick="PTTSendClick('btn','ico2','官方微信')"><img
+                        src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/weixin.jpg" alt="官方微信" /></a>
+                <a href="javascript:;" class="ico3 top-ico" title="兴趣部落"
+                    onclick="PTTSendClick('btn','ico3','兴趣部落')"><img
+                        src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/buluo.jpg" alt="兴趣部落" /></a>
+                <a href="//weibo.com/nba2kol2" class="ico4 top-ico" target="_blank" title="官方微博"
+                    onclick="PTTSendClick('btn','ico4','官方微博')"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //topbar -->
+    <div class="p-r" id="stage">
+        <!-- slogan -->
+        <div class="p-r bg head-wrap p1">
+            <i class="p-a bg body-inset"></i>
+        </div>
+        <!-- 内容 -->
+        <div class="p-r wrap">
+            <!-- 顶部切换 -->
+            <div class="p-a top-tab-list t-c">
+                <a href="./index.html" class="icons tab-item tab-item-1 btn-hover active">
+                    <h3 class="tab-title-text">「季后赛」激战来袭</h3>
+                    <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                </a>
+                <a href="./content1.html" class="icons tab-item tab-item-2 btn-hover">
+                    <h3 class="tab-title-text">参赛选手介绍</h3>
+                    <p class="tab-msg-text">为选手点点赞参与抽奖</p>
+                </a>
+                <a href="./content2.html" class="icons tab-item tab-item-3 btn-hover">
+                    <h3 class="tab-title-text">预测领福利</h3>
+                    <p class="tab-msg-text">多重奖励等你来拿</p>
+                </a>
+            </div>
+        </div>
+        <div class="bg tab-content-list">
+            <!-- 「季后赛」激战来袭 -->
+            <div class="p-r tab-content-item">
+                <!-- 赛事列表 -->
+                <ul class="p-a sai-container">
+                    <div class="wrap">
+                        <div class="swiper-container swiper-1">
+                            <div class="swiper-wrapper">
+                                <!-- 已结束 -->
+                                <div class="swiper-slide">
+                                    <div class="bg sai-wrap sai-end">
+                                        <div class="sai-top c">
+                                            <div class="f-l">已结束</div>
+                                            <div class="f-r">04-26 17:00</div>
+                                        </div>
+                                        <div class="sai-team c">
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-left f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">LAL</p>
+                                            </div>
+                                            <div class="team-bf f-l">
+                                                <div class="t-c">
+                                                    <span class="team-bf-text">2</span>
+                                                    <span class="team-bf-text">:</span>
+                                                    <span class="team-bf-text">1</span>
+                                                </div>
+                                                <div class="team-btn-container t-c">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-video-btn team-btn btn-hover">视频</a>
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-jijin-btn team-btn btn-hover">集锦</a>
+                                                </div>
+                                            </div>
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-right f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">CLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 直播中 -->
+                                <div class="swiper-slide">
+                                    <div class="bg sai-wrap sai-live">
+                                        <div class="sai-top c">
+                                            <div class="f-l">直播中</div>
+                                            <div class="f-r">04-26 17:00</div>
+                                        </div>
+                                        <div class="sai-team c">
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-left f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">LAL</p>
+                                            </div>
+                                            <div class="team-bf f-l">
+                                                <div class="t-c">
+                                                    <span class="team-bf-text lead-text">2</span>
+                                                    <span class="team-bf-text">:</span>
+                                                    <span class="team-bf-text">1</span>
+                                                </div>
+                                                <div class="team-btn-container t-c">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-live-btn team-btn btn-hover">观看直播</a>
+                                                </div>
+                                            </div>
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-right f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">CLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 未开始 -->
+                                <div class="swiper-slide">
+                                    <div class="bg sai-wrap sai-future">
+                                        <div class="sai-top c">
+                                            <div class="f-l">未开始</div>
+                                            <div class="f-r">04-26 17:00</div>
+                                        </div>
+                                        <div class="sai-team c">
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-left f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">LAL</p>
+                                            </div>
+                                            <div class="team-bf f-l">
+                                                <div class="t-c">
+                                                    <span class="team-bf-text">-</span>
+                                                    <span class="team-bf-text">:</span>
+                                                    <span class="team-bf-text">-</span>
+                                                </div>
+                                                <div class="team-btn-container t-c">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-video-btn team-btn btn-hover">竞猜</a>
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-jijin-btn team-btn btn-hover">分享</a>
+                                                </div>
+                                            </div>
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-right f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">CLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 未开始 -->
+                                <div class="swiper-slide">
+                                    <div class="bg sai-wrap sai-future">
+                                        <div class="sai-top c">
+                                            <div class="f-l">未开始</div>
+                                            <div class="f-r">04-26 17:00</div>
+                                        </div>
+                                        <div class="sai-team c">
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-left f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">LAL</p>
+                                            </div>
+                                            <div class="team-bf f-l">
+                                                <div class="t-c">
+                                                    <span class="team-bf-text">-</span>
+                                                    <span class="team-bf-text">:</span>
+                                                    <span class="team-bf-text">-</span>
+                                                </div>
+                                                <div class="team-btn-container t-c">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-video-btn team-btn btn-hover">竞猜</a>
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-jijin-btn team-btn btn-hover">分享</a>
+                                                </div>
+                                            </div>
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-right f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">CLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 未开始 -->
+                                <div class="swiper-slide">
+                                    <div class="bg sai-wrap sai-future">
+                                        <div class="sai-top c">
+                                            <div class="f-l">未开始</div>
+                                            <div class="f-r">04-26 17:00</div>
+                                        </div>
+                                        <div class="sai-team c">
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-left f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">LAL</p>
+                                            </div>
+                                            <div class="team-bf f-l">
+                                                <div class="t-c">
+                                                    <span class="team-bf-text">-</span>
+                                                    <span class="team-bf-text">:</span>
+                                                    <span class="team-bf-text">-</span>
+                                                </div>
+                                                <div class="team-btn-container t-c">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-video-btn team-btn btn-hover">竞猜</a>
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="team-jijin-btn team-btn btn-hover">分享</a>
+                                                </div>
+                                            </div>
+                                            <!-- 队伍头像 -->
+                                            <div class="team-wrap team-right f-l">
+                                                <i class="team-head" style="background-image: url();"></i>
+                                                <p class="team-name-text t-c">CLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper 切换箭头 -->
+                        <a class="p-a icons page-btn prev-btn btn-hover t">上一页</a>
+                        <a class="p-a icons page-btn next-btn btn-hover t">下一页</a>
+                    </div>
+                </ul>
+                <!-- 正在进行赛事 -->
+                <div class="bg live-container">
+                    <div class="wrap">
+                        <ul class="live-menu-list c">
+                            <li class="live-menu-item t-c f-l active"
+                                data-src="http://liveshare.huya.com/iframe/584902">
+                                <i class="icons live-icon"></i>
+                                <span class="live-title-text">腾讯体育直播间</span>
+                            </li>
+                            <li class="live-menu-item t-c f-l" data-src="http://liveshare.huya.com/iframe/596843">
+                                <i class="icons live-icon"></i>
+                                <span class="live-title-text">斗鱼官方直播间</span>
+                            </li>
+                            <li class="live-menu-item t-c f-l" data-src="http://liveshare.huya.com/iframe/tpysnba2kol2">
+                                <i class="icons live-icon"></i>
+                                <span class="live-title-text">虎牙官方直播间</span>
+                            </li>
+                        </ul>
+                        <div class="live-content c">
+                            <div class="live-left f-l">
+                                <!-- 直播间 -->
+                                <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+                                    src="http://liveshare.huya.com/iframe/584902"></iframe>
+                            </div>
+                            <div class="live-right f-r">
+                                <div class="live-title-text2 c">
+                                    <i class="icons live-icon2 f-l"></i>
+                                    <p class="t-hide f-l">正在直播：八强赛第一轮 LAL VS CLE正在直播：八强赛第一轮</p>
+                                </div>
+                                <!-- 切换队伍信息 -->
+                                <div class="p-r tab-team-list c">
+                                    <a class="tab-team-item item-1 t-c f-l active">
+                                        <div class="team-head" style="background-image: url();"></div>
+                                        <p class="team-name-text t-hide">LAL</p>
+                                    </a>
+                                    <a class="tab-team-item item-2 t-c f-l">
+                                        <p class="team-name-text t-hide">CLE</p>
+                                        <div class="team-head" style="background-image: url();"></div>
+                                    </a>
+                                    <i class="p-a icons vs-icon"></i>
+                                </div>
+                                <div class="team-content-list">
+                                    <div class="team-content-item">
+                                        <!-- 队长 -->
+                                        <div class="captain-wrap c">
+                                            <p class="dy-name-text f-l">队长：</p>
+                                            <div class="dy-head f-l" style="background-image: url();"></div>
+                                            <p class="dy-name-text name-wrap t-hide f-l">队长名称1</p>
+                                            <!-- 点赞 -->
+                                            <a class="icons dz-btn dz-btn-sub t-c btn-hover f-l">点赞</a>
+                                        </div>
+                                        <!-- 队员列表 -->
+                                        <div class="dy-wrap c">
+                                            <p class="dy-name-text f-l">队员：</p>
+                                            <ul class="dy-list f-l c">
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="team-content-item" style="display: none;">
+                                        <!-- 队长 -->
+                                        <div class="captain-wrap c">
+                                            <p class="dy-name-text f-l">队长：</p>
+                                            <div class="dy-head f-l" style="background-image: url();"></div>
+                                            <p class="dy-name-text name-wrap t-hide f-l">队长名称2</p>
+                                            <!-- 点赞 -->
+                                            <a class="icons dz-btn dz-btn-sub t-c btn-hover f-l">点赞</a>
+                                        </div>
+                                        <!-- 队员列表 -->
+                                        <div class="dy-wrap c">
+                                            <p class="dy-name-text f-l">队员：</p>
+                                            <ul class="dy-list f-l c">
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                                <li class="f-l">
+                                                    <div class="dy-head" style="background-image: url();"></div>
+                                                    <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                                    <!-- 点赞 -->
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="icons dz-btn t-c btn-hover">点赞</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 比赛对阵图 -->
+                <div class="p-r bs-container">
+                    <h2 class="p-a title-icon ti-p1-1 t">比赛对阵图</h2>
+                    <ul class="p-r bg wrap bs-list">
+                        <!-- 西部 -->
+                        <li class="p-a bs-item xb-item-1">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <!-- 胜利方添加 win类名 -->
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第二场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第三场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第四场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第五场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第六场</a>
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第七场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-2">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-3">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-4">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-5">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-6">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item xb-item-7">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 东部 -->
+                        <li class="p-a bs-item db-item-1">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-2">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-3">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-4">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-5">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-6">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-6">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-a bs-item db-item-7">
+                            <div class="icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 决赛 -->
+                        <li class="p-a bs-item js-item-1">
+                            <div class="p-r icons team-wrap t-c c">
+                                <div class="team-left t-hide f-l">快船</div>
+                                <div class="team-right t-hide f-r">20</div>
+                            </div>
+                            <div class="p-r icons team-wrap t-c c win">
+                                <div class="team-left t-hide f-l">勇士</div>
+                                <div class="team-right t-hide f-r">20</div>
+                                <span class="p-a icons win-icon"></span>
+                            </div>
+                            <div class="p-r bs-msg-wrap c">
+                                <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                <div class="p-r video-btn t-c f-r">
+                                    <span>视频</span>
+                                    <div class="p-a video-list">
+                                        <a href="javascript: alert('敬请期待！');" class="video-item btn-hover t-c">第一场</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 比赛数据排行榜 -->
+                <div class="bg rank-container">
+                    <div class="wrap">
+                        <h2 class="title-icon ti-p1-2 t">比赛数据排行榜</h2>
+                        <!-- 切换球队榜&球员榜 -->
+                        <div class="rank-tab-list J-rank-title1 c">
+                            <a class="rank-tab-btn t-c f-l active">球队榜</a>
+                            <a class="rank-tab-btn t-c f-l">球员榜</a>
+                            <p class="f-r rank-tips-text">排名依据：胜场，胜场相同看净胜分。</p>
+                        </div>
+                        <div class="rank-content-list J-rank-content1">
+                            <!-- 球队榜 -->
+                            <div class="rank-content-item">
+                                <!-- 切换常规赛&季后赛 -->
+                                <div class="rank-tab-list2 J-rank-title2 c">
+                                    <a class="rank-tab-btn2 t-c f-l active">常规赛</a>
+                                    <a class="rank-tab-btn2 t-c f-l">季后赛</a>
+                                </div>
+                                <div class="rank-content-list2 J-rank-con2">
+                                    <!-- 常规赛 -->
+                                    <div class="rank-content-item2">
+                                        <div class="p-r">
+                                            <span class="p-a icons table-inset t-c">东部排名</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>球队</th>
+                                                        <th>胜场</th>
+                                                        <th>负场</th>
+                                                        <th>主场战绩</th>
+                                                        <th>客场战绩</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均失分</th>
+                                                        <th>净胜分</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="p-r" style="margin-top: 80px;">
+                                            <span class="p-a icons table-inset t-c">西部排名</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>球队</th>
+                                                        <th>胜场</th>
+                                                        <th>负场</th>
+                                                        <th>主场战绩</th>
+                                                        <th>客场战绩</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均失分</th>
+                                                        <th>净胜分</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- 季后赛 -->
+                                    <div class="rank-content-item2" style="display: none;">
+                                        <div class="p-r">
+                                            <span class="p-a icons table-inset t-c">东部排名</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>球队</th>
+                                                        <th>胜场</th>
+                                                        <th>负场</th>
+                                                        <th>主场战绩</th>
+                                                        <th>客场战绩</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均失分</th>
+                                                        <th>净胜分</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="p-r" style="margin-top: 80px;">
+                                            <span class="p-a icons table-inset t-c">西部排名</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>球队</th>
+                                                        <th>胜场</th>
+                                                        <th>负场</th>
+                                                        <th>主场战绩</th>
+                                                        <th>客场战绩</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均失分</th>
+                                                        <th>净胜分</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">LAL</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 球员榜 -->
+                            <div class="rank-content-item" style="display: none;">
+                                <!-- 切换常规赛&季后赛 -->
+                                <div class="rank-tab-list2 J-rank-title3 c">
+                                    <a class="rank-tab-btn2 t-c f-l active">常规赛</a>
+                                    <a class="rank-tab-btn2 t-c f-l">季后赛</a>
+                                </div>
+                                <div class="rank-content-list2 J-rank-con3">
+                                    <!-- 常规赛 -->
+                                    <div class="rank-content-item2">
+                                        <div class="p-r">
+                                            <span class="p-a icons table-inset t-c">女生</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>选手</th>
+                                                        <th>场均评价</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均篮板</th>
+                                                        <th>场均助攻</th>
+                                                        <th>场均抢断</th>
+                                                        <th>场均盖帽</th>
+                                                        <th>MVP获得次数</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <!-- 分页 -->
+                                            <div class="p-r page-btn-container t-c">
+                                                <div class="page-num-list">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="page-num-item active">1</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                                                </div>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn prev-btn"></a>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn next-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-r" style="margin-top: 50px;">
+                                            <span class="p-a icons table-inset t-c">男生</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>选手</th>
+                                                        <th>场均评价</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均篮板</th>
+                                                        <th>场均助攻</th>
+                                                        <th>场均抢断</th>
+                                                        <th>场均盖帽</th>
+                                                        <th>MVP获得次数</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- 分页 -->
+                                            <div class="p-r page-btn-container t-c">
+                                                <div class="page-num-list">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="page-num-item active">1</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                                                </div>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn prev-btn"></a>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn next-btn"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 季后赛 -->
+                                    <div class="rank-content-item2" style="display: none;">
+                                        <div class="p-r">
+                                            <span class="p-a icons table-inset t-c">女生</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>选手</th>
+                                                        <th>场均评价</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均篮板</th>
+                                                        <th>场均助攻</th>
+                                                        <th>场均抢断</th>
+                                                        <th>场均盖帽</th>
+                                                        <th>MVP获得次数</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- 分页 -->
+                                            <div class="p-r page-btn-container t-c">
+                                                <div class="page-num-list">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="page-num-item active">1</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                                                </div>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn prev-btn"></a>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn next-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-r" style="margin-top: 50px;">
+                                            <span class="p-a icons table-inset t-c">男生</span>
+                                            <table class="table-wrap table-1 t-c">
+                                                <thead>
+                                                    <tr>
+                                                        <th>排名</th>
+                                                        <th>选手</th>
+                                                        <th>场均评价</th>
+                                                        <th>场均得分</th>
+                                                        <th>场均篮板</th>
+                                                        <th>场均助攻</th>
+                                                        <th>场均抢断</th>
+                                                        <th>场均盖帽</th>
+                                                        <th>MVP获得次数</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-1"></i>
+                                                            <p class="p-r">1</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-2"></i>
+                                                            <p class="p-r">2</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <i class="p-a icons rank-icon ri-3"></i>
+                                                            <p class="p-r">3</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字2</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">7</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-r td-1">
+                                                            <p class="p-r">8</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="head-icon c">
+                                                                <i class="f-l" style="background-image: url();"></i>
+                                                                <p class="head-text t-hide f-l">选手名字</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>53</td>
+                                                        <td>12</td>
+                                                        <td>28-3</td>
+                                                        <td>25-9</td>
+                                                        <td>118.6</td>
+                                                        <td>107.4</td>
+                                                        <td>11.2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- 分页 -->
+                                            <div class="p-r page-btn-container t-c">
+                                                <div class="page-num-list">
+                                                    <a href="javascript: alert('敬请期待！');"
+                                                        class="page-num-item active">1</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                                                    <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                                                </div>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn prev-btn"></a>
+                                                <a href="javascript: alert('敬请期待！');"
+                                                    class="p-a icons page-btn next-btn"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 合作伙伴 -->
+        <div class="p-a hzhb-container">
+            <div class="wrap">
+                <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
+                <div class="hzhb-list t-c">
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 返回顶部 -->
+        <a class="icons back-top btn-hover t">返回顶部</a>
+    </div>
+
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="index.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/title.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/swiper2_component/swiper2.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+
+        //荣誉展示
+        var mySwiper1 = new Swiper('.swiper-1', {
+            slidesPerView: 4,
+        });
+        //切换
+        $(".sai-container .prev-btn").on("click", function () {
+            mySwiper1.swipePrev();
+        });
+        $(".sai-container .next-btn").on("click", function () {
+            mySwiper1.swipeNext();
+        });
+
+        //切换直播间
+        $(".live-menu-list .live-menu-item").on("click", function () {
+            var $this = $(this),
+                idx = $this.index(),
+                src = $this.data("src");
+            $this.addClass("active").siblings('.live-menu-item').removeClass("active");
+            // 切换iframe地址
+            $(".live-content iframe").attr("src", src);
+        });
+
+        // 切换队员信息板
+        $(".tab-team-list a").hover(function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass("active").siblings("a").removeClass("active");
+            $(".team-content-list .team-content-item").hide().eq(idx).show();
+        });
+
+        // 切换球队榜&球员榜
+        $(".J-rank-title1 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-content1 .rank-content-item").hide().eq(idx).show();
+        });
+
+        // 切换常规撒&季后赛 球队榜
+        $(".J-rank-title2 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-con2 .rank-content-item2").hide().eq(idx).show();
+        });
+
+        // 切换常规撒&季后赛 球员榜
+        $(".J-rank-title3 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-con3 .rank-content-item2").hide().eq(idx).show();
+        });
+
+        // 为选手点赞 切换球队
+        $(".J-xb-list li").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            teamListShow('xb', idx);
+            $this.addClass('active').siblings('li').removeClass('active');
+        });
+        $(".J-db-list li").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            teamListShow('db', idx);
+            $this.addClass('active').siblings('li').removeClass('active');
+        });
+
+        function teamListShow(str, idx) {
+            $(".team-msg-list .team-msg-item").hide();
+            $(".team-msg-list .team-" + str + "-" + (idx + 1)).show();
+        }
+
+        //获取随机数
+        function getRandom(min, max) {
+            return Math.ceil(Math.random() * (max - min) + min);
+        }
+
+        // 返回顶部
+        $(".back-top").on("click", function () {
+            $("html,body").animate({
+                'scrollTop': 0
+            }, 300);
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
+        //二维码
+        $('.top-ico-box .top-ico').hover(function () {
+            $(this).find('img').show();
+        }, function () {
+            $(this).find('img').hide();
+        });
+
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    LoginManager.logout();
+                });
+            });
+        });
+
+        //分享
+        TGMobileShare({
+            shareTitle: 'NBA电竞战役赛', //不设置或设置为空时，页面有title，则调取title
+            shareDesc: '换个赛场，再战一场', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https://game.gtimg.cn/images/nba2kx/cp/a20200409djzys/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20200409djzys' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        });
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200409djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+        };
+        if (typeof (pgvMain) == 'function') pgvMain();
+    </script>
+</body>
+
+</html>

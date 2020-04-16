@@ -253,8 +253,11 @@ $(function () {
     ];
 
     function cutQfY() {
+        var num = getRandom(0, qifuList.length - 1);
         $qfList.find('li').each(function (idx, ev) {
-            $(ev).find("span").text(qifuList[getRandom(0, qifuList.length - 1)]);
+            $(ev).find("span").text(qifuList[num]);
+            num++;
+            if (num > qifuList.length - 1) num = 0;
         });
     }
     cutQfY();

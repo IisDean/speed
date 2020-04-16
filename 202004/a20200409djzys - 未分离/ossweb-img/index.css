@@ -1,0 +1,2015 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+.c:after {
+    content: "\0020";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.c {
+    zoom: 1;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.hh {
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+}
+
+/*topbar*/
+.topbar {
+    background: #1d1d1e;
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    min-width: 1000px;
+    position: relative;
+    z-index: 100;
+}
+
+.top-l .logo {
+    width: 155px;
+    height: 44px;
+    position: absolute;
+    left: 50px;
+    top: 9px;
+    background: url(./logo.png) center center no-repeat;
+    z-index: 2;
+}
+
+.top-l .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.login {
+    padding: 17px 0 0 230px;
+}
+
+.login a {
+    background: #111114;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #adadad;
+}
+
+.login a:hover {
+    color: #fff;
+}
+
+.top-r {
+    position: absolute;
+    top: 16px;
+    right: 38px;
+}
+
+.gw-btn,
+.down-btn {
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 18px;
+    text-align: center;
+    color: #d7c66c;
+    border-radius: 15px;
+    border: 1px #d7c66c solid;
+    float: left;
+    font-size: 14px;
+    display: block;
+}
+
+.gw-btn:hover,
+.down-btn:hover {
+    color: #c7af31;
+}
+
+.top-ico-box {
+    width: 188px;
+    float: left;
+}
+
+.top-ico {
+    background: url("./top-ico.png") no-repeat;
+    width: 37px;
+    height: 37px;
+    display: block;
+    float: left;
+    margin-right: 9px;
+    position: relative;
+}
+
+.top-ico-box .top-ico img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50px;
+    margin-left: -100px;
+    display: none;
+}
+
+.top-ico-box .ico1 {
+    background-position: 0 0;
+}
+
+.top-ico-box .ico2 {
+    background-position: -46px 0;
+}
+
+.top-ico-box .ico3 {
+    background-position: -92px 0;
+}
+
+.top-ico-box .ico4 {
+    background-position: -137px 0;
+}
+
+.top-ico-box .ico1:hover {
+    background-position: 0 -47px;
+}
+
+.top-ico-box .ico2:hover {
+    background-position: -46px -47px;
+}
+
+.top-ico-box .ico3:hover {
+    background-position: -92px -47px;
+}
+
+.top-ico-box .ico4:hover {
+    background-position: -137px -47px;
+}
+
+.top-ico-box a:hover {
+    transition: .2s background-position ease-in-out;
+    -webkit-transition: .2s background-position ease-in-out;
+}
+
+.top-l .hdlogo {
+    width: 187px;
+    height: 42px;
+    position: absolute;
+    left: 230px;
+    top: 9px;
+    display: block;
+    background: url("./logo_wegame.png") no-repeat;
+}
+
+/*public*/
+html,
+body {
+    position: relative;
+    min-width: 1200px;
+    background-color: #09141f;
+}
+
+.ost_box {
+    min-width: 1200px !important;
+}
+
+body {
+    padding-top: 42px;
+    background: #0e0e0e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.head-a a:hover,
+.box .lqjl-btn:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+/*** footer  **/
+#afooter {
+    min-width: 1000px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0;
+    color: #6a6a6a;
+    background: #0e0e0e;
+}
+
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 5px;
+}
+
+#afooter .notice {
+    display: none;
+}
+
+#afooter a {
+    color: #6a6a6a;
+}
+
+#stage {
+    min-width: 1200px;
+    background-image: url('./page_bg.jpg');
+    overflow: hidden;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-l {
+    text-align: left;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.icons {
+    display: block;
+    background-image: url("./icons.png");
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+}
+
+.titles {
+    display: block;
+    background-image: url('./titles.png');
+    background-repeat: no-repeat;
+    background-size: 1183px auto;
+}
+
+.t {
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.full-img img {
+    display: block;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.t-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.pop {
+    display: none;
+    width: 700px;
+    height: 525px;
+}
+
+.close-btn {
+    width: 51px;
+    height: 51px;
+    background-position: -348px -424px;
+    top: 0;
+    right: -51px;
+}
+
+/* slogan */
+.head-wrap {
+    background-image: url('./slogan.jpg');
+}
+
+.head-wrap.p1 {
+    height: 866px;
+}
+
+.head-wrap.p2,
+.head-wrap.p3 {
+    height: 726px;
+}
+
+.body-inset {
+    top: 658px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 363px;
+    background-image: url('./body_inset.png');
+    pointer-events: none;
+}
+
+/* 内容 */
+.nr-container {}
+
+.head-wrap.p1+.wrap .top-tab-list {
+    top: -310px;
+}
+
+.head-wrap.p2+.wrap .top-tab-list,
+.head-wrap.p3+.wrap .top-tab-list {
+    top: -170px;
+}
+
+.top-tab-list {
+    z-index: 99;
+    width: 100%;
+    font-size: 0;
+}
+
+.top-tab-list .tab-item {
+    display: inline-block;
+    margin-right: 5px;
+    width: 392px;
+    height: 94px;
+    cursor: pointer;
+}
+
+.top-tab-list .tab-item.tab-item-1 {
+    background-position: 0 -109px;
+}
+
+.top-tab-list .tab-item.tab-item-1:hover,
+.top-tab-list .tab-item.tab-item-1.active {
+    background-position: -397px -109px;
+}
+
+.top-tab-list .tab-item.tab-item-2 {
+    background-position: 0 -208px;
+}
+
+.top-tab-list .tab-item.tab-item-2:hover,
+.top-tab-list .tab-item.tab-item-2.active {
+    background-position: -397px -208px;
+}
+
+.top-tab-list .tab-item.tab-item-3 {
+    margin-right: 0;
+    background-position: 0 -307px;
+}
+
+.top-tab-list .tab-item.tab-item-3:hover,
+.top-tab-list .tab-item.tab-item-3.active {
+    background-position: -397px -307px;
+}
+
+.tab-title-text {
+    display: block;
+    margin-top: 25px;
+    line-height: 1;
+    font-size: 24px;
+    color: #fff;
+}
+
+.tab-msg-text {
+    display: block;
+    margin-top: 8px;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+.tab-content-item {
+    z-index: 99;
+}
+
+/* 赛事列表 */
+.sai-container {
+    top: -185px;
+    width: 100%;
+}
+
+.sai-container .swiper-container {
+    margin: 0 auto;
+    width: 1120px;
+    height: 160px;
+}
+
+.sai-wrap {
+    margin: 0 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 260px;
+    height: 146px;
+}
+
+.sai-wrap.sai-end {
+    background-image: url('./bs_plank_end.png');
+}
+
+.sai-wrap.sai-live {
+    background-image: url('./bs_plank_live.png');
+}
+
+.sai-wrap.sai-future {
+    background-image: url('./bs_plank_future.png');
+}
+
+.sai-top {
+    line-height: 36px;
+}
+
+.sai-team {
+    margin-top: 16px;
+}
+
+.team-wrap {
+    width: 60px;
+}
+
+.team-wrap i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #e1e1e1;
+    background-size: cover;
+}
+
+.team-wrap .team-name-text {
+    margin-top: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #121212;
+}
+
+.team-bf {
+    width: 100px;
+    height: 10px;
+}
+
+.team-bf .team-bf-text {
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 48px;
+    color: #121212;
+}
+
+.team-bf .team-bf-text.lead-text {
+    color: #d30529;
+}
+
+.team-btn-container {
+    margin-top: 6px;
+    font-size: 0;
+}
+
+.team-btn {
+    display: inline-block;
+    margin: 0 3px;
+    height: 20px;
+    border-radius: 4px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.team-video-btn {
+    width: 40px;
+    background-color: #0f499d;
+}
+
+.team-jijin-btn {
+    width: 40px;
+    background-color: #d30529;
+}
+
+.team-live-btn {
+    width: 82px;
+    background-color: #d30529;
+}
+
+.page-btn {
+    width: 18px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    background-position: -182px -71px;
+}
+
+.next-btn {
+    background-position: -202px -71px;
+}
+
+.sai-container .page-btn {
+    top: 56px;
+}
+
+.sai-container .prev-btn {
+    left: 12px;
+}
+
+.sai-container .next-btn {
+    right: 12px;
+}
+
+/* 正在进行赛事 */
+.live-container {
+    height: 529px;
+    background-image: url('./p1_i1_bg.jpg');
+    overflow: hidden;
+}
+
+.live-menu-list {
+    margin-top: 10px;
+    border-bottom: 2px solid #dedede;
+}
+
+.live-menu-item {
+    margin-bottom: -2px;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.live-menu-item:hover,
+.live-menu-item.active {
+    border-color: #d30529;
+}
+
+.live-icon {
+    display: none;
+    width: 22px;
+    height: 17px;
+    background-position: 0 0;
+}
+
+.live-menu-item.active .live-icon {
+    display: inline-block;
+}
+
+.live-title-text {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.live-content {
+    margin-top: 22px;
+}
+
+.live-content .live-left {
+    box-sizing: border-box;
+    width: 698px;
+    height: 392px;
+    border: 2px solid #dedede;
+}
+
+.live-content .live-right {
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 492px;
+    height: 392px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+
+.live-title-text2 {
+    margin-top: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 474px;
+    height: 57px;
+    font-size: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.live-icon2 {
+    margin-top: 20px;
+    width: 18px;
+    height: 18px;
+    background-position: -27px 0;
+}
+
+.live-title-text2 p {
+    margin-left: 10px;
+    max-width: 405px;
+    line-height: 57px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #121212;
+}
+
+.tab-team-list {
+    margin-top: 10px;
+    font-size: 0;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.tab-team-item {
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 236px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.tab-team-item.item-1 {
+    padding-right: 28px;
+}
+
+.tab-team-item.item-2 {
+    padding-left: 28px;
+}
+
+.tab-team-item.active {
+    border-color: #d30529;
+}
+
+.team-head {
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.tab-team-list .team-name-text {
+    display: inline-block;
+    width: 70px;
+    line-height: 98px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.tab-team-list .tab-team-item.item-1 .team-name-text {
+    margin-left: 2px;
+}
+
+.tab-team-list .tab-team-item.item-2 .team-name-text {
+    margin-right: 2px;
+}
+
+.tab-team-list .vs-icon {
+    top: 20px;
+    left: 50%;
+    margin-left: -28px;
+    width: 56px;
+    height: 58px;
+    background-position: 0 -23px;
+    pointer-events: none;
+}
+
+.captain-wrap {
+    padding: 10px 20px;
+    border-bottom: 1px dashed #b7b7b7;
+}
+
+.dy-name-text {
+    line-height: 56px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dy-head {
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.name-wrap {
+    margin-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.dz-btn {
+    display: block;
+    width: 46px;
+    height: 22px;
+    background-position: -174px -46px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dz-btn.dz-btn-sub {
+    margin-top: 17px;
+    background-position: -126px -46px;
+}
+
+.dy-wrap {
+    padding: 10px 20px;
+}
+
+.dy-list .dy-head {
+    margin: 0 auto;
+}
+
+.name-dy-wrap {
+    margin-top: 8px;
+    line-height: 1;
+    width: 75px;
+}
+
+.dy-list .dz-btn {
+    margin: 5px auto 0;
+}
+
+/* 比赛对阵图 */
+.title-icon {
+    display: block;
+    margin: 0 auto;
+    background-image: url('./titles.png');
+    background-size: 524px auto;
+}
+
+.title-icon.ti-p1-1 {
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 324px;
+    height: 54px;
+    background-position: 0 0;
+}
+
+.bs-container {
+    height: 740px;
+    background-color: #fff;
+}
+
+.bs-list {
+    height: 740px;
+    background-image: url('./p1_i1_bsbg.png');
+    background-size: 1200px auto;
+}
+
+.bs-item {
+    width: 150px;
+}
+
+.bs-item .team-wrap {
+    margin-bottom: 2px;
+    width: 150px;
+    height: 52px;
+    background-position: -222px 0;
+    line-height: 52px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.bs-item .team-wrap.win {
+    background-position: -222px -53px;
+    color: #fff;
+}
+
+.bs-item .team-wrap .team-left {
+    width: 98px;
+    height: 52px;
+}
+
+.bs-item .team-wrap .team-right {
+    width: 48px;
+    height: 52px;
+}
+
+.bs-time-text {
+    display: inline-block;
+    margin-top: 5px;
+    width: 98px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #666;
+}
+
+.bs-item .video-btn {
+    display: block;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 48px;
+    height: 22px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.bs-item .video-btn:hover {
+    background-color: #d30529;
+    border-color: #d30529;
+    color: #fff;
+}
+
+.bs-item .video-btn:hover .video-list,
+.video-list:hover {
+    display: block;
+}
+
+.video-list {
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    margin-top: 1px;
+    width: 48px;
+    box-shadow: 0 0 5px #f1f1f1;
+}
+
+.video-item {
+    display: block;
+    margin-top: 1px;
+    width: 47px;
+    height: 22px;
+    background-color: #ac0825;
+    line-height: 22px;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+.xb-item-1 {
+    top: 84px;
+    left: 0;
+}
+
+.xb-item-2 {
+    top: 238px;
+    left: 0;
+}
+
+.xb-item-3 {
+    top: 412px;
+    left: 0;
+}
+
+.xb-item-4 {
+    top: 566px;
+    left: 0;
+}
+
+.xb-item-5 {
+    top: 164px;
+    left: 180px;
+}
+
+.xb-item-6 {
+    top: 490px;
+    left: 180px;
+}
+
+.xb-item-7 {
+    top: 332px;
+    left: 370px;
+}
+
+/* 东部 */
+.db-item-1 {
+    top: 84px;
+    left: 1051px;
+}
+
+.db-item-2 {
+    top: 238px;
+    left: 1051px;
+}
+
+.db-item-3 {
+    top: 412px;
+    left: 1051px;
+}
+
+.db-item-4 {
+    top: 566px;
+    left: 1051px;
+}
+
+.db-item-5 {
+    top: 164px;
+    left: 870px;
+}
+
+.db-item-6 {
+    top: 490px;
+    left: 870px;
+}
+
+.db-item-7 {
+    top: 332px;
+    left: 680px;
+}
+
+/* 决赛 */
+.bs-item.js-item-1 {
+    top: 505px;
+    left: 510px;
+    width: 180px;
+}
+
+.bs-item.js-item-1 .team-wrap {
+    width: 180px;
+    background-position: -377px 0;
+}
+
+.bs-item.js-item-1 .team-wrap.win {
+    background-position: -377px -53px;
+}
+
+.bs-item.js-item-1 .team-wrap .team-left {
+    width: 128px;
+}
+
+.team-wrap .win-icon {
+    top: -22px;
+    left: -18px;
+    width: 36px;
+    height: 32px;
+    background-position: -139px -71px;
+    background-color: transparent;
+}
+
+/* 排行榜 */
+.rank-container {
+    min-height: 1848px;
+    background-image: url('./p1_i3_bg.jpg');
+    overflow: hidden;
+}
+
+.title-icon.ti-p1-2 {
+    margin-top: 29px;
+    width: 324px;
+    height: 54px;
+    background-position: 0 -59px;
+}
+
+.rank-tab-list {
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    border-bottom: 2px solid #dedede;
+}
+
+.rank-tab-btn {
+    display: block;
+    margin-right: 1px;
+    margin-bottom: -2px;
+    width: 197px;
+    height: 64px;
+    background-color: transparent;
+    line-height: 64px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #121212;
+    cursor: pointer;
+}
+
+.rank-tab-btn:hover,
+.rank-tab-btn.active {
+    background-color: #d30529;
+    color: #fff;
+}
+
+.rank-tips-text {
+    line-height: 64px;
+    font-size: 16px;
+    color: #666;
+}
+
+.rank-tips-text span {
+    color: #121212;
+}
+
+.rank-tab-list2 {
+    display: inline-block;
+    margin-top: 15px;
+    border-bottom: 2px solid #dedede;
+}
+
+.rank-tab-btn2 {
+    margin-right: 1px;
+    margin-bottom: -2px;
+    width: 198px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #121212;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.rank-tab-btn2:hover,
+.rank-tab-btn2.active {
+    border-color: #d30529;
+}
+
+.rank-content-item2 {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.table-inset {
+    top: -10px;
+    left: 0;
+    z-index: 1;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 91px;
+    height: 20px;
+    background-position: -126px 0;
+    line-height: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.table-wrap tr td {
+    line-height: 25px;
+}
+
+.table-wrap {
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+
+.table-1 {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.table-1 thead tr {
+    background-color: #fff;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    line-height: 56px;
+    font-size: 16px;
+    color: #121212;
+}
+
+.table-1 tbody tr {
+    border-bottom: 1px dashed #a8a8a8;
+    line-height: 55px;
+    font-size: 16px;
+    color: #666;
+}
+
+.table-yc tbody tr td {
+    padding: 14px 0;
+    line-height: 25px;
+}
+
+.table-1 tbody tr .td-1 {
+    padding: 0 20px;
+    width: 85px;
+}
+
+.table-1 tbody tr td {
+    /* padding: 0; */
+}
+
+.head-icon {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.head-icon i {
+    display: block;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-size: cover;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.head-text {
+    line-height: 40px;
+    width: 110px;
+}
+
+.rank-icon {
+    top: 18px;
+    left: 15px;
+    width: 22px;
+    height: 16px;
+}
+
+.rank-icon.ri-1 {
+    background-position: -126px -25px;
+}
+
+.rank-icon.ri-2 {
+    background-position: -153px -25px;
+}
+
+.rank-icon.ri-3 {
+    background-position: -180px -25px;
+}
+
+/* p2i1 */
+.p2-i1-container {
+    height: 1197px;
+    background-image: url('./p2_i1_bg.jpg');
+    overflow: hidden;
+}
+
+.title-icon.ti-p2-1 {
+    margin-top: 44px;
+    width: 400px;
+    height: 54px;
+    background-position: 0 -175px;
+}
+
+.p2-team-title {
+    width: 158px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #c8c8c8;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.p2-team-list {}
+
+.p2-team-item .p2-team-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 130px;
+    height: 60px;
+    background-color: #e6e6e6;
+    border: 1px solid #c8c8c8;
+    border-left: 0;
+    cursor: pointer;
+}
+
+.p2-team-item:hover .p2-team-btn,
+.p2-team-item.active .p2-team-btn {
+    background-color: #135ecb;
+    border-color: #135ecb;
+}
+
+.team-icon {
+    margin: 10px 5px 0 6px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.team-name-text {
+    width: 75px;
+    line-height: 58px;
+    font-size: 16px;
+    color: #666;
+}
+
+.p2-team-item:hover .p2-team-btn .team-name-text,
+.p2-team-item.active .p2-team-btn .team-name-text {
+    color: #fff;
+}
+
+.team-msg-item {
+    margin-top: 4px;
+    width: 100%;
+}
+
+.team-head-wrap {
+    margin-top: 16px;
+    width: 158px;
+}
+
+.team-msg-item .team-icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.team-msg-item .team-name-text2 {
+    margin-top: 12px;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    color: #121212;
+}
+
+.team-center-list {
+    width: 554px;
+    height: 406px;
+    background-color: #fff;
+}
+
+.team-center-item {
+    margin-top: 1px;
+    height: 58px;
+    background-color: #e6e6e6;
+}
+
+.team-center-item:hover,
+.team-center-item.active {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.team-center-list .team-post-icon {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    background-color: #135ecb;
+    font-size: 14px;
+    color: #fff;
+}
+
+.team-center-list .team-post-icon.dz {
+    background-color: #d31839;
+}
+
+.team-center-list .team-name-text {
+    margin-left: 10px;
+    width: 195px;
+    line-height: 58px;
+}
+
+.team-center-list .comment-icon {
+    margin-top: 18px;
+    margin-left: 15px;
+    width: 17px;
+    height: 18px;
+    background-position: 0 -86px;
+}
+
+.team-center-list .comment-text {
+    margin-left: 10px;
+    width: 80px;
+    line-height: 58px;
+    font-size: 14px;
+    color: #666;
+}
+
+.team-center-list .dz-btn2 {
+    margin-top: 16px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    line-height: 26px;
+    font-size: 14px;
+    color: #121212;
+    background-position: 100px 100px;
+}
+
+.team-center-list .dz-btn2:hover {
+    background-position: -562px 0;
+    border-color: transparent;
+    color: #fff;
+}
+
+.team-detail-list {
+    padding: 0 26px;
+    box-sizing: border-box;
+    width: 486px;
+    height: 412px;
+    background-color: #fff;
+}
+
+.team-detail-top {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.team-detail-top .team-icon {
+    margin: 16px 20px 0 22px;
+    width: 98px;
+    height: 98px;
+    background-color: #e6e6e6;
+}
+
+.team-detail-top .team-name-text2 {
+    margin-top: 36px;
+}
+
+.team-detail-top .team-live-btn {
+    display: block;
+    margin-top: 14px;
+    width: 141px;
+    height: 32px;
+    line-height: 32px;
+    background-position: -562px -31px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #cdcdcd;
+}
+
+.team-live-btn2 {
+    margin-top: 14px;
+    width: 111px;
+    height: 32px;
+    background-position: -858px -67px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+.team-detail-item {
+    margin-top: 8px;
+}
+
+.team-detail-left {
+    width: 94px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #121212;
+}
+
+.team-detail-right {
+    width: 340px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* 抽奖区域 */
+.lottery-contaienr {
+    margin-top: 35px;
+    width: 100%;
+    height: 435px;
+    overflow: hidden;
+}
+
+.lottery-top {
+    margin-top: 30px;
+}
+
+.lottery-tips-text {
+    line-height: 1;
+    font-size: 16px;
+    color: #666;
+}
+
+.lottery-top .lottery-btn {
+    margin-left: 8px;
+    line-height: 1;
+    font-size: 16px;
+    color: #121212;
+}
+
+.lottery-top .lottery-btn:hover {
+    text-decoration: underline;
+}
+
+.lottery-tips-text span {
+    color: #d31839;
+}
+
+.news-scroll-con {
+    height: 20px;
+    overflow: hidden;
+}
+
+.news-scroll-con ul {
+    margin-top: -20px;
+}
+
+.lottery-news-text {
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.lottery-news-text span {
+    color: #121212;
+}
+
+.lottery {
+    position: relative;
+    width: 1200px;
+    height: 290px;
+    margin-top: 30px;
+}
+
+/* 选手人气榜 */
+.p2-i2-container {
+    height: 1848px;
+    background-image: url('./p2_i2_bg.jpg');
+    overflow: hidden;
+}
+
+.title-icon.ti-p2-2 {
+    margin-top: 40px;
+    width: 324px;
+    height: 54px;
+    background-position: 0 -234px;
+}
+
+.page-btn-container {
+    margin: 28px auto 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+    width: 336px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: #f8f8f8;
+}
+
+.page-btn-container .page-btn {
+    top: 0;
+    width: 20px;
+    height: 24px;
+}
+
+.page-btn-container .prev-btn {
+    left: 15px;
+    background-position: -20px -85px;
+}
+
+.page-btn-container .next-btn {
+    right: 15px;
+    background-position: -34px -85px;
+}
+
+.page-num-item {
+    display: inline-block;
+    margin: -2px 6px 0;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 100px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #666;
+}
+
+.page-num-item:hover,
+.page-num-item.active {
+    background-color: #d30529;
+    color: #fff;
+}
+
+/* banner */
+.banner-container {
+    margin-top: 40px;
+}
+
+.banner-wrap {
+    display: inline-block;
+    width: 588px;
+}
+
+/* 预测比赛领福利 */
+.p3-i1-container {
+    height: 1210px;
+    background-image: url('./p3_i1_bg.jpg');
+    overflow: hidden;
+}
+
+.title-icon.ti-p3-1 {
+    margin-top: 44px;
+    width: 360px;
+    height: 54px;
+    background-position: 0 -293px;
+}
+
+.title-msg-text {
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+.title-msg-text .black {
+    color: #121212;
+}
+
+.title-msg-text .num-icon {
+    display: inline-block;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 100px;
+    background-color: #d31d3d;
+    font-size: 16px;
+    color: #fff;
+}
+
+.look-yc-btn {
+    margin: 12px auto 0;
+    width: 158px;
+    height: 38px;
+    background-position: -562px -67px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.yc-list {
+    margin: 20px auto 0;
+}
+
+.yc-item {
+    width: 584px;
+    height: 280px;
+    background-image: url('./yc_bg_future.png');
+}
+
+.yc-item.yc-end {
+    background-image: url('./yc_bg_end.png');
+}
+
+.yc-item2 {
+    margin-left: 13px;
+}
+
+.yc-top-title {
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 39px;
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+.yc-plank {
+    width: 236px;
+}
+
+.team-yc-icon {
+    margin: 20px auto 0;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #f1f1f1;
+    border-radius: 100px;
+    background-color: #fff;
+    background-size: cover;
+}
+
+.ycteam-title-text {
+    line-height: 37px;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.team-yc2-wrap {
+    font-size: 0;
+}
+
+.team-yc2-icon {
+    display: inline-block;
+    margin: 0 5px;
+    width: 46px;
+    height: 46px;
+    border-radius: 100px;
+    background-size: cover;
+    background-color: #e2e2e2;
+}
+
+.yc-win-btn,
+.get-prize-btn,
+.buy-btn,
+.submit-btn {
+    width: 128px;
+    height: 38px;
+    background-position: -725px -67px;
+    line-height: 38px;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+.yc-win-btn {
+    margin: 9px auto 0;
+}
+
+.get-prize-btn,
+.buy-btn {
+    margin: 20px auto 0;
+}
+
+.yc-center-plank {
+    width: 112px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.vs-icon2 {
+    margin: 83px auto 0;
+    width: 78px;
+    height: 50px;
+    background-position: -708px -1px;
+}
+
+.vs-time-text {
+    margin-top: 20px;
+    line-height: 1;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.vs-title-text {
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #3c3c3c;
+}
+
+.prize-tips-text {
+    margin-top: 72px;
+    line-height: 1;
+    font-size: 18px;
+    color: #666;
+}
+
+.prize-tips-text span {
+    color: #121212;
+}
+
+.prize-free-list {
+    margin: 20px auto 0;
+    width: 1150px;
+}
+
+.prize-free-item {
+    margin: 0 10px;
+    width: 210px;
+    height: 249px;
+    background-image: url('./prize_blue_bg.png');
+}
+
+.prize-title-text {
+    line-height: 38px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.prize-icon {
+    margin: 16px auto 0;
+    width: 92px;
+}
+
+.prize-name-text {
+    margin-top: 16px;
+    line-height: 1;
+    font-size: 14px;
+    color: #121212;
+}
+
+.prize-msg-text {
+    margin-top: 4px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #999;
+}
+
+.prize-ff-list {
+    margin: 0px auto;
+    width: 1150px;
+}
+
+.prize-ff-item {
+    margin: 2px 10px 0;
+    width: 210px;
+    height: 249px;
+    background-image: url('./prize_red_bg.png');
+}
+
+.yj-text {
+    margin-top: 6px;
+    line-height: 1;
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* 玩家预测榜 */
+.p3-i2-container {
+    height: 1283px;
+    background-image: url('./p3_i2_bg.jpg');
+    overflow: hidden;
+}
+
+.title-icon.ti-p3-2 {
+    margin-top: 40px;
+    width: 324px;
+    height: 54px;
+    background-position: 0 -353px;
+}
+
+.title-msg-text .black {
+    color: #121212;
+}
+
+.table-yc tr td.td-1 {
+    width: 150px;
+}
+
+.table-yc tr .rank-icon {
+    left: 55px;
+}
+
+.table-wrap .blue-bg {
+    background-image: url('./table_title_bg.png');
+    color: #fff;
+}
+
+.table-yc .my-rank-item {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.table-yc tr .my-rank-icon {
+    top: 16px;
+    left: 0;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+    background-position: -61px -71px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 合作伙伴 */
+.hzhb-container {
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.title-icon.ti-p1-3 {
+    width: 324px;
+    height: 52px;
+    background-position: 0 -118px;
+}
+
+.hzhb-list {
+    margin: 20px auto 40px;
+}
+
+.hzhb-item {
+    display: inline-block;
+    margin: 0 5px 10px;
+    width: 160px;
+}
+
+/* 弹窗 */
+.pop-1 {
+    width: 496px;
+    height: 511px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.pop-2 {
+    width: 796px;
+    height: 512px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.pop-3 {
+    width: 500px;
+    height: 450px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.title-pop-1 {
+    margin: 27px auto 0;
+    width: 230px;
+    height: 29px;
+    background-position: 0 -411px;
+}
+
+.title-pop-2 {
+    margin: 27px auto 0;
+    width: 250px;
+    height: 29px;
+    background-position: 0 -445px;
+}
+
+.title-pop-3 {
+    margin: 27px auto 0;
+    width: 236px;
+    height: 29px;
+    background-position: 0 -479px;
+}
+
+.table-pop-1 {
+    margin: 12px auto 0;
+    width: 450px;
+    border-left: none;
+    border-right: none;
+}
+
+.table-pop-2 {
+    margin: 12px auto 0;
+    width: 742px;
+}
+
+.table-pop-1 tr th,
+.table-pop-2 tr th {
+    line-height: 38px;
+    border-right: 1px solid #fff;
+}
+
+.table-pop-1 .blue-bg,
+.table-pop-2 .blue-bg {
+    background-color: #0f499d;
+    background-image: none;
+    color: #fff;
+}
+
+.table-pop-1 tr td,
+.table-pop-2 tr td {
+    line-height: 48px !important;
+    color: #121212;
+}
+
+.close-btn {
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    background-position: -791px 0;
+}
+
+.form-list {
+    margin: 20px auto 0;
+    width: 395px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    width: 395px;
+}
+
+.form-title {
+    margin-right: 5px;
+    width: 90px;
+    font-size: 16px;
+    color: #121212;
+}
+
+.form-input input {
+    display: block;
+    padding: 0 5px;
+    box-sizing: border-box;
+    width: 296px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.form-textarea textarea {
+    display: block;
+    padding: 0 5px;
+    box-sizing: border-box;
+    width: 296px;
+    height: 178px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.submit-btn {
+    margin: 26px auto 0;
+    cursor: pointer;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    background-position: -819px 0;
+    cursor: pointer;
+}
