@@ -1,0 +1,2256 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "index.html" + location.search;
+        }
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="./ossweb-img/mobile/mobile.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex header-topbar">
+        <a href="//nba2k2.qq.com/" class="bg logo-icon1" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+            title="NBA2K online2">
+        </a>
+        <!-- <a href="//daoju.qq.com/mall/" class="bg logo-icon2" onclick="PTTSendClick('btn','djc','进入道具城')" title="道具城">
+        </a> -->
+        <div class="flex-1 login t-r login-wrap">
+            <!--登录前状态 Start-->
+            <p id="unlogin">你好，请<a href="javascript:;" id="btn_qqlogin">[登录]</a></p>
+            <!--登录前状态 End-->
+            <!--登录后状态 Start-->
+            <p id="logined" style="display: none;width: max-content">欢迎，
+                <span id='login_qq_span'></span>，
+                <span id="spanNotBind_649402">
+                    <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                </span>
+                <span id="spanBind_649402" style="display:none">
+                    <span id="area_info_649402"></span>
+                    <span id="role_info_649402"></span>
+                    <a href="javascript:;" class="bindArea">更改绑定</a>
+                    <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
+                </span>
+                <a href="javascript:;"id="btn_logout">注销</a>
+            </p>
+            <!--登录后状态 End-->
+        </div>
+    </div>
+    <div class="bg stage">
+        <!-- 顶部切换 -->
+        <div class="icons t-c top-tab-list">
+            <a href="./mobile.html" class="icons tab-item btn-hover active">
+                <h3 class="tab-title-text">「季后赛」激战来袭</h3>
+                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+            </a>
+            <a href="./mcontent1.html" class="icons tab-item btn-hover">
+                <h3 class="tab-title-text">参赛选手介绍</h3>
+                <p class="tab-msg-text">为选手点点赞参与抽奖</p>
+            </a>
+            <a href="./mcontent2.html" class="icons tab-item btn-hover">
+                <h3 class="tab-title-text">预测领福利</h3>
+                <p class="tab-msg-text">多重奖励等你来拿</p>
+            </a>
+        </div>
+        <div class="bg nr-container">
+            <!-- 返回首页 -->
+            <a href="javascript: alert('敬请期待！');" class="icons back-home-btn btn-hover t">返回首页</a>
+            <!-- 赛事列表 -->
+            <div class="p-r sai-container">
+                <div class="swiper-container swiper-1">
+                    <div class="swiper-wrapper">
+                        <!-- 已结束 -->
+                        <div class="swiper-slide">
+                            <div class="bg sai-wrap sai-end">
+                                <div class="sai-top flex flex-between">
+                                    <div class="">已结束</div>
+                                    <div class="">04-26 17:00</div>
+                                </div>
+                                <div class="sai-team flex flex-center">
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-left">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">LAL</p>
+                                    </div>
+                                    <div class="team-bf">
+                                        <div class="t-c">
+                                            <span class="team-bf-text">2</span>
+                                            <span class="team-bf-text">:</span>
+                                            <span class="team-bf-text">1</span>
+                                        </div>
+                                        <div class="team-btn-container t-c">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-video-btn team-btn btn-hover">视频</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-jijin-btn team-btn btn-hover">集锦</a>
+                                        </div>
+                                    </div>
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-right">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">CLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 直播中 -->
+                        <div class="swiper-slide">
+                            <div class="bg sai-wrap sai-live">
+                                <div class="sai-top flex flex-between">
+                                    <div class="">直播中</div>
+                                    <div class="">04-26 17:00</div>
+                                </div>
+                                <div class="sai-team flex flex-center">
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-left">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">LAL</p>
+                                    </div>
+                                    <div class="team-bf">
+                                        <div class="t-c">
+                                            <span class="team-bf-text lead-text">2</span>
+                                            <span class="team-bf-text">:</span>
+                                            <span class="team-bf-text">1</span>
+                                        </div>
+                                        <div class="team-btn-container t-c">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-live-btn team-btn btn-hover">观看直播</a>
+                                        </div>
+                                    </div>
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-right">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">CLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 未开始 -->
+                        <div class="swiper-slide">
+                            <div class="bg sai-wrap sai-future">
+                                <div class="sai-top flex flex-between">
+                                    <div class="">未开始</div>
+                                    <div class="">04-26 17:00</div>
+                                </div>
+                                <div class="sai-team flex flex-center">
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-left">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">LAL</p>
+                                    </div>
+                                    <div class="team-bf">
+                                        <div class="t-c">
+                                            <span class="team-bf-text">-</span>
+                                            <span class="team-bf-text">:</span>
+                                            <span class="team-bf-text">-</span>
+                                        </div>
+                                        <div class="team-btn-container t-c">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-video-btn team-btn btn-hover">竞猜</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-jijin-btn team-btn btn-hover">分享</a>
+                                        </div>
+                                    </div>
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-right">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">CLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 未开始 -->
+                        <div class="swiper-slide">
+                            <div class="bg sai-wrap sai-future">
+                                <div class="sai-top flex flex-between">
+                                    <div class="">未开始</div>
+                                    <div class="">04-26 17:00</div>
+                                </div>
+                                <div class="sai-team flex flex-center">
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-left">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">LAL</p>
+                                    </div>
+                                    <div class="team-bf">
+                                        <div class="t-c">
+                                            <span class="team-bf-text">-</span>
+                                            <span class="team-bf-text">:</span>
+                                            <span class="team-bf-text">-</span>
+                                        </div>
+                                        <div class="team-btn-container t-c">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-video-btn team-btn btn-hover">竞猜</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-jijin-btn team-btn btn-hover">分享</a>
+                                        </div>
+                                    </div>
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-right">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">CLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 未开始 -->
+                        <div class="swiper-slide">
+                            <div class="bg sai-wrap sai-future">
+                                <div class="sai-top flex flex-between">
+                                    <div class="">未开始</div>
+                                    <div class="">04-26 17:00</div>
+                                </div>
+                                <div class="sai-team flex flex-center">
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-left">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">LAL</p>
+                                    </div>
+                                    <div class="team-bf">
+                                        <div class="t-c">
+                                            <span class="team-bf-text">-</span>
+                                            <span class="team-bf-text">:</span>
+                                            <span class="team-bf-text">-</span>
+                                        </div>
+                                        <div class="team-btn-container t-c">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-video-btn team-btn btn-hover">竞猜</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="team-jijin-btn team-btn btn-hover">分享</a>
+                                        </div>
+                                    </div>
+                                    <!-- 队伍头像 -->
+                                    <div class="team-wrap team-right">
+                                        <div class="full-img team-head">
+                                            <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                        </div>
+                                        <p class="team-name-text t-c">CLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- swiper 切换箭头 -->
+                <a class="p-a icons page-btn prev-btn btn-hover t">上一页</a>
+                <a class="p-a icons page-btn next-btn btn-hover t">下一页</a>
+            </div>
+            <!-- 正在进行赛事 -->
+            <div class="p-r live-container">
+                <ul class="live-menu-list J-zbj-list flex">
+                    <li class="live-menu-item t-c flex-1 active" data-src="http://liveshare.huya.com/iframe/584902">
+                        <i class="icons live-icon"></i>
+                        <span class="live-title-text">腾讯体育直播间</span>
+                    </li>
+                    <li class="live-menu-item t-c flex-1" data-src="http://liveshare.huya.com/iframe/596843">
+                        <i class="icons live-icon"></i>
+                        <span class="live-title-text">斗鱼官方直播间</span>
+                    </li>
+                    <li class="live-menu-item t-c flex-1" data-src="http://liveshare.huya.com/iframe/tpysnba2kol2">
+                        <i class="icons live-icon"></i>
+                        <span class="live-title-text">虎牙官方直播间</span>
+                    </li>
+                </ul>
+                <div class="live-content">
+                    <div class="live-up">
+                        <!-- 直播间 -->
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+                            src="http://liveshare.huya.com/iframe/584902"></iframe>
+                    </div>
+                    <div class="bg live-down">
+                        <div class="live-title-text2 flex">
+                            <i class="icons live-icon2"></i>
+                            <p class="t-hide">正在直播：八强赛第一轮 LAL VS CLE正在直播：八强赛第一轮</p>
+                        </div>
+                        <!-- 切换队伍信息 -->
+                        <div class="p-r tab-team-list flex">
+                            <a class="tab-team-item item-1 flex active">
+                                <div class="full-img team-head">
+                                    <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                </div>
+                                <p class="team-name-text t-hide">LAL</p>
+                            </a>
+                            <a class="tab-team-item item-2 flex">
+                                <p class="team-name-text t-hide t-r">CLE</p>
+                                <div class="full-img team-head">
+                                    <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                </div>
+                            </a>
+                            <i class="p-a icons vs-icon"></i>
+                        </div>
+                        <div class="team-content-list">
+                            <div class="team-content-item">
+                                <!-- 队长 -->
+                                <div class="captain-wrap flex">
+                                    <p class="dy-name-text">队长：</p>
+                                    <div class="full-img dy-head">
+                                        <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                    </div>
+                                    <p class="dy-name-text name-wrap t-hide">队长名称1</p>
+                                    <!-- 点赞 -->
+                                    <a class="icons dz-btn dz-btn-sub t-c btn-hover">点赞</a>
+                                </div>
+                                <!-- 队员列表 -->
+                                <div class="dy-wrap flex">
+                                    <p class="dy-name-text">队员：</p>
+                                    <ul class="dy-list c">
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-content-item" style="display: none;">
+                                <!-- 队长 -->
+                                <div class="captain-wrap flex">
+                                    <p class="dy-name-text">队长：</p>
+                                    <div class="full-img dy-head">
+                                        <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                    </div>
+                                    <p class="dy-name-text name-wrap t-hide f-l">队长名称2</p>
+                                    <!-- 点赞 -->
+                                    <a class="icons dz-btn dz-btn-sub t-c btn-hover">点赞</a>
+                                </div>
+                                <!-- 队员列表 -->
+                                <div class="dy-wrap flex">
+                                    <p class="dy-name-text">队员：</p>
+                                    <ul class="dy-list flex">
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                        <li class="">
+                                            <div class="full-img dy-head">
+                                                <img src="./ossweb-img/mobile/head_img.jpg" alt="头像">
+                                            </div>
+                                            <p class="dy-name-text t-c name-dy-wrap t-hide">队员名称2</p>
+                                            <!-- 点赞 -->
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="icons dz-btn t-c btn-hover">点赞</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 比赛对阵图 -->
+            <div class="p-r bs-container">
+                <h2 class="title-icon ti-p1-1 t">比赛对阵图</h2>
+                <ul class="live-menu-list live-bs-list J-bs-list flex">
+                    <li class="live-menu-item t-c flex-1 active">
+                        <span class="live-title-text">东部</span>
+                    </li>
+                    <li class="live-menu-item t-c flex-1">
+                        <span class="live-title-text">西部</span>
+                    </li>
+                    <li class="live-menu-item t-c flex-1">
+                        <span class="live-title-text">总决赛</span>
+                    </li>
+                </ul>
+                <div class="bs-content-list">
+                    <!-- 东部 -->
+                    <div class="bs-content-item">
+                        <ul class="p-r bg bs-list db-bs-list">
+                            <li class="p-a bs-item bs-item-1">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <!-- 胜利方添加 win类名 -->
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第二场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第三场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第四场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第五场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第六场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第七场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-2">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-3">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-4">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-5">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-6">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-7">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 西部 -->
+                    <div class="bs-content-item" style="display: none;">
+                        <ul class="p-r bg bs-list xb-bs-list">
+                            <li class="p-a bs-item bs-item-1">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <!-- 胜利方添加 win类名 -->
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第二场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第三场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第四场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第五场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第六场</a>
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第七场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-2">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-3">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-4">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-5">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-6">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-a bs-item bs-item-7">
+                                <div class="icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 总决赛 -->
+                    <div class="bs-content-item" style="display: none;">
+                        <ul class="p-r bg bs-list">
+
+                            <!-- 决赛 -->
+                            <li class="p-a bs-item js-item-1">
+                                <div class="p-r icons team-wrap t-c c">
+                                    <div class="team-left t-hide f-l">快船</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                </div>
+                                <div class="p-r icons team-wrap t-c c win">
+                                    <div class="team-left t-hide f-l">勇士</div>
+                                    <div class="team-right t-hide f-r">20</div>
+                                    <span class="p-a icons win-icon"></span>
+                                </div>
+                                <div class="p-r bs-msg-wrap c">
+                                    <p class="f-l bs-time-text t-hide">04-24 17:00</p>
+                                    <div class="p-r video-btn t-c f-r">
+                                        <span>视频</span>
+                                        <div class="p-a video-list">
+                                            <a href="javascript: alert('敬请期待！');"
+                                                class="video-item btn-hover t-c">第一场</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 比赛数据排行榜 -->
+            <div class="bg rank-container">
+                <div class="wrap">
+                    <h2 class="title-icon ti-p1-2 t">比赛数据排行榜</h2>
+                    <!-- 切换球队榜&球员榜 -->
+                    <div class="p-r rank-tab-list J-rank-title1 flex">
+                        <a class="rank-tab-btn t-c active">球队榜</a>
+                        <a class="rank-tab-btn t-c">球员榜</a>
+                    </div>
+                    <p class="rank-tips-text t-c">排名依据：胜场，胜场相同看净胜分。</p>
+                    <div class="rank-content-list J-rank-content1">
+                        <!-- 球队榜 -->
+                        <div class="rank-content-item">
+                            <!-- 切换常规赛&季后赛 -->
+                            <div class="rank-tab-list2 J-rank-title2 c">
+                                <a class="rank-tab-btn2 t-c f-l active">常规赛</a>
+                                <a class="rank-tab-btn2 t-c f-l">季后赛</a>
+                            </div>
+                            <div class="rank-content-list2 J-rank-con2">
+                                <!-- 常规赛 -->
+                                <div class="rank-content-item2">
+                                    <div class="p-r">
+                                        <span class="p-a icons table-inset t-c">东部排名</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>球队</th>
+                                                    <th>胜场</th>
+                                                    <th>负场</th>
+                                                    <th>主场战绩</th>
+                                                    <th>客场战绩</th>
+                                                    <th>场均得分</th>
+                                                    <th>场均失分</th>
+                                                    <th>净胜分</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">9</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">10</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">11</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">12</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">13</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">14</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">15</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="p-r" style="margin-top: .53rem;">
+                                        <span class="p-a icons table-inset t-c">西部排名</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>球队</th>
+                                                    <th>胜场</th>
+                                                    <th>负场</th>
+                                                    <th>主场战绩</th>
+                                                    <th>客场战绩</th>
+                                                    <th>场均得分</th>
+                                                    <th>场均失分</th>
+                                                    <th>净胜分</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">9</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">10</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">11</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">12</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">13</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">14</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">15</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- 季后赛 -->
+                                <div class="rank-content-item2" style="display: none;">
+                                    <div class="p-r">
+                                        <span class="p-a icons table-inset t-c">东部排名</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>球队</th>
+                                                    <th>胜场</th>
+                                                    <th>负场</th>
+                                                    <th>主场战绩</th>
+                                                    <th>客场战绩</th>
+                                                    <th>场均得分</th>
+                                                    <th>场均失分</th>
+                                                    <th>净胜分</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="p-r" style="margin-top: .53rem;">
+                                        <span class="p-a icons table-inset t-c">西部排名</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>球队</th>
+                                                    <th>胜场</th>
+                                                    <th>负场</th>
+                                                    <th>主场战绩</th>
+                                                    <th>客场战绩</th>
+                                                    <th>场均得分</th>
+                                                    <th>场均失分</th>
+                                                    <th>净胜分</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 球员榜 -->
+                        <div class="rank-content-item" style="display: none;">
+                            <!-- 切换常规赛&季后赛 -->
+                            <div class="rank-tab-list2 J-rank-title3 c">
+                                <a class="rank-tab-btn2 t-c f-l active">常规赛</a>
+                                <a class="rank-tab-btn2 t-c f-l">季后赛</a>
+                            </div>
+                            <div class="rank-content-list2 J-rank-con3">
+                                <!-- 常规赛 -->
+                                <div class="rank-content-item2">
+                                    <div class="p-r">
+                                        <span class="p-a icons table-inset t-c">女生</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th><span>排名</span></th>
+                                                    <th><span>选手</span></th>
+                                                    <th>场均<br />评价</th>
+                                                    <th>场均<br />得分</th>
+                                                    <th>场均<br />篮板</th>
+                                                    <th>场均<br />助攻</th>
+                                                    <th>场均<br />抢断</th>
+                                                    <th>场均<br />盖帽</th>
+                                                    <th>MVP获得<br />次数</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>LAL2</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <div class="rank-page">
+                                            <a href="javascript:;" class="prev">&lt;</a>
+                                            <span>1/12</span>
+                                            <a href="javascript:;" class="next">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div class="p-r" style="margin-top: .53rem;">
+                                        <span class="p-a icons table-inset t-c">男生</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>选手</th>
+                                                    <th>场均<br />评价</th>
+                                                    <th>场均<br />得分</th>
+                                                    <th>场均<br />篮板</th>
+                                                    <th>场均<br />助攻</th>
+                                                    <th>场均<br />抢断</th>
+                                                    <th>场均<br />盖帽</th>
+                                                    <th>MVP获得<br />次数</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="rank-page">
+                                            <a href="javascript:;" class="prev">&lt;</a>
+                                            <span>1/12</span>
+                                            <a href="javascript:;" class="next">&gt;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 季后赛 -->
+                                <div class="rank-content-item2" style="display: none;">
+                                    <div class="p-r">
+                                        <span class="p-a icons table-inset t-c">女生</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>选手</th>
+                                                    <th>场均<br />评价</th>
+                                                    <th>场均<br />得分</th>
+                                                    <th>场均<br />篮板</th>
+                                                    <th>场均<br />助攻</th>
+                                                    <th>场均<br />抢断</th>
+                                                    <th>场均<br />盖帽</th>
+                                                    <th>MVP获得<br />次数</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="rank-page">
+                                            <a href="javascript:;" class="prev">&lt;</a>
+                                            <span>1/12</span>
+                                            <a href="javascript:;" class="next">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div class="p-r" style="margin-top: .53rem;">
+                                        <span class="p-a icons table-inset t-c">男生</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>选手</th>
+                                                    <th>场均<br />评价</th>
+                                                    <th>场均<br />得分</th>
+                                                    <th>场均<br />篮板</th>
+                                                    <th>场均<br />助攻</th>
+                                                    <th>场均<br />抢断</th>
+                                                    <th>场均<br />盖帽</th>
+                                                    <th>MVP获得<br />次数</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-1"></i>
+                                                        <p class="p-r">1</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-2"></i>
+                                                        <p class="p-r">2</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <i class="p-a icons rank-icon ri-3"></i>
+                                                        <p class="p-r">3</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">4</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">5</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">6</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">7</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-r td-1">
+                                                        <p class="p-r">8</p>
+                                                    </td>
+                                                    <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                                                    <td>53</td>
+                                                    <td>12</td>
+                                                    <td>28-3</td>
+                                                    <td>25-9</td>
+                                                    <td>118.6</td>
+                                                    <td>107.4</td>
+                                                    <td>11.2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="rank-page">
+                                            <a href="javascript:;" class="prev">&lt;</a>
+                                            <span>1/12</span>
+                                            <a href="javascript:;" class="next">&gt;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <!-- 合作伙伴 -->
+            <div class="p-r hzhb-container">
+                <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
+                <div class="hzhb-list t-c">
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="mcomm.js"></script>
+    <script>
+        //赛事列表
+        var mySwiper1 = new Swiper('.swiper-1', {
+            slidesPerView: 2,
+            prevButton: '.sai-container .prev-btn',
+            nextButton: '.sai-container .next-btn',
+        });
+
+        //切换直播间
+        $(".J-zbj-list .live-menu-item").on("click", function () {
+            var $this = $(this),
+                idx = $this.index(),
+                src = $this.data("src");
+            $this.addClass("active").siblings('.live-menu-item').removeClass("active");
+            // 切换iframe地址
+            $(".live-content iframe").attr("src", src);
+        });
+
+        // 切换队员信息板
+        $(".tab-team-list a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass("active").siblings("a").removeClass("active");
+            $(".team-content-list .team-content-item").hide().eq(idx).show();
+        });
+
+        // 切换比赛阵图
+        $(".J-bs-list .live-menu-item").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass("active").siblings('.live-menu-item').removeClass("active");
+            $(".bs-content-list .bs-content-item").hide().eq(idx).show();
+        });
+
+        // 切换球队榜&球员榜
+        $(".J-rank-title1 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-content1 .rank-content-item").hide().eq(idx).show();
+        });
+
+        // 切换常规撒&季后赛 球队榜
+        $(".J-rank-title2 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-con2 .rank-content-item2").hide().eq(idx).show();
+        });
+
+        // 切换常规撒&季后赛 球员榜
+        $(".J-rank-title3 a").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            $this.addClass('active').siblings('a').removeClass('active');
+            $(".J-rank-con3 .rank-content-item2").hide().eq(idx).show();
+        });
+
+        // 为选手点赞 切换球队
+        $(".J-xb-list li").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            teamListShow('xb', idx);
+            $this.addClass('active').siblings('li').removeClass('active');
+        });
+        $(".J-db-list li").on("click", function () {
+            var $this = $(this),
+                idx = $this.index();
+            teamListShow('db', idx);
+            $this.addClass('active').siblings('li').removeClass('active');
+        });
+
+        function teamListShow(str, idx) {
+            $(".team-msg-list .team-msg-item").hide();
+            $(".team-msg-list .team-" + str + "-" + (idx + 1)).show();
+        }
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200409djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>canvas弧形开口进度条</title>
+    <!-- 创建： 2020/04/22 -->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="progress-wrap" src="./image/progress_bg.png" alt="">
+    <canvas id="acanvas" width="500" height="500"></canvas>
+    <img id="imgs" src="./image/progress_img.png" style="opacity: 0;" alt="">
+</body>
+<script>
+    var radian = .82//弧度大小
+    radian = radian > 1 ? 1 : radian //控制最大值为1
+    radian = radian < 0 ? 0 : radian //控制最小值为0
+
+    //计算弧形的起点，这是为了保证起点和终点在同一水平线上
+    var startPath = Math.PI * (3 / 2 - radian)
+    var endPath = startPath + 2 * Math.PI * radian
+    var maxValue = 100; //最大值
+    var value = 50; //当前进度的值
+    //计算当前进度弧形大小,环形总长度为Math.PI*2
+    var percent = 2 * Math.PI * radian * (value / maxValue)
+    var canvas = document.getElementById('acanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "transparent";
+    ctx.fillStyle = "#000";
+    var imgs = document.getElementById('imgs');
+    imgs.onload = function () {
+        ctx.arc(64, 64, 64, startPath, percent + startPath);
+        ctx.lineTo(64, 64);
+        ctx.stroke();
+        ctx.clip();
+        ctx.fillStyle = "transparent";
+        ctx.fillRect(0, 0, 150, 130);
+        ctx.drawImage(imgs, 0, 0, 129, 119);
+    }
+</script>
+
+</html>

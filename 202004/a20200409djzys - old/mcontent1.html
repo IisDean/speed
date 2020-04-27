@@ -1,0 +1,3172 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "content1.html" + location.search;
+        }
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link href="./ossweb-img/mobile/mobile.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex header-topbar">
+        <a href="//nba2k2.qq.com/" class="bg logo-icon1" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+            title="NBA2K online2">
+        </a>
+        <!-- <a href="//daoju.qq.com/mall/" class="bg logo-icon2" onclick="PTTSendClick('btn','djc','进入道具城')" title="道具城">
+        </a> -->
+        <div class="flex-1 login t-r login-wrap">
+            <!--登录前状态 Start-->
+            <p id="unlogin">你好，请<a href="javascript:;" id="btn_qqlogin">[登录]</a></p>
+            <!--登录前状态 End-->
+            <!--登录后状态 Start-->
+            <p id="logined" style="display: none;width: max-content">欢迎，
+                <span id='login_qq_span'></span>，
+                <span id="spanNotBind_649402">
+                    <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                </span>
+                <span id="spanBind_649402" style="display:none">
+                    <span id="area_info_649402"></span>
+                    <span id="role_info_649402"></span>
+                    <a href="javascript:;" class="bindArea">更改绑定</a>
+                    <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
+                </span>
+                <a href="javascript:;"id="btn_logout">注销</a>
+            </p>
+            <!--登录后状态 End-->
+        </div>
+    </div>
+    <div class="bg stage">
+        <!-- 顶部切换 -->
+        <div class="icons t-c top-tab-list">
+            <a href="./mobile.html" class="icons tab-item btn-hover">
+                <h3 class="tab-title-text">「季后赛」激战来袭</h3>
+                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+            </a>
+            <a href="./mcontent1.html" class="icons tab-item btn-hover active">
+                <h3 class="tab-title-text">参赛选手介绍</h3>
+                <p class="tab-msg-text">为选手点点赞参与抽奖</p>
+            </a>
+            <a href="./mcontent2.html" class="icons tab-item btn-hover">
+                <h3 class="tab-title-text">预测领福利</h3>
+                <p class="tab-msg-text">多重奖励等你来拿</p>
+            </a>
+        </div>
+        <div class="bg nr-container page1">
+            <!-- 返回首页 -->
+            <a href="javascript: alert('敬请期待！');" class="icons back-home-btn btn-hover t">返回首页</a>
+            <h2 class="title-icon ti-p2-1 t">为选手点赞 每日抽奖</h2>
+            <p class="t-des"><span>1</span>为你喜欢的参赛选手<em>「点赞」</em>，每天最多可<em>「点赞」10次</em>。</p>
+            <p class="t-des"><span>2</span><em>每天参与「点赞」的玩家</em>，当天即可进行一次抽奖，抽奖资格每天零点清空，请及时参与。</p>
+            <!-- 西部球队-->
+            <div class="team-box">
+                <div class="team-tit"><h2>西部球队</h2></div>
+                <ul class="team-tab flex">
+                    <li class="curr"><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                </ul>
+                <div class="team-item" style="display: block;">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <!-- 东部球队-->
+            <div class="team-box">
+                <div class="team-tit"><h2>东部球队</h2></div>
+                <ul class="team-tab flex">
+                    <li class="curr"><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                    <li><img src="ossweb-img/t1.jpg" alt="" /><p><span>球队名</span></p></li>
+                </ul>
+                <div class="team-item" style="display: block;">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="team-item">
+                    <div class="player-box flex">
+                        <ul class="player-tab">
+                            <li class="leader curr"><i>队长</i>不会饶舌的球员韦德</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                            <li><i>队员</i>不盖帽的傻帽奥尼尔</li>
+                        </ul>
+                        <div class="player-item" style="display: block;">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-info flex">
+                                <img src="ossweb-img/player1.jpg" alt="" />
+                                <div class="player-info-txt">
+                                    <p>选手名字选手名字</p>
+                                    <a href="javascript:;" class="live-none">暂无个人直播间</a>
+                                </div>
+                            </div>
+                            <div class="player-desc">
+                                <ul class="desc-list">
+                                    <li><span>位置：</span><p>SG</p></li>
+                                    <li><span>最爱球队：</span><p>湖人</p></li>
+                                    <li><span>最爱球员：</span><p>勒布朗.詹姆斯</p></li>
+                                    <li><span>比赛宣言：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 </p></li>
+                                    <li><span>个人简介：</span><p>今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的第一天 今天是我参赛的今天是我参赛的第一天</p></li>
+                                </ul>
+                                <div class="player-opt">
+                                    <a href="javascript:;">为他点赞</a>
+                                    <span>1661260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>            <!-- 抽奖-->
+            <div class="lott-box">
+                <div class="lott-info">
+                    <a href="javascript:TGDialogS('pop1');">[查看我的抽奖记录]</a>
+                    <a href="javascript:TGDialogS('pop3');">[填写B站uid]</a>
+                    <a href="javascript:;">[抽奖概率]</a>
+                </div>
+                <div class="news-scroll-con">
+                    <ul class="">
+                        <li class="lottery-news-text">123456789获得了：<span>商城幸运福袋*1</span></li>
+                        <li class="lottery-news-text">123456789获得了：<span>商城幸运福袋*1</span></li>
+                        <li class="lottery-news-text">123456789获得了：<span>商城幸运福袋*1</span></li>
+                        <li class="lottery-news-text">123456789获得了：<span>商城幸运福袋*1</span></li>
+                        <li class="lottery-news-text">123456789获得了：<span>商城幸运福袋*1</span></li>
+                    </ul>
+                </div>                <div class="lottery">
+                    <img src="ossweb-img/mobile/lottery.png" alt="抽奖转盘" />
+                    <div id="lotterycontent"></div>
+                </div>
+                <p class="lott-tips"><a href="javascript:;">体育会员代金券使用指南</a>丨<a href="javascript:;">B站月度会员发货说明</a></p>
+            </div>
+            
+            <!-- 选手排行榜 -->
+            <h2 class="title-icon ti-p2-2 t">选手人气排行榜</h2>
+            <div class="rank-box">
+                <ul class="rank-tab flex">
+                    <li class="curr">女生</li>
+                    <li>男生</li>
+                </ul>
+                <p class="rank-tip"><span>排名依据：</span>人气值，如果一样，则看场均得分。人气排行榜每2小时更新一次。</p>
+                <div class="rank-tb" style="display: block;">
+                    <table>
+                        <tr><th>排名</th><th>选手名</th><th>人气值</th><th>位置</th><th>所属球队</th></tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-1"></i>1</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-2"></i>2</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-3"></i>3</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>7</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>10</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>12</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>13</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>14</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>15</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                    </table>
+                    <div class="rank-page">
+                        <a href="javascript:;" class="prev">&lt;</a>
+                        <span>1/12</span>
+                        <a href="javascript:;" class="next">&gt;</a>
+                    </div>
+                </div>
+                <div class="rank-tb">
+                    <table>
+                        <tr><th>排名</th><th>选手名</th><th>人气值</th><th>位置</th><th>所属球队</th></tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-1"></i>1</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-2"></i>2</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td><i class="icons rank-icon ri-3"></i>3</td>
+                            <td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td>
+                            <td>66666</td>
+                            <td>SF</td>
+                            <td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>7</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>10</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>12</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>13</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>14</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                        <tr>
+                            <td>15</td><td><div class="rank-player"><img src="ossweb-img/rank1.jpg" alt=""/><span>选手名字选手名字</span></div></td><td>66666</td><td>SF</td><td>湖人</td>
+                        </tr>
+                    </table>
+                    <div class="rank-page">
+                        <a href="javascript:;" class="prev">&lt;</a>
+                        <span>1/12</span>
+                        <a href="javascript:;" class="next">&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner-->
+            <div class="banner-box">
+                <a href="javascript:;"><img src="ossweb-img/mobile/banner1.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="ossweb-img/mobile/banner2.jpg" alt="" /></a>
+            </div>
+            
+            <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
+            <div class="hzhb-list t-c">
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+                <a href="javascript: alert('敬请期待！');">
+                    <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 弹窗 抽奖记录 -->
+    <div class="pop pop-1" id="pop1">
+        <div class="pop-con">
+            <h2 class="title-icon title-pop-1 t">抽奖记录</h2>
+            <table class="table-wrap table-1 table-pop-1 t-c">
+                <thead>
+                    <tr class="bg blue-bg">
+                        <th>时间</th>
+                        <th>获得道具</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>2020-04-28 00:02:01</td>
+                        <td>活跃进阶合同费包*1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="rank-page">
+                <a href="javascript:;" class="prev">&lt;</a>
+                <span>1/12</span>
+                <a href="javascript:;" class="next">&gt;</a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
+    </div>
+    
+    <!-- 弹窗 填写B站uid -->
+    <div class="pop pop-3" id="pop3">
+        <div class="pop-con">
+            <h2 class="title-icon title-pop-3 t">填写B站uid</h2>
+            <form id="user_userInfoform_658734" name="user_userInfoform_658734">
+                <input name="sName" type="hidden" value="0" />
+                <input style="display: none;" name="sGender" value="male" type="radio" checked="checked" />
+                <input name="sIdentity" type="hidden" value="0" />
+                <input name="sMobile" type="hidden" value="0" />
+                <input name="sAddress" type="hidden" value="0" />
+                <input name="sPostCode" type="hidden" value="0" />
+                <input name="sProvince" type="hidden" value="0" />
+                <input name="sCity" type="hidden" value="0" />
+                <ul class="form-list">
+                    <li class="form-item c" id="tr_package_658734" style="display: none;">
+                        <div class="form-title f-l t-r">*所获实物：</div>
+                        <div class="form-input f-l">
+                            <select name="sPackageInfo" id="package_658734"></select>
+                        </div>
+                    </li>
+                    <li class="form-item c">
+                        <div class="form-title f-l t-r">*B站会员ID：</div>
+                        <div class="form-textarea f-l">
+                            <input name="sAddress" type="text" />
+                        </div>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" id="personInfoContentBtn_658734" onclick="PTTSendClick('btn','submitDz','提交收货信息')" class="icons submit-btn t-c btn-hover">提交</a>
+            </form>
+            <a class="form-link" href="//nba2k2.qq.com/">查看B站月度会员发货说明</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
+    </div>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/delottery/lottery_v2.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="mcomm.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script>        
+        // 消息滚动
+        var setTimer;
+        setTimer = setInterval(function () {
+            if ($(".news-scroll-con ul li").length < 1) return false;
+            var firstLi = $(".news-scroll-con ul li").eq(0);
+            firstLi.animate({
+                "height": 0
+            }, 600, function () {
+                firstLi.appendTo(".news-scroll-con ul").css("height", "0.36rem");
+            });
+        }, 2000);
+        //队伍切换
+        $('.team-tab li').on('click',function (){
+            $(this).addClass('curr').siblings().removeClass('curr');
+             $(this).parent('.team-tab').siblings('.team-item').hide().eq($(this).index()).show();
+        });
+        //队员切换
+        $('.player-tab li').on('click',function (){
+            $(this).addClass('curr').siblings().removeClass('curr'); 
+            $(this).parent('.player-tab').siblings('.player-item').hide().eq($(this).index()).show();
+        });
+        //排行榜切换切换
+        $('.rank-tab li').on('click',function (){
+            $(this).addClass('curr').siblings().removeClass('curr'); 
+            $(this).parent('.rank-tab').siblings('.rank-tb').hide().eq($(this).index()).show();
+        });
+        //点赞
+        $('.player-opt a').on('click',function (){
+            $(this).addClass('active');
+        });
+        //开始抽奖lottery->js
+        function callJsToStart(){
+            PTTSendClick('lottery','start','抽奖_开始');
+            calllotteryToRoll(5);
+            //alert("抽奖暂未开放哦！");
+        }
+        //开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+        function calllotteryToRoll(id){
+            PTTSendClick('lottery','reward_'+id,'抽奖_奖品_'+id);
+            if(lottery)lottery.stopRoll(id);
+        }
+        //动画完成通知js  lottery->js
+        function callJsToComplete(){
+            PTTSendClick('lottery','end','抽奖_完毕');
+            alert('恭喜获得奖励！');
+        }
+        //初始化抽奖的 可以不知道内部
+        var lottery= new Lottery({
+            'total':12,
+            'width':6.4,
+            'height':5.21,
+            'sbtnx':1.75,
+            'sbtny':1.4,
+            'sbtnw':2.9,
+            'sbtnh':2.59,
+            'boxw':1.52,
+            'boxh':1.02,
+            'position':"0_0,1.62_0,3.24_0,4.88_0,4.88_1.39,4.88_2.78,4.88_4.19,3.24_4.19,1.62_4.19,0_4.19,0_2.78,0_1.39",
+            'contentId' : 'lotterycontent',
+            'onClickRollEvent' : callJsToStart,
+            'onCompleteRollEvent':callJsToComplete ,
+            'unit':"rem",
+            'isResponsive':0
+        });
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200409djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "mcontent1", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "参赛选手介绍", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>

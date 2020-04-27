@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。">
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏">
+    <meta itemprop="name" content="4月2日新版本" />
+    <meta itemprop="description" content="全新荣誉系统上线，彰显个人非凡成就！交易市场推出预定功能，排位赛新增赛季中途冲段奖励！欢迎体验！" />
+    <meta itemprop="image" content="./ossweb-img/share.jpg" />
+    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!--[if lte IE 11]>
+    <script>alert("您的浏览器版本过低，为获得更好体验，请使用QQ浏览器或者谷歌浏览器等体验活动");</script>
+    <![endif]-->
+    <link rel="stylesheet" href="./ossweb-img/idangerous.swiper.css">
+    <link rel="stylesheet" href="./ossweb-img/index.css">
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+</head>
+
+<body data-nav="2">
+    <h1 class="hide">换个赛场，再战一场</h1>
+    <!--topbar-->
+    <div class="topbar">
+        <div class="top-l">
+            <h2 class="logo">
+                <a href="//nba2k2.qq.com/" target="_blank" class="hd" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+                    title="NBA2K online2"></a>
+            </h2>
+            <div class="login">
+                <!--登录前状态 Start-->
+                <p id="unlogin"><a href="javascript:;" id="btn_qqlogin">登录</a></p>
+                <!--登录前状态 End-->
+                <!--登录后状态 Start-->
+                <p id="logined" style="display: none">欢迎，
+                    <span id='login_qq_span'></span>，
+                    <span id="spanNotBind_649402">
+                        <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                    </span>
+                    <span id="spanBind_649402" style="display:none">
+                        <span id="area_info_649402"></span>
+                        <span id="role_info_649402"></span>
+                        <a href="javascript:;" class="bindArea">更改绑定</a>
+                        <!--                        <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>-->
+                    </span>
+                    <a href="javascript:;" id="btn_logout">注销</a></p>
+                <!--登录后状态 End-->
+            </div>
+            <!-- <a href="//www.wegame.com.cn/" target="_blank" class="hdlogo"
+                onclick="PTTSendClick('btn','wegame','进入wegame')" title="wegame"></a> -->
+        </div>
+        <div class="top-r">
+            <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')" class="gw-btn" target="_blank"
+                title="官网首页">官网首页</a>
+            <a href="//nba2k2.qq.com/events.html" onclick="PTTSendClick('btn','hd-btn','活动中心')" class="down-btn"
+                target="_blank" title="活动中心">活动中心</a>
+            <div class="top-ico-box">
+                <a href="//nba2k2.gamebbs.qq.com/forum.php" class="ico1 top-ico" target="_blank" title="官方论坛"
+                    onclick="PTTSendClick('btn','ico1','官方论坛')"></a>
+                <a href="javascript:;" class="ico2 top-ico" title="官方微信"
+                    onclick="PTTSendClick('btn','ico2','官方微信')"><img src="./ossweb-img/weixin.jpg" alt="官方微信" /></a>
+                <a href="javascript:;" class="ico3 top-ico" title="兴趣部落"
+                    onclick="PTTSendClick('btn','ico3','兴趣部落')"><img src="./ossweb-img/buluo.jpg" alt="兴趣部落" /></a>
+                <a href="//weibo.com/nba2kol2" class="ico4 top-ico" target="_blank" title="官方微博"
+                    onclick="PTTSendClick('btn','ico4','官方微博')"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //topbar -->
+    <div class="p-r" id="stage">
+        <!-- slogan -->
+        <div class="p-r bg head-wrap p3">
+            <i class="p-a bg body-inset"></i>
+        </div>
+        <!-- 内容 -->
+        <div class="p-r wrap">
+            <!-- 顶部切换 -->
+            <div class="p-a top-tab-list t-c">
+                <a href="./index.html" class="icons tab-item tab-item-1 btn-hover">
+                    <h3 class="tab-title-text">「季后赛」激战来袭</h3>
+                    <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                </a>
+                <a href="./content1.html" class="icons tab-item tab-item-2 btn-hover">
+                    <h3 class="tab-title-text">参赛选手介绍</h3>
+                    <p class="tab-msg-text">为选手点点赞参与抽奖</p>
+                </a>
+                <a href="./content2.html" class="icons tab-item tab-item-3 btn-hover active">
+                    <h3 class="tab-title-text">预测领福利</h3>
+                    <p class="tab-msg-text">多重奖励等你来拿</p>
+                </a>
+            </div>
+        </div>
+        <div class="bg tab-content-list">
+            <!-- 预测领福利 -->
+            <div class="p-r tab-content-item">
+                <!-- 预测比赛领福利 -->
+                <div class="bg p3-i1-container">
+                    <div class="wrap">
+                        <h2 class="title-icon ti-p3-1 t">预测比赛领福利</h2>
+                        <div class="t-c">
+                            <p class="title-msg-text">
+                                <span class="num-icon">1</span>当日登录游戏后，返回页面即可参与当日所有开放预测的比赛内容，<span
+                                    class="black">选出您预测的获胜球队</span>，提交后无法修改。</p>
+                            <p class="title-msg-text">
+                                <span class="num-icon">2</span>每场比赛的预测开始时间为开赛前48小时，助威结束时间为<span
+                                    class="black">开赛前15分钟；</span></p>
+                            <p class="title-msg-text">
+                                <span class="num-icon">3</span>预测结果将于比赛结束后的第一个<span
+                                    class="black">工作日11:00进行结算</span>，届时玩家可在页面点击【查看我的预测】进行查询；</p>
+                            <p class="title-msg-text">
+                                <span class="num-icon">4</span>预测<span
+                                    class="black">成功1次/3次/6次/12次</span>即可领取指定的奖励，并可购买对应的福利礼包<span
+                                    class="black">（每档奖励每个QQ可领取一次，每档福利礼包每个QQ仅可购买一次）。</span>
+                            </p>
+                        </div>
+                        <a href="javascript: TGDialogS('pop2');" onclick="PTTSendClick('btn','lookYc','查看我的预测')"
+                            class="icons look-yc-btn t-c btn-hover">查看我的预测</a>
+                        <!-- 预测列表 -->
+                        <ul class="yc-list c">
+                            <li class="p-r bg yc-item yc-end yc-item1 f-l">
+                                <div class="p-a yc-top-title t-c">预测已结束</div>
+                                <div class="c">
+                                    <div class="yc-plank yc-plank-left f-l">
+                                        <div class="team-yc-icon" style="background-image: url('');"></div>
+                                        <p class="ycteam-title-text t-c t-hide">球队名很长</p>
+                                        <div class="team-yc2-wrap t-c">
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                        </div>
+                                        <a href="javascript: alert('敬请期待！');"
+                                            class="icons yc-win-btn t-c btn-hover">预测胜方</a>
+                                    </div>
+                                    <div class="yc-center-plank f-l">
+                                        <div class="icons vs-icon2"></div>
+                                        <p class="t-c vs-time-text">4月23日 18:00</p>
+                                        <p class="vs-title-text t-c">开赛</p>
+                                    </div>
+                                    <div class="yc-plank yc-plank-left f-l">
+                                        <div class="team-yc-icon" style="background-image: url('');"></div>
+                                        <p class="ycteam-title-text t-c t-hide">球队名很长</p>
+                                        <div class="team-yc2-wrap t-c">
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                        </div>
+                                        <a href="javascript: alert('敬请期待！');"
+                                            class="icons yc-win-btn t-c btn-hover">预测胜方</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-r bg yc-item yc-item2 f-l">
+                                <div class="p-a yc-top-title t-c">开放预测</div>
+                                <div class="c">
+                                    <div class="yc-plank yc-plank-left f-l">
+                                        <div class="team-yc-icon" style="background-image: url('');"></div>
+                                        <p class="ycteam-title-text t-c t-hide">球队名很长</p>
+                                        <div class="team-yc2-wrap t-c">
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                        </div>
+                                        <a href="javascript: alert('敬请期待！');"
+                                            class="icons yc-win-btn t-c btn-hover">预测胜方</a>
+                                    </div>
+                                    <div class="yc-center-plank f-l">
+                                        <div class="icons vs-icon2"></div>
+                                        <p class="t-c vs-time-text">4月23日 18:00</p>
+                                        <p class="vs-title-text t-c">开赛</p>
+                                    </div>
+                                    <div class="yc-plank yc-plank-left f-l">
+                                        <div class="team-yc-icon" style="background-image: url('');"></div>
+                                        <p class="ycteam-title-text t-c t-hide">球队名很长</p>
+                                        <div class="team-yc2-wrap t-c">
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                            <div class="team-yc2-icon" style="background-image: url('');"></div>
+                                        </div>
+                                        <a href="javascript: alert('敬请期待！');"
+                                            class="icons yc-win-btn t-c btn-hover">预测胜方</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 竞猜奖品列表 -->
+                        <p class="prize-tips-text t-c">截止4月25日11:00，<span>您已经预测成功10次。</span></p>
+                        <ul class="prize-free-list c">
+                            <li class="bg prize-free-item f-l">
+                                <p class="prize-title-text t-c">参与竞猜1次</p>
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_1.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">现役100人球星包*1</p>
+                                <p class="prize-msg-text t-c">完成全部新手引导任务后<br />在游戏内领取</p>
+                            </li>
+                            <li class="bg prize-free-item f-l">
+                                <p class="prize-title-text t-c">预测成功1次</p>
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_2.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">活跃度福袋*4</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','getfreeGift2','领取-活跃度福袋*4')"
+                                    class="icons get-prize-btn t-c btn-hover">领取奖励</a>
+                            </li>
+                            <li class="bg prize-free-item f-l">
+                                <p class="prize-title-text t-c">预测成功1次</p>
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_3.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">现役优秀球星包*2</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','getfreeGift3','领取-现役优秀球星包*2')"
+                                    class="icons get-prize-btn t-c btn-hover">领取奖励</a>
+                            </li>
+                            <li class="bg prize-free-item f-l">
+                                <p class="prize-title-text t-c">预测成功1次</p>
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_4.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">活跃入门合同费包*2</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','getfreeGift4','领取-活跃入门合同费包*2')"
+                                    class="icons get-prize-btn t-c btn-hover">领取奖励</a>
+                            </li>
+                            <li class="bg prize-free-item f-l">
+                                <p class="prize-title-text t-c">预测成功1次</p>
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_5.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">活跃进阶合同费包*2</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','getfreeGift5','领取-活跃进阶合同费包*2')"
+                                    class="icons get-prize-btn t-c btn-hover">领取奖励</a>
+                            </li>
+                        </ul>
+                        <ul class="prize-ff-list c">
+                            <li class="bg prize-ff-item f-l">
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_3.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">现役当家球星包</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','gmGift1','购买-现役当家球星包*1')"
+                                    class="icons buy-btn t-c btn-hover">1Q币购买</a>
+                                <p class="yj-text t-c">售价：6Q币</p>
+                            </li>
+                            <li class="bg prize-ff-item f-l">
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_6.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">现役人气50人礼包*1</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','gmGift2','购买-现役人气50人礼包*1')"
+                                    class="icons buy-btn t-c btn-hover">6.6Q币购买</a>
+                                <p class="yj-text t-c">售价：12Q币</p>
+                            </li>
+                            <li class="bg prize-ff-item f-l">
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_7.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">神秘合同费入门礼包*1</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','gmGift3','购买-神秘合同费入门礼包*1')"
+                                    class="icons buy-btn t-c btn-hover">6Q币购买</a>
+                                <p class="yj-text t-c">售价：20Q币</p>
+                            </li>
+                            <li class="bg prize-ff-item f-l">
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_8.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">现役人气30人礼包*1</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','gmGift4','购买-现役人气30人礼包*1')"
+                                    class="icons buy-btn t-c btn-hover">16.5Q币购买</a>
+                                <p class="yj-text t-c">售价：30Q币</p>
+                            </li>
+                            <li class="bg prize-ff-item f-l">
+                                <div class="full-img prize-icon">
+                                    <img src="./ossweb-img/prize_9.jpg" alt="奖品">
+                                </div>
+                                <p class="prize-name-text t-c">神秘合同费进阶礼包*1</p>
+                                <a href="javascript: alert('敬请期待！');"
+                                    onclick="PTTSendClick('btn','gmGift5','购买-购买神秘合同费进阶礼包*1')"
+                                    class="icons buy-btn t-c btn-hover">33Q币购买</a>
+                                <p class="yj-text t-c">售价：60Q币</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 玩家预测榜 -->
+                <div class="bg p3-i2-container">
+                    <div class="wrap">
+                        <h2 class="title-icon ti-p3-2 t">预测比赛领福利</h2>
+                        <p class="title-msg-text t-c"><span class="black">排名依据：</span>预测正确次数，如果一样，看首次正确预测时间，排行榜每天12点更新。
+                        </p>
+                        <table class="table-wrap table-1 table-yc t-c">
+                            <thead>
+                                <tr class="bg blue-bg">
+                                    <th>排名</th>
+                                    <th>玩家QQ</th>
+                                    <th>预测正确次数</th>
+                                    <th>预测正确率</th>
+                                    <th>首次预测正确时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="my-rank-item">
+                                    <td class="p-r td-1">
+                                        <span class="p-a icons my-rank-icon ri-1">我的排名</span>
+                                        <p class="p-r">100+</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <i class="p-a icons rank-icon ri-1"></i>
+                                        <p class="p-r">1</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <i class="p-a icons rank-icon ri-2"></i>
+                                        <p class="p-r">2</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <i class="p-a icons rank-icon ri-3"></i>
+                                        <p class="p-r">3</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">4</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">5</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">6</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">7</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">8</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">9</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-r td-1">
+                                        <p class="p-r">10</p>
+                                    </td>
+                                    <td>124****478</td>
+                                    <td>53</td>
+                                    <td>100%</td>
+                                    <td>2020-04-28 00:02:01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 分页 -->
+                        <div class="p-r page-btn-container t-c">
+                            <div class="page-num-list">
+                                <a href="javascript: alert('敬请期待！');" class="page-num-item active">1</a>
+                                <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                                <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                                <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                                <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                            </div>
+                            <a href="javascript: alert('敬请期待！');" class="p-a icons page-btn prev-btn"></a>
+                            <a href="javascript: alert('敬请期待！');" class="p-a icons page-btn next-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 合作伙伴 -->
+        <div class="p-a hzhb-container">
+            <div class="wrap">
+                <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
+                <div class="hzhb-list t-c">
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                    <a href="javascript: alert('敬请期待！');" class="full-img hzhb-item">
+                        <img src="./ossweb-img/hzhb_img.png" alt="合作伙伴">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 返回顶部 -->
+        <a class="icons back-top btn-hover t">返回顶部</a>
+    </div>
+
+    <!-- 弹窗 查看我的预测 -->
+    <div class="pop pop-2" id="pop2">
+        <div class="pop-con">
+            <h2 class="title-icon title-pop-2 t">查看我的预测</h2>
+            <table class="table-wrap table-1 table-pop-2 t-c">
+                <thead>
+                    <tr class="bg blue-bg">
+                        <th>比赛对阵</th>
+                        <th>预测胜队</th>
+                        <th>获胜球队</th>
+                        <th>预测结果结算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                    <tr class="my-rank-item">
+                        <td>76人-凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>凯尔特人</td>
+                        <td>预测成功</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 分页 -->
+            <div class="p-r page-btn-container t-c" style="margin-top: 18px;">
+                <div class="page-num-list">
+                    <a href="javascript: alert('敬请期待！');" class="page-num-item active">1</a>
+                    <a href="javascript: alert('敬请期待！');" class="page-num-item">2</a>
+                    <a href="javascript: alert('敬请期待！');" class="page-num-item">3</a>
+                    <a href="javascript: alert('敬请期待！');" class="page-num-item">4</a>
+                    <a href="javascript: alert('敬请期待！');" class="page-num-item">5</a>
+                </div>
+                <a href="javascript: alert('敬请期待！');" class="p-a icons page-btn prev-btn"></a>
+                <a href="javascript: alert('敬请期待！');" class="p-a icons page-btn next-btn"></a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
+    </div>
+
+
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/title.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/swiper2_component/swiper2.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+
+        //获取随机数
+        function getRandom(min, max) {
+            return Math.ceil(Math.random() * (max - min) + min);
+        }
+
+        // 返回顶部
+        $(".back-top").on("click", function () {
+            $("html,body").animate({
+                'scrollTop': 0
+            }, 300);
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
+        //二维码
+        $('.top-ico-box .top-ico').hover(function () {
+            $(this).find('img').show();
+        }, function () {
+            $(this).find('img').hide();
+        });
+
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    LoginManager.logout();
+                });
+            });
+        });
+
+        //分享
+        TGMobileShare({
+            shareTitle: 'NBA电竞战役赛', //不设置或设置为空时，页面有title，则调取title
+            shareDesc: '换个赛场，再战一场', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https:./ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20200409djzys' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        });
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200409djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "content2", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "内页2", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+        };
+        if (typeof (pgvMain) == 'function') pgvMain();
+    </script>
+</body>
+
+</html>

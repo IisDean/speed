@@ -432,6 +432,11 @@ var flowIdValid = ["655090","655091","655092","655093"];
 					var ticket = bParts[2];
 					$('[id=Jf_'+jfId+'_1]').text(ticket);
 					$('[id=Jf_'+jfId+'_2]').text(tot);
+					
+					if(jfId==914){
+						process_deli(tot);
+					}
+					
 				}
 			}
 			return;
@@ -719,6 +724,7 @@ function shareQFrd(){
 }
 
 function sharedNeiqian(){
+	$('.share-guide-task').css('display','block')
 	/*var shareCfgInfo = {"sShareTitle":"\u7a7f\u8d8a\u706b\u7ebf\u624b\u6e38\u5b98\u65b9\u7f51\u7ad9-\u817e\u8baf\u6e38\u620f","sShareDesc":"\u300a\u7a7f\u8d8a\u706b\u7ebf\u624b\u6e38\u300b\u4e3aCF\u539f\u73ed\u56e2\u961f\u5386\u65f63\u5e74\u7cbe\u5fc3\u6253\u9020\uff0c\u5c06\u4e09\u4ebf\u9f20\u6807\u7684\u67aa\u6218\u68a6\u60f3\u5ef6\u7eed\u5230\u624b\u673a\u4e0a\u3002CF\u6b63\u7248FPS\u624b\u6e38\uff0c\u539f\u6c41\u539f\u5473\uff0c\u4f20\u627f\u7ecf\u5178\uff0c\u706b\u7206\u5f00\u6218\uff0c\u7eaf\u6b63\u7684\u67aa\u6218\u8840\u7edf\uff01","sShareImgUrl":"","sShareLink":"","iType":2};
 	var sShareLink = formatUrl((shareCfgInfo.sShareLink == "" || shareCfgInfo.sShareLink == undefined)?(window.location.href):shareCfgInfo.sShareLink);
 	var sShareImgUrl = formatUrl(shareCfgInfo.sShareImgUrl == undefined?"":shareCfgInfo.sShareImgUrl);
@@ -727,6 +733,10 @@ function sharedNeiqian(){
 	var shouyouInfo = '{"MsdkMethod":"WGSendToQQ","scene":"1","title":"手游内分享","desc":"shouyou share","url":"https://cfm.qq.com/lbact/a20190702lbcfnlc/neiqian_hv.html"}'
 	msdkShare(shouyouInfo);
 	milo.cookie.set("isSharedNeiqian","1");*/
+}
+
+function deli_show(){
+    $('.share-guide-task').css('display','none')
 }
 
 function shareWxQQAppAndGet(iActivity,iFlow,func){
@@ -1002,6 +1012,12 @@ function isMSDK() {
 	var msdkEncodeParam = milo.request('msdkEncodeParam');
 	return !!msdkEncodeParam;
 }
+
+if(!isMSDK()){
+	window.location.href="//cfm.qq.com/lbact/a20200403bbyr/h5.html";
+}
+
+
 var cfmUserInfo = {
 	nickName: "",
 	isLogin: false

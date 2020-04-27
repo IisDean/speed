@@ -233,8 +233,6 @@ input {
 
 .luban-template-53 .group-box {
     width: 2.2rem;
-    margin-right: 0.15rem;
-    display: inline-block;
 }
 
 .luban-template-53 .img1 {
@@ -441,9 +439,26 @@ input {
 .qd-list {
     margin: .4rem auto 0;
     width: 5.4rem;
+    height: .91rem;
 }
 
-.qd-list .qd-item {}
+.app-part .qd-list {
+    margin-top: 1.2rem;
+    width: 6.3rem;
+    height: .91rem;
+}
+
+.qd-list .qd-item:nth-child(1) {
+    left: 0;
+}
+
+.qd-list .qd-item:nth-child(2) {
+    left: 35%;
+}
+
+.qd-list .qd-item:nth-child(3) {
+    left: 69%;
+}
 
 .qd-list .qd-item-btn {
     display: block;
@@ -1197,10 +1212,19 @@ input {
 .app-part .qd-list {
     margin-top: 1.2rem;
     width: 6.3rem;
+    height: .91rem;
 }
 
-.app-part .qd-list .qd-item {
-    margin-right: .6rem;
+.app-part .qd-list .qd-item:nth-child(1) {
+    left: 0;
+}
+
+.app-part .qd-list .qd-item:nth-child(2) {
+    left: 37%;
+}
+
+.app-part .qd-list .qd-item:nth-child(3) {
+    left: 74%;
 }
 
 .app-part .load-bar {

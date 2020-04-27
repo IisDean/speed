@@ -431,6 +431,10 @@ var flowIdValid = ["655090","655091","655092","655093"];
 					var ticket = bParts[2];
 					$('[id=Jf_'+jfId+'_1]').text(ticket);
 					$('[id=Jf_'+jfId+'_2]').text(tot);
+					
+					if(jfId==914){
+						process_deli(tot);
+					}
 				}
 			}
 			return;
@@ -898,12 +902,13 @@ function shareAppAndGet(iActivity,iFlow,func){
 $(document).ready(function(){
 	console.log(window.AppShareInfo, window.templatetype, window.servicetype, window.gametype)
 	if (pageTypeIsGameHelper() && !isGameHelper()) {
-		window.doAmsAction = function() {
+		window.location.href="//cfm.qq.com/lbact/a20200403bbyr/h5.html";
+		/*window.doAmsAction = function() {
 			alert('请下载游戏最新助手APP参与本次活动');
 		}
 		window.doBuyAmsAction = function() {
 			alert('请下载游戏最新助手APP参与本次活动');
-		}
+		}*/
 	}
 });
 // 助手 app 分享 ------ end

@@ -431,6 +431,11 @@ var flowIdValid = ["655090","655091","655092","655093"];
 					var ticket = bParts[2];
 					$('[id=Jf_'+jfId+'_1]').text(ticket);
 					$('[id=Jf_'+jfId+'_2]').text(tot);
+					
+					if(jfId==914){
+						process_deli(tot);
+					}
+					
 				}
 			}
 			return;

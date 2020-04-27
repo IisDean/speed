@@ -502,6 +502,7 @@ body {
 .sai-container .swiper-container {
     margin: 0 auto;
     width: 1120px;
+    height: 160px;
 }
 
 .sai-wrap {
@@ -744,7 +745,7 @@ body {
     display: inline-block;
     width: 98px;
     height: 98px;
-    border-radius: 99px;
+    border-radius: 100px;
     background-color: #f1f1f1;
     background-size: cover;
     overflow: hidden;
@@ -790,7 +791,7 @@ body {
 .dy-head {
     width: 56px;
     height: 56px;
-    border-radius: 99px;
+    border-radius: 100px;
     background-color: #f1f1f1;
     background-size: cover;
     overflow: hidden;
@@ -1052,8 +1053,8 @@ body {
 
 /* 排行榜 */
 .rank-container {
-    min-height: 1730px;
-    background-image: url('./p1_i3_bg.png');
+    min-height: 1848px;
+    background-image: url('./p1_i3_bg.jpg');
     overflow: hidden;
 }
 
@@ -1125,6 +1126,7 @@ body {
 }
 
 .rank-content-item2 {
+    padding-bottom: 10px;
     overflow: hidden;
 }
 
@@ -1198,7 +1200,7 @@ body {
     height: 40px;
     background-color: #fff;
     background-size: cover;
-    border-radius: 99px;
+    border-radius: 100px;
     overflow: hidden;
 }
 
@@ -1274,7 +1276,8 @@ body {
     width: 40px;
     height: 40px;
     background-color: #fff;
-    border-radius: 99px;
+    background-size: cover;
+    border-radius: 100px;
     overflow: hidden;
 }
 
@@ -1534,7 +1537,7 @@ body {
     box-sizing: border-box;
     width: 336px;
     height: 24px;
-    border-radius: 99px;
+    border-radius: 100px;
     background-color: #f8f8f8;
 }
 
@@ -1560,7 +1563,7 @@ body {
     width: 28px;
     height: 28px;
     line-height: 28px;
-    border-radius: 99px;
+    border-radius: 100px;
     overflow: hidden;
     font-size: 16px;
     color: #666;
@@ -1570,6 +1573,19 @@ body {
 .page-num-item.active {
     background-color: #d30529;
     color: #fff;
+}
+
+.table-wrap .c3,
+.pageprenone,
+.pagenextnone {
+    margin: 0 6px;
+    font-size: 16px;
+    color: #666;
+}
+
+.pageprenone:hover,
+.pagenextnone:hover {
+    text-decoration: underline;
 }
 
 /* banner */
@@ -1612,7 +1628,7 @@ body {
     width: 18px;
     height: 18px;
     line-height: 18px;
-    border-radius: 99px;
+    border-radius: 100px;
     background-color: #d31d3d;
     font-size: 16px;
     color: #fff;
@@ -1663,7 +1679,7 @@ body {
     width: 110px;
     height: 110px;
     border: 2px solid #f1f1f1;
-    border-radius: 99px;
+    border-radius: 100px;
     background-color: #fff;
     background-size: cover;
 }
@@ -1683,7 +1699,7 @@ body {
     margin: 0 5px;
     width: 46px;
     height: 46px;
-    border-radius: 99px;
+    border-radius: 100px;
     background-size: cover;
     background-color: #e2e2e2;
 }

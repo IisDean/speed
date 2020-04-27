@@ -409,6 +409,14 @@ body {
     height: 726px;
 }
 
+.hd-time-wrap {
+    top: 530px;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #b72b4c;
+}
+
 .body-inset {
     top: 658px;
     left: 0;
@@ -829,9 +837,9 @@ body {
 }
 
 .name-dy-wrap {
-    margin-top: 8px;
+    margin: 8px 2px 0;
     line-height: 1;
-    width: 75px;
+    width: 60px;
 }
 
 .dy-list .dz-btn {
@@ -1276,6 +1284,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: #fff;
+    background-size: cover;
     border-radius: 100px;
     overflow: hidden;
 }
@@ -1469,10 +1478,15 @@ body {
     margin-top: 30px;
 }
 
-.lottery-tips-text {
+.lottery-tips-text,
+.lottery-tips-text a {
     line-height: 1;
     font-size: 16px;
     color: #666;
+}
+
+.lottery-tips-text a {
+    text-decoration: underline;
 }
 
 .lottery-top .lottery-btn {
@@ -1486,7 +1500,7 @@ body {
     text-decoration: underline;
 }
 
-.lottery-tips-text span {
+.lottery-tips-text .red-text {
     color: #d31839;
 }
 
@@ -1556,6 +1570,11 @@ body {
     background-position: -34px -85px;
 }
 
+.page-num-list {
+    font-size: 16px;
+    color: #666;
+}
+
 .page-num-item {
     display: inline-block;
     margin: -2px 6px 0;
@@ -1572,6 +1591,19 @@ body {
 .page-num-item.active {
     background-color: #d30529;
     color: #fff;
+}
+
+.table-wrap .c3,
+.pageprenone,
+.pagenextnone {
+    margin: 0 6px;
+    font-size: 16px;
+    color: #666;
+}
+
+.pageprenone:hover,
+.pagenextnone:hover {
+    text-decoration: underline;
 }
 
 /* banner */
@@ -1708,7 +1740,7 @@ body {
 
 .get-prize-btn,
 .buy-btn {
-    margin: 20px auto 0;
+    margin: 8px auto 0;
 }
 
 .yc-center-plank {
@@ -1767,8 +1799,15 @@ body {
     color: #fff;
 }
 
+.prize-tips2-text {
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 12px;
+    color: #fff;
+}
+
 .prize-icon {
-    margin: 16px auto 0;
+    margin: 32px auto 0;
     width: 92px;
 }
 
@@ -1792,7 +1831,7 @@ body {
 }
 
 .prize-ff-item {
-    margin: 2px 10px 0;
+    margin: 3px 10px 0;
     width: 210px;
     height: 249px;
     background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_red_bg.png');
@@ -1875,14 +1914,13 @@ body {
 
 .hzhb-item {
     display: inline-block;
-    margin: 0 5px 10px;
-    width: 160px;
+    width: 100%;
 }
 
 /* 弹窗 */
 .pop-1 {
     width: 496px;
-    height: 511px;
+    height: 545px;
     border-radius: 4px;
     background-color: #fff;
 }
@@ -1896,7 +1934,7 @@ body {
 
 .pop-3 {
     width: 500px;
-    height: 450px;
+    height: 290px;
     border-radius: 4px;
     background-color: #fff;
 }
@@ -1967,35 +2005,35 @@ body {
 }
 
 .form-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 395px;
 }
 
 .form-title {
     margin-right: 5px;
-    width: 90px;
+    width: 105px;
+    line-height: 38px;
     font-size: 16px;
     color: #121212;
 }
 
+.form-input select,
 .form-input input {
     display: block;
     padding: 0 5px;
     box-sizing: border-box;
-    width: 296px;
+    width: 285px;
     height: 38px;
     background-color: #f2f2f2;
     border: none;
 }
 
-.form-textarea textarea {
-    display: block;
-    padding: 0 5px;
-    box-sizing: border-box;
-    width: 296px;
-    height: 178px;
-    background-color: #f2f2f2;
-    border: none;
+.form-tips-link {
+    display: inline-block;
+    margin: .4rem auto 0;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #666;
 }
 
 .submit-btn {
@@ -2012,4 +2050,8 @@ body {
     height: 48px;
     background-position: -819px 0;
     cursor: pointer;
+}
+
+#lotteryAlertDialogContent {
+    color: #0e0e0e;
 }

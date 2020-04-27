@@ -30,6 +30,10 @@
 -->
 </head>
 <style>
+    .text-16 p {
+        margin: .1rem 0;
+    }
+
     /*分享浮层与遮罩的样式表 beg*/
     .mask {
         position: absolute;
@@ -255,38 +259,39 @@
                     <div class="left-wrap pr">
                         <a href="javascript:TGDialogS('pop-rule');" class="pa bg rule-btn" title="活动规则"
                             ontouchend="PTTSendClick('btn','rule','活动规则');"></a>
-                        <div class="luban-template hide">
+                        <div class="luban-template">
                             <img class="luban-template-bg luban-color-bg2" data-index="-1" data-item="bg"
                                 src="//ossweb-img.qq.com/images/codo/act/lb_atemple/luban/trans.png">
-                            <div class="luban-template-35 clearfix">
+                            <div class="luban-template-35 clearfix" style="top:3.7rem">
                                 <div class="login-box container luban-head-qq-login">
                                     <!--登录前状态 Start-->
-                                    <p class="luban-color-text" id="unlogin">亲爱的用户，请
-                                        <a id="ptLoginBtn" class="btn_qq color-red" href="javascript:;">【QQ登录】</a>
-                                        <a id="wx123" class="btn_wx color-red" href="javascript:;">【微信登录】</a>
+                                    <p class="luban-color-text" id="unlogin" style="color:white">亲爱的用户，请
+                                        <a id="ptLoginBtn" class="btn_qq color-red" href="javascript:;"
+                                            style="color:white">【QQ登录】</a>
+                                        <a id="wx123" class="btn_wx color-red" href="javascript:;"
+                                            style="color:white">【微信登录】</a>
                                         <a id="wxloginBtn" href="javascript:void(0);" style="display:none"
                                             class="color-red">【微信登录】</a>
                                     </p>
                                     <!--登录前状态 End-->
                                     <!--登录后状态 Start-->
-                                    <p class="luban-color-text" id="logined" style="display:none">欢迎您，
-                                        <span id="userinfo">
+                                    <p class="luban-color-text" id="logined" style="display:none;color:white">欢迎您，
+                                        <span id="userinfo" style="color:white">
                                         </span>
-                                        <span id="userinfo1">
+                                        <span id="userinfo1" style="color:white">
                                         </span>，
                                         <a id="bindAreaBtn" style="display: none;"
                                             href="javascript:COMMHD.popAccount();"
                                             class="luban-head-bindarea color-red">【绑定大区】</a>
                                         <a href="javascript:;" class="color-red" id="fillAddress"
                                             style="display:none">【填写实物发放地址】</a>
-                                        <a href="javascript:showMyGiftList();"
-                                            class="luban-head-mygift color-red">【我的礼包】</a>
+
                                         <a id="inviteList" class="color-red" style="display: none;"
                                             href="javascript:;">【我的好友邀请】</a>
                                         <a id="giveList" class="color-red" style="display: none;"
                                             href="javascript:;">【我的赠礼列表】</a>
                                         <a id="ptLogoutBtn" href="javascript:COMMHD.doLogOut();"
-                                            class="luban-head-qq-logout color-red">【注销】</a>
+                                            class="luban-head-qq-logout color-red" style="color:white">【注销】</a>
                                     </p>
                                     <!--登录后状态 End-->
                                 </div>
@@ -375,9 +380,9 @@
                                     新手礼包领取</h2>
                                 <p data-style="" data-index="-1" data-item="desc"
                                     class="luban-text luban-text-info text1 bg tips-wrap">
-                                    活动日期：4月8日-4月22日期间， 每天登录页面签到<br />领奖； 每日分享页面成功可多获得一次抽奖机会</p>
-                                <div class="p-r qd-list flex">
-                                    <div class="qd-item group-box flex-1">
+                                    活动日期：即日起-4月22日期间， 每天登录页面签到<br />领奖</p>
+                                <div class="p-r qd-list">
+                                    <div class="pa qd-item group-box">
                                         <img data-style="" data-index="0" data-item="img|title"
                                             src="//ossweb-img.qq.com/images/codo/act/lb_atemple/luban/mask.png"
                                             class="img1 luban-img-package hide" alt="" title="" data-lubanid="9810">
@@ -386,14 +391,14 @@
                                             href="javascript:doAmsAction(296559,655091);"
                                             lbmidaction="javascript:lbMidAction(9810)" data-lubanid="9810">
                                             <span data-index="0" data-item="text" class="pa qd-item-text luban-text"
-                                                data-lubanid="9810">M4A1-玫瑰精灵</span>
+                                                data-lubanid="9810" style="font-size:0.16rem">M4A1-玫瑰精灵(3天)</span>
                                             <img class="luban-button-bg" data-index="0" data-item="btn" src=""
                                                 data-lubanid="9810">
                                             <span class="grey-cover">
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="qd-item group-box flex-1">
+                                    <div class="pa qd-item group-box">
                                         <img data-style="" data-index="1" data-item="img|title"
                                             src="//ossweb-img.qq.com/images/codo/act/lb_atemple/luban/mask.png"
                                             class="img1 luban-img-package hide" alt="" title="" data-lubanid="9811">
@@ -409,7 +414,7 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="qd-item group-box flex-1" style="margin-left: .2rem;">
+                                    <div class="pa qd-item group-box">
                                         <img data-style="" data-index="2" data-item="img|title"
                                             src="//ossweb-img.qq.com/images/codo/act/lb_atemple/luban/mask.png"
                                             class="img1 luban-img-package hide" alt="" title="" data-lubanid="9812">
@@ -452,7 +457,9 @@
                         <div class="bg tab-list flex tl-1">
                             <a class="flex-1 tab-item"></a>
                             <a class="flex-1 tab-item"></a>
-                            <a class="tab-item" style="width: 2rem;"></a>
+                            <a href="//game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90083639&appid=wx58164a91f1821369&url=https://game.weixin.qq.com/cgi-bin/h5/static/subscribe/index.html?appid=wx58164a91f1821369&noticeid=90083640"
+                                title="玩法专区>>" class="tab-item" ontouchend="PTTSendClick('btn','nav3','玩法专区');"
+                                style="width: 2rem;"></a>
                         </div>
                         <!-- tab 内容 -->
                         <div class="tab-content-list">
@@ -461,8 +468,285 @@
                                 <div class="bg article-wrap">
                                     <div class="p-r article-content">
 
-                                        <!-- 策划文案内容15期-->
+                                        <!-- 策划文案内容16期-->
                                         <div class="tab2_cont active">
+                                            <div class="art_title t-hide">
+                                                <a href="javascript:;" id="text-con16" class="text_left"
+                                                    onclick="PTTSendClick('btn','art16','第十六期')">&nbsp;&nbsp;第十六期：《直男策划说》敬无止竞版本即将上线
+                                                    致敬敢于突破的你</a>
+                                            </div>
+                                            <div class="art_body flex">
+                                                <div class="art_cont">
+                                                    <div class="news-detail-bd">
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                CF手游全新版本——敬无止竞将于4月17日上线，届时玩家们奖感受到全新版本的魅力，对于玩家而言，本次版本又会有哪些特色内容，本次策划交流奖为玩家们深度解析本次版本的特色内容。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/ebda56cd71db2a6d04ffdadfa067cad6/0?width=1267&amp;height=647"
+                                                                    alt="" width="700" height="357"></span>
+                                                        </p>
+                                                        <p><span><strong>&nbsp;
+                                                                    &nbsp; &nbsp; &nbsp; <span
+                                                                        style="color: #ff0000;">模式玩法更新迭代
+                                                                        感受竞技浪潮</span></strong></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                本次版本以“敬无止竞”命名，相信通过这个版本的名字，玩家们也或猜到本次版本更新的重点内容。即将上线的版本内容将通过模式玩法的整体提升，让玩家们感受到竞技的魅力，本次模式的更新将包含：武器大玩家、电竞之路、训练场单人跑图、个人战-时间局以及排位赛S3赛季的来临。</span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>1、武器大玩家模式更新
+                                                                    享用多样武器</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                在武器大玩家的模式中，玩家们将在经典模式的地图中进行对决，比赛初期玩家们手持相同武器，但根据不同的击杀玩家手中的武器也会进行一定的提升，或许有玩家会认为该模式仅是考验玩家对枪械的熟悉以及控制能力。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/5b728f217c3f4fe8ab8224d08e78ded2/0?width=1213&amp;height=682"
+                                                                    alt="" width="700" height="394"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;</span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                其实不然，在武器大玩家的模式中，我们除了希望玩家们能够对武器的熟练度有所提升之外，会结合玩家背包中的武器以及仓库中的喜爱偏好进行推算，以此来设计玩家的枪械升级路线。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/60e03e7a6374540b2beaab02bae1dca0/0?width=1213&amp;height=560"
+                                                                    alt="" width="700" height="323"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                而顶级武器每周将会设置不同的顶级武器，以此促使玩家们可体验自身未拥有的武器。综上所述，武器大玩家模式的设计，则是以提升玩家的枪械熟练度以及感受全新武器为设计核心。</span>
+                                                        </p>
+                                                        <p><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/1b8e0b0f3523831970804918402bd3b8/0?width=1213&amp;height=682"
+                                                                    alt="" width="700" height="394"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                武器大玩家模式的特色除了玩家可升级武器之外，更可体验不同的英雄级武器，相信这个特色的出现，也令武器大玩家模式成为玩家一大期待模式。游骑兵系列将率先成为首周的轮换英雄级武器，玩家们在武器大玩家模式中将根据自己的升级获得不同武器，系统根据玩家的背包属性进行精准推算，当然在升级过程中更可体验玩家自己未拥有的英雄级武器。其中游骑兵系列武器将在首周上线，未来几周将会上线竞技战魂、巴雷特极光以及夜袭枪娘等AKM4与巴雷特英雄级枪械，供大家玩转武器大玩家模式，感受每一把英雄级武器的特色。</span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>2、电竞之路全面更新
+                                                                    感受全新AI技术</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                电竞之路作为玩家们钟意热爱的一大模式，在本次的版本更新中除了延续上一章的剧情之外，还将开设派对模式，玩家更可解锁丰富奖励。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/82a108baf69b3823b9ce82b5d0d6005d/0?width=1213&amp;height=682"
+                                                                    alt="" width="700" height="394"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                当然在第二章中的AI技术将再次升级，这意味着玩家们将遭遇更高的考验。本次版本更新对电竞之路的加强，意在继续考验玩家们的实力，通过更高难度的考验筛选具备一定实力的玩家，这也可成为玩家参与实际线下赛事的动力。</span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>3、训练场模式与个人战时间局
+                                                                    全面上线</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                训练场模式将再次更新，自由视角以及无限投掷等功能的上线意在可帮助玩家们能够更好的提升个人对于地图点位的熟悉以及如何更好运用投掷道具。除上述之外的功能，自由视角的完善也是我们希望能够让玩家更好的对战场整体洞察，毕竟前期工作的准备充足才可帮助玩家们轻松制胜。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/423660f229ef784eb17ad6a99b2f3e7c/0?width=1213&amp;height=560"
+                                                                    alt="" width="700" height="323"></span></p>
+                                                        <p><span>&nbsp;</span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                除此之外个人战也将推出时间局模式，玩家们可在建立房间时选择不同的模式，之所以推出时间局模式，是因为在此之前收到了众多玩家的建议，个人战时间局的设立将为玩家们提供更充足的练枪环境。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/74abf51ddaaf1b973edc74ca24a1f764/0?width=1213&amp;height=661"
+                                                                    alt="" width="700" height="381"></span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>4、排位赛S3赛季上线
+                                                                    开启全新战斗</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                排位赛S3赛季在新版本上线之后也将进行预热，当然我们并不会在4月17日更新，还会给玩家们留下充足的冲分时间，不过在当天的排位系统中也将会更新对应的道具，全新的排位赛枪械也将正式上线。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/34e4153e37c17aff2f5cea7d2590b859/0?width=1213&amp;height=630"
+                                                                    alt="" width="700" height="364"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                当然在新赛季中，将对职业排位以及自由派为进行部分的修改，其中职业排位将下架沙丘地图而上架鹰眼，而自由排位模式则新增歼灭刀战角斗场地图。除了地图的改动之外，还将上线“勇者积分”，当玩家“勇者积分”进度条积满之后可以免费获得晋级赛胜场，相信这个功能的上线也将成为玩家们在晋级赛的福音。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/c202b95669d86a5fd4c932d5726f5d32/0?width=1268&amp;height=759"
+                                                                    alt="" width="700" height="419"></span>
+                                                        </p>
+                                                        <p><span><strong>&nbsp;
+                                                                    &nbsp; &nbsp; &nbsp; <span
+                                                                        style="color: #ff0000;">地图武器多重新品上架
+                                                                        皮肤分级开启全新时代</span></strong></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                除上述提到的模式玩法的更新迭代之外，本次版本的地图武器的更新以及皮肤分级的理念则成为又一重头戏。</span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>1、多个模式地图上线
+                                                                    感受全新战斗</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                在4月17日的全新版本中，将上线冰雪宫殿以及海盗湾等全新地图，新地图的上线意味着玩家们可以在不同模式中迎来全新挑战。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/d1941ee7c0c99e4628a234e14cdd7511/0?width=1213&amp;height=606"
+                                                                    alt="" width="700" height="350"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                本次地图的更新主要考虑到玩家们长时间未能在全新地图征战，从而产生希望上线全新地图的需求，全新地图的上线除了结合CF手游本身的特色之外，我们还加入了地形建筑特色，希望玩家们能够有更真实地战斗感。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/6ae7b4766f32965dd2f303350b53c175/0?width=1213&amp;height=606"
+                                                                    alt="" width="700" height="350"></span></p>
+                                                        <ul>
+                                                            <li><span>2、三国系列武器再次更新
+                                                                    多款武器更新</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                M4A1-威侯作为三国系列的又一武器，本款武器也是将M4与气锤两款形态进行结合。</span></p>
+                                                        <p><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/e46ccb094f49e7998893e62aa16b62d6/0?width=1266&amp;height=584"
+                                                                    alt="" width="700" height="323"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                我们希望能够满足不同类型玩家的需求，同时马踏飞燕的探测功能若玩家能够运用成功，将是他们在爆破模式的制胜关键，当然提到获取方式，M4A1-威侯玩家们可在赏金令S2赛季冲刺获取。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/781677c14a51587c82d45dafcbd5454a/0?width=1213&amp;height=630"
+                                                                    alt="" width="700" height="364"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                提到赏金令S2赛季，本次赏金令的时间将持续3-4个月，这也是为了满足更多玩家们能够最大限度地获取福利关键，地狱烈樱-超觉以及巴雷特-极光-荣耀街寂的上线，相信也让玩家们看到本次赏金令的用心之举。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/354052c7927ceb6353adee869310a3c2/0?width=1213&amp;height=630"
+                                                                    alt="" width="700" height="364"></span></p>
+                                                        <p><span>&nbsp;</span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                当然除此武器之外，更有QCW05-未来战士、雷神M4-萝拉等武器的上架，通过多款武器道具的上线，也希望玩家们能够有更多的选择，满足玩家们对不同道具的喜爱之情。</span>
+                                                        </p>
+                                                        <p><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/9cf0c83e0f6937c0f789910a49d83922/0?width=1266&amp;height=584"
+                                                                    alt="" width="700" height="323"></span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>3、皮肤等级概念
+                                                                    开启全新时代</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                即将到来的全新版本中，商城以及玩家们手中的皮肤也将分为多个等级，这也将更明晰皮肤的珍贵等级。为了保证玩家们更好的理解皮肤分级，我们也将对应的皮肤分为珍藏-史诗-传说-终极-限定，能够让玩家更好的认知。</span>
+                                                        </p>
+                                                        <p><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/876789319aa2afba9392c51862e58a04/0?width=1715&amp;height=105"
+                                                                    alt="" width="900" height="55"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                当然不同等级的皮肤在游戏内的呈现方式也各有不同，正反馈、开镜HUD、击杀特效、换弹动作、全局击杀公告特效、专属语音音效、宣传图、高级正反馈、正反馈特效、左侧击杀信息、角标切枪动作、局外大厅展示、局外角色持枪动作、世界观包装、切枪特效以及换弹特效将是不同等级皮肤的体现要素。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/52c6ab8b4f25508e9446068c1bd0cd35/0?width=1266&amp;height=584"
+                                                                    alt="" width="700" height="323"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                传说-王者熔岩系列皮肤作为目前传说皮肤的代表皮肤，在游戏中可以看到这款皮肤的整体特效以及持枪外观都有一定质的提升，通过皮肤的分级概念，我们希望实现皮肤新概念的时代，让玩家感受新版本的全新内容。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/8719152a74650a7be662c4c46c3a5a3f/0?width=1266&amp;height=584"
+                                                                    alt="" width="700" height="323"></span>
+                                                        </p>
+                                                        <p><span><strong>&nbsp;
+                                                                    &nbsp; &nbsp; &nbsp; <span
+                                                                        style="color: #ff0000;">系统更新与竞技优化
+                                                                        新版本又一亮点</span></strong></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                本版本中也将进行全新的系统更新以及竞技优化，从而促使玩家们在敬无止竞的全新版本中能够获取更好的游戏体验。</span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>1、源计划更新
+                                                                    玩家免费获得源擎天道具</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                本版本中的源计划除了上线源·擎天之外，源计划更将上线更多任务，从而保证玩家们可快速完成源计划任务获取永久英雄级道具。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/25c3cdc005691a84f1f5f3cc9e2c14f2/0?width=1266&amp;height=584"
+                                                                    alt="" width="700" height="323"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                这个改动，也是我们希望玩家们能够更轻松获取相关英雄级武器道具，能够在游戏中更酣畅淋漓的战斗。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/bfe6f959f0fdf7ccd1838709773ba245/0?width=1213&amp;height=630"
+                                                                    alt="" width="700" height="364"></span></p>
+                                                        <ul>
+                                                            <li><span>2、五虎上将与百城联赛收藏家全新上线</span>
+                                                            </li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                随着M4A1-侯威上线，三国系列武器道具也完成集结，为了回馈拥有三国枪械皮肤的玩家们，特意上线了五虎上将收藏家称号，玩家若完成收集则可获得香香挂饰道具，特指的挂饰道具意在回馈支持五虎上将系列的玩家。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/473069013f7064f6788a724ddc753c5b/0?width=1058&amp;height=522"
+                                                                    alt="" width="700" height="345"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                而关于百城联赛的收藏家称号，玩家们可通过获得百城系列的枪械与竞技战魂以及新上线的巴雷特-极光-荣耀街寂完成收藏家称号同时还可获得CFML冠军挂饰，来证明自己的竞技之路。</span>
+                                                        </p>
+                                                        <p><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/023dcc5860f020ff76c1fc22d909046c/0?width=1065&amp;height=522"
+                                                                    alt="" width="700" height="343"></span>
+                                                        </p>
+                                                        <ul>
+                                                            <li><span>3、陀螺仪功能再度回归
+                                                                    感受竞技魅力</span></li>
+                                                        </ul>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                在本次的敬无止竞版本中，陀螺仪功能也经历修复，辅助瞄准参数调整中修复了陀螺仪辅助瞄准吸附参数，平滑度优化中将保证更为刘畅的平滑使用效果，同时狙击开镜以及扫射手感的优化调整更能帮助玩家们在游戏中轻松击杀对手。</span>
+                                                        </p>
+                                                        <p style="text-align: center;"><span><img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/e1f58a192be922e9f0111cdf82ed0cc9/0?width=1066&amp;height=539"
+                                                                    alt="" width="700" height="354"></span></p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                陀螺仪的功能修复意味着玩家们可以再次通过辅助道具在游戏内有着更快更准确的击杀，该项功能的修复相信将会让玩家们在新版本中有着更好的游戏体验。</span>
+                                                        </p>
+                                                        <p><span>&nbsp;<img
+                                                                    src="https://shp.qpic.cn/cfwebcap/0/0d6f91069b3e8da8f7b3e59e47b48e86/0?width=1213&amp;height=512"
+                                                                    alt="" width="700" height="295"></span>
+                                                        </p>
+                                                        <p><span>&nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                敬无止竞，致敬敢于突破的你，全新版本4月17日震撼上线，相信全新的版本将会让玩家们有着不一样的体验，在全新的版本中，让我们共同体验竞技魅力！</span>
+                                                        </p>
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 策划文案内容15期-->
+                                        <div class="tab2_cont">
                                             <div class="art_title t-hide">
                                                 <a href="javascript:;" id="text-con15" class="text_left"
                                                     onclick="PTTSendClick('btn','art15','第十五期')">&nbsp;&nbsp;第十五期：新赛季排位改动大揭秘，地图格局迎来大变化！</a>
@@ -1912,6 +2196,7 @@
                                     <div class="tab2_container">
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
+                                                <div class="swiper-slide">第16期</div>
                                                 <div class="swiper-slide">第15期</div>
                                                 <div class="swiper-slide">第14期</div>
                                                 <div class="swiper-slide">第13期</div>
@@ -1939,10 +2224,7 @@
                                 <div class="bg p2-tab-list tl-1">
                                     <a class="p2-tab-item"></a>
                                     <a class="p2-tab-item"></a>
-                                    <a data-action="openButton" params="{'type':10005,'controller':'WEGMomentTabDetailViewController','uri':'com.tencent.gamehelper.ui.moment.TopicMomentActivity',
-                                                            'param':'{\'id\':114475,\'name\':\'丛林迷雾\'}'}"
-                                        href="javascript:;" title="玩法专区>>" class="p2-tab-item"
-                                        ontouchend="PTTSendClick('btn','nav3','玩法专区');"></a>
+                                    <a class="p2-tab-item"></a>
                                 </div>
                                 <!-- tab切换内容 -->
                                 <div class="p2-tc-content-list">
@@ -2678,8 +2960,8 @@
             <div class="pop-con">
                 <h2 class="hide">活动规则</h2>
                 <ul class="rule">
-                    <li><span>1. </span>活动日期：4月8日-4月22日。</li>
-                    <li><span>2. </span>活动期间，每日登陆页面查看版本直通车可签到领取随机奖励，每日可领取1次。</li>
+                    <li><span>1. </span>活动日期：即日起-4月22日。</li>
+                    <li><span>2. </span>活动期间，每日登录页面查看版本直通车可签到领取随机奖励，每日可领取1次。</li>
                     <li><span>3. </span>活动期间累计签到3、5、7天可领取累计奖励，每个奖励限领取1次。</li>
                     <li><span>4. </span>恶意及作弊账号无法获得相应奖励。</li>
                     <li><span>5. </span>由于不可抗力因素、网络、作弊等原因导致活动出现异常情况，腾讯公司有权采取临时调整、暂停本活动等措施。</li>
@@ -2688,12 +2970,6 @@
             </div>
         </div>
 
-        <!--下面是横屏提示-->
-        <div id="orientLayer" class="mod-orient-layer">
-            <div class="mod-orient-layer_content">
-                <div class="mod-orient-layer_desc"></div>
-            </div>
-        </div>
         <script>
             /*若pc页面，则不显示横竖屏提示遮罩*/
             if (!popup.isMobile()) {
@@ -3006,7 +3282,8 @@
             pageName: "分享页", //必填项:页面中文名
             osact: 'm', //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
             ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
-            stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+            stayTime: 0, //选填项:是否需要统计停留时长boolean；默认是0
+            project: 'other'
         }
         if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
 
@@ -3067,35 +3344,6 @@
             }
         }
 
-        //判断横屏竖屏
-        var orientLayer = document.getElementById("orientLayer");
-
-        function checkDirect() {
-            if (document.documentElement.clientHeight >= document.documentElement.clientWidth) {
-                return "portrait";
-            } else {
-                return "landscape";
-            }
-        }
-        //显示屏幕方向提示浮层
-        function orientNotice() {
-            var orient = checkDirect();
-            if (orient == "portrait") {
-                orientLayer.style.display = "none";
-            } else {
-                orientLayer.style.display = "block";
-            }
-        }
-
-        function init() {
-            orientNotice();
-            window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
-                setTimeout(orientNotice, 200);
-                window.location.reload();
-            })
-        }
-        init();
-
         var mySwiper2 = new Swiper('.tab2_container .swiper-container', {
             autoplay: false, //可选选项，自动滑动
             direction: 'vertical',
@@ -3151,9 +3399,10 @@
             // 切换 版本解读&版本动态&玩家专区
             $('.tab-list a').on('click', function () {
                 var index = parseInt($(this).index() + 1);
-                if (index == 3) return false;
-                $('.tab-list')[0].className = "flex tab-list tl-" + index;
-                $(".tab-content-list .tab-content-item").hide().eq(index - 1).show();
+                if (index < 3) {
+                    $('.tab-list')[0].className = "flex tab-list tl-" + index;
+                    $(".tab-content-list .tab-content-item").hide().eq(index - 1).show();
+                }
             });
 
             // 切换 趣味短视频&攻略视频&精品攻略
@@ -3295,38 +3544,32 @@
                 $(".load-bar-x").css("width", "0%");
             }
             if (_total == 1) {
-                $(".pos i").eq(0).addClass('on');
-                $(".load-bar-x").css("width", "10%");
+                $(".load-bar-x").css("width", "4%");
             }
             if (_total == 2) {
-
-                $(".pos i").eq(0).addClass('on');
-                $(".load-bar-x").css("width", "30%");
+                $(".load-bar-x").css("width", "8%");
             }
             if (_total == 3) {
                 $(".pos i").eq(0).addClass('on');
-                $(".pos i").eq(1).addClass('on');
-                $(".load-bar-x").css("width", "50%");
+                $(".load-bar-x").css("width", "15%");
             }
             if (_total == 4) {
-
                 $(".pos i").eq(0).addClass('on');
-                $(".pos i").eq(1).addClass('on');
-                $(".load-bar-x").css("width", "58%");
+                $(".load-bar-x").css("width", "32%");
             }
             if (_total == 5) {
 
                 $(".pos i").eq(0).addClass('on');
                 $(".pos i").eq(1).addClass('on');
-                $(".load-bar-x").css("width", "67%");
+                $(".load-bar-x").css("width", "50%");
             }
             if (_total == 6) {
 
                 $(".pos i").eq(0).addClass('on');
                 $(".pos i").eq(1).addClass('on');
-                $(".load-bar-x").css("width", "72%");
+                $(".load-bar-x").css("width", "69%");
             }
-            if (_total == 7) {
+            if (_total >= 7) {
                 $(".pos i").eq(0).addClass('on');
                 $(".pos i").eq(1).addClass('on');
                 $(".pos i").eq(2).addClass('on');
@@ -3334,7 +3577,6 @@
             }
 
         }
-        process_deli(7);
 
         //弹窗
         function TGDialogS(e) {
