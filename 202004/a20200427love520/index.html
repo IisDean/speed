@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="试试你能到几层" />
+    <meta name="Keywords" content="love" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "index.html" + location.search;
+        }
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>恋爱的千层套路</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/27 -->
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="p-r stage">
+        <!-- 首屏 -->
+        <div class="p-r part part-1" style="display: none;">
+            <div class="p-r wrap">
+                <!-- 说明 -->
+                <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a>
+                <!-- 音乐 -->
+                <a href="javascript: alert('敬请期待！');" class="p-a icons music-btn t">活动说明</a>
+                <div class="full-img logo-icon">
+                    <img src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <div class="full-img slogan-icon">
+                    <img src="./ossweb-img/slogan.png" alt="标题">
+                </div>
+                <!-- 按钮 -->
+                <i class="icons tips-btn-icon t">进入恋爱摩天楼开始挑战</i>
+                <a href="javascript: alert('敬请期待！');" 
+                    onclick="PTTSendClick('btn','start-test-btn','开始测试')" 
+                    class="icons start-test-btn btn-hover t">开始测试</a>
+                <a href="javascript: alert('敬请期待！');" 
+                    onclick="PTTSendClick('btn','order-btn','立即预约')" 
+                    class="icons order-btn btn-hover t">立即预约</a>
+            </div>
+        </div>
+        <!-- 答题 -->
+        <div class="p-r part part-2">
+            <div class="p-r wrap">
+                <div class="full-img logo-icon">
+                    <img src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <!-- 音乐 -->
+                <a href="javascript: alert('敬请期待！');" class="p-a icons music-btn t">活动说明</a>
+            </div>
+        </div>
+    </div>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script>
+        
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200427love520", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>

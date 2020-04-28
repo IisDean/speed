@@ -1,39 +1,42 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
-<meta charset="gbk">
-<meta name="Description" content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
-<meta name="Keywords" content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
-<meta content="telephone=no" name="format-detection">
-<meta content="yes" name="mobile-web-app-capable">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<script>
-    //跳转pc
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/content1.html" + location.search;
-    }
-    //屏幕适应
-    (function (win, doc) {
-        if (!win.addEventListener) return;
-        var html = document.documentElement;
-        function setFont() {
-            var html = document.documentElement;
-            var k = 750;
-            html.style.fontSize = html.clientWidth / k * 100 + "px";
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/content1.html" + location.search;
         }
-        setFont();
-        setTimeout(function () {
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
             setFont();
-        }, 300);
-        doc.addEventListener('DOMContentLoaded', setFont, false);
-        win.addEventListener('resize', setFont, false);
-        win.addEventListener('load', setFont, false);
-    })(window, document);
-</script>
-<title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
-<!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
-<link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -48,7 +51,7 @@
             <!--登录后状态 Start-->
             <p id="logined" style="display: none;width: max-content">欢迎，
                 <span id='login_qq_span'></span>，
-               <!--<span id="spanNotBind_649402">
+                <!--<span id="spanNotBind_649402">
                     <a href="javascript:;" class="bindArea"> 绑定大区</a>
                 </span>
                 <span id="spanBind_649402" style="display:none">
@@ -57,7 +60,7 @@
                     <a href="javascript:;" class="bindArea">更改绑定</a>
                     <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
                 </span>-->
-                <a href="javascript:;"id="btn_logout">注销</a>
+                <a href="javascript:;" id="btn_logout">注销</a>
             </p>
             <!--登录后状态 End-->
         </div>
@@ -67,7 +70,7 @@
         <div class="icons t-c top-tab-list">
             <a href="mcontent0.html" class="icons tab-item btn-hover">
                 <h3 class="tab-title-text">「季后赛」激战来袭</h3>
-                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                <p class="tab-msg-text">哪支球队将问鼎19-20赛季总冠军</p>
             </a>
             <a href="mcontent1.html" class="icons tab-item btn-hover active">
                 <h3 class="tab-title-text">参赛选手介绍</h3>
@@ -80,89 +83,76 @@
         </div>
         <div class="bg nr-container page1">
             <!-- 返回首页 -->
-            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t" onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
+            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t"
+                onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <h2 class="title-icon ti-p2-1 t">为选手点赞 每日抽奖</h2>
-            <p class="t-des"><span>1</span>为你喜欢的参赛选手<em>「点赞」</em>，每天最多可<em>「点赞」10次</em>。</p>
-            <p class="t-des"><span>2</span><em>每天参与「点赞」的玩家</em>，当天即可进行一次抽奖，抽奖资格每天零点清空，请及时参与。</p>
+            <p class="t-des"><span class="t-c">1</span>为你喜欢的参赛选手们<em>「点赞」</em>，每天可为不同选手点赞，每天最多点赞10次。</p>
+            <p class="t-des"><span class="t-c">2</span><em>每天点赞成功的玩家</em>，当天即可进行一次抽奖，当天抽奖资格当天零点清空，请及时使用。</p>
             <!-- 西部球队-->
             <div class="team-box">
-                <div class="team-tit"><h2>西部球队</h2></div>
+                <div class="team-tit">
+                    <h2>西部球队</h2>
+                </div>
                 <ul class="team-tab flex"></ul>
                 <div class="team-item team-msg-list" style="display: block;"></div>
             </div>
             <!-- 东部球队-->
             <div class="team-box">
-                <div class="team-tit"><h2>东部球队</h2></div>
+                <div class="team-tit">
+                    <h2>东部球队</h2>
+                </div>
                 <ul class="team-tab flex"></ul>
                 <div class="team-item team-msg-list" style="display: block;"></div>
-            </div>            <!-- 抽奖-->
+            </div>
+            <!-- 抽奖-->
             <div class="lott-box">
                 <div class="lott-info">
-                    <a href="javascript:amsSubmit(297493,658732);">[查看我的抽奖记录]</a>
-                    <a href="javascript:amsCfg_658734.sData={iShow:1};amsSubmit(297493, 658734);">[填写B站uid]</a>
-                    <a href="javascript:;">[抽奖概率]</a>
+                    <a href="javascript:amsSubmit(297493,658732);"
+                        onclick="PTTSendClick('btn','lookPrizeList','查看我的抽奖记录')">[查看我的抽奖记录]</a>
+                    <a href="javascript:amsCfg_658734.sData={iShow:1};amsSubmit(297493, 658734);"
+                        onclick="PTTSendClick('btn','editDz','填写B站uid')">[填写B站uid]</a>
+                    <a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855944.shtml"
+                    onclick="PTTSendClick('btn','lotteryGl','抽奖概率')">[抽奖概率]</a>
                 </div>
                 <div class="news-scroll-con">
                     <ul class="" id="broadcastContent_658733">
                     </ul>
-                </div>                <div class="lottery">
+                </div>
+                <div class="lottery">
                     <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/lottery.png" alt="抽奖转盘" />
                     <div id="lotterycontent"></div>
                 </div>
-                <p class="lott-tips"><a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">体育会员代金券使用指南</a>丨<a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">B站月度会员发货说明</a></p>
+                <p class="lott-tips">
+                    <a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">体育会员代金券使用指南丨B站月度会员发货说明</a>
+                </p>
             </div>
-            
+
             <!-- 选手排行榜 -->
             <h2 class="title-icon ti-p2-2 t">选手人气排行榜</h2>
             <div class="rank-box">
                 <ul class="rank-tab flex">
-                    <li>男生</li>
-                    <li>女生</li>
+                    <li>男选手</li>
+                    <li>女选手</li>
                 </ul>
-                <p class="rank-tip"><span>排名依据：</span>人气值，如果一样，则看场均得分。人气排行榜每2小时更新一次。</p>
+                <p class="rank-tip"><span>排名依据：</span>根据选手人气值进行排行，若人气值一样，则按选手在季后赛排行中的场均得分。人气排行榜每2小时更新一次</p>
                 <div class="rank-tb" style="display: block;"></div>
             </div>
             <!-- banner-->
             <div class="banner-box">
-                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner1.jpg" alt="" /></a>
-                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner2.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner1.jpg"
+                        alt="" /></a>
+                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner2.jpg"
+                        alt="" /></a>
             </div>
-            
-            <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
-            <div class="hzhb-list t-c">
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
-                <a href="javascript: alert('敬请期待！');">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                </a>
+
+            <!-- 合作伙伴 -->
+            <div class="p-r hzhb-container" style="margin-top: .6rem;">
+                <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
+                <div class="hzhb-list t-c">
+                    <div class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/hzhb_img.png" alt="合作伙伴">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -170,31 +160,31 @@
     <!-- 弹窗 抽奖记录 -->
     <div class="pop pop-1" id="showMyGiftContent_658732">
         <div class="pop-con">
-				<h2 class="title-icon title-pop-1 t">抽奖记录</h2>
-				<table class="table-wrap table-1 table-pop-1 t-c">
-					<thead>
-						<tr class="bg blue-bg">
-							<th>时间</th>
-							<th>获得道具</th>
-						</tr>
-					</thead>
-					<tbody id="getGiftContent_658732"></tbody>
-					<tfoot>
-						<tr>
-							<td id="getGiftPageContent_658732" colspan="3" style="text-align:center;"></td>
-						</tr>
-					</tfoot>
-				</table>
-				<!--div class="rank-page">
+            <h2 class="title-icon title-pop-1 t">抽奖记录</h2>
+            <table class="table-wrap table-1 table-pop-1 t-c">
+                <thead>
+                    <tr class="bg blue-bg">
+                        <th>时间</th>
+                        <th>获得道具</th>
+                    </tr>
+                </thead>
+                <tbody id="getGiftContent_658732"></tbody>
+                <tfoot>
+                    <tr>
+                        <td id="getGiftPageContent_658732" colspan="3" style="text-align:center;"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--div class="rank-page">
 					<a href="javascript:;" class="prev">&lt;</a>
 					<span>1/12</span>
 					<a href="javascript:;" class="next">&gt;</a>
 				</div>
 			</div-->
-			<a href="javascript:myGiftList_658732.close();" class="p-a icons close-btn t"></a>
-		</div>
-	</div>
-    
+            <a href="javascript:myGiftList_658732.close();" class="p-a icons close-btn t"></a>
+        </div>
+    </div>
+
     <!-- 弹窗 填写B站uid -->
     <div class="pop pop-3" id="personInfoContent_658734">
         <div class="pop-con">
@@ -222,19 +212,21 @@
                         </div>
                     </li>
                 </ul>
-                <a href="javascript:void(0);" id="personInfoContentBtn_658734" onclick="PTTSendClick('btn','submitDz','提交收货信息')" class="icons submit-btn t-c btn-hover">提交</a>
+                <a href="javascript:void(0);" id="personInfoContentBtn_658734"
+                    onclick="PTTSendClick('btn','submitDz','提交收货信息')" class="icons submit-btn t-c btn-hover">提交</a>
             </form>
-            <a class="form-link" href="//nba2k2.qq.com/">查看B站月度会员发货说明</a>
+            <a class="form-link" href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">查看B站月度会员发货说明</a>
         </div>
         <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
-    </div>	 <script type="text/html" id="TeamsTpl">
+    </div>
+    <script type="text/html" id="TeamsTpl">
 		{for p in teams}	
 			<li data-id="${p.iTeamId}">
 				<img src="${p.sLogo}" alt=""><p><span>${p.sTeam}</span></p>
 			</li>
 		{/for}
     </script>
-	<script type="text/html" id="PlayersTpl">
+    <script type="text/html" id="PlayersTpl">
 		<div class="player-box flex">
 			<ul class="player-tab">
 			{for p in vPlayers}
@@ -276,8 +268,8 @@
 			{/for}
 		</div>
     </script>
-	
-	<script type="text/html" id="HotPlayersTpl">
+
+    <script type="text/html" id="HotPlayersTpl">
         <table>
 			<tbody><tr><th>排名</th><th>选手名</th><th>人气值</th><th>位置</th><th>所属球队</th></tr>
 			{for p in players}
@@ -306,8 +298,8 @@
 		</div>
 		{/if}
     </script>
-	
-	<script type="text/html" id="broadcastTemplate_658733">
+
+    <script type="text/html" id="broadcastTemplate_658733">
         {for oneBroadcast in BroadcastList}
         <li class="lottery-news-text">${oneBroadcast.uin}获得了：<span>${oneBroadcast.packageName}*1</span></li>
         {/for}
@@ -336,9 +328,9 @@
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mcomm.js"></script>
     <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
-	<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
-	<script src="common.js"></script>
-	<script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <script src="common.js"></script>
+    <script>
         (function ($, global) {
             var cache = [];
 
@@ -352,16 +344,16 @@
                                 return parseInt(v.iAreaId, 10) % 2 == idx;
                             })
                         }));
-                    }); 
+                    });
 
-				   $('.team-tab:first').find('li:first').trigger('click');
-				   setTimeout(function(){
-						$('.team-tab:last').find('li:first').trigger('click');
-				   },1000)
+                    $('.team-tab:first').find('li:first').trigger('click');
+                    setTimeout(function () {
+                        $('.team-tab:last').find('li:first').trigger('click');
+                    }, 1000)
                 })
             }).fail(alert);
-			
-		
+
+
             // 为选手点赞 切换球队
             $(document).on('click', '.team-tab li', function () {
                 var self = $(this);
@@ -374,19 +366,19 @@
                         continue;
                     }
                     if (cache[i].vPlayers && cache[i].vPlayers.length) {
-						//$('.team-tab li.curr').removeClass('curr');
-                       // self.addClass('curr'); 
-						
-						self.addClass('curr').siblings().removeClass('curr');
+                        //$('.team-tab li.curr').removeClass('curr');
+                        // self.addClass('curr'); 
+
+                        self.addClass('curr').siblings().removeClass('curr');
                         need('util.template', function (template) {
                             self.parents('.team-box').find('.team-msg-list').html(template.parseDOMTemplate('PlayersTpl').process(cache[i]));
-							$('.team-msg-list li.leader:last').trigger('click');
+                            $('.team-msg-list li.leader:last').trigger('click');
                             $('.team-msg-list li.leader:first').trigger('click');
                         });
                         return;
                     }
                 }
-			
+
                 global.getTeamPlayers([id]).then(function (players) {
                     for (var i = 0; i < cache.length; i++) {
                         if (parseInt(cache[i].iTeamId, 10) != id) {
@@ -399,23 +391,23 @@
                     }
                 }).fail(alert);
             });
-	
+
             //球员详情切换 
-			$(document).on('click', '.player-tab li', function (){
-				$(this).addClass('curr').siblings().removeClass('curr'); 
-				$(this).parent('.player-tab').siblings('.player-item').hide().eq($(this).index()).show();
-			});
-           /* $(document).on("click", 'ul.team-center-list li.team-center-item', function () {
-                var self = $(this);
-                if (self.hasClass('active')) {
-                    return;
-                }
-                var id = parseInt(self.data('id'), 10);
-                $('ul.team-center-list li.team-center-item').removeClass('active');
-                $('div.team-detail-list > div.team-detail-item').hide();
-                $('div.team-detail-list > div.team-detail-item[data-id="' + id + '"]').show();
-                self.addClass('active');
-            });*/
+            $(document).on('click', '.player-tab li', function () {
+                $(this).addClass('curr').siblings().removeClass('curr');
+                $(this).parent('.player-tab').siblings('.player-item').hide().eq($(this).index()).show();
+            });
+            /* $(document).on("click", 'ul.team-center-list li.team-center-item', function () {
+                 var self = $(this);
+                 if (self.hasClass('active')) {
+                     return;
+                 }
+                 var id = parseInt(self.data('id'), 10);
+                 $('ul.team-center-list li.team-center-item').removeClass('active');
+                 $('div.team-detail-list > div.team-detail-item').hide();
+                 $('div.team-detail-list > div.team-detail-item[data-id="' + id + '"]').show();
+                 self.addClass('active');
+             });*/
 
             //选手人气榜
             global.renderHotPlayers = function (gender, page) {
@@ -431,7 +423,7 @@
                     });
                 }).fail(alert);
             }
-			
+
             $(document).on('click', '.rank-tab li', function () {
                 if ($(this).hasClass('curr')) {
                     return;
@@ -446,10 +438,10 @@
 
         })(window.jQuery || window.Zepto, window);
     </script>
-	
-    <script>        
-		//登录		
-		milo.ready(function () {
+
+    <script>
+        //登录		
+        milo.ready(function () {
             //加载获奖信息
             amsInit(297493, 658733);
 
@@ -460,12 +452,12 @@
                 });
                 LoginManager.checkLogin(function () {
                     g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
-					$("#unlogin").hide();
-					$("#logined").show();
-                },function(){
-					$("#unlogin").show();
-					$("#logined").hide();
-				});
+                    $("#unlogin").hide();
+                    $("#logined").show();
+                }, function () {
+                    $("#unlogin").show();
+                    $("#logined").hide();
+                });
                 //注销
                 milo.addEvent(g("btn_logout"), "click", function () {
                     LoginManager.logout();
@@ -473,8 +465,8 @@
             });
 
         });
-		
-		 //抽奖
+
+        //抽奖
         amsCfg_658735 = {
             'sMsg': '',
             'iAMSActivityId': '297493',
@@ -492,11 +484,11 @@
             },
             'onGetGiftSuccessEvent': function (ret) {
                 amsCfg_658735.sMsg = ret.sMsg;
-				var packages = [1850537, 1850538, 1850438, 1850546, 1850429, 1850545, 1850439, 1850431, 1850435, 1850544, 1850543, 1850427];
+                var packages = [1850537, 1850538, 1850438, 1850546, 1850429, 1850545, 1850439, 1850431, 1850435, 1850544, 1850543, 1850427];
                 for (var i = 0; i < packages.length; i++) {
                     if (packages[i] == parseInt(ret.iPackageId, 10)) {
                         if (lottery) {
-							calllotteryToRoll(i);
+                            calllotteryToRoll(i);
                         }
                         return;
                     }
@@ -512,23 +504,23 @@
             'activityId': '297493', // 模块实例号
             'contentId': 'broadcastContent_658733', //容器ID
             'templateId': 'broadcastTemplate_658733', //模板ID
-			'scrollstoptime' : 35
+            'scrollstoptime': 35
         };
-		
+
         // 消息滚动
-       /* var setTimer;
-        setTimer = setInterval(function () {
-            if ($(".news-scroll-con ul li").length < 1) return false;
-            var firstLi = $(".news-scroll-con ul li").eq(0);
-            firstLi.animate({
-                "height": 0
-            }, 600, function () {
-                firstLi.appendTo(".news-scroll-con ul").css("height", "0.36rem");
-            });
-        }, 2000);*/
-		
-		
-		// 个人获奖记录初始化
+        /* var setTimer;
+         setTimer = setInterval(function () {
+             if ($(".news-scroll-con ul li").length < 1) return false;
+             var firstLi = $(".news-scroll-con ul li").eq(0);
+             firstLi.animate({
+                 "height": 0
+             }, 600, function () {
+                 firstLi.appendTo(".news-scroll-con ul").css("height", "0.36rem");
+             });
+         }, 2000);*/
+
+
+        // 个人获奖记录初始化
         amsCfg_658732 = {
             'iAMSActivityId': '297493', // AMS活动号
             'iLotteryFlowId': '658732', //  查询获奖轮播的流程号
@@ -537,72 +529,72 @@
             'templateId': 'getGiftTemplate_658732', //模板ID
             'contentPageId': 'getGiftPageContent_658732',	//分页容器ID
             'showContentId': 'showMyGiftContent_658732', //弹出层ID
-            'isForce' : true
+            'isForce': true
         };
 
-		
-		amsCfg_658734 = {
-				'iActivityId' : '297493', // AMS活动号
-				'iFlowId' : '658734', // 流程号
-				'_everyRead' : true,
-				'success': function(res){ //提交成功的回调
-					if(typeof res.jData == "object") { //返回已经提交的数据，填充页面
-						need(["biz.provincecityselector", "util.form"], function(pcs, FormManager) {
-							
-							TGDialogS('personInfoContent_658734')
-							/*g("colseLayer_658734").onclick = function () {
-								Dialog.hide();
-							}*/
-							//显示弹出框
-							//g("personInfoContent_658734").style.display = "block";
-								
-							
-							//关闭弹出框
-							/*g("colseLayer_658734").onclick = function(){
-								g("personInfoContent_658734").style.display = "none";
-							}*/
 
-							
-							//提交按钮事件
-							g('personInfoContentBtn_658734').onclick = function(){
-								var fillData = FormManager.getAllInputValue('personInfoContent_658734');
-								if (!fillData.sAddress) {
-									return alert('请填写B站会员id');
-								}
+        amsCfg_658734 = {
+            'iActivityId': '297493', // AMS活动号
+            'iFlowId': '658734', // 流程号
+            '_everyRead': true,
+            'success': function (res) { //提交成功的回调
+                if (typeof res.jData == "object") { //返回已经提交的数据，填充页面
+                    need(["biz.provincecityselector", "util.form"], function (pcs, FormManager) {
 
-								amsCfg_658734.sData = fillData;
-								amsSubmit(297493,658734);
-							}
-								
-							FormManager.setAllInputValue(res.jData, 'form_personInfo_658734');
-							if(typeof res.jData.arrPackageInfo != 'undefined' && res.jData.arrPackageInfo.length > 0) { //如果存在实物信息，则显示
-								
-								for(var i=0; i<res.jData.arrPackageInfo.length; ++i) {
-									var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
-									var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
-									g('package_658734').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
-								}
-							}
-						});
+                        TGDialogS('personInfoContent_658734')
+                        /*g("colseLayer_658734").onclick = function () {
+                            Dialog.hide();
+                        }*/
+                        //显示弹出框
+                        //g("personInfoContent_658734").style.display = "block";
 
-					} else {
-						if(res.sMsg.indexOf('您没有获得实物奖励') > 0){
-							alert('抱歉，您还未获得过B站月度会员，无法填写！')
-							return false;
-						}
-						alert(res.sMsg);
-					}
-				}
-			};
-		
-		
+
+                        //关闭弹出框
+                        /*g("colseLayer_658734").onclick = function(){
+                            g("personInfoContent_658734").style.display = "none";
+                        }*/
+
+
+                        //提交按钮事件
+                        g('personInfoContentBtn_658734').onclick = function () {
+                            var fillData = FormManager.getAllInputValue('personInfoContent_658734');
+                            if (!fillData.sAddress) {
+                                return alert('请填写B站会员id');
+                            }
+
+                            amsCfg_658734.sData = fillData;
+                            amsSubmit(297493, 658734);
+                        }
+
+                        FormManager.setAllInputValue(res.jData, 'form_personInfo_658734');
+                        if (typeof res.jData.arrPackageInfo != 'undefined' && res.jData.arrPackageInfo.length > 0) { //如果存在实物信息，则显示
+
+                            for (var i = 0; i < res.jData.arrPackageInfo.length; ++i) {
+                                var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
+                                var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
+                                g('package_658734').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                            }
+                        }
+                    });
+
+                } else {
+                    if (res.sMsg.indexOf('您没有获得实物奖励') > 0) {
+                        alert('抱歉，您还未获得过B站月度会员，无法填写！')
+                        return false;
+                    }
+                    alert(res.sMsg);
+                }
+            }
+        };
+
+
 		/*//队伍切换
 		$('.team-tab li').on('click',function (){
 			$(this).addClass('curr').siblings().removeClass('curr');
 			 $(this).parent('.team-tab').siblings('.team-item').hide().eq($(this).index()).show();
 		});*/
-		
-        
+
+
         //队员切换
 		/*$(document).on('click', '.player-tab li', function (){
             $(this).addClass('curr').siblings().removeClass('curr'); 
@@ -614,46 +606,46 @@
             $(this).parent('.rank-tab').siblings('.rank-tb').hide().eq($(this).index()).show();
         });*/
         //点赞
-        $('.player-opt a').on('click',function (){
+        $('.player-opt a').on('click', function () {
             $(this).addClass('active');
         });
         //开始抽奖lottery->js
-        function callJsToStart(){
-            PTTSendClick('lottery','start','抽奖_开始');
-           
-			amsSubmit(297493, 658735);
+        function callJsToStart() {
+            PTTSendClick('lottery', 'start', '抽奖_开始');
+
+            amsSubmit(297493, 658735);
             //alert("抽奖暂未开放哦！");
         }
         //开发获得抽奖结果 通知lottery开始播放效果 js->lottery
-        function calllotteryToRoll(id){
-            PTTSendClick('lottery','reward_'+id,'抽奖_奖品_'+id);
-			
-            if(lottery)lottery.stopRoll(id);
+        function calllotteryToRoll(id) {
+            PTTSendClick('lottery', 'reward_' + id, '抽奖_奖品_' + id);
+
+            if (lottery) lottery.stopRoll(id);
         }
         //动画完成通知js  lottery->js
-        function callJsToComplete(){
-            PTTSendClick('lottery','end','抽奖_完毕');
-			alert(amsCfg_658735.sMsg);
+        function callJsToComplete() {
+            PTTSendClick('lottery', 'end', '抽奖_完毕');
+            alert(amsCfg_658735.sMsg);
         }
         //初始化抽奖的 可以不知道内部
-        var lottery= new Lottery({
-            'total':12,
-            'width':6.4,
-            'height':5.21,
-            'sbtnx':1.75,
-            'sbtny':1.4,
-            'sbtnw':2.9,
-            'sbtnh':2.59,
-            'boxw':1.52,
-            'boxh':1.02,
-            'position':"0_0,1.62_0,3.24_0,4.88_0,4.88_1.39,4.88_2.78,4.88_4.19,3.24_4.19,1.62_4.19,0_4.19,0_2.78,0_1.39",
-            'contentId' : 'lotterycontent',
-            'onClickRollEvent' : callJsToStart,
-            'onCompleteRollEvent':callJsToComplete ,
-            'unit':"rem",
-            'isResponsive':0
+        var lottery = new Lottery({
+            'total': 12,
+            'width': 6.4,
+            'height': 5.21,
+            'sbtnx': 1.75,
+            'sbtny': 1.4,
+            'sbtnw': 2.9,
+            'sbtnh': 2.59,
+            'boxw': 1.52,
+            'boxh': 1.02,
+            'position': "0_0,1.62_0,3.24_0,4.88_0,4.88_1.39,4.88_2.78,4.88_4.19,3.24_4.19,1.62_4.19,0_4.19,0_2.78,0_1.39",
+            'contentId': 'lotterycontent',
+            'onClickRollEvent': callJsToStart,
+            'onCompleteRollEvent': callJsToComplete,
+            'unit': "rem",
+            'isResponsive': 0
         });
-	
+
 
     </script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>

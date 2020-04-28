@@ -14,7 +14,7 @@
     <meta itemprop="name" content="换个赛场 再战一场！" />
     <meta itemprop="description" content="NBA电竞战“疫”赛，多重奖励等你来拿！" />
     <meta itemprop="image" content="https://game.gtimg.cn/images/nba2kx/cp/a20200409djzys/share.jpg" />
-    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
     <!--[if lte IE 11]>
     <script>alert("您的浏览器版本过低，为获得更好体验，请使用QQ浏览器或者谷歌浏览器等体验活动");</script>
     <![endif]-->
@@ -78,7 +78,7 @@
     <!-- //topbar -->
     <div class="p-r" id="stage">
         <!-- slogan -->
-        <div class="p-r bg head-wrap p1">
+        <div class="p-r bg head-wrap sai-list-none p1">
             <i class="p-a bg body-inset"></i>
             <div class="p-a hd-time-wrap t-c">
                 <p>活动日期： 2020年5月7日-6月7日</p>
@@ -90,7 +90,7 @@
             <div class="p-a top-tab-list t-c">
                 <a href="./index.html" class="icons tab-item tab-item-1 btn-hover active">
                     <h3 class="tab-title-text">「季后赛」激战来袭</h3>
-                    <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                    <p class="tab-msg-text">哪支球队将问鼎19-20赛季总冠军</p>
                 </a>
                 <a href="./content1.html" class="icons tab-item tab-item-2 btn-hover">
                     <h3 class="tab-title-text">参赛选手介绍</h3>
@@ -111,7 +111,10 @@
                 <div class="bg live-container" style="display: none;"></div>
                 <!-- 比赛对阵图 -->
                 <div class="p-r bs-container">
-                    <h2 class="p-a title-icon ti-p1-1 t">比赛对阵图</h2>
+                    <div class="p-a ti-p1-wrap">
+                        <h2 class="title-icon ti-p1-1 t">比赛对阵图</h2>
+                        <p class="title-msg-text t-c">晋级情况根据19-20赛季球队真实成绩和259场游戏模拟结果得出</p>
+                    </div>
                     <ul class="p-r bg wrap bs-list">
                         <!-- 西部 -->
                         <li class="p-a bs-item xb-item-1">
@@ -408,11 +411,15 @@
                 <div class="bg rank-container">
                     <div class="wrap">
                         <h2 class="title-icon ti-p1-2 t">比赛数据排行榜</h2>
+                        <p class="title-msg-text t-c">数据统计根据19-20赛季各球队真实成绩和259场游戏模拟结果得出</p>
                         <!-- 切换球队榜&球员榜 -->
                         <div class="rank-tab-list J-rank-title1 c">
                             <a class="rank-tab-btn t-c f-l active">球队榜</a>
-                            <a class="rank-tab-btn t-c f-l">球员榜</a>
-                            <p class="f-r rank-tips-text">排名依据：胜场，胜场相同看净胜分。</p>
+                            <a class="rank-tab-btn t-c f-l">选手榜</a>
+                            <div class="f-r c">
+                                <p class="rank-tips-text f-l">排名依据：</p>
+                                <p class="rank-tips-text f-l">常规赛球队排行根据3月12日NBA停摆时的排行数据和<br/>游戏模拟的剩余259场常规赛结果合并统计得出。</p>
+                            </div>
                         </div>
                         <div class="rank-content-list J-rank-content1">
                             <!-- 球队榜 -->
@@ -534,7 +541,7 @@
                                     <!-- 常规赛 -->
                                     <div class="rank-content-item2">
                                         <div class="p-r" data-box="PlayersBoard">
-                                            <span class="p-a icons table-inset t-c">女生</span>
+                                            <span class="p-a icons table-inset t-c">女选手</span>
                                             <table class="table-wrap table-1 t-c">
                                                 <thead>
                                                     <tr>
@@ -557,7 +564,7 @@
                                             </table>
                                         </div>
                                         <div class="p-r" style="margin-top: 50px;" data-box="PlayersBoard">
-                                            <span class="p-a icons table-inset t-c">男生</span>
+                                            <span class="p-a icons table-inset t-c">男选手</span>
                                             <table class="table-wrap table-1 t-c">
                                                 <thead>
                                                     <tr>
@@ -583,7 +590,7 @@
                                     <!-- 季后赛 -->
                                     <div class="rank-content-item2" style="display: none;">
                                         <div class="p-r" data-box="PlayersBoard">
-                                            <span class="p-a icons table-inset t-c">女生</span>
+                                            <span class="p-a icons table-inset t-c">女选手</span>
                                             <table class="table-wrap table-1 t-c">
                                                 <thead>
                                                     <tr>
@@ -606,7 +613,7 @@
                                             </table>
                                         </div>
                                         <div class="p-r" style="margin-top: 50px;" data-box="PlayersBoard">
-                                            <span class="p-a icons table-inset t-c">男生</span>
+                                            <span class="p-a icons table-inset t-c">男选手</span>
                                             <table class="table-wrap table-1 t-c">
                                                 <thead>
                                                     <tr>
@@ -902,6 +909,7 @@
             var nowContest = null;
             global.getContests().then(function (contests) {
                 //渲染赛事列表
+                $(".head-wrap").removeClass('sai-list-none');
                 need('util.template', function (template) {
                     $('ul.sai-container').html(template.parseDOMTemplate('ContestsTpl').process({
                         contests: contests.filter(function (v) {

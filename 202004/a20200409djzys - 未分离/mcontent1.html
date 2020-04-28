@@ -34,9 +34,9 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-    <title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
-    <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
+    <link href="./ossweb-img/m/mobile.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -70,7 +70,7 @@
         <div class="icons t-c top-tab-list">
             <a href="mcontent0.html" class="icons tab-item btn-hover">
                 <h3 class="tab-title-text">「季后赛」激战来袭</h3>
-                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                <p class="tab-msg-text">哪支球队将问鼎19-20赛季总冠军</p>
             </a>
             <a href="mcontent1.html" class="icons tab-item btn-hover active">
                 <h3 class="tab-title-text">参赛选手介绍</h3>
@@ -86,8 +86,8 @@
             <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t"
                 onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <h2 class="title-icon ti-p2-1 t">为选手点赞 每日抽奖</h2>
-            <p class="t-des"><span>1</span>为你喜欢的参赛选手<em>「点赞」</em>，每天最多可<em>「点赞」10次</em>。</p>
-            <p class="t-des"><span>2</span><em>每天参与「点赞」的玩家</em>，当天即可进行一次抽奖，抽奖资格每天零点清空，请及时参与。</p>
+            <p class="t-des"><span class="t-c">1</span>为你喜欢的参赛选手们<em>「点赞」</em>，每天可为不同选手点赞，每天最多点赞10次。</p>
+            <p class="t-des"><span class="t-c">2</span><em>每天点赞成功的玩家</em>，当天即可进行一次抽奖，当天抽奖资格当天零点清空，请及时使用。</p>
             <!-- 西部球队-->
             <div class="team-box">
                 <div class="team-tit">
@@ -107,21 +107,23 @@
             <!-- 抽奖-->
             <div class="lott-box">
                 <div class="lott-info">
-                    <a href="javascript:amsSubmit(297493,658732);">[查看我的抽奖记录]</a>
-                    <a href="javascript:amsCfg_658734.sData={iShow:1};amsSubmit(297493, 658734);">[填写B站uid]</a>
-                    <a href="javascript:;">[抽奖概率]</a>
+                    <a href="javascript:amsSubmit(297493,658732);"
+                        onclick="PTTSendClick('btn','lookPrizeList','查看我的抽奖记录')">[查看我的抽奖记录]</a>
+                    <a href="javascript:amsCfg_658734.sData={iShow:1};amsSubmit(297493, 658734);"
+                        onclick="PTTSendClick('btn','editDz','填写B站uid')">[填写B站uid]</a>
+                    <a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855944.shtml"
+                    onclick="PTTSendClick('btn','lotteryGl','抽奖概率')">[抽奖概率]</a>
                 </div>
                 <div class="news-scroll-con">
                     <ul class="" id="broadcastContent_658733">
                     </ul>
                 </div>
                 <div class="lottery">
-                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/lottery.png" alt="抽奖转盘" />
+                    <img src="./ossweb-img/m/lottery.png" alt="抽奖转盘" />
                     <div id="lotterycontent"></div>
                 </div>
-                <p class="lott-tips"><a
-                        href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">体育会员代金券使用指南</a>丨<a
-                        href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">B站月度会员发货说明</a>
+                <p class="lott-tips">
+                    <a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">体育会员代金券使用指南丨B站月度会员发货说明</a>
                 </p>
             </div>
 
@@ -129,17 +131,17 @@
             <h2 class="title-icon ti-p2-2 t">选手人气排行榜</h2>
             <div class="rank-box">
                 <ul class="rank-tab flex">
-                    <li>男生</li>
-                    <li>女生</li>
+                    <li>男选手</li>
+                    <li>女选手</li>
                 </ul>
-                <p class="rank-tip"><span>排名依据：</span>人气值，如果一样，则看场均得分。人气排行榜每2小时更新一次。</p>
+                <p class="rank-tip"><span>排名依据：</span>根据选手人气值进行排行，若人气值一样，则按选手在季后赛排行中的场均得分。人气排行榜每2小时更新一次</p>
                 <div class="rank-tb" style="display: block;"></div>
             </div>
             <!-- banner-->
             <div class="banner-box">
-                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner1.jpg"
+                <a href="javascript:;"><img src="./ossweb-img/banner1.jpg"
                         alt="" /></a>
-                <a href="javascript:;"><img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/banner2.jpg"
+                <a href="javascript:;"><img src="./ossweb-img/banner2.jpg"
                         alt="" /></a>
             </div>
 
@@ -148,7 +150,7 @@
                 <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
                 <div class="hzhb-list t-c">
                     <div class="full-img hzhb-item">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/hzhb_img.png" alt="合作伙伴">
+                        <img src="./ossweb-img/m/hzhb_img.png" alt="合作伙伴">
                     </div>
                 </div>
             </div>
@@ -213,7 +215,7 @@
                 <a href="javascript:void(0);" id="personInfoContentBtn_658734"
                     onclick="PTTSendClick('btn','submitDz','提交收货信息')" class="icons submit-btn t-c btn-hover">提交</a>
             </form>
-            <a class="form-link" href="//nba2k2.qq.com/">查看B站月度会员发货说明</a>
+            <a class="form-link" href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202004/855216.shtml">查看B站月度会员发货说明</a>
         </div>
         <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
     </div>
@@ -324,7 +326,7 @@
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/delottery/lottery_v2.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
-    <script src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mcomm.js"></script>
+    <script src="./ossweb-img/m/mcomm.js"></script>
     <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
     <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
     <script src="common.js"></script>

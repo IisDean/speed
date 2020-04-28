@@ -1645,9 +1645,11 @@ body {
 
 .yc-list {
     margin: 20px auto 0;
+    font-size: 0;
 }
 
 .yc-item {
+    display: inline-block;
     width: 584px;
     height: 280px;
     background-image: url('./yc_bg_future.png');

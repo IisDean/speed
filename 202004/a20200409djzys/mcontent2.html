@@ -1,39 +1,42 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
-<meta charset="gbk">
-<meta name="Description" content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
-<meta name="Keywords" content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
-<meta content="telephone=no" name="format-detection">
-<meta content="yes" name="mobile-web-app-capable">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<script>
-    //跳转pc
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/content2.html" + location.search;
-    }
-    //屏幕适应
-    (function (win, doc) {
-        if (!win.addEventListener) return;
-        var html = document.documentElement;
-        function setFont() {
-            var html = document.documentElement;
-            var k = 750;
-            html.style.fontSize = html.clientWidth / k * 100 + "px";
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/content2.html" + location.search;
         }
-        setFont();
-        setTimeout(function () {
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
             setFont();
-        }, 300);
-        doc.addEventListener('DOMContentLoaded', setFont, false);
-        win.addEventListener('resize', setFont, false);
-        win.addEventListener('load', setFont, false);
-    })(window, document);
-</script>
-<title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
-<!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
-<link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -47,8 +50,8 @@
             <!--登录前状态 End-->
             <!--登录后状态 Start-->
             <p id="logined" style="display: none;width: max-content">欢迎，
-               <span id='login_qq_span'></span>，
-                 <!--<span id="spanNotBind_649402">
+                <span id='login_qq_span'></span>，
+                <!--<span id="spanNotBind_649402">
                     <a href="javascript:;" class="bindArea"> 绑定大区</a>
                 </span>
                 <span id="spanBind_649402" style="display:none">
@@ -57,7 +60,7 @@
                     <a href="javascript:;" class="bindArea">更改绑定</a>
                     <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
                 </span>-->
-                <a href="javascript:;"id="btn_logout">注销</a>
+                <a href="javascript:;" id="btn_logout">注销</a>
             </p>
             <!--登录后状态 End-->
         </div>
@@ -67,7 +70,7 @@
         <div class="icons t-c top-tab-list">
             <a href="mcontent0.html" class="icons tab-item btn-hover">
                 <h3 class="tab-title-text">「季后赛」激战来袭</h3>
-                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                <p class="tab-msg-text">哪支球队将问鼎19-20赛季总冠军</p>
             </a>
             <a href="mcontent1.html" class="icons tab-item btn-hover">
                 <h3 class="tab-title-text">参赛选手介绍</h3>
@@ -80,21 +83,22 @@
         </div>
         <div class="bg nr-container">
             <!-- 返回首页 -->
-            <a href="javascript: alert('敬请期待！');" class="icons back-home-btn btn-hover t" onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
+            <a href="javascript: alert('敬请期待！');" class="icons back-home-btn btn-hover t"
+                onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <!-- 预测比赛领福利 -->
             <h2 class="title-icon ti-p3-1 t">预测比赛领福利</h2>
-            <div class="t-c">
-                <p class="title-msg-text">
-                    <span class="num-icon">1</span>当日登录游戏后，返回页面即可参与当日所有开放预测的比赛内容，<br /><span
+            <div class="t-l" style="padding: 0 .1rem;">
+                <p class="t-l title-msg-text">
+                    <span class="num-icon t-c">1</span>当日登录游戏后，返回页面即可参与当日所有开放预测的比赛内容，<br /><span
                         class="black">选出您预测的获胜球队</span>，提交后无法修改。</p>
-                <p class="title-msg-text">
-                    <span class="num-icon">2</span>每场比赛的预测开始时间为开赛前48小时，助威结束时间为<span class="black">开赛前15分钟；</span>
+                <p class="t-l title-msg-text">
+                    <span class="num-icon t-c">2</span>每场比赛的预测开始时间为开赛前48小时，助威结束时间为<span class="black">开赛前15分钟；</span>
                 </p>
-                <p class="title-msg-text">
-                    <span class="num-icon">3</span>预测结果将于比赛结束后的第一个<span
+                <p class="t-l title-msg-text">
+                    <span class="num-icon t-c">3</span>预测结果将于比赛结束后的第一个<span
                         class="black">工作日11:00进行结算</span>，<br />届时玩家可在页面点击【查看我的预测】进行查询；</p>
-                <p class="title-msg-text">
-                    <span class="num-icon">4</span>预测<span
+                <p class="t-l title-msg-text">
+                    <span class="num-icon t-c">4</span>预测<span
                         class="black">成功1次/3次/6次/12次</span>即可领取指定的奖励，并可购买对应的福利礼包<br /><span
                         class="black">（每档奖励每个QQ可领取一次，每档福利礼包每个QQ仅可购买一次）。</span>
                 </p>
@@ -103,14 +107,15 @@
                 class="icons look-yc-btn t-c btn-hover">查看我的预测</a>
             <!-- 预测列表 -->
             <ul class="yc-list">
-                
+
             </ul>
             <!-- 竞猜奖品列表 -->
             <p class="prize-tips-text t-c">截止4月25日11:00，您已经预测成功<span>-</span>次。</p>
             <ul class="p-r prize-list">
                 <li class="bg prize-item flex flex-middle">
-                    <div class="prize-title-wrap">
-                        <p>参与竞猜1次</p>
+                    <div class="prize-title-wrap flex flex-center flex-middle" style="margin: 0;width: .86rem;height: 100%;">
+                        <p style="width: .34rem;">参与竞猜1次</p>
+                        <p style="width: .18rem;font-size: .18rem;line-height: .2rem !important;">活动期间新注册用户专属</p>
                     </div>
                     <div class="p-r prize-wrap">
                         <div class="p-a icons prize-inset gray t-c"><span>免费</span></div>
@@ -125,8 +130,9 @@
                         <div class="full-img prize-icon">
                             <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_3.jpg" alt="奖品">
                         </div>
-                        <p class="prize-name-text t-c">现役当家球星包</p>
-                        <a href="javascript:amsCfg_658786.sData.iGiftId=162417;amsSubmit(297493,658786);" onclick="PTTSendClick('btn','gmGift1','购买-现役当家球星包*1')"
+                        <p class="prize-name-text pn-2 t-c">现役当家球星包</p>
+                        <a href="javascript:amsCfg_658786.sData.iGiftId=162417;amsSubmit(297493,658786);"
+                            onclick="PTTSendClick('btn','gmGift1','购买-现役当家球星包*1')"
                             class="icons buy-btn t-c btn-hover">1Q币购买</a>
                         <p class="yj-text t-c">售价：6Q币</p>
                     </div>
@@ -149,7 +155,7 @@
                         <div class="full-img prize-icon">
                             <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_6.jpg" alt="奖品">
                         </div>
-                        <p class="prize-name-text t-c">现役人气50人礼包*1</p>
+                        <p class="prize-name-text pn-2 t-c">现役人气50人礼包*1</p>
                         <a href="javascript:amsCfg_658786.sData.iGiftId=162418;amsSubmit(297493,658786);"
                             onclick="PTTSendClick('btn','gmGift2','购买-现役人气50人礼包*1')"
                             class="icons buy-btn t-c btn-hover">6.6Q币购买</a>
@@ -174,7 +180,7 @@
                         <div class="full-img prize-icon">
                             <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_7.jpg" alt="奖品">
                         </div>
-                        <p class="prize-name-text t-c">神秘合同费入门礼包*1</p>
+                        <p class="prize-name-text pn-2 t-c">神秘合同费入门礼包*1</p>
                         <a href="javascript:amsCfg_658786.sData.iGiftId=162427;amsSubmit(297493,658786);"
                             onclick="PTTSendClick('btn','gmGift3','购买-神秘合同费入门礼包*1')"
                             class="icons buy-btn t-c btn-hover">6Q币购买</a>
@@ -199,7 +205,7 @@
                         <div class="full-img prize-icon">
                             <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_8.jpg" alt="奖品">
                         </div>
-                        <p class="prize-name-text t-c">现役人气30人礼包*1</p>
+                        <p class="prize-name-text pn-2 t-c">现役人气30人礼包*1</p>
                         <a href="javascript:amsCfg_658786.sData.iGiftId=162429;amsSubmit(297493,658786);;"
                             onclick="PTTSendClick('btn','gmGift4','购买-现役人气30人礼包*1')"
                             class="icons buy-btn t-c btn-hover">16.5Q币购买</a>
@@ -224,7 +230,7 @@
                         <div class="full-img prize-icon">
                             <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_9.jpg" alt="奖品">
                         </div>
-                        <p class="prize-name-text t-c">神秘合同费进阶礼包*1</p>
+                        <p class="prize-name-text pn-2 t-c">神秘合同费进阶礼包*1</p>
                         <a href="javascript:amsCfg_658786.sData.iGiftId=162419;amsSubmit(297493,658786);;"
                             onclick="PTTSendClick('btn','gmGift5','购买-购买神秘合同费进阶礼包*1')"
                             class="icons buy-btn t-c btn-hover">33Q币购买</a>
@@ -232,48 +238,18 @@
                     </div>
                 </li>
             </ul>
-            
+
             <!-- 玩家预测榜 -->
-			<div class="p3-i2-container"></div>
-			
-            
+            <div class="p3-i2-container"></div>
+
+
             <!-- 合作伙伴 -->
             <div class="p-r hzhb-container" style="margin-top: .6rem;">
                 <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
                 <div class="hzhb-list t-c">
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz1','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz2','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz3','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz4','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz5','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz6','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz7','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz8','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz9','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz10','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz11','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
+                    <div class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/hzhb_img.png" alt="合作伙伴">
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,7 +257,7 @@
 
     <!-- 弹窗 查看我的预测 -->
     <div class="pop pop-2" id="ShowForecast"></div>
-	
+
     <script type="text/html" id="ForecastTpl">
         <div class="pop-con">
             <h2 class="title-icon title-pop-2 t">查看我的预测</h2>
@@ -320,7 +296,7 @@
         </div>
         <a href="javascript: closeDialog();" class="p-a icons close-btn t"></a>
     </script>
-	<script type="text/html" id="OpenedForecastTpl">
+    <script type="text/html" id="OpenedForecastTpl">
         <li class="p-r bg yc-item yc-end yc-item1">
 			<div class="p-a yc-top-title t-c">开放预测</div>
 			<div class="flex">
@@ -418,144 +394,144 @@
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mcomm.js"></script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
-	<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
-	<script src="common.js"></script>
-	
-	<script>
-	(function ($, global) {
-		var self = null;
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <script src="common.js"></script>
 
-		//查看我的预测结果
-		global.renderForecast = function (page) {
-			var size = 10;
-			global.getForecast(page, size).then(function (forecast) {
-				need('util.template', function (template) {
-					$('div#ShowForecast').html(template.parseDOMTemplate('ForecastTpl').process({
-						forecast: forecast.length ? forecast : [],
-						page: page,
-						size: size
-					}));
-				});
-				TGDialogS('ShowForecast');
-			}).fail(alert);
-		}
+    <script>
+        (function ($, global) {
+            var self = null;
 
-		//开放预测
-		global.getContests().then(function (contests) {
-			need("biz.login", function (LoginManager) {
-				LoginManager.checkLogin(function () {
-					global.getUserForecast().then(function (info) {
-						if (info && info.iRank) {
-							self = info;
-							$('p.prize-tips-text span').text(info.iBingo);
-						}
-						global.renderForecastRank(1);
-					}).fail(alert);
-				}, function () {
-					global.renderForecastRank(1);
-				});
-			});
+            //查看我的预测结果
+            global.renderForecast = function (page) {
+                var size = 10;
+                global.getForecast(page, size).then(function (forecast) {
+                    need('util.template', function (template) {
+                        $('div#ShowForecast').html(template.parseDOMTemplate('ForecastTpl').process({
+                            forecast: forecast.length ? forecast : [],
+                            page: page,
+                            size: size
+                        }));
+                    });
+                    TGDialogS('ShowForecast');
+                }).fail(alert);
+            }
 
-			for (var i = 0; i < contests.length; i++) {
-				if (!global.isForecast(contests[i].dtStartTime)) {
-					continue;
-				}
-				need('util.template', function (template) {
-					$('ul.yc-list').html(template.parseDOMTemplate('OpenedForecastTpl').process(contests[i])).show();
-				});
-				return;
-			}
-		}).fail(alert);
+            //开放预测
+            global.getContests().then(function (contests) {
+                need("biz.login", function (LoginManager) {
+                    LoginManager.checkLogin(function () {
+                        global.getUserForecast().then(function (info) {
+                            if (info && info.iRank) {
+                                self = info;
+                                $('p.prize-tips-text span').text(info.iBingo);
+                            }
+                            global.renderForecastRank(1);
+                        }).fail(alert);
+                    }, function () {
+                        global.renderForecastRank(1);
+                    });
+                });
 
-		//渲染预测榜
-		global.renderForecastRank = function (page) {
-			var size = 10;
-			global.getForecastRank(page, size).then(function (forecast) {
-				need('util.template', function (template) {
-					$('div.p3-i2-container').html(template.parseDOMTemplate('ForecastRankTpl').process({
-						forecast: forecast.length ? forecast : [],
-						page: page,
-						size: size,
-						self: self
-					}));
-				});
-			}).fail(alert);
-		}
+                for (var i = 0; i < contests.length; i++) {
+                    if (!global.isForecast(contests[i].dtStartTime)) {
+                        continue;
+                    }
+                    need('util.template', function (template) {
+                        $('ul.yc-list').html(template.parseDOMTemplate('OpenedForecastTpl').process(contests[i])).show();
+                    });
+                    return;
+                }
+            }).fail(alert);
 
-	})(window.jQuery || window.Zepto, window);
+            //渲染预测榜
+            global.renderForecastRank = function (page) {
+                var size = 10;
+                global.getForecastRank(page, size).then(function (forecast) {
+                    need('util.template', function (template) {
+                        $('div.p3-i2-container').html(template.parseDOMTemplate('ForecastRankTpl').process({
+                            forecast: forecast.length ? forecast : [],
+                            page: page,
+                            size: size,
+                            self: self
+                        }));
+                    });
+                }).fail(alert);
+            }
+
+        })(window.jQuery || window.Zepto, window);
     </script>
 
-	
-	<script>
-	 //奖励
-	amsCfg_658977 = {
-		'iAMSActivityId': '297493',
-		'activityId': '342673',
-		'_everyRead': true,
-		'sData': { iGiftId: 0 },
-		'onBeginGetGiftEvent': function () {
-			return 0; // 抽奖前事件，返回0表示成功
-		},
-		'onGetGiftFailureEvent': function (ret) {// 抽奖失败事件
-			LotteryManager.alert(ret.sMsg);
-		},
-		'onGetGiftSuccessEvent': function (ret) {// 抽奖成功事件
-			LotteryManager.alert(ret.sMsg);
-		}
-	};
 
-	//购买
-	amsCfg_658786 = {
-		'iActivityId': '297493',
-		'iFlowId': '658786',
-		'_everyRead': true,
-		'sData': {},
-		'fFlowSubmitEnd': function (res) {
-			need(["ams.daoju_buy_v2.daoju_buy_v2"], function (DaojuBuy) {
-				var option = {
-					//apptype:4	新版webpay，已默认
-					//onPaySuccess:function(){},//支付成功后回调方法
-					//onPayClose:function(){}//关闭支付页面回调方法
-				};
-				DaojuBuy.pay(res.jData, option);
-			});
-		},
-		'fFlowSubmitFailed': function (res) {
-			alert(res.sMsg);
-		}
-	};
-	//登录
-	milo.ready(function () {
-		need("biz.login", function (LoginManager) {
-			//QQ登录
-			milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
-				LoginManager.login();
-			});
-			LoginManager.checkLogin(function () {
-				g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
-				$("#unlogin").hide();
-				$("#logined").show();
-			},function(){
-				$("#unlogin").show();
-				$("#logined").hide();
-			});
-			//注销
-			milo.addEvent(g("btn_logout"), "click", function () {
-				$("#unlogin").show();
-			    $("#logined").hide();
-				
-				LoginManager.logout();
-			});
-			
-		});
-		
-		need(["ams.daoju_buy_v2.appid"], function (autoappid) {
-			autoappid.init('nba2kx', 15467, function (final_appid) { });
-		});
-	});
-	
-	
-	</script>
+    <script>
+        //奖励
+        amsCfg_658977 = {
+            'iAMSActivityId': '297493',
+            'activityId': '342673',
+            '_everyRead': true,
+            'sData': { iGiftId: 0 },
+            'onBeginGetGiftEvent': function () {
+                return 0; // 抽奖前事件，返回0表示成功
+            },
+            'onGetGiftFailureEvent': function (ret) {// 抽奖失败事件
+                LotteryManager.alert(ret.sMsg);
+            },
+            'onGetGiftSuccessEvent': function (ret) {// 抽奖成功事件
+                LotteryManager.alert(ret.sMsg);
+            }
+        };
+
+        //购买
+        amsCfg_658786 = {
+            'iActivityId': '297493',
+            'iFlowId': '658786',
+            '_everyRead': true,
+            'sData': {},
+            'fFlowSubmitEnd': function (res) {
+                need(["ams.daoju_buy_v2.daoju_buy_v2"], function (DaojuBuy) {
+                    var option = {
+                        //apptype:4	新版webpay，已默认
+                        //onPaySuccess:function(){},//支付成功后回调方法
+                        //onPayClose:function(){}//关闭支付页面回调方法
+                    };
+                    DaojuBuy.pay(res.jData, option);
+                });
+            },
+            'fFlowSubmitFailed': function (res) {
+                alert(res.sMsg);
+            }
+        };
+        //登录
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+                    $("#unlogin").hide();
+                    $("#logined").show();
+                }, function () {
+                    $("#unlogin").show();
+                    $("#logined").hide();
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    $("#unlogin").show();
+                    $("#logined").hide();
+
+                    LoginManager.logout();
+                });
+
+            });
+
+            need(["ams.daoju_buy_v2.appid"], function (autoappid) {
+                autoappid.init('nba2kx', 15467, function (final_appid) { });
+            });
+        });
+
+
+    </script>
     <script>
         //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性

@@ -112,7 +112,7 @@ li {
     position: absolute;
     left: 50px;
     top: 9px;
-    background: url(//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/logo.png) center center no-repeat;
+    background: url(./logo.png) center center no-repeat;
     z-index: 2;
 }
 
@@ -172,7 +172,7 @@ li {
 }
 
 .top-ico {
-    background: url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/top-ico.png") no-repeat;
+    background: url("./top-ico.png") no-repeat;
     width: 37px;
     height: 37px;
     display: block;
@@ -236,7 +236,7 @@ li {
     left: 230px;
     top: 9px;
     display: block;
-    background: url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/logo_wegame.png") no-repeat;
+    background: url("./logo_wegame.png") no-repeat;
 }
 
 /*public*/
@@ -290,7 +290,7 @@ body {
 
 #stage {
     min-width: 1200px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/page_bg.jpg');
+    background-image: url('./page_bg.jpg');
     overflow: hidden;
 }
 
@@ -321,14 +321,14 @@ body {
 
 .icons {
     display: block;
-    background-image: url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/icons.png");
+    background-image: url("./icons.png");
     background-repeat: no-repeat;
     background-size: 1200px auto;
 }
 
 .titles {
     display: block;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/titles.png');
+    background-image: url('./titles.png');
     background-repeat: no-repeat;
     background-size: 1183px auto;
 }
@@ -397,7 +397,7 @@ body {
 
 /* slogan */
 .head-wrap {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/slogan.jpg');
+    background-image: url('./slogan.jpg');
 }
 
 .head-wrap.p1 {
@@ -423,17 +423,20 @@ body {
     z-index: 999;
     width: 100%;
     height: 363px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/body_inset.png');
+    background-image: url('./body_inset.png');
     pointer-events: none;
 }
 
 /* 内容 */
-.nr-container {}
+.head-wrap.p1.sai-list-none {
+    height: 726px;
+}
 
 .head-wrap.p1+.wrap .top-tab-list {
     top: -310px;
 }
 
+.head-wrap.p1.sai-list-none+.wrap .top-tab-list,
 .head-wrap.p2+.wrap .top-tab-list,
 .head-wrap.p3+.wrap .top-tab-list {
     top: -170px;
@@ -522,15 +525,15 @@ body {
 }
 
 .sai-wrap.sai-end {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_end.png');
+    background-image: url('./bs_plank_end.png');
 }
 
 .sai-wrap.sai-live {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_live.png');
+    background-image: url('./bs_plank_live.png');
 }
 
 .sai-wrap.sai-future {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_future.png');
+    background-image: url('./bs_plank_future.png');
 }
 
 .sai-top {
@@ -635,7 +638,7 @@ body {
 /* 正在进行赛事 */
 .live-container {
     height: 529px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p1_i1_bg.jpg');
+    background-image: url('./p1_i1_bg.jpg');
     overflow: hidden;
 }
 
@@ -850,17 +853,18 @@ body {
 .title-icon {
     display: block;
     margin: 0 auto;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/titles.png');
+    background-image: url('./titles.png');
     background-size: 524px auto;
 }
-
-.title-icon.ti-p1-1 {
+.ti-p1-wrap {
     top: 30px;
     left: 0;
     right: 0;
     z-index: 1;
+}
+.title-icon.ti-p1-1 {
     width: 324px;
-    height: 54px;
+    height: 34px;
     background-position: 0 0;
 }
 
@@ -871,7 +875,7 @@ body {
 
 .bs-list {
     height: 740px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p1_i1_bsbg.png');
+    background-image: url('./p1_i1_bsbg.png');
     background-size: 1200px auto;
 }
 
@@ -1062,14 +1066,14 @@ body {
 /* 排行榜 */
 .rank-container {
     min-height: 1848px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p1_i3_bg.jpg');
+    background-image: url('./p1_i3_bg.jpg');
     overflow: hidden;
 }
 
 .title-icon.ti-p1-2 {
     margin-top: 29px;
     width: 324px;
-    height: 54px;
+    height: 34px;
     background-position: 0 -59px;
 }
 
@@ -1102,7 +1106,8 @@ body {
 }
 
 .rank-tips-text {
-    line-height: 64px;
+    margin-top: 8px;
+    line-height: 24px;
     font-size: 16px;
     color: #666;
 }
@@ -1239,7 +1244,7 @@ body {
 /* p2i1 */
 .p2-i1-container {
     height: 1197px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p2_i1_bg.jpg');
+    background-image: url('./p2_i1_bg.jpg');
     overflow: hidden;
 }
 
@@ -1533,7 +1538,7 @@ body {
 /* 选手人气榜 */
 .p2-i2-container {
     height: 1848px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p2_i2_bg.jpg');
+    background-image: url('./p2_i2_bg.jpg');
     overflow: hidden;
 }
 
@@ -1619,7 +1624,7 @@ body {
 /* 预测比赛领福利 */
 .p3-i1-container {
     height: 1210px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p3_i1_bg.jpg');
+    background-image: url('./p3_i1_bg.jpg');
     overflow: hidden;
 }
 
@@ -1663,17 +1668,18 @@ body {
 
 .yc-list {
     margin: 20px auto 0;
+    font-size: 0;
 }
 
 .yc-item {
-    margin: 0 auto;
+    display: inline-block;
     width: 584px;
     height: 280px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/yc_bg_future.png');
+    background-image: url('./yc_bg_future.png');
 }
 
 .yc-item.yc-end {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/yc_bg_end.png');
+    background-image: url('./yc_bg_end.png');
 }
 
 .yc-item2 {
@@ -1791,7 +1797,7 @@ body {
     margin: 0 10px;
     width: 210px;
     height: 249px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_blue_bg.png');
+    background-image: url('./prize_blue_bg.png');
 }
 
 .prize-title-text {
@@ -1835,7 +1841,7 @@ body {
     margin: 3px 10px 0;
     width: 210px;
     height: 249px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/prize_red_bg.png');
+    background-image: url('./prize_red_bg.png');
 }
 
 .yj-text {
@@ -1849,7 +1855,7 @@ body {
 /* 玩家预测榜 */
 .p3-i2-container {
     height: 1283px;
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/p3_i2_bg.jpg');
+    background-image: url('./p3_i2_bg.jpg');
     overflow: hidden;
 }
 
@@ -1873,7 +1879,7 @@ body {
 }
 
 .table-wrap .blue-bg {
-    background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/table_title_bg.png');
+    background-image: url('./table_title_bg.png');
     color: #fff;
 }
 

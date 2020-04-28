@@ -428,12 +428,15 @@ body {
 }
 
 /* 内容 */
-.nr-container {}
+.head-wrap.p1.sai-list-none {
+    height: 726px;
+}
 
 .head-wrap.p1+.wrap .top-tab-list {
     top: -310px;
 }
 
+.head-wrap.p1.sai-list-none+.wrap .top-tab-list,
 .head-wrap.p2+.wrap .top-tab-list,
 .head-wrap.p3+.wrap .top-tab-list {
     top: -170px;
@@ -853,14 +856,15 @@ body {
     background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/titles.png');
     background-size: 524px auto;
 }
-
-.title-icon.ti-p1-1 {
+.ti-p1-wrap {
     top: 30px;
     left: 0;
     right: 0;
     z-index: 1;
+}
+.title-icon.ti-p1-1 {
     width: 324px;
-    height: 54px;
+    height: 34px;
     background-position: 0 0;
 }
 
@@ -1069,7 +1073,7 @@ body {
 .title-icon.ti-p1-2 {
     margin-top: 29px;
     width: 324px;
-    height: 54px;
+    height: 34px;
     background-position: 0 -59px;
 }
 
@@ -1102,7 +1106,8 @@ body {
 }
 
 .rank-tips-text {
-    line-height: 64px;
+    margin-top: 8px;
+    line-height: 24px;
     font-size: 16px;
     color: #666;
 }
@@ -1663,9 +1668,11 @@ body {
 
 .yc-list {
     margin: 20px auto 0;
+    font-size: 0;
 }
 
 .yc-item {
+    display: inline-block;
     width: 584px;
     height: 280px;
     background-image: url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/yc_bg_future.png');

@@ -1,45 +1,49 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
-<meta charset="gbk">
-<meta name="Description" content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
-<meta name="Keywords" content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
-<meta content="telephone=no" name="format-detection">
-<meta content="yes" name="mobile-web-app-capable">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<script>
-    //跳转pc
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/index.html" + location.search;
-    }
-    //屏幕适应
-    (function (win, doc) {
-        if (!win.addEventListener) return;
-        var html = document.documentElement;
-        function setFont() {
-            var html = document.documentElement;
-            var k = 750;
-            html.style.fontSize = html.clientWidth / k * 100 + "px";
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/index.html" + location.search;
         }
-        setFont();
-        setTimeout(function () {
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
             setFont();
-        }, 300);
-        doc.addEventListener('DOMContentLoaded', setFont, false);
-        win.addEventListener('resize', setFont, false);
-        win.addEventListener('load', setFont, false);
-    })(window, document);
-</script>
-<title>电竞战役赛-NBA2KOL2官方网站-腾讯游戏</title>
-<!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
-<link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
-<link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="flex header-topbar">
-        <a href="//nba2k2.qq.com/" class="bg logo-icon1" onclick="PTTSendClick('btn','hd','NBA2K online2')" title="NBA2K online2"></a>
+        <a href="//nba2k2.qq.com/" class="bg logo-icon1" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+            title="NBA2K online2"></a>
         <div class="flex-1 login t-r login-wrap">
             <!--登录前状态 Start-->
             <p id="unlogin">你好，请<a href="javascript:;" id="btn_qqlogin">[登录]</a></p>
@@ -56,7 +60,7 @@
                     <a href="javascript:;" class="bindArea">更改绑定</a>
                     <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
                 </span>-->
-                <a href="javascript:;"id="btn_logout">注销</a>
+                <a href="javascript:;" id="btn_logout">注销</a>
             </p>
             <!--登录后状态 End-->
         </div>
@@ -66,7 +70,7 @@
         <div class="icons t-c top-tab-list">
             <a href="mcontent0.html" class="icons tab-item btn-hover active">
                 <h3 class="tab-title-text">「季后赛」激战来袭</h3>
-                <p class="tab-msg-text">谁将问鼎最终冠军</p>
+                <p class="tab-msg-text">哪支球队将问鼎19-20赛季总冠军</p>
             </a>
             <a href="mcontent1.html" class="icons tab-item btn-hover">
                 <h3 class="tab-title-text">参赛选手介绍</h3>
@@ -79,7 +83,8 @@
         </div>
         <div class="bg nr-container">
             <!-- 返回首页 -->
-            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t" onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
+            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t"
+                onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <!-- 赛事列表 -->
             <div class="p-r sai-container"></div>
             <!-- 正在进行赛事 -->
@@ -87,6 +92,7 @@
             <!-- 比赛对阵图 -->
             <div class="p-r bs-container">
                 <h2 class="title-icon ti-p1-1 t">比赛对阵图</h2>
+                <p class="title-msg-text t-c">晋级情况根据19-20赛季球队真实成绩和259场游戏模拟结果得出</p>
                 <ul class="live-menu-list live-bs-list J-bs-list flex">
                     <li class="live-menu-item t-c flex-1 active">
                         <span class="live-title-text">西部</span>
@@ -449,12 +455,13 @@
             <div class="bg rank-container">
                 <div class="wrap">
                     <h2 class="title-icon ti-p1-2 t">比赛数据排行榜</h2>
+                    <p class="title-msg-text t-c" style="padding: 0 .1rem;">常规赛球队排行根据3月12日NBA停摆时的排行数据和游戏模拟的剩余259场常规赛结果合并统计得出。</p>
                     <!-- 切换球队榜&球员榜 -->
                     <div class="p-r rank-tab-list J-rank-title1 flex">
                         <a class="rank-tab-btn t-c active">球队榜</a>
-                        <a class="rank-tab-btn t-c">球员榜</a>
+                        <a class="rank-tab-btn t-c">选手榜</a>
                     </div>
-                    <p class="rank-tips-text t-c">排名依据：胜场，胜场相同看净胜分。</p>
+                    <p class="rank-tips-text t-c">排名依据：常规赛球队排行根据3月12日NBA停摆时的排行数据和游戏模拟的剩余259场常规赛结果合并统计得出。</p>
                     <div class="rank-content-list J-rank-content1">
                         <!-- 球队榜 -->
                         <div class="rank-content-item">
@@ -505,7 +512,7 @@
                                         </table>
                                     </div>
                                 </div>
-								<div class="rank-content-item2" style="display: none;">
+                                <div class="rank-content-item2" style="display: none;">
                                     <div class="p-r">
                                         <span class="p-a icons table-inset t-c">东部排名</span>
                                         <table class="table-wrap table-1 t-c">
@@ -558,7 +565,7 @@
                                 <!-- 常规赛 -->
                                 <div class="rank-content-item2">
                                     <div class="p-r" data-box="PlayersBoard">
-                                        <span class="p-a icons table-inset t-c">女生</span>
+                                        <span class="p-a icons table-inset t-c">女选手</span>
                                         <table class="table-wrap table-1 t-c">
                                             <thead>
                                                 <tr>
@@ -574,10 +581,10 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-											<tr>
-												<td colspan="9">暂无数据</td>
-											</tr>
-											</tbody>
+                                                <tr>
+                                                    <td colspan="9">暂无数据</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                         <div class="rank-page">
                                             <a href="javascript:;" class="prev">&lt;</a>
@@ -586,7 +593,7 @@
                                         </div>
                                     </div>
                                     <div class="p-r" style="margin-top: .53rem;" data-box="PlayersBoard">
-                                        <span class="p-a icons table-inset t-c">男生</span>
+                                        <span class="p-a icons table-inset t-c">男选手</span>
                                         <table class="table-wrap table-1 t-c">
                                             <thead>
                                                 <tr>
@@ -602,10 +609,10 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-											<tr>
-												<td colspan="9">暂无数据</td>
-											</tr>
-											</tbody>
+                                                <tr>
+                                                    <td colspan="9">暂无数据</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                         <div class="rank-page">
                                             <a href="javascript:;" class="prev">&lt;</a>
@@ -616,36 +623,8 @@
                                 </div>
                                 <!-- 季后赛 -->
                                 <div class="rank-content-item2" style="display: none;">
-                                    <div class="p-r"  data-box="PlayersBoard">
-                                        <span class="p-a icons table-inset t-c">女生</span>
-                                        <table class="table-wrap table-1 t-c">
-                                            <thead>
-                                                <tr>
-                                                    <th>排名</th>
-                                                    <th>选手</th>
-                                                    <th>场均<br />评价</th>
-                                                    <th>场均<br />得分</th>
-                                                    <th>场均<br />篮板</th>
-                                                    <th>场均<br />助攻</th>
-                                                    <th>场均<br />抢断</th>
-                                                    <th>场均<br />盖帽</th>
-                                                    <th>MVP获得<br />次数</th>
-                                                </tr>
-                                            </thead>
-                                           <tbody>
-											<tr>
-												<td colspan="9">暂无数据</td>
-											</tr>
-											</tbody>>
-                                        </table>
-                                        <div class="rank-page">
-                                            <a href="javascript:;" class="prev">&lt;</a>
-                                            <span>1/12</span>
-                                            <a href="javascript:;" class="next">&gt;</a>
-                                        </div>
-                                    </div>
-                                    <div class="p-r" style="margin-top: .53rem;"  data-box="PlayersBoard">
-                                        <span class="p-a icons table-inset t-c">男生</span>
+                                    <div class="p-r" data-box="PlayersBoard">
+                                        <span class="p-a icons table-inset t-c">女选手</span>
                                         <table class="table-wrap table-1 t-c">
                                             <thead>
                                                 <tr>
@@ -661,10 +640,38 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-											<tr>
-												<td colspan="9">暂无数据</td>
-											</tr>
-											</tbody>
+                                                <tr>
+                                                    <td colspan="9">暂无数据</td>
+                                                </tr>
+                                            </tbody>>
+                                        </table>
+                                        <div class="rank-page">
+                                            <a href="javascript:;" class="prev">&lt;</a>
+                                            <span>1/12</span>
+                                            <a href="javascript:;" class="next">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div class="p-r" style="margin-top: .53rem;" data-box="PlayersBoard">
+                                        <span class="p-a icons table-inset t-c">男选手</span>
+                                        <table class="table-wrap table-1 t-c">
+                                            <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>选手</th>
+                                                    <th>场均<br />评价</th>
+                                                    <th>场均<br />得分</th>
+                                                    <th>场均<br />篮板</th>
+                                                    <th>场均<br />助攻</th>
+                                                    <th>场均<br />抢断</th>
+                                                    <th>场均<br />盖帽</th>
+                                                    <th>MVP获得<br />次数</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="9">暂无数据</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                         <div class="rank-page">
                                             <a href="javascript:;" class="prev">&lt;</a>
@@ -680,49 +687,19 @@
                 </div>
             </div>
             <!-- 合作伙伴 -->
-            <div class="p-r hzhb-container">
+            <div class="p-r hzhb-container" style="margin-top: .6rem;">
                 <h2 class="title-icon ti-p1-3 t">合作伙伴</h2>
                 <div class="hzhb-list t-c">
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz1','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz2','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz3','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz4','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz5','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz6','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz7','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz8','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz9','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz10','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
-                    <a href="javascript: alert('敬请期待！');" class="full-img" onclick="PTTSendClick('btn','hz11','合作伙伴')">
-                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/hzhb_img.png" alt="合作伙伴">
-                    </a>
+                    <div class="full-img hzhb-item">
+                        <img src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/hzhb_img.png" alt="合作伙伴">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-<script type="text/html" id="ContestsTpl">
+
+
+    <script type="text/html" id="ContestsTpl">
 {if contests}
 <div class="swiper-container swiper-1">
 	<div class="swiper-wrapper">
@@ -775,8 +752,8 @@
 <a class="p-a icons page-btn prev-btn btn-hover t">上一页</a>
 <a class="p-a icons page-btn next-btn btn-hover t">下一页</a>
 {/if}
-</script>	
-<script type="text/html" id="ActiveContestTpl">
+</script>
+    <script type="text/html" id="ActiveContestTpl">
 <ul class="live-menu-list J-zbj-list flex">
 	{if sLiveQQ }	
 	<li class="live-menu-item t-c flex-1 active" data-src="${sLiveQQ}">
@@ -900,7 +877,7 @@
 </div>
 </script>
 
-<script type="text/html" id="TeamsBoardTpl">
+    <script type="text/html" id="TeamsBoardTpl">
 	{for p in teams}
 	 <tr>
 		<td class="p-r td-1">
@@ -923,7 +900,7 @@
 	{/for}
 </script>
 
-<script type="text/html" id="PlayersBoardTpl">
+    <script type="text/html" id="PlayersBoardTpl">
 	<span class="p-a icons table-inset t-c">${gender=="1"?"男生":"女生"}</span>
 	<table class="table-wrap table-1 t-c">
 		<thead>
@@ -973,7 +950,7 @@
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="common.js"></script>
-	<script>
+    <script>
         (function ($, global) {
             var nowContest = null;
             global.getContests().then(function (contests) {
@@ -984,15 +961,15 @@
                             return !global.isInvalid(v.dtStartTime);
                         })
                     }));
-					
-					window.mySwiper1 = new Swiper('.swiper-1', {
-						slidesPerView: 2,
-						prevButton: '.sai-container .prev-btn',
-						nextButton: '.sai-container .next-btn'
-					});
+
+                    window.mySwiper1 = new Swiper('.swiper-1', {
+                        slidesPerView: 2,
+                        prevButton: '.sai-container .prev-btn',
+                        nextButton: '.sai-container .next-btn'
+                    });
                 });
-					
-			
+
+
                 for (var i = 0; i < contests.length; i++) {
                     if (global.isStarted(contests[i].dtStartTime) && !global.isClosed(contests[i].dtStartTime)) {
                         nowContest = contests[i];
@@ -1025,9 +1002,9 @@
                     } else {
                         box.find('div.bs-msg-wrap').find('div.video-btn').hide();
                     }
-                }	
+                }
                 return global.getTeamPlayers(nowContest ? [nowContest.iHomeTeamId, nowContest.iAwayTeamId] : []);
-            }).then(function (nowContestPlayers) {	
+            }).then(function (nowContestPlayers) {
                 //渲染正在比赛
                 if (nowContest) {
                     if (nowContestPlayers.length) {
@@ -1040,18 +1017,18 @@
                         $('div.live-container').html(template.parseDOMTemplate('ActiveContestTpl').process(nowContest));
                         $('div.live-container').show();
                         $('div.live-container').find('li.live-menu-item:first').trigger('click');
-						
-						 // 切换队员信息板
-						$(".tab-team-list a").on("click", function () {
-							var $this = $(this),
-								idx = $this.index();
-							$this.addClass("active").siblings("a").removeClass("active");
-							$(".team-content-list .team-content-item").hide().eq(idx).show();
-						});
+
+                        // 切换队员信息板
+                        $(".tab-team-list a").on("click", function () {
+                            var $this = $(this),
+                                idx = $this.index();
+                            $this.addClass("active").siblings("a").removeClass("active");
+                            $(".team-content-list .team-content-item").hide().eq(idx).show();
+                        });
                     });
                 }
-				
-				
+
+
 
                 return global.getTeamsBoard();
             }).then(function (teams) {
@@ -1070,11 +1047,11 @@
             }).fail(alert);
             //渲染球员榜
             global.renderPlayersBoard = function (season, gender, page) {
-            
-			
-				var def = $.Deferred();
+
+
+                var def = $.Deferred();
                 var box = $(".J-rank-con3 .rank-content-item2").eq(parseInt(season, 10) - 1).find('[data-box="PlayersBoard"]').eq(gender % 2);
-				console.log(box);
+                console.log(box);
                 if (box.length) {
                     var page = parseInt(page, 10);
                     var size = 10;
@@ -1094,16 +1071,16 @@
                     def.resolve([]);
                 }
                 return def;
-			}
+            }
         })(window.jQuery || window.Zepto, window);
     </script>
-    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>  
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
     <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
     <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script src="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mcomm.js"></script>
     <script>
-        
+
 
         //切换直播间
 		/*$(".J-zbj-list .live-menu-item").on("click", function () {
@@ -1114,8 +1091,8 @@
             // 切换iframe地址
             $(".live-content iframe").attr("src", src);
         });*/
-		  
-		$(document).on('click', '.J-zbj-list .live-menu-item', function () {
+
+        $(document).on('click', '.J-zbj-list .live-menu-item', function () {
             var $this = $(this),
                 idx = $this.index(),
                 src = $this.data("src");
@@ -1123,9 +1100,9 @@
             // 切换iframe地址
             $(".live-content iframe").attr("src", src);
         });
-		
 
-       
+
+
 
         // 切换比赛阵图
         $(".J-bs-list .live-menu-item").on("click", function () {
@@ -1142,8 +1119,8 @@
             $this.addClass('active').siblings('a').removeClass('active');
             $(".J-rank-content1 .rank-content-item").hide().eq(idx).show();
         });*/
-		
-		// 切换球队榜&球员榜
+
+        // 切换球队榜&球员榜
         $(document).on('click', '.J-rank-title1 a', function () {
             var $this = $(this),
                 idx = $this.index();
@@ -1163,8 +1140,8 @@
             $this.addClass('active').siblings('a').removeClass('active');
             $(".J-rank-con2 .rank-content-item2").hide().eq(idx).show();
         });
-		
-		  // 切换常规撒&季后赛 球员榜
+
+        // 切换常规撒&季后赛 球员榜
         $(document).on('click', '.J-rank-title3 a', function () {
             if ($(this).hasClass('active')) {
                 return;
@@ -1178,8 +1155,8 @@
             }).fail(alert);
         });
 
-		
-		 		
+
+
         // 为选手点赞 切换球队
         $(".J-xb-list li").on("click", function () {
             var $this = $(this),
@@ -1198,8 +1175,8 @@
             $(".team-msg-list .team-msg-item").hide();
             $(".team-msg-list .team-" + str + "-" + (idx + 1)).show();
         }
-		
-		milo.ready(function () {
+
+        milo.ready(function () {
             need("biz.login", function (LoginManager) {
                 //QQ登录
                 milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
@@ -1207,18 +1184,18 @@
                 });
                 LoginManager.checkLogin(function () {
                     g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
-					$("#unlogin").hide();
-					$("#logined").show();
-                },function(){
-					$("#unlogin").show();
-					$("#logined").hide();
-				});
+                    $("#unlogin").hide();
+                    $("#logined").show();
+                }, function () {
+                    $("#unlogin").show();
+                    $("#logined").hide();
+                });
                 //注销
                 milo.addEvent(g("btn_logout"), "click", function () {
                     LoginManager.logout();
                 });
             });
-		})
+        })
     </script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
     <script>
