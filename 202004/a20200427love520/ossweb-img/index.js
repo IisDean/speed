@@ -1,49 +1,56 @@
 
-        var tiNum = 1,//å½“å‰é¢˜ç›®åºå·
-        result = [],//ç”¨æˆ·æ‰€é€‰ç­”æ¡ˆ
-        gradeList = [],//æ¯ä¸€é¢˜æ‰€å¾—åˆ†æ•°ï¼Œåœ¨æœ€åä¸€é¢˜å®Œæˆæ—¶è®¡ç®—æ€»åˆ†æ•°
-        fsz = [4, 3, 2 ,1],//é€‰é¡¹id = 1æ—¶å¯¹åº”åˆ†æ•° 4åˆ†,id = 2æ—¶å¯¹åº”3åˆ†,id = 3æ—¶å¯¹åº”2åˆ†,id = 4æ—¶å¯¹åº”1åˆ†
-        grade = 8;//æ€»åˆ†æ•°
-    // é€‰æ‹©ç­”æ¡ˆ
+        var tiNum = 1,//µ±Ç°ÌâÄ¿ĞòºÅ
+        result = [],//ÓÃ»§ËùÑ¡´ğ°¸
+        gradeList = [],//Ã¿Ò»ÌâËùµÃ·ÖÊı£¬ÔÚ×îºóÒ»ÌâÍê³ÉÊ±¼ÆËã×Ü·ÖÊı
+        fsz = [4, 3, 2 ,1],//Ñ¡Ïîid = 1Ê±¶ÔÓ¦·ÖÊı 4·Ö,id = 2Ê±¶ÔÓ¦3·Ö,id = 3Ê±¶ÔÓ¦2·Ö,id = 4Ê±¶ÔÓ¦1·Ö
+        grade = 8;//×Ü·ÖÊı
+    // Ñ¡Ôñ´ğ°¸
     $(".answer-list").on("click", ".select-list .select-item", function(){
         var $this = $(this),
             idx = parseInt( $this.index() ) + 1;
-        gradeList[tiNum-1] = fsz[parseInt($this.attr('data-idx')) - 1];//è·å–å½“å‰é€‰é¡¹idï¼Œç”¨ä»¥è·å–æ­¤é€‰é¡¹åˆ†æ•°
+        gradeList[tiNum-1] = fsz[parseInt($this.attr('data-idx')) - 1];//»ñÈ¡µ±Ç°Ñ¡Ïîid£¬ÓÃÒÔ»ñÈ¡´ËÑ¡Ïî·ÖÊı
         $this.addClass('active').siblings('.select-item').removeClass('active');
         result[tiNum-1] = idx;
     });
 
-    var $anserList = $(".answer-list .answer-item"),//é¢˜ç›®åˆ—è¡¨
-        $tiNum = $(".J-timu-num");//å½“å‰é¢˜å·
-    //å›åˆ°ä¸Šä¸€é¢˜
+    var $anserList = $(".answer-list .answer-item"),//ÌâÄ¿ÁĞ±í
+        $tiNum = $(".J-timu-num");//µ±Ç°ÌâºÅ
+    //»Øµ½ÉÏÒ»Ìâ
     function cutPrevTimu(){
-        if( tiNum - 1 < 1)return false;//ä¸è¶…å‡ºé¢˜ç›®æ•°é‡èŒƒå›´
-        $anserList.eq(tiNum-1).hide();
+        if( tiNum - 1 < 1)return false;//²»³¬³öÌâÄ¿ÊıÁ¿·¶Î§
         tiNum--;
-        editTiStatus();//æ›´æ–°å½“å‰é¢˜ç›®çŠ¶æ€
+        editTiStatus();//¸üĞÂµ±Ç°ÌâÄ¿×´Ì¬
+        $anserList.eq(tiNum).css({
+            'transform': "translate(-7rem, 10rem) rotate(-40deg)",
+            '-webkit-transform': "translate(-7rem, 10rem) rotate(-40deg)"
+        });
     }
 
-    //åˆ‡æ¢ä¸‹ä¸€é¢˜
+    //ÇĞ»»ÏÂÒ»Ìâ
     function cutNextTimu(){
-        if( tiNum + 1 > 8 ){//å®Œæˆç­”é¢˜
-            gameEnd();//ç­”é¢˜ç»“ç®—
+        if( tiNum + 1 > 8 ){//Íê³É´ğÌâ
+            gameEnd();//´ğÌâ½áËã
         }else {
             if(result[tiNum-1]){
                 tiNum++;
-                $anserList.eq(tiNum-1).show();//è¿›å…¥ä¸‹ä¸€é¢˜
-                editTiStatus();//æ›´æ–°å½“å‰é¢˜ç›®çŠ¶æ€
+                $anserList.eq(tiNum-1).css({
+                    'transform': "translate(0, 0) rotate(0deg)",
+                    '-webkit-transform': "translate(0, 0) rotate(0deg)"
+                });
+                //½øÈëÏÂÒ»Ìâ
+                editTiStatus();//¸üĞÂµ±Ç°ÌâÄ¿×´Ì¬
             }else {
-                alert('å…ˆå›ç­”è¿™ä¸€é¢˜æ‰èƒ½è¿›å…¥ä¸‹ä¸€é¢˜å“¦~');
+                alert('ÏÈ»Ø´ğÕâÒ»Ìâ²ÅÄÜ½øÈëÏÂÒ»ÌâÅ¶~');
             }
         }
     }
 
-    //æ›´æ–°å½“å‰é¢˜ç›®çŠ¶æ€
+    //¸üĞÂµ±Ç°ÌâÄ¿×´Ì¬
     var $answerPrevBtn = $(".answer-btn-container .prev-btn"),
         $answerNextBtn = $(".answer-btn-container .next-btn"),
         $lookResultBtn = $(".look-result-btn");
     function editTiStatus(){
-        $tiNum.text(tiNum);//æ›´æ–°å½“å‰é¢˜å·
+        $tiNum.text(tiNum);//¸üĞÂµ±Ç°ÌâºÅ
         if(tiNum <= 1){
             $answerPrevBtn.hide();
         }else {
@@ -58,11 +65,11 @@
         }
     }
 
-    //ç­”é¢˜ç»“ç®—
+    //´ğÌâ½áËã
     function gameEnd(){
-        //ç¦ç”¨ä¸Šä¸€é¢˜æŒ‰é’®
+        //½ûÓÃÉÏÒ»Ìâ°´Å¥
         $answerPrevBtn.css('pointer-events', 'none');
-        // è®¡ç®—æ€»åˆ†
+        // ¼ÆËã×Ü·Ö
         var g = 8;
         for(var i = 0;i<gradeList.length-1;i++){
             g += gradeList[i];

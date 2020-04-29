@@ -38,20 +38,23 @@
 
 <body>
     <div class="p-r stage">
+        <audio id="musicBgm" loop autoplay>
+            <source src="./ossweb-img/music.mp3" type="audio/mpeg" />
+        </audio>
         <!-- 首屏 -->
-        <div class="p-r part part-1 load-status" style="disp lay: none;">
+        <div class="p-r part part-1 load-status" style="display: none;">
             <div class="p-r wrap">
                 <!-- 进度条 -->
                 <div class="p-a bg progress-container">
-                    <div class="p-r progress-wrap" style="width: 20%;">
+                    <div class="p-r progress-wrap" style="width: 0%;">
                         <div class="p-a bg progress-content"></div>
                     </div>
-                    <div class="p-a progress-text t-c">20%</div>
+                    <div class="p-a progress-text t-c">0%</div>
                 </div>
                 <!-- 说明 -->
                 <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a>
                 <!-- 音乐 -->
-                <a href="javascript: alert('敬请期待！');" class="p-a icons music-btn t">活动说明</a>
+                <a class="p-a icons music-btn t">活动说明</a>
                 <div class="full-img logo-icon">
                     <img src="./ossweb-img/logo.png" alt="logo">
                 </div>
@@ -69,10 +72,10 @@
             </div>
         </div>
         <!-- 答题 -->
-        <div class="p-r part part-2" style="display: none;">
+        <div class="p-r part part-2" style="disp lay: none;">
             <div class="p-r wrap">
                 <div class="full-img logo-icon">
-                    <img src="./ossweb-img/logo.png" alt="logo">
+                    <img data-src="./ossweb-img/logo.png" alt="logo">
                 </div>
                 <!-- 答题进度 -->
                 <div class="p-a answer-progress">
@@ -82,41 +85,41 @@
                 <!-- 题目列表 -->
                 <ul class="p-r answer-list">
                     <!-- 第1题 -->
-                    <li class="bg answer-item" data-id="1" style="display: block;">
+                    <li class="bg answer-item on" data-id="1">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_1.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_1.png" alt="题目名称">
                         </div>
                         <div class="flex flex-center select-list select-list-img">
                             <div class="flex select-item" data-idx="4">
                                 <span class="select-num-text">D.</span>
                                 <div class="full-img select-img">
-                                    <img src="./ossweb-img/timu_select_4.png" alt="选项">
+                                    <img data-src="./ossweb-img/timu_select_4.png" alt="选项">
                                 </div>
                             </div>
                             <div class="flex select-item" data-idx="1">
                                 <span class="select-num-text">A.</span>
                                 <div class="full-img select-img">
-                                    <img src="./ossweb-img/timu_select_1.png" alt="选项">
+                                    <img data-src="./ossweb-img/timu_select_1.png" alt="选项">
                                 </div>
                             </div>
                             <div class="flex select-item" data-idx="2">
                                 <span class="select-num-text">B.</span>
                                 <div class="full-img select-img">
-                                    <img src="./ossweb-img/timu_select_2.png" alt="选项">
+                                    <img data-src="./ossweb-img/timu_select_2.png" alt="选项">
                                 </div>
                             </div>
                             <div class="flex select-item" data-idx="3">
                                 <span class="select-num-text">C.</span>
                                 <div class="full-img select-img">
-                                    <img src="./ossweb-img/timu_select_3.png" alt="选项">
+                                    <img data-src="./ossweb-img/timu_select_3.png" alt="选项">
                                 </div>
                             </div>
                         </div>
                     </li>
                     <!-- 第2题 -->
-                    <li class="bg answer-item" data-id="2">
+                    <li class="bg answer-item off" data-id="2">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_2.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_2.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="2">
@@ -136,7 +139,7 @@
                     <!-- 第3题 -->
                     <li class="bg answer-item" data-id="3">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_3.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_3.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="1">
@@ -156,7 +159,7 @@
                     <!-- 第4题 -->
                     <li class="bg answer-item" data-id="4">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_4.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_4.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="2">
@@ -176,7 +179,7 @@
                     <!-- 第5题 -->
                     <li class="bg answer-item" data-id="5">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_5.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_5.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="4">
@@ -196,7 +199,7 @@
                     <!-- 第6题 -->
                     <li class="bg answer-item" data-id="6">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_6.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_6.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="3">
@@ -216,7 +219,7 @@
                     <!-- 第7题 -->
                     <li class="bg answer-item" data-id="7">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_7.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_7.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="2">
@@ -236,7 +239,7 @@
                     <!-- 第8题 -->
                     <li class="bg answer-item" data-id="8">
                         <div class="full-img answer-title-icon">
-                            <img src="./ossweb-img/timu_8.png" alt="题目名称">
+                            <img data-src="./ossweb-img/timu_8.png" alt="题目名称">
                         </div>
                         <div class="select-list">
                             <div class="select-item" data-idx="4">
@@ -257,79 +260,111 @@
                 <!-- 回形针 -->
                 <i class="p-a bg clip-icon t">回形针</i>
                 <!-- 提示 -->
-                <div class="flex flex-center flex-middle answer-tips-wrap">
+                <div class="p-r flex flex-center flex-middle answer-tips-wrap">
                     <i class="icons tips-icon-1"></i>
                     <p>测试过程中可返回上层修改答案</p>
                     <i class="icons tips-icon-2"></i>
                 </div>
                 <!-- 按钮 -->
-                <div class="flex flex-center answer-btn-container">
+                <div class="p-r flex flex-center answer-btn-container">
                     <a href="javascript: cutPrevTimu();" class="icons btn-hover prev-btn t" style="display: none;">上一题</a>
                     <a href="javascript: cutNextTimu();" class="icons btn-hover next-btn t">下一题</a>
                     <a href="javascript: cutNextTimu();" class="icons btn-hover look-result-btn t" style="display: none;">查看结果</a>
                 </div>
                 <!-- 音乐 -->
-                <a href="javascript: alert('敬请期待！');" class="p-a icons music-btn t">活动说明</a>
+                <a class="p-a icons music-btn t">活动说明</a>
             </div>
         </div>
     </div>
-    <style>
-        /* @font-face {
-            font-family: 'hyzy';
-            src: url('./hanyizhongyuan.ttf');
-        } */
-        
-        .stage {
-            width: 100%;
-            height: 100%;
-            /* font-family: hyzy; */
-        }
-    </style>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script>
+        
+        $(function(){
+            //播放音乐
+            var music = document.getElementById('musicBgm');
+            music.play();
+            $(window).one('touchstart', function () {
+                music.play();
+            });
+            // //微信下兼容处理
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                music.play();
+            }, false);
+            // //音乐开关
+            var switchMusic = $(".music-btn");
 
-        //加载帧图
-    var imgList = [
-        './ossweb-img/answer_bg.png',
-        './ossweb-img/badge_1.png',
-        './ossweb-img/badge_2.png',
-        './ossweb-img/badge_3.png',
-    ];
-
-    function loadImg() {
-        var that = this,
-            imgLoad = 0,
-            pro = 0,
-            $loadText = $(".load-text");
-        imgList.forEach(function (ev, index) {
-            var img = new Image();
-            img.src = ev;
-            img.style.position = 'absolute';
-            img.idx = index;
-            img.onload = function () {
-                imgList[this.idx].obj = this;
-                imgLoad++;
-                pro = parseInt((imgLoad / imgList.length) * 100);
-                $loadText.text(pro + '%');
-                if (imgLoad >= imgList.length) {
-                    Status = true;
-                    $(".part-1").removeClass('load-status');
-                    console.log('加载完成');
+            switchMusic.on("click", function () {
+                if (switchMusic.hasClass('off')) {
+                    music.play();
+                    switchMusic.removeClass("off");
+                } else {
+                    music.pause();
+                    switchMusic.addClass("off");
                 }
-            }
-        });
-    }
-    loadImg();
+            });
 
-    $(function(){
-        document.styleSheets 
-    })
-    document.fonts.ready.then(function() {
-        // 字体加载完成后的逻辑
-        alert('字体加载完成');
-    });
+            //加载帧图
+            var imgList = [
+                './ossweb-img/p1_bg.jpg',
+                './ossweb-img/progress_bg.png',
+                './ossweb-img/progress.png',
+                './ossweb-img/icons.png',
+                './ossweb-img/answer_bg.png',
+                './ossweb-img/badge_1.png',
+                './ossweb-img/badge_2.png',
+                './ossweb-img/badge_3.png',
+            ];
+
+            function loadImg() {
+                var that = this,
+                    imgLoad = 0,
+                    pro = 0,
+                    $loadText = $(".progress-text"),
+                    $progress = $(".progress-wrap");
+                imgList.forEach(function (ev, index) {
+                    var img = new Image();
+                    img.src = ev;
+                    img.style.position = 'absolute';
+                    img.idx = index;
+                    img.onload = function () {
+                        imgList[this.idx].obj = this;
+                        imgLoad++;
+                        pro = parseInt((imgLoad / imgList.length) *.95 * 100);
+                        $loadText.text(pro + '%');
+                        $progress.css('width', pro+'%');
+                        if (imgLoad >= imgList.length) {
+                            console.log('加载完成');
+                            document.fonts.ready.then(function() {
+                                // 字体加载完成后的逻辑
+                                console.log('字体加载完成');
+                                $(".stage").css("font-family", 'hyzy');
+                                $loadText.text('100%');
+                                $progress.css('width', '100%');
+                                //图片显示
+                                showImg();
+                            });
+                        }
+                    }
+                });
+            }
+            loadImg();
+
+            //图片显示
+            var $imgList = $(".full-img");
+            function showImg(){
+                // console.log('图片加载'+$imgList.length);
+                $imgList.each(function(idx, ev){
+                    var $ev = $(ev).find('img'),
+                        src = $ev.attr('data-src');
+                        // console.log(src);
+                    if(src != null){
+                        $ev.attr('src', src);
+                    }
+                });
+            }
+        })
 
     </script>
     <script src="./ossweb-img/index.js"></script>

@@ -1,5 +1,8 @@
-
 /*reset*/
+@font-face {
+    font-family: 'hyzy';
+    src: url('./hanyizhongyuan.ttf');
+}
 html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {
     margin: 0;
     padding: 0;
@@ -185,8 +188,8 @@ a {
     -o-transition: all .5s;
     transition: all .5s;
 }
-.full-img,
-.full-img img {
+.full-img img,
+.full-img {
     display: block;
 }
 .full-img img {
@@ -257,6 +260,8 @@ a {
     margin-left: .06rem;
     height: .42rem;
     overflow: hidden;
+    transition: .3s all;
+    -webkit-transition: .3s all;
 }
 .progress-content {
     width: 5.61rem;
@@ -266,13 +271,12 @@ a {
 .progress-text {
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     line-height: .48rem;
     font-weight: bold;
     font-size: .25rem;
     color: #ca426d;
-    /* text-stroke: .02rem #ca426d;
-    -webkit-text-stroke: .02rem #ca426d; */
 }
 .part-1 .logo-icon {
     margin: .52rem auto 0;
@@ -297,6 +301,23 @@ a {
     width: .73rem;
     height: .73rem;
     background-position: -4.62rem -.44rem;
+    animation: music 4s linear infinite;
+    -webkit-animation: music 4s linear infinite;
+}
+.music-btn.off {
+    animation: none;
+    -webkit-animation: none;
+    background-position: -5.4rem -.44rem;
+}
+@keyframes music {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes music {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 .tips-btn-icon {
     margin: 4.74rem auto 0;
@@ -339,12 +360,12 @@ a {
     margin-top: -.16rem;
 }
 .answer-list {
+    z-index: 1;
     margin: 1.1rem auto 0;
     width: 5.99rem;
     height: 7.37rem;
 }
 .answer-item {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -352,7 +373,35 @@ a {
     height: 100%;
     background-image: url('./answer_bg.png');
     overflow: hidden;
+    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    transform: translate(-7rem, 10rem) rotate(-40deg);
+    -webkit-transform: translate(-7rem, 10rem) rotate(-40deg);
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
 }
+.answer-list .answer-item:first-child {
+    transform: translate(0, 0) rotate(0deg);
+    -webkit-transform: translate(0, 0) rotate(0deg);
+}
+/* .answer-item.off {
+    animation: answerMove1 1s ease forwards;
+}
+
+@keyframes answerMove1 {
+    to {
+    }
+}
+.answer-item.on {
+    display: block;
+    animation: answerMove2 1s ease forwards;
+}
+@keyframes answerMove2 {
+    to {
+        transform: translate(0, 0) rotate(0deg);
+        -webkit-transform: translate(0, 0) rotate(0deg);
+    }
+} */
 .answer-title-icon {
     margin: .52rem auto 0;
     width: 5.16rem;
@@ -407,12 +456,14 @@ a {
 .clip-icon {
     top: 2.5rem;
     right: .54rem;
+    z-index: 2;
     width: .77rem;
     height: .77rem;
     background-image: url('./clip.png');
     pointer-events: none;
 }
 .answer-tips-wrap {
+    z-index: 2;
     margin-top: .32rem;
 }
 .answer-tips-wrap p {
@@ -433,6 +484,7 @@ a {
     background-position: -2.91rem -2.16rem;
 }
 .answer-btn-container {
+    z-index: 2;
     margin-top: .34rem;
 }
 .answer-btn-container .prev-btn,
