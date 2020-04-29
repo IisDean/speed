@@ -39,8 +39,15 @@
 <body>
     <div class="p-r stage">
         <!-- 首屏 -->
-        <div class="p-r part part-1" style="display: none;">
+        <div class="p-r part part-1 load-status" style="disp lay: none;">
             <div class="p-r wrap">
+                <!-- 进度条 -->
+                <div class="p-a bg progress-container">
+                    <div class="p-r progress-wrap" style="width: 20%;">
+                        <div class="p-a bg progress-content"></div>
+                    </div>
+                    <div class="p-a progress-text t-c">20%</div>
+                </div>
                 <!-- 说明 -->
                 <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a>
                 <!-- 音乐 -->
@@ -62,22 +69,270 @@
             </div>
         </div>
         <!-- 答题 -->
-        <div class="p-r part part-2">
+        <div class="p-r part part-2" style="display: none;">
             <div class="p-r wrap">
                 <div class="full-img logo-icon">
                     <img src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <!-- 答题进度 -->
+                <div class="p-a answer-progress">
+                    <p class="t-l J-timu-num">1</p>
+                    <p class="t-r">8</p>
+                </div>
+                <!-- 题目列表 -->
+                <ul class="p-r answer-list">
+                    <!-- 第1题 -->
+                    <li class="bg answer-item" data-id="1" style="display: block;">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_1.png" alt="题目名称">
+                        </div>
+                        <div class="flex flex-center select-list select-list-img">
+                            <div class="flex select-item" data-idx="4">
+                                <span class="select-num-text">D.</span>
+                                <div class="full-img select-img">
+                                    <img src="./ossweb-img/timu_select_4.png" alt="选项">
+                                </div>
+                            </div>
+                            <div class="flex select-item" data-idx="1">
+                                <span class="select-num-text">A.</span>
+                                <div class="full-img select-img">
+                                    <img src="./ossweb-img/timu_select_1.png" alt="选项">
+                                </div>
+                            </div>
+                            <div class="flex select-item" data-idx="2">
+                                <span class="select-num-text">B.</span>
+                                <div class="full-img select-img">
+                                    <img src="./ossweb-img/timu_select_2.png" alt="选项">
+                                </div>
+                            </div>
+                            <div class="flex select-item" data-idx="3">
+                                <span class="select-num-text">C.</span>
+                                <div class="full-img select-img">
+                                    <img src="./ossweb-img/timu_select_3.png" alt="选项">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第2题 -->
+                    <li class="bg answer-item" data-id="2">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_2.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">A.《穿越大清之宫心计》</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">B.《不小心掉入总裁的甜蜜陷阱》</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">C.《白夜行》</p>
+                            </div>
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">D.《恋爱心理学》</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第3题 -->
+                    <li class="bg answer-item" data-id="3">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_3.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">A.经典的情歌对唱</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">b.甜腻的芭乐情歌</p>
+                            </div>
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">C.轻快的小众民谣</p>
+                            </div>
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">D.激情的地下摇滚</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第4题 -->
+                    <li class="bg answer-item" data-id="4">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_4.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">A.悄悄把奶茶放在电脑桌上</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">B.加入他的开黑队伍</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">C.当然是选择把两杯都喝掉</p>
+                            </div>
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">D.拔掉网线然后不理TA</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第5题 -->
+                    <li class="bg answer-item" data-id="5">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_5.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">A.知名惊悚悬疑片续作</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">B.叫好卖座的爆米花片</p>
+                            </div>
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">C.经典文艺爱情片</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">D.爱豆出演的青春伤痛片</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第6题 -->
+                    <li class="bg answer-item" data-id="6">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_6.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">A.疯狂暗示TA不要忘记</p>
+                            </div>
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">B.默默准备给TA的惊喜</p>
+                            </div>
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">C.完全没有放在心上</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">D.发一条充满回忆的朋友圈</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第7题 -->
+                    <li class="bg answer-item" data-id="7">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_7.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">A.送TA一直想要的新款球鞋</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">B.送TA豪华双人游套票</p>
+                            </div>
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">C.送TA保温杯让TA多喝热水</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">D.给TA发个充满爱意的红包</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第8题 -->
+                    <li class="bg answer-item" data-id="8">
+                        <div class="full-img answer-title-icon">
+                            <img src="./ossweb-img/timu_8.png" alt="题目名称">
+                        </div>
+                        <div class="select-list">
+                            <div class="select-item" data-idx="4">
+                                <p class="select-num-text t-l">A.穿休闲风连帽卫衣</p>
+                            </div>
+                            <div class="select-item" data-idx="2">
+                                <p class="select-num-text t-l">B.穿性感风黑色长裙</p>
+                            </div>
+                            <div class="select-item" data-idx="1">
+                                <p class="select-num-text t-l">C.穿昨天刚买的新衣服</p>
+                            </div>
+                            <div class="select-item" data-idx="3">
+                                <p class="select-num-text t-l">D.穿可爱风草莓短裙</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 回形针 -->
+                <i class="p-a bg clip-icon t">回形针</i>
+                <!-- 提示 -->
+                <div class="flex flex-center flex-middle answer-tips-wrap">
+                    <i class="icons tips-icon-1"></i>
+                    <p>测试过程中可返回上层修改答案</p>
+                    <i class="icons tips-icon-2"></i>
+                </div>
+                <!-- 按钮 -->
+                <div class="flex flex-center answer-btn-container">
+                    <a href="javascript: cutPrevTimu();" class="icons btn-hover prev-btn t" style="display: none;">上一题</a>
+                    <a href="javascript: cutNextTimu();" class="icons btn-hover next-btn t">下一题</a>
+                    <a href="javascript: cutNextTimu();" class="icons btn-hover look-result-btn t" style="display: none;">查看结果</a>
                 </div>
                 <!-- 音乐 -->
                 <a href="javascript: alert('敬请期待！');" class="p-a icons music-btn t">活动说明</a>
             </div>
         </div>
     </div>
+    <style>
+        /* @font-face {
+            font-family: 'hyzy';
+            src: url('./hanyizhongyuan.ttf');
+        } */
+        
+        .stage {
+            width: 100%;
+            height: 100%;
+            /* font-family: hyzy; */
+        }
+    </style>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
     <script>
-        
+
+        //加载帧图
+    var imgList = [
+        './ossweb-img/answer_bg.png',
+        './ossweb-img/badge_1.png',
+        './ossweb-img/badge_2.png',
+        './ossweb-img/badge_3.png',
+    ];
+
+    function loadImg() {
+        var that = this,
+            imgLoad = 0,
+            pro = 0,
+            $loadText = $(".load-text");
+        imgList.forEach(function (ev, index) {
+            var img = new Image();
+            img.src = ev;
+            img.style.position = 'absolute';
+            img.idx = index;
+            img.onload = function () {
+                imgList[this.idx].obj = this;
+                imgLoad++;
+                pro = parseInt((imgLoad / imgList.length) * 100);
+                $loadText.text(pro + '%');
+                if (imgLoad >= imgList.length) {
+                    Status = true;
+                    $(".part-1").removeClass('load-status');
+                    console.log('加载完成');
+                }
+            }
+        });
+    }
+    loadImg();
+
+    $(function(){
+        document.styleSheets 
+    })
+    document.fonts.ready.then(function() {
+        // 字体加载完成后的逻辑
+        alert('字体加载完成');
+    });
+
     </script>
+    <script src="./ossweb-img/index.js"></script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
     <script>
         //此段代码不能放到外链JXXXXS中，
