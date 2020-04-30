@@ -1053,7 +1053,7 @@ body {
 
 /* 排行榜 */
 .rank-container {
-    min-height: 1848px;
+    padding-bottom: 378px;
     background-image: url('./p1_i3_bg.jpg');
     overflow: hidden;
 }
@@ -1519,7 +1519,7 @@ body {
 
 /* 选手人气榜 */
 .p2-i2-container {
-    height: 1848px;
+    padding-bottom: 378px;
     background-image: url('./p2_i2_bg.jpg');
     overflow: hidden;
 }
@@ -1824,7 +1824,7 @@ body {
 
 /* 玩家预测榜 */
 .p3-i2-container {
-    height: 1283px;
+    padding-bottom: 378px;
     background-image: url('./p3_i2_bg.jpg');
     overflow: hidden;
 }

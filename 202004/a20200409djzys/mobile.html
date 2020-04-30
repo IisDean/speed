@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk">
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。" />
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "//nba2k2.qq.com/cp/a20200409djzys/index.html" + location.search;
+        }
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
+    <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
+    <style>
+    .wrap{background: url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/cover.jpg") no-repeat center top;background-size: 100% auto;height: 13.65rem;}
+    .login-box{padding-top: 1rem;padding-left: 3.3rem;padding-right: 0.3rem;margin: 0;display: block;height: 7.3rem;}
+    .login-box,.login-box a{color: #fff;text-shadow: 0 0 0.1rem #000;font-size: 0.22rem;line-height: 0.3rem;}
+    .act-time{color: #c91036;font-size: 0.24rem;text-align: center;}
+    .cover-btn{width: 4.89rem;margin: 0 auto;padding-top: 0.6rem;}
+    .cover-btn a{background-image: url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/cover_btn.png");background-repeat: no-repeat;background-size: 9.8rem auto;height: 1.17rem;margin-bottom: 0.3rem;color: #fff;font-size: 0.2rem;text-align: center;display: flex;display: -webkit-flex;align-content: center;flex-wrap: wrap;justify-content: center;}
+    .cbtn1{background-position: 0 0;}
+    .cbtn2{background-position: 0 -1.45rem;}
+    .cbtn3{background-position: 0 -2.93rem;}
+    .cover-btn a strong{font-size: 0.3rem;width: 100%;}
+    .cover-btn a:hover{background-position-x: -4.9rem;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="t-r login-box">
+            <!--登录前状态 Start-->
+            <p id="unlogin">你好，请<a href="javascript:;" id="btn_qqlogin">[登录]</a></p>
+            <!--登录前状态 End-->
+            <!--登录后状态 Start-->
+            <p id="logined" style="display: none;">欢迎，
+                <span id='login_qq_span'></span>，
+                <!--<span id="spanNotBind_649402">
+                    <a href="javascript:;" class="bindArea"> 绑定大区</a>
+                </span>
+                <span id="spanBind_649402" style="display:none">
+                    <span id="area_info_649402"></span>
+                    <span id="role_info_649402"></span>
+                    <a href="javascript:;" class="bindArea">更改绑定</a>
+                    <a href="javascript:amsHistoryList();" class="winer">[获奖记录]</a>
+                </span>-->
+                <a href="javascript:;" id="btn_logout">注销</a>
+            </p>
+            <!--登录后状态 End-->
+        </div>
+        <p class="act-time">活动日期：2020年5月7日-6月7日</p>
+        <div class="cover-btn">
+            <a href="mcontent0.html" class="cbtn1"><strong>「季后赛」激战来袭</strong><span>哪支球队将问鼎19-20赛季总冠军</span></a>
+            <a href="mcontent1.html" class="cbtn2"><strong>参赛选手介绍</strong><span>为选手点点赞参与抽奖</span></a>
+            <a href="mcontent2.html" class="cbtn3"><strong>预测领福利</strong><span>多重奖励等你来拿</span></a>
+        </div>
+    </div>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script>
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+                    $("#unlogin").hide();
+                    $("#logined").show();
+                }, function () {
+                    $("#unlogin").show();
+                    $("#logined").hide();
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    LoginManager.logout();
+                });
+            });
+        })
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200416djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "mobile", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>

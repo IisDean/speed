@@ -39,7 +39,7 @@ body {font:.22rem/1.75 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif
 .t-hide {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .bg {background-size:100% auto;background-position:top center;background-repeat:no-repeat;}
 .t {text-indent:-999em;overflow:hidden;}
-.icons {display:block;background-image:url("./icons.png");background-repeat:no-repeat;background-size:7.5rem auto;}
+.icons {display:block;background-image:url("//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/icons.png");background-repeat:no-repeat;background-size:7.5rem auto;}
 .f-l {float:left;}
 .f-r {float:right;}
 a {cursor:pointer;}
@@ -53,7 +53,7 @@ a {cursor:pointer;}
 .btn-hover:active {transform:scale(.95);-webkit-transform:scale(.95);}
 /* 头部标题栏 */
 .header-topbar {width:100%;height:.74rem;background-color:#1f1f1f;}
-.logo-icon1 {margin-top:.18rem;margin-left:.38rem;width:1.55rem;height:.44rem;background-image:url('./logo.png');}
+.logo-icon1 {margin-top:.18rem;margin-left:.38rem;width:1.55rem;height:.44rem;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/logo.png');}
 .login-wrap {margin-right:.6rem;}
 .login-wrap,.login-wrap a {display:inline-block;line-height:.74rem;font-size:.16rem;color:#f9dc80;}
 /* 顶部切换 */
@@ -65,15 +65,15 @@ a {cursor:pointer;}
 .top-tab-list .tab-title-text {margin-top:.16rem;font-weight:bold;font-size:.24rem;color:#fff;line-height: 1;}
 .top-tab-list .tab-msg-text {margin-top:.05rem;font-size:.16rem;color:#fff;}
 /* 内容 */
-.nr-container {width:100%;background-image:url('p1_bg.jpg');overflow:hidden;text-align: center;}
+.nr-container {width:100%;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/p1_bg.jpg');overflow:hidden;text-align: center;}
 .back-home-btn {margin:.24rem 0 0 .2rem;width:1.62rem;height:.47rem;background-position:0 -1.66rem;}
 /* 赛事列表 */
 .sai-container {margin-top:.26rem;width:100%;}
 .sai-container .swiper-container {margin:0 auto;width:6.76rem;height:1.8rem;}
 .sai-wrap {margin:0 .12rem;padding:0 .24rem;box-sizing:border-box;width:3.2rem;height:1.8rem;}
-.sai-wrap.sai-end {background-image:url('./bs_plank_end.png');}
-.sai-wrap.sai-live {background-image:url('./bs_plank_live.png');}
-.sai-wrap.sai-future {background-image:url('./bs_plank_future.png');}
+.sai-wrap.sai-end {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_end.png');}
+.sai-wrap.sai-live {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_live.png');}
+.sai-wrap.sai-future {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/bs_plank_future.png');}
 .sai-top div {line-height:.44rem !important;color:#fff;}
 .sai-team {margin-top:.2rem;}
 .team-wrap {width:.74rem;}
@@ -103,7 +103,7 @@ a {cursor:pointer;}
 .live-title-text {margin-left:.1rem;font-size:.2rem;color:#121212;}
 .live-content {margin-top:.2rem;}
 .live-content .live-up {margin:0 auto;box-sizing:border-box;width:6.65rem;height:3.78rem;border:.02rem solid #dedede;}
-.live-content .live-down {box-sizing:border-box;margin:.15rem auto 0;padding:0 .12rem;width:6.65rem;height:5.3rem;border:.01rem solid #dedede;background-image:url('p1_i0_bg.png');}
+.live-content .live-down {box-sizing:border-box;margin:.15rem auto 0;padding:0 .12rem;width:6.65rem;height:5.3rem;border:.01rem solid #dedede;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/p1_i0_bg.png');}
 .live-title-text2 {margin-top:.12rem;padding:0 .27rem;box-sizing:border-box;width:6.38rem;height:.78rem;font-size:0;overflow:hidden;border-bottom:1px solid #f1f1f1;}
 .live-icon2 {margin-top:.27rem;width:.25rem;height:.24rem;background-position:-2.78rem -1.66rem;}
 .live-title-text2 p {margin-left:.1rem;max-width:5.7rem;line-height:.78rem;font-weight:bold;font-size:.27rem;color:#121212;}
@@ -131,13 +131,13 @@ a {cursor:pointer;}
 .dy-list .dz-btn {margin:.08rem auto 0;}
 /* 比赛对阵图 */
 .bs-container {margin-top:.4rem;padding-top:.3rem;background-color:#fff;}
-.title-icon {display:block;margin:0 auto;background-image:url('../titles.png');background-size:5.24rem auto;}
+.title-icon {display:block;margin:0 auto;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/titles.png');background-size:5.24rem auto;}
 .title-icon.ti-p1-1 {margin:0 auto;width:3.24rem;height:.34rem;background-position:0 0;}
 .live-bs-list {margin:.1rem auto 0;width:6.65rem;}
 .bs-list {margin:0 auto;width:6.65rem;height:7.75rem;}
 .bs-item {width:1.74rem;}
-.db-bs-list {background-image:url('bs_db_bg.jpg');}
-.xb-bs-list {background-image:url('bs_xb_bg.jpg');}
+.db-bs-list {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/bs_db_bg.jpg');}
+.xb-bs-list {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/bs_xb_bg.jpg');}
 .bs-item .team-wrap {position: relative;z-index: 1;margin-bottom:.03rem;width:1.74rem;height:.6rem;background-position:-4.41rem -1.66rem;font-size:.2rem;color:#121212;}
 .bs-item .team-wrap div {line-height:.6rem !important;}
 .bs-item .team-wrap.win {background-position:-4.41rem -2.31rem;color:#fff;}
@@ -203,8 +203,8 @@ a {cursor:pointer;}
 .title-msg-text .num-icon {display:inline-block;margin-right:.08rem;width:.18rem;height:.18rem;line-height:.18rem;border-radius:100px;background-color:#d31d3d;font-size:.2rem;color:#fff;}
 .look-yc-btn {margin:.12rem auto 0;width:2.19rem;height:.53rem;background-position:-2.17rem -2.3rem;line-height:.53rem;font-size:.25rem;color:#fff;}
 .yc-list {margin:.2rem auto 0;}
-.yc-item {margin:0 auto;width:5.27rem;height:2.92rem;background-image:url('yc_bg_future.png');}
-.yc-item.yc-end {background-image:url('yc_bg_end.png');}
+.yc-item {margin:0 auto;width:5.27rem;height:2.92rem;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/yc_bg_future.png');}
+.yc-item.yc-end {background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/yc_bg_end.png');}
 .yc-top-title {top:0;left:0;width:100%;line-height:.36rem !important;font-size:.24rem;color:#f1f1f1;}
 .yc-plank {width:1.9rem;}
 .team-yc-icon {margin:.12rem auto 0;width:1.3rem;height:1.3rem;border:.02rem solid #f1f1f1;border-radius:100px;background-color:#fff;}
@@ -220,7 +220,7 @@ a {cursor:pointer;}
 .prize-tips-text {margin-top:.38rem;line-height:1;font-size:.24rem;color:#666;}
 .prize-tips-text span {color:#121212;}
 .prize-list {margin:.24rem auto 0;width:6.85rem;}
-.prize-item {margin-bottom:.1rem;width:6.85rem;height:2.66rem;background-image:url('prize_plank_bg.png');}
+.prize-item {margin-bottom:.1rem;width:6.85rem;height:2.66rem;background-image:url('//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/prize_plank_bg.png');}
 .prize-title-wrap {margin:0 .3rem;width:.26rem;}
 .prize-title-wrap p {line-height:.34rem !important;text-align:center;font-size:.24rem;color:#fff;}
 .prize-wrap {margin-left:.74rem;width:2.1rem;height:2.2rem;background-color:#f1f1f1;}
@@ -297,7 +297,7 @@ p.t-des{text-align:left;line-height:0.3rem;padding: 0 .1rem 0.1rem;}
 .desc-list li p{width: 3.2rem;line-height: 0.24rem;}
 .player-opt{position: absolute;top: 0.2rem;right: 0;text-align: center;z-index: 2;}
 .player-opt a{display: block;border: 1px solid #999999;color: #121212;}
-.player-opt span{padding-left: 0.25rem;background: url(icon-like.png) no-repeat left center;background-size: 0.22rem auto;display: inline-block;line-height: 0.32rem;}
+.player-opt span{padding-left: 0.25rem;background: url(//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/icon-like.png) no-repeat left center;background-size: 0.22rem auto;display: inline-block;line-height: 0.32rem;}
 /* lottery */
 .lott-box{background: #fff;padding: 0.2rem 0 0.25rem;}
 .lott-info{font-size: 0.2rem;}

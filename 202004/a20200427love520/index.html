@@ -41,8 +41,8 @@
         <audio id="musicBgm" loop autoplay>
             <source src="./ossweb-img/music.mp3" type="audio/mpeg" />
         </audio>
-        <!-- 首屏 -->
-        <div class="p-r part part-1 load-status" style="display: none;">
+        <!-- p1 首屏 -->
+        <div class="p-a part part-1 load-status">
             <div class="p-r wrap">
                 <!-- 进度条 -->
                 <div class="p-a bg progress-container">
@@ -52,9 +52,9 @@
                     <div class="p-a progress-text t-c">0%</div>
                 </div>
                 <!-- 说明 -->
-                <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a>
+                <a href="javascript: TGDialogS('rulePop');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a>
                 <!-- 音乐 -->
-                <a class="p-a icons music-btn t">活动说明</a>
+                <a class="p-a icons music-btn t">音乐</a>
                 <div class="full-img logo-icon">
                     <img src="./ossweb-img/logo.png" alt="logo">
                 </div>
@@ -62,21 +62,61 @@
                     <img src="./ossweb-img/slogan.png" alt="标题">
                 </div>
                 <!-- 按钮 -->
-                <i class="icons tips-btn-icon t">进入恋爱摩天楼开始挑战</i>
-                <a href="javascript: alert('敬请期待！');" 
+                <i class="p-a icons tips-btn-icon t">进入恋爱摩天楼开始挑战</i>
+                <a href="javascript: startAnswer();" 
                     onclick="PTTSendClick('btn','start-test-btn','开始测试')" 
-                    class="icons start-test-btn btn-hover t">开始测试</a>
-                <a href="javascript: alert('敬请期待！');" 
+                    class="p-a icons start-test-btn btn-hover t">开始测试</a>
+                <a href="javascript: TGDialogS('orderSuccess');" 
                     onclick="PTTSendClick('btn','order-btn','立即预约')" 
-                    class="icons order-btn btn-hover t">立即预约</a>
+                    class="p-a icons order-btn btn-hover t">立即预约</a>
             </div>
         </div>
-        <!-- 答题 -->
-        <div class="p-r part part-2" style="disp lay: none;">
+        <!-- p2选择徽章 -->
+        <div class="p-a part part-2" style="display: none;">
             <div class="p-r wrap">
                 <div class="full-img logo-icon">
                     <img data-src="./ossweb-img/logo.png" alt="logo">
                 </div>
+                <!-- 音乐 -->
+                <a class="p-a icons music-btn t">音乐</a>
+                <div class="p-r select-tips-wrap t-c">
+                    <p>走近摩天楼</p>
+                    <p>眼前出现了三个不同的入口</p>
+                    <p>门上的徽章看起来十分神秘</p>
+                </div>
+                <ul class="select-hz-list flex flex-center">
+                    <li class="p-r select-hz-item">
+                        <img class="select-hz-default" data-src="./ossweb-img/select_hz_1.png" alt="徽章">
+                        <img class="select-hz-active" data-src="./ossweb-img/select_hz_1_active.png" alt="徽章">
+                        <i class="p-a icons gou-icon"></i>
+                    </li>
+                    <li class="p-r select-hz-item">
+                        <img class="select-hz-default" data-src="./ossweb-img/select_hz_2.png" alt="徽章">
+                        <img class="select-hz-active" data-src="./ossweb-img/select_hz_2_active.png" alt="徽章">
+                        <i class="p-a icons gou-icon"></i>
+                    </li>
+                    <li class="p-r select-hz-item">
+                        <img class="select-hz-default" data-src="./ossweb-img/select_hz_3.png" alt="徽章">
+                        <img class="select-hz-active" data-src="./ossweb-img/select_hz_3_active.png" alt="徽章">
+                        <i class="p-a icons gou-icon"></i>
+                    </li>
+                </ul>
+                <div class="select-tips-wrap2 flex flex-center flex-middle">
+                    <i class="icons tips-icon-1"></i>
+                    <p>请选择你要进入的大门</p>
+                    <i class="icons tips-icon-2"></i>
+                </div>
+                <a class="icons select-ok-btn btn-hover t">我选好了</a>
+            </div>
+        </div>
+        <!-- p3答题 -->
+        <div class="p-a part part-3" style="display: none;">
+            <div class="p-r wrap">
+                <div class="full-img logo-icon">
+                    <img data-src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <!-- 音乐 -->
+                <a class="p-a icons music-btn t">音乐</a>
                 <!-- 答题进度 -->
                 <div class="p-a answer-progress">
                     <p class="t-l J-timu-num">1</p>
@@ -86,6 +126,7 @@
                 <ul class="p-r answer-list">
                     <!-- 第1题 -->
                     <li class="bg answer-item on" data-id="1">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_1.png" alt="题目名称">
                         </div>
@@ -118,6 +159,7 @@
                     </li>
                     <!-- 第2题 -->
                     <li class="bg answer-item off" data-id="2">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_2.png" alt="题目名称">
                         </div>
@@ -138,6 +180,7 @@
                     </li>
                     <!-- 第3题 -->
                     <li class="bg answer-item" data-id="3">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_3.png" alt="题目名称">
                         </div>
@@ -158,6 +201,7 @@
                     </li>
                     <!-- 第4题 -->
                     <li class="bg answer-item" data-id="4">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_4.png" alt="题目名称">
                         </div>
@@ -178,6 +222,7 @@
                     </li>
                     <!-- 第5题 -->
                     <li class="bg answer-item" data-id="5">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_5.png" alt="题目名称">
                         </div>
@@ -198,6 +243,7 @@
                     </li>
                     <!-- 第6题 -->
                     <li class="bg answer-item" data-id="6">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_6.png" alt="题目名称">
                         </div>
@@ -218,6 +264,7 @@
                     </li>
                     <!-- 第7题 -->
                     <li class="bg answer-item" data-id="7">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_7.png" alt="题目名称">
                         </div>
@@ -238,6 +285,7 @@
                     </li>
                     <!-- 第8题 -->
                     <li class="bg answer-item" data-id="8">
+                        <i class="p-a bg answer-hz-icon"></i>
                         <div class="full-img answer-title-icon">
                             <img data-src="./ossweb-img/timu_8.png" alt="题目名称">
                         </div>
@@ -271,16 +319,158 @@
                     <a href="javascript: cutNextTimu();" class="icons btn-hover next-btn t">下一题</a>
                     <a href="javascript: cutNextTimu();" class="icons btn-hover look-result-btn t" style="display: none;">查看结果</a>
                 </div>
-                <!-- 音乐 -->
-                <a class="p-a icons music-btn t">活动说明</a>
             </div>
         </div>
+        <!-- p4结果 -->
+        <div class="p-a part part-4" style="display: none;">
+            <div class="p-r wrap">
+                <div class="p-a full-img logo-icon2">
+                    <img data-src="./ossweb-img/logo2.png" alt="logo">
+                </div>
+                <div class="p-r full-img person-wrap">
+                    <img class="J-person-img" data-src="./ossweb-img/person_1_1.png" alt="人物">
+                    <!-- 姓名&层数 -->
+                    <div class="p-a circle-wrap t-c">
+                        <p class="name-text J-name-text t-hide">名字六个字符</p>
+                        <p>的恋爱套路有</p>
+                        <p><span class="J-plies-text">999</span>层<em>/1000</em></p>
+                    </div>
+                    <!-- 角色话语 -->
+                    <div class="p-a full-img word-wrap J-word-wrap">
+                        <img data-src="./ossweb-img/h_1_down.png" alt="话语">
+                    </div>
+                    <!-- 徽章 -->
+                    <div class="p-a full-img badge-wrap J-badge-wrap">
+                        <img data-src="./ossweb-img/badge_result_1.png" alt="徽章">
+                    </div>
+                    <!-- 标签 -->
+                    <div class="flex label-list J-label-list">
+                        <div class="bg label-item t-c">
+                            <span>恋爱达人</span>
+                        </div>
+                        <div class="bg label-item t-c">
+                            <span>无招胜有招</span>
+                        </div>
+                    </div>
+                    <!-- 描述 -->
+                    <div class="result-msg-wrap J-msg-wrap">
+                        <p>提到套路，通常你都是被套路的那个。陌生人面前比较高冷的你，反倒会引起很多人的关注，但是大多数情况，都是别人追你逃的状态，想要追到你可不是件容易的事。所以，奉劝那些想要追你的人多点耐心，才有机会看到你真正可爱的一面，而你也要记得多给别人一些机会噢</p>
+                    </div>
+                </div>
+                <!-- 按钮 -->
+                <div class="result-btn-container flex flex-center">
+                    <a onclick="PTTSendClick('btn','share-btn','分享好友')" 
+                        class="icons share-btn btn-hover J-create-poster t">分享好友</a>
+                    <a href="./lottery.html" 
+                        onclick="PTTSendClick('btn','more-fl-btn','更多福利')" 
+                        class="icons more-fl-btn btn-hover t">更多福利</a>
+                </div>
+            </div>
+        </div>
+        <!-- 海报 -->
+        <div class="p-a pop" id="posterPop" style="left: 100rem;display: block;">
+            <div class="p-r full-img pop-con pop-con-poster">
+                <div class="p-a bg poster-container" id="poster">
+                    <div class="p-r full-img person-wrap">
+                        <img class="J-person-img" data-src="./ossweb-img/person_1_1.png" alt="人物">
+                        <!-- 姓名&层数 -->
+                        <div class="p-a circle-wrap t-c">
+                            <p class="name-text J-name-text t-hide">名字六个字符</p>
+                            <p>的恋爱套路有</p>
+                            <p><span class="J-plies-text">999</span>层<em>/1000</em></p>
+                        </div>
+                        <!-- 角色话语 -->
+                        <div class="p-a full-img word-wrap J-word-wrap">
+                            <img data-src="./ossweb-img/h_1_down.png" alt="话语">
+                        </div>
+                        <!-- 徽章 -->
+                        <div class="p-a full-img badge-wrap J-badge-wrap">
+                            <img data-src="./ossweb-img/badge_result_1.png" alt="徽章">
+                        </div>
+                        <!-- 标签 -->
+                        <div class="flex label-list J-label-list">
+                            <div class="bg label-item t-c">
+                                <span>恋爱达人</span>
+                            </div>
+                            <div class="bg label-item t-c">
+                                <span>无招胜有招</span>
+                            </div>
+                        </div>
+                        <!-- 描述 -->
+                        <div class="result-msg-wrap J-msg-wrap">
+                            <p>提到套路，通常你都是被套路的那个。陌生人面前比较高冷的你，反倒会引起很多人的关注，但是大多数情况，都是别人追你逃的状态，想要追到你可不是件容易的事。所以，奉劝那些想要追你的人多点耐心，才有机会看到你真正可爱的一面，而你也要记得多给别人一些机会噢</p>
+                        </div>
+                        <!-- 二维码 -->
+                        <div class="p-a full-img qrcode-wrap" id="qrcode">
+                            <i class="p-a bg code-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-tips-text J-psTips-1 t-c" style="display: none;">快长按图片保存至本地分享给好友吧~</div>
+                <div class="p-a poster-tips-text pstips-wrap J-psTips-2 t-c">正在全速生成中...</div>
+            </div>
+            <a href="javascript: closeDialog()" style="bottom: -.86rem;" class="p-a icons close-btn t">关闭</a>
+        </div>
+        <!-- 您已成功预约 -->
+        <div class="pop pop-2" id="orderSuccess">
+            <div class="p-r pop-con">
+                <i class="p-a bg pop-inset"></i>
+                <div class="bg pop-top"></div>
+                <div class="bg pop-center">
+                    <i class="bg pop-title-icon"></i>
+                    <h1 class="pop-title1-text t-c" style="margin-top: .1rem;">您已成功预约</h1>
+                    <p class="pop-title2-text t-c" style="margin-top: .16rem;">《光与夜之恋》手游！</p>
+                    <p class="sx-tips-text t-c">我们将在游戏上线第一时间通知您~</p>
+                </div>
+                <div class="bg pop-bottom"></div>
+            </div>
+            <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+        </div>
+        <!-- 活动说明 -->
+        <div class="pop pop-2" id="rulePop">
+            <div class="p-r pop-con">
+                <i class="p-a bg pop-inset"></i>
+                <div class="bg pop-top"></div>
+                <div class="bg pop-center">
+                    <p class="pop-msg-text" style="margin-top: .24rem;">
+                        <em class="pop-num-text t-c">1</em>
+                        成功预约游戏或完成每日签到即可获得<span class="cs-text">抽奖机会</span>，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品；
+                    </p>
+                    <p class="pop-msg-text" style="margin-top: .24rem;margin-bottom: .24rem;">
+                        <em class="pop-num-text t-c">2</em>
+                        成功预约游戏后，我们将会把预约<span class="cs-text">礼包卡券</span>发送到您的微信账号，在游戏不删档上线后可兑换使用。
+                    </p>
+                </div>
+                <div class="bg pop-bottom"></div>
+            </div>
+            <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+        </div>
+
     </div>
-    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script type="text/javascript" src="./ossweb-img/dom2img.1.0.min.js"></script>
+    <script type="text/javascript" src="./ossweb-img/jquery.qrcode.min.js"></script>
     <script>
-        
+        // TGDialogS('submitMsg');
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
         $(function(){
             //播放音乐
             var music = document.getElementById('musicBgm');
@@ -315,6 +505,70 @@
                 './ossweb-img/badge_1.png',
                 './ossweb-img/badge_2.png',
                 './ossweb-img/badge_3.png',
+                './ossweb-img/badge_result_1.png',
+                './ossweb-img/badge_result_2.png',
+                './ossweb-img/badge_result_3.png',
+                './ossweb-img/clip.png',
+                './ossweb-img/cloud_1.png',
+                './ossweb-img/h_1_down.png',
+                './ossweb-img/h_1_up.png',
+                './ossweb-img/h_2_down.png',
+                './ossweb-img/h_2_up.png',
+                './ossweb-img/h_3_down.png',
+                './ossweb-img/h_3_up.png',
+                './ossweb-img/label_icon1.png',
+                './ossweb-img/label_icon2.png',
+                './ossweb-img/logo.png',
+                './ossweb-img/logo2.png',
+                './ossweb-img/lottery.png',
+                './ossweb-img/lottery_btn.png',
+                './ossweb-img/p1_bg.gif',
+                './ossweb-img/p2_bg.jpg',
+                './ossweb-img/p3_bg.jpg',
+                './ossweb-img/p4_bg.jpg',
+                './ossweb-img/p5_bg.jpg',
+                './ossweb-img/person_1_1.png',
+                './ossweb-img/person_1_2.png',
+                './ossweb-img/person_1_3.png',
+                './ossweb-img/person_1_4.png',
+                './ossweb-img/person_2_1.png',
+                './ossweb-img/person_2_2.png',
+                './ossweb-img/person_2_3.png',
+                './ossweb-img/person_2_4.png',
+                './ossweb-img/person_3_1.png',
+                './ossweb-img/person_3_2.png',
+                './ossweb-img/person_3_3.png',
+                './ossweb-img/person_3_4.png',
+                './ossweb-img/pop_bottom.png',
+                './ossweb-img/pop_center.png',
+                './ossweb-img/pop_inset.png',
+                './ossweb-img/pop_title_inset.png',
+                './ossweb-img/pop_top.png',
+                './ossweb-img/poster_bg.jpg',
+                './ossweb-img/qq_icons.png',
+                './ossweb-img/select_hz_1.png',
+                './ossweb-img/select_hz_1_active.png',
+                './ossweb-img/select_hz_2.png',
+                './ossweb-img/select_hz_2_active.png',
+                './ossweb-img/select_hz_3.png',
+                './ossweb-img/select_hz_3_active.png',
+                './ossweb-img/slogan.png',
+                './ossweb-img/timu_1.png',
+                './ossweb-img/timu_2.png',
+                './ossweb-img/timu_3.png',
+                './ossweb-img/timu_4.png',
+                './ossweb-img/timu_5.png',
+                './ossweb-img/timu_6.png',
+                './ossweb-img/timu_7.png',
+                './ossweb-img/timu_8.png',
+                './ossweb-img/timu_select_1.png',
+                './ossweb-img/timu_select_2.png',
+                './ossweb-img/timu_select_3.png',
+                './ossweb-img/timu_select_4.png',
+                './ossweb-img/wx_icons.png',
+                './ossweb-img/code_icon1.png',
+                './ossweb-img/code_icon2.png',
+                './ossweb-img/code_icon3.png',
             ];
 
             function loadImg() {
@@ -344,6 +598,11 @@
                                 $progress.css('width', '100%');
                                 //图片显示
                                 showImg();
+                                setTimeout(function(){
+                                    $(".part-1").removeClass('load-status')
+                                        .css('background-image', 'url(./ossweb-img/p1_bg.gif)');
+                                    nextPageRead(1);
+                                }, 500);
                             });
                         }
                     }
@@ -352,11 +611,11 @@
             loadImg();
 
             //图片显示
-            var $imgList = $(".full-img");
+            var $imgList = $("img");
             function showImg(){
                 // console.log('图片加载'+$imgList.length);
                 $imgList.each(function(idx, ev){
-                    var $ev = $(ev).find('img'),
+                    var $ev = $(ev),
                         src = $ev.attr('data-src');
                         // console.log(src);
                     if(src != null){
@@ -364,7 +623,17 @@
                     }
                 });
             }
-        })
+        });
+        
+    
+    //下一页准备
+    function nextPageRead(idx){
+        $(".part-"+idx).css('top', '0%');
+        if(idx<5){
+            var i = idx+1;
+            $(".part-"+i).css('top', '100%').show();
+        }
+    }
 
     </script>
     <script src="./ossweb-img/index.js"></script>

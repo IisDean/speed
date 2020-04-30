@@ -83,7 +83,7 @@
         </div>
         <div class="bg nr-container">
             <!-- 返回首页 -->
-            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t"
+            <a href="mobile.html" class="icons back-home-btn btn-hover t"
                 onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <!-- 赛事列表 -->
             <div class="p-r sai-container"></div>
@@ -857,7 +857,7 @@
 				<div class="dy-wrap flex">
 					<p class="dy-name-text">队员：</p>
 					<ul class="dy-list flex">
-					{for p in vHomePlayers}
+					{for p in vAwayPlayers}
 					{if p.iPlayerId != iAwayLeaderId}
 					<li class="">
 						<div class="full-img dy-head">
@@ -1202,7 +1202,7 @@
         //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性
             siteType: "a20200416djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
-            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageType: "mcontent0", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
             pageName: "移动端首页", //必填项:页面中文名
             osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
             ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置

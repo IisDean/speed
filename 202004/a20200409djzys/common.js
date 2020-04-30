@@ -65,6 +65,10 @@
                 if (parseInt(res.iRet, 10)) {
                     return alert(res.sMsg);
                 }
+                var box = $('[data-liked="' + id + '"]')
+                if (box.length) {
+                  box.text(parseInt(box.text(), 10) + 1);
+                }
                 return alert('²Ù×÷³É¹¦');
             },
             "fFlowSubmitFailed": function (res) {

@@ -83,7 +83,7 @@
         </div>
         <div class="bg nr-container page1">
             <!-- 返回首页 -->
-            <a href="//nba2k2.qq.com/" class="icons back-home-btn btn-hover t"
+            <a href="mobile.html" class="icons back-home-btn btn-hover t"
                 onclick="PTTSendClick('btn','return','返回首页')">返回首页</a>
             <h2 class="title-icon ti-p2-1 t">为选手点赞 每日抽奖</h2>
             <p class="t-des"><span class="t-c">1</span>为你喜欢的参赛选手们<em>「点赞」</em>，每天可为不同选手点赞，每天最多点赞10次。</p>
@@ -261,7 +261,7 @@
 					</ul>
 					<div class="player-opt">
 						<a href="javascript:like(${p.iPlayerId});">为他点赞</a>
-						<span>${p.iLiked}</span>
+						<span data-liked="${p.iPlayerId}">${p.iLiked}</span>
 					</div>
 				</div>
 			</div>
@@ -653,7 +653,7 @@
         //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性
             siteType: "a20200416djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
-            pageType: "content1", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageType: "mcontent1", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
             pageName: "参赛选手介绍", //必填项:页面中文名
             osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
             ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置

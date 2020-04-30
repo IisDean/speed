@@ -802,7 +802,7 @@
                             <div class="dy-wrap c">
                                 <p class="dy-name-text f-l">队员：</p>
                                 <ul class="dy-list f-l c">
-                                    {for p in vHomePlayers}
+                                    {for p in vAwayPlayers}
                                     {if p.iPlayerId != iAwayLeaderId}
                                     <li class="f-l">
                                         <div class="dy-head" style="background-image: url(${p.sAvatar});"></div>
@@ -848,7 +848,7 @@
         {/for}
     </script>
     <script type="text/html" id="PlayersBoardTpl">
-        <span class="p-a icons table-inset t-c">${gender=="1"?"男生":"女生"}</span>
+        <span class="p-a icons table-inset t-c">${gender=="1"?"男选手":"女选手"}</span>
         <table class="table-wrap table-1 t-c">
             <thead>
                 <tr>
@@ -865,7 +865,7 @@
             </thead>
             <tbody>
                 {for p in players}
-                <tr>
+                <tr data-id="${p.iPlayerId}">
                     <td class="p-r td-1">
                         <i class="p-a icons {if parseInt(p_index, 10)+(page*size-size)+1 <= 3} rank-icon ri-${parseInt(p_index, 10)+(page*size-size)+1}{/if}"></i>
                         <p class="p-r">${parseInt(p_index, 10)+(page*size-size)+1}</p>
@@ -959,8 +959,8 @@
                 //渲染正在比赛
                 if (nowContest) {
                     if (nowContestPlayers.length) {
-                        nowContest.vHomePlayers = nowContestPlayers.filter(function (v) { return nowContest.iHomeTeamId == v.iTeamId; });
-                        nowContest.vAwayPlayers = nowContestPlayers.filter(function (v) { return nowContest.iAwayTeamId == v.iTeamId; });
+                        nowContest.vHomePlayers = nowContestPlayers.filter(function (v) {return nowContest.iHomeTeamId == v.iTeamId; });
+                        nowContest.vAwayPlayers = nowContestPlayers.filter(function (v) {return nowContest.iAwayTeamId == v.iTeamId; });
                     } else {
                         nowContest.vHomePlayers = nowContest.vAwayPlayers = [];
                     }
