@@ -1,0 +1,420 @@
+/*reset*/
+html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    /* -webkit-user-select:none;*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+ul,li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+input[type="text"],input[type="password"],select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+a:focus,a:active,a {
+    outline: none;
+}
+input,textarea,select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    text-decoration: none;
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,button,input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+em,i,b {
+    font-style: normal;
+}
+fieldset,img {
+    border: 0;
+    display: block;
+}
+img {
+    width: 100%;
+}
+.c:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.hh {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+.p-r {
+    position: relative;
+}
+.p-a {
+    position: absolute;
+}
+html {
+    font-size: 100px;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #1f272d;
+    font-size: 0.24rem;
+    color: #a8b4cc;
+    position: relative;
+    overflow-x: hidden;
+}
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+.flex-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flex-middle {
+    align-items: center;
+}
+.flex-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+/*foot*/
+#afooter {
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #9e9e9e;
+    background: #0e0e0e;
+    padding: 0.3rem 0;
+}
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 0.06rem;
+}
+#gfooter {
+    background: #0e0e0e;
+}
+#afooter p {
+    line-height: .3rem;
+    font-size: .16rem;
+}
+.stage {
+    width: 100%;
+    overflow: hidden;
+}
+.t-c {
+    text-align: center;
+}
+.t-r {
+    text-align: right;
+}
+.t-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bg {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+.icons {
+    display: block;
+    background-image: url("//game.gtimg.cn/images/story/cp/a20200512hdhj/icons.png");
+    background-repeat: no-repeat;
+    background-size: 7.5rem auto;
+}
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+a {
+    cursor: pointer;
+}
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.full-img img,
+.full-img {
+    display: block;
+}
+.full-img img {
+    width: 100%;
+}
+.b {
+    font-weight: bold;
+}
+.t-h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+.wrap {
+    margin-bottom: -.01rem;
+    width: 100%;
+    overflow: hidden;
+}
+/* йвфа */
+.wrap-0 {
+    height: 8.72rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p0_bg.jpg');
+}
+.logo-icon {
+    top: .16rem;
+    left: .28rem;
+    width: 1.6rem;
+}
+/* фа1  */
+.wrap-1 {
+    height: 7.35rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p1_bg.jpg');
+}
+.help-code-wrap {
+    margin-top: 1.52rem;
+}
+.wrap-1 .code-wrap{
+    display: block;
+    margin-top: .06rem;
+    width: 3.75rem;
+    height: .52rem;
+    line-height: .52rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p1_code_bg.png');
+    font-size: .24rem;
+    color: #fff;
+}
+.wrap-1 .copy-btn {
+    margin-left: -.08rem;
+    width: 2.13rem;
+    height: .6rem;
+    background-position: 0 -3.35rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.wrap-1 .rule-list {
+    margin: .17rem auto 0;
+    width: 5.78rem;
+}
+.flower-label {
+    width: .24rem;
+    height: .25rem;
+    background-position: -4.47rem -.71rem;
+}
+.wrap-1 .flower-label {
+    margin-top: .08rem;
+    margin-right: .06rem;
+}
+.wrap-1 .rule-item p {
+    text-align: justify;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #000;
+}
+.exchange-btn {
+    margin: .22rem auto 0;
+    width: 2.76rem;
+    height: .77rem;
+    background-position: 0 -.07rem;
+}
+/* фа2  */
+.wrap-2 {
+    height: 11.07rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p2_bg.jpg');
+}
+.cdkey-container {
+    margin: 1.24rem .22rem 0 .2rem;
+}
+.cdkey-left {
+    width: 3.3rem;
+    height: 3.81rem;
+    overflow: hidden;
+}
+.cdk-title {
+    margin: .56rem auto 0;
+    width: 1.5rem;
+    height: .26rem;
+    background-position: -2.82rem -.7rem;
+}
+.cdk-wrap {
+    margin: .17rem 0 0 .06rem;
+    width: 3.24rem;
+    height: .52rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p2_code_bg.png');
+}
+.cdk-wrap a,
+.cdk-wrap button {
+    display: block;
+    line-height: .52rem;
+    font-size: .24rem;
+    color: #fff;
+}
+.cdk-wrap .copy-btn2 {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.wrap-2 .rule-list {
+    margin: .15rem 0 0 .02rem;
+}
+.wrap-2 .flower-label {
+    margin-top: .01rem;
+    margin-right: .02rem;
+}
+.wrap-2 .rule-item p {
+    text-align: justify;
+    line-height: .28rem;
+    font-size: .18rem;
+    color: #252c46;
+}
+.person-1 {
+    top: 0;
+    right: 0;
+    width: 2.83rem;
+}
+.db-title {
+    margin: .13rem auto 0;
+    width: 2.75rem;
+    height: .64rem;
+    background-position: -2.85rem 0;
+}
+.dj-list {
+    margin: .16rem auto 0;
+}
+.dj-item {
+    margin: 0 .32rem;
+    width: 1.93rem;
+}
+.get-prize-btn {
+    margin: .36rem auto 0;
+    width: 2.76rem;
+    height: .77rem;
+    background-position: 0 -.89rem;
+}
+/* фа3  */
+.wrap-3 {
+    height: 12.41rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p3_bg.jpg');
+}
+.goods-list {
+    margin: .28rem .24rem -.32rem .21rem;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.goods-list .goods-item {
+    margin-bottom: .3rem;
+}
+.goods-img {
+    width: 2.91rem;
+}
+.price-label {
+    top: .23rem;
+    left: -.2rem;
+    width: .96rem;
+    height: .96rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p3_label.png');
+}
+.look-btn {
+    margin: .24rem auto 0;
+    width: 2.29rem;
+    height: .65rem;
+    background-position: 0 -1.71rem;
+}
+.wrap-3 .rule-list {
+    margin: .24rem .26rem 0;
+}
+.wrap-3 .flower-label {
+    margin-top: .08rem;
+    margin-right: .06rem;
+}
+.wrap-3 .rule-item p {
+    text-align: justify;
+    line-height: .40rem;
+    font-size: .24rem;
+    color: #000;
+}
+/* фа4  */
+.wrap-4 {
+    height: 8.5rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/p4_bg.jpg');
+}
+.tj-img {
+    margin: 1.4rem auto 0;
+    width: 5.87rem;
+}
+.canyu-btn {
+    margin: .3rem auto 0;
+    width: 2.76rem;
+    height: .77rem;
+    background-position: 0 -2.53rem;
+}
+.wrap-4 .rule-list {
+    margin: .4rem .28rem 0;
+}
+.wrap-4 .flower-label {
+    margin-top: .08rem;
+    margin-right: .06rem;
+}
+.wrap-4 .rule-item p {
+    text-align: justify;
+    line-height: .40rem;
+    font-size: .24rem;
+    color: #000;
+}

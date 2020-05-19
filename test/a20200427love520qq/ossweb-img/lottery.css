@@ -1,0 +1,126 @@
+.stage {
+    font-family: 'hyzy'
+}
+.lottery-wrap {
+    height: 11rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/p5_bg.jpg');
+    background-position: center center;
+}
+.part-lottery {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/p5_bg.jpg');
+}
+.part-lottery.scroll {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.part-lottery.scroll .lottery-wrap {
+    padding: 1rem 0;
+    box-sizing: content-box;
+}
+.logo-icon {
+    margin-left: .33rem;
+    width: 1.68rem;
+    height: .62rem;
+}
+.back-btn {
+    top: .11rem;
+    right: .3rem;
+    width: 1.88rem;
+    height: .57rem;
+    background-position: -3.25rem -2.16rem;
+}
+.lottery-tips-text {
+    margin-top: .06rem;
+    line-height: .3rem;
+    font-size: .24rem;
+    color: #f0f0f0;
+}
+.lottery-num-wrap {
+    margin: 0.08rem auto 0;
+    width: 3.54rem;
+    height: .39rem;
+    background-position: -2.8rem -2.78rem;
+}
+.lottery-num-wrap p {
+    line-height: .39rem;
+    font-size: .24rem;
+    color: #7f7bd4;
+}
+.lottery-num-wrap p span {
+    color: #7872f2;
+}
+.btn-lottery-container {
+    z-index: 99;
+    margin: 0rem .32rem 0;
+}
+.edit-msg-btn {
+    margin-top: .08rem;
+    width: 1.87rem;
+    height: .38rem;
+    background-position: -2.8rem -3.29rem;
+}
+.lottery-rule-btn {
+    width: 1.37rem;
+    height: .45rem;
+    background-position: -4.84rem -3.22rem;
+}
+.panel {
+    margin: -0.4rem auto 0;
+    width: 6.95rem;
+    height: 6.95rem;
+}
+.panel .panel-face {
+    background-image: url(//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery.png);
+    background-size: cover;
+    width: 6.95rem;
+    height: 6.95rem;
+}
+.panel .panel-btn {
+    position: absolute;
+    z-index: 999;
+    top: 2.3rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1.86rem;
+    height: 2.06rem;
+    background-image: url(//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery_btn.png);
+    background-size: cover;
+}
+.panel .panel-btn:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+.btn-lty2-container {
+    z-index: 99;
+    margin: 0 .33rem 0;
+}
+.lottery-share-btn,
+.lottery-qd-btn,
+.lottery-order-btn {
+    width: 3.28rem;
+    height: .89rem;
+}
+.lottery-share-btn {
+    background-position: 0 -8.99rem;
+}
+.lottery-order-btn {
+    background-position: 0 -8.05rem;
+}
+.lottery-qd-btn {
+    background-position: 0 -7.11rem;
+}
+.down-btn-list {
+    margin: 0 auto 0;
+    width: 7.4rem;
+    height: 1.65rem;
+}
+.down-btn-list.wx-icons {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/wx_icons.png');
+}
+.down-btn-list.qq-icons {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/qq_icons.png');
+}
+.down-btn-item {
+    height: 100%;
+}

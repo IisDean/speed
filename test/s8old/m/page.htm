@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="gbk" />
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no" />
+	<meta content="yes" name="mobile-web-app-capable">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<!--QQ聊天窗口信息，请跟产品确认信息------------>
+	<!--标题：必填 长度至少为4-->
+	<meta itemprop="name" content="CFML2020春季赛职业联赛" />
+	<!--摘要：必填 长度至少为10-->
+	<meta itemprop="description" content="CFML2020春季赛职业联赛" />
+	<!--图片地址 ,默认为logo，如需更改请设置400*400图片-->
+	<meta itemprop="image" content="//game.gtimg.cn/images/cfm/web201801/logo.png" />
+	<!--QQ聊天窗口信息END------------>
+	<meta name="Description" content="《穿越火线手游》为CF原班团队历时3年精心打造，将三亿鼠标的枪战梦想延续到手机上。CF正版FPS手游，原汁原味，传承经典，火爆开战，纯正的枪战血统！" />
+	<meta name="Keywords" content="荒岛特训,CF手游,穿越火线手游,穿越火线手游官网,CF正版官方手游,穿越火线手游下载,腾讯穿越火线手游" />
+	<script>
+		//屏幕适应 
+		(function (win, doc) {
+			if (!win.addEventListener) return;
+			var html = document.documentElement;
+
+			function setFont() {
+				var html = document.documentElement;
+				var k = 750;
+				html.style.fontSize = html.clientWidth / k * 100 + "px";
+			}
+			setFont();
+			setTimeout(function () {
+				setFont();
+			}, 300);
+			doc.addEventListener('DOMContentLoaded', setFont, false);
+			win.addEventListener('resize', setFont, false);
+			win.addEventListener('load', setFont, false);
+		})(window, document);
+
+	</script>
+	<title>穿越火线手游2020职业联赛秋季赛-穿越火线手游官方网站-腾讯游戏</title>
+	<!-- 设计：cp | 重构：by cp| 创建：2019/4/3|-->
+	<link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+	<style type="text/css">
+		body,
+		div,
+		p,
+		ul,
+		li,
+		input,
+		h2,
+		section,
+		header,
+		footer {
+			margin: 0;
+			padding: 0
+		}
+
+		::-webkit-input-placeholder {
+			color: #dba957;
+		}
+
+		* {
+			-webkit-appearance: none;
+			-webkit-text-size-adjust: none;
+		}
+
+		body {
+			background: #f8f8f8;
+			width: 100%;
+			margin: 0 auto;
+			font-size: .2rem;
+			padding-bottom: .66rem;
+		}
+
+		input,
+		select {
+			outline: none;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			blr: expression(this.onFocus=this.blur());
+			outline: none;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		html {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			font-size: 100px;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.clearfix:after {
+			content: " ";
+			clear: both;
+			height: 0;
+			visibility: hidden;
+			display: block;
+		}
+
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.hide {
+			height: 0;
+			line-height: 0;
+			font-size: 0;
+			visibility: hidden;
+			display: none;
+		}
+
+		.pr {
+			position: relative;
+		}
+
+		.pa {
+			position: absolute;
+		}
+
+		.com {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: url(//game.gtimg.cn/images/cfm/cfml/s7/m/com.png) no-repeat;
+			background-size: 7.5rem 1.6rem;
+			text-align: center;
+		}
+
+		.btns {
+			display: block;
+			background: url("//game.gtimg.cn/images/cfm/cfml/s7/m/btns.png")no-repeat;
+			background-size: 7.5rem auto;
+		}
+
+		.tbox {
+			height: .87rem;
+			background: #0d0d0d;
+			padding: .05rem .11rem 0;
+		}
+
+		.txt {
+			background: url(//game.gtimg.cn/images/cfm/web201801/logo.png) no-repeat 0px 0px;
+			background-size: .79rem .79rem;
+			padding-left: .94rem;
+			float: left;
+			width: 3.02rem;
+			height: .79rem;
+		}
+
+		.txt strong {
+			color: #fff;
+			font-size: .3rem;
+			display: block;
+			line-height: .36rem;
+			padding-top: .05rem;
+		}
+
+		.txt em {
+			font-style: normal;
+			color: #74706f;
+			font-size: .2rem;
+			display: block;
+			line-height: .24rem;
+			padding-top: .06rem;
+		}
+
+		.xzbtn,
+		.jrbtn {
+			width: 1.6rem;
+			height: .6rem;
+			color: #4c1a00;
+			font-size: .24rem;
+			float: left;
+			margin-top: .1rem;
+		}
+
+		.xzbtn span,
+		.jrbtn span {
+			background-image: -webkit-radial-gradient(top center, circle, #ae4c00, #682400);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.jrbtn {
+			margin-left: .1rem;
+			background-position: 0 -.71rem;
+		}
+
+		.head {
+			height: 7rem;
+			background: url(//game.gtimg.cn/images/cfm/cfml/s7/m/img1.jpg) no-repeat;
+			background-size: 100%;
+		}
+
+		.tit {
+			height: 0.8rem;
+		}
+
+		.tit i {
+			margin: .21rem .10rem 0 .2rem;
+			float: left;
+			width: .33rem;
+			height: .33rem;
+			background-position: 0 0;
+		}
+
+		.tit span {
+			color: #555;
+			font-size: .28rem;
+			font-weight: bold;
+			padding-top: .14rem;
+			line-height: .50rem;
+			float: left;
+		}
+
+		.data-box {
+			background: #ffffff;
+			padding-bottom: 0.3rem;
+		}
+
+		.data-box .tit i {
+			background-position: -1.97rem 0
+		}
+
+		.data-tab {
+			width: 7.1rem;
+			display: flex;
+			margin: 0.2rem auto 0;
+		}
+
+		.data-tab li {
+			flex: 1;
+			background: #e0e0e0;
+			border-top: 2px solid #e0e0e0;
+			color: #777777;
+			line-height: 0.45rem;
+			text-align: center;
+			font-size: 0.18rem;
+		}
+
+		.data-tab li.action {
+			color: #f2842a;
+			border-top: 2px solid #f2842a;
+			background: #ececec;
+		}
+
+		.data-itme {
+			width: 7.1rem;
+			margin: 0 auto;
+			display: none;
+		}
+
+		.data-itme.action {
+			display: block;
+		}
+
+		.data-zd table th {
+			font-size: 0.16rem;
+			color: #777777;
+			background: #ececec;
+			width: 1.1rem;
+			line-height: 0.5rem;
+			text-align: center;
+		}
+
+		.data-zd table td {
+			border-bottom: 1px solid #dadada;
+			text-align: center;
+			color: #777777;
+			font-size: 0.18rem;
+			line-height: 0.5rem;
+		}
+
+		.xh-icon {
+			display: inline-block;
+			height: 0.44rem;
+			width: 0.4rem;
+			background-position: -1.94rem -0.59rem;
+			line-height: 0.44rem;
+			text-align: center;
+			color: #333333
+		}
+
+		.data-zd td img {
+			width: 0.35rem;
+			height: 0.35rem;
+			vertical-align: middle
+		}
+
+		.data-zd td .name {
+			color: #333333;
+		}
+
+		.sx-logo {
+			display: flex;
+			justify-content: space-between;
+			background: #ececec;
+			flex-wrap: wrap;
+		}
+
+		.sx-logo li {
+			width: 1.3rem;
+			height: 0.5rem;
+			margin: 0.1rem 0;
+			text-align: center;
+		}
+
+		.sx-logo li.no img {
+			border: 1px solid #f2842a
+		}
+
+		.sx-logo li img {
+			width: 0.5rem;
+			height: 0.5rem;
+			border-radius: 50%;
+			border: 1px solid #e0e0e0;
+			background: #ffffff;
+		}
+
+		.gd-it::-webkit-scrollbar {
+			width: 0.05rem;
+			border-radius: 0.08rem;
+		}
+
+		.gd-it::-webkit-scrollbar-thumb {
+			width: 0.05rem;
+			border-radius: 0.08rem;
+			background: #7c7d85;
+		}
+
+		.gd-it::-webkit-scrollbar-track {
+			background: #d3d4da
+		}
+
+		.sp-tx-item2::-webkit-scrollbar {
+			display: none
+		}
+
+		.le-icon {
+			width: 0.12rem;
+			height: 0.12rem;
+			background-position: -2.88rem -0.59rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 0.2rem;
+			top: 0.25rem;
+			left: 0;
+		}
+
+		.ri-icon {
+			width: 0.12rem;
+			height: 0.12rem;
+			background-position: -3.21rem -0.59rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 0.1rem;
+			top: 0.25rem;
+			left: 5rem;
+		}
+
+		.data-xs-head ul {
+			display: flex;
+			font-size: 0.16rem;
+			color: #777777;
+			text-align: center;
+			line-height: 0.5rem;
+			position: relative;
+		}
+
+		.data-xs-cent {
+			overflow-y: auto;
+			height: 5.4rem;
+			display: none;
+		}
+
+		.data-xs-cent.show {
+			display: block;
+		}
+
+
+		.player-avatar {
+			overflow: hidden;
+			height: 0.58rem;
+			width: 1.05rem
+		}
+
+		.data-xs-cent img {
+			max-width: 100%;
+			width: 100%;
+
+		}
+
+		.sp-tx {
+			display: flex;
+			position: relative;
+		}
+
+		.sp-tx li {
+			height: 0.58rem;
+			width: 1.05rem;
+			text-align: center;
+			border-bottom: 1px solid #dadada;
+			line-height: 0.58rem;
+			color: #777777;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+
+
+		}
+
+		.sp-tx-item1 {
+			width: 1.05rem;
+		}
+
+		.sp-tx-item2 {
+			width: 6.05rem;
+			overflow-x: auto;
+		}
+
+		.sp-tx-item2 ul {
+			width: 12.6rem;
+			display: flex;
+		}
+
+		.bot-nav {
+			position: fixed;
+			display: flex;
+			height: 0.66rem;
+			bottom: 0;
+			left: 0;
+		}
+
+		.bot-nav a {
+			width: 1.88rem;
+			height: 0.66rem;
+			background-position: -2.03rem -1.19rem;
+			text-align: center;
+			line-height: 0.66rem;
+			color: #691100;
+			font-size: 0.28rem;
+		}
+
+		.bot-nav a.action {
+			background-position: 0 -1.19rem;
+		}
+
+
+		#afooter {
+			width: 100%;
+			text-align: center;
+			background-position: top;
+			background-color: #071827;
+			padding: 0.2rem 0;
+			font-size: 0.18rem;
+		}
+
+		#afooter .foot {
+			color: #6d5f54;
+			line-height: 0.3rem;
+		}
+
+		#afooter p {
+			color: #ffffff;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1 class="hide">可以触摸的电竞梦想</h1>
+	<div class="tbox">
+		<div class="txt">
+			<strong>穿越火线:枪战王者</strong>
+			<em>原汁原味，CF正版FPS手游</em>
+		</div>
+		<a href="//cfm.qq.com/d/index.htm" ontouchend="PTTSendClick('btn','xzbtn','下载游戏');"
+			class="com xzbtn"><span>下载游戏</span></a>
+		<a href="//cfm.qq.com/m/main.shtml" ontouchend="PTTSendClick('btn','enter','进入官网');"
+			class="com jrbtn"><span>进入官网</span></a>
+	</div>
+	<div class="head"></div>
+	<div class="data-box">
+		<h2 class="tit"><i class="btns"></i><span>2020年CFML秋季赛</span></h2>
+		<ul class="data-tab">
+			<li class="action">战队数据</li>
+			<li>选手数据</li>
+		</ul>
+		<div class="data-zd data-itme action" id="clanListBox">
+
+		</div>
+		<div class="data-xs data-itme ">
+			<ul class="sx-logo">
+				<li data-id="AG"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw01.png" alt=""></li>
+				<li data-id="SV"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw02.png" alt=""></li>
+				<li data-id="BS"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw03.png" alt=""></li>
+				<li data-id="Q9"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw04.png" alt=""></li>
+				<li data-id="EDGM"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw05.png" alt=""></li>
+				<li data-id="WE"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw06.png" alt=""></li>
+				<li data-id="R.LGD"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw07.png" alt=""></li>
+				<li data-id="SN"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw08.png" alt=""></li>
+				<li data-id="eStar"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw09.png" alt=""></li>
+				<li data-id="KZ"><img src="//game.gtimg.cn/images/cfm/cfml/s7/m/dw10.png" alt=""></li>
+			</ul>
+			<div class="gd-it data-xs-cent show">
+				<div class="sp-tx" id="playerDataList">
+					<span class="btns pa le-icon"></span>
+
+					<ul class="sp-tx-item1">
+						<li>选手头像</li>
+						<div id="avatarLsit"></div>
+					</ul>
+
+					<div class="sp-tx-item2">
+						<ul class="pr">
+							<li>选手ID</li>
+							<li>战队</li>
+							<li class="sort-th" data-sort=1 data-id="sd_kill">击杀</li>
+							<li class="sort-th" data-sort=1 data-id="death">死亡</li>
+							<li class="sort-th" data-sort=1 data-id="avg_kill">场均击杀</li>
+							<li class="sort-th" data-sort=1 data-id="avg_death">均场死亡</li>
+							<li class="sort-th" data-sort=1 data-id="head_kill">爆头</li>
+							<li class="sort-th" data-sort=1 data-id="head_kill_rate">爆头率</li>
+							<li class="sort-th" data-sort=1 data-id="sniper_kill">狙击杀</li>
+							<li class="sort-th" data-sort=1 data-id="handgun">手枪杀</li>
+							<li class="sort-th" data-sort=1 data-id="knife_kill">刀杀</li>
+							<li class="sort-th" data-sort=0 data-id="kd">KD<span class="btns ri-icon"></span></li>
+						</ul>
+						<div id="dataList"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="bot-nav">
+			<a href="index.htm" class="btns ">首页</a>
+			<a href="index.htm#cont1" class="btns">比赛直播</a>
+			<a href="javascript:;" class="btns action">赛事数据</a>
+			<a href="index.htm#huig" class="btns">赛果回顾</a>
+		</div>
+
+</body>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script src="//cfm.qq.com/cp/matchinfo/cfm.match.list.20.js"></script>
+<script src="//cfm.qq.com/cp/matchinfo/cfm.team.data.20.js"></script>
+<script src="//cfm.qq.com/cp/matchinfo/cfm.player.data.20.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script type="text/javascript">
+	//H5里跳转到PC
+	if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		window.location = "../page.html";
+	}
+	//此段代码不能放到外链JS中，
+	var setSite = { //设置网站属性 
+		siteType: "s8", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+		pageType: "mlist", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+		pageName: "移动端比赛数据", //必填项:页面中文名 
+		project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+		osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	};
+	if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+
+	$(function () {
+		$(".data-tab li").click(function () {
+			var index = $(this).index();
+			$(this).addClass("action").siblings().removeClass("action");
+			$(".data-itme").eq(index).addClass("action").siblings(".data-itme").removeClass("action")
+		})
+
+		$(".sx-logo li").click(function () {
+
+			if ($(this).hasClass("no")) {
+				$(this).removeClass("no");
+
+				dataList.selPlayerList = dataList.playerData
+
+				fillPlayerData(dataList.selPlayerList);
+				return;
+			}
+
+			var clanName = $(this).attr('data-id');
+			var index = $(this).index();
+			$(this).addClass("no").siblings().removeClass("no");
+			// $(".data-xs-cent").eq(index).addClass("show").siblings(".data-xs-cent").removeClass("show");
+
+
+			dataList.selPlayerList = getCurrClan(clanName);
+			fillPlayerData(dataList.selPlayerList);
+
+		})
+
+		$(".bot-nav a").click(function () {
+			$(this).addClass("action").siblings().removeClass("action");
+		})
+	})
+
+
+
+
+
+	function getCurrClan(name) {
+		return dataList.playerData.filter(function (item) {
+			return item.clan_name == name;
+		});
+	};
+
+
+	var dataList = {
+		//所有选手数据
+		'playerData': [],
+
+		//选手资料
+		'playerList': [],
+
+		//选择战队中的选手资料
+		'selPlayerList': [],
+
+		//战队数据
+		"clanData": [],
+		//所有战队LOGO
+		"clanLogoList": []
+	};
+
+
+	function getData(sData, parm, msg) {
+		$.ajax({
+			type: "get",
+			url: "https://match.game.qq.com/getContestDataList",
+			data: parm,
+			dataType: "json",
+			xhrFields: {
+				withCredentials: true
+			},
+			success: function (response) {
+				// $(".nq-swip1 .swiper-wrapper").html(str);
+				dataList[sData] = response.data.list;
+
+				console.log(response.data.list);
+
+				if (msg == 'player' && dataList.playerList.length != 0 && dataList.playerData.length != 0) {
+					dataList.selPlayerList = dataList.playerData
+
+					fillPlayerData(dataList.selPlayerList);
+				} else if (msg == 'clan' && dataList.clanData.length != 0 && dataList.clanLogoList
+					.length != 0) {
+					fillClanData(dataList.clanData)
+				};
+			}
+		});
+	};
+
+
+
+	//请求战队LOGO
+	getData('clanLogoList', {
+		'biz': 'cfm',
+		'contestname': 'ClanList_Simple'
+	}, 'clan');
+
+	//战队数据
+	getData('clanData', {
+		'biz': 'cfm',
+		'contestname': 'ClanDataList',
+		'contestid': '1565949508'
+	}, 'clan');
+
+	//选手资料 根据选手名字获取选手头像
+	getData('playerList', {
+		'biz': 'cfm',
+		'contestname': 'PlayerList',
+		'contestid': '1565949508'
+	}, 'player');
+
+	//选手数据
+	getData('playerData', {
+		'biz': 'cfm',
+		'contestname': 'PlayerDataList',
+		'contestid': '1565949508'
+	}, 'player');
+
+	//获取选手ICON
+	function getPlayerIcon(name) {
+		return 'https://down.qq.com/cf/esports_image/' + dataList.playerList.filter(function (item) {
+
+			return item.member_id.split('.')[0] == name.split('.')[0];
+		})[0].thumbnail_img;
+	};
+
+	//获取战队ICON
+	function getCurrLogo(name) {
+		return 'https://down.qq.com/cf/esports_image/' + dataList.clanLogoList.filter(function (item) {
+			return item.clan_name == name;
+		})[0].clan_img;
+	};
+
+
+
+
+
+	//填充战队数据
+	function fillClanData(_data) {
+		var _list = _data;
+		var str = `<table>
+				<tr>
+					<th>排名</th>
+					<th>战队LOGO</th>
+					<th>队伍名称</th>
+					<th>积分</th>
+					<th>胜场</th>
+					<th>负场</th>
+					<th>爆破胜率</th>
+				</tr>`;
+		for (var i = 0; i < _list.length; i++) {
+			if(_list[i].clan_name == '对决队' || _list[i].clan_name == '传奇队'){
+                continue;
+            }
+			str += `<tr>
+					<td><span class="btns xh-icon">${i+1}</span></td>
+                        <td><img src="${getCurrLogo(_list[i].clan_name)}"  alt=""></td>
+                        <td><em>${_list[i].clan_name}</em></td>
+                        <td>${_list[i].score}</td>
+                        <td>${_list[i].win_cnt}</td>
+                        <td>${_list[i].lost_cnt}</td>
+                        <td>${_list[i].blasting_win_percent}</td>
+                    </tr>`
+		}
+		str += '</table>';
+		$("#clanListBox").html(str);
+	}
+
+	//选手数据
+	function fillPlayerData(_data, type, value) {
+		var _type = type || 'kd';
+		var value = value || 1;
+		var _list = _data;
+		var compare = function (type, value) {
+			return function (a, b) {
+				var value1 = a[type];
+				var value2 = b[type];
+				if (value == 1) {
+					return value2 - value1;
+				} else {
+					return value1 - value2;
+				}
+			}
+		};
+
+		var _list = _list.sort(compare(_type, value));
+
+
+
+		var str1 = '';
+		var str2 = '';
+		for (var i = 0; i < _list.length; i++) {
+			if(_list[i].clan_name == '对决队' || _list[i].clan_name == '传奇队'){
+                continue;
+            }
+			str1 += `
+					<li>
+						<span class="player-avatar"><img src="${getPlayerIcon(_list[i].nick)}" alt=""></span>
+					</li>`;
+
+			str2 += `<ul><li>${_list[i].nick}</li>
+                        <li>${_list[i].clan_name}</li>
+                        <li>${_list[i].sd_kill}</li>
+                        <li>${_list[i].death}</li>
+                        <li>${_list[i].avg_kill}</li>
+                        <li>${_list[i].avg_death}</li>
+                        <li>${_list[i].head_kill}</li>
+                        <li>${_list[i].head_kill_rate}</li>
+                        <li>${_list[i].sniper_kill}</li>
+                        <li>${_list[i].handgun}</li>
+                        <li>${_list[i].knife_kill}</li>
+                        <li>${_list[i].kd}</li></ul>`
+		}
+
+		$("#avatarLsit").html(str1);
+
+		$("#dataList").html(str2);
+	};
+
+
+
+	$(".sort-th").on('click', function () {
+		var type = $(this).attr("data-id");
+		var value = $(this).attr("data-sort");
+		$(this).attr("data-sort", 1 - value);
+		fillPlayerData(dataList.selPlayerList, type, value)
+	});
+
+</script>
+
+</html>

@@ -34,6 +34,9 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
+    <meta itemprop="name" content="换个赛场 再战一场！" />
+    <meta itemprop="description" content="NBA电竞战“疫”赛，多重奖励等你来拿！" />
+    <meta itemprop="image" content="https://game.gtimg.cn/images/nba2kx/cp/a20200409djzys/share.jpg" />
     <title>NBA2KOL2线上战“疫”赛-NBA2KOL2官方网站-腾讯游戏</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/09 -->
     <link href="//game.gtimg.cn/images/nba2kx/cp/a20200409djzys/m/mobile.css" rel="stylesheet" />
@@ -110,7 +113,7 @@
 
             </ul>
             <!-- 竞猜奖品列表 -->
-            <p class="prize-tips-text t-c">截止4月25日11:00，您已经预测成功<span>-</span>次。</p>
+            <p class="prize-tips-text t-c">截止目前，您已经预测成功<span>-</span>次。</p>
             <ul class="p-r prize-list">
                 <li class="bg prize-item flex flex-middle">
                     <div class="prize-title-wrap flex flex-center flex-middle" style="margin: 0;width: .86rem;height: 100%;">
@@ -533,9 +536,17 @@
 
     </script>
     <script>
+        //分享
+        TGMobileShare({
+            shareTitle: '换个赛场 再战一场！', //不设置或设置为空时，页面有title，则调取title
+            shareDesc: 'NBA电竞战“疫”赛，多重奖励等你来拿！', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https://game.gtimg.cn/images/nba2kx/cp/a20200409djzys/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20200409djzys' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        });
         //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性
-            siteType: "a20200416djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            siteType: "a20200409djzys", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
             pageType: "mcontent2", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
             pageName: "预测领福利", //必填项:页面中文名
             osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置

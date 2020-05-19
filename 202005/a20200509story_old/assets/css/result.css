@@ -1,0 +1,156 @@
+
+.page-content {
+    margin: 0 auto 100px;
+    width: 1341px;
+}
+.result-list {
+    width: 1401px;
+}
+.result-list.search-list {
+    margin-top: 46px;
+}
+.result-item {
+    margin-top: 40px;
+    margin-right: 57px;
+    box-sizing: border-box;
+    width: 290px;
+    background-color: #fff;
+    border: 1px solid #d6d1c8;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+.result-item:hover {
+    transform: scale(1.1);
+    border-color: #eb6662;
+}
+.result-none {
+    margin: 296px auto;
+    width: 417px;
+}
+.result-none p {
+    margin-top: 16px;
+    font-size: 24px;
+    color: #666;
+}
+.result-img {
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+}
+.result-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s all;
+    -webkit-transition: .6s all;
+    -moz-transition: .6s all;
+    -ms-transition: .6s all;
+    -o-transition: .6s all;
+}
+.result-item:hover .result-img img {
+    transform: scale(1.1);
+}
+.result-content {
+    margin: 16px 15px 14px;
+}
+.result-content .title-text {
+    line-height: 1;
+    font-size: 20px;
+    color: #000;
+}
+.result-content .author-text {
+    margin-top: 17px;
+    line-height: 1;
+    font-size: 18px;
+    color: #666;
+}
+/* 作品列表 */
+.px-container {
+    margin-top: 82px;
+    font-size: 0;
+}
+.px-container p,
+.px-container span,
+.px-container a {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 18px;
+    color: #444;
+}
+.px-container a {
+    padding: 0 12px;
+    border-radius: 99px;
+    border: 1px solid transparent;
+}
+.px-container a:hover,
+.px-container a.active {
+    border-color: #444;
+}
+.px-container span {
+    margin: 0 6px;
+    color: #bab7ad;
+}
+.awrad-list {
+    margin-bottom: 0;
+}
+/* 分页 */
+.pagination-container {
+    margin: 56px auto 0;
+}
+.pagination-left {
+    font-size: 0;
+}
+.page-btn {
+    padding: 0 10px;
+    line-height: 22px;
+    color: #000;
+}
+.pagination-container a {
+    margin-right: 8px;
+    display: inline-block;
+    border: 1px solid #cdbb95;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.pagination-container a:hover {
+    background-color: #ff7e84;
+    border-color: #ff7e84;
+    color: #fff;
+}
+.pagination-container a.num-btn {
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+.pagination-container a.num-btn.none {
+    background-color: transparent;
+    border-color: transparent;
+}
+.pagination-container a.num-btn.none:hover {
+    color: #444;
+}
+.pagination-container p,
+.pagination-container input {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}
+.pagination-container input {
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 40px;
+    text-align: center;
+    height: 22px;
+    border: 1px solid #cdbb95;
+    background-color: #fff;
+}

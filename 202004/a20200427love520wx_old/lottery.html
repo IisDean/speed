@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="试试你能到几层" />
+    <meta name="Keywords" content="love" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //跳转pc
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = "index.html" + location.search;
+        }
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>恋爱的千层套路</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/27 -->
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
+    <link href="./ossweb-img/lottery.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="p-r stage">
+        <audio id="musicBgm" loop>
+            <source src="./ossweb-img/music.mp3" type="audio/mpeg" />
+        </audio>
+        <!-- 首屏 -->
+        <div class="p-r part part-lottery">
+            <div class="p-r wrap">
+                <div class="full-img logo-icon">
+                    <img src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <!-- 音乐 -->
+                <a class="p-a icons music-btn off t" style="top: 0;">音乐</a>
+                <p class="lottery-tips-text t-c">预约游戏可获得1次抽奖机会<br/>每日成功签到可额外获得1次抽奖机会</p>
+                <div class="icons lottery-num-wrap t-c">
+                    <p>剩余抽奖次数 <span class="J-lottery-num">0/2</span></p>
+                </div>
+                <div class="p-r flex flex-between btn-lottery-container">
+                    <a href="javascript: TGDialogS('submitMsg');" 
+                        onclick="PTTSendClick('btn','edit-msg-btn','填写中奖信息')" 
+                        class="icons edit-msg-btn btn-hover t">填写中奖信息</a>
+                    <a href="javascript: TGDialogS('cjRulePopWx');" 
+                        onclick="PTTSendClick('btn','lottery-rule-btn','抽奖活动规则')" 
+                        class="icons lottery-rule-btn btn-hover t">抽奖活动规则</a>
+                </div>
+                <!-- 抽奖 -->
+                <div class="p-r panel" id="lotterycontent">
+                    <img src="./ossweb-img/lottery.png">
+                </div>
+                <div class="p-r flex flex-between btn-lty2-container">
+                    <a href="./index.html"
+                    onclick="PTTSendClick('btn','back-btn','重新测试')" 
+                        class="icons lottery-order-btn btn-hover t">重新测试</a>
+                    <!-- <a href="javascript: TGDialogS('shareSuccess');" 
+                        onclick="PTTSendClick('btn','lottery-share-btn','分享有礼')" 
+                        class="icons lottery-share-btn btn-hover t">分享有礼</a> -->
+                    <a href="javascript: TGDialogS('qdPopTips');" 
+                        onclick="PTTSendClick('btn','lottery-qd-btn','签到有礼')" 
+                        class="icons lottery-qd-btn btn-hover t">签到有礼</a>
+                </div>
+                <!-- <div class="flex bg down-btn-list qq-icons">
+                    <a href="//youxi.vip.qq.com/m/act/0f0a7528ca_love_465547.html?_wv=1&_wwv=4" class="flex-1 down-btn-item t">官方Q群</a>
+                    <a href="//buluo.qq.com/mobile/barindex.html?bid=420118&source=index&scene=rencent&_nav_bgclr=ffffff&_nav_titleclr=ffffff&_nav_txtclr=ffffff&_nav_anim=true&_nav_alpha=0&_wvSb=0&_wwv=1024&from=dongtai&_wv=536871939&webview=1" class="flex-1 down-btn-item t">兴趣部落</a>
+                    <a href="//m.gamecenter.qq.com/directout/detail/1106900827?appid=1106900827&_wv=1&asyncMode=3" class="flex-1 down-btn-item t">详情页</a>
+                </div> -->
+                <div class="flex bg down-btn-list wx-icons">
+                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/group/index.html?appid=wxca6215f6c23c2e90&group=1#wechat_redirect" class="flex-1 down-btn-item t">游戏圈</a>
+                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/community/club_index.html?noticeid=&appid=wxca6215f6c23c2e90#wechat_redirect" class="flex-1 down-btn-item t"></a>
+                    <a href="//w.url.cn/s/ABnZsHh#wechat_redirect" class="flex-1 down-btn-item t">公众号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 首次点击【预约有礼】弹出提示 预约成功-->
+    <div class="pop pop-2" id="firstOrderTips">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <p class="pop-title2-text t-c" style="margin-top: .1rem;">恭喜设计师成功预约了</p>
+                <h1 class="pop-title1-text t-c" style="margin-top: .16rem;">《光与夜之恋》手游</h1>
+                <p class="pop-tips-text t-c">快去试试手气吧</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 重复预约提示 -->
+    <div class="pop pop-2" id="orderCfTips">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-title2-text t-c" style="margin-top: 1rem;">设计师您已经预约过了噢！</p>
+                <p class="pop-msg2-text t-c" style="margin-top: .22rem;margin-bottom: 1rem;">敬请期待游戏上线</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 点击【签到有礼】弹出提示-->
+    <div class="pop pop-2" id="qdPopTips">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <p class="pop-title2-text t-c" style="margin-top: .1rem;">恭喜设计师</p>
+                <h1 class="pop-title1-text t-c" style="margin-top: .16rem;">签到成功</h1>
+                <p class="pop-tips-text t-c">快去试试手气吧</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 分享成功 -->
+    <div class="pop pop-2" id="shareSuccess">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <p class="pop-title2-text t-c" style="margin-top: .1rem;">恭喜设计师</p>
+                <h1 class="pop-title1-text t-c" style="margin-top: .16rem;">分享成功</h1>
+                <p class="pop-tips-text t-c">快去试试手气吧</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 弹窗部分 -->
+    <!-- 提交个人信息 -->
+    <div class="pop pop-2" id="submitMsg">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <h1 class="pop-title1-text t-c" style="margin-top: .1rem;">个人信息</h1>
+                <div class="form-container">
+                    <p class="form-tips-text t-c">请填写正确的个人信息，我们将在活动后统一发放奖励。</p>
+                    <div class="form-wrap flex flex-middle" style="margin-top: .28rem;">
+                        <p class="form-name-text t-r">姓名：</p>
+                        <input type="text" placeholder="" />
+                    </div>
+                    <div class="form-wrap flex flex-middle">
+                        <p class="form-name-text t-r">收货地址：</p>
+                        <input type="text" placeholder="" />
+                    </div>
+                    <div class="form-wrap flex flex-middle">
+                        <p class="form-name-text t-r">手机号码：</p>
+                        <input type="tel" placeholder="" />
+                    </div>
+                </div>
+                <a class="icons submit-btn btn-hover t">提交</a>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 抽中了奖品 -->
+    <div class="pop pop-2" id="winPrize">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <p class="pop-title2-text t-c" style="margin-top: .1rem;">恭喜设计师抽中了</p>
+                <h1 class="pop-title1-text J-zj-wrap t-c" style="margin-top: .16rem;">厉害的奖品×1</h1>
+                <p class="pop-tips-text t-c">请填写中奖信息，我们将尽快为您发奖</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 很遗憾，没有中奖 -->
+    <div class="pop pop-2" id="losingLottery">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-title2-text t-c" style="margin-top: 1rem;">很遗憾您没有中奖</p>
+                <p class="pop-msg2-text t-c" style="margin-top: .22rem;margin-bottom: 1rem;">谢谢参与!</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 没有抽奖机会了 -->
+    <div class="pop pop-2" id="lotteryNumNone">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-title2-text t-c" style="margin-top: 1rem;">您今天已经没有抽奖机会了</p>
+                <p class="pop-msg2-text t-c" style="margin-top: .22rem;margin-bottom: 1rem;">明天再来看看吧</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    
+    <!-- 抽奖页活动规则 wx -->
+    <div class="pop pop-2" id="cjRulePopWx">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-msg-text" style="margin-top: .4rem;">
+                    <em class="pop-num-text t-c">1</em>
+                    活动期间，<span class="cs-text">成功预约游戏</span>可获得1次抽奖机会，<span class="cs-text">每日完成签到</span>可额外获得1次抽奖机会，单用户最多抽奖5次。
+                </p>
+                <p class="pop-msg-text" style="margin-top: .24rem;">
+                    <em class="pop-num-text t-c">2</em>
+                    抽中实物奖励的设计师，请您尽快点击<span class="cs-text">【填写中奖信息】</span>完善您的收货信息，我们将在活动结束后统一安排奖品发放
+                </p>
+                <p class="pop-msg-text" style="margin-top: .24rem;margin-bottom: .24rem;">
+                    <em class="pop-num-text t-c">3</em>
+                    通过外挂、作弊等非法行为获得奖励的，腾讯游戏有权追回
+                </p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 抽奖页活动规则 qq -->
+    <div class="pop pop-2" id="cjRulePopQq">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-msg-text" style="margin-top: .4rem;">
+                    <em class="pop-num-text t-c">1</em>
+                    活动期间，<span class="cs-text">成功预约游戏</span>可获得1次抽奖机会，每日<span class="cs-text">成功分享给好友</span>可额外获得1次抽奖机会，单用户最多抽奖5次。
+                </p>
+                <p class="pop-msg-text" style="margin-top: .24rem;">
+                    <em class="pop-num-text t-c">2</em>
+                    抽中实物奖励的设计师，请您尽快点击<span class="cs-text">【填写中奖信息】</span>完善您的收货信息，我们将在活动结束后统一安排奖品发放
+                </p>
+                <p class="pop-msg-text" style="margin-top: .24rem;margin-bottom: .24rem;">
+                    <em class="pop-num-text t-c">3</em>
+                    通过外挂、作弊等非法行为获得奖励的，腾讯游戏有权追回
+                </p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+        
+
+    <script src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script> 
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
+    <script>
+        
+        //播放音乐
+        var music = document.getElementById('musicBgm');
+        var musicStatus = sessionStorage.getItem("musicTwitch");
+        //音乐开关
+        var switchMusic = $(".music-btn");
+        if( musicStatus == 1 ){
+            switchMusic.removeClass("off");
+            music.play();
+            $(window).one('touchstart', function () {
+                music.play();
+            });
+            //微信下兼容处理
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                music.play();
+            }, false);
+        }
+
+        switchMusic.on("click", function () {
+            if (switchMusic.hasClass('off')) {
+                music.play();
+                switchMusic.removeClass("off");
+                sessionStorage.setItem("musicTwitch", 1);
+            } else {
+                music.pause();
+                switchMusic.addClass("off");
+                sessionStorage.setItem("musicTwitch", 0);
+            }
+        });
+
+        // 转盘初始化
+        // 第一个参数是奖品的个数
+        // 第二个是用来旋转的圆盘（指针不动）
+        var panel = new PanelLotery({
+            length: 6,
+            // duration: 100, //动画的时间，默认5秒，可不填
+            el: '#lotterycontent'
+        });
+
+        var lotteryNum = 2;
+        $(".J-lottery-num").text(lotteryNum+'/2');//更新抽奖次数
+
+        var prizeList = [
+            'iphoneSE',
+            'YSL-小金条',
+            '男主徽章',
+            '谢谢参与',
+            '男主立牌',
+            'MissDior香水',
+        ];
+        $('.panel-btn').on('click', function(event) {
+            event.preventDefault();
+            if(panel.playing) return;
+            // 这里是演示随机转到奖品n
+            // 初始的指针右侧开始
+            // 顺时针方向开始算
+            // 第一个奖品是n=0 iphoneSe n=1, YSL-小金条, n=2 男主徽章, n=3 谢谢参与, n=4 男主立牌, n=5 MissDior香水
+            if(lotteryNum<1){
+                TGDialogS('lotteryNumNone');
+                return false;
+            }
+            lotteryNum--;
+            $(".J-lottery-num").text(lotteryNum+'/2');//更新抽奖次数
+            var n = Math.floor(Math.random()*8);
+            // var n = 0.2;
+            console.log(n);
+            panel.playto(n, function(){
+                if( n == 3){//没有中奖
+                    TGDialogS('losingLottery');
+                }else {
+                    $(".J-zj-wrap").text(prizeList[n]+' x 1');
+                    TGDialogS('winPrize');
+                }
+                
+            });
+        });
+
+        //修复 IOS12，微信 6.7.4+ 键盘不回弹的问题
+        $('body').on('blur',"input,select,textarea",function(){
+            if(!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+                setTimeout(() => {
+                    const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+                }, 100);
+            }
+        })
+
+        // TGDialogS('submitMsg');
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200427love520", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html>
