@@ -70,7 +70,7 @@
     height: 6.95rem;
 }
 .panel .panel-face {
-    background-image: url(//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery.png);
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery.png');
     background-size: cover;
     width: 6.95rem;
     height: 6.95rem;
@@ -84,7 +84,7 @@
     margin: 0 auto;
     width: 1.86rem;
     height: 2.06rem;
-    background-image: url(//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery_btn.png);
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery_btn.png');
     background-size: cover;
 }
 .panel .panel-btn:active {

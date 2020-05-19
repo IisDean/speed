@@ -130,6 +130,7 @@ amsCfg_663245 = {
     },
     'onGetGiftFailureEvent' : function(callbackObj){// 抽奖失败事件
 
+        $("#errText").html(callbackObj.sMsg);
         TGDialogS("qdzgPopTips");
 
         // alert(callbackObj.sMsg);
@@ -150,7 +151,7 @@ var aAward = {
     "1889688":"5", //MissDior香水
 };
 var prizeList = [
-    'iphoneSE',
+    '华为P30',
     'YSL-小金条',
     '男主徽章',
     '谢谢参与',
@@ -206,6 +207,13 @@ amsCfg_663104 = {
         // return;
         if(res.iRet == 0)
         {
+            if(parseInt(res.sOutValue1)>=5)
+            {
+                $("#ticket").text('5');
+            }else{
+                $("#ticket").text(res.sOutValue1);
+            }
+
             $("#ticket").text(res.sOutValue1);
             $("#total").text(res.sOutValue2);
         }
@@ -307,11 +315,11 @@ amsCfg_663244 = {
                         // {
                         //     var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
                         //     var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
-                        //     g('package_663225').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                        //     g('package_663244').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
                         // }
                         var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
                         var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
-                        g('package_663225').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                        g('package_663244').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
 
                     }
                 }
@@ -331,8 +339,9 @@ milo.ready(function(){
         milo.addEvent(g('btn_personInfo_663244'),'click',function(){
             LoginManager.submitLogin(function(){
                 amsCfg_663244.sData = { iShow: 1 };
-                amsSubmit(303480,663244);
-                TGDialogS('submitMsg1');
+                // amsSubmit(303480,663244);
+                checkAMS(663244,4);
+                TGDialogS('personInfoContent_663244');
             });
         });
     });

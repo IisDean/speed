@@ -3,7 +3,7 @@ var g = {
     dateOpen: '2020/4/24 00:00:00',
     domain: isMaster ? '//ws.xoyo.com' : '//test-ws.xoyo.com',
     apis: {
-        get_award_info: '/webgw/dynamic/query-by-code',  //参赛作品
+        get_award_info: '/webgw/dynamic/query-by-code',  //������Ʒ
     },
     ajax: function (o, callback) {
         var t = {
@@ -20,7 +20,7 @@ var g = {
             data: t.data,
             dataType: t.dataType,
             contentType: t.contentType,
-            xhrFields: {withCredentials: true},  //璺ㄥ煙闇€瑕佹惡甯ookie鏄渶瑕佽缃�
+            xhrFields: {withCredentials: true},  //������ҪЯ��cookie����Ҫ����
             success: function (data) {
                 console.log(data)
                 if (callback) {
@@ -31,8 +31,8 @@ var g = {
                 if (callback) {
                     callback({
                         code: -505,
-                        msg: '绯荤粺閿欒锛岃绋嶅悗鍐嶈瘯锛�',
-                        message: '绯荤粺閿欒锛岃绋嶅悗鍐嶈瘯锛�',
+                        msg: 'ϵͳ�������Ժ����ԣ�',
+                        message: 'ϵͳ�������Ժ����ԣ�',
                         data: {
                             phone: ''
                         }
@@ -57,14 +57,14 @@ var g = {
             }
             g.ajax(options, callback);
         },
-        // 微博分享&qq空间分享
+        // ΢������&qq�ռ����
         getShareArgs: function(type){
             switch (type) {
                 case 'QQ':
                   var component = '';
                   component += 'url=' + (encodeURIComponent('https://jx3.xoyo.com/zt/2019/05/27/tongren-novel/detail.html?id=') + '123');
-                  component += '&title=' + encodeURIComponent('江湖风月鉴古今，《剑网3》十一周年同人嘉年华故事大赛正式开启');
-                  component += '&desc=' + encodeURIComponent('江湖风月鉴古今，《剑网3》十一周年同人嘉年华故事大赛正式开启，诚邀各位大侠参与！十一周年同人嘉年华定制特效挂件、海量现金通宝、全套官方小说等奖励等你来拿！');
+                  component += '&title=' + encodeURIComponent('�������¼��Ž񣬡�����3��ʮһ����ͬ�˼��껪���´�����ʽ����');
+                  component += '&desc=' + encodeURIComponent('�������¼��Ž񣬡�����3��ʮһ����ͬ�˼��껪���´�����ʽ������������λ�������룡ʮһ����ͬ�˼��껪������Ч�Ҽ��������ֽ�ͨ����ȫ�׹ٷ�С˵�Ƚ����������ã�');
                   component += '&summary=';
                   component += '&site=';
                   component += '&pics=http://jx3.xoyo.com/zt/2019/05/27/tongren-novel-share-pc.jpg';
@@ -73,7 +73,7 @@ var g = {
                 case 'WEIBO':
                   var _component = '';
                   _component += 'url=' + (encodeURIComponent('https://jx3.xoyo.com/zt/2019/05/27/tongren-novel/detail.html?id=') + '123');
-                  _component += '&title=' + encodeURIComponent('#剑网3十一周年##剑网3推栏故事大赛#江湖风月鉴古今，《剑网3》十一周年同人嘉年华故事大赛正式开启，诚邀各位大侠参与！十一周年同人嘉年华定制特效挂件、海量现金通宝、全套官方小说等奖励等你来拿！');
+                  _component += '&title=' + encodeURIComponent('#����3ʮһ����##����3�������´���#�������¼��Ž񣬡�����3��ʮһ����ͬ�˼��껪���´�����ʽ������������λ�������룡ʮһ����ͬ�˼��껪������Ч�Ҽ��������ֽ�ͨ����ȫ�׹ٷ�С˵�Ƚ����������ã�');
                   _component += '&appkey=';
                   _component += '&pic=http://jx3.xoyo.com/zt/2019/05/27/tongren-novel-share-pc.jpg';
                   _component += '&searchPic=true#_loginLayer_1556245391157';
@@ -86,7 +86,7 @@ var g = {
         
     },
     init: function () {
-        // 微博分享&qq空间分享
+        // ΢������&qq�ռ����
         $('.J_shareQqLink').attr('href', 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?' + getShareArgs('QQ'));
         $('.J_shareWeiboLink').attr('href', 'http://service.weibo.com/share/share.php?' + getShareArgs('WEIBO'));
     }
@@ -102,7 +102,7 @@ $(function(){
         }
     });
 
-    //统计点案例
+    //ͳ�Ƶ㰸��
     $(document).on('click', '.ClickTrackWithWorkName', function () {
         var trackName = $(this).attr('data-tongji-name');
         var trackDesc = $(this).attr('data-tongji-desc');
@@ -116,7 +116,7 @@ $(function(){
 //         $('.J_head-menuloginSuccess').show();
 //     }, function () {
 //         if (webLink.lastIndexOf('join') > -1 || webLink.lastIndexOf('my-work') > -1 || webLink.lastIndexOf('tougao') > -1 || webLink.lastIndexOf('report') > -1) {
-//             //如果是我要参加页面 则弹出登录窗口
+//             //�������Ҫ�μ�ҳ�� �򵯳���¼����
 //             XPASS.signin();
 //         }
 //     });

@@ -33,8 +33,8 @@
     </script>
     <title>恋爱的千层套路</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/27 -->
-    <link href="//game.gtimg.cn/images/lv/cp/a20200427love520qq/index.css" rel="stylesheet" />
-    <link href="//game.gtimg.cn/images/lv/cp/a20200427love520qq/lottery.css" rel="stylesheet" />
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
+    <link href="./ossweb-img/lottery.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         <source src="//game.gtimg.cn/images/lv/cp/a20200427love520qq/music.mp3" type="audio/mpeg" />
     </audio>
     <!-- 首屏 -->
-    <div class="p-r part part-lottery">
+    <div class="p-a part part-lottery" style="display: block;">
         <div class="p-r bg lottery-wrap">
             <div class="full-img logo-icon">
                 <img src="//game.gtimg.cn/images/lv/cp/a20200427love520qq/logo.png" alt="logo">
@@ -96,7 +96,7 @@
     </div>
     
     <!-- 海报 -->
-    <div class="p-a pop" id="posterPop" style="left: 100rem;display: block;">
+    <div class="p-a pop" id="posterPop" style="top: 0;left: 100rem;display: block;">
         <div class="p-r full-img pop-con pop-con-poster">
             <div class="J-poster-1" style="display: none;">
                 <div class="poster-tips-text J-psTips-1 t-c" style="margin-top: 0;margin-bottom: .2rem;display: none;">快长按图片保存至本地分享给好友吧</div>
@@ -569,18 +569,21 @@
 
 
 <style type="text/css">
+    /*#submitMsg1{margin-top: -5rem;margin-left: -2.75rem;z-index:99999}*/
     #form_personInfo_663225{padding: 0.3rem;color: #807e7d;}
     #form_personInfo_663225 input:not([type='radio']){display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;}
     #package_663225,#province_663225,#city_663225{display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;width: 50%;float: left;}
     #personInfoContentBtn_663225{margin: .26rem auto 0;width: 1.98rem;height: .67rem;background-position: -4.75rem -1.23rem;display: block;background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/icons.png');background-repeat: no-repeat;background-size: 7.5rem auto;}
 </style>
 <!--<a href="###" >填写个人信息</a>-->
-<div class="pop pop-2" id="submitMsg1">
-    <div class="p-r pop-con">
-        <i class="p-a bg pop-inset"></i>
-        <div class="bg pop-top"></div>
-        <div id="personInfoContent_663225" class="defaultContent bg pop-center" style="display:none;">
-            <form id="form_personInfo_663225" name="form_personInfo_663225">
+<!--<div id="submitMsg1" style="margin-top: -5rem;margin-left: -2.75rem;top:30%;z-index:99999">-->
+
+
+        <div id="personInfoContent_663225" class="defaultContent pop pop-2" style="display:none;">
+            <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <form id="form_personInfo_663225" name="form_personInfo_663225" class="bg pop-center">
                 <header>
                     <a href="###" id="colseLayer_663225" style="float: right;">关闭</a>
                 </header>
@@ -657,7 +660,7 @@
             </form>
         </div>
     </div>
-</div>
+<!--</div>-->
 
 <!--插件样式-->
 <!--<div id="personInfoContent_663225" class="defaultContent" style="display:none;">-->
@@ -808,6 +811,11 @@
     
     //点击弹窗空白处关闭
     $("body").on("click", "#_overlay_", function(){
+        closeDialog();
+    });
+
+    //点击弹窗空白处关闭
+    $("body").on("touchstart", "#_overlay_", function(){
         closeDialog();
     });
 

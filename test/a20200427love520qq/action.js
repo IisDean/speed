@@ -50,7 +50,7 @@ function checkAMS(id,n){
 
             amsSubmit(303480,id);
         },function(){
-            alert("ÇëÏÈµÇÂ¼ÕËºÅ~");
+            alert("ÇëË¢ÐÂÒ³Ãæ£¬µÇÂ¼ÕËºÅ~");
         });
     });
 }
@@ -187,7 +187,13 @@ amsCfg_663104 = {
         // return;
         if(res.iRet == 0)
         {
-            $("#ticket").text(res.sOutValue1);
+            if(parseInt(res.sOutValue1)>=5)
+            {
+                $("#ticket").text('5');
+            }else{
+                $("#ticket").text(res.sOutValue1);
+            }
+
             $("#total").text(res.sOutValue2);
         }
 
@@ -313,8 +319,9 @@ milo.ready(function(){
         milo.addEvent(g('btn_personInfo_663225'),'click',function(){
             LoginManager.submitLogin(function(){
                 amsCfg_663225.sData = { iShow: 1 };
-                amsSubmit(303480,663225);
-                TGDialogS('submitMsg1');
+                checkAMS(663225,4);
+                // amsSubmit(303480,663225);
+                TGDialogS('personInfoContent_663225');
             });
         });
     });

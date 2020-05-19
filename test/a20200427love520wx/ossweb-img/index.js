@@ -309,7 +309,7 @@
         //增加用户名称
         // var name = $("#userinfo").html();
         // $("#username").html(name);
-        
+        $(".J-scroll-init").hide();
         nextPageRead(4);
     }
 

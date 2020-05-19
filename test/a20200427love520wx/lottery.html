@@ -149,7 +149,7 @@
             <div class="bg pop-top"></div>
             <div class="bg pop-center">
                 <i class="bg pop-title-icon"></i>
-                <p class="pop-title2-text t-c" style="margin-top: .1rem;">您今天已成功签到了</p>
+                <p class="pop-title2-text t-c" style="margin-top: .1rem;" id="errText">您今天已成功签到了</p>
                 <!--<h1 class="pop-title1-text t-c" style="margin-top: .16rem;">签到成功</h1>-->
                 <p class="pop-tips-text t-c">明天再来吧</p>
             </div>
@@ -508,18 +508,20 @@
 
 
     <style type="text/css">
+        #submitMsg1{margin-top: -5rem;margin-left: -2.75rem;z-index:99999}
         #form_personInfo_663244{padding: 0.3rem;color: #807e7d;}
         #form_personInfo_663244 input:not([type='radio']){display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;}
         #package_663244,#province_663244,#city_663244{display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;width: 50%;float: left;}
         #personInfoContentBtn_663244{margin: .26rem auto 0;width: 1.98rem;height: .67rem;background-position: -4.75rem -1.23rem;display: block;background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/icons.png');background-repeat: no-repeat;background-size: 7.5rem auto;}
     </style>
     <!--<a href="###" >填写个人信息</a>-->
-    <div class="pop pop-2" id="submitMsg1">
-        <div class="p-r pop-con">
-            <i class="p-a bg pop-inset"></i>
-            <div class="bg pop-top"></div>
-            <div id="personInfoContent_663244" class="defaultContent bg pop-center" style="display:none;">
-                <form id="form_personInfo_663244" name="form_personInfo_663244">
+    <!--<div class="" id="submitMsg1">-->
+
+            <div id="personInfoContent_663244" class="defaultContent pop pop-2 " style="display:none;">
+                <div class="p-r pop-con">
+                <i class="p-a bg pop-inset"></i>
+                <div class="bg pop-top"></div>
+                <form id="form_personInfo_663244" name="form_personInfo_663244" class="bg pop-center">
                     <header>
                         <a href="###" id="colseLayer_663244" style="float: right;">关闭</a>
                     </header>
@@ -596,7 +598,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    <!--</div>-->
 
 
     <!-- 填写个人信息 html -->
