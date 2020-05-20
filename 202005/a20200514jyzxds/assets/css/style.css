@@ -129,6 +129,9 @@ a {
     width: 100%;
     overflow: hidden;
 }
+.pop {
+    display: none;
+}
 /* 房型列表 */
 .fx-list {
     margin-bottom: -.3rem;
@@ -202,4 +205,52 @@ a {
     line-height: .24rem;
     font-size: .2rem;
     color: #8f8f8f;
+}
+.pop-login,
+.pop-rule {
+    width: 7.13rem;
+    height: 7.38rem;
+    background-image: url('../images/pop_bg.jpg');
+}
+.pop-login {
+    height: 5rem;
+}
+.pop-login .xsj_register_dom_nine {
+    margin-top: .5rem;
+    padding: 0 1rem;
+}
+.login-title-icon,
+.rule-title-icon {
+    margin: .3rem auto 0;
+    width: 6.24rem;
+    height: .29rem;
+    background-image: url('../images/rule_title_icon.png');
+}
+.login-title-icon {
+    margin-top: .5rem;
+    background-image: url('../images/login_title_icon.png');
+}
+.rule-list {
+    margin: .28rem .28rem 0;
+}
+.rule-item-text {
+    text-align: justify;
+    line-height: .35rem;
+    font-size: .22rem;
+    color: #808080;
+}
+.confirm-btn {
+    margin: .24rem auto 0;
+    width: 1.78rem;
+    height: .54rem;
+    background-position: -1.69rem 0;
+}
+.close-btn2 {
+    top: 0;
+    right: 0;
+    width: .5rem;
+    height: .5rem;
+    background-image: url('../images/close_btn2.png');
+    background-size: .36rem auto;
+    background-position: center center;
 }

@@ -417,4 +417,17 @@ a {
     line-height: .40rem;
     font-size: .24rem;
     color: #000;
+}/* #t6Hl8#6A06846F907EA2071489A646A6D74799 */
+/* ?? */
+.pop-copy,
+.pop-get {
+    width: 4.41rem;
+    height: 3.89rem;
+}
+.close-btn {
+    top: -.66rem;
+    right: -.16rem;
+    width: .4rem;
+    height: .4rem;
+    background-image: url('//game.gtimg.cn/images/story/cp/a20200512hdhj/close_btn.png');
 }

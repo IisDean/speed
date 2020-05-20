@@ -176,13 +176,69 @@
     pointer-events: none;
 }
 /* 海报 */
+.close-btn {
+    top: .2rem;
+    right: 0;
+    z-index: 999;
+    width: .4rem;
+    height: .4rem;
+    background-image: url('../images/close_btn.png');
+}
+.dom2img-result {
+    display: none;
+}
+.pop-poster {
+    max-height: 100%;
+}
+.poster-con {
+    width: 7rem;
+    height: 8rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.pop-poster::before,
+.pop-poster:after {
+    content: '';
+    position: absolute;
+    z-index: 98;
+    right: 0;
+    width: 100%;
+    height: 1rem;
+    pointer-events: none;
+}
+.pop-poster::before {
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #333 90%);
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0), #333 90%);
+}
+.pop-poster::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #333 90%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), #333 90%);
+}
+.poster-tips {
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    line-height: 1;
+    font-size: .24rem;
+    color: #fff;
+    pointer-events: none;
+}
+.poster-tips.up {
+    top: .2rem;
+}
+.poster-tips.down {
+    bottom: .2rem;
+}
 .poster-container {
     top: -100rem;
+    left: 100rem;
     padding-top: 4.46rem;
     box-sizing: border-box;
-    width: 100%;
-    height: 27.34rem;
+    width: 7.5rem;
     background-image: url('../images/poster_bg.jpg');
+    background-position: top center;
 }
 .poster-container .plank-up {
     margin-top: 0;

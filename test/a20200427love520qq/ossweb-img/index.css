@@ -214,6 +214,9 @@ a {
     transform: scale(.95);
     -webkit-transform: scale(.95);
 }
+body {
+    overflow-x: hidden;
+}
 .stage {
     width: 100%;
     min-height: 100%;
@@ -875,6 +878,7 @@ a {
     width: 6rem;
     min-height: 9.61rem;
     outline: none;
+    overflow: hidden;
 }
 .poster-container {
     top: -100rem;
