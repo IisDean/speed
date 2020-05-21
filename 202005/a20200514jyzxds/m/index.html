@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta content="telephone=no,email=no" name="format-detection"/>
+    <meta name="description" content="西山居游戏">
+    <meta name="keywords" content="西山居游戏">
+    <title>移动版官方网站-西山居游戏</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/mobile.css" rel="stylesheet" />
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <script src="//zhcdn01.xoyo.com/xassets/lib/daily-app-auth/0.0.1/daily-app-auth.js" crossOrigin="anonymous" ></script>
+    <script src="//zhcdn01.xoyo.com/xassets/lib/daily-app-auth/0.0.1/get-daily-account-info.js" crossOrigin="anonymous" ></script>
+</head>
+
+<body>
+    <div class="p-r stage">
+        <div class="p-r wrap bg head-wrap">
+            <a href="javascript: $.lay.open($('#popRule'));" class="p-a bg rule-btn t">活动规则</a>
+        </div>
+        <ul class="bg tab-menu flex flex-middle">
+            <li class="tab-item flex-1 active" data-type="0">
+                <div class="p-r tab-wrap">
+                    <div class="icons inset-icon"></div>
+                    <div class="tab-msg-text t-c">全部</div>
+                </div>
+            </li>
+            <li class="tab-item flex-1" data-type="1">
+                <div class="p-r tab-wrap">
+                    <div class="icons inset-icon"></div>
+                    <div class="tab-msg-text t-c">积木</div>
+                </div>
+            </li>
+            <li class="tab-item flex-1" data-type="2">
+                <div class="p-r tab-wrap">
+                    <div class="icons inset-icon"></div>
+                    <div class="tab-msg-text t-c">家园5级</div>
+                </div>
+            </li>
+            <li class="tab-item flex-1" data-type="3">
+                <div class="p-r tab-wrap">
+                    <div class="icons inset-icon"></div>
+                    <div class="tab-msg-text t-c">家园10级</div>
+                </div>
+            </li>
+            <li class="tab-item flex-1" data-type="4">
+                <div class="p-r tab-wrap">
+                    <div class="icons inset-icon"></div>
+                    <div class="tab-msg-text t-c">无等级限制</div>
+                </div>
+            </li>
+        </ul>
+        <div class="wrap bg content-wrap">
+            <ul class="flex flex-between fx-list">
+                <!-- <li class="bg fx-item">
+                    <a href="javascript: alert('敬请期待！');">
+                        <div class="full-img fx-cover">
+                            <img src="./assets/images/fx_cover.jpg" alt="房型">
+                        </div>
+                        <p class="fx-title-text t-hide">房型标题房型标题房型标题</p>
+                        <div class="flex author-wrap">
+                            <div class="bg avatar-wrap flex flex-center flex-middle">
+                                <div class="full-img avatar-content">
+                                    <img src="./assets/images/avatar_default.png" alt="头像">
+                                </div>
+                            </div>
+                            <div class="flex-1 t-hide">
+                                <p class="author-name-text t-hide">昵称昵称昵称昵称昵称昵称</p>
+                                <div class="flex live-wrap active">
+                                    <i class="icons heart-icon"></i>
+                                    <p class="like-text"><span>2345</span>想要</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 弹窗 活动规则 -->
+    <div class="bg pop pop-rule" id="popRule">
+        <div class="pop-con">
+            <div class="bg rule-title-icon"></div>
+            <ul class="rule-list">
+                <li class="rule-item-text">①作品必须独立完成，上传对应图片及蓝图数据文件需保持一致，且上传蓝图为剑网3正式服家园系统可用蓝图，编辑器置景及体服测试蓝图暂不接受投稿参赛。</li>
+                <li class="rule-item-text">②作品不得违反国家法律法规，不得盗用、剽窃抄袭他人作品，不得过度宣扬色情、暴力、血腥等不良内容。若涉及现实或影视作品场景还原，需对原场景来源进行明确标注。如有违反，立刻取消参赛资格，相关经济法律责任由违反者全权承担，与官方无关。</li>
+                <li class="rule-item-text">③投稿作品不可带有剑网3游戏产品以外的其他产品的任何内容，不得含有其他违法违规内容。所有投稿作品不得在活动期间内用于任何商业用途或授权任何第三方使用。</li>
+                <li class="rule-item-text">④作品所有版权归作者与剑网3共同所有。一经投稿则视为允许主办方在活动相关专题、官网、新闻、微博、微信等推广中署名宣传。</li>
+                <li class="rule-item-text">⑤获奖名单公布后，通宝奖励将于一个月内陆续发放至参赛者提交的游戏账号角色中。投稿者因个人原因未能成功领取奖品则视为放弃奖品。</li>
+                <li class="rule-item-text">⑥本次活动最终解释权归剑网3所有。</li>
+            </ul>
+            <a href="javascript: $.lay.close();" class="icons confirm-btn t">确定</a>
+        </div>
+        <a href="javascript: $.lay.close();" class="p-a bg close-btn2 t">关闭</a>
+    </div>
+    
+    <!-- 弹窗 登录 -->
+    <div class="bg pop pop-login" id="popLogin">
+        <div class="pop-con">
+            <div class="bg login-title-icon"></div>
+            <div class="xsj_register_dom_nine">
+            </div>
+        </div>
+        <a href="javascript: $.lay.close();" class="p-a bg close-btn2 t">关闭</a>
+    </div>
+
+<script src="//zhcdn01.xoyo.com/xassets/lib/jquery/1.7.2/jquery.js"></script>
+<script src="//zhcdn01.xoyo.com/xassets/com/pf/register/jsreg/v2/register.js"></script>
+<script src="//zhcdn01.xoyo.com/xassets/com/pf/footer/v2/black/m/footernofont.js"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="//zhcdn01.xoyo.com/xassets/com/wx/useWxApi/v2/useWxApi.js"></script>
+<script class="trackerBefore">
+    window.$$exports = window.exports;
+    window.exports = {};
+</script>
+<script class="tracker" src="//zhcdn01.xoyo.com/xassets/lib/st-report-sdk/0.2.3/st-report-sdk.min.js"></script>
+<script class="trackerAfter">
+    window.StReportSdk023 = window.exports.StReportSdk;
+    window.exports = window.$$exports;
+</script>
+<script>
+    /**
+     *
+     * @param eventName  事件名称，对应统计文档ev_n
+     * @param eventDescription 事件描述，对应统计文档ev_desc
+     * @param ret_code 错误提示码,常用于后端接口返回的错误状态码，如 -20001
+     * @param ret_msg 错误提示文案，常用于后端接口返回错误描述，如： XX失败
+     */
+
+    /**
+     * 调用方法，比如： window.stReportGlobal('load_page','页面加载');
+     */
+    const StReportSdk023Report = StReportSdk023.getInstance('jx3_test_maidian'); //埋点的组名
+    window.stReportGlobal023MultiProps = function ({eventName, eventDescription, ...props}) {
+        const {status, ev_status_reason, title, passport} = props;
+        // * @param projectIdentifier [string] - 项目标识（[A-Za-z_]+{4, },内部约定），必选
+        // * @param eventName [string] - 事件名称，（格式与时间分组一致），可选
+        // * @param eventGroup [string] - 事件分组（[A-Za-z_\-]+{1,},内部约定），可选 ，对应统计文档： ev_g
+        // * @param eventDescription [string]- 事件描述（字符串）
+        // * @param eventDataValue [object] - 事件额外数据对象，kv对，可选, 如: evd[k1]=v1&evd[k2]
+        // * @param eventTags [string[]] - 事件标签数组（格式与时间分组一致），可选 ，对应统计文档：ev_tag
+        try {
+            StReportSdk023Report.report({
+                eventName: eventName,
+                projectIdentifier: 'jx3',
+                eventDescription: eventDescription,
+                eventTags: ['pc', 'match'], //埋点标签
+                eventGroup: 'jx3_test_maidian',  //埋点的组名
+                eventDataValue: {
+                    title: title ? title : undefined,
+                    status: status ? status : undefined,
+                    ev_status_reason: ev_status_reason ? ev_status_reason : undefined,
+                    passport: passport ? passport : undefined,
+                    td_pl: StReportSdk023.getDiffRouteTime(),
+                }
+            });
+        } catch (e) {
+            setTimeout(() => {
+                throw e;
+            });
+        }
+    }
+    var dateNews2 = new Date().getTime();
+    var timejian = dateNews2 - window.inPageDate;
+    window.stReportGlobal023MultiProps({eventName: 'load_page_start', eventDescription: '页面加载'});
+</script>
+<script src="//zhcdn01.xoyo.com/xassets/com/pf/slideloadpage/dist/dropload.js"></script>
+<script src="./assets/scripts/vconsole.min.js" ></script>
+<script src="./assets/scripts/wv.umd.js"></script>
+<script src="./assets/scripts/pop.js"></script>
+<script src="./assets/scripts/main.js"></script>
+<script>
+    $(function () {
+
+        //tab切换置顶
+        var $tabWrap = $(".tab-menu"),
+            scrollY = 0,
+            tabY = $tabWrap.offset().top;
+        $(window).on('scroll', function () {
+            scrollY = window.scrollY;
+            if (scrollY >= tabY) {
+                $tabWrap.addClass("fixed");
+            } else {
+                $tabWrap.removeClass("fixed");
+            }
+        });
+
+        // 页数
+        var page = 0;
+        // 每页展示10个
+        var pageSize = 6;
+        // 模式 
+        var pageType = 0; //0全部 1积木 2家园5级 3家园10级 4无等级限制
+        var dropload;
+        // dropload
+        function initDropload(){
+            dropload = $('.content-wrap').dropload({
+                scrollArea : window,
+                domDown : {
+                    domClass   : 'dropload-down',
+                    domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
+                    domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中</div>',
+                    domNoData  : '<div class="dropload-noData">暂无更多数据</div>'
+                },
+                loadDownFn : function(me){
+                    g.getData.get_explain_list(page, pageSize, pageType, 0, function(str, num){
+                        // 无数据
+                        if(num <= 0){
+                            me.lock();
+                            me.noData();
+                        }
+                        $(".fx-list").append(str);
+                        me.resetload();
+                        page++;
+                    });
+                },
+                threshold: 50
+            });
+        }
+        initDropload();
+        
+        function initGetData(){
+            g.getData.get_explain_list(page, pageSize, pageType, 0, function(str, num){
+                $(".fx-list").append(str);
+                page++;
+            });
+        }
+        // initGetData();
+
+        
+        //tab模式切换
+        $tabWrap.find("li").on("click", function(){
+            var $this = $(this),
+                idx = $this.index();
+                pageType = $this.attr('data-type');
+            page = 0;
+            dropload.unlock();
+            $this.addClass('active').siblings("li").removeClass('active');
+            $(".fx-list").html('');
+            $(".dropload-down").remove();
+            // initGetData();
+            initDropload();
+        });
+
+    })
+</script>
+</body>
+
+</html>

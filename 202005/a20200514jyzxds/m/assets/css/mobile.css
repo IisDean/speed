@@ -1,0 +1,74 @@
+body {
+    background-color: #d3e5f1;
+}
+.stage {
+    min-height: 100%;
+    background-color: #bcd1e2;
+    background-image: url('../images/p1_content.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.head-wrap {
+    height: 7.85rem;
+    background-image: url('../images/p1_head.jpg');
+}
+.rule-btn {
+    top: 0;
+    right: .2rem;
+    width: .67rem;
+    height: 2.05rem;
+    background-image: url('../images/rule_btn.png');
+}
+.tab-menu {
+    position: absolute;
+    top: 7.1rem;
+    left: 0;
+    padding: .56rem .76rem .74rem .64rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.83rem;
+    background-image: url('../images/tab_bg.png');
+}
+.tab-menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: -.26rem;
+}
+.tab-wrap {
+    width: 100%;
+}
+.tab-item .tab-msg-text {
+    margin: .13rem auto 0;
+    line-height: 1;
+    font-size: .2rem;
+    color: #6a6a6a;
+}
+.inset-icon {
+    margin: 0 auto;
+    width: .39rem;
+    height: .38rem;
+    background-position: -.9rem -.72rem;
+}
+.tab-item.active .inset-icon {
+    background-position: -1.33rem -.72rem;
+}
+.tab-item.active .tab-msg-text {
+    font-size: .24rem;
+    color: #83643c;
+}
+/* 房型列表 */
+.fx-list {
+    margin: 2rem .16rem 0;
+    font-size: 0;
+}
+.fx-item {
+    height: 3.79rem;
+}
+.dropload-down {
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-size: .24rem;
+    color: #747474;
+}

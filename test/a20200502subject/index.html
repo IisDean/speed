@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="《和平精英》是腾讯光子工作室群自研打造的军事竞赛体验手游。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验。" />
+    <meta name="Keywords" content="PEL职业联赛,PEC职业联赛,和平精英, 和平精英手游, 腾讯和平精英, 和平精英手游下载, 和平精英公测 ,和平精英手游公测, 腾讯和平精英公测,  勇者同行, 和平精英官网 " />
+    <title>专题内容-和平精英-腾讯游戏</title>
+    <script>
+        //	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        //	    window.location.href ="//cf.qq.com/cp/m/index.html";
+        //	}
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 1125;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <!-- swiper 4.3.3 css -->
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/video-js.min.css" type="text/css">
+    <style type="text/css">
+        html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+        details,figcaption,figure,footer,header,menu,nav,section{margin:0;padding:0}
+        article,aside,details,figcaption,figure,footer,header,menu,nav,section { display:block; }
+        table{border-collapse:collapse;border-spacing:0}
+        audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+        fieldset,img{border:0}
+        address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+        ol,ul{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;margin:0;padding:0;}
+        q:before,q:after{content:''}
+        body{background:#101822;-webkit-text-size-adjust:none;}
+        a{text-decoration:none; outline:none;}
+        html{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+        a:hover{ text-decoration:none;}
+        i,em {font-style: inherit;}
+        html{font-size:100px;}
+        body,html{width:100%;height:100%;}
+        a:focus,div:focus,p:focus{outline: none;}
+        .c:after{content:" "; clear:both; height:0; visibility:hidden; display:block;}
+        .c{*zoom:1;}
+        .pf{position: fixed; display: block;}
+        .pa{position: absolute; display: block;}
+        .hide{width: 0;height: 0;overflow: hidden;display: none;visibility: hidden;}
+        .t{text-indent: -9999rem;display: block;}
+        .sp { background: url(ossweb-img/sp.png) no-repeat; background-size: 7.50rem auto;}
+
+
+
+        body{background-color:#f5f2eb;}
+        .wrap{width:11.25rem; margin: 0 auto; }
+        .nav{width:11.25rem; height: 1.32rem; position: fixed; display: flex; align-items: center; z-index:50;}
+        .nav .main{width:10.38rem; margin:0 auto; display: flex;}
+        .nav .btn-back{flex:0; flex-basis: 0.74rem; min-width:0.76rem; height: 0.76rem; background-position: -2.22rem -0.01rem;}
+        .nav .title{flex:1; margin-right: 0.74rem; font-size: 0.48rem; font-weight: bold; color:#1a1917; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.15s linear;}
+        .nav.showtopface{background: #fff;}
+        .nav.showtopface .btn-back{background-position: -2.23rem -0.90rem; }
+        .nav.showtopface .title{opacity: 1;}
+        .nav.showtopface::after{content:''; background: #f5f2eb; display: block; position: absolute; bottom:0; left:0; width:100%; height: 0.01rem;}
+
+        .main{width:10.38rem; margin:0 auto; position: relative;}
+
+        .part1{background: #fff;}
+        .part1 .v-box-tence{width:100%; height: 6.32rem; position: relative; margin-top: 0;}
+        .part1 .v-box-tence .btn-play{ display: none; width:1.50rem; height: 1.50rem; background-position: 0 0; position: absolute; top:50%; left: 50%; z-index: 3; margin-top: -0.75rem; margin-left: -0.75rem;}
+        .part1 .v-box-tence .btn-play.pause{background-position: 0 -2.30rem;}
+        .part1 .video-tence{width:100%; height: 100%; position: absolute; top:0; left:0; z-index: 2;}
+        .part1 .v-post{width:100%; height: 6.32rem;}
+        .part1 .video.imgOnly .btn-play{display: none;}
+        .part1 .v-info{height: 1.60rem; display: flex; justify-content: space-between; align-items: center }
+        .part1 .v-info-l{width:8.00rem; display: flex; flex-direction: column; justify-content: center;}
+        .v-title{font-size: 0.48rem; color:#1a1917; font-weight: bold;  width:100%;}
+        .ellipsis{overflow: hidden;/*超出部分隐藏*/ white-space: nowrap;/*不换行*/ text-overflow:ellipsis;/*超出部分文字以...显示*/}
+        .v-refresh-time{font-size: 0.36rem; color:#3d3c38; line-height: 0.34rem; margin-top: 0.16rem;}
+        .part1 .btn-book{width:1.74rem; height: 0.69rem; line-height: 0.69rem; border: 0.03rem solid #ffba00; color:#ffba00; font-size: 0.39rem; text-align: center;text-decoration: none; }
+        .part1 .btn-book::after{ content:'订阅';}
+        .part1 .btn-book.booked{color:#999; border-color:#999;}
+        .part1 .btn-book.booked::after{ content:'已订阅';}
+
+        .part2 .tab-nav{display: flex; border-bottom: 0.01rem solid #f5f2eb; background: #fff; margin-top: 0.30rem; position: relative;}
+        .part2 .tab-nav .tab-item{flex:1; font-size: 0.48rem; height: 1.33rem; text-align: center; line-height: 1.33rem;}
+        .part2 .tab-nav .tab-item .tab-txt{color:#1a1917; position: relative; display:inline-block; line-height: 0.45rem;}
+        .part2 .tab-nav .tab-item.active .tab-txt{font-weight: bold; color:#ffba00;}
+        .part2 .tab-lin{content:''; display:inline-block; position: absolute; width:0.42rem; height: 0.09rem; background: #ffba00;
+            position: absolute; left:0; bottom: 0.20rem; border-radius: 0.30rem; transition: transform 0.3s; }
+        .part2 .tab-nav .tab-item:nth-child(1).active ~ .tab-lin{transform: translateX(2.59rem)}
+        .part2 .tab-nav .tab-item:nth-child(2).active ~ .tab-lin{transform: translateX(8.22rem)}
+
+        .swiper-container {width: 100%;}
+        .swiper-slide {display: none; opacity: 0;}
+        .swiper-slide.active{display: block; opacity: 1;}
+
+        .news-con{background: #fff; padding-bottom: 0.60rem;}
+        .news-head{height: 1.56rem; display: flex; align-items: center; font-size: 0.48rem; color:#1a1917; font-weight: bold; border-bottom:0.01rem solid #f5f2eb;}
+        .news-list li{display: flex; justify-content: space-between; padding:0.40rem 0 0.46rem; border-bottom:0.01rem solid #f5f2eb;}
+        .news-list .news-l{width:7.08rem; height: 1.98rem; display: flex; flex-direction: column; justify-content: center; }
+        .news-list .news-r{width:3.00rem; height: 1.98rem; border-radius: 0.30rem;}
+        .news-list .news-r .news-img{width:100%; height: 100%; border-radius: 0.30rem;}
+        .news-list .news-info{height: 0.38rem; margin-top: 0.38rem; color:#a3a19d; font-size: 0.36rem; display: flex; justify-content: space-between;}
+        .news-list .news-title{color:#1a1917; font-size: 0.48rem; font-weight: bold; height: 1.68rem; overflow: hidden;
+            overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;
+        }
+        .news-list .view{margin-left: 0.36rem; }
+        .news-list .comm{margin-left: 0.36rem; }
+        .news-list .news-info-r i{position: relative; top:0.02rem;}
+        .news-list .icon-view{width:0.46rem; height: 0.38rem; display: inline-block; background-position: -3.64rem -0.04rem; vertical-align: top;}
+        .news-list .icon-comm{width:0.46rem; height: 0.38rem; display: inline-block; background-position: -4.56rem -0.05rem; vertical-align: top;}
+
+        .events{padding-bottom:1.60rem;}
+        .events-list li{background: #fff; margin-bottom: 0.30rem; padding-bottom: 0.62rem;}
+        .events-head{ display: flex; justify-content: flex-start; padding:0.54rem 0 0.00rem; }
+        .user-face{width:1.20rem; height: 1.20rem; border-radius: 50%; position: relative;overflow: hidden;}
+        .face-img{width:100%; height: 100%; }
+        .icon-sex-male{width:0.40rem; height: 0.40rem; background-position: -5.58rem 0; bottom: 0; right:0;}
+        .icon-sex-female{width:0.40rem; height: 0.40rem; background-position: -6.12rem 0; bottom: 0; right:0;}
+        .user-name{ color:#1a1917; font-size: 0.48rem; font-weight: bold; height: 1.20rem; margin-left: 0.20rem; display: flex; align-items: center;}
+        .events-labels{line-height: 0.70rem;}
+        .label-link{color:#e6c15c; font-size: 0.42rem; vertical-align: middle;}
+        .brief{font-size: 0.42rem; color:#1a1917; line-height: 0.74rem;}
+        .v-box{width:10.30rem; height: 5.80rem; position: relative; margin-top: 0.40rem; background: rgba(0,0,0,0,3); border-radius: 0.15rem;}
+        .v-post{width:100%; height: 100%; }
+        .video{width:100%; height: 100%; position: absolute; top:0; left:0; z-index: 1;}
+        .v-box .btn-play-v{ display: block; width:1.50rem; height: 1.50rem; background-position: 0 0; position: absolute; top:50%; left: 50%; z-index: 3; margin-top: -0.75rem; margin-left: -0.75rem;}
+        .v-box .btn-play-v.pause{background-position: 0 -2.33rem;}
+        .thumbs{display: flex; flex-wrap: wrap;}
+        .thumbs .thumb-img{width:3.30rem; height: 3.30rem; margin: 0.40rem 0.22rem 0 0 ;}
+        .thumbs .thumb-img:nth-child(n+9){display: block;}
+        .thumbs .thumb-img:nth-child(3n+3){margin-right: 0;}
+        /*假如添加了video标签,可能会出现video标签默认置顶的情况,解决这个bug可以通过样式设置来规避;*/
+        .compatibleStyle {
+            backface-visibility:hidden;
+            -webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+            -moz-backface-visibility:hidden; 	/* Firefox */
+            -ms-backface-visibility:hidden; 	/* Internet Explorer */
+            -webkit-perspective: 0;
+            -webkit-transform: translate3d(0,0,0);
+            visibility:visible;
+        }
+
+        .comments-contain{width:100%; height: 1.58rem; margin-top: 0.22rem; background: #fff; position: fixed; bottom: 0; z-index: -1; opacity: 0; transition: all 0.2s; }
+        .comments-contain .comments-head{ height: 1.58rem; line-height: 1.58rem; display: flex; justify-content: center; align-items: center; }
+        .comments-contain .btn-comments-head{font-weight: bold; font-size: 0.42rem; color:#1a1917; display: flex; justify-content: center; align-items: center;text-decoration: none;}
+        .comments-contain .icon-down{width:0.30rem; height: 0.15rem; background-position: -3.70rem -1.13rem; position: relative; margin-left: 0.15rem;}
+        .comments-contain.active{opacity: 1;  z-index: 50; border-top:0.01rem solid #f5f2eb;}
+
+        .layer{width:100%; height: 100%; position: fixed; z-index: 999; top:0; left:0; display: none;}
+        .layer .layer-body{width:100%; height: 100%; position: absolute; z-index: 996; top:0; left:0; display: flex; justify-content: center;
+            align-items: center;}
+        .layer .layer-shade{background: rgba(0,0,0,1); opacity: 0.75; width:100%; height: 100%; position: absolute; z-index: 990; top:0; left:0;}
+        .layer .layer-nav{width:100%; height: 1.10rem; position: absolute; z-index: 998; top:0; left:0; background: rgba(0,0,0,1); opacity:0.80; }
+        .layer .layer-title{width:100%; height: 100%; display: flex; font-size: 0.36rem; color:#fff;  display: flex; justify-content: center; align-items: center;}
+        .layer .btn-close{width:0.70rem; height: 0.70rem; text-align: center; line-height: 0.54rem; font-size: 1.00rem; color:#fff;
+            position: absolute; z-index: 998; top:0.20rem; right:0.20rem;}
+        .layer .swiper-container{height: 100%;}
+        .layer .layer-body .swiper-slide{display: block; opacity: 1; display: flex; justify-content: center; align-items: center;}
+        .layer .layer-body img{max-width:100%; max-height: 100%;}
+
+        .v-box .vjs-tech{max-width:100%; max-height: 100%;}
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="nav ">
+            <div class="main">
+                <a href="javascript:;" class="btn-back sp"></a>
+                <div class="title">内容专题</div>
+            </div>
+        </div>
+
+        <!--顶图板块-->
+        <div class=" part1">
+            <div class="v-box-tence ">
+                <a href="javascript:;" class="btn-play sp"></a>
+                <div id="videoTence" class="video-tence"></div>
+                <img src="ossweb-img/video/post1.jpg" alt="" class="v-post">
+            </div>
+            <div class="main v-info">
+                <div class="v-info-l">
+                    <h3 class="v-title ellipsis">文案可配 十字以内</h3>
+                    <span class="v-refresh-time">更新时间：2020.04.30</span>
+                </div>
+                <a href="javascript:;" class="btn-book booked"></a>
+            </div>
+        </div>
+
+        <!--切换板块-->
+        <div class="part2">
+            <div class="tab-nav">
+                <a href="javascript:;" class="tab-item active"><span class="tab-txt">资讯</span></a>
+                <a href="javascript:;" class="tab-item "><span class="tab-txt">动态</span></a>
+                <div class="tab-lin"></div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper-container" id="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active">
+                        <!--资讯-->
+                        <div class="news-con">
+                            <div class="main ">
+                            <h3 class="news-head">地图解析</h3>
+                            <ul class="news-list">
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            关注官方赛事哟 IG VS G2巅峰对决
+                                            究竟谁能一战成名战士!究竟谁能一战成名战士!究竟谁能一战成名战士!
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img1.png" alt="" class="news-img"></div>
+                                </li>
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            这弹幕看的我想笑，小白裙内心还
+                                            毫无波澜，越到后面越起飞.
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img2.png" alt="" class="news-img"></div>
+                                </li>
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            小白裙是哪里都赌啊！季后赛第一
+                                            天买定离手了啊！
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img3.png" alt="" class="news-img"></div>
+                                </li>
+                            </ul>
+                            <h3 class="news-head">攻略技巧</h3>
+                            <ul class="news-list">
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            关注官方赛事哟 IG VS G2巅峰对决
+                                            究竟谁能一战成名战士!
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img1.png" alt="" class="news-img"></div>
+                                </li>
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            这弹幕看的我想笑，小白裙内心还
+                                            毫无波澜，越到后面越起飞.
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img2.png" alt="" class="news-img"></div>
+                                </li>
+                                <li>
+                                    <div class="news-l">
+                                        <h3 class="news-title">
+                                            小白裙是哪里都赌啊！季后赛第一
+                                            天买定离手了啊！
+                                        </h3>
+                                        <div class="news-info">
+                                            <span class="from">和平精英官方</span>
+                                            <span class="news-info-r">
+                                                <span class="view"><i class="icon-view sp"></i><span>11.4万</span></span>
+                                                <span class="comm"><i class="icon-comm sp"></i><span>90</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="news-r"><img src="ossweb-img/news/img3.png" alt="" class="news-img"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="events">
+                            <ul class="events-list">
+                                <li>
+                                    <div class="main">
+                                        <div class="events-head">
+                                            <div class="user-face">
+                                                <img src="ossweb-img/user/face2.png" class="face-img" alt="">
+                                                <i class="icon-sex-female sp pa"></i>
+                                            </div>
+                                            <div class="user-name">小白无敌</div>
+                                        </div>
+                                        <div class="events-labels">
+                                            <a href="javascript:;" class="label-link">#额同僚#</a>
+                                            <a href="javascript:;" class="label-link">#萌新小队#</a>
+                                            <a href="javascript:;" class="label-link">#游戏群熟人#</a>
+                                        </div>
+                                        <div class="brief">沙漠2.0燃情升级，刺激赛车体验必备上房技巧，教你拿
+                                            下别墅区，单人四排致胜思路!
+                                        </div>
+                                        <div class="thumbs">
+                                            <img src="ossweb-img/thumbs/img1.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img1.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img1.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img1.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main">
+                                        <div class="events-head">
+                                            <div class="user-face">
+                                                <img src="ossweb-img/user/face1.png" class="face-img" alt="">
+                                                <i class="icon-sex-male sp pa"></i>
+                                            </div>
+                                            <div class="user-name">M416TT</div>
+                                        </div>
+                                        <div class="events-labels">
+                                            <a href="javascript:;" class="label-link">#额同僚#</a>
+                                            <a href="javascript:;" class="label-link">#萌新小队#</a>
+                                            <a href="javascript:;" class="label-link">#游戏群熟人#</a>
+                                        </div>
+                                        <div class="brief">沙漠2.0燃情升级，刺激赛车体验必备上房技巧，教你拿
+                                            下别墅区，单人四排致胜思路!
+                                        </div>
+                                        <div class="v-box">
+                                            <video vid="1" class="video video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="100%"
+                                                   data-setup="{}">
+                                                <source src="ossweb-img/video/video.mp4" type="video/mp4">
+                                                <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                                            </video>
+                                            <!--<img src="ossweb-img/video/post2.png" alt="" class="v-post">-->
+                                            <!--<video style="display:none;" class="video" vid="1" data-src="//game.gtimg.cn/images/game/act/a20160917fbh/videos/video2.mp4"></video>-->
+                                            <!--<a href="javascript:;" class="btn-play-v sp pa"></a>-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main">
+                                        <div class="events-head">
+                                            <div class="user-face">
+                                                <img src="ossweb-img/user/face1.png" class="face-img" alt="">
+                                                <i class="icon-sex-male sp pa"></i>
+                                            </div>
+                                            <div class="user-name">M416TT</div>
+                                        </div>
+                                        <div class="events-labels">
+                                            <a href="javascript:;" class="label-link">#额同僚#</a>
+                                            <a href="javascript:;" class="label-link">#萌新小队#</a>
+                                            <a href="javascript:;" class="label-link">#游戏群熟人#</a>
+                                        </div>
+                                        <div class="brief">沙漠2.0燃情升级，刺激赛车体验必备上房技巧，教你拿
+                                            下别墅区，单人四排致胜思路!
+                                        </div>
+                                        <div class="v-box">
+                                            <video vid="2" class="video video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="100%"
+                                                   data-setup="{}">
+                                                <source src="ossweb-img/video/video.mp4" type="video/mp4">
+                                                <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                                            </video>
+                                            <!--<img src="ossweb-img/video/post2.png" alt="" class="v-post">-->
+                                            <!--<video style="display:none;" class="video" vid="2" data-src="ossweb-img/video/video.mp4"></video>-->
+                                            <!--<a href="javascript:;" class="btn-play-v sp pa"></a>-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main">
+                                        <div class="events-head">
+                                            <div class="user-face">
+                                                <img src="ossweb-img/user/face2.png" class="face-img" alt="">
+                                                <i class="icon-sex-female sp pa"></i>
+                                            </div>
+                                            <div class="user-name">小白无敌</div>
+                                        </div>
+                                        <div class="events-labels">
+                                            <a href="javascript:;" class="label-link">#额同僚#</a>
+                                            <a href="javascript:;" class="label-link">#萌新小队#</a>
+                                            <a href="javascript:;" class="label-link">#游戏群熟人#</a>
+                                        </div>
+                                        <div class="brief">沙漠2.0燃情升级，刺激赛车体验必备上房技巧，教你拿
+                                            下别墅区，单人四排致胜思路!
+                                        </div>
+                                        <div class="thumbs">
+                                            <img src="ossweb-img/thumbs/img1.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                            <img src="ossweb-img/thumbs/img2.png" alt="" class="thumb-img">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments-contain">
+            <div class="comments-head"><a href="javascript:;" class="btn-comments-head">参与话题讨论 <i class="icon-down sp"></i></a></div>
+        </div>
+
+    </div>
+
+
+    <div class="layer" id="layerImage">
+        <div class="layer-shade"></div>
+        <div class="layer-nav">
+            <div class="layer-title"><span class="swiper-pagination"></span></div>
+            <div class="btn-close">&times;</div>
+        </div>
+        <div class="layer-body">
+            <div class="swiper-container" id="thumbs_view">
+                <div class="swiper-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .lay-shade{transition:opacity .3s;position:fixed;width:100%;height:100%;top:0;left:0;z-index:999;background:rgba(0,0,0,0);   display: none;}
+        .lay-alert{  display: none; transition:opacity .5s;position:fixed;width:9rem;height:4.8rem;top:50%;left:50%;margin-top:-1.6rem;margin-left:-4.5rem;z-index:1000;border-radius:6px;box-shadow:0 0 8px rgba(0,0,0,.1);background:rgba(255,255,255,1);opacity:1;z-index:19870907}
+        .lay-alert-head{font-size:.46rem;font-weight:700;line-height:.9rem;padding:0 .2rem;background:#f2f2f2;border-radius:5px 5px 0 0}
+        .lay-alert-body{height:3.9rem;font-size:.48rem;display:flex;justify-content:center;align-items:center}
+        .lay-btn-close{width:.9rem;height:.9rem;font-size:.8rem;text-align:center;line-height:.9rem;color:#333;text-shadow:rgba(0,0,0,.5);position:absolute;right:0;top:0}
+    </style>
+    <div class="lay-alert" times="1" lay-type="alert" >
+        <div class="lay-alert-head">错误</div>
+        <div class="lay-alert-body">错误提示文案</div>
+        <a class="lay-btn-close" times-close="1" href="javascript:">×</a>
+    </div>
+    <style>
+      /*pop*/
+      .pop{ position:fixed; top:-50%; left:-50%; width:200%; height:200%; z-index:9; background:rgba(0,0,0,0.5);  display: none;}
+      .dialog-cm{ position:absolute; top:50%; left:50%; margin:-4.59rem 0 0 -4.20rem; height:4.59rem; width:7.59rem; background-color:#fff; border-radius:0.08rem; font-size:0.48rem; overflow:hidden;}
+      .dialog-cm-bd{ height:3.24rem; display:-webkit-box; -webkit-box-pack:center; -webkit-box-orient:vertical; color:#494949; text-align:center;}
+      .dialog-cm-bt{ display:-webkit-box; height:1.335rem; border-top:solid 1px #ddd;}
+      .dialog-cm-bt span{ display:block; width:50%; -webkit-box-flex:1; height:1.335rem; line-height:1.335rem; text-align:center; border-left:solid 2px #ededed;}
+      .dialog-cm-bt span:active{ background-color:#faf9f9;}
+      .dialog-cm-bt span.btn-cancel{ color:#7f7f7f; margin-right:-2px; border:none;}
+      .dialog-cm-bt span.btn-yes{ color:#d98500;}
+    </style>
+    <!--弹窗 begin-->
+    <div class="pop" v-show="isShowDialog">
+      <div class="dialog-cm">
+          <div class="dialog-cm-bd">下载和平营地App后，<br>才能查看具体动态内容</div>
+
+        <div class="dialog-cm-bt">
+          <span class="btn-cancel" @click="clickHideDialog">取消</span>
+          <span class="btn-yes" @click="clickToApp">在APP打开</span>
+        </div>
+      </div>
+    </div>
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+    <!-- swiper4 -->
+    <script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+    <!--移动端视频组件-->
+    <!--<script src="//game.gtimg.cn/images/js/mmdPlugin/mmd-plugin.min.1.0.2.js" charset="utf-8"></script>-->
+    <!--<script src="//game.gtimg.cn/images/js/mmdVideoPlayer/mmd.videoplayer.min.1.0.1.js" charset="utf-8"></script>-->
+    <script src="js/video.min.js" charset="utf-8"></script>
+    <script src="js/pop.js" charset="utf-8"></script>
+
+    <!-- 腾讯视频播放组件 -->
+    <script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+
+    <script>
+        var g = {};
+        $(function () {
+
+            // $.lay.alert({title:'错误',content:errHtml})
+            $('.btn-book').on('click',function () {
+              $(this).toggleClass('booked');
+            })
+
+            //tab切换
+            $('.tab-item').on('click',function () {
+                var $this = this;
+                $($this).addClass('active').siblings().removeClass('active');
+                $('.swiper-slide').eq($($this).index()).addClass('active').siblings().removeClass('active');
+            });
+
+            //图片预览
+            $('.thumb-img').on('click',function () {
+              var index = $(this).index();
+              var list_thumbs = $(this).parents('.thumbs').children('.thumb-img');
+              $('#layerImage .layer-body .swiper-wrapper').empty();
+              for(var i=0; i<list_thumbs.length; i++){
+                var slider = $('<div class="swiper-slide"><img src="'+$(list_thumbs[i]).attr('src')+'"></div>')
+                $('.layer .layer-body .swiper-wrapper').append(slider);
+              }
+              var mySwiper = new Swiper('#thumbs_view',{
+                observer:true,
+                observeParents:true,
+                observeSlideChildren:true,
+                initialSlide:index,
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'fraction',
+                },
+              });
+
+              $('#layerImage').fadeIn();
+              $('#layerImage').one('click',function () {
+                $('#layerImage').fadeOut();
+              })
+
+            });
+
+            $('.video.video-js').each(function (index,el) {
+              g['videoPlayer' + $(el).attr('vid')] = videojs(el)
+              var videoObj = g['videoPlayer' + $(el).attr('vid')];
+              videoObj.ready(function () {
+                // videoObj.play();  如需自动播放，请使用该行代码
+              })
+
+              //监听播放时暂停其他所有的视频
+              videoObj.on('play',function () {
+                $('.video.video-js').each(function (index,el){
+                  if(videoObj!=g['videoPlayer' + $(el).attr('vid')]){
+                    g['videoPlayer' + $(el).attr('vid')].pause();
+                  }
+                });
+              })
+            });
+
+            // 腾讯视频
+            var player = new Txplayer({
+                containerId: 'videoTence',
+                vid: 'x0938d0ln4s',
+                width: '600',
+                height: '400',
+                autoplay: false
+            });
+            player.on('ready',function(){
+              player.play();
+            })
+
+            $(window).on('scroll',function() {
+                let $fixedheader = $('.nav'); // fixed容器
+                var wintop = $(window).scrollTop(); // 已滚动卷去的高度
+                let offsetTop = $('.part1 .v-info').offset().top; // 可视窗口的高度
+
+                // 卷去一个可视窗口高度后执行
+                // 当滚动条离顶部xx像素时的条件判断和执行动作
+                if (wintop > offsetTop) {
+                    $fixedheader.addClass("showtopface");
+                    $('.comments-contain').addClass('active');
+                } else {
+                    $fixedheader.removeClass("showtopface");
+                    $('.comments-contain').removeClass('active');
+                }
+
+            })
+        })
+    </script>
+
+
+    <!-- 通用统计代码(1)，跳转链接或者功能按钮按需加上PTTSendClick('btn','start','开始游戏') -->
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200502subject", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+            pageName: "移动端", //必填项:页面中文名
+            project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+            osact: "m" //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
+        };
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+</body></html>
