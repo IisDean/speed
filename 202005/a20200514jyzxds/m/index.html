@@ -6,9 +6,12 @@
     <meta name="applicable-device" content="mobile">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta content="telephone=no,email=no" name="format-detection"/>
-    <meta name="description" content="西山居游戏">
-    <meta name="keywords" content="西山居游戏">
-    <title>移动版官方网站-西山居游戏</title>
+    <meta name="description" content="剑网3家园设计师作品精选，你最想要哪一套房？">
+    <meta name="keywords" content="西山居游戏,剑网3,剑侠情缘3,家园,大赛,家园装修大赛,家园设计">
+    <meta itemprop="name" content="家园作品 pick你最爱的设计" />
+    <meta itemprop="description" content="剑网3家园设计师作品精选，你最想要哪一套房？" />
+    <meta itemprop="image" content="./assets/images/share.jpg" />
+    <title>剑网3家园装修大赛-西山居游戏</title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/mobile.css" rel="stylesheet" />
     <script>
@@ -194,6 +197,8 @@
 <script>
     $(function () {
 
+        window.stReportGlobal023MultiProps({eventName: 'Home_competition_List', eventDescription: 'H5作品列表页 浏览'});
+
         //tab切换置顶
         var $tabWrap = $(".tab-menu"),
             scrollY = 0,
@@ -241,14 +246,6 @@
         }
         initDropload();
         
-        function initGetData(){
-            g.getData.get_explain_list(page, pageSize, pageType, 0, function(str, num){
-                $(".fx-list").append(str);
-                page++;
-            });
-        }
-        // initGetData();
-
         
         //tab模式切换
         $tabWrap.find("li").on("click", function(){
@@ -260,7 +257,6 @@
             $this.addClass('active').siblings("li").removeClass('active');
             $(".fx-list").html('');
             $(".dropload-down").remove();
-            // initGetData();
             initDropload();
         });
 

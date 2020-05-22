@@ -64,7 +64,12 @@ var g = {
                 },
             }
             g.ajax(options, function(data){
-                g.handlers.set_explain_list(data, callback);
+                if( data.status == 1 ){
+                    g.handlers.set_explain_list(data, callback);
+                }else {
+                    alert(data.message);
+                    // if(callback)callback();
+                }
             });
         },
         /**
@@ -80,7 +85,11 @@ var g = {
                 },
             }
             g.ajax(options, function(data){
-                g.handlers.set_explain_detail(data, callback);
+                if( data.status == 1 ){
+                    g.handlers.set_explain_detail(data, callback);
+                }else {
+                    alert(data.message);
+                }
             });
         },
         /**
@@ -95,8 +104,13 @@ var g = {
                     id: explain_id,
                 },
             }
-            g.ajax(options, callback);
+            g.ajax(options, function(data){
+                if(callback)callback(data);
+            });
         },
+        /**
+         * 时间戳转日期格式
+         * */ 
         formatTime: function(timestamp) {  
             var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
             Y = date.getFullYear() + '-';
@@ -180,17 +194,11 @@ var g = {
             setTimeout(function () {
                 $.lay.msg('登录成功！',{time:800});
             }, 500);
-            g.handlers.renderLogin();
         },
         //点击登录并登录成功就执行此方法 并返回用户名
         cbLoginSuccess: function ($loginOkuser) {
             g.loginInfo = $loginOkuser;
             g.loginInfo = $loginOkuser;
-            g.handlers.renderLogin();
-        },
-        renderLogin: function () {
-            // $('.login-info').attr('status', 1);
-            // $('.username').text(g.loginInfo);
         },
     },
     init: function () {
@@ -201,7 +209,6 @@ var g = {
 
 $(function(){
     
-        
     // var vConsole = new VConsole();
     //点赞
     $("body").on("click", ".J-like-btn", function(){
@@ -230,25 +237,27 @@ $(function(){
 
     //埋点DEMO start
     $('.J_tongjiBtn').on('click', function () {
-        alert('11')
-        window.stReportGlobal023MultiProps({eventName: 'test', eventDescription: '测试'});
+        window.stReportGlobal023MultiProps({eventName: $(this).attr('eventName'), eventDescription: $(this).attr("eventDescription")});
     });
     //埋点DEMO end
-
-    // 推栏分享
-    var shareData = {
-        shareChannel: "wechat",
-        shareUrl: location.href,
-        shareIcon: "",
-        shareTitle: "家园作品 pick你最爱的设计",
-        shareDesc: "剑网3家园设计师作品精选，你最想要哪一套房？",
-        shareToAppConfig: {
-            imageUrl: "",
-            shareUrlParam: ""
-        }
-    };
-    // window.wv.web.init(window);
-    // window.wv.web.postMessage(wv.EventNames.APP_SHARE_WEBPAGE_DIRECTLY, shareData);
+    
+    // 判断是否处于推栏app的环境
+    if(window.THIRD_PARTY_AUTH && window.THIRD_PARTY_AUTH.ua === 'daily'){
+        // 推栏分享
+        var shareData = {
+            shareChannel: "wechat",
+            shareUrl: location.href,
+            shareIcon: "",
+            shareTitle: "家园作品 pick你最爱的设计",
+            shareDesc: "剑网3家园设计师作品精选，你最想要哪一套房？",
+            shareToAppConfig: {
+                imageUrl: "",
+                shareUrlParam: ""
+            }
+        };
+        window.wv.web.init(window);
+        window.wv.web.postMessage(wv.EventNames.APP_SHARE_WEBPAGE_DIRECTLY, shareData);
+    }
 
     //微信自定义分享 start
     var eventData = {

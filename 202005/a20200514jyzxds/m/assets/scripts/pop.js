@@ -23,7 +23,7 @@ $.extend($, {
                 msg: function (t, o) {
                     $('[lay-type="load"],[lay-type="msg"]').remove(); //先关闭还未关闭的所有的msg以及对应的遮罩层
                     t = (t || t=='') ? t : '轻轻地提示...';
-                    o = $.extend({shade: 0.4, opacity: 0.65, time: 2000, bgColor: 'rgba(0,0,0,1)'}, o);
+                    o = $.extend({shade: 0.4, opacity: 0.65, time: 10000, bgColor: 'rgba(0,0,0,1)'}, o);
                     //创建一个
                     var index = ++this.index,
                         con = $('<div />').addClass('lay-msg').attr({

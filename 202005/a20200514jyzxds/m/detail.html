@@ -6,9 +6,12 @@
     <meta name="applicable-device" content="mobile">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta content="telephone=no,email=no" name="format-detection"/>
-    <meta name="description" content="西山居游戏">
-    <meta name="keywords" content="西山居游戏">
-    <title>移动版官方网站-西山居游戏</title>
+    <meta name="description" content="剑网3家园设计师作品精选，你最想要哪一套房？">
+    <meta name="keywords" content="西山居游戏,剑网3,剑侠情缘3,家园,大赛,家园装修大赛,家园设计">
+    <meta itemprop="name" content="家园作品 pick你最爱的设计" />
+    <meta itemprop="description" content="剑网3家园设计师作品精选，你最想要哪一套房？" />
+    <meta itemprop="image" content="./assets/images/share.jpg" />
+    <title>剑网3家园装修大赛-西山居游戏</title>
     <link href="assets/css/swiper.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/detail.css" rel="stylesheet" />
@@ -67,7 +70,7 @@
                     <div class="flex flex-center flex-middle poster-icon">
 						<i class="icons"></i>
                     </div>
-                    <a class="icons create-poster-btn t">生成海报</a>
+                    <a class="icons create-poster-btn J_tongjiBtn t" eventName="Home_competition_detail_pic" eventDescription="H5作品详情页 生成长图">生成海报</a>
                 </div>
                 <a class="flex flex-middle live-wrap2 J-like-btn">
                     <i class="icons heart-icon2"></i>
@@ -257,68 +260,9 @@
 
 <script>
     $(function () {
-        
+        window.stReportGlobal023MultiProps({eventName: 'Home_competition_Detail', eventDescription: 'H5作品详情页 浏览'});
         // swiper
         var swiper1;
-        var data = {
-            "code": 1,
-            "status": 1,
-            "msg": "",
-            "message": "",
-            "data": {
-                "detail": {
-                    "id": 2,
-                    "account": "test001",
-                    "room_type": 1,
-                    "room_area": "1280",
-                    "title": "1280",
-                    "room_zone_name": "电信五区",
-                    "room_server_name": "唯我独尊",
-                    "room_community": "小区",
-                    "room_line": "房间所在线",
-                    "room_number": "房间所在的房",
-                    "like": 0,
-                    "created": 0,
-                    "upload_file_info": {
-                        "image": [
-                            {
-                                "type": 1,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            },
-                            {
-                                "type": 1,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            },
-                            {
-                                "type": 1,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            },
-                            {
-                                "type": 1,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            },
-                            {
-                                "type": 1,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            },
-                            {
-                                "type": 2,
-                                "file_id": "b488805c1f078fbbea2786d087130479",
-                                "file_link": "http://static-test-ws.xoyo.com/jx3zt/jx3/submitpic200518/7e/59/7e594950895d784f44911343af0d9887"
-                            }
-                        ]
-                    }
-                },
-                "session_id": "7sw7zIo8tYdchuLYSgDizBcDwuH7jXhj5LGy8egA",
-                "request_id": "148caf6c9051e0731eea68617ec42b66b054acb1"
-            }
-        }
-        
         //获取数据
         var explainId = $.tools.getParam('explainId');
         g.getData.get_explain_detail(explainId, function(){
@@ -330,10 +274,6 @@
                 $(".fx-list").html(str);
             });
         });
-        
-        // g.handlers.set_explain_detail(data, function(){
-            
-        // });
         
         //生成长图
         $(".create-poster-btn").on("click", function(){
@@ -351,7 +291,7 @@
                         setTimeout(function(){
                             $.lay.open($('#posterPop'));
                         }, 100);
-                        console.log("已生成海报");
+                        // console.log("已生成海报");
                     }
                 });
             }
