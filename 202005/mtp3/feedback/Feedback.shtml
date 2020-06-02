@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+<div class="main subFeed">
+    <div class="content">
+        <div class="tit-box">
+            <h3>运营反馈查询</h3>
+        </div>
+        <div class="bor fee_box bd_fee">
+            <div class="mar_gin">
+                <!--<table width="90%" class="form_b">-->
+                <!--<tbody>-->
+                <!--<tr>-->
+                <!--<td>-->
+                <!--<span>反馈者：</span>-->
+                <!--<input type="text" placeholder="限32字符，避免输入特殊字符">-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<span>反馈单号：</span>-->
+                <!--<input type="text" placeholder="限32字符，避免输入特殊字符">-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<span>反馈类型：</span>-->
+                <!--<select>-->
+                <!--<option value ="全部">全部</option>-->
+                <!--<option value ="误判">误判</option>-->
+                <!--<option value ="漏判">漏判</option>-->
+                <!--</select>-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<span>时间范围：</span>-->
+                <!--<input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo1">-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<div class="cx_box">-->
+                <!--<a href="JavaScript:;"></a>-->
+                <!--</div>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--</tbody>-->
+                <!--</table>-->
+                <ul class="form_b clearfix zsy_list">
+                    <li>
+                        <label>反馈者：</label>
+                        <input type="text" placeholder="限32字符，避免输入特殊字符">
+                    </li>
+                    <li>
+                        <label>反馈单号：</label>
+                        <input type="text" placeholder="限32字符，避免输入特殊字符">
+                    </li>
+                    <li class="s_w">
+                        <label>反馈类型：</label>
+                        <select>
+                            <option value="全部">全部</option>
+                            <option value="误判">误判</option>
+                            <option value="漏判">漏判</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>时间范围： </label>
+                        <input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo1">
+                    </li>
+                    <a href="JavaScript:;" id="cha_xun">查询</a>
+                </ul>
+            </div>
+        </div>
+        <div class="bor fee_box bh_box" style="display: none">
+            <div class="mar_gin1" >
+                <div class="bd_bor">
+                    <div class="data_sj" style="display: none">
+                        <table width="100%">
+                            <tr>
+                                <th style="width: 15%">反馈时间</th>
+                                <th style="width: 12%">反馈单号</th>
+                                <th>问题类型</th>
+                                <th style="width: 22%">玩家账号</th>
+                                <th style="width: 22%">反馈者</th>
+                                <th>反馈内容</th>
+                                <th>处理进度</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="javascript:OpenDialog('pop2');">查看详情</a></td>
+                                    <td>处理中</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="JavaScript:;">查看详情</a></td>
+                                    <td>处理中</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="JavaScript:;">查看详情</a></td>
+                                    <td>处理中</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="JavaScript:;">查看详情</a></td>
+                                    <td>处理中</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="JavaScript:;">查看详情</a></td>
+                                    <td><a href="JavaScript:javascript:OpenDialog('pop1');">查看结果</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2018-08-13  18:40:36</td>
+                                    <td>1936800100000005</td>
+                                    <td>漏判</td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>536549201</td>
+                                    <td><a href="JavaScript:;">查看详情</a></td>
+                                    <td><a href="JavaScript:javascript:OpenDialog('pop1');">查看结果</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page_li">
+                            <span>每页显示：</span>
+                            <select>
+                                <option value="10">10</option>
+                                <option value="20" selected>20</option>
+                                <option value="50">50</option>
+                            </select>
+                            <a href="javascript:;" class="btn-prev comm1"></a>
+                            <span>1 / 2</span>
+                            <a href="javascript:;" class="btn-next comm1"></a>
+                            前往<input type="text">页
+                        </div>
+                    </div>
+                    <!--<div class="prev_box">-->
+                        <!--<a href="JavaScript:;" class="prev_s">上一步</a>-->
+                        <!--<a href="JavaScript:;" class="tj_fk">提交反馈</a>-->
+                        <!--<a href="JavaScript:;" class="null_b">清空</a>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; 加载中 &ndash;&gt;-->
+                    <!--<div class="loading_ing">-->
+                        <!--<img src="images/fk_pic.png" alt="" width="90" height="90">-->
+                        <!--<p>数据加载中，请耐心等候</p>-->
+                    <!--</div>-->
+                    <!-- 暂无数据 -->
+                    <div class="null_wu" style="display: none">
+                        <img src="images/none_data.png" alt="" width="5%">
+                        <p>暂无数据</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗（运营反馈详情（1936800200000006）） -->
+    <div class="pop layer1" id="pop1">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈详情（1936800200000006）</em>
+            </div>
+            <div class="spr_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>已被检测，成功发送处罚，未清屏
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><br/>您反馈的运营问题已完成处理，问题已修复，您可以继续观察，有问题及时反馈！
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list_d">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em>恶意发布账号： </em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em>恶意发布时间： </em>2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">漏  判  类  型：</em>政治、辱华、色情低俗广告
+                            </li>
+
+                            <li>
+                                <em class="letter">信  息  类  型：</em>文本
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息： </em><br/>该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广告，没被
+                                检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广
+                                告，没被检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道
+                                发布了广告
+                            </li>
+                            <li>
+                                <img src="images/img_layer.jpg" alt="" >
+                            </li>
+                            <li>
+                                该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广告，没被
+                                检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广
+                                告，没被检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道
+                                发布了广告，没被检测出来该用户在世界频道发布了广告，没被检测出来该用户在
+                                世界频道发布了广告，没被检测出来该用户在世界频道发布了广告，没被检测出来
+                                该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广告，没被
+                                检测出来该用户在世界频道发布了广告，没被检测出来
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗2（运营反馈详情（1936800200000006）） -->
+    <div class="pop layer1" id="pop2">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈详情（1936800200000006）</em>
+            </div>
+            <div class="spr_gun null_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em>恶意发布账号： </em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em>恶意发布时间： </em>2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">漏  判  类  型：</em>超R玩家、消协风控类
+                            </li>
+                            <li>
+                                <em class="letter">信  息  类  型：</em>文本
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><br/>该用户在世界频道发布了广告，没被检测出来<br/>具体证据可看图片附件中的0101.jpg
+                            </li>
+                            <li>
+                                <em class="letter">图  片  附  件：</em><a href="JavaScript:;">漏判名单附注图片附件.zip</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 图片弹窗 -->
+    <div class="layer-img">
+        <div class="pop-con">
+            <img src="" alt="" >
+        </div>
+    </div>
+
+    <!-- 加载弹窗 -->
+    <div id="_overlay_" style="background: rgba(255,255,255,0.5); border-top: 1px solid rgb(255, 255, 255); position: fixed; height: 100%; z-index: 9998; width: 100%; left: 0px; top: 0px;">
+        <div class="gif_f">
+            <img src="images/inquire-loading.gif" alt="">
+            <p>数据加载中，请耐心等候</p>
+        </div>
+    </div>
+</div>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="js/wangEditor.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/data.js"></script>
+<script src="js/comm.js"></script>
+<script>
+
+
+    // 加载
+    setTimeout(function () {
+        $('#_overlay_').hide();
+        $('.bh_box').show();
+        $('.null_wu').fadeIn()
+    },1000);
+    $('#cha_xun').click(function () {
+        $('#_overlay_').show();
+        $('.null_wu').hide();
+        $('.bh_box').hide();
+        setTimeout(function () {
+            $('.bh_box').show();
+            $('#_overlay_').hide();
+            $('.data_sj').fadeIn();
+        },1000);
+    });
+
+
+
+
+
+    // OpenDialog('pop1');
+</script>
+</body>
+</html>

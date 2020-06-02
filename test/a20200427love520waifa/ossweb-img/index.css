@@ -1,0 +1,1105 @@
+/*reset*/
+@font-face {
+    font-family: 'hyzy';
+    src: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/hyzy.woff') format('woff'), /* Modern Browsers */
+         url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/hyzy.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    /* -webkit-user-select:none;*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+ul,li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+input[type="text"],input[type="password"],select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+a:focus,a:active,a {
+    outline: none;
+}
+input,textarea,select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    text-decoration: none;
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,button,input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+em,i,b {
+    font-style: normal;
+}
+fieldset,img {
+    border: 0;
+    display: block;
+}
+img {
+    width: 100%;
+}
+.c:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.hh {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+.p-r {
+    position: relative;
+}
+.p-a {
+    position: absolute;
+}
+html {
+    font-size: 100px;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font: .22rem/1.75 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #1f272d;
+    font-size: 0.24rem;
+    color: #a8b4cc;
+    position: relative;
+    overflow-x: hidden;
+}
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+.flex-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flex-middle {
+    align-items: center;
+}
+.flex-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+/*foot*/
+#afooter {
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #9e9e9e;
+    background: #0e0e0e;
+    padding: 0.3rem 0;
+}
+#afooter .copyright span a,
+#footer .copyright span a:hover {
+    margin: 0 0.06rem;
+}
+#gfooter {
+    background: #0e0e0e;
+}
+#afooter p {
+    line-height: .3rem;
+    font-size: .16rem;
+}
+.stage {
+    width: 100%;
+    overflow: hidden;
+}
+.t-c {
+    text-align: center;
+}
+.t-r {
+    text-align: right;
+}
+.t-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bg {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.t {
+    text-indent: -999em;
+    overflow: hidden;
+}
+.icons {
+    display: block;
+    background-image: url("//game.gtimg.cn/images/lv/cp/a20200427love520waifa/icons.png");
+    background-repeat: no-repeat;
+    background-size: 7.5rem auto;
+}
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+a {
+    cursor: pointer;
+}
+.ani {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.full-img img,
+.full-img {
+    display: block;
+}
+.full-img img {
+    width: 100%;
+}
+.b {
+    font-weight: bold;
+}
+.t-h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn-hover:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-hover:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+.stage {
+    width: 100%;
+    height: 100%;
+}
+.part {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 11.36rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.part-init {
+    transition: .6s all;
+    -webkit-transition: .6s all;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+    pointer-events: none;
+}
+.part-init.part-show {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+.water-mark-wx {
+    top: .3rem;
+    right: 0rem;
+    width: 1.9rem;
+    height: .44rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/water_mark_wx.png');
+}
+/* ÆÁ1 Ê×ÆÁ */
+.part-1 {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p1_bg.jpg');
+}
+.part-1.load-status .rule-btn,
+.part-1.load-status .tips-btn-icon,
+.part-1.load-status .start-test-btn,
+.part-1.load-status .order-btn {
+    display: none;
+}
+.part-1.load-status .slogan-icon,
+.part-1.load-status .music-tips-img,
+.part-1.load-status .progress-container {
+    display: block;
+}
+.part-1.load-status .logo-icon {
+    opacity: 1;
+}
+.progress-container {
+    display: none;
+    bottom: 1.6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 5.75rem;
+    height: .48rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/progress_bg.png');
+}
+.progress-wrap {
+    margin-top: .03rem;
+    margin-left: .06rem;
+    height: .42rem;
+    overflow: hidden;
+}
+.progress-ani {
+    transition: .3s all;
+    -webkit-transition: .3s all;
+}
+.progress-content {
+    width: 5.61rem;
+    height: .42rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/progress.png');
+}
+.progress-text {
+    top: 0;
+    left: .06rem;
+    z-index: 99;
+    width: 5.61rem;
+    line-height: .48rem;
+    font-weight: bold;
+    font-size: .25rem;
+    color: #ff73a9;
+    overflow: hidden;
+}
+.progress-text p {
+    display: block;
+    width: 5.61rem;
+    color: #fff;
+}
+.music-tips-img {
+    display: none;
+    top: 10.2rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 4.55rem;
+}
+.part-1 .logo-icon {
+    margin: .52rem 0 0 2.4rem;
+    width: 2.44rem;
+    height: .98rem;
+    opacity: 0;
+}
+.slogan-icon {
+    display: none;
+    margin: -.52rem auto 0;
+    width: 6.89rem;
+    height: 2.36rem;
+}
+.rule-btn {
+    top: .38rem;
+    left: .26rem;
+    width: .73rem;
+    height: .73rem;
+    background-position: -3.84rem -.44rem;
+}
+.music-btn {
+    top: .38rem;
+    right: .26rem;
+    width: .73rem;
+    height: .73rem;
+    background-position: -4.62rem -.44rem;
+    animation: music 4s linear infinite;
+    -webkit-animation: music 4s linear infinite;
+}
+.part-1 .music-btn {
+    /* top: 3.68rem; */
+}
+.music-btn.off {
+    animation: none;
+    -webkit-animation: none;
+    background-position: -5.4rem -.44rem;
+}
+@keyframes music {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes music {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.music-btn.off.scale-ani {
+    animation: musicScale 1s ease-in-out infinite;
+}
+@keyframes musicScale {
+    0%,100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+.tips-btn-icon {
+    top: 8rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto 0;
+    width: 3.54rem;
+    height: .39rem;
+    background-position: -3.84rem 0;
+}
+.start-test-btn,
+.order-btn {
+    right: 0;
+    left: 0;
+    margin: .11rem auto 0;
+    width: 3.79rem;
+    height: 1.03rem;
+}
+.start-test-btn {
+    top: 8.6rem;
+    /* background-position: 0 0; */
+    background-position: 10rem 10rem;
+}
+.order-btn {
+    top: 9.86rem;
+    /* background-position: 0 -1.08rem; */
+    background-position: 10rem 10rem;
+}
+/* ÆÁ2 Ñ¡Ôñ»ÕÕÂ */
+.part-2 {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p2_bg.jpg');
+}
+.part-2 .logo-icon,
+.part-3 .logo-icon {
+    margin: .26rem 0 0 .32rem;
+    width: 2.44rem;
+    height: .98rem;
+}
+.select-tips-wrap {
+    margin-top: 1rem;
+    width: 100%;
+}
+.select-tips-wrap p {
+    line-height: .55rem;
+    font-size: .35rem;
+    color: #fff;
+    text-shadow: 0 0 .15rem #b2aaff;
+}
+.select-hz-list {
+    margin-top: .32rem;
+    width: 100%;
+}
+.select-hz-item {
+    margin: 0 .03rem;
+    width: 1.96rem;
+}
+.select-hz-item img {
+    width: 100%;
+}
+.select-hz-item.active .select-hz-active, 
+.select-hz-default {
+    display: block;
+}
+.select-hz-item.active .select-hz-default,
+.select-hz-active {
+    display: none;
+}
+.gou-icon {
+    display: none;
+    top: 3.68rem;
+    left: .68rem;
+    width: .76rem;
+    height: .61rem;
+    background-position: -6.21rem -.55rem;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+}
+.select-hz-item.active .gou-icon {
+    display: block;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.select-tips-wrap2 {
+    margin: .26rem auto 0;
+    width: 3.88rem;
+    border-radius: .04rem;
+    background-color: rgba(255, 255, 255, .78);
+}
+.select-tips-wrap2 p {
+    margin: 0 .12rem;
+    line-height: .43rem;
+    font-size: .3rem;
+    color: #8f92eb;
+}
+.select-tips-wrap2 i {
+    width: .16rem;
+    height: .2rem;
+}
+.select-tips-wrap2 .tips-icon-1 {
+    background-position: -2.8rem -2.32rem;
+}
+.select-tips-wrap2 .tips-icon-2 {
+    background-position: -3.03rem -2.32rem;
+}
+.select-ok-btn {
+    margin: .15rem auto 0;
+    width: 2.75rem;
+    height: .75rem;
+    background-position: 0 -6.31rem;
+}
+/* ÆÁ3 ´ðÌâ */
+.part-3 {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p3_bg.jpg');
+}
+.answer-progress {
+    top: 1.36rem;
+    left: .78rem;
+    width: .56rem;
+}
+.answer-progress p {
+    line-height: 1;
+    font-size: .44rem;
+    color: #fff;
+}
+.answer-progress p:last-child {
+    margin-top: -.16rem;
+}
+.answer-list {
+    z-index: 1;
+    margin: 1.1rem auto 0;
+    width: 5.99rem;
+    height: 7.37rem;
+}
+.answer-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/answer_bg.png');
+    overflow: hidden;
+    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    transform: translate(-7rem, 10rem) rotate(-40deg);
+    -webkit-transform: translate(-7rem, 10rem) rotate(-40deg);
+    transition: .6s all ease;
+    -webkit-transition: .6s all ease;
+}
+.answer-list .answer-item:first-child {
+    transform: translate(0, 0) rotate(0deg);
+    -webkit-transform: translate(0, 0) rotate(0deg);
+}
+.answer-hz-icon {
+    bottom: .44rem;
+    right: .45rem;
+    width: 2.47rem;
+    height: 2.42rem;
+    pointer-events: none;
+}
+.answer-title-icon {
+    margin: .52rem auto 0;
+    width: 5.16rem;
+    height: 2.1rem;
+}
+.select-list {
+    margin: .38rem auto 0;
+    padding-top: .22rem;
+    border-top: .01rem dashed #7996db;
+    width: 4.8rem;
+}
+.select-item {
+    margin-bottom: .14rem;
+    padding-left: .34rem;
+    width: 4.9rem;
+    border-radius: .15rem;
+}
+.select-item,
+.select-img {
+    /* transition: .2s all;
+    -webkit-transition: .2s all; */
+}
+.select-list-img {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.select-list-img .select-item {
+    margin: 0 .09rem .28rem;
+    padding: 0;
+    width: auto;
+}
+.select-num-text {
+    line-height: .73rem;
+    font-size: .28rem;
+    color: #5c7bca;
+}
+.select-list-img .select-item .select-num-text {
+    line-height: 1;
+}
+.select-img {
+    margin-left: .02rem;
+    width: 1.65rem;
+    border-radius: .15rem;
+}
+.select-list .select-item.active,
+.select-list-img .select-item.active .select-img {
+    background-color: #d6ebff;
+}
+.select-list-img .select-item.active {
+    background-color: transparent;
+}
+.clip-icon {
+    top: 2.5rem;
+    right: .54rem;
+    z-index: 2;
+    width: .77rem;
+    height: .77rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/clip.png');
+    pointer-events: none;
+}
+.answer-tips-wrap {
+    z-index: 2;
+    margin-top: .32rem;
+}
+.answer-tips-wrap p {
+    margin: 0 .08rem;
+    line-height: 1;
+    font-size: .2rem;
+    color: #8f92eb;
+}
+.answer-tips-wrap .tips-icon-1,
+.answer-tips-wrap .tips-icon-2 {
+    width: .08rem;
+    height: .1rem;
+}
+.answer-tips-wrap .tips-icon-1 {
+    background-position: -2.8rem -2.16rem;
+}
+.answer-tips-wrap .tips-icon-2 {
+    background-position: -2.91rem -2.16rem;
+}
+.answer-btn-container {
+    z-index: 2;
+    margin-top: .26rem;
+}
+.answer-btn-container .prev-btn,
+.answer-btn-container .next-btn,
+.answer-btn-container .look-result-btn {
+    margin: 0 .2rem; 
+    width: 2.75rem;
+    height: .75rem;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+}
+.answer-btn-container .prev-btn {
+    background-position: 0 -2.16rem;
+}
+.answer-btn-container .next-btn {
+    background-position: 0 -2.96rem;
+}
+.answer-btn-container .look-result-btn  {
+    background-position: 0 -3.76rem;
+}
+/* p4½á¹ûÒ³ */
+.part-4 {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p4_bg.jpg');
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.poster-dk-wrap {
+    max-width: 100%;
+    overflow: hidden;
+}
+.poster-dk-wrap.static {
+    padding: 1rem 0 .5rem;
+    width: 100%;
+    min-height: 100%;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p4_bg.jpg');
+}
+.poster-dk-wrap.f-middle {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    height: 100%;
+}
+.poster-dk {
+    margin-left: .18rem;
+    width: 7.14rem;
+    overflow: hidden;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/poster_dk.png');
+}
+.logo-icon2 {
+    top: -1.26rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 2.72rem;
+    height: 1.01rem;
+}
+.person-wrap {
+    margin-top: 0rem;
+    margin-left: .2rem;
+    width: 7.35rem;
+    height: 10.4rem;
+}
+.circle-wrap {
+    top: 1.46rem;
+    left: .14rem;
+    width: 2.86rem;
+}
+.circle-wrap p {
+    line-height: .48rem;
+    font-size: .4rem;
+    color: #fff;
+}
+/*.circle-wrap p.name-text {*/
+    /*margin: 0 auto;*/
+    /*display: block;*/
+    /*width: 1.7rem;*/
+    /*height: .4rem;*/
+    /*line-height: .4rem;*/
+    /*font-size: .26rem;*/
+    /*background-color: #fff;*/
+/*}*/
+
+.circle-wrap p.name-text{
+    margin: 0 auto;
+    display: block;
+    width: 1.7rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .26rem;
+}
+
+
+.circle-wrap p span {
+    line-height: .8rem;
+    font-size: .84rem;
+}
+.circle-wrap p em {
+    font-size: .26rem;
+}
+.word-wrap {
+    top: 5.6rem;
+    right: .64rem;
+    width: 4.44rem;
+    height: 1.04rem;
+}
+.badge-wrap {
+    top: 5.95rem;
+    left: .4rem;
+    width: 1.75rem;
+}
+.badge-ani {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    -webkit-transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    transition-delay: .6s;
+    -webkit-transition-delay: .6s;
+}
+.part-show .badge-ani {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+}
+.label-list {
+    margin: .3rem auto 0;
+    width: 2.1rem;
+}
+.label-item {
+    position: relative;
+    padding: .12rem 0;
+    box-sizing: border-box;
+    width: 2.1rem;
+    line-height: 1;
+    font-size: .34rem;
+    color: #fff;
+}
+.label-list .label-item:first-child {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/label_line.png');
+}
+.label-item::before,
+.label-item::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    margin-top: -.04rem;
+    width: .08rem;
+    height: .08rem;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.label-item::before {
+    left: 0;
+}
+.label-item::after {
+    right: 0;
+}
+.plies-wrap {
+    margin: 0 1rem 0 0;
+}
+.plies-wrap p {
+    line-height: 1;
+    font-size: .32rem;
+    color: #807e7d;
+}
+.plies-wrap p em {
+    line-height: 1;
+    font-size: .62rem;
+}
+.result-msg-wrap {
+    margin-top: .16rem;
+    padding: 0 .4rem;
+    box-sizing: border-box;
+    width: 6.75rem;
+}
+.result-msg-wrap p {
+    line-height: .38rem;
+    text-align: justify;
+    font-size: .26rem;
+    color: #807e7d;
+}
+.plies-wrap.hz-1 span,
+.circle-wrap p.name-text.hz-1,
+.result-msg-wrap p.hz-1 span  {
+    color: #798dc6;
+}
+.plies-wrap.hz-2 span,
+.circle-wrap p.name-text.hz-2,
+.result-msg-wrap p.hz-2 span {
+    color: #d68f8d;
+}
+.plies-wrap.hz-3 span,
+.circle-wrap p.name-text.hz-3,
+.result-msg-wrap p.hz-3 span {
+    color: #94cfca;
+}
+.result-btn-container {
+    margin-top: .04rem;
+}
+.share-btn,
+.more-fl-btn {
+    width: 3.03rem;
+    height: .82rem;
+}
+.share-btn {
+    background-position: 0 -5.44rem;
+}
+.more-fl-btn {
+    margin-left: .3rem;
+    background-position: 0 -4.56rem;
+}
+.share-tips-text {
+    margin-top: .1rem;
+    width: 3.03rem;
+    height: .38rem;
+    line-height: .38rem;
+    font-size: .2rem;
+    color: #7f7bd4;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 99px;
+}
+/* µ¯´° */
+.pop {
+    display: none;
+    outline: none;
+}
+.close-btn {
+    top: .06rem;
+    right: .08rem;
+    width: .51rem;
+    height: .58rem;
+    background-position: -3.84rem -1.22rem;
+}
+.pop-con-poster {
+    width: 6rem;
+    min-height: 9.61rem;
+    outline: none;
+}
+.poster-container {
+    top: -100rem;
+    left: 0;
+    width: 10.8rem;
+    height: 17.29rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/poster_bg.jpg');
+    overflow: hidden;
+    /* transform: scale(.6);
+    transform-origin: left top; */
+}
+.poster-container .person-wrap {
+    margin-top: .9rem;
+    margin-left: .84rem;
+    width: 9.97rem;
+}
+.poster-container .circle-wrap {
+    top: 2rem;
+    left: .18rem;
+    width: 3.88rem;
+}
+.poster-container .circle-wrap p.name-text {
+    width: 2.45rem;
+    height: .57rem;
+    line-height: .57rem;
+    font-size: .38rem;
+}
+.poster-container .circle-wrap p em {
+    font-size: .35rem;
+}
+.poster-container .word-wrap {
+    top: 7.64rem;
+    right: .96rem;
+    width: 6.06rem;
+    height: 1.42rem;
+}
+.poster-container .badge-wrap {
+    top: 8.2rem;
+    left: .54rem;
+    width: 2.37rem;
+}
+.poster-container .label-list {
+    margin: .3rem auto 0;
+    width: 3rem;
+}
+.poster-container .label-item {
+    padding: .18rem 0;
+    width: 3rem;
+    line-height: 1;
+    font-size: .52rem;
+}
+.poster-container .label-item::before,
+.poster-container .label-item::after {
+    margin-top: -.06rem;
+    width: .12rem;
+    height: .12rem;
+}
+.poster-container .plies-wrap {
+    margin-right: 1.4rem;
+}
+.poster-container .plies-wrap p {
+    font-size: .48rem;
+}
+.poster-container .plies-wrap p em {
+    font-size: .9rem;
+}
+.poster-container .result-msg-wrap {
+    margin-top: .26rem;
+    padding: 0 .54rem;
+    width: 9.16rem;
+}
+.poster-container .result-msg-wrap p {
+    line-height: .51rem;
+    font-size: .35rem;
+}
+.qrcode-wrap {
+    top: 13.84rem;
+    left: .55rem;
+    padding: .15rem;
+    width: 2.05rem;
+    height: 2.05rem;
+    background-color: #fff;
+    border-radius: .08rem;
+    border: 1px solid #c6a78a;
+}
+.qrcode-wrap canvas {
+    display: block;
+    width: 100%;
+}
+.qrcode-wrap .code-icon {
+    display: block;
+    z-index: 99;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: -.29rem auto 0;
+    width: .5rem;
+    height: .5rem;
+    border-radius: .04rem;
+}
+.poster-tips-text {
+    line-height: 1;
+    margin-top: .2rem;
+    font-size: .24rem;
+    color: #fff;
+}
+.pstips-wrap {
+    top: 50%;
+    width: 100%;
+    margin-top: -.12rem;
+    pointer-events: none;
+}
+.pop-top,
+.pop-center,
+.pop-bottom {
+    width: 5.58rem;
+    overflow: hidden;
+}
+.pop-top {
+    height: .2rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_top.png');
+}
+.pop-center {
+    margin: -1px 0;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_center.png');
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
+.pop-bottom {
+    height: .2rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_bottom.png');
+}
+.pop-inset {
+    top: -.68rem;
+    left: -.64rem;
+    width: 6.74rem;
+    height: 1.5rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_inset.png');
+    pointer-events: none;
+}
+.pop-title-icon {
+    display: block;
+    margin: .3rem auto 0;
+    width: 3.07rem;
+    height: .13rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_title_inset.png');
+}
+.pop-title1-text {
+    line-height: 1;
+    font-weight: normal;
+    font-size: .54rem;
+    color: #c2a88e;
+}
+.pop-title2-text{
+    line-height: 1;
+    font-weight: normal;
+    font-size: .3rem;
+    color: #807e7d;
+}
+.sx-tips-text {
+    margin: .36rem .35rem .15rem;
+    padding-top: .28rem;
+    border-top: .01rem dotted #cdcccb;
+    font-size: .3rem;
+    color: #807e7d;
+}
+.pop-tips-text {
+    margin: .36rem .35rem .15rem;
+    padding-top: .28rem;
+    border-top: .01rem dotted #cdcccb;
+    font-size: .24rem;
+    color: #807e7d;
+}
+.pop-msg-text {
+    margin: 0 .16rem;
+    line-height: .38rem;
+    text-align: justify;
+    font-size: .24rem;
+    color: #807e7d;
+}
+.pop-msg2-text {
+    line-height: 1;
+    font-size: .54rem;
+    color: #807e7d;
+}
+.pop-msg-text .cs-text {
+    color: #c2a88e;
+}
+.pop-num-text {
+    display: inline-block;
+    width: .25rem;
+    height: .25rem;
+    border-radius: 999px;
+    line-height: .25rem;
+    font-size: .24rem;
+    color: #fff;
+    background-color: #a6a6a6;
+}
+.form-container {
+    margin: .2rem .38rem 0;
+    border-top: .01rem dotted #cdcccb;
+}
+.form-tips-text {
+    margin-top: .2rem;
+    line-height: .28rem;
+    font-size: .17rem;
+    color: #807e7d;
+}
+.form-wrap {
+    margin: 0 auto .18rem;
+    width: 4.2rem;
+}
+.form-wrap .form-name-text {
+    display: inline-block;
+    width: 1.04rem;
+    font-size: .2rem;
+    color: #807e7d;
+}
+.form-wrap input {
+    display: block;
+    padding: 0 .15rem;
+    box-sizing: border-box;
+    width: 3.14rem;
+    height: .44rem;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border: .01rem solid #c5b196;
+    border-radius: 0;
+    color: #807e7d;
+}
+.submit-btn  {
+    margin: .26rem auto 0;
+    width: 1.98rem;
+    height: .67rem;
+    background-position: -4.75rem -1.23rem;
+}

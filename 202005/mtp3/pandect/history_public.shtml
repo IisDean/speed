@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<!--<link rel="stylesheet" href="css/select2.min.css">-->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main record">
+		<div class="content">
+			<!-- 脚本历史发布记录 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">lua脚本历史发布记录</strong>
+				</div>
+				<p class="record-txt">仅记录最近10条lua特征发布记录。</p>
+				<div class="tab-box">
+					<table class="re-tb">
+						<tr>
+							<th rowspan="2" width="7%">序号</th>
+							<th rowspan="2" width="15%">特征发布时间</th>
+							<th colspan="2" width="36%">订阅脚本（编号）详情</th>
+							<th rowspan="2" width="10%">发布环境</th>
+							<th rowspan="2" width="9%">状态</th>
+							<th rowspan="2" width="15%">操作人</th>
+							<th rowspan="2" width="8%">操作</th>
+						</tr>
+						<tr>
+							<th width="18%">已订阅公共模块</th>
+							<th width="18%">已订阅私有模块</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000000005；000000004；0000000000005；000000004；0000000000005；000000004；0000</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td><span class="data-txt">000000005；000000004；0000000000005；000000004；0000</span></td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:TGDialogS('popRecord');" class="feature feature-cur">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:TGDialogS('popRecord');" class="feature feature-cur">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2019-07-28 10:26:00</td>
+							<td>
+								<span class="data-txt">000000005；000000004；0000000...</span>
+								<div class="more-box">
+									000000005；000000004；
+									000000003；000000002；000000001
+								</div>
+							</td>
+							<td>193680001；19368000</td>
+							<td>正式服</td>
+							<td>已发布</td>
+							<td>测试账号...（536549201）</td>
+							<td><a href="javascript:;" class="feature">下架特征</a></td>
+						</tr>
+						<tr>
+							<td colspan="8">暂无历史发布记录</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- 脚本历史发布记录 -->
+		</div>
+	</div>
+	<!-- 下架说明 -->
+	<div class="pop-front pop-record" id="popRecord">
+		<a href="javascript:closeDialog();" class="p-close comm"></a>
+		<p class="pt-tit">下架说明</p>
+		<p class="pub-txt">特征下架后，将移除在原发布环境的所有特征，<br/>游戏内不再有lua脚本对抗效果，是否确认下架？</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确定下架</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+		$('.re-tb td').hover(function() {
+			$(this).find('.more-box').stop().fadeIn();
+		}, function() {
+			$(this).find('.more-box').stop().fadeOut();
+		})
+
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+	</script>
+</body>
+</html>

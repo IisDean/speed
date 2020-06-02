@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<!-- 历史日志1 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">加固历史日志</strong>
+				</div>
+				<p class="titie-dec">请在加固完成后及时下载加固后的APK文件，页面仅提供最近5个加固文件下载。</p>
+				<div class="table2 on1">
+					<table style="width: 100%;">
+						<colgroup>
+							<col width="8%">
+							<col width="8%">
+							<col width="15%">
+							<col width="8%">
+							<col width="19%">
+							<col width="30%">
+							<col width="12%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>应用名</th>
+								<th>版本号</th>
+								<th>任务提交时间</th>
+								<th>操作人</th>
+								<th>加固结果</th>
+								<th>详细信息</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MTP Demo</td>
+								<td>1.0.3</td>
+								<td>2018-12-31  14:10:19</td>
+								<td>987456321</td>
+								<td><a href="javascript:;" class="btn-jk">加壳成功</a></td>
+								<td>
+									<p>加固前MD5：b10e3c3da95dc55733e387b0cc3e64db</p>
+									<p>加固后MD5：47e715cb504440400c50d2fe8ffe3e20</p>
+								</td>
+								<td>
+									<a href="javascript:;" class="com_btn use_com_btn com_btn3 btn-h4">下载文件</a>
+								</td>
+							</tr>
+							<tr>
+								<td>MTP Demo</td>
+								<td>1.0.3</td>
+								<td>2018-12-31  14:10:19</td>
+								<td>987456321</td>
+								<td class="active"><a href="javascript:;" class="btn-jk on">未启动加壳</a></td>
+								<td>
+									<p>加固前MD5：b10e3c3da95dc55733e387b0cc3e64db</p>
+									<p>加固后MD5：47e715cb504440400c50d2fe8ffe3e20</p>
+								</td>
+								<td>
+									<a href="javascript:;" class="com_btn use_com_btn com_btn2">下载文件</a>
+								</td>
+							</tr>
+							<tr>
+								<td>MTP Demo</td>
+								<td>1.0.3</td>
+								<td>2018-12-31  14:10:19</td>
+								<td>987456321</td>
+								<td><a href="javascript:;" class="btn-jk">加壳成功</a></td>
+								<td>
+									<p>加固前MD5：b10e3c3da95dc55733e387b0cc3e64db</p>
+									<p>加固后MD5：47e715cb504440400c50d2fe8ffe3e20</p>
+								</td>
+								<td>
+									<a href="javascript:;" class="com_btn use_com_btn com_btn3 btn-h4">下载文件</a>
+								</td>
+							</tr>
+							<tr>
+								<td>MTP Demo</td>
+								<td>1.0.3</td>
+								<td>2018-12-31  14:10:19</td>
+								<td>987456321</td>
+								<td>
+									<a href="javascript:;" class="btn-jk2" title="【1000】加固完成后未生成结果文件">加壳失败</a>
+								</td>
+								<td>
+									<p>加固前MD5：b10e3c3da95dc55733e387b0cc3e64db</p>
+								</td>
+								<td>
+									<a href="javascript:;" class="com_btn use_com_btn com_btn2">下载文件</a>
+								</td>
+							</tr>
+							<tr>
+								<td>MTP Demo</td>
+								<td>1.0.3</td>
+								<td>2018-12-31  14:10:19</td>
+								<td>987456321</td>
+								<td>
+									<a href="javascript:;" class="btn-jk2" title="【1000】加固完成后未生成结果文件">加壳失败</a>
+								</td>
+								<td>
+									<p>加固前MD5：b10e3c3da95dc55733e387b0cc3e64db</p>
+								</td>
+								<td>
+									<a href="javascript:;" class="com_btn use_com_btn com_btn2">下载文件</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- 历史日志1 -->
+			<!-- 历史日志2 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">加固历史日志</strong>
+				</div>
+				<p class="titie-dec">请在加固完成后及时下载加固后的APK文件，页面仅提供最近5个加固文件下载。</p>
+				<div class="table2 on">
+					<table style="width: 100%;">
+						<colgroup>
+							<col width="8%">
+							<col width="8%">
+							<col width="15%">
+							<col width="8%">
+							<col width="19%">
+							<col width="30%">
+							<col width="12%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>应用名</th>
+								<th>版本号</th>
+								<th>任务提交时间</th>
+								<th>操作人</th>
+								<th>加固结果</th>
+								<th>详细信息</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="7" style="border-bottom: 1px solid #e6e6e6;">暂无历史日志</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 空白 -->
+				<div class="blank">
+				</div>
+			</div>
+			<!-- 历史日志2 -->
+		</div>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+		//tab
+		$('.server-nav li').on('click',function(){
+			$(this).addClass('cut').siblings().removeClass('cut');
+			$('.coupon_box').removeClass('dis').eq($(this).index()).addClass('dis');
+		});
+		// 自适应
+		// var pageSize = {
+		// 	setStyle : function(){
+		// 		var w = $(document).width();
+		// 		var h  = $(window).height();
+		// 		if(w<1510 ){
+		// 		}else {
+		// 		}	
+		// 	},
+		// 	reSize : function(){
+		// 		var _this=this;
+		// 		window.onresize =function(){
+		// 			_this.setStyle(); 
+		// 		}
+		// 	},
+		// 	init: function(){
+		// 		this.setStyle();
+		// 		this.reSize();
+		// 	}
+		// }
+		// pageSize.init();
+		var initdata = ["[111]王者荣耀王者荣耀王者荣耀", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟"];
+		$(document).ready(function (){
+			initSelect2WithSearch1();
+			function initSelect2WithSearch1() {
+				$("#sel_menu1").select2({
+					tags: true,
+					placeholder: '请选择游戏',
+					data: initdata,
+					allowClear: true
+				});
+			};
+			initSelect2WithSearch2();
+			function initSelect2WithSearch2() {
+				$("#sel_menu2").select2({
+					tags: true,
+					placeholder: '请选择游戏',
+					data: initdata,
+					allowClear: true
+				});
+			};
+		});
+	</script>
+</body>
+</html>

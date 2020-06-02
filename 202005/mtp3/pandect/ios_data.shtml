@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main ios-data">
+		<div class="content">
+			<!-- 基础数据 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">基础数据</strong>
+					<span class="title-tips in">iOS</span>
+				</div>
+				<div class="data gl-data-list">
+					<ul>
+						<li>
+                            <p><span>4</span>人</p>
+							<p>昨日iOS活跃量</p>
+						</li>
+						<li>
+							<a title="点击查看详细信息"><span>2</span>人</a>
+							<p>昨日iOS越狱量</p>
+						</li>
+						<li>
+							<p><span>50.00</span>%</p>
+							<p>昨日iOS越狱占比</p>
+						</li>
+						<li>
+							<p class="data-none">————</p>
+						</li>
+					</ul>
+				</div>
+				<div class="data-real in" id="basisDay">
+					<a href="javascript:;" class="on">按天</a>
+					<a href="javascript:;">实时</a>
+				</div>
+				<div class="data-timer in">
+					<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="config-demo1" />
+					<div class="data-ri fl">
+						<a href="javascript:;" basis-day="7">近7日</a>
+						<a href="javascript:;" basis-day="30">近30日</a>
+					</div>
+				</div>
+				<div class="data-timer in" style="display:none;">
+					<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="startOneDate1" />
+				</div>
+				<div id="container1">
+					<div class="contloading">Loading...</div>
+				</div>
+			</div>
+			<!-- //基础数据 -->
+			<!-- 变速器检测数据 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">变速器检测数据</strong>
+					<span class="title-tips in">iOS</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">数据说明</span>
+									<span class="fr">发现游戏速度正在被修改时，通过广播id=XX将信息传给游戏方，并记录数据量</span>
+								</li>
+								<hr />
+								<li>
+									<span class="fl">版本说明</span>
+									<span class="fr">接入XXX以上版本SDK，支持查看该数据</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="data">
+					<ul class="gl-data-list">
+						<li>
+							<a title="点击查看详细信息"><span>4</span>人</a>
+							<p>昨日变速器检测量</p>
+						</li>
+						<li>
+							<p><span>50.00</span>%</p>
+							<p>昨日变速器检测量占比</p>
+						</li>
+						<li>
+							<p class="data-none">————</p>
+						</li>
+						<li>
+							<p class="data-none">————</p>
+						</li>
+					</ul>
+				</div>
+				<div class="data-real in" id="featuresDay">
+					<a href="javascript:;" class="on">按天</a>
+					<a href="javascript:;">实时</a>
+				</div>
+				<div class="data-timer in">
+					<input class="data-input fl" value="2018-07-07 -2018-08-13" id="config-demo2" />
+					<div class="data-ri fl">
+						<a href="javascript:;" features-day="7">近7日</a>
+						<a href="javascript:;" features-day="30">近30日</a>
+					</div>
+				</div>
+				<div class="data-timer in" style="display:none;">
+					<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="startOneDate2" />
+				</div>
+				<div id="container2">
+					<div class="contloading">Loading...</div>
+				</div>
+			</div>
+			<!-- //变速器检测数据 -->
+			<!-- 可疑环境检测数据 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">可疑环境检测数据</strong>
+					<span class="title-tips in">iOS</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">数据说明</span>
+									<span class="fr">发现游戏运行环境异常时，通过广播id=XX将信息传给游戏方，并记录数据量</span>
+								</li>
+								<hr />
+								<li>
+									<span class="fl">版本说明</span>
+									<span class="fr">接入XXX以上版本SDK，支持查看该数据</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="data">
+					<ul class="gl-data-list">
+						<li>
+							<a title="点击查看详细信息"><span>4</span>人</a>
+							<p>昨日可疑环境检测量</p>
+						</li>
+						<li>
+							<p><span>50.00</span>%</p>
+							<p>昨日可疑环境检测量占比</p>
+						</li>
+						<li>
+							<p class="data-none">————</p>
+						</li>
+						<li>
+							<p class="data-none">————</p>
+						</li>
+					</ul>
+				</div>
+				<div class="data-real in" id="retreatDay">
+					<a href="javascript:;" class="on">按天</a>
+					<a href="javascript:;">实时</a>
+				</div>
+				<div class="data-timer in">
+					<input class="data-input fl" value="2018-07-07 -2018-08-13" id="config-demo3" />
+					<div class="data-ri fl">
+						<a href="javascript:;" retreat-day="7">近7日</a>
+						<a href="javascript:;" retreat-day="30">近30日</a>
+					</div>
+				</div>
+				<div class="data-timer in" style="display:none;">
+					<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="startOneDate3" />
+				</div>
+				<div id="container3">
+					<div class="contloading">Loading...</div>
+				</div>
+			</div>
+			<!-- //可疑环境检测数据 -->
+			<!-- 可疑应用Top排行榜 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">可疑应用Top排行榜</strong>
+					<span class="title-tips in">iOS</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">数据说明</span>
+									<span class="fr">发现玩家设备内存在可疑应用时，通过广播id=XX将信息传给游戏方，统计数量最多的应用信息</span>
+								</li>
+								<hr />
+								<li>
+									<span class="fl">版本说明</span>
+									<span class="fr">接入XXX以上版本SDK，支持查看该数据</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+                <div class="part-box part1 part1-bottom">
+                    <div class="data-one in" id="changeDateTypeKyyy">
+                        <span class="cur">昨日</span>
+                        <span>近7天</span>
+                        <span>近30天</span>
+                    </div>
+                    <div id="chart3" style="height: 352px;"></div>
+                    <p class="tells" style="margin-left: 118px;">注：点击对应信息，可前往查看详细信息。</p>
+                </div>
+			</div>
+			<!-- //可疑应用Top排行榜 -->
+			<!-- 可疑模块Top排行榜 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">可疑模块Top排行榜</strong>
+					<span class="title-tips in">iOS</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">数据说明</span>
+									<span class="fr">对dylib动态库进行扫描，发现有第三方模块注入时，通过广播id=XX将信息传给游戏方，统计数量最多的模块信息</span>
+								</li>
+								<hr />
+								<li>
+									<span class="fl">版本说明</span>
+									<span class="fr">接入XXX以上版本SDK，支持查看该数据</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+                <div class="part-box part1 part1-bottom">
+                    <div class="data-one in" id="changeDateTypeKymk">
+                        <span class="cur">昨日</span>
+                        <span>近7天</span>
+                        <span>近30天</span>
+                    </div>
+                    <div id="chart4" style="height: 520px;"></div>
+                    <p class="tells" style="margin-left: 118px;">注：点击对应信息，可前往查看详细信息。</p>
+                </div>
+			</div>
+			<!-- //可疑模块Top排行榜 -->
+		</div>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/highcharts-zh_CN.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/ios_data.js"></script>
+</body>
+</html>

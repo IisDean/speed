@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+	<div class="main subFeed">
+		<div class="content">
+			<div class="tit-box">
+				<h3>运营反馈提交</h3>
+			</div>
+			<div class="bor bor-fir">
+				<div class="tab">
+					<ul class="nav-box">
+						<li class="cur"><span>①</span>选择反馈类型</li>
+						<li class="bew"><span>②</span>填写反馈工单</li>
+						<li><span>③</span>跟进反馈进度</li>
+					</ul>
+					<!-- 模块1 -->
+					<div class="cont cont1 clearfix" style="display: block;">
+						<div class="f-box fl">
+							<p class="f-tit">
+								<span class="f-ico1 comm in"></span>
+								<strong class="in">误判反馈</strong>
+							</p>
+							<p class="txt">
+								信息安全对抗开启处罚后，如果出现玩家投诉或者正常信息<br/>
+								被删除，即为策略误判
+							</p>
+							<div class="btns-box flex">
+								<a href="javascript:;" class="btn" id="btn-s1">单条反馈</a>
+								<a href="javascript:;" class="btn btn2" id="btn-s2">批量反馈</a>
+							</div>
+						</div>
+						<div class="f-box fr">
+							<p class="f-tit">
+								<span class="f-ico2 comm in"></span>
+								<strong class="in">漏判反馈</strong>
+							</p>
+							<p class="txt txt2">
+								信息安全对抗开启处罚后，如果能在产品中看到其对抗的恶意信息，即为策略漏判
+							</p>
+							<div class="btns-box flex">
+								<a href="javascript:;" class="btn" id="btn-s3">单条反馈</a>
+								<a href="javascript:;" class="btn btn2" id="btn-s4">批量反馈</a>
+							</div>
+						</div>
+					</div>
+					<!-- 模块2 -->
+					<div class="cont cont2" style="display: none;">
+						<!-- 误判单条反馈 -->
+						<div class="part part1" style="display: none;">
+							<ul class="d-list">
+								<li>
+									<span>*</span>
+									<b>账号类型</b><em class="fl">：</em>
+									<p class="pt">
+										<select id="select4">
+											<option value="QQ">QQ</option>
+											<option value="微信openid">微信 openid</option>
+											<option value="QQopenid">QQ openid</option>
+											<option value="QQ伪uin">QQ 伪 uin</option>
+											<option value="Wegame">Wegame</option>
+											<option value="Garena">Garena</option>
+											<option value="Steam账号">Steam 账号</option>
+										</select>
+									</p>
+								</li>
+								<li class="wr">
+									<span>*</span>
+									<b>误判账号</b><em class="fl">：</em>
+									<p class="pt">
+										<input type="text" placeholder="限32字符，避免输入特殊字符" id="input1">
+									</p>
+									<i>必填</i>
+								</li>
+								<li>
+									<span>*</span>
+									<b>误判时间</b><em class="fl">：</em>
+									<p class="pt">
+										<input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo1">
+									</p>
+								</li>
+								<li>
+									<span>*</span>
+									<b>投诉来源</b><em class="fl">：</em>
+									<p class="pt">
+										<select id="select1">
+											<option value="超R玩家、消协风控类">超R玩家、消协风控类</option>
+											<option value="项目组、玩家团">项目组、玩家团</option>
+											<option value="客服、官网、论坛">客服、官网、论坛</option>
+											<option value="其他">其他</option>
+										</select>
+									</p>
+								</li>
+								<li class="clearfix la">
+									<b>备注信息</b><em class="fl">：</em>
+									<div class="write-box fl" id="editor">
+										<p class="tell">请用文字简单说明误判情况<br/>可上传图片对文字进行补充说明</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tips-box">
+								<p class="tips">注：请确保上述信息的准确性，如若填错，将会严重影响处理进度</p>
+							</div>
+						</div>
+						<!-- 误判批量反馈 -->
+						<div class="part part2" style="display: none;">
+							<div class="reload">
+								<div class="txt">
+									<span class="in">*</span>
+									<em class="in">上传误判信息：</em>
+									<p class="borer in bor-red">
+										<input type="text">
+										<a href="javascript:;" class="btn-see">浏览</a>
+									</p>
+									<a href="javascript:;" class="bt-model in">下载模板</a>
+								</div>
+							</div>
+							<div class="tips-box">
+								<p class="tips">注：请确保上述信息的准确性，如若填错，将会严重影响处理进度</p>
+							</div>
+						</div>
+						<!-- 漏判单条反馈 -->
+						<div class="part part3" style="display: none;">
+							<ul class="d-list d-list2">
+								<li class="dis">
+									<span>*</span>
+									<b>账</b><b>号</b><b>类</b><b class="no">型</b><em class="fl">：</em>
+									<p class="pt">
+										<select id="select5">
+											<option value="QQ">QQ</option>
+											<option value="微信openid">微信 openid</option>
+											<option value="QQopenid">QQ openid</option>
+											<option value="QQ伪uin">QQ 伪 uin</option>
+											<option value="Wegame">Wegame</option>
+											<option value="Garena">Garena</option>
+											<option value="Steam账号">Steam 账号</option>
+										</select>
+									</p>
+								</li>
+								<li class="wr">
+									<span>*</span>
+									<b>恶意发布账号</b><em class="fl">：</em>
+									<p class="pt">
+										<input type="text" placeholder="限32字符，避免输入特殊字符" id="input2">
+									</p>
+									<i>必填</i>
+								</li>
+								<li>
+									<span>*</span>
+									<b>恶意发布时间</b><em class="fl">：</em>
+									<p class="pt">
+										<input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo2">
+									</p>
+								</li>
+								<li class="dis">
+									<span>*</span>
+									<b>漏</b><b>判</b><b>类</b><b class="no">型</b><em class="fl">：</em>
+									<p class="pt">
+										<select id="select2">
+											<option value="政治、辱华、色情低俗广告">政治、辱华、色情低俗广告</option>
+											<option value="外挂售卖、游戏代练广告">外挂售卖、游戏代练广告</option>
+											<option value="充值、退款类广告">充值、退款类广告</option>
+											<option value="拉人、言语消极类广告">拉人、言语消极类广告</option>
+											<option value="买卖金等诈骗类广告">买卖金等诈骗类广告</option>
+											<option value="其他">其他</option>
+										</select>
+									</p>
+								</li>
+								<li class="dis">
+									<span>*</span>
+									<b>信</b><b>息</b><b>类</b><b class="no">型</b><em class="fl">：</em>
+									<p class="pt">
+										<select id="select3">
+											<option value="文本">文本</option>
+											<option value="图片">图片</option>
+											<option value="视频">视频</option>
+										</select>
+									</p>
+								</li>
+								<li class="clearfix la dis">
+									<b>备</b><b>注</b><b>信</b><b class="no">息</b><em class="fl">：</em>
+									<div class="write-box fl" id="editor2">
+										<p class="tell">请用文字简单说明误判情况<br/>可上传图片对文字进行补充说明</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tips-box">
+								<p class="tips">注：请确保上述信息的准确性，如若填错，将会严重影响处理进度</p>
+							</div>
+						</div>
+						<!-- 漏判批量反馈 -->
+						<div class="part part4" style="display: none;">
+							<div class="reload">
+								<div class="txt">
+									<span class="in">*</span>
+									<em class="in">上传漏判信息：</em>
+									<p class="borer in bor-red">
+										<input type="text">
+										<a href="javascript:;" class="btn-see">浏览</a>
+									</p>
+									<a href="javascript:;" class="bt-model in">下载模板</a>
+								</div>
+								<div class="txt">
+									<em class="in">上传图片附件：</em>
+									<p class="borer in">
+										<input type="text">
+										<a href="javascript:;" class="btn-see">浏览</a>
+									</p>
+								</div>
+							</div>
+							<div class="tips-box">
+								<ul class="tips-list">
+									<li class="fir">注：1、请确保上述信息的准确性，如若填错，将会严重影响处理进度</li>
+									<li>2、如若反馈的漏判问题有配图，可在备注栏写明与所上传图片附件的对应关系，方便处理人定位问题</li>
+									<li>3、批量上传的图片附件，请以压缩包（zip、rar、7z格式）的形式上传</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btns-box btns2 flex">
+							<a href="javascript:;" class="prev btn" id="prev1">上一步</a>
+							<a href="javascript:;" class="btn btn2" id="sub1">提交反馈</a>
+							<a href="javascript:;" class="empt">清空</a>
+						</div>
+					</div>
+					<!-- 模块3 -->
+					<div class="cont cont3" style="display: none;">
+						<div class="process flex">
+							<p class="pro-ico comm"></p>
+							<div class="pro-txt">
+								<p class="t1">问题反馈成功，我们会尽快处理并反馈</p>
+								<p class="t2">你可前往“我的反馈”页面跟进问题反馈进度</p>
+							</div>
+						</div>
+						<div class="btns-box btns2 flex">
+							<a href="javascript:;" class="prev btn" id="btn-again">再提一单</a>
+							<a href="Feedback.shtml" class="btn">进度查询</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 弹窗1 -->
+	<div class="pop pop-nomal" id="pop1">
+		<h3 class="n-tit">数据解析</h3>
+		<img src="images/timg.gif" alt="" class="gif">
+		<p class="t1 t2">批量上传内容解析中</p>
+	</div>
+	<!-- 弹窗2 -->
+	<div class="pop pop-nomal" id="pop2">
+		<h3 class="n-tit">数据解析</h3>
+		<p class="t1">批量上传内容解析失败，请重传</p>
+		<a href="javascript:TGDialogS('pop3');" class="btn-sure">确定</a>
+	</div>
+	<!-- 弹窗3 -->
+	<div class="pop pop-nomal" id="pop3">
+		<h3 class="n-tit">数据解析</h3>
+		<p class="t1">批量上传内容解析失败<br/>批量反馈内容超过200条，请分批次上传</p>
+		<a href="javascript:TGDialogS('pop4');" class="btn-sure">确定</a>
+	</div>
+	<!-- 弹窗4 -->
+	<div class="pop pop-nomal" id="pop4">
+		<h3 class="n-tit">数据解析</h3>
+		<p class="t1 t3">批量上传内容共解析<span>25</span>条<br/>点击确定按钮，进入信息录入</p>
+		<div class="btns-box flex">
+			<a href="javascript:;" class="btn-sure">确定</a>
+			<a href="javascript:;" class="btn-sure">取消</a>
+		</div>
+	</div>
+	<!-- 弹窗5 -->
+	<div class="pop pop-nomal" id="pop5">
+		<h3 class="n-tit">信息录入</h3>
+		<img src="images/timg.gif" alt="" class="gif">
+		<p class="t1 t2">信息录入中，请勿关闭页面，耐心等待...</p>
+	</div>
+	<!-- 弹窗6 -->
+	<div class="pop pop-nomal" id="pop6">
+		<h3 class="n-tit">信息录入</h3>
+		<p class="t1">信息录入失败，请重试</p>
+		<a href="javascript:closeDialog();" class="btn-sure">确定</a>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/wangEditor.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/data.js"></script>
+	<script>
+
+		$('#btn-s1').on('click', function() {
+			$('.nav-box li').removeClass('cur').eq(1).addClass('cur');
+			$('.tab .cont').hide().eq(1).show();
+			$('.tab .part').hide().eq(0).show();
+			$('.empt').show();
+		});
+
+		$('#btn-s2').on('click', function() {
+			$('.nav-box li').removeClass('cur').eq(1).addClass('cur');
+			$('.tab .cont').hide().eq(1).show();
+			$('.tab .part').hide().eq(1).show();
+			$('#sub1').html('提交反馈');
+			$('.empt').hide();
+		});
+
+		$('#btn-s3').on('click', function() {
+			$('.nav-box li').removeClass('cur').eq(1).addClass('cur');
+			$('.tab .cont').hide().eq(1).show();
+			$('.tab .part').hide().eq(2).show();
+			$('.empt').show();
+		});
+
+		$('#btn-s4').on('click', function() {
+			$('.nav-box li').removeClass('cur').eq(1).addClass('cur');
+			$('.tab .cont').hide().eq(1).show();
+			$('.tab .part').hide().eq(3).show();
+			$('#sub1').html('提交反馈');
+			$('.empt').hide();
+		});
+
+		//上一步
+		$('#prev1').on('click', function(){
+			$('.tab .cont').hide().eq(0).show();
+			$('.nav-box li').removeClass('cur').eq(0).addClass('cur');
+
+			$('#input1').val('');
+			$('#select1').val('超R玩家、消协风控类');
+
+			$('#input2').val('');
+			$('#select2').val('政治、辱华、色情低俗广告');
+			$('#select3').val('文本');
+			$('#select4').val('QQ');
+			$('#select5').val('QQ');
+			$('.tell').html('请用文字简单说明误判情况<br/>可上传图片对文字进行补充说明');
+
+				//基础数据日期选择
+				$('#config-demo1').daterangepicker({
+					"maxDate" : getDay(-1),
+					"startDate": getDay(-8),
+					"endDate": getDay(-1),
+					"locale": locale
+				}, function(start, end, label) {
+					var st = start.format().substring(0,10);
+					var en = end.format().substring(0,10);
+					var da = getAll(st,en);
+					$('#config-demo1').val(st + ' - ' + en);
+
+				});
+
+				//二选一功能数据日期选择
+				$('#config-demo2').daterangepicker({
+					"maxDate" : getDay(-1),
+					"startDate": getDay(-8),
+					"endDate": getDay(-1),
+					"locale": locale
+				}, function(start, end, label) {
+					var st = start.format().substring(0,10);
+					var en = end.format().substring(0,10);
+					var da = getAll(st,en);
+					$('#config-demo2').val(st + ' - ' + en);
+
+				});
+
+			});
+
+		//提交反馈
+		$('#sub1').on('click', function() {
+			if ($('.part').eq(0).is(':visible') || $('.part').eq(2).is(':visible')) {
+
+				$('.cont2 .btns-box').addClass('gray');
+				$('#sub1').html('提交中');
+				setTimeout(function() {
+					$('.nav-box li').removeClass('cur').eq(2).addClass('cur');
+					$('.tab .cont').hide().eq(2).show();
+					$('.cont2 .btns-box').removeClass('gray');
+					$('#sub1').html('提交反馈');
+
+				},3000);
+
+			}else{
+				TGDialogS('pop1');
+				setTimeout(function() {
+					TGDialogS('pop2');
+				},3000)
+			}
+		});
+
+		$('.pop .btns-box a').on('click', function() {
+			TGDialogS('pop5');
+			setTimeout(function() {
+				TGDialogS('pop6');
+			},3000)
+		});
+
+		//再提一单
+		$('#btn-again').on('click', function() {
+			$('.nav-box li').removeClass('cur').eq(0).addClass('cur');
+			$('.tab .cont').hide().eq(0).show();
+		});
+
+
+		//编辑器
+		function editor() {
+			function creat(id) {
+				var E = window.wangEditor;
+				var editor = new E(id);
+				editor.customConfig.uploadImgShowBase64 = true;   // 使用 base64 保存图片
+				editor.customConfig.menus = [
+					'bold',  // 粗体
+					'italic',  // 斜体
+					'underline',  // 下划线
+					'foreColor',  // 文字颜色
+					'image',  // 插入图片
+					'undo',  // 撤销
+					'redo'  // 重复
+				];
+				editor.create()
+			}
+			creat('#editor');
+			creat('#editor2');
+		} editor();
+
+		//弹窗
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+
+
+	</script>
+</body>
+</html>

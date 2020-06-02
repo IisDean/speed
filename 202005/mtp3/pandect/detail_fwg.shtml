@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="learbar">
+				<!--MTP反外挂详情-->
+				<div class="game_manager">
+					<div class="bor">
+						<div class="title-box">
+							<strong class="title-name">MTP反外挂详情</strong>
+						</div>
+						<div class="regist_box">
+							<div class="jiben_inf clearfix">
+								<h3 class="fl"><span class="jinben_icon comm in"></span>基本信息</h3>
+								<div class="combtn fr">
+									<a href="javascript:TGDialogS('pop_change_fwg');" class="zc_btn in">保存</a>
+									<a href="javascript:TGDialogS('pop_unsave');" class="back_btn in">返回</a>
+								</div>
+							</div>
+							<div class="fwg_ser_box">
+								<table class="ser_table">
+									<tr>
+										<th>Game ID：19519</th>
+										<td>已接入SDK版本：3.5.7</td>
+									</tr>
+									<tr>
+										<th>Game Key：a227c8cb620208f2eeb7b7b717803332</th>
+										<td>最近购买人：536549201</td>
+									</tr>
+									<tr>
+										<td>服务状态：服务生效中，有效期至2020-01-09</td>
+										<td>购买时间：2019-01-09</td>
+									</tr>
+								</table>
+							</div>
+							<div class="qudao clearfix">
+								<h3 class="fl">渠道信息<a href="javascript:TGDialogS('pop_what');" class="not-find">这是什么<span class="in wenhao">?</span></a></h3>
+								<div class="combtn fr">
+									<a href="javascript:;" class="add_btn in" id="fwg_channel_add">新增渠道</a>
+									<a href="javascript:TGDialogS('pop_add_channel');" class="add_btn in">批量添加</a>
+								</div>
+							</div>
+							<div class="qutable">
+								<table id="fwg_channel_table">
+									<tr>
+										<th width="41%"><span>*</span>包名</th>
+										<th width="41%">渠道</th>
+										<th width="18%">操作</th>
+									</tr>
+									<tr>
+										<td>com.mono.mini_GPS</td>
+										<td>360</td>
+										<td><a href="javascript:dele_tr_fwg(1);" class="dele_btn">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--#include file="inc/personal_infor.htm"-->
+		</div>
+	</div>
+	<!--这是什么？pop_what-->
+	<div class="s-pop pop_channel" id="pop_what">
+		<h3>渠道包校验信息FAQ</h3>
+		<div class="what_box">
+			<h3>一、必须填写渠道包信息吗？</h3>
+			<p>是的。<span>MTP只对您注册过的游戏渠道包进行保护，没有注册的渠道包将得不到MTP的保护。</span></p>
+			<h3>二、渠道包信息包括哪些内容？</h3>
+			<p>MTP需要的渠道包信息为游戏的apk包名。需要注意，不同渠道apk包的包名可能各不相同。</p>
+			<h3>三、我有多个渠道包怎么办？</h3>
+			<p>每个渠道包的包名都有可能不同，因此，您需要为每个游戏渠道包分别填写包名。MTP允许填写的渠道包个数上限为100个。</p>
+			<h3>四、填写的信息我应该怎么获取？</h3>
+			<p>包名信息具有专业性，需要由游戏的技术人员提供包名信息。</p>
+			<h3>五、联系我们？</h3>
+			<p>如有其它问题，请通过官网右下角的QQ在线客服窗口联系我们。</p>
+		</div>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--信息未保存时-->
+	<div class="s-pop pop_small" id="pop_unsave">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">你填写的信息还未保存，是否确认离开</p>
+		<div class="s-pop-btn">
+			<a href="overview.shtml" onclick="closeDialog();" class="pb1">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--添加渠道包-->
+	<div class="s-pop pop_channel" id="pop_add_channel">
+		<h3>批量添加渠道包信息</h3>
+		<!--信息1-->
+		<div class="pop_ch_box channel_box1" id="channel_1">
+			<div class="channle_inf">
+				<p>1.下载模块：请<a href="javascript:;">下载模块</a>后，按照规定的格式填写，并在下方提交。</p>
+				<p>2.提交信息：<input class="tij_input" /><a href="javascript:;" class="in xz_file" id="xz_file_btn">选择文件</a></p>
+			</div>
+			<div class="s-pop-btn">
+				<!--按钮灰度，请添加类名"dis_btn"-->
+				<a href="javascript:;" class="pb1 dis_btn" id="tj_btn">提交</a>
+			</div>
+		</div>
+		<!--信息2-->
+		<div class="pop_ch_box txc none" id="channel_2">
+			<div class="channle_inf channle_inf1">
+				<img src="ossweb-img/timg.gif" class="timgif">
+				<p>你上传的渠道包信息正在处理中......</p>
+				<p>若上传的信息较多，可能需要较长的等待时间</p>
+			</div>
+			<div class="s-pop-btn">
+				<a href="javascript:;" class="pb1" id="cancle_btn">取消处理</a>
+			</div>
+		</div>
+		<!--信息3-->
+		<div class="pop_ch_box txc none" id="channel_3">
+			<div class="channle_inf channle_inf2">
+				<p>添加完成</p>
+				<p>共提交<span>2</span>条渠道信息，成功<span>0</span>条，失败<span>2</span>条</p>
+			</div>
+			<div class="s-pop-btn">
+				<a href="javascript:closeDialog();" id="compelet_btn" class="pb1">确定</a>
+			</div>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--保存修改成功—反外挂-->
+	<div class="s-pop pop_small" id="pop_change_fwg">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">修改成功</p>
+		<div class="s-pop-btn">
+			<a href="overview.shtml" onclick="closeDialog();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop pop_small" id="pop_dele_fwg">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">确定删除？</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1" id="sure_dele_fwg">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop pop_small" id="pop_dele_failure">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">删除失败<br>请至少保留一个渠道包信息</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+		/*渠道包*/
+		$('#xz_file_btn').on('click',function(){
+			$('#tj_btn').removeClass('dis_btn');
+		});
+		$('#tj_btn').on('click',function(){
+			if($(this).hasClass('dis_btn')){return}else{
+				$('.pop_ch_box').hide();
+				$('#channel_2').show();
+				$(this).addClass('dis_btn');
+			};
+		});
+		$('#cancle_btn').on('click',function(){
+			$('.pop_ch_box').hide();
+			$('#channel_3').show();
+		});
+		$('#compelet_btn').on('click',function(){
+			$('.pop_ch_box').hide();
+			$('#channel_1').show();
+		});
+		/*反外挂*/
+		$('#fwg_channel_add').on('click',function(){
+			var channel_id_fwg=$('#fwg_channel_table tr').length;
+			$('#fwg_channel_table').append('<tr><td><input placeholder="如：xxx.baidu （请联系游戏开发人员提供）"></td><td><input placeholder="如：百度 （用于区分渠道信息，可自由填写）"></td><td><a href="javascript:dele_tr_fwg('+channel_id_fwg+');" class="dele_btn">删除</a></td></tr>');
+		});
+		var cur_channel_id_fwg=0;
+		function dele_tr_fwg(channel_id_fwg){
+			var tr_length_fwg=$('#fwg_channel_table tr').length;
+			if(tr_length_fwg>2){
+				TGDialogS('pop_dele_fwg');
+				return cur_channel_id_fwg=channel_id_fwg;
+			}else{
+				TGDialogS('pop_dele_failure');
+			};
+		};
+		/*删除渠道*/
+		$('#sure_dele_fwg').on('click',function(){
+			$('#fwg_channel_table tr').eq(cur_channel_id_fwg).remove();
+		});	
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/game.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+	<div class="main subFeed">
+		<div class="content">
+			<div class="tit-box pr">
+	            <h3 class="in">游戏权限管理</h3>
+	            <div class="wh-icon fr in pr">
+	                <span class="comm in explain-icon">?</span>
+	                <div class="explain pa">
+	                    <ul>
+	                        <li>
+	                            <div class="t1">游戏权限</div>
+	                            <div class="t2"><p>游戏管理员拥有整个游戏的全部权限，涵盖
+	                                客户端安全业务和内容安全业务的全部权限，
+	                                游戏注册者默认为游戏管理员</p>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <div class="t1">客户端安全权限</div>
+	                            <div class="t2"><p>特指游戏的客户端安全业务下的角色与权限
+	                                管理，该模块下的管理员负责该业务的人员
+	                                角色分配和权限管理</p>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <div class="t1">内容安全权限</div>
+	                            <div class="t2"><p>特指游戏的内容安全业务下的角色与权限管
+	                                理，该模块下的管理员负责该业务的人员角
+	                                色分配和权限管理</p>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+
+			<div class="body_box">
+				<!-- 角色管理 -->
+				<div class="fee_box js_gl">
+					<div class="da_box in">
+						<div class="lb_list fl">
+							<em>角色信息</em>
+							<ul>
+								<li class="active"><i class="sur1"></i>游戏管理员<strong>3</strong></li>
+							</ul>
+						</div>
+						<!--游戏管理员-->
+						<div class="rb_list_game rb_list" style="display:block ;">
+							<div class="up_delete in">
+	                            <em class="list_em in fl">
+	                                <a href="javascript:;" class="wu_cl btn-s1 fl active">人员管理</a>
+	                                <a href="javascript:;" class="wu_cl btn-s1 fl ">权限配置</a>
+	                            </em>
+	                            <div class="btns_group_right fr">
+		                            <a href="javascript:" class="btn_del_user_pl btn-s4 disabled fl">批量删除</a>
+		                            <a href="javascript:" class="btn_add_user btn-s2 fl">添加人员</a>
+	                            </div>
+	                        </div>
+
+							<!--人员管理-->
+							<div class="cli_box ga-item1 bd_bor action">
+								
+								<table id="table1_1" width="100%">
+                                    <tr>
+                                        <th style="width: 107px;text-align: left">
+                                            <label class="label" style="cursor:pointer">
+                                                <input id="checkAll1_1" class="checkAll1_1" type="checkbox" />全选
+                                            </label>
+                                        </th>
+                                        <th style="min-width: 580px;">成员信息</th>
+                                        <th style="min-width: 100px;">账号类型</th>
+                                        <th class="txt-center" style="min-width: 100px">操作</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em>
+                                            </td>
+                                            <td>QQ</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>企业微信</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>企业微信</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>企业微信</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+							
+								<div class="no_available no_data" style="display: ;">
+									<div class="no_available-item1" style="display: block;">
+										<img src="images/none_data.png" width="83" alt="">
+										<em>暂无游戏</em>
+										<p>你暂无可管理游戏，可前往注册</p>
+										<a href="JavaScript:;" class="leave_btn btn-s3 in">前往注册</a>
+									</div>
+								</div>
+							</div>
+							<!--权限配置-->
+							<div class="cli_box ga-item1 ga-item2 ">
+								<table class="gridtable">
+									<tr class="tit">
+										<th>管理内容</th>
+										<th class="table-bor txt-left padleft border2">系统模块</th>
+										<th class="table-pl txt-left padleft">权限分配</th>
+									</tr>
+									<tr>
+										<td>游戏</td>
+										<td class="table-bor txt-left padleft border2">公共管理</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>游戏权限管理
+											</em>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="3">客户端安全</td>
+										<td class="table-bor txt-left padleft border2">公共管理</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>产品权限管理
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>基础反外挂业务明细
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>我的账单
+											</em>
+										</td>
+									</tr>
+									<tr>
+										<td class="table-bor txt-left padleft border2">MTP反外挂</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>实时数据
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>数据查询
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>公共基础特征
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>自主策略管理
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>熔断告警管理
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>VIP基础反外挂
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>lua脚本对抗
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>历史发布记录
+											</em>
+										</td>
+									</tr>
+									<tr>
+										<td class="table-bor txt-left padleft border2">MTP加固</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>安全加固
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>历史日志
+											</em>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2">内容安全</td>
+										<td class="table-bor txt-left padleft border2">公共管理</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>产品权限管理
+											</em>
+										</td>
+									</tr>
+									<tr>
+										<td class="table-bor txt-left padleft border2">运营反馈</td>
+										<td class="table-pl padleft padleft">
+											<em>
+												<span class="gd-select comm in"></span>提交反馈
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>我的反馈
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>反馈处理
+											</em>
+											<em>
+												<span class="gd-select comm in"></span>数据统计
+											</em>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+			<div class="no_available ">
+				<div class="no_available-item2 pr">
+					<img src="images/none_data.png" width="83" alt="">
+					<em>暂无权限</em>
+					<p>你暂无该游戏权限管理权限，可联系<a href="javascript:;" class="pr btn-link1">管理员</a>获取</p>
+					<div class="dialogue pa">
+						<p>测试测试号（536549201）；<br>
+							测试超长游戏号超长超长超长（446464654）；<br>
+							测试123456789（123456789）；<br>
+							987654321；张大海（dahaizhang）</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/wangEditor.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/data.js"></script>
+	<script>
+        $(function(){
+            
+	        // 页面初始化
+	        init();
+
+            // 点击单个的复选框
+	        $('.rb_list').on('click','.label',function(){
+	            var checked = $(this).children('input[type=checkbox]').prop("checked");
+	            if(checked){
+	                var checked = $(this).prop("checked");
+	                $(this).addClass('active');
+	            }else{
+	                $(this).removeClass('active');
+	            }
+	            checkAllChecked('#table1_1');
+	            checkAnyChecked('#table1_1');
+	        })
+
+	        $("#checkAll1_1").on("click",function(){
+	            // 已全选
+	            if($(this).prop("checked")){
+	                $("#table1_1 td :checkbox").prop("checked", true);
+	                $("#table1_1 td .label").addClass('active');
+	            }else{
+	                $("#table1_1 td :checkbox").prop("checked", false);
+	                $("#table1_1 td .label").removeClass('active');
+	            }
+	            checkAllChecked('#table1_1');
+	            checkAnyChecked('#table1_1');
+	        });
+
+
+    		// 点击客户端管理-管理员-添加人员
+	        $('.btn_add_user').on('click',function(){
+	            parent.TGDialogS('pop1');
+	        });
+
+	        // 批量删除
+	        $('.rb_list').on('click','.btn_del_user_pl',function(){
+	        	$('.rb_list table td').find('.label.active').each(function(index,item){
+	        		$(this).parent().parent().remove();
+	        	});
+	            checkAllChecked('#table1_1');
+	            checkAnyChecked('#table1_1');
+				// 检测是否还有成员
+				checkExistUser('#table1_1');
+				parent.TGDialogS('pop5');
+	        });
+	        
+	        // 单行删除
+	        $('.rb_list table').on('click','a',function () {
+	            $(this).parent().parent().remove();
+	            checkAllChecked('#table1_1');
+	            checkAnyChecked('#table1_1');
+				checkExistUser('#table1_1');
+				parent.TGDialogS('pop5');
+	        })
+	        
+
+	        // 切换
+			$(".up_delete .list_em a").click(function () {
+			    var index=$(this).index();
+	            $(this).addClass("active").siblings().removeClass("active");
+	            $(".ga-item1").eq(index).addClass("action").siblings(".ga-item1").removeClass("action");
+	            if(index==1){
+	                $(".game2-tab").hide();
+					$(".lb_list strong").hide();
+					$('.btns_group_right').hide();
+				}else {
+	                $(".game2-tab").show();
+	                $(".lb_list strong").show();
+					$('.btns_group_right').show();
+				}
+	        })
+
+			// 顶部右上角问号气泡
+	        $('.wh-icon').hover(function(){
+	            $(this).find(".explain").animate({opacity:1}).delay(300).show();
+	        },function(){
+	            var that = this;
+	            $(this).find(".explain").animate({opacity:0.2},200,function(){
+	                $(that).find(".explain").hide();
+	            });
+	        });
+
+	        // 没有权限中的 管理员气泡
+	        $(".no_available-item2 a").hover(function () {
+	            $(this).parents('p').siblings(".dialogue").show();
+	        },function () {
+	            $(this).parents('p').siblings(".dialogue").hide();
+	        })
+			
+        })
+
+
+        function init(){
+	        $('.add_form').hide();
+	        checkAllChecked('#table1_1');
+	        checkAnyChecked('#table1_1');
+			checkExistUser('#table1_1');
+	    }
+		
+		function checkExistUser(tabId){
+			if($(tabId).find('td :checkbox').length==0){
+				// 暂无成员
+				$(tabId).hide().siblings('.no_data').show();
+			}
+		}
+	    // 检测是否有勾选至少一个
+	    function checkAnyChecked(tabId){
+	        var checkedAny = false;
+	        $(tabId).find('td :checkbox').each(function(index,item){
+	            var checked = $(item).prop("checked");
+	            if(checked){checkedAny=true;}
+	        })
+
+	        if(checkedAny){ 
+	            $(tabId).parentsUntil('.da_box').find('.btn_del_user_pl').removeClass('disabled');
+	        }
+	        else{ 
+	            $(tabId).parentsUntil('.da_box').find('.btn_del_user_pl').addClass('disabled');
+	        }
+	        console.log($(tabId).parentsUntil('.rb_list').find('.btn_del_user btn-link1_pl').length)
+	        console.log(checkedAny,'checkedAny')
+	    }
+	    // 检测是否勾选全部
+	    function checkAllChecked(tabId){
+	    	var checkedTotal = 0;
+	        var checkedAll = true;
+	        $(tabId).find('td :checkbox').each(function(index,item){
+	            var checked = $(item).prop("checked");
+	            if(!checked){
+	                checkedAll=false;
+	                $(item).parent('.label').removeClass('active');
+	            }else{
+	            	checkedTotal = checkedTotal + 1;
+	                $(item).parent('.label').addClass('active');
+	            }
+	        })
+	        if(checkedAll && checkedTotal>0){
+	            $('#checkAll1_1').prop("checked",true);
+	            $("#checkAll1_1").parent('.label').addClass('active');
+	        }else{
+	            $('#checkAll1_1').prop("checked",false);
+	            $("#checkAll1_1").parent('.label').removeClass('active');
+	        }
+	        console.log(checkedAll,'checkedAll')
+	    }
+
+        
+		
+		//弹窗
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+
+
+	</script>
+</body>
+</html>

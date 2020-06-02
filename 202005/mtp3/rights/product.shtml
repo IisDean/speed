@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+
+</head>
+<body>
+<div class="main subFeed">
+    <div class="content">
+        <div class="tit-box pr">
+            <h3 class="in">产品权限管理</h3>
+            <div class="wh-icon fr in pr">
+                <span class="comm in explain-icon">?</span>
+                <div class="explain pa">
+                    <ul>
+                        <li>
+                            <div class="t1">游戏权限</div>
+                            <div class="t2"><p>游戏管理员拥有整个游戏的全部权限，涵盖
+                                客户端安全业务和内容安全业务的全部权限，
+                                游戏注册者默认为游戏管理员</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t1">客户端安全权限</div>
+                            <div class="t2"><p>特指游戏的客户端安全业务下的角色与权限
+                                管理，该模块下的管理员负责该业务的人员
+                                角色分配和权限管理</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="t1">内容安全权限</div>
+                            <div class="t2"><p>特指游戏的内容安全业务下的角色与权限管
+                                理，该模块下的管理员负责该业务的人员角
+                                色分配和权限管理</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 管理内容 -->
+        <div class="fee_box">
+            <div class="up_cha">
+                管理内容：
+                <em class="list_em tabs_head in">
+                    <a href="javascript:;" class="wu_cl btn-s1 active">客户端安全权限</a>
+                    <a href="javascript:;" class="wu_cl btn-s1">内容安全权限</a>
+                </em>
+            </div>
+        </div>
+
+        <div class="body_box">
+            <!-- 客户端安全 -->
+            <div id="clientSecurity" class="fee_box js_gl">
+                <div class="da_box in">
+					<!-- 左侧角色菜单 -->
+                    <div class="lb_list fl">
+                        <em>角色信息</em>
+                        <ul>
+                            <li class="active"><i class="sur1"></i><span class="roleName">全部成员</span><strong>6</strong></li>
+                            <li><i class="sur1"></i><span class="roleName">管理员</span><strong>1</strong></li>
+                            <li><i class="sur1"></i><span class="roleName">开发者</span><strong>3</strong></li>
+                            <li style="display: none;"><i class="sur1"></i><span class="roleName">其他人员</span><span class="comm icon icon-arrow-down  pr">
+                                    <div class="admin_list pa">
+                                        <a href="javascript:;">重命名</a>
+                                        <a href="javascript:;">移除</a>
+                                    </div>
+                                </span><strong>3</strong></li>
+                        </ul>
+                        <div class="btm_add">
+                            <div class="add_js">
+                                <i class="sur1"></i>添加角色
+                            </div>
+                            <div class="add_form" style="display: none;">
+                                <textarea placeholder="请输入角色名称，限8字符，避免输入特殊字符" style="resize: none"></textarea>
+                                <div class="add_submit_line">
+                                    <div class="add_tips">请勿与已有角色重名</div>
+                                    <div class="btns">
+                                        <a href="javascript:;" class="btn btn_add_save on in">保存</a>
+                                        <a href="javascript:;" class="btn btn_add_cancel in">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 全部人员 -->
+                    <div class="rb_list fl" style="display: ;">
+                        <div class="up_delete in">
+                            <div class="btns_group_right fr">
+                                <a href="javascript:" class="btn_del_user_pl btn-s4 disabled fl">批量删除</a>                        
+                            </div>
+                            
+                            <div class="btns_group_right fr" style="display: none;">
+                                <a href="javascript:" class="btn_remove_role btn-s3 disabled fl">角色移除</a>
+                                <a href="javascript:" class="btn_refresh_config btn-s2 disabled fl">更新配置</a>                         
+                            </div>
+                        </div>
+                        <div class="cli_box">
+                            <div class="bd_bor">
+                                <!-- 客户端 - 全部人员 -->
+                                <table id="table1_1" width="100%">
+                                    <tr>
+                                        <th style="width: 107px;">
+                                            <label class="label" >
+                                                <input id="checkAll" class="checkAll" type="checkbox" />全选
+                                            </label>
+                                        </th>
+                                        <th style="width: 580px;">成员信息</th>
+                                        <th style="min-width: 100px;">账号类型</th>
+                                        <th style="min-width: 100px;">角色</th>
+                                        <th class="txt-center" style="min-width: 100px;">操作</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em>
+                                            </td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                
+                                    </tbody>
+                                </table>
+								<!-- 暂无成员 -->
+								<div class="no_available no_data" style="display: ;">
+								    <div class="no_available-item1">
+								        <img src="images/none_data.png" width="83" alt="">
+								        <em>暂无成员</em>
+								        <p>你可前往对应角色下添加成员</p>
+								    </div>
+								</div>
+							</div>
+                        </div>
+						
+                    </div>
+
+                    <!-- 管理人员 -->
+                    <div class="rb_list fl" style="display: none;">
+                        <div class="up_delete in">
+                            <em class="list_em in fl">
+                                <a href="javascript:;" class="wu_cl btn-s1 active">人员管理</a>
+                                <a href="javascript:;" class="wu_cl btn-s1 ">权限配置</a>
+                            </em>
+							<div class="btns_group_right fr">
+                                <a href="javascript:" class="btn_del_user_pl btn-s4 disabled fl">批量删除</a>
+                                <a href="javascript:" class="btn_add_user btn-s2 fl">添加人员</a>                           
+                            </div>
+                            
+                            <div class="btns_group_right fr" style="display: none;">
+                                <a href="javascript:" class="btn_remove_role btn-s3 disabled fl">角色移除</a>
+                                <a href="javascript:" class="btn_refresh_config btn-s2 disabled fl">更新配置</a>                         
+                            </div>
+                        </div>
+                        <div class="cli_box">
+                            <div class="bd_bor">
+                                <!-- 客户端 - 管理员 - 人员管理 -->
+                                <table id="table1_2" class="table" width="100%">
+                                    <tr>
+                                        <th style="width: 107px;">
+                                            <label class="label" >
+                                                <input id="checkAll" class="checkAll" type="checkbox" />全选
+                                            </label>
+                                        </th>
+                                        <th style="width: 580px;">成员信息</th>
+                                        <th style="min-width: 100px;">账号类型</th>
+                                        <th style="min-width: 100px;">角色</th>
+                                        <th class="txt-center" style="min-width: 100px;">操作</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em>
+                                            </td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+								<!-- 暂无成员 -->
+								<div class="no_available no_data" style="display: ;">
+								    <div class="no_available-item1">
+								        <img src="images/none_data.png" width="83" alt="">
+								        <em>暂无成员</em>
+								        <p>你可通过右上角的“添加人员”进行添加</p>
+								    </div>
+								</div>
+							</div>
+                            <div class="bd_bor" style="display: none;">
+								<!-- 客户端 - 管理员 - 权限管理 -->
+								<table class="table gridtable">
+									<tr class="tit">
+										<th class=" txt-left" style="width: 186px;">系统模块</th>
+										<th class="border2 txt-left padleft" style="min-width: 580px;">权限分配</th>
+										<th class="txt-center" style="width: 275px;">
+											<label class="label disabled" >
+											    <input id="checkAll1_2" class="checkAll1_2" type="checkbox" />全选
+											</label>
+										</th>
+									</tr>
+									<tr>
+										<td class=" txt-left">公共管理</td>
+										<td class=" border2 txt-left padleft">
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" disabled />产品权限管理</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />基础反外挂业务明细</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />我的账单</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label disabled" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+									<tr>
+										<td class=" txt-left">MTP反外挂</td>
+										<td class="border2 txt-left padleft">
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />实时数据</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />数据查询</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />公共基础特征</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />自主策略管理</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />熔断告警管理</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />VIP基础反外挂</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />lua脚本对抗</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />历史发布记录</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label disabled" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+									<tr>
+										<td class=" txt-left">MTP加固</td>
+										<td class="border2 txt-left padleft">
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />安全加固</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />历史日志</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label disabled" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+								</table>
+							</div>
+                        </div>
+						
+						
+					</div>
+
+                    <!-- 开发者 -->
+                    <div class="rb_list hide fl" style="display: none;">
+                        
+                        <div class="cli_box">
+                            <div class="bd_bor">
+                                <!-- 客户端 - 开发者 -->
+                                客户端 - 开发者
+                            </div>
+                        </div>
+                        
+                    </div>
+
+					<!-- 其他成员 -->
+					<div class="rb_list fl" style="display: none;">
+					    <div class="up_delete in">
+					        <em class="list_em in fl">
+					            <a href="javascript:;" class="wu_cl btn-s1 active">人员管理</a>
+					            <a href="javascript:;" class="wu_cl btn-s1 ">权限配置</a>
+					        </em>
+							<div class="btns_group_right fr">
+								<a href="javascript:" class="btn_del_user_pl btn-s4 disabled fl">批量删除</a>
+								<a href="javascript:" class="btn_add_user btn-s2 fl">添加人员</a>							
+							</div>
+							
+							<div class="btns_group_right fr" style="display: none;">
+								<a href="javascript:" class="btn_remove_role btn-s3 fl">角色移除</a>
+								<a href="javascript:" class="btn_refresh_config btn-s2 fl">更新配置</a>							
+							</div>
+					    </div>
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 客户端 - 其他成员 - 人员管理 -->
+					            <table id="table1_2" class="table" width="100%" style="display: ;">
+					                <tr>
+					                    <th style="width: 107px;">
+					                        <label class="label" >
+					                            <input id="checkAll" class="checkAll" type="checkbox" />全选
+					                        </label>
+					                    </th>
+					                    <th style="width: 580px;">成员信息</th>
+					                    <th style="min-width: 100px;">账号类型</th>
+					                    <th style="min-width: 100px;">角色</th>
+					                    <th class="txt-center" style="min-width: 100px;">操作</th>
+					                </tr>
+					                <tbody>
+					                    <tr>
+					                        <td class="txt-center">
+					                            <label class="label" ><input name="subBox" type="checkbox" /></label>
+					                        </td>
+					                        <td>
+					                            <img class="fl" src="images/new1.png" alt="">
+					                            <em class="fl">
+					                                <p>测试测试号</p>
+					                                <p>536549201</p>
+					                            </em>
+					                        </td>
+					                        <td>QQ</td>
+					                        <td>管理员</td>
+					                        <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+					                    </tr>
+					                    <tr>
+					                        <td class="txt-center">
+					                            <label class="label" ><input name="subBox" type="checkbox" /></label>
+					                        </td>
+					                        <td>
+					                            <img class="fl" src="images/new1.png" alt="">
+					                            <em class="fl">
+					                                <p>超长账号测试一下测试测试测试号</p>
+					                                <p>536549201</p>
+					                            </em></td>
+					                        <td>QQ</td>
+					                        <td>管理员</td>
+					                        <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+					                    </tr>
+					
+					                </tbody>
+					            </table>
+								
+								<!-- 暂无成员 -->
+								<div class="no_available no_data" style="display: ;">
+								    <div class="no_available-item1">
+								        <img src="images/none_data.png" width="83" alt="">
+								        <em>暂无成员</em>
+								        <p>你可通过右上角的“添加人员”进行添加</p>
+								    </div>
+								</div>
+					        </div>
+					        <div class="bd_bor" style="display: none;">
+								<!-- 客户端 - 其他成员 - 权限管理 -->
+								<table class="table gridtable">
+									<tr class="tit">
+										<th class=" txt-left" style="width: 186px;">系统模块</th>
+										<th class="border2 txt-left padleft" style="min-width: 580px;">权限分配</th>
+										<th class="txt-center" style="width: 275px;">
+											<label class="label" >
+											    <input id="checkAll1_2" class="checkAll1_2" type="checkbox" />全选
+											</label>
+										</th>
+									</tr>
+									<tr>
+										<td class=" txt-left">公共管理</td>
+										<td class=" border2 txt-left padleft">
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />产品权限管理</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />基础反外挂业务明细</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />我的账单</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+									<tr>
+										<td class=" txt-left">MTP反外挂</td>
+										<td class="border2 txt-left padleft">
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />实时数据</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />数据查询</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />公共基础特征</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />自主策略管理</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />熔断告警管理</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />VIP基础反外挂</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />lua脚本对抗</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />历史发布记录</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+									<tr>
+										<td class=" txt-left">MTP加固</td>
+										<td class="border2 txt-left padleft">
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />安全加固</label>
+											</em>
+											<em>
+												<label class="label" ><input name="subBox" type="checkbox" />历史日志</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+								</table>
+							</div>
+					    </div>
+						
+						
+					</div>
+				</div>
+            </div>
+            
+            <!-- 内容安全 -->
+            <div id="contentSecurity" class="fee_box js_gl" style="display: none">
+                <div class="da_box in">
+                    <div class="lb_list fl">
+                        <em>角色信息</em>
+                        <ul>
+                            <li class="active"><i class="sur1"></i>全部成员<strong>6</strong></li>
+                            <li><i class="sur1"></i>管理员<strong>6</strong></li>
+                            <li><i class="sur1"></i>业务产品（外部）<strong>3</strong></li>
+                            <li><i class="sur1"></i>策略成员<strong>2</strong></li>
+                            <li><i class="sur1"></i>关注人<strong>2</strong></li>
+                            <li><i class="sur1"></i>产品运营成员<strong>2</strong></li>
+                        </ul>
+                        <div class="btm_add">
+                            <div class="add_js">
+                                <i class="sur1"></i>添加角色
+                            </div>
+                            <div class="add_form">
+                                <textarea placeholder="请输入角色名称，限8字符，避免输入特殊字符"></textarea>
+                                <div class="add_submit_line">
+                                    <label class="add_tips">请勿与已有角色重名</label>
+                                    <div class="btns">
+                                        <a href="javascript:;" class="btn btn_add_save on in">保存</a>
+                                        <a href="javascript:;" class="btn btn_add_cancel in">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- 全部成员列表 -->
+                    <div class="rb_list fl">
+                        <div class="up_delete in">
+                            <a href="javascript:" class="btn_del_user_pl btn-s4 disabled fr">批量删除</a>
+                        </div>
+                        <div class="cli_box">
+                            <div class="bd_bor">
+                                <!-- 客户端 - 全部人员 -->
+                                <table id="table2_1" width="100%">
+                                    <tr>
+                                        <th style="width: 107px;">
+                                            <label class="label" >
+                                                <input id="checkAll" class="checkAll" type="checkbox" />全选
+                                            </label>
+                                        </th>
+                                        <th style="width: 580px;">成员信息</th>
+                                        <th style="min-width: 100px;">账号类型</th>
+                                        <th style="min-width: 100px;">角色</th>
+                                        <th class="txt-center" style="min-width: 100px;">操作</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em>
+                                            </td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-center">
+                                                <label class="label" ><input name="subBox" type="checkbox" /></label>
+                                            </td>
+                                            <td>
+                                                <img class="fl" src="images/new1.png" alt="">
+                                                <em class="fl">
+                                                    <p>超长账号测试一下测试测试测试号</p>
+                                                    <p>536549201</p>
+                                                </em></td>
+                                            <td>QQ</td>
+                                            <td>管理员</td>
+                                            <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+                                        </tr>
+                                
+                                    </tbody>
+                                </table>
+                                <!-- 暂无成员 -->
+                                <div class="no_available no_data" style="display: ">
+                                    <div class="no_available-item1">
+                                        <img src="images/none_data.png" width="83" alt="">
+                                        <em>暂无成员</em>
+                                        <p>你可通过右上角的“添加人员”进行添加</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- 管理人员 -->
+					<div class="rb_list fl" style="display: none;">
+					    <div class="up_delete in">
+					        <em class="list_em in fl">
+					            <a href="javascript:;" class="wu_cl btn-s1 active">人员管理</a>
+					            <a href="javascript:;" class="wu_cl btn-s1 ">权限配置</a>
+					        </em>
+							<div class="btns_group_right fr">
+								<a href="javascript:" class="btn_del_user_pl btn-s4 disabled fl">批量删除</a>
+								<a href="javascript:" class="btn_add_user btn-s2 fl">添加人员</a>							
+							</div>
+							
+							<div class="btns_group_right fr" style="display: none;">
+								<a href="javascript:" class="btn_remove_role btn-s1 disabled fl">角色移除</a>
+								<a href="javascript:" class="btn_refresh_config btn-s5 fl">更新配置</a>							
+							</div>
+					    </div>
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 客户端 - 管理员 - 人员管理 -->
+					            <table id="table1_2" class="table" width="100%">
+					                <tr>
+					                    <th style="width: 107px;">
+					                        <label class="label " >
+					                            <input id="checkAll" class="checkAll" type="checkbox" />全选
+					                        </label>
+					                    </th>
+					                    <th style="width: 580px;">成员信息</th>
+					                    <th style="min-width: 100px;">账号类型</th>
+					                    <th style="min-width: 100px;">角色</th>
+					                    <th class="txt-center" style="min-width: 100px;">操作</th>
+					                </tr>
+					                <tbody>
+					                    <tr>
+					                        <td class="txt-center">
+					                            <label class="label" ><input name="subBox" type="checkbox" /></label>
+					                        </td>
+					                        <td>
+					                            <img class="fl" src="images/new1.png" alt="">
+					                            <em class="fl">
+					                                <p>测试测试号</p>
+					                                <p>536549201</p>
+					                            </em>
+					                        </td>
+					                        <td>QQ</td>
+					                        <td>管理员</td>
+					                        <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+					                    </tr>
+					                    <tr>
+					                        <td class="txt-center">
+					                            <label class="label" ><input name="subBox" type="checkbox" /></label>
+					                        </td>
+					                        <td>
+					                            <img class="fl" src="images/new1.png" alt="">
+					                            <em class="fl">
+					                                <p>超长账号测试一下测试测试测试号</p>
+					                                <p>536549201</p>
+					                            </em></td>
+					                        <td>QQ</td>
+					                        <td>管理员</td>
+					                        <td class="txt-center"><a href="javascript:;" class="btn_del_user btn-link1">删除</a></td>
+					                    </tr>
+					
+					                </tbody>
+					            </table>
+					        </div>
+					        <div class="bd_bor" style="display: none;">
+								<!-- 客户端 - 管理员 - 权限管理 -->
+								<table class="table gridtable">
+									<tr class="tit">
+										<th class=" txt-left" style="width: 186px;">系统模块</th>
+										<th class="border2 txt-left padleft" style="min-width: 580px;">权限分配</th>
+										<th class="txt-center" style="width: 275px;">
+											<label class="label disabled" >
+											    <input id="checkAll1_2" class="checkAll1_2" type="checkbox" />全选
+											</label>
+										</th>
+									</tr>
+									<tr>
+										<td class=" txt-left">公共管理</td>
+										<td class=" border2 txt-left padleft">
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />产品权限管理</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label disabled" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+									<tr>
+										<td class=" txt-left">运营反馈</td>
+										<td class="border2 txt-left padleft">
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />提交反馈</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />我的反馈</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />反馈处理</label>
+											</em>
+											<em>
+												<label class="label disabled" ><input name="subBox" type="checkbox" />数据统计</label>
+											</em>
+										</td>
+										<td class="txt-center">
+											<label class="label disabled" ><input name="subBox" type="checkbox" /></label>
+										</td>
+									</tr>
+								</table>
+							</div>
+					    </div>
+						
+						<!-- 暂无成员 -->
+						<div class="no_available" style="display: none;">
+						    <div class="no_available-item1">
+						        <img src="images/none_data.png" width="83" alt="">
+						        <em>暂无成员</em>
+						        <p>你可通过右上角的“添加人员”进行添加</p>
+						    </div>
+						</div>
+					</div>
+										
+					<!-- 业务产品 -->
+					<div class="rb_list hide fl" style="display: none;">
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 内容安全 - 业务产品 -->
+					            内容安全 - 业务产品
+					        </div>
+					    </div>
+					</div>
+					
+					<!-- 策略成员 -->
+					<div class="rb_list hide fl" style="display: none;">
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 内容安全 - 策略成员 -->
+					            内容安全 - 策略成员
+					        </div>
+					    </div>
+					</div>
+					
+					<!-- 关注人 -->
+					<div class="rb_list hide fl" style="display: none;">
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 内容安全 - 关注人 -->
+					            内容安全 - 关注人
+					        </div>
+					    </div>
+					</div>
+					
+					<!-- 产品运营成员 -->
+					<div class="rb_list hide fl" style="display: none;">
+					    <div class="cli_box">
+					        <div class="bd_bor">
+					            <!-- 内容安全 - 产品运营成员 -->
+					            内容安全 - 产品运营成员
+					        </div>
+					    </div>
+					</div>
+					
+				</div>
+            </div>
+        
+			<div class="no_available no_right">
+				<div class="no_available-item2 pr">
+					<img src="images/none_data.png" width="83" alt="">
+					<em>暂无权限</em>
+					<p>你暂无该游戏客户端安全模块的权限管理权限，可联系<a href="javascript:;" class="pr btn-link1">管理员</a>获取</p>
+					<div class="dialogue dialogue1 pa">
+						<p>测试测试号（536549201）；<br>
+							测试超长游戏号超长超长超长（446464654）；<br>
+							测试123456789（123456789）；<br>
+							987654321；张大海（dahaizhang）</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="no_available no_right">
+				<div class="no_available-item2 pr">
+					<img src="images/none_data.png" width="83" alt="">
+					<em>暂无权限</em>
+					<p>你暂无该游戏内容安全模块的产品权限管理权限，可联系<a href="javascript:;" class="pr btn-link1">管理员</a>获取</p>
+					<div class="dialogue dialogue2 pa">
+						<p>测试测试号（536549201）；<br>
+							测试超长游戏号超长超长超长（446464654）；<br>
+							测试123456789（123456789）；<br>
+							987654321；张大海（dahaizhang）</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="no_available no_open">
+				<div class="no_available-item2 pr">
+					<img src="images/none_data.png" width="83" alt="">
+					<em>暂未开放</em>
+					<p>MTP内容安全产品暂未对外开放，敬请期待</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="js/wangEditor.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/data.js"></script>
+<script type="text/javascript">
+    $(function(){
+        // 页面初始化
+        init();
+
+        // 顶部右上角问号气泡
+        $('.wh-icon').hover(function(){
+            $(this).find(".explain").animate({opacity:1}).delay(300).show();
+        },function(){
+            var that = this;
+            $(this).find(".explain").animate({opacity:0.2},200,function(){
+                $(that).find(".explain").hide();
+            });
+        });
+
+        // 没有权限中的 管理员气泡
+        $(".no_available-item2 a").hover(function () {
+            $(this).parents('p').siblings(".dialogue").show();
+        },function () {
+            $(this).parents('p').siblings(".dialogue").hide();
+        })
+
+        // 点击顶部导航（客户端管理、内容安全管理 切换）
+        $('.tabs_head').on('click','a:not(.active)',function(){
+            var index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.js_gl').hide().eq(index).show();
+        })
+		// 点击内容部分的  人员管理 和 权限管理 tab切换
+		$('.up_delete a.wu_cl').on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			var index = $(this).index();
+			$(this).parentsUntil('.rb_list').filter('.up_delete').siblings('.cli_box').find('.bd_bor').eq(index).show().siblings('.bd_bor').hide();
+			$(this).parentsUntil('.rb_list').filter('.up_delete').children('.btns_group_right').eq(index).show().siblings('.btns_group_right').hide();
+			
+			var roleIndex = $(this).parents('.rb_list').index('.rb_list');
+			// var roleBadgeDom = $(this).parents('.da_box').find('.lb_list ul li').eq(roleIndex).find('strong');
+            var roleBadgeDom = $(this).parents('.da_box').find('.lb_list ul li').find('strong');
+			if(index==1){
+				roleBadgeDom.hide();
+			}else{
+				roleBadgeDom.show();
+			}
+		});
+
+
+        // 点击下方左侧菜单底部的 添加角色按钮
+        $('.add_js').on('click',function(){
+            $(this).hide().siblings('.add_form').show();
+        });
+		// 点击下方左侧菜单底部的添加角色表单的保存按钮
+        $('.btn_add_save').on('click',function(){
+			$(this).parentsUntil('.btm_add').filter('.add_form').hide().siblings('.add_js').show();
+			$(this).parents('.lb_list').find('li').eq(3).show();
+        });
+		// 点击下方左侧菜单底部的添加角色表单的取消按钮
+        $('.btn_add_cancel').on('click',function(){
+			$(this).parentsUntil('.btm_add').filter('.add_form').hide().siblings('.add_js').show();
+        });
+
+        // 点击下方做侧菜单底部的其他成员 右边的向下的小图标移上去后的下拉菜单-重命名、移除
+        $('.body_box').on('click','.admin_list a', function(event){
+            event.stopPropagation(); //阻止冒泡
+            var adminIndex = $(this).index();
+            if(adminIndex===0){
+                // 点击重命名操作
+                $(this).parents('ul').siblings('.btm_add').find('.add_form').show();    //显示表单
+                var roleText = $(this).parents('li').find('.roleName').text(); // 获取当前角色名
+                $(this).parents('.lb_list').find('.add_form textarea').val(roleText);
+                console.log()
+                $(this).parents('li').hide();
+                $(this).parents('.lb_list').find('.add_js').hide();
+            }
+            if(adminIndex===1){
+                // 移除操作
+                parent.TGDialogS('pop8');
+                $(this).parents('li').hide();
+            }
+        })
+
+        // 切换角色类型，对应右侧内容的变化
+        $('.body_box').on('click','li:not(.active)',function(event){
+            $(this).addClass('active').siblings().removeClass('active');
+            var index = $(this).index();
+            $(this).parentsUntil('.js_gl').filter('.da_box').find('.rb_list').eq(index).show().siblings('.rb_list').hide();
+        })
+
+        // 点击客户端管理-管理员-添加人员
+        $('.btn_add_user').on('click',function(){
+            parent.TGDialogS('pop12');
+        });
+
+
+        // 点击单个的复选框
+        $('.rb_list').on('click','.label:not(.disabled)',function(){
+            var checked = $(this).children('input[type=checkbox]').prop("checked");
+            if(checked){
+                var checked = $(this).prop("checked");
+                $(this).addClass('active');
+            }else{
+                $(this).removeClass('active');
+            }
+			var tableId = $(this).parentsUntil('.bd_bor').filter('table');
+            checkAllChecked(tableId);
+            checkAnyChecked(tableId);
+            checkExistUser(tableId);
+        })
+
+        $(".checkAll").on("click",function(){
+			var tableId = $(this).parentsUntil('.bd_bor').filter('table');
+            // 已全选
+            if($(this).prop("checked")){
+                $(tableId).find("td :checkbox").prop("checked", true);
+                $(tableId).find("td .label").addClass('active');
+            }else{
+                $(tableId).find("td :checkbox").prop("checked", false);
+                $(tableId).find("td .label").removeClass('active');
+            }
+            checkAllChecked(tableId);
+            checkAnyChecked(tableId);
+            checkExistUser(tableId);
+        });
+
+        // 单行删除
+        $('.rb_list').on('click','a.btn_del_user',function () {
+			var tableId = $(this).parentsUntil('.bd_bor').filter('table');
+            $(this).parent().parent().remove();
+			checkAllChecked(tableId);
+			checkAnyChecked(tableId);
+            checkExistUser(tableId);
+            parent.TGDialogS('pop5');
+        });
+
+        // 点击批量删除
+        $('.rb_list').on('click','.btn_del_user_pl:not(.disabled)',function(){
+            console.log('点了右上角批量删除')
+            // 找到对应的.rb_list ，然后查找table tr td .label.active ,然后遍历元素，删除当前行 tr
+            var tableId = $(this).parents('.rb_list').find('table:not(.gridtable)');
+            $(tableId).find('tr td .label.active').each(function(index,item){
+                $(item).parents('tr').remove();
+            })
+            checkAllChecked(tableId);
+            checkAnyChecked(tableId);
+            checkExistUser(tableId);
+            parent.TGDialogS('pop5');
+        });
+    })
+
+    function init(){
+        $('.add_form').hide();
+		$('.rb_list table:not(.gridtable)').each(function(index,tableId){
+			checkAllChecked(tableId);
+			checkAnyChecked(tableId);
+            checkExistUser(tableId);
+		})
+    }
+
+    function checkExistUser(tabId){
+        if($(tabId).find('td .label').length==0){
+            // 暂无成员
+            $(tabId).hide().parents('.rb_list').find('.no_data').show();
+        }
+    }
+    // 检测是否有勾选至少一个
+    function checkAnyChecked(tabId){
+        var checkedAny = false;
+        $(tabId).find('td :checkbox').each(function(index,item){
+            var checked = $(item).prop("checked");
+            if(checked){checkedAny=true;}
+        })
+        if(checkedAny){ 
+            $(tabId).parents('.rb_list').find('.btn_del_user_pl').removeClass('disabled');
+        }
+        else{ 
+            $(tabId).parents('.rb_list').find('.btn_del_user_pl').addClass('disabled');
+        }
+        console.log(checkedAny,'checkedAny')
+    }
+    // 检测是否勾选全部
+    function checkAllChecked(tabId){
+        var checkedAll = true;
+        $(tabId).find('td :checkbox').each(function(index,item){
+            var checked = $(item).prop("checked");
+            if(!checked){
+                checkedAll=false;
+                $(item).parent('.label').removeClass('active');
+            }else{
+                $(item).parent('.label').addClass('active');
+            }
+        })
+        if(checkedAll){
+            $(tabId).find('.checkAll').prop("checked",true);
+            $(tabId).find('.checkAll').parent('.label').addClass('active');
+        }else{
+            $(tabId).find('.checkAll').prop("checked",false);
+            $(tabId).find('.checkAll').parent('.label').removeClass('active');
+        }
+        console.log(checkedAll,'checkedAll')
+    }
+</script>
+</body>
+</html>

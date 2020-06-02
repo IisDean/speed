@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main pb">
+		<div class="content">
+			<!-- 正式服|测试服 -->
+			<div class="bor">
+				<div class="server-nav">
+					<ul>
+						<li><a href="jctz_zsf.shtml">正式服</a>
+						<li class="cut"><a href="jctz_csf.shtml">测试服</a>
+					</ul>
+				</div>
+				<div class="server-text">
+					<p class="server-tips"><span class="st-icon in">!</span>请注意：</p>
+					<ul>
+						<li>1.本策略控制页面仅对SDK3.3.XX以上版本生效，如果SDK版本低于3.3.XX，请跳转到<a href="javascript:;">游戏管理页</a>面进行调整；
+						<li>2.本策略控制页面与测试服对应（供开发者自己测试效果），具体测试方法请咨询MTP客服（客服QQ：3083840693）；</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //正式服|测试服 -->
+			<!-- 基础特征管理(测试服） -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">基础特征管理(测试服）</strong>
+					<span class="title-tips in">Android</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">基础特征</span>
+									<span class="fr">腾讯MTP基于公司内外众多精品手游的外挂对抗经验，不断更新通用对抗能力，以基础特征的形式推送给用户</span>
+								</li> 
+								<hr />
+								<li>
+									<span class="fl">操作方法</span>
+									<span class="fr">如果接收到的基础特征是自己需要的，只需点击“发布”按钮将特征发布即可</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="jctz">
+					<span class="list-icon comm in"></span>
+					<div class="table">
+						<table width="100%">
+							<colgroup>
+								<col width="10%" />
+								<col width="10%" />
+								<col width="10%" />
+								<col width="30%" />
+								<col width="7%" />
+								<col width="13%" />
+								<col width="10%" />
+								<col width="10%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>特征编号</th>
+									<th>特征名称</th>
+									<th>推送时间</th>
+									<th>更新内容</th>
+									<th>状态</th>
+									<th>发布时间</th>
+									<th>操作人</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2018081401</td>
+									<td>通用基础特征</td>
+									<td>2018.8.15-14:00</td>
+									<td><p>增加了3条基础特征，覆盖了GG8.6.0版本，覆盖外挂样本数量达到30万。</p></td>
+									<td>未发布</td>
+									<td>2018.8.16-11：58</td>
+									<td>254512566</td>
+									<td><a href="javascript:;" class="caozuo">发布</a></td>
+								</tr>
+								<tr>
+									<td>2018081401</td>
+									<td>通用基础特征</td>
+									<td>2018.8.15-14:00</td>
+									<td><p>增加了3条基础特征，覆盖了GG8.6.0版本，覆盖外挂样本数量达到30万。</p></td>
+									<td>未发布</td>
+									<td>2018.8.16-11：58</td>
+									<td>254512566</td>
+									<td><a href="javascript:showDia('pop');">下架</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="jctz-none" style="display:none;">
+					<span class="notes-icon comm in"></span>
+					<span>暂无通用基础特征推送</span>
+				</div>
+			</div>
+			<!-- //基础特征管理(测试服） -->
+			<!-- 历史发布记录(测试服） -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">历史发布记录(测试服）</strong>
+					<span class="title-tips in">Android</span>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">历史发布记录</span>
+									<span class="fr">展示曾经发布过的通用基础特征。最多展示最近5条记录。</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="jctz">
+					<span class="notes-icon comm in"></span>
+					<div class="table">
+						<table width="100%">
+							<colgroup>
+								<col width="10%" />
+								<col width="10%" />
+								<col width="10%" />
+								<col width="30%" />
+								<col width="7%" />
+								<col width="13%" />
+								<col width="10%" />
+								<col width="10%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>特征编号</th>
+									<th>特征名称</th>
+									<th>推送时间</th>
+									<th>更新内容</th>
+									<th>状态</th>
+									<th>发布时间</th>
+									<th>操作人</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2018081401</td>
+									<td>通用基础特征</td>
+									<td>2018.8.15-14:00</td>
+									<td><p>增加了3条基础特征，覆盖了GG8.6.0版本，覆盖外挂样本数量达到30万。</p></td>
+									<td>未发布</td>
+									<td>2018.8.16-11：58</td>
+									<td>254512566</td>
+									<td>——</td>
+								</tr>
+								<tr>
+									<td>2018081401</td>
+									<td>通用基础特征</td>
+									<td>2018.8.15-14:00</td>
+									<td><p>增加了3条基础特征，覆盖了GG8.6.0版本，覆盖外挂样本数量达到30万。</p></td>
+									<td>未发布</td>
+									<td>2018.8.16-11：58</td>
+									<td>254512566</td>
+									<td>——</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="jctz-none" style="display:none;">
+					<span class="notes-icon comm in"></span>
+					<span>暂无基础特征发布记录</span>
+				</div>
+			</div>
+			<!-- //历史发布记录(测试服） -->
+		</div>
+	</div>
+
+	<div class="page-tips">
+		<span>发布成功</span>
+	</div>
+
+	<!--#include file="inc/pop.htm"-->
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+
+		$('.caozuo').on('click',function(){
+			pageTips('发布成功',function(){
+
+			})
+		})
+
+		function pageTips(text,success){
+			var text = text || "成功";
+			$('.page-tips').html('<span>'+ text +'</span>').fadeIn();
+			setTimeout(function(){
+				$('.page-tips').fadeOut();
+				success && success();
+			},1000);
+		}
+
+		function showDia(id){
+            showDialog.show({
+                id:id, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+                bgcolor:"#e3e3e3",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+                opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        }
+	</script>
+</body>
+</html>

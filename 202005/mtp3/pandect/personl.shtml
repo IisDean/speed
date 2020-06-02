@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main personl">
+		<div class="content">
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">个人信息说明</strong>
+				</div>
+				<div class="atten_box">
+					<h3><span class="in st-icon">!</span>请注意：</h3>
+					<p>1.为确保服务质量，请务必认真填写个人信息，将手机、邮箱、QQ信息填写完整，以便于MTP官方团队联系你；<br>2.MTP承诺决不泄露用户个人信息，请放心填写。</p>
+				</div>
+			</div>
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">个人信息</strong>
+				</div>
+				<form>
+					<ul class="wslist wslist_per clearfix">
+						<li>
+							<span class="comm nc_cion"></span><em>*</em><strong>昵称：</strong>
+							<input placeholder="限64个字符，不建议昵称过长" value="钢铁侠" />
+						</li>
+						<li>
+							<span class="comm sid_cion"></span><em></em><strong>账号：</strong>
+							3728713961B09C2FA42C0750D9E61A12
+						</li>
+						<li>
+							<span class="comm sqq_cion"></span><em>*</em><strong>Q&nbsp;Q：</strong>
+							<input maxlength="20" placeholder="限20个字符，请填写当前登录的QQ" value="536549201" />
+						</li>
+						<li>
+							<span class="comm semail_cion"></span><em>*</em><strong>邮箱：</strong>
+							<input maxlength="64" placeholder="限64个字符，且为合法邮箱" value="536549201@qq.com" />
+						</li>
+						<li>
+							<span class="comm stele_cion"></span><em>*</em><strong>手机：</strong>
+							<input maxlength="11" placeholder="限11个字符，且为合法号码，避免输入特殊字符" value="13829599999" />
+						</li>
+						<li class="txlli">
+							<span class="comm in tx_cion"></span><em></em><strong>头像：</strong>
+							<img src="ossweb-img/qqtx.jpg" width="40" height="40" alt="用户头像" class="qqtximg">
+							<div class="upbox">
+								<p>图片要求：大小尺寸不小于72×72</p>
+								<a href="javascript:;" class="com_btn com_btn_personal">更换</a>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="s-pop-btn s-pop-btn_per">
+					<p class="personal_tip in" id="personal_tip"></p><a href="javascript:;" id="person_btn" class="pb1">保存</a>
+				</div>
+			</div>
+			<div class="bor company">
+				<div class="title-box">
+					<strong class="title-name">企业信息</strong>
+				</div>
+				<form>
+					<ul class="wslist wslist_per clearfix">
+						<li>
+							<span class="comm nc_cion"></span><em>*</em><strong>企业认证状态：</strong>
+							<p class="txt-warn">
+								<!-- <i class="comm renzheng"></i> -->
+								<i class="comm norenzheng"></i>未认证
+							</p>
+						</li>
+						<li>
+							<span class="comm zhizhao_cion"></span><em>*</em><strong>营业执照号码：</strong>
+							<input maxlength="20" placeholder="请填写15或18位注册号，避免输入特殊字符"/>
+						</li>
+						<li>
+							<span class="comm company_cion"></span><em>*</em><strong>企&nbsp;&nbsp;业&nbsp;&nbsp;名&nbsp;&nbsp;称：</strong>
+							<input maxlength="64" placeholder="限30个字符，避免输入特殊字符"/>
+						</li>
+						<li class="txlli">
+							<span class="comm in upload_cion"></span><em>*</em><strong>上传营业执照：</strong>
+							<img src="ossweb-img/qytx.jpg" width="40" height="40" alt="企业执照" class="qqtximg">
+							<div class="upbox">
+								<p>图片要求：大小尺寸不小于72×72</p>
+								<a href="javascript:;" class="com_btn com_btn_personal">上传</a>
+								<div class="find fl clearfix">
+									<a href="javascript:popShow('pop1');" class="fd1 fl">营业执照认证说明 </a><a href="javascript:popShow('pop1');" class="fd2 fl">?</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="s-pop-btn s-pop-btn_per">
+					<p class="personal_tip in" id="company_tip"></p><a href="javascript:;" id="company_btn" class="pb1">提交审核</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 找不到游戏弹窗 -->
+	<div class="pop pop1" id="pop1">
+		<a class="s-close comm" href="javascript:popHide();">+</a>
+		<div class="p-tit1">营业执照认证说明</div>
+		<div class="p-con">
+			<b>上传图片满足以下条件之一可以通过验证:</b>
+			<p>1、营业执照扫描件（正副本皆可）；</p>
+			<p>2、营业执照正本复印件加盖公司彩章；</p>
+			<p>3、营业执照副本复印件加盖公司彩章；</p>
+			<b>图片正确示例：</b>
+			<img src="ossweb-img/zhizhao.jpg" alt="图片正确示例">
+			<p>1、提交的证件必须为营业执照彩色原件，证件图片涂改后无效；</p>
+			<p>2、如没有营业执照彩色原件，也可提供营业执照正本或副本的复印件<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;并加盖公司彩章；</p>
+			<p>3、证件需在有效期限以内，带有齐全的年检记录；相关公司信息需在<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业信用公示系统中留有档案。</p>
+		</div>
+		<div class="s-pop-btn">
+			<a href="javascript:popHide();" class="pb1">确 定</a>
+		</div>
+	</div>
+	<!--#include file="inc/pop.htm"-->
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+		$('#person_btn').on('click',function(){
+			$('#personal_tip').html('用户昵称不能为空');
+		});
+		$('#company_btn').on('click',function(){
+			$('#company_tip').html('请填写企业名称');
+		});
+		//弹窗
+	var popIsShow = false;
+	var popDom = null;
+	function popShow(id) {
+		popHide();
+		var p = $('#'+id);
+		popDom = p;
+		if (p) {
+			p.show().css({
+				position: 'fixed',
+				top: '50%',
+				left: '50%',
+				marginTop: -popDom.height() / 2 + 'px',
+				marginLeft: -popDom.width() / 2 + 'px',
+				zIndex: 998
+			});
+			p.attr('for', 'pop');
+			popIsShow = true;
+			if ($('[for="' + id + '"]').length >= 1) return;
+			$('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:997;background:rgba(227,227,227,0.5);"></div>');
+		}
+	}
+	function popHide() {
+		$('[for="pop"]').hide().attr('style', '');
+		$('[name="overlay"]').remove();
+	}
+	window.addEventListener("resize", function () {
+		if (!popIsShow)
+			return;
+		setTimeout(function () {
+			popDom.css({
+				marginTop: -popDom.height() / 2 + 'px',
+				marginLeft: -popDom.width() / 2 + 'px',
+				zIndex: 998
+			});
+		}, 400)
+	});
+	</script>
+</body>
+</html>

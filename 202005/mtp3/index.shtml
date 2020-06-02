@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pandect.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+<div class="main">
+    <!-- 登录信息 -->
+    <div class="main-top">
+        <ul class="top-guide fl">
+            <li>
+                <a href="javascript:;" class="logo t" title="MTP">MTP</a>
+            </li>
+            <li>
+                <a href="javascript:;">总览</a>
+            </li>
+        </ul>
+        <div class="top-login fr">
+            <div id="unlogin" style="display: none;;"><a href="javascript:;" id="dologin">登录</a></div>
+            <div id="logined" style="display: block;">
+                <i class="comm in top-head "></i>
+                <span class="top-name" id="dologname">MTP管理员</span>
+                <div class="top-info fr">
+                    <a href="javascript:;" class="top-slide"><span class="in">▲</span></a>
+                    <div class="top-menu ">
+                        <a href="javascript:;" title="账号信息">账号信息</a>
+                        <a href="rights/index.shtml" title="权限中心">权限中心</a>
+                        <a href="javascript:;" title="费用管理">费用管理</a>
+                        <a href="javascript:;" title="费用管理">收件箱</a>
+                        <a href="javascript:;" title="费用管理">优惠券</a>
+                        <a href="javascript:;" title="退出登录">退出登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //登录信息 -->
+    <div class="content">
+        <div class="pan-cent">
+            <!--#include file="inc/personal_infor.htm"-->
+            <div class="learbar">
+                <!--游戏管理-->
+                <div class="game_manager" id="view_bk">
+                    <div class="bor-box">
+                        <div class="title-box">
+                            <strong class="title-name">游戏管理</strong>
+                        </div>
+                        <div class="view_box">
+                            <div class="view_ck clearfix">
+                                <div class="mcontainer fl pr">
+                                    <input placeholder="输入游戏id或名称搜索" />
+                                    <a href="javascript:;" type="search" class="ssbtn comm1">搜索</a>
+                                    <div class="search_drop pa">
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                        <p>游戏id</p>
+                                    </div>
+                                </div>
+                                <a href="register.shtml" class="ckbtn fr">注册新游戏</a>
+                            </div>
+                            <!--你未有任何游戏信息-->
+                            <div class="no_game_infor">
+                                <img src="ossweb-img/none_data.png" width="80" class="in">
+                                <p>暂无游戏</p>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>新申请游戏</b></h3>
+                                        <a href="javascript:;" class="fr game-delete"><span class="cancle_icon comm1 in"></span>删除游戏</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr>
+                                                <th>
+                                                    <div class="pr">
+                                                        Game ID：游戏审核中<a href="JavaScript:;" class="in wenhao">?</a>
+                                                        <div class="wenhao-ts">你注册的游戏正在审核中，通过审核后，MTP会为游戏分配唯一的Game ID，你将会收到短信通知</div>
+                                                    </div>
+                                                </th>
+                                                </th>
+                                                <td>公司名称：Tencent</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：ARPG</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                                服务状态：无服务信息，暂未购买
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态：无服务信息，暂未购买
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP 内容安全</h3>
+                                                服务状态：无服务信息，暂未开放
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>新申请游戏2</b> </h3>
+                                        <a href="javascript:;" class="fr game-delete"><span class="cancle_icon comm1 in"></span>删除游戏</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr class="pr">
+                                                <th>
+                                                    <div class="pr">
+                                                        Game ID：审核不通过<a href="JavaScript:;" class="in wenhao">?</a>
+                                                        <div class="wenhao-ts">你填写的游戏信息未能通过审核，如有疑惑，可联系客服咨询，或重新注册游戏</div>
+                                                    </div>
+                                                </th>
+                                                <td>公司名称：Tencent</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：ARPG</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                                服务状态：无服务信息，暂未购买
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态：无服务信息，暂未购买
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP 内容安全</h3>
+                                                服务状态：无服务信息，暂未开放
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>MTP Demo</b> <span class="jhs dsk-icon">内部</span> <span class="lans dsk-icon">手游</span> </h3>
+                                        <a href="javascript:;" class="fr dis_btn pr"><span class="change_icon comm1 in"></span>修改信息</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr>
+                                                <th>Game ID：19368</th>
+                                                <td>公司名称：Tencent</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：ARPG</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                               服务状态:永久有效
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="pandect/index.shtml" class="in game_btn-st">前往管理</a>
+                                                <a href="pandect/index.shtml" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态:永久有效
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="pandect/index.shtml" class="in game_btn-st">前往管理</a>
+                                                <a href="pandect/index.shtml" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP 内容安全</h3>
+                                                服务状态:永久有效
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="feedback/index.shtml" class="in game_btn-st">前往管理</a>
+                                                <a href="feedback/index.shtml" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>Free Fire</b> <span class="lans dsk-icon">手游</span> </h3>
+                                        <a href="javascript:;" class="fr xg_gameinf"><span class="change_icon comm1 in"></span>修改信息</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr>
+                                                <th>Game ID：19257</th>
+                                                <td>公司名称：Garena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：FPS</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                                服务状态：有效期至2022-06-16
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-st">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态：无服务信息，暂未购买
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-st">申请试用</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP 内容安全</h3>
+                                                服务状态：无服务信息，暂未开放
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--修改基本信息-->
+                            <div class="game_box  none pr game_box-zk" >
+                                <div class="game_title game_title_xg">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span>基本信息<em>Game ID：19519</em></h3>
+                                        <a href="javascript:;" onclick="save_infor()" class="fr xg_back_btn"><span class="back_icon comm1 in"></span>返回</a>
+                                    </div>
+                                </div>
+                                <div class="infor_xiugai_box">
+                                    <form>
+                                        <ul class="jblist">
+                                            <li>
+                                                <span>*</span>游戏名称：<input maxlength="64" placeholder="填写游戏名称，限64字符" />
+                                            </li>
+                                            <li>
+                                                <span>*</span>公司名称：<input maxlength="64" placeholder="填写公司名称，限64字符" />
+                                            </li>
+                                            <li>
+                                                <span>*</span>游戏类型：
+                                                <select>
+                                                    <option value="请选择">请选择</option>
+                                                    <option value="ARPG">ARPG</option>
+                                                    <option value="MMORPG">MMORPG</option>
+                                                    <option value="MOBA">MOBA</option>
+                                                    <option value="卡牌">卡牌</option>
+                                                    <option value="FPS">FPS</option>
+                                                    <option value="飞机射击">飞机射击</option>
+                                                    <option value="跑酷">跑酷</option>
+                                                    <option value="棋牌">棋牌</option>
+                                                    <option value="塔防">塔防</option>
+                                                    <option value="休闲">休闲</option>
+                                                    <option value="经验养成">经验养成</option>
+                                                    <option value="非游戏类应用">非游戏类应用</option>
+                                                    <option value="其他">其他</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <div class="qudao clearfix">
+                                        <div class="combtn">
+                                            <a href="javascript:;" class="add_btn fr in">保存修改</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>Free Fire</b> <span class="lans dsk-icon">页游</span> </h3>
+                                        <a href="javascript:;" class="fr xg_gameinf"><span class="change_icon comm1 in"></span>修改信息</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr>
+                                                <th>Game ID：19257</th>
+                                                <td>公司名称：Garena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：FPS</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                                服务状态：此服务仅适用于手游
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态：此服务仅适用于手游
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP内容安全</h3>
+                                                服务状态：无服务信息，暂未开放
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="game_box none pr game_box-zk">
+                                <div class="game_title game_title_xg">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span>基本信息<em>Game ID：19519</em></h3>
+                                        <a href="javascript:;" onclick="save_infor()" class="fr xg_back_btn"><span class="back_icon comm1 in"></span>返回</a>
+                                    </div>
+                                </div>
+                                <div class="infor_xiugai_box">
+                                    <form>
+                                        <ul class="jblist">
+                                            <li>
+                                                <span>*</span>游戏名称：<input maxlength="64" placeholder="填写游戏名称，限64字符" />
+                                            </li>
+                                            <li>
+                                                <span>*</span>公司名称：<input maxlength="64" placeholder="填写公司名称，限64字符" />
+                                            </li>
+                                            <li>
+                                                <span>*</span>游戏类型：
+                                                <select>
+                                                    <option value="请选择">请选择</option>
+                                                    <option value="ARPG">ARPG</option>
+                                                    <option value="MMORPG">MMORPG</option>
+                                                    <option value="MOBA">MOBA</option>
+                                                    <option value="卡牌">卡牌</option>
+                                                    <option value="FPS">FPS</option>
+                                                    <option value="飞机射击">飞机射击</option>
+                                                    <option value="跑酷">跑酷</option>
+                                                    <option value="棋牌">棋牌</option>
+                                                    <option value="塔防">塔防</option>
+                                                    <option value="休闲">休闲</option>
+                                                    <option value="经验养成">经验养成</option>
+                                                    <option value="非游戏类应用">非游戏类应用</option>
+                                                    <option value="其他">其他</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <div class="qudao clearfix">
+                                        <div class="combtn">
+                                            <a href="javascript:;"  class="add_btn fr in save_change">保存修改</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game_box">
+                                <div class="game_title">
+                                    <div class="game_name">
+                                        <h3 class="fl"><span class="game_icon comm1 in"></span> <b>MTP Demo</b> <span class="jhs dsk-icon">内部</span> <span class="lans dsk-icon">单机</span> </h3>
+                                        <a href="javascript:;" class="fr dis_btn pr"><span class="change_icon comm1 in"></span>修改信息</a>
+                                    </div>
+                                    <div class="game_table_box">
+                                        <table class="game_table">
+                                            <tr>
+                                                <th>Game ID：19257</th>
+                                                <td>公司名称：Garena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>游戏类型：FPS</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="createt"><span class="creat_icon comm1 in"></span>游戏创建时间：2019-07-01</p>
+                                </div>
+                                <div class="game_ser">
+                                    <ul class="game_ser-item1">
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP基础反外挂</h3>
+                                                服务状态：此服务仅适用于手游
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP加固</h3>
+                                                服务状态：此服务仅适用于手游
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-s1">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix ser_box">
+                                                <h3>MTP内容安全</h3>
+                                                服务状态：服务永久有效
+                                            </div>
+                                            <div class="game_btn">
+                                                <a href="javascript:;" class="in game_btn-st">前往管理</a>
+                                                <a href="javascript:;" class="in game_btn-s2">了解详情</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="game_page">
+                                <div class="table-page">
+                                    <a href="javascript:;" class="table-prev comm1 in" title="上一页"></a>
+                                    1 / 1
+                                    <a href="javascript:;" class="table-next comm1 in" title="下一页"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include file="inc/pop.htm"-->
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    //搜索
+    $('.mcontainer input').focus(function(){
+        $('.search_drop').show();
+    });
+    $('.mcontainer input').blur(function(){
+        $('.search_drop').hide();
+    });
+    //修改信息
+    $('.xg_gameinf').on('click',function(){
+        $(this).parent().parent().parent().next().show();
+        $('.game_box-zk').css('left','0');
+        $(this).parent().parent().parent().hide();
+    });
+    //保存修改信息
+    function save_infor(){
+            $('.game_box-zk').css('display','none');
+            $('.game_box-zk').prev('.game_box').show();
+    };
+
+    // 问号hover
+    $(".wenhao").hover(function () {
+        $(this).siblings(".wenhao-ts").show()
+    },function () {
+        $(this).siblings(".wenhao-ts").hide()
+    })
+
+    // 删除游戏
+    $(".game-delete").on('click',function () {
+        $(this).parent().parent().parent().animate({left:"-900px",opacity:'0'},500,function () {
+            $(this).remove();
+        });
+    })
+
+    /*按钮闪烁*/
+    $('.buy_btn').on('click',function(){
+        $('html,body').animate({scrollTop:$('.game_box-zk').offset().top-100},200);
+        $('.save_change').addClass('shanhuo');
+        setTimeout(function(){
+            $('.save_change').removeClass('shanhuo');
+        },1500)
+    });
+    /*确认删除*/
+    $('#sure_dele_jiben').on('click',function(){
+        closeDialog();
+        $('.game_box-zk').animate({left:"-900px"},200,function(){
+            $(this).css('display','none');
+        });
+    });
+    /*取消关注*/
+    $('#dele_attion').on('click',function(){
+        closeDialog();
+        $('#king_box').animate({left:"-900px"},200,function(){
+            $(this).css('display','none');
+        });
+    });
+</script>
+</body>
+</html>

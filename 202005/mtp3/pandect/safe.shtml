@@ -1,0 +1,966 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="bor">
+				<div class="server-nav">
+					<ul>
+						<li class="cut on on2"><a href="javascript:;">安全加固</a></li>
+						<li class="on"><a href="javascript:;">命令行加固工具</a></li>
+					</ul>
+				</div>
+				<!--安全加固-->
+				<div class="safe_box dis">
+					<!-- 上传文件默认页面 -->
+					<div class="item on">
+						<ul class="dh-list clearfix">
+							<li class="fl on"><span class="fl">1</span><p>上传待加固APK<em class="trigger-icon comm"></em></p>
+							</li>
+							<li class="fl"><span class="fl">2</span><p>确认加固信息
+								<em class="trigger-icon comm"></em>
+								</p>
+							</li>
+							<li class="fl"><span class="fl">3</span><p>查看加固结果
+								</p>	
+							</li>
+						</ul>
+						<div class="updata">
+							<img src="ossweb-img/upload.png" alt="" class="in">
+							<a href="javascript:;" class="btn-ud btn-h1">上传文件</a>
+							<p class="ud-dec">
+									你还可以选择用命令行加固的方式，把加固操作集成ci流程中。
+								<a href="javascript:;" class="btn-download btn-h3">立即下载</a>
+							</p>	
+						</div>
+					</div>
+					<!-- 上传中 -->
+					<div class="item">
+						<ul class="dh-list clearfix">
+							<li class="fl on"><span class="fl">1</span><p>上传待加固APK<em class="trigger-icon comm"></em></p>
+							</li>
+							<li class="fl"><span class="fl">2</span><p>确认加固信息
+								<em class="trigger-icon comm"></em>
+								</p>
+							</li>
+							<li class="fl"><span class="fl">3</span><p>查看加固结果
+								</p>	
+							</li>
+						</ul>
+						<div class="process">
+							<div class="cir-box">
+								<div class="line"></div>
+								<canvas id="my_html" width="140" height="140"></canvas>
+							</div>
+							<p class="pc-dec on">文件上传中，请稍后，请勿关闭页面...<br>上传的文件总大小：76M，已上传：15M</p>
+							<a href="javascript:TGDialogS('pop_info4');;" class="btn-ud2 btn-h1">取消上传</a>
+						</div>
+					</div>
+					<!-- 确认加固信息 -->
+					<div class="item">
+						<ul class="dh-list clearfix">
+							<li class="fl on2"><span class="fl"><i class="comm"></i></span><p>上传待加固APK<em class="trigger-icon comm"></em></p>
+							</li>
+							<li class="fl on"><span class="fl">2</span><p>确认加固信息
+								<em class="trigger-icon comm"></em>
+								</p>
+							</li>
+							<li class="fl"><span class="fl">3</span><p>查看加固结果
+								</p>	
+							</li>
+						</ul>
+						<!-- 应用信息 -->
+						<div class="apply">
+							<h2 class="apply-name">应用信息</h2>
+							<ul class="apply-info clearfix">
+								<li class="fl"><img src="./ossweb-img/ico.png" alt="" height="69" width="57"></li>
+								<li class="fl"><p><span>应用名称：MTP Demo</span><br><span>应用包名：com.personal.rocketmouse</span></p></li>
+								<li class="fl on"><p><span>应用版本：1.0.3</span><br><span>MD5：0492ea54d46e6793652bfa1a221cd575</span></p></li>
+							</ul>
+						</div>
+						<!-- 加固信息 -->
+						<div class="strengthen">
+							<h2 class="strengthen-name">加固信息</h2>
+							<div class="file-box clearfix">
+								<h3 class="file-tit fl">选择加密文件：</h3>
+								<div class="table-content fl">
+									<div class="cont1">
+										<table>
+											<colgroup>
+												<col width="736">
+											</colgroup>
+											<thead>
+												<tr>
+													<th >
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkAll" type="checkbox">
+														</span>
+														全选
+													</th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+									<div class="cont2">
+										<table>
+											<colgroup>
+												<col width="238">
+												<col width="238">
+												<col width="238">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+													<td>
+														<span class="checkbox">
+															<span class="checkbox-inner"></span>
+															<input class="checkSingle" type="checkbox">
+														</span>
+														XXXXXXX.so
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="range-box clearfix">
+								<h3 class="range-tit fl">选择校验范围：</h3>
+								<ul class="range-list fl clearfix">
+									<li class="fl cur"><span class="comm"></span><p>全校验</p></li>
+									<li class="fl active"><span class="comm"></span><p>部分校验</p></li>
+								</ul>
+							</div>
+							<div class="file-pic-box clearfix">
+								<h3 class="check-tit fl">选择校验文件：</h3>
+								<div class="file-con  fl">
+									<div class="file-pic">
+										<img src="./ossweb-img/file-sel.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="btn-list3 clearfix">
+								<a href="javascript:;" class="btn-prev fl btn-h2">上一步</a>
+								<a href="javascript:;" class="btn-start fl btn-h1">开始加固</a>
+							</div>
+						</div>
+					</div>
+					<!-- 加固过程中 -->
+					<div class="item">
+						<ul class="dh-list clearfix">
+							<li class="fl on2"><span class="fl"><i class="comm"></i></span><p>上传待加固APK<em class="trigger-icon comm"></em></p>
+							</li>
+							<li class="fl on"><span class="fl">2</span><p>确认加固信息
+								<em class="trigger-icon comm"></em>
+								</p>
+							</li>
+							<li class="fl"><span class="fl">3</span><p>查看加固结果
+								</p>	
+							</li>
+						</ul>
+						<div class="process">
+							<div class="cir-box">
+								<div class="line"></div>
+								<canvas id="my_html2" width="140" height="140"></canvas>
+							</div>
+							<p class="pc-dec">客户端进行加固中，大约需要5~10分钟，请耐心等候。<br>你也可以稍后返回<a href="history.shtml" class="btn-his btn-h3">加固历史日志</a>页面，提取加固后的客户端文件。</p>
+						</div>
+					</div>
+					<!-- 查看结果 -->
+					<div class="item">
+						<ul class="dh-list clearfix">
+							<li class="fl on2"><span class="fl"><i class="comm"></i></span><p>上传待加固APK<em class="trigger-icon comm"></em></p>
+							</li>
+							<li class="fl on2"><span class="fl"><i class="comm"></i></span><p>确认加固信息
+								<em class="trigger-icon comm"></em>
+								</p>
+							</li>
+							<li class="fl on"><span class="fl">3</span><p>查看加固结果
+								</p>	
+							</li>
+						</ul>
+						<!-- 成功的结果 -->
+						<div class="success">
+							<div class="success-dec clearfix">
+								<img src="./ossweb-img/ico.png" alt="" class="fl" height="69" width="57">
+								<p class="fl success-tit"><span class="success-icon comm fl"></span>加固完成，请进行APK文件下载</p>
+							</div>
+							<div class="info-box clearfix">
+								<ul class="info1 fl">
+									<li>游戏名称：MTP Demo</li>
+									<li>应用包名：com.personal.rocketmouse</li>
+									<li>版本信息：1.0.3</li>
+									<li>文件大小：100.51M</li>
+								</ul>
+								<ul class="info2 fl">
+									<li>加固时间：2019-03-20   16:55:20</li>
+									<li>加固前MD5：d313c4d6063031e29e0878d3b6551294</li>
+									<li>加固后MD5：670f85e1272ec7ecd23c25b9a6295ed9</li>
+									<li class="on">*下载后，需要请对APK文件进行重新签名及发布</li>
+								</ul>
+							</div>
+							<div class="btn-list2 clearfix">
+								<a href="javascript:;" class="btn-again fl btn-h2">再次加固</a>
+								<a href="javascript:;" class="btn-again2 fl btn-h1">下载加固包</a>
+							</div>
+						</div>
+						<!-- 失败的结果 -->
+						<div class="failure">
+							<div class="failure-dec clearfix">
+								<img src="./ossweb-img/ico.png" alt="" class="fl" height="69" width="57">
+								<p class="fl failure-tit"><span class="failure-icon comm fl"></span>加固失败，可联系客服咨询</p>
+							</div>
+							<div class="info-box clearfix">
+								<ul class="info1 fl">
+									<li>游戏名称：MTP Demo</li>
+									<li>应用包名：com.personal.rocketmouse</li>
+									<li>版本信息：1.0.3</li>
+									<li>文件大小：100.51M</li>
+								</ul>
+								<ul class="info2 fl">
+									<li>加固时间：2019-03-20   16:55:20</li>
+									<li>加固前MD5：d313c4d6063031e29e0878d3b6551294</li>
+									<li>加固后MD5：670f85e1272ec7ecd23c25b9a6295ed9</li>
+									<li class="on2">错误原因：【1000】加固完成后未生成结果文件</li>
+								</ul>
+							</div>
+							<div class="btn-list2 clearfix">
+								<a href="javascript:;" class="btn-again fl btn-h2">再次加固</a>
+								<a href="javascript:;" class="btn-again2 fl btn-h1">联系客服</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--命令行加固工具-->
+				<div class="safe_box">
+					<div class="tool-box clearfix">
+						<img src="./ossweb-img/tool.png" alt="" class="fl tool-icon">
+						<div class="fl tool-con">
+							<ul class="tool-list">
+								<li>
+									<i class="comm icon1 fl"></i>
+									<h4 class="h4-tit fl">持续集成</h4>
+									<p class="info">工具将加固操作持续集成于ci流程中，操作简单快速，减少开发人员的工作量。</p>
+								</li>
+								<li>
+									<i class="comm icon2 fl"></i>
+									<h4 class="fl">双模式加固</h4>
+									<p class="info info1">提供两种加固模式：快速加固模式和自定义加固模式。</p>
+								</li>	
+								<li>
+									<i class="comm icon3 fl"></i>
+									<h4 class="fl">多平台支持</h4>
+									<p class="info info2">支持在 Windows、Mac OS、Linux等操作系统上安装和使用，满足不同开发者的需求。</p>
+								</li>	
+								<li>
+									<i class="comm icon4 fl"></i>
+									<h4 class="fl">自动签名</h4>
+									<p class="info info2">在命令行工具配置签名信息，即可实现加固后自动签名，配置信息本地存放，无泄漏风险。</p>
+								</li>
+							</ul>
+							<div class="btn-list clearfix">
+								<a href="javascript:;" class="fl btn-h2">
+									Windows版
+								</a>
+								<a href="javascript:;" class="fl btn-h2">
+									Mac版
+								</a>
+								<a href="javascript:;" class="fl btn-h2">
+									Linux版
+								</a>
+							</div>
+							<p class="tip-dec">
+								说明：我们已经为本页面下载的工具配置了该游戏对应的证书，如果游戏在加固有效期内，即可使用。
+								<a href="https://mtp.qq.com/help_center.shtml#cmd_reinforce.shtml" class="btn-qw btn-h3" target="_blank">前往查看教程</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--提示1-->
+	<div class="s-pop pop_coupon s-pop2" id="pop_info1">
+		<h3>提示</h3>
+		<p class="s-pop-text txc t2">您的文件还未上传完毕，是否确认离开</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1 on">确定</a>
+			<a href="javascript:closeDialog();" class="pb3">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--提示2-->
+	<div class="s-pop pop_coupon s-pop2" id="pop_info2">
+		<h3>提示</h3>
+		<p class="s-pop-text txc t2">您的文件还未开始加固，是否取消加固</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1 on">确定</a>
+			<a href="javascript:closeDialog();" class="pb3">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--提示3-->
+	<div class="s-pop pop_coupon s-pop2" id="pop_info3">
+		<h3>提示</h3>
+		<p class="s-pop-text txc t2">您的文件还在加固中，是否确认离开</p>
+		<p class="s-pop-text txc t3">离开后，可前往<a href="history.shtml" class="btn-his btn-h3"><span>加固历史日志</span></a>页面进行加固后文件下载</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1 on2">确定</a>
+			<a href="javascript:closeDialog();" class="pb3">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--提示4-->
+	<div class="s-pop pop_coupon s-pop2" id="pop_info4">
+		<h3>提示</h3>
+		<p class="s-pop-text txc t2">您的文件还未上传完毕，是否取消上传</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1 on3">确定</a>
+			<a href="javascript:closeDialog();" class="pb3">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/progress.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+		(function(){
+			// 自适应
+			var pageSize = {
+				setStyle : function(){
+					var w = $(document).width();
+					var h  = $(window).height();
+					if(w<1500 ){
+						$(".tool-icon").css('zoom','.9');
+						$(".tool-box").css('width','1145px');
+					}else {
+					}	
+				},
+				reSize : function(){
+					var _this=this;
+					window.onresize =function(){
+						_this.setStyle(); 
+					}
+				},
+				init: function(){
+					this.setStyle();
+					this.reSize();
+				}
+			}
+			pageSize.init();}
+		());
+		//tab
+		$('.server-nav li').on('click',function(){
+			if($(this).hasClass('on')){
+				$(this).addClass('cut').siblings().removeClass('cut');
+				$('.safe_box').removeClass('dis').eq($(this).index()).addClass('dis');
+			}
+		});
+		// 校验
+		$('.range-list li').on('click',function(){
+			$(this).addClass('cur').siblings().removeClass('cur');
+			if($(this).hasClass('active')){
+				$('.file-pic-box').show();
+			}else{
+				$('.file-pic-box').hide();
+			}
+		});	
+		//下载
+		$('.btn-download').on('click',function(){
+			$(this).parents('.safe_box').removeClass('dis');
+			$('.safe_box').eq(1).addClass('dis');
+			$('.server-nav li').removeClass('cut').eq(1).addClass('cut');
+		});
+		// 再次加固
+		$('.btn-again, .pb1.on3').on('click',function(){
+			$(this).parents('.item').removeClass('on');
+			$('.safe_box').children('.item').removeClass('on').eq(0).addClass('on');
+			$('.server-nav li').removeClass('show').removeClass('show2').addClass('on');
+		});
+		// 上一步
+		$('.btn-prev').on('click',function(){
+			$(this).parents('.item').removeClass('on');
+			$('.safe_box').children('.item').removeClass('on').eq(0).addClass('on');
+			$('.server-nav li').removeClass('show').removeClass('show2').addClass('on');
+		});
+		// 开始
+		$('.btn-start').on('click',function(){
+			$(this).parents('.item').removeClass('on');
+			$('.safe_box').children('.item').removeClass('on').eq(3).addClass('on');
+			$('.server-nav li').removeClass('show').removeClass('show2').addClass('on');
+			$('.server-nav li').eq(1).addClass('show3').removeClass('on');
+			var p2 = new Progress({
+				el:'my_html2',//canvas元素id
+				deg:100,//绘制角度
+				timer:10,//绘制时间
+				lineWidth:2,//线宽
+				lineBgColor:'#fff',//底圆颜色
+				lineColor:'#4264f8',//动态圆颜色
+				textColor:'#333',//文本颜色
+				fontSize:24,//字体大小
+				circleRadius:68//圆半径
+			});
+			var t2 = setTimeout(function(){
+				closeDialog('pop_info3')
+				$('.safe_box').children('.item').removeClass('on').eq(4).addClass('on');
+				$('.server-nav li').eq(1).removeClass('show3').addClass('on');
+			},4000)
+		});
+		var t;
+        var b;
+        var p1;
+		// 上传文件
+		$('.btn-ud').on('click',function(){
+			c();
+		});
+		function a () {
+			t = setTimeout(function(){
+				$('.safe_box').children('.item').removeClass('on').eq(2).addClass('on');
+				$('.server-nav li').eq(1).addClass('show2').removeClass('on');
+			},4000)
+		}
+		function c () {
+			b =setTimeout(function(){
+				$(this).parents('.item').removeClass('on');
+				$('.server-nav li').eq(1).addClass('show').removeClass('on');
+				$('.safe_box').children('.item').removeClass('on').eq(1).addClass('on');
+				p1 = new Progress({
+					el:'my_html',//canvas元素id
+					deg:100,//绘制角度
+					timer:10,//绘制时间
+					lineWidth:2,//线宽
+					lineBgColor:'#fff',//底圆颜色
+					lineColor:'#4264f8',//动态圆颜色
+					textColor:'#333',//文本颜色
+					fontSize:24,//字体大小
+					circleRadius:68//圆半径
+				});
+				a();
+			},2000)
+		}
+		$('.pb1.on3').on('click',function(){
+			clearTimeout(t);
+		});
+		$('.btn-ud2').on('click',function(){
+            clearTimeout(b);
+            clearInterval(p1.timer);
+		});
+		// 页面二加固工具
+		$('.server-nav li').on('click',function(){
+			if($(this).hasClass('show')){
+				TGDialogS('pop_info1');
+			}
+		});
+		$('.server-nav li').on('click',function(){
+			if($(this).hasClass('show2')){
+				TGDialogS('pop_info2');
+			}
+		});
+		$('.server-nav li').on('click',function(){
+			if($(this).hasClass('show3')){
+				TGDialogS('pop_info3');
+			}
+		});
+		$('.server-nav .on2').on('click',function(){
+			clearTimeout(t)
+			$('.safe_box').children('.item').removeClass('on').eq(0).addClass('on');
+		});
+		// 确认离开
+		$('.pb1.on, .pb1.on2').on('click',function(){
+			$('.safe_box').removeClass('dis').eq(1).addClass('dis');
+			$('.server-nav li').removeClass('cut').eq(1).addClass('cut');
+		});
+		//全选
+		$(".checkAll").click(function () {
+            if ($(this).is(":checked") == true) {
+                $(".checkbox-inner").addClass('checkbox-checked');
+                $("input[class=checkSingle]").each(function (h) {
+                     $(this).prop("checked",true);
+
+                });
+            }else {
+                $(".checkbox-inner").removeClass('checkbox-checked');
+                $("input[class=checkSingle]").each(function (h) {
+                    $(this).prop("checked",false);
+                });
+            }
+		});
+		//单选
+		var checknum = $("input[class=checkSingle]").length;
+        $(".checkSingle").click(function () {
+            if ($(this).is(":checked") == true) {
+                console.log('选中');
+                $(this).prev().addClass('checkbox-checked');
+            }else {
+                console.log('未选中');
+                $(this).prev().removeClass('checkbox-checked');
+            }
+            if($(".checkSingle:checked").length == checknum){
+                    $(".checkAll").prop("checked",true);
+                    $(".checkAll").prev().addClass('checkbox-checked');
+                }else{
+                    $(".checkAll").prop("checked",false);
+                    $(".checkAll").prev().removeClass('checkbox-checked');
+                }
+        });
+		var initdata = ["[111]王者荣耀王者荣耀王者荣耀", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟", "[222]英雄联盟"];
+		$(document).ready(function (){
+			initSelect2WithSearch1();
+			function initSelect2WithSearch1() {
+				$("#sel_menu1").select2({
+					tags: true,
+					placeholder: '请选择游戏',
+					data: initdata,
+					allowClear: true
+				});
+			};
+			initSelect2WithSearch2();
+			function initSelect2WithSearch2() {
+				$("#sel_menu2").select2({
+					tags: true,
+					placeholder: '请选择游戏',
+					data: initdata,
+					allowClear: true
+				});
+			};
+		});
+	</script>
+</body>
+</html>

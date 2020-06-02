@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<!-- 正式服|测试服 -->
+			<div class="bor">
+				<div class="server-nav">
+					<ul>
+						<li class="cut"><a href="zsf.shtml">正式服</a>
+						<li><a href="csf.shtml">测试服</a>
+					</ul>
+				</div>
+				<div class="server-text">
+					<p class="server-tips"><span class="st-icon in">!</span>请注意：</p>
+					<ul>
+						<li>1.本策略控制页面仅对SDK3.3.XX以上版本生效，如果SDK版本低于3.3.XX，请跳转到<a href="javascript:;">游戏管理页面</a>进行调整；</li></li>
+						<li>2.本策略控制页面与正式服对应（对游戏的外网玩家生效），如果想要测试，请切换TAB至<a href="javascript:;">测试服管理页</a>进行测试；</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //正式服|测试服 -->
+			<!-- 开关管理 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">开关管理</strong>
+					<span class="title-tips in">Android</span>
+				</div>
+				<p class="tips">本模块用于控制MTP的功能开关，在下方功能列表中选择某项功能的开启与关闭。更新功能开关后，需要在页面下方点击【更新策略】按钮，更新将会实时生效。</p>
+				<div class="table">
+					<table width="100%">
+						<thead>
+							<colgroup>
+								<col width="28%" />
+								<col width="28%" />
+								<col width="46%" />
+							</colgroup>
+							<tr>
+								<th>功能</th>
+								<th>开关</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>修改器闪退</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>发现外挂修改游戏并且发现外挂样本后，实时退出游戏。判断准确，建议默认开启。</p></td>
+							</tr>
+							<tr>
+								<td>变速器闪退</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>发现外挂修改游戏速度并且发现外挂样本后，实时退出游戏。判断准确，建议默认开启。</p></td>
+							</tr>
+							<tr>
+								<td>虚拟机闪退</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>虚拟机类型的外挂允许不Root手机即可使用外挂功能。开启虚拟机闪退功能后，如果发现游戏在虚拟机中运行，将会退出游戏。</p></td>
+							</tr>
+							<tr>
+								<td>二选一功能</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>开启二选一功能后，如果发现手机或者模拟器上存在外挂（可以覆盖到260000个外挂及变种），弹框提示用户环境异常，需要用户先卸载外挂进程才能运行游戏。</p></td>
+							</tr>
+							<tr>
+								<td>获取进程列表失败->闪退</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>玩家为避免游戏检测到外挂进程，会关闭进程列表的获取权限。开启本功能后，如果没有获取进程列表权限，将会退出游戏。</p></td>
+							</tr>
+							<tr>
+								<td>特征下载失败->闪退</td>
+								<td>
+									<div class="modify">
+										<span>ON</span>
+										<a href="javascript:;" class="table-xg">修改</a>
+									</div>
+									<div class="modify-bc">
+										<label>
+											<input type="radio" class="in" checked>ON
+										</label>
+										<label>
+											<input type="radio" class="in">OFF
+										</label>
+										<a href="javascript:;" class="table-xg">保存</a>
+										<a href="javascript:;" class="table-qx">取消</a>
+									</div>
+								</td>
+								<td><p>如果玩家采取方法导致MTP特征下载失败，将会影响对抗效果。开启本功能后，如果发现网络正常情况下特征下载失败，将会退出游戏。</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //开关管理 -->
+			<!-- 二选一 黑样本管理 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">二选一 黑样本管理</strong>
+					<span class="title-tips in">Android</span>
+					<div class="title-problem" onclick="showDia('pop2')" style="right:65px">
+						<a href="javascript:;" class="tp-icon fr">+</a>
+					</div>
+					<div class="title-problem">
+						<a href="javascript:;" class="tp-icon fr">?</a>
+						<div class="tp-cont tra">
+							<ul>
+								<li>
+									<span class="fl">处理时间说明</span>
+									<span class="fr">样本上传成功后，大约10s内可以完成样本检测与特征制作，看到状态显示“处理完成，待发布”后即可点击更新按钮发布</span>
+								</li>
+								<hr>
+								<li>
+									<span class="fl">处理原理说明</span>
+									<span class="fr">对于上传的样本，MTP将把该样本及其各类变种都纳入对抗范围，仅对该游戏生效</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="tips">如果你的游戏发现了新的通用外挂，且希望通过二选一功能来对抗该外挂，可以在本模块提交外挂样本，MTP官方将把该外挂及其变种纳入对抗范围；提交样本后，请待样本状态栏提示“处理完成，待发布”时，点击页面下方的【更新策略】按钮，效果将实时生效。</p>
+				<div class="table">
+					<table width="100%">
+						<colgroup>
+							<col width="6%" />
+							<col width="12%" />
+							<col width="12%" />
+							<col width="12%" />
+							<col width="12%" />
+							<col width="12%" />
+							<col width="11%" />
+							<col width="12%" />
+							<col width="11%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>序号</th>
+								<th>编号</th>
+								<th>外挂名称</th>
+								<th>PackageName</th>
+								<th>样本</th>
+								<th>提交时间</th>
+								<th>生效时间</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>192570001</td>
+								<td>GameGudian</td>
+								<td>com.huluxia.tool</td>
+								<td><a href="javascript:;" class="table-apk">base.apk</a></td>
+								<td>2018.8.1-12:00</td>
+								<td>——</td>
+								<td>样本处理中</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:;" class="gray">删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>192570001</td>
+								<td>GameGudian</td>
+								<td>com.huluxia.tool</td>
+								<td><a href="javascript:;" class="table-apk">base.apk</a></td>
+								<td>2018.8.1-12:00</td>
+								<td>——</td>
+								<td>处理完成，待发布</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>192570001</td>
+								<td>GameGudian</td>
+								<td>com.huluxia.tool</td>
+								<td><a href="javascript:;" class="table-apk">base.apk</a></td>
+								<td>2018.8.1-12:00</td>
+								<td>——</td>
+								<td>处理完成，待发布</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>192570001</td>
+								<td>GameGudian</td>
+								<td>com.huluxia.tool</td>
+								<td><a href="javascript:;" class="table-apk">base.apk</a></td>
+								<td>2018.8.1-12:00</td>
+								<td>——</td>
+								<td>处理完成，已生效</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<td colspan="3">共3条记录</td>
+							<td colspan="4"></td>
+							<td colspan="2">
+								<div class="table-page">
+									<span>每页显示：</span>
+									<select>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+									<a href="javascript:;" class="table-prev comm t in" title="上一页"></a>
+									1 / 1
+									<a href="javascript:;" class="table-next comm t in" title="下一页"></a>
+								</div>
+							</td>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+			<!-- //二选一 黑样本管理 -->
+			<!-- 二选一白名单管理 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">二选一 白名单管理</strong>
+					<span class="title-tips in">Android</span>
+				</div>
+				<p class="tips">二选一功能可以覆盖到260000个外挂及变种，可以在下方将某个进程加入白名单，加入白名单的进程名将不会被检测。填写后需要点击下方的【更新策略】按钮，更新将会实时生效。</p>
+				<div class="table">
+					<table width="100%">
+						<thead>
+							<colgroup>
+								<col width="28%" />
+								<col width="35%" />
+								<col width="37%" />
+							</colgroup>
+							<tr>
+								<th>序号</th>
+								<th>PackageName</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>com.huluxia.tool</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>com.huluxia.tool</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>com.huluxia.tool</td>
+								<td>
+									<div class="caozuo">
+										<a href="javascript:showDia('pop1');">删除</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<td>共3条记录</td>
+							<td><input placeholder="仅支持英文字符、数字、半角点号、下划线，限40字符" class="table-input" /></td>
+							<td>
+								<a href="javascript:;">添加</a>
+							</td>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+			<!-- //二选一白名单管理 -->
+			<!--  更新策略 -->
+			<div class="main-foot">
+				<ul class="in">
+					<li>你更新了以下内容，点击更新后生效：</li>
+					<li>① 修改器闪退 功能的开关由OFF调整为ON</li>
+					<li>② 增加了包名为com.tencent.qq的二选一白名单</li>
+					<li>③ 增加了编号为192580001的二选一黑样本</li>
+				</ul>
+				<a href="javascript:;">立即更新</a>
+				<p>（当前配置与外网一致，无需更新。上次更新时间：2018.7.31-18:06）</p>
+			</div>
+			<!-- // 更新策略 -->
+		</div>
+	</div>
+
+	<div class="page-tips">
+		<span>删除成功</span>
+	</div>
+
+	<!--#include file="inc/pop.htm"-->
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+
+		function pageTips(text,success){
+			var text = text || "成功";
+			$('.page-tips').html('<span>'+ text +'</span>').fadeIn();
+			setTimeout(function(){
+				$('.page-tips').fadeOut();
+				success && success();
+			},1000);
+		}
+
+		$('.modify').each(function(){
+			var t = $(this);
+			t.find('.table-xg').on('click',function(){
+				t.hide();
+				t.siblings('.modify-bc').show();
+			})
+		})
+		$('.modify-bc').each(function(){
+			var t = $(this);
+			t.find('.table-qx').on('click',function(){
+				t.hide();
+				t.siblings('.modify').show();
+			})
+			t.find('.table-xg').on('click',function(){
+				pageTips('保存成功',function(){
+					t.hide();
+					t.siblings('.modify').show();
+				})
+			})
+			t.find('input').on('click',function(){
+				t.find('input').prop('checked', false);;
+				$(this).prop('checked', true);;
+			})
+		})
+
+	</script>
+
+	<!--#include file="inc/area.htm"-->
+
+</body>
+</html>

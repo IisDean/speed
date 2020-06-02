@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<!--<link rel="stylesheet" href="css/select2.min.css">-->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/switch.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main confront">
+		<div class="content">
+			<!-- 脚本对抗功能说明 -->
+			<div class="bor">
+				<ul class="tab-head">
+					<li class="active">lua脚本对抗</li>
+					<li>历史发布记录</li>
+				</ul>
+				<ul class="ex-list">
+					<li class="ex">功能说明：MTP官网会在下方的“公共模块”区域发布针对特定外挂的lua脚本，你也可以在下方的“私有模块”区域上传自己编写的lua脚本<span class="t-yellow">（TIPS：如何编写请查看<a href="lua_fight.shtml" class="t-blue">开发指引</a>）。</span>选择订阅自己需要的lua脚本后，在页面底部，制作特征，发布特征。</li>
+					<li class="ex"><span class="t-yellow">安全须知：发布特征后需要密切关注游戏的crash信息，如有异常，请重新制作特征，重新发布。</span></li>
+					<li class="ex">其他说明：本页面的lua脚本对抗功能仅在SDK4.2.0及以上版本生效。</li>
+				</ul>
+			</div>
+			<!-- 脚本对抗功能说明 -->
+			<!-- 公共模块 -->
+			<div class="bor bor1">
+				<div class="title-box">
+					<strong class="title-name">公共模块</strong>
+				</div>
+				<div class="c-box">
+					<table class="tb ">
+						<col width="18.176%">
+						<col width="20.158%">
+						<col width="23.63%">
+						<col width="15.83%">
+						<col width="15.977%">
+						<col width="4.23%">
+						<tr>
+							<th>模块编号</th>
+							<th>最新发布时间</th>
+							<th>lua模块名称</th>
+							<th>lua脚本文件</th>
+							<th>详情描述</th>
+							<th>是否订阅</th>
+						</tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn" title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="6">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn"  title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="6">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn"  title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="6">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+
+						<tr class="page">
+							<td colspan="6">
+								<p class="pages">
+									<!--<span>每页显示：</span>-->
+									<!--<select>-->
+										<!--<option value="1">5</option>-->
+										<!--<option value="2">10</option>-->
+										<!--<option value="2">20</option>-->
+									<!--</select>-->
+									<a href="javascript:;" class="btn-prev comm"></a>
+									<span>1 / 2</span>
+									<a href="javascript:;" class="btn-next comm"></a>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<!--<div class="not-box">-->
+						<!--<img src="images/lua_nodata.png" alt="">-->
+						<!--<h3>暂无数据</h3>-->
+					<!--</div>-->
+				</div>
+			</div>
+			<!-- 公共模块 -->
+			<!-- 私有模块 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">私有模块</strong>
+					<a href="lua_fight.shtml" class="txt-zy"><i class="icon-q comm"></i>开发指引</a>
+					<a class="btn-add-zy fr" href="javascript:;"><i class="icon-add comm"></i>新增lua脚本</a>
+				</div>
+				<div class="c-box">
+
+					<table class="tb ">
+						<col width="15.53%">
+						<col width="15.38%">
+						<col width="24.45%">
+						<col width="14.92%">
+						<col width="12.00%">
+						<col width="13.55%">
+						<col width="4.23%">
+						<tr>
+							<th>模块编号</th>
+							<th>最新发布时间</th>
+							<th>lua模块名称</th>
+							<th>lua脚本文件</th>
+							<th>详情描述</th>
+							<th>操作</th>
+							<th>是否订阅</th>
+						</tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn"  title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<a href="javascript:;" class="btn-edit ">编辑</a>
+								<a href="javascript:;" class="btn-del ">删除</a>
+							</td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="7">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn"  title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<a href="javascript:;" class="btn-edit ">编辑</a>
+								<a href="javascript:;" class="btn-del ">删除</a>
+							</td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="7">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+						<tr class="">
+							<td>0000000005</td>
+							<td>2019.7.24 - 10:58</td>
+							<td>2GG8.9.0版本对抗专用脚本</td>
+							<td><a href="javascript:;" class="js-btn"  title="点击下载脚本文件">GG8.9.0.lua</a></td>
+							<td><a href="javascript:;" class="btn-fold "></a></td>
+							<td>
+								<a href="javascript:;" class="btn-edit ">编辑</a>
+								<a href="javascript:;" class="btn-del ">删除</a>
+							</td>
+							<td>
+								<div class="switch_box">
+									<label class="switch">
+										<input type="checkbox" class="switch-input switchInput">
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="tr-detail"><td colspan="7">
+							<div class="desc-box">
+								<p class="t-detit">详细描述：</p>
+								<p class="desc">
+									外挂经常通过substrate模块hook并修改游戏逻辑，本模块可以扫描并广播是否有substrate模块的注入<br><br>
+									数据广播：<br>
+									扫描到可疑的substrate模块时会通过id=13的广播，发送如下格式的数据<br>
+									report-id=20190923；module-name=&lt;module-path&gt;;match-count=&lt;match-count>；module-size=&lt;module-size&gt;；module-md5=&lt;module-md5&gt;
+									其中module-path为命中的模块加载路径，match-count为命中的特征个数，数量越多越可疑，最多为5个<br><br>
+									实际上报数据示例：
+								</p>
+							</div>
+						</td></tr>
+
+						<tr class="page">
+							<td colspan="7">
+								<p class="pages">
+									<a href="javascript:;" class="btn-prev comm"></a>
+									<span>1 / 2</span>
+									<a href="javascript:;" class="btn-next comm"></a>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="not-box">
+					<img src="images/lua_nodata.png" alt="">
+					<h3>暂无数据</h3>
+				</div>
+			</div>
+			<!-- 私有模块 -->
+		</div>
+	</div>
+	<!-- .make-box 添加.cur为可操作 -->
+	<div class="make-box">
+		<div class="box-btns clearfix">
+			<a href="javascript:;" class="btn-mk1">制作特征</a>
+			<a href="javascript:;" class="bew btn-mk2">制作并发布特征<br/><span>（测试服）</span></a>
+			<a href="javascript:;" class="btn-mk2">制作并发布特征<br/><span>（正式服）</span></a>
+		</div>
+		<p class="txt1">请在页面上方选择订阅游戏需要的lua模块</p>
+		<p class="txt2">你已选择订阅<span> 2 </span>个公共lua模块，<span> 3 </span>个私有lua模块，请在上方选择适合游戏的处理方式</p>
+	</div>
+
+	<!-- 弹窗提示 -->
+	<div class="pop-front" id="popTips1">
+		<p class="pt-tit">提示</p>
+		<div class="atte-box">
+			<p>下载特征后的使用说明与注意事项为</p>
+			<p>
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+			</p>
+		</div>
+		<div class="front-btns clearfix">
+			<a href="javascript:;" class="btn1 btn-mk">立即制作</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+
+	<!-- 制作进度 -->
+	<div class="pop-front" id="popMk1">
+		<p class="pt-tit">制作进度</p>
+		<img src="ossweb-img/timg.gif" alt="" class="gif1">
+		<p class="mk-txt">特征制作中......</p>
+	</div>
+
+	<!-- 制作进度 -->
+	<div class="pop-front" id="popMk2">
+		<p class="pt-tit">制作进度</p>
+		<p class="mk-txt m-done">特征制作完毕，可点击下方按钮下载特征<br/>特征发布后，请关注外挂对抗效果及游戏稳定性</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">下载特征</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+
+	<!-- 弹窗提示 -->
+	<div class="pop-front" id="popTips2">
+		<p class="pt-tit">提示</p>
+		<div class="atte-box">
+			<p>下载特征后的使用说明与注意事项为</p>
+			<p>
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+				注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项注意事项
+			</p>
+		</div>
+		<div class="front-btns clearfix">
+			<a href="javascript:;" class="btn1 btn-con">继续发布</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+
+	<!-- 发布进度 -->
+	<div class="pop-front" id="popPub1">
+		<p class="pt-tit">发布进度</p>
+		<img src="ossweb-img/timg.gif" alt="" class="gif1">
+		<p class="mk-txt">特征制作完毕，正在发布中...</p>
+	</div>
+
+	<!-- 发布进度成功 -->
+	<div class="pop-front" id="popPub2">
+		<p class="pt-tit">发布进度</p>
+		<p class="pub-txt">特征已经成功发布，请关注外挂对抗效果及游戏稳定性</p>
+		<div class="front-btns front-btns2 clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确定</a>
+		</div>
+	</div>
+
+	<!-- 发布进度失败 -->
+	<div class="pop-front" id="popPub3">
+		<p class="pt-tit">发布进度</p>
+		<p class="pub-txt">特征发布失败，请联系客服处理</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">联系客服</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+
+	<!--新增lua脚本提示-->
+	<div class="pop-front" id="popAdd">
+		<p class="pt-tit">新增lua脚本</p>
+		<div class="pop-fm">
+			<div class="f-line clearfix">
+				<label><i>*</i> lua脚本名称：</label>
+				<div class="f-input"><input type="text" class="input" placeholder="限32字符"></div>
+			</div>
+			<div class="f-line clearfix">
+				<label><i>*</i> lua脚本上传：</label>
+				<div class="f-input clearfix">
+					<label for="f1">
+                        <input type="text" class="input" name="file-txt" />
+						<span class="btn-file">浏览</span>
+						<input type="file" name="f1" id="f1" style="display: none ;" />
+					</label>
+				</div>
+			</div>
+			<div class="f-line f-line-des clearfix">
+				<label for="" class="desc-tit">详情描述：</label>
+				<div class="f-textarea ">
+					<textarea name="desc" id="des" cols="30" rows="10" placeholder="限500字符"></textarea>
+					<div class="input-note t-yellow">注：带*为必填信息</div>
+				</div>
+			</div>
+		</div>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">提 交</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+	<!--编辑lua脚本提示-->
+    <div class="pop-front" id="popEdit">
+        <p class="pt-tit">编辑lua脚本</p>
+        <div class="pop-fm">
+            <div class="f-line clearfix">
+                <label><i>*</i> lua脚本名称：</label>
+                <div class="f-input"><input type="text" class="input" name="codeName" placeholder="限32字符"></div>
+            </div>
+            <div class="f-line clearfix">
+                <label><i>*</i> lua脚本上传：</label>
+                <div class="f-input clearfix">
+                    <label for="f1">
+                        <input type="text" class="input" name="codeFileName" />
+                        <span class="btn-file">浏览</span>
+                        <input type="file" name="f1" id="f1" style="display: none ;" />
+                    </label>
+                </div>
+            </div>
+            <div class="f-line f-line-des clearfix">
+                <label for="" class="desc-tit">详情描述：</label>
+                <div class="f-textarea ">
+                    <textarea name="codeDesc" id="des" cols="30" rows="10" placeholder="限500字符"></textarea>
+                    <div class="input-note t-yellow">注：带*为必填信息</div>
+                </div>
+            </div>
+        </div>
+        <div class="front-btns clearfix">
+            <a href="javascript:closeDialog();" class="btn1">保 存</a>
+            <a href="javascript:closeDialog();" class="btn2">取 消</a>
+        </div>
+    </div>
+
+	<!-- 提示填写完整 -->
+	<div class="pop-front pop-front2" id="popTip2">
+		<p class="pt-tit">提示</p>
+		<p class="pub-txt">请将带<span class="t-yellow">*</span>信息填写完整</p>
+		<div class="front-btns front-btns2 clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确定</a>
+		</div>
+	</div>
+	<!-- 提示 提交失败 -->
+	<div class="pop-front pop-front2" id="popTip3">
+		<p class="pt-tit">提示</p>
+		<p class="pub-txt">提交失败，请重试或联系客服</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确 定</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+	<!-- 提示 保存失败 -->
+	<div class="pop-front pop-front2" id="popTip4">
+		<p class="pt-tit">提示</p>
+		<p class="pub-txt">保存失败，请重试或联系客服</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确 定</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+	<!-- 提示 删除失败 -->
+	<div class="pop-front pop-front2" id="popTip5">
+		<p class="pt-tit">提示</p>
+		<p class="pub-txt">删除失败，请重试或联系客服</p>
+		<div class="front-btns clearfix">
+			<a href="javascript:closeDialog();" class="btn1">确 定</a>
+			<a href="javascript:closeDialog();" class="btn2">取 消</a>
+		</div>
+	</div>
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+
+		// TGDialogS('popEdit')
+
+        $('.btn-edit').on('click',function(){
+            TGDialogS('popEdit')
+            var detail = {
+                codeName : 'anti-substrate',
+                codeFileName : 'anti-substrate.lua',
+                codeDes : '数据广播:\n' +
+                    '扫描到可疑的substrate模块会通过id=13的广播，发送如下格\n' +
+                    '式的数据\n' +
+                    'report-id=20190923；module-name=<module-path>;matc\n' +
+                    'h-count=<match-count>；module-size=<module-size>；m\n' +
+                    'odule-md5=<module-md5>\n' +
+                    '数据广播'
+            }
+            $('#popEdit [name=codeName]').val(detail.codeName)
+            $('#popEdit [name=codeFileName]').val(detail.codeFileName)
+            $('#popEdit [name=codeDesc]').val(detail.codeDes)
+        })
+
+		$('.btn-add-zy').on('click',function(){
+			TGDialogS('popAdd')
+		});
+
+		$('.switch_box').on('click', function() {
+			setTimeout(function(){
+				$('.make-box').addClass('cur');
+			},500)
+		});
+
+        $('[name=codeFileName]').on("change",function (e) {
+            var e = e || window.event;
+            //获取 文件 个数 取消的时候使用
+            var files = e.target.files;
+            if(files.length>0){
+                // 获取文件名 并显示文件名
+                var fileName = files[0].name;
+                $("#popEdit [name=codeFileName]").val(fileName);
+            }else{
+                //清空文件名
+                $("#popEdit [name=codeFileName]").val("");
+            }
+        });
+
+        //展开收起
+		$('.btn-fold').on('click',function(){
+			//展开
+			var curTb = $(this).parents('.tb');
+			if(!$(this).parents('tr').hasClass('active')){
+				$('.tb tr').removeClass('active');
+				$(this).parents('tr').addClass('active').siblings('tr').removeClass('active')
+			}
+			else{
+				// 收起
+				$(this).parents('tr').removeClass('active')
+			}
+
+		})
+		//定时器
+		// var timer=null;
+		// var title=$('.desc-box');
+		// $('.tb tr').not('tr:first').hover(function() {
+		// 	var i = $(this).index();
+		// 	var cssName = ['arrow1', 'arrow2', 'arrow3', 'arrow4', 'arrow0'];
+		// 	show();
+		// 	if( !$(this).hasClass('lack') && !$(this).hasClass('page') ) {
+		// 		$('.desc-box').show();
+		// 		$(this).addClass('hoverClass');
+		// 		$(this).find('.js-btn').css({
+		// 			color: '#607df9'
+		// 		});
+		// 		$('.desc-box span').removeClass(cssName.join(' '));
+		// 		$('.desc-box span').addClass('arrow' + (i%5));
+		// 	}else {
+		// 		$('.desc-box').hide();
+		// 	}
+		//
+		// },function() {
+		// 	$(this).find('.js-btn').css({
+		// 		color: '#666'
+		// 	});
+		// 	$(this).removeClass('hoverClass');
+		// 	hide();
+		// });
+		//
+		// title.hover(function(){
+		// 	show()
+		// },function(){
+		// 	hide();
+		// });
+		//
+		// function show(){
+		// 	//关闭定时器 鼠标移入右侧
+		// 	clearInterval(timer);
+		// 	title.show();
+		// };
+		// function hide(){
+		// 	//定时器
+		// 	timer=setTimeout(function(){
+		// 		title.hide();
+		// 	},200);
+		// };
+
+
+		$('.make-box .btn-mk1').on('click', function() {
+			TGDialogS('popTips1');
+		});
+
+		$('.btn-mk').on('click', function() {
+			TGDialogS('popMk1');
+			setTimeout(function(){
+				TGDialogS('popMk2');
+			},1000)
+		});
+
+		$('.make-box .btn-mk2').on('click', function() {
+			TGDialogS('popTips2');
+
+		});
+
+		$('.btn-con').on('click', function() {
+			TGDialogS('popPub1');
+			setTimeout(function() {
+				TGDialogS('popPub2');
+				setTimeout(function() {
+					TGDialogS('popPub3');
+				},1000)
+			},1000)
+		});
+
+		//弹窗
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+	</script>
+</body>
+</html>

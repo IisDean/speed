@@ -1,0 +1,210 @@
+	<!--信息未保存时-->
+	<div class="s-pop pop_small" id="pop_unsave">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">你填写的信息还未保存，是否确认离开</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" onclick="save_infor();" class="pb1">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<!--保存修改成功-->
+	<div class="s-pop pop_small" id="pop_change">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">修改成功</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" onclick="save_infor();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<!--删除游戏-->
+	<div class="s-pop" id="pop_delegame">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">是否确认删除？<br>如若删除，所有的数据将会被清除，请慎重</p>
+		<div class="s-pop-btn">
+			<a id="sure_dele_jiben" class="pb1">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--取消关注-->
+	<div class="s-pop pop_small" id="pop_dele_atten">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">是否确定取消关注游戏</p>
+		<div class="s-pop-btn">
+			<a href="javascript:;" id="dele_attion" class="pb1">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop pop_small" id="pop_dele_fwg">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">确定删除？</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1" id="sure_dele_fwg">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop pop-odd" id="pop">
+		<h3>操作确认</h3>
+		<p class="s-pop-text">只有当你发现新发布的特征对游戏产生了严重不良影响时才建议执行下架操作（历史上未发生过，为安全起见，提供此功能），其它时候不建议操作。下架后系统将会为游戏重新下发安全基线特征。<span>请慎重操作。</span></p>
+        <div class="s-pop-btn">
+            <a href="javascript:closeDialog();" class="pb1">暂不下架</a>
+            <a href="javascript:closeDialog();" class="pb2">确定下架</a>
+        </div>
+
+        <!-- 关闭按钮 -->
+        <a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<div class="s-pop" id="pop1">
+		<h3>操作确认</h3>
+		<p class="s-pop-text">如果要删除的是已经生效的样本，需要点击下方的更新按钮才会生效。确定删除吗？</p>
+        <div class="s-pop-btn">
+            <a href="javascript:closeDialog();" class="pb1">删除</a>
+            <a href="javascript:closeDialog();" class="pb2">取消</a>
+        </div>
+        <!-- 关闭按钮 -->
+        <a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<div class="s-pop" id="pop2">
+		<h3>提交样本</h3>
+		<div class="s-pop-info">
+			<ul>
+				<li>
+					<span class="s-info-name fl">外挂名称：</span>
+					<input placeholder="* 限20个字符" class="fr" />
+				</li>
+				<li><strong></strong>
+					<span class="s-info-name fl">外挂描述：</span>
+					<textarea class="fr" placeholder="* 详细描述外挂版本号和作弊信息，限40字符"></textarea>
+				</li>
+				<li>
+					<span class="s-info-name fl">样本文件：</span>
+					<div class="s-input-none fr">
+						<a href="javascript:;">选择文件</a>
+						<input type="file" />
+					</div>
+					<p class="s-info-tips fl">限30M，限apk格式</p>
+				</li>
+				<li>
+					<span class="s-info-name fl">样本文件：</span>
+					<div class="s-info-file fr">
+						<span>C://abc/dev/waigua/gg.apgg.apgg.apgg.apgg.apgg.apgg.apgg.apgg.apgg.apgg.ap</span>
+						<a href="javascript:;" class="fr">更换</a>
+					</div>
+					<p class="s-info-tips fl">限30M，限apk格式</p>
+				</li>
+			</ul>
+			<div class="s-pop-sumibt">
+				<a href="javascript:closeDialog();" class="spn">立即提交</a>
+				<p class="sp1">文件大小限30M</p>
+				<a href="javascript:closeDialog();" class="spn">上传中（60%）</a>
+				<p>18MB / 30MB</p>
+				<a href="javascript:closeDialog();" class="spn"><span class="spb-load comm in"></span>处理中......</a>
+				<p>预计需要10s</p>
+				<a href="javascript:closeDialog();">处理完成</a>
+				<p>在主页面点击更新后生效</p>
+				<a href="javascript:closeDialog();" class="sps">处理失败</a>
+				<p class="sp1">请重新提交样本</p>
+			</div>
+		</div>
+
+        <!-- 关闭按钮 -->
+        <a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+
+	<div class="poploading" id="loadingPop">
+		<div class="coming loading-gif">
+			<img src="ossweb-img/inquire-loading.gif" class="in" />
+			<p>数据加载中，请耐心等候</p>
+		</div>
+	</div>
+	
+	<div class="s-pop fuse-pop" id="fuse-pop1">
+		<h3>熔断提醒</h3>
+		<p class="s-pop-text s-pop-text2">你的游戏已触发【修改器闪退】【虚拟机闪退】的熔断告警，如果当前阈值设置过低，你可以在本模块调整阈值。你也可以根据实际情况，选择关闭打击开关等处理方式。</p>
+		<p class="s-pop-choose"><i class="comm"></i>今日不再短信提醒</p>
+	    <div class="s-pop-btn">
+	        <a href="javascript:closeDialog();" class="pb1">我知道了</a>
+	        <a href="javascript:closeDialog();" class="pb2">联系客服</a>
+	    </div>
+	    <!-- 关闭按钮 -->
+	    <a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop fuse-pop" id="fuse-pop2">
+		<h3>修改</h3>
+			<div class="s-pop-info">
+				<ul>
+					<li>
+						<span class="s-info-name fl">功能</span><span class="fl bd">：</span>
+						<span class="s-info-desc fl name-detailes">修改器闪退</span>
+					</li>
+					<li class="centerli"><strong></strong>
+						<span class="s-info-name fl">熔断阈值</span><span class="fl bd">：</span>
+						<input type="text" class="fuse-val fl" value="0.5" /><span class="bd2 fl">%</span><a href="javascript:fuse_reset();" class="reset fl">重置为默认值</a>
+					</li>
+					<li>
+						<span class="s-info-name fl lh20">短信通知号码</span><span class="fl bd lh20">：</span>
+						<div class="phone-book">
+							<ul>
+								<li>钢铁侠（11111111111）</li>
+								<li>钢铁侠（12222222211）</li>
+								<li>钢铁侠（12233333331）</li>
+								<li>钢铁侠（44444444441）</li>
+								<li>钢铁侠（11111111111）</li>
+								<li>钢铁侠（12222222211）</li>
+								<li>钢铁侠（12233333331）</li>
+								<li>钢铁侠（44444444441）</li>
+								<li>钢铁侠（11111111111）</li>
+								<li>钢铁侠（12222222211）</li>
+								<li>钢铁侠（12233333331）</li>
+								<li>钢铁侠（44444444441）</li>
+							</ul>
+						</div>
+					</li>
+					<li>		
+						<p class="s-pop-choose gray-words"><i class="comm"></i>今日不再短信提醒</p>
+						<p class="xtip">注：1.熔断告警短信默认通知至游戏管理员,短信通知号码可前往</p>
+						<p class="xtip xtip2">个人信息模块进行修改</p>
+						<p class="xtip xtip2">2.熔断阈值的设定最高不超过1%</p>
+					</li>
+				</ul>
+			</div>
+	    <div class="s-pop-btn">
+	        <a href="javascript:closeDialog();" class="pb1 save-change gray-btn gray-btn2">保存修改</a>
+	    </div>
+	    <!-- 关闭按钮 -->
+	    <a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+	</script>

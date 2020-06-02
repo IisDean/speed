@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/summarize.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+	<div class="main subFeed">
+		<div class="content">
+			<div class="learbar">
+				<div class="lrar-cen">
+					<div class="lear-tit">
+						<h3>客户端安全概览</h3>
+					</div>
+					<div class="view_ck clearfix">
+						<div class="mcontainer pr">
+							<input placeholder="输入游戏id或名称搜索" />
+							<a href="javascript:;" type="search" class="ssbtn cmm">搜索</a>
+							<div class="search_drop pa">
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+								<p>游戏id</p>
+							</div>
+						</div>
+					</div>
+					<div class="cnet-ids">
+						<div class="cnet-ids-item1">
+							<div class="ids-no1">
+								<div class="bt-ing flex flex-align-items">
+									<span class="cmm oos-icon"></span>
+									<b>MTP Demo</b>
+									<span class="hys bq-icon">内部</span>
+									<span class="lys bq-icon">手游</span>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<th>Game ID：19368</th>
+											<td>公司名称：Garena</td>
+										</tr>
+										<tr>
+											<td>游戏类型：ARPG</td>
+										</tr>
+									</table>
+									<p class="time-cr"><span class="creat_icon cmm in"></span>游戏创建时间：2019-07-18</p>
+								</div>
+							</div>
+							<div class="ids-no2">
+								<div class="bt-ing flex flex-align-items">
+									<h3>MTP基础反外挂</h3>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr  class="pr">
+											<th>Game Key：41fe44b5b9804e891704225e7a4</th>
+											<td>
+												<div class="pr">
+													渠道包个数<a href="JavaScript:;" class="in wenhao">?</a>： 3 <a href="javascript:OpenDialog('pop4');" class="font-blue">修改</a>
+													<div class="wenhao-ts">只有填写了信息的渠道包，才能受到MTP基础反外挂的保护</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>昨日打击量（人）：<span class="font-blue">50235</span></td>
+											<td>已接入SDK版本：查看详情<a href="JavaScript:;" class="in wenhao">!</a></td>
+										</tr>
+										<tr>
+											<td>服务状态：服务永久有效</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">前往管理</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ids-no3">
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<td><b>MTP加固</b></td>
+										</tr>
+										<tr>
+											<td>服务状态：服务永久有效</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">前往加固</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cnet-ids-item2">
+							<div class="ids-no1">
+								<div class="bt-ing flex flex-align-items">
+									<span class="cmm oos-icon"></span>
+									<b>Free Fire</b>
+									<span class="lys bq-icon">手游</span>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<th>Game ID：19257</th>
+											<th>公司名称：Garena</th>
+										</tr>
+										<tr>
+											<td>游戏类型：FPS</td>
+										</tr>
+									</table>
+									<p class="time-cr"><span class="creat_icon cmm in"></span>游戏创建时间：2019-07-18</p>
+								</div>
+							</div>
+							<div class="ids-no2">
+								<div class="bt-ing flex flex-align-items">
+									<h3>MTP基础反外挂</h3>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr  class="pr">
+											<th>Game Key：41fe44b5b9804e891704225e7a4</th>
+											<th>
+												<div class="pr">
+													渠道包个数<a href="JavaScript:;" class="in wenhao">?</a>： 3 <a href="javascript:OpenDialog('pop4');" class="font-blue">修改</a>
+													<div class="wenhao-ts">只有填写了信息的渠道包，才能受到MTP基础反外挂的保护</div>
+												</div>
+											</th>
+										</tr>
+										<tr>
+											<td>昨日打击量（人）：<span class="font-blue">50235</span></td>
+											<td>已接入SDK版本：查看详情<a href="JavaScript:;" class="in wenhao">!</a></td>
+										</tr>
+										<tr>
+											<td>购买时间：服务生效中，有效期至2022-06-16</td>
+											<td>最近购买人：123456789</td>
+										</tr>
+										<tr>
+											<td>购买时间：2019-07-22 10:26:36</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">前往管理</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ids-no3">
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<td><b>MTP加固</b></td>
+										</tr>
+										<tr>
+											<td>服务状态：服务生效中，有效期至2022-06-16</td>
+											<td>最近购买人：123456789</td>
+										</tr>
+										<tr>
+											<td>购买时间：2019-07-22 10:26:36</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">前往加固</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cnet-ids-item2">
+							<div class="ids-no1">
+								<div class="bt-ing flex flex-align-items">
+									<span class="cmm oos-icon"></span>
+									<b>Test Game</b>
+									<span class="lys bq-icon">手游</span>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<th>Game ID：19121</th>
+											<th>公司名称：Tencent</th>
+										</tr>
+										<tr>
+											<td>游戏类型：ARPG</td>
+										</tr>
+									</table>
+									<p class="time-cr"><span class="creat_icon cmm in"></span>游戏创建时间：2019-07-18</p>
+								</div>
+							</div>
+							<div class="ids-no2">
+								<div class="bt-ing flex flex-align-items">
+									<h3>MTP基础反外挂</h3>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr  class="pr">
+											<th>Game Key：41fe44b5b9804e891704225e7a4</th>
+											<th>
+												<div class="pr">
+													渠道包个数<a href="JavaScript:;" class="in wenhao">?</a>： 1 <a href="javascript:OpenDialog('pop4');" class="font-blue">修改</a>
+													<div class="wenhao-ts">只有填写了信息的渠道包，才能受到MTP基础反外挂的保护</div>
+												</div>
+											</th>
+										</tr>
+										<tr>
+											<td>昨日打击量（人）：<span class="font-blue">0</span></td>
+											<td>已接入SDK版本：<span class="font-blue">未检测到接入</span></td>
+										</tr>
+										<tr>
+											<td>服务状态：无服务信息，暂未购买</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">申请试用</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ids-no3">
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<td><b>MTP加固</b></td>
+										</tr>
+										<tr>
+											<td>服务状态：无服务信息，暂未购买</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">申请试用</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cnet-ids-item2">
+							<div class="ids-no1">
+								<div class="bt-ing flex flex-align-items">
+									<span class="cmm oos-icon"></span>
+									<b>Test Game2</b>
+									<span class="lys bq-icon">手游</span>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<th>Game ID：19123</th>
+											<th>公司名称：Tencent</th>
+										</tr>
+										<tr>
+											<td>游戏类型：ARPG</td>
+										</tr>
+									</table>
+									<p class="time-cr"><span class="creat_icon cmm in"></span>游戏创建时间：2019-07-18</p>
+								</div>
+							</div>
+							<div class="ids-no2">
+								<div class="bt-ing flex flex-align-items">
+									<h3>MTP基础反外挂</h3>
+								</div>
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr  class="pr">
+											<th>Game Key：41fe44b5b9804e891704225e7a4</th>
+											<th>
+												<div class="pr">
+													渠道包个数<a href="JavaScript:;" class="in wenhao">?</a>： 1 <a href="javascript:OpenDialog('pop4');" class="font-blue">修改</a>
+													<div class="wenhao-ts">只有填写了信息的渠道包，才能受到MTP基础反外挂的保护</div>
+												</div>
+											</th>
+										</tr>
+										<tr>
+											<td>昨日打击量（人）：<span class="font-blue">0</span></td>
+											<td>SDK接入情况：<span class="font-blue"> 未检测到接入</span></td>
+										</tr>
+										<tr>
+											<td>服务状态：服务生效中，有效期至2022-06-16</td>
+											<td>最近购买人：123456789</td>
+										</tr>
+										<tr>
+											<td>购买时间：2019-07-22 10:26:36</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">前往管理</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ids-no3">
+								<div class="game_table_box">
+									<table class="game_table">
+										<tr>
+											<td><b>MTP加固</b></td>
+										</tr>
+										<tr>
+											<td>服务状态：无服务信息，暂未购买</td>
+											<td><a href="javscript:;" class="box-btn fr btn-ble">申请试用</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="game_page">
+							<div class="table-page">
+								<a href="javascript:;" class="table-prev cmm in" title="上一页"></a>
+								1 / 1
+								<a href="javascript:;" class="table-next cmm in" title="下一页"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="infor_box pa">
+				<div class="infor_box-cent">
+					<div class="infor_box-item">
+						<div class="lear-tit">
+							<h3>工具箱</h3>
+						</div>
+						<div class="infor_box-item2">
+							<div class="info-guide infb-bg fitm">
+								<h3>新手指导</h3>
+								<a href="//mtp.qq.com/sdk_home.shtml#guide_index" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>新手指引手册</span><span class="cmm in tz-icon"></span></a>
+							</div>
+							<div class="info-guide2 infb-bg fitm">
+								<h3>SDK接入指引</h3>
+								<a href="//mtp.qq.com/sdk_home.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>如何下载基础反外挂SDK？</span><span class="cmm in tz-icon"></span></a>
+								<a href="https://mtp.qq.com/sdk_home.shtml#sdk__C" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>如何接入基础反外挂SDK？</span><span class="cmm in tz-icon"></span></a>
+								<a href="//mtp.qq.com/help_center.shtml#sdk_effect.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>如何验证接入后效果？</span><span class="cmm in tz-icon"></span></a>
+								<a href="//mtp.qq.com/help_center.shtml#sdk_faq.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>基础反外挂FAQ</span><span class="cmm in tz-icon"></span></a>
+							</div>
+							<div class="info-guide2 infb-bg fitm">
+								<h3>加固操作指引</h3>
+								<a href="//mtp.qq.com/help_center.shtml#mutil_instruct.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>多渠道包加固如何操作？</span><span class="cmm in tz-icon"></span></a>
+								<a href="//mtp.qq.com/cmd_addShell.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>命令行加固工具如何下载？</span><span class="cmm in tz-icon"></span></a>
+								<a href="//mtp.qq.com/help_center.shtml#cmd_reinforce.shtml" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>命令行加固工具如何使用？</span><span class="cmm in tz-icon"></span></a>
+								<a href="javascript:;" target="_blank" class="flex flex-align-items flex-justify-spac"><span><b class="in"></b>安全加固FAQ</span><span class="cmm in tz-icon"></span></a>
+							</div>
+							<div class="info-guide2 infb-bg fitm">
+								<h3>MTP客户端安全白皮书</h3>
+									<span class="cmm clock-icon"></span>
+								 	<p class="cloc-hint">暂未开放，敬请期待</p>
+							</div>
+							<div class="no-available">
+								<span class="cmm available-icon"></span>
+								<em>暂无游戏</em>
+								<p>你暂无可管理游戏，可前往注册</p>
+								<a href="javscript:;" class="box-btn btn-ble">前往注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 运营反馈处理（1936800200000006） -->
+	<div class="pop layer1 layer_fk" id="pop4">
+	    <div class="pop-con">
+	        <div class="layer_up">
+	            <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+	            <em>渠道信息</em>
+	        </div>
+			<div class="layer_body">
+				<div class="qudao_box">
+					<div class="qudao clearfix">
+						<div class="combtn fr">
+							<a href="javascript:;" class="add_btn in" id="add_channel">新增渠道</a>
+							<a href="javascript:;" class="add_btn in">批量添加</a>
+						</div>
+					</div>
+					<div class="qutable">
+						<table id="channel_table">
+							<tr>
+								<th width="41%"><span>*</span>包名</th>
+								<th width="41%">渠道</th>
+								<th width="18%">操作</th>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>华为</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>小米</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>华为</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>小米</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>华为</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>小米</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>华为</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>小米</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>华为</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+							<tr>
+								<td>com.sy.jlsd.mini</td>
+								<td>小米</td>
+								<td><a href="javascript:dele_tr(1);" class="dele_btn">删除</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script>
+		var popIsShow = false;
+		var popDom = null;
+        $(function(){
+            //搜索
+            $('.mcontainer input').focus(function(){
+                $('.search_drop').show();
+            });
+            $('.mcontainer input').blur(function(){
+                $('.search_drop').hide();
+            });
+            // 问号hover
+            $(".wenhao").hover(function () {
+                $(this).siblings(".wenhao-ts").show()
+            },function () {
+                $(this).siblings(".wenhao-ts").hide()
+            })
+
+			// OpenDialog("pop4");
+			
+			/*删除渠道*/
+			$('#sure_dele').on('click',function(){
+				$('#channel_table tr').eq(cur_channel_id).remove();
+			});
+	    })
+
+        
+		
+		//弹窗
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+
+		/*弹框*/
+		function OpenDialog(id) {
+			var p = $('#'+id);
+		    popDom = p;
+		    if (p) {
+				console.log('openDialog 4')
+		        p.show(100).css({
+		            position: 'fixed',
+		            top: '56px',
+		            right: '0',
+		            zIndex: 998
+		        });
+		        p.attr('for', 'pop');
+		        popIsShow = true;
+		        if ($('[for="' + id + '"]').length >= 1) return;
+		        $('body').css("overflow","hidden").append('<div name="overlay" onclick="closeDialog()" for='
+		+ id
+		+ ' style="width:100%;height:100%;position:fixed;top:0px;left:0;z-index:997;background:rgba(194,194,194,0.4);"></div>');
+		    }
+		}
+		
+		
+		function closeDialog() {
+		    var w=$('[for="pop"]').width();
+		    $('[for="pop"]').hide(500).stop().css({
+		        right: -(w+50),
+		    });
+		    $('[name="overlay"]').remove();
+		    $('body').css("overflow","scroll");
+		}
+	</script>
+</body>
+</html>

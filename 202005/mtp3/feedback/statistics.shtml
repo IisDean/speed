@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+<div class="main subFeed">
+    <div class="content">
+        <div class="tit-box">
+            <h3>运营反馈分析</h3>
+        </div>
+        <div class="san_box">
+            <!--误判-->
+            <div class="wupan" >
+                <div class="bor fee_box bd_fee">
+                    <div class="up_cha">
+                        <table width="824px">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">反馈类型： </em>
+                                        <em class="fl list_em">
+                                            <a href="javascript:;" class="wu_cl no">误判</a>
+                                            <a href="javascript:;" class="wu_cl ">漏判</a>
+                                        </em>
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul class="root_li clearfix">
+                                        <li>
+                                            <label>时间范围：</label>
+                                            <input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo1">
+                                            <a href="JavaScript:;" class="all_a" style="margin-left: 22px;">查询</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zong_shu">
+            <ul class="clearfix">
+                <li>
+                    反馈总数(单)
+                    <em>250</em>
+                </li>
+                <li class="fan_kui">
+                    误判反馈总数(单)
+                    <em>91</em>
+                </li>
+                <li class="none_bor wu_kui">
+                    误判处理总数(单)
+                    <em>88</em>
+                </li>
+            </ul>
+            <p>*统计结果为所选时间范围内的统计量</p>
+        </div>
+        <!-- 误判问题处理分析 -->
+        <div class="wp_wen">
+            <h3>
+                <i><img src="images/tj_icon.png" alt=""></i>
+                误判问题处理分析
+            </h3>
+            <div class="t2_box_con">
+               <div id="rllfx"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script src="js/wangEditor.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/data.js"></script>
+<script src="js/comm.js"></script>
+<script type="text/javascript">
+    var rllfx = echarts.init(document.getElementById("rllfx"));
+    rllfx.showLoading({
+        text : '正在加载数据'
+    });  //增加提示
+
+    var option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle : {
+                    color : '#8499f5',
+                    width:'2'
+                }
+            }
+        },
+        legend: {
+            data:['反馈量1','处理量'],
+            bottom : 0,
+            textStyle: {
+                fontSize: 14,//字体大小
+                color: '#666666'//字体颜色
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            top: '13%',
+            containLabel: true
+        },
+
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['2019/05/02','2019/05/03','2019/05/04','2019/05/05','2019/05/06','2019/05/07','2019/05/08','2019/05/09','2019/05/10','2019/05/11','2019/05/12','2019/05/13','2019/05/13'],
+            axisLine:{
+                lineStyle:{
+                    color:'#4264f8',
+                    width:2
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    color:'#666666',
+                    fontSize:14,
+                }
+            },
+
+        },
+        yAxis: {
+            name : '（单）',
+            type: 'value',
+            //设置轴线的属性
+            axisLine:{
+                show: true,
+                lineStyle:{
+                    color:'#4264f8',
+                    width:2
+                },
+                textStyle: {
+                    color: '#ffffff',
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    color:'#666666',
+                    fontSize:14,
+                }
+            },
+            nameTextStyle: {
+                color: '#666666',
+                fontSize:14,
+            }
+        },
+        series: [
+            {
+                name:'处理量',
+                type:'line',
+                stack: '总量',
+                data:[5,8,5,6,7,8,10,10,20,10,20,5,8,10,2],
+                // 设置折点大小
+                symbolSize: 10,
+                // 设置为光滑曲线
+                smooth: true,
+                itemStyle : {
+                    normal : {
+                        color:'#fe8d25',
+                        lineStyle:{
+                            color:'#fe8d25',
+                            width:2
+                        }
+
+                    }
+                },
+                tooltip:{
+                    backgroundColor: 'blue',
+                }
+            },
+            {
+                name:'反馈量1',
+                type:'line',
+                stack: '总量',
+                data:[5,8,5,6,7,8,20,10,20,30,10,6,7,10,20],
+                // 设置折点大小
+                symbolSize: 10,
+                // 设置为光滑曲线
+                smooth: true,
+                itemStyle : {
+                    normal : {
+                        color:'#8499f5',
+                        //线条颜色
+                        lineStyle:{
+                            color:'#4264f8',
+                            width:2
+                        }
+                    }
+                },
+            }
+        ]
+    };
+    $(function () {
+        rllfx .hideLoading();  //提示关闭
+    });
+
+    rllfx.setOption(option);
+    window.onresize = function(){
+        rllfx.resize();
+        //myChart1.resize();    //若有多个图表变动，可多写
+    }
+</script>
+</body>
+</html>

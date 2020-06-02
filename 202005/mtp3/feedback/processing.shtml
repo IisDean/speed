@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-23 -->
+</head>
+<body>
+<div class="main subFeed">
+    <div class="content">
+        <div class="tit-box">
+            <h3>运营反馈处理</h3>
+        </div>
+        <div class="tab_two">
+            <!-- 误判 -->
+            <div class="wupan" >
+                <div class="bor fee_box bd_fee">
+                    <div class="up_cha">
+                        <table width="1100px">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font_span">基础查询</span>
+                                </td>
+                                <td>
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">反馈类型： </em>
+                                        <em class="fl list_em tian_jia">
+                                            <a href="javascript:;" class="wu_cl no">误判</a>
+                                            <a href="javascript:;" class="wu_cl ">漏判</a>
+                                        </em>
+                                    </div>
+                                </td>
+                                <td style=" width: 36.45%">
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">处理进度： </em>
+                                        <em class="fl list_em ">
+                                            <a href="javascript:;" class="wu_cl no">全部</a>
+                                            <a href="javascript:;" class="wu_cl ">待处理</a>
+                                            <a href="javascript:;" class="wu_cl ">已处理</a>
+                                        </em>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="up_cha table_mr">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font_span two_span">精确查询（选填）</span>
+                                </td>
+                                <td>
+                                    <div class="dh_box">
+                                        <ul class="form_b clearfix">
+                                            <li>
+                                                <label>反馈单号：</label>
+                                                <input type="text" placeholder="限32字符，避免输入特殊字符">
+                                            </li>
+                                            <li>
+                                                <label>误判账号：</label>
+                                                <input type="text" placeholder="限32字符，避免输入特殊字符">
+                                            </li>
+                                            <li>
+                                                <label>策略号：</label>
+                                                <input type="text" placeholder="限32字符，避免输入特殊字符">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tx_root">
+                                        <ul class="root_li clearfix">
+                                            <li>
+                                                <label>投诉来源：</label>
+                                                <select>
+                                                    <option value="全部">全部</option>
+                                                    <option value="超R玩家、消协风控类">超R玩家、消协风控类</option>
+                                                    <option value="项目组、玩家团">项目组、玩家团</option>
+                                                    <option value="客服、官网、论坛">客服、官网、论坛</option>
+                                                    <option value="其他">其他</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <label>时间范围：</label>
+                                                <input type="text" value="2018-07-05 - 2018-08-05" class="time-txt" id="config-demo1">
+                                                <span class="time_day">
+                                                        <a href="JavaScript:;" class="no">今日</a>
+                                                        <a href="JavaScript:;">近7日</a>
+                                                        <a href="JavaScript:;">近30日</a>
+                                                    </span>
+                                            </li>
+                                            <li class="hou_li">
+                                                <a href="JavaScript:;" class="cha_btm">查询</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bor fee_box">
+                    <div class="cli_box">
+                        <div class="all_btm">
+                            <a href="JavaScript:;" class="all_a" style="background: #999999">批量处理</a>
+                        </div>
+                        <div class="bd_bor">
+                            <table width="100%">
+                                <tr>
+                                    <th>
+                                        <input id="checkAll" type="checkbox" />
+                                        <label for="checkAll" style="cursor:pointer">全部</label>
+                                    </th>
+                                    <th>反馈时间</th>
+                                    <th>反馈单号</th>
+                                    <th>反馈者</th>
+                                    <th>问题类型</th>
+                                    <th>投诉来源</th>
+                                    <th>策略号</th>
+                                    <th>误判账号</th>
+                                    <th>处理进度</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input name="subBox" id="paixu2"  type="checkbox" />
+                                            <label for="paixu2" style="cursor:pointer"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>
+                                            <span class="data-txt">
+                                                2128；2316；2718...
+                                            </span>
+                                            <div class="more-box">
+                                                2128；2316；2718；2468；2167；2437；
+                                                2683；2561；2943；2167；1998；
+                                            </div>
+                                        </td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>待处理</td>
+                                        <td><a href="JavaScript:OpenDialog('pop4');">处理反馈</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="subBox" id="paixu3"  type="checkbox" />
+                                            <label for="paixu3" style="cursor:pointer"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>
+                                            <span class="data-txt">
+                                                2128；2316；2718...
+                                            </span>
+                                            <div class="more-box">
+                                                2128；2316；2718；2468；2167；2437；
+                                                2683；2561；2943；2167；1998；
+                                            </div>
+                                        </td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>待处理</td>
+                                        <td><a href="JavaScript:OpenDialog('pop5');">处理反馈</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="subBox" id="paixu4"  type="checkbox" />
+                                            <label for="paixu4" style="cursor:pointer"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>
+                                            <span class="data-txt">
+                                                2128；2316；2718...
+                                            </span>
+                                            <div class="more-box">
+                                                2128；2316；2718；2468；2167；2437；
+                                                2683；2561；2943；2167；1998；
+                                            </div>
+                                        </td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>待处理</td>
+                                        <td><a href="JavaScript:;">处理反馈</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="subBox" id="paixu5"  type="checkbox" />
+                                            <label for="paixu5" style="cursor:pointer"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>2365</td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>待处理</td>
+                                        <td><a href="JavaScript:;">处理反馈</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <!--<input name="subBox"  type="checkbox" />-->
+                                            <label style="cursor:pointer" class="ycl"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>
+                                            <span class="data-txt">
+                                                2128；2316；2718...
+                                            </span>
+                                            <div class="more-box">
+                                                2128；2316；2718；2468；2167；2437；
+                                                2683；2561；2943；2167；1998；
+                                            </div>
+                                        </td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>已处理</td>
+                                        <td><a href="JavaScript:OpenDialog('pop3');">查看结论</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <!--<input name="subBox"   type="checkbox" />-->
+                                            <label  style="cursor:pointer" class="ycl"></label>
+                                        </td>
+                                        <td>2018-08-13 18:40:36</td>
+                                        <td>1936800200000006</td>
+                                        <td>536549201</td>
+                                        <td>误判</td>
+                                        <td>超R玩家、消协风控类</td>
+                                        <td>2316</td>
+                                        <td>9sxgoKsd8wfygx</td>
+                                        <td>已处理</td>
+                                        <td><a href="JavaScript:OpenDialog('pop3');;">查看结论</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="page_li">
+                                <span>每页显示：</span>
+                                <select>
+                                    <option value="10">10</option>
+                                    <option value="20" selected>20</option>
+                                    <option value="50">50</option>
+                                </select>
+                                <a href="javascript:;" class="btn-prev comm1"></a>
+                                <span>1 / 2</span>
+                                <a href="javascript:;" class="btn-next comm1"></a>
+                                前往<input type="text">页
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 漏判 -->
+            <div class="loupan" style="display: none">
+                <div class="bor fee_box bd_fee">
+                    <div class="up_cha">
+                        <table class="loupan_t">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font_span">基础查询</span>
+                                </td>
+                                <td>
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">反馈类型： </em>
+                                        <em class="fl list_em tian_jia">
+                                            <a href="javascript:;" class="wu_cl ">误判</a>
+                                            <a href="javascript:;" class="wu_cl no">漏判</a>
+                                        </em>
+                                    </div>
+                                </td>
+                                <td >
+                                <td >
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">信息类型： </em>
+                                        <em class="fl list_em">
+                                            <a href="javascript:;" class="wu_cl no">全部</a>
+                                            <a href="javascript:;" class="wu_cl ">文本</a>
+                                            <a href="javascript:;" class="wu_cl ">图片</a>
+                                            <a href="javascript:;" class="wu_cl ">视频</a>
+                                        </em>
+                                    </div>
+                                </td>
+                                <td >
+                                    <div class="fk_lx">
+                                        <em class="fl xi_em">处理进度： </em>
+                                        <em class="fl list_em">
+                                            <a href="javascript:;" class="wu_cl no">全部</a>
+                                            <a href="javascript:;" class="wu_cl ">待处理</a>
+                                            <a href="javascript:;" class="wu_cl ">已处理</a>
+                                        </em>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="up_cha table_mr">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font_span two_span">精确查询（选填）</span>
+                                </td>
+                                <td>
+                                    <div class="dh_box">
+                                        <ul class="form_b clearfix">
+                                            <li>
+                                                <label>反馈单号：</label>
+                                                <input type="text" placeholder="限32字符，避免输入特殊字符">
+                                            </li>
+                                            <li>
+                                                <label>恶意发布账号：</label>
+                                                <input type="text" class="ey_name" placeholder="限32字符，避免输入特殊字符">
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="tx_root">
+                                        <ul class="root_li clearfix">
+                                            <li>
+                                                <label>漏判类型：</label>
+                                                <select >
+                                                    <option value="全部">全部</option>
+                                                    <option value="政治、辱华、色情低俗广告">政治、辱华、色情低俗广告</option>
+                                                    <option value="外挂售卖、游戏代练广告">外挂售卖、游戏代练广告</option>
+                                                    <option value="充值、退款类广告">充值、退款类广告</option>
+                                                    <option value="拉人、言语消极类广告">拉人、言语消极类广告</option>
+                                                    <option value="买卖金等诈骗类广告">买卖金等诈骗类广告</option>
+                                                    <option value="其他">其他</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <label>时间范围：</label>
+                                                <input type="text" value="2018-07-05 - 2018-08-05" class="time-txt"
+                                                       id="config-demo2">
+                                                <span class="time_day">
+                                                        <a href="JavaScript:;" class="no">今日</a>
+                                                        <a href="JavaScript:;">近7日</a>
+                                                        <a href="JavaScript:;">近30日</a>
+                                                    </span>
+                                            </li>
+                                            <li class="hou_li">
+                                                <a href="JavaScript:;" class="cha_btm">查询</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bor fee_box">
+                    <div class="cli_box">
+                        <div class="all_btm1">
+                            <a href="JavaScript:;" class="all_a" style="background: #999999">批量处理</a>
+                        </div>
+                        <div class="bd_bor">
+                            <table width="100%">
+                                <tr>
+                                    <th>
+                                        <input id="checkAll1" type="checkbox" />
+                                        <label for="checkAll1" style="cursor:pointer">全部</label>
+                                    </th>
+                                    <th>反馈时间</th>
+                                    <th>反馈单号</th>
+                                    <th>反馈者</th>
+                                    <th>问题类型</th>
+                                    <th>信息类型</th>
+                                    <th>漏判类型</th>
+                                    <th>恶意发布账号</th>
+                                    <th>处理进度</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input name="subBox" id="paixuu2"  type="checkbox" />
+                                        <label for="paixuu2" style="cursor:pointer"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>文本</td>
+                                    <td>
+                                        政治、辱华、色情低俗广告
+                                    </td>
+                                    <td>9sxgoKsd8wfygx</td>
+                                    <td>待处理</td>
+                                    <td><a href="JavaScript:OpenDialog('pop2');">处理反馈</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="subBox" id="paixuu3"  type="checkbox" />
+                                        <label for="paixuu3" style="cursor:pointer"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>图片</td>
+                                    <td>
+                                        外挂售卖、游戏代练广告
+                                    </td>
+                                    <td>8wfygxdueydxd</td>
+                                    <td>待处理</td>
+                                    <td><a href="JavaScript:;">处理反馈</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="subBox" id="paixuu4"  type="checkbox" />
+                                        <label for="paixuu4" style="cursor:pointer"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>图片</td>
+                                    <td>
+                                        充值、退款类广告
+                                    </td>
+                                    <td>8wfygxdueydxd</td>
+                                    <td>待处理</td>
+                                    <td><a href="JavaScript:;">处理反馈</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="subBox" id="paixuu5"  type="checkbox" />
+                                        <label for="paixuu5" style="cursor:pointer"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>文本</td>
+                                    <td>
+                                        拉人、言语消极类广告
+                                    </td>
+                                    <td>8wfygxdueydxd</td>
+                                    <td>待处理</td>
+                                    <td><a href="JavaScript:;">处理反馈</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!--<input name="subBox" id="paixuu6"  type="checkbox" />-->
+                                        <label  style="cursor:pointer" class="ycl"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>视频</td>
+                                    <td>
+                                        买卖金等诈骗类广告
+                                    </td>
+                                    <td>8wfygxdueydxd</td>
+                                    <td>已处理</td>
+                                    <td><a href="JavaScript:;">查看结论</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!--<input name="subBox" id="paixuu7"  type="checkbox" />-->
+                                        <label  style="cursor:pointer" class="ycl"></label>
+                                    </td>
+                                    <td>2018-08-13 18:40:36</td>
+                                    <td>1936800200000006</td>
+                                    <td>536549201</td>
+                                    <td>漏判</td>
+                                    <td>视频</td>
+                                    <td>
+                                        其他
+                                    </td>
+                                    <td>8wfygxdueydxd</td>
+                                    <td>已处理</td>
+                                    <td><a href="JavaScript:;">查看结论</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="page_li">
+                                <span>每页显示：</span>
+                                <select>
+                                    <option value="10">10</option>
+                                    <option value="20" selected>20</option>
+                                    <option value="50">50</option>
+                                </select>
+                                <a href="javascript:;" class="btn-prev comm1"></a>
+                                <span>1 / 2</span>
+                                <a href="javascript:;" class="btn-next comm1"></a>
+                                前往<input type="text">页
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 弹窗1（运营反馈处理） -->
+    <div class="pop layer1 layer_fk" id="pop1">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈处理</em>
+            </div>
+            <div class="spr_gun null_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>
+                                <select >
+                                    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>
+                                    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>
+                                    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>
+                                    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><textarea style="resize:none;"时间范围 rows="10" cols="30"></textarea>
+                                <div class="a_submit">
+                                    <a href="JavaScript:;">内容加白</a>
+                                    <a href="JavaScript:;">解处罚</a>
+                                    <a href="JavaScript:;" class="bg_ys">提交结论</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 运营反馈处理（1936800200000006） -->
+    <div class="pop layer1 layer_fk" id="pop2">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈处理（1936800200000006）</em>
+            </div>
+            <div class="spr_gun">
+                <!-- 处理结果 -->
+                <div class="list_d ">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em>恶意发布账号： </em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em>恶意发布时间： </em>2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">漏  判  类  型：</em>政治、辱华、色情低俗广告
+                            </li>
+
+                            <li>
+                                <em class="letter">信  息  类  型：</em>文本
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息： </em><br/>该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广告，没被
+                                检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道发布了广
+                                告，没被检测出来该用户在世界频道发布了广告，没被检测出来该用户在世界频道
+                                发布了广告
+                            </li>
+                            <li>
+                                <img src="images/img_layer1.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- 日志信息 -->
+                <div class="list_d">
+                    <div class="tab_lan">
+                            <ul>
+                                <li class="no">HTTP</li>
+                                <li>TLOG</li>
+                                <li>SDK</li>
+                            </ul>
+                        </div>
+                    <div class="l_title">日志信息</div>
+                    <div class="loading_hou" style="display: none">
+                        <div class="l_body">
+                            <div class="lay_tab ">
+                                <table width="100%">
+                                    <tr>
+                                        <th>时间</th>
+                                        <th>发布内容</th>
+                                    </tr>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>长期出园bao+信物 马牌 修为魂石装备<br/>等等需要的+**122222235；</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>女主播小号带上分开黑一起玩的+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td><img src="images/hg_zt.jpg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>等需要的+**122222235；</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>等需要的；</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>等664646465；</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019-06-09  11:19:07</td>
+                                        <td>阿发发放</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="">
+                    </div>
+                </div>
+
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>
+                                <select>
+                                    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>
+                                    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>
+                                    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>
+                                    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><textarea style="resize:none;"时间范围 rows="10" cols="30"></textarea>
+                                <div class="a_submit">
+                                    <a href="JavaScript:;" class="bg_ys">提交结论</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 运营反馈处理（1936800200000006） -->
+    <div class="pop layer1 layer_fk" id="pop3">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈处理（1936800200000006）</em>
+            </div>
+            <div class="spr_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em class="letter">误  判  账  号：</em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em class="letter">误  判  时  间：</em>2018-07-05~2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">投  诉  来  源：</em>超R玩家、消协风控类
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息： </em><br/>该用户在世界频道发布了正常信息，却被封号
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- 日志信息 -->
+                <div class="list_d">
+
+                        <div class="tab_lan">
+                            <ul>
+                                <li class="no">2128 </li>
+                            </ul>
+                        </div>
+                        <div class="l_title">处罚证据</div>
+                         <div class="loading_hou" style="display:none;">
+                            <div class="l_body font_mar">
+                                <ul>
+                                    <li>
+                                        <em class="letter">处  罚  时  间：</em>2019-05-29 17:49:54
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  场  景：</em>模式: 普通模式 | 系统: ios | 平台: 手机QQ
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  大  区：</em>2022
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  角  色：</em>4512285640269258
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  时  长：</em>7天
+                                    </li>
+                                    <li>
+                                        <em class="letter">处  罚  原  因：</em>方案：UIC | 原因：近期存在违规游戏行为|130113
+                                    </li>
+                                </ul>
+                            </div>
+                         </div>
+                         <div class="loading">
+                            <img src="images/loading.gif" alt="">
+                         </div>
+                </div>
+
+
+
+                <!-- 处罚账单 -->
+                <div class="list_d">
+                        <div class="l_title">处罚账单</div>
+                        <div class="loading_hou" style="display:none;">
+                           <div class="l_body">
+                            <div class="lay_tab tr_tbody">
+                                <table width="100%">
+                                    <tr>
+                                        <th>字段名</th>
+                                        <th>字段含义</th>
+                                        <th>字段值</th>
+                                    </tr>
+                                    <tbody>
+                                    <tr>
+                                        <td>data_time</td>
+                                        <td>日期</td>
+                                        <td>20190816</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_time</td>
+                                        <td>日志时间</td>
+                                        <td>1565922984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_id</td>
+                                        <td>game_id</td>
+                                        <td>2103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>openid</td>
+                                        <td>号码</td>
+                                        <td>410B0C4BBACACA251C9DBF24FA7E64B8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>user_plat</td>
+                                        <td>用户平台<br/>（微信/QQ）</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mobile_plat</td>
+                                        <td>手机操作系统<br/>（IOS/安卓）</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>word_id</td>
+                                        <td>word_id</td>
+                                        <td>3036</td>
+                                    </tr>
+                                    <tr>
+                                        <td>filte_id</td>
+                                        <td>过滤词</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>deteced_time</td>
+                                        <td>检测时间</td>
+                                        <td>1565922984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_score</td>
+                                        <td>game_score</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_money</td>
+                                        <td>金币</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_result</td>
+                                        <td>游戏结算结果</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_mode</td>
+                                        <td>模式</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pvp_mode</td>
+                                        <td>是否PVP模式</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dur_time</td>
+                                        <td>游戏时长</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>detected_count</td>
+                                        <td>检测次数</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>scheme_type</td>
+                                        <td>策略号</td>
+                                        <td>130009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>user_ctrl_result</td>
+                                        <td>userctrl返回的<br/>实际处罚结果</td>
+                                        <td>10096</td>
+                                    </tr>
+                                    <tr>
+                                        <td>transaction_result</td>
+                                        <td>logicctrl事务<br/>执行结果</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>version</td>
+                                        <td>版本</td>
+                                        <td>uca_punish</td>
+                                    </tr>
+                                    <tr>
+                                        <td>punish_typs_value</td>
+                                        <td>punish_type_value</td>
+                                        <td>63</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clear_punish_time</td>
+                                        <td>clear_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pve_punish_time</td>
+                                        <td>pve_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pvp_punish_time</td>
+                                        <td>pvp_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mode_punish_time</td>
+                                        <td>mode_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>filte_word</td>
+                                        <td>filte_word</td>
+                                        <td>
+                                            <p >
+                                                panti_ruid=4512285640269258&anti_url=0<br/>#uca=uca_punish&simi&type=100004
+                                                &rank=149&md5=C3CA1098BC<br/>A3FC8355E3BCFF08023C8DM<br/>&evidenc_content=<img src="images/ml.jpg" alt="">anti_ruid4512285640269258&&e
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="loading">
+                            <img src="images/loading.gif" alt="">
+                        </div>
+                </div>
+
+
+
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>
+                                <select>
+                                    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>
+                                    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>
+                                    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>
+                                    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><textarea style="resize:none;"时间范围 rows="10" cols="30" placeholder="您反馈的运营问题已完成处理，问题已修复，您可以继续观察，有问题及时反馈！"></textarea>
+                                <div class="a_submit">
+                                    <em class="cg_font">结论已提交</em>
+                                    <a href="JavaScript:;" class="bg_ys" style="background: #999999">提交结论</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 运营反馈处理（1936800200000006） -->
+    <div class="pop layer1 layer_fk" id="pop4">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈处理（1936800200000006）</em>
+            </div>
+            <div class="spr_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em class="letter">误  判  账  号：</em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em class="letter">误  判  时  间：</em>2018-07-05~2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">投  诉  来  源：</em>超R玩家、消协风控类
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息： </em><br/>该用户在世界频道发布了正常信息，却被封号
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- 日志信息 -->
+                <div class="list_d">
+                    <div class="tab_lan">
+                            <ul>
+                                <li class="no s-tab action">2128 </li>
+                                <li class="s-tab">2316 </li>
+                                <li class="s-tab">2718 </li>
+                                <li class="s-tab">2468 </li>
+                                <li class="s-tab">2167 </li>
+                                <li class="s-tab">2437 </li>
+                                <li class="s-tab">2683 </li>
+                                <li class="sb-tab ">
+                                    <img src="images/dian.png" alt="" style="vertical-align: middle;margin-top: -3px;">
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="c-navigation">
+                            <ul>
+                                <li class="no s-tab">2167 </li>
+                                <li class="no s-tab">2437 </li>
+                                <li class="no s-tab">2683 </li>
+                            </ul>
+                        </div>
+                    <div class="l_title">处罚证据</div>
+                    <div class="loading_hou" style="display:none;">
+                        <div class="l_body font_mar cen-mar show">
+                            <ul>
+                                <li>
+                                    <em class="letter">处  罚  时  间：</em>2019-05-29 17:49:54
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  场  景：</em>模式: 普通模式 | 系统: ios | 平台: 手机QQ
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  大  区：</em>2022
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  角  色：</em>4512285640269258
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  时  长：</em>7天
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  原  因：</em>方案：UIC | 原因：近期存在违规游戏行为|130113
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l_body font_mar cen-mar">
+                            <ul>
+                                <li>
+                                    <em class="letter">处  罚  时  间：</em>2019-05-29 17:49:55
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  场  景：</em>模式: 普通模式 | 系统: ios | 平台: 手机QQ
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  大  区：</em>2022
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  角  色：</em>4512285640269258
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  类  型：</em>禁止/解禁模式
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  时  长：</em>7天
+                                </li>
+                                <li>
+                                    <em class="letter">处  罚  原  因：</em>方案：UIC | 原因：<img src="images/hg_zt.jpg" style="vertical-align: top;"> |130113
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="">
+                    </div>
+                </div>
+
+
+
+                <!-- 处罚账单 -->
+                <div class="list_d">
+                    <div class="l_title">处罚账单</div>
+                    <div class="loading_hou" style="display:none;">
+                        <div class="l_body">
+                            <div class="lay_tab tr_tbody">
+                                <table width="100%">
+                                    <tr>
+                                        <th>字段名</th>
+                                        <th>字段含义</th>
+                                        <th>字段值</th>
+                                    </tr>
+                                    <tbody>
+                                    <tr>
+                                        <td>data_time</td>
+                                        <td>日期</td>
+                                        <td>20190816</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_time</td>
+                                        <td>日志时间</td>
+                                        <td>1565922984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_id</td>
+                                        <td>game_id</td>
+                                        <td>2103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>openid</td>
+                                        <td>号码</td>
+                                        <td>410B0C4BBACACA251C9DBF24FA7E64B8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>user_plat</td>
+                                        <td>用户平台<br/>（微信/QQ）</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mobile_plat</td>
+                                        <td>手机操作系统<br/>（IOS/安卓）</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>word_id</td>
+                                        <td>word_id</td>
+                                        <td>3036</td>
+                                    </tr>
+                                    <tr>
+                                        <td>filte_id</td>
+                                        <td>过滤词</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>deteced_time</td>
+                                        <td>检测时间</td>
+                                        <td>1565922984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_score</td>
+                                        <td>game_score</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_money</td>
+                                        <td>金币</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_result</td>
+                                        <td>游戏结算结果</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>game_mode</td>
+                                        <td>模式</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pvp_mode</td>
+                                        <td>是否PVP模式</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dur_time</td>
+                                        <td>游戏时长</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>detected_count</td>
+                                        <td>检测次数</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>scheme_type</td>
+                                        <td>策略号</td>
+                                        <td>130009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>user_ctrl_result</td>
+                                        <td>userctrl返回的<br/>实际处罚结果</td>
+                                        <td>10096</td>
+                                    </tr>
+                                    <tr>
+                                        <td>transaction_result</td>
+                                        <td>logicctrl事务<br/>执行结果</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>version</td>
+                                        <td>版本</td>
+                                        <td>uca_punish</td>
+                                    </tr>
+                                    <tr>
+                                        <td>punish_typs_value</td>
+                                        <td>punish_type_value</td>
+                                        <td>63</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clear_punish_time</td>
+                                        <td>clear_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pve_punish_time</td>
+                                        <td>pve_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pvp_punish_time</td>
+                                        <td>pvp_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mode_punish_time</td>
+                                        <td>mode_punish_time</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>filte_word</td>
+                                        <td>filte_word</td>
+                                        <td>
+                                            <p >
+                                                panti_ruid=4512285640269258&anti_url=0<br/>#uca=uca_punish&simi&type=100004
+                                                &rank=149&md5=C3CA1098BC<br/>A3FC8355E3BCFF08023C8DM<br/>&evidenc_content=<img src="images/ml.jpg" alt="">anti_ruid4512285640269258&&e
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="">
+                    </div>
+                </div>
+
+
+
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>
+                                <select >
+                                    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>
+                                    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>
+                                    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>
+                                    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><textarea style="resize:none;"时间范围 rows="10" cols="30"></textarea>
+                                <div class="a_submit">
+                                    <a href="JavaScript:;">内容加白</a>
+                                    <a href="JavaScript:;">解处罚</a>
+                                    <a href="JavaScript:;" class="bg_ys">提交结论</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--运营反馈处理（1936800200000006）-->
+    <div class="pop layer1 layer_fk" id="pop5">
+        <div class="pop-con">
+            <div class="layer_up">
+                <i onclick="closeDialog()"><img src="images/left_jt.jpg" alt="" width="25" height="55"></i>
+                <em>运营反馈处理（1936800200000006）</em>
+            </div>
+            <div class="spr_gun">
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">反馈详情</div>
+                    <div class="l_body font_mar">
+                        <ul>
+                            <li>
+                                <em class="letter">账  号  类  型：</em>Wegame
+                            </li>
+                            <li>
+                                <em class="letter">误  判  账  号：</em>9sxgoKsd8wfygx
+                            </li>
+                            <li>
+                                <em class="letter">误  判  时  间：</em>2018-07-05~2018-08-05
+                            </li>
+                            <li>
+                                <em class="letter">投  诉  来  源：</em>超R玩家、消协风控类
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息： </em><br/>该用户在世界频道发布了正常信息，却被封号
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 处罚证据 -->
+                <div class="list_d">
+                    <div class="l_title">处罚证据</div>
+                    <div class="loading_hou" style="display:none;">
+                        <div class="font_mar new_class">
+                            <img src="images/none_data.png" alt="" width="13%">
+                            <p>没有数据</p>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="">
+                    </div>
+                </div>
+
+                <!-- 处罚账单 -->
+                <div class="list_d">
+                    <div class="l_title">处罚账单</div>
+                    <div class="loading_hou" style="display:none;">
+                        <div class="lay_tab tr_tbody new_class">
+                            <img src="images/none_data.png" alt="" width="13%">
+                            <p>没有数据</p>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="">
+                    </div>
+                </div>
+
+
+                <!-- 处理结果 -->
+                <div class="list_d">
+                    <div class="l_title">处理结果</div>
+                    <div class="l_body">
+                        <ul>
+                            <li>
+                                <em class="letter">处  理  结  论：</em>
+                                <select >
+                                    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>
+                                    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>
+                                    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>
+                                    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </li>
+                            <li>
+                                <em class="letter">备  注  信  息：</em><textarea style="resize:none;"时间范围 rows="10" cols="30"></textarea>
+                                <div class="a_submit">
+                                    <a href="JavaScript:;">内容加白</a>
+                                    <a href="JavaScript:;">解处罚</a>
+                                    <a href="JavaScript:;" class="bg_ys">提交结论</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="js/wangEditor.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/data.js"></script>
+<script src="js/comm.js"></script>
+<script>
+
+
+    $(document).click(function () {
+        $('.layer-img').hide();
+    });
+
+    //全选
+    function all(el,elm,box){
+        el.click(function() {
+            if(this.checked == true) {
+                box.attr('href','JavaScript:OpenDialog("pop1");')
+                box.css({"background": "#4264f8"})
+                elm.each(function() {
+                    this.checked = true;
+                })
+            }
+            if(this.checked == false){
+                box.attr('href','JavaScript:;')
+                box.css({"background": "#999999"})
+                elm.each(function(){
+                    this.checked = false;
+
+                })
+            }
+        });
+    }
+    all($("#checkAll"),$(".wupan input[name='subBox']"),$('.all_btm a'));
+    all($("#checkAll1"),$(".loupan input[name='subBox']"),$('.all_btm1 a'));
+    //单选
+    function dall(el,elm,ell,box){
+        elm.click(function(){
+            let len = elm.length;
+            let length = ell.length;
+            if(elm.is(":checked")){
+                console.log(box);
+                box.attr('href','JavaScript:OpenDialog("pop1");')
+                box.css({"background": "#4264f8"})
+            }else{
+                box.attr('href','JavaScript:;')
+                box.css({"background": "#999999"})
+            }
+            if(len == length){
+                el.prop("checked",true)
+            }else{
+                el.prop("checked",false)
+            }
+        })
+    }
+    dall($("#checkAll1"),$(".loupan input[name='subBox']"),$('.loupan input[name="subBox"]:checked'),$('.all_btm1 a'));
+    dall($("#checkAll"),$(".wupan input[name='subBox']"),$('.wupan input[name="subBox"]:checked'),$('.all_btm a'));
+
+
+    $('.tian_jia a').click(function () {
+        $('.tab_two>div').eq($(this).index()).show().siblings().hide();
+        var index=$(this).index();
+        if(index==1){
+            $('.a_submit a:eq(0),.a_submit a:eq(1)').remove();
+            // $('.a_submit a').eq(1).remove();
+            $('.l_body ul li select').html('<option value="已被检测，成功发送处罚，未清屏">已被检测，成功发送处罚，未清屏</option>\n' +
+                '    <option value="已被检测，策略静默/灰度中，未全服">已被检测，策略静默/灰度中，未全服</option>\n' +
+                '    <option value="已被检测，成功发送处罚，效果延迟">已被检测，成功发送处罚，效果延迟</option>\n' +
+                '    <option value="已被检测，成功发送处罚，处罚失效">已被检测，成功发送处罚，处罚失效</option>\n' +
+                '    <option value="未被检测，产品数据缺失">未被检测，产品数据缺失</option>\n' +
+                '    <option value="未被检测，方案覆盖度不够">未被检测，方案覆盖度不够</option>\n' +
+                '    <option value="其他">其他</option>')
+        }else{
+
+            $('.l_body ul li select').html('    <option value="未查询到处罚记录，未处罚该帐号">未查询到处罚记录，未处罚该帐号</option>\n' +
+                '    <option value="检测正确，但检测标准可能未达成一致">检测正确，但检测标准可能未达成一致</option>\n' +
+                '    <option value="检测正确，但处罚力度过严">检测正确，但处罚力度过严</option>\n' +
+                '    <option value="误判，已解处罚，检测方案已优化">误判，已解处罚，检测方案已优化</option>\n' +
+                '    <option value="其他">其他</option>')
+        }
+    });
+
+
+    $('.data-txt').hover(function () {
+        $(this).siblings('.more-box').fadeIn();
+    },function () {
+        $(this).siblings('.more-box').fadeOut();
+    });
+
+    $('#pop4 .tab_lan .s-tab').click(function () {
+        var index = $(this).index();
+        console.log(index);
+        if(index>=2){
+            alert('敬请期待;');
+            return false;
+        }
+        $(this).addClass("action").siblings().removeClass("action");
+        $("#pop4 .list_d .cen-mar").eq(index).addClass("show").siblings(".cen-mar").removeClass("show");
+    });
+
+    $('#pop4 .tab_lan .sb-tab').click(function () {
+        if($('.c-navigation').is(':hidden')){
+            $('.c-navigation').show()
+        }else{
+            $('.c-navigation').hide()
+        }
+    });
+
+
+    $('.time_day a').click(function () {
+        $(this).addClass('no').siblings().removeClass('no')
+    })
+
+
+    // OpenDialog('pop2');
+    // OpenDialog('pop3');
+</script>
+</body>
+</html>

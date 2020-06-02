@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>腾讯安全中心</title>
+<link href="css/fastenproduc.css" rel="stylesheet" />
+<style>
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<h1 class="hide">腾讯安全中心</h1>
+	<div class="cont_top">
+		<div class="top-nav">
+			<div class="container clearfix">
+				<div class="topnav-logo">
+					<a href="index.shtml"><img src="images/logo.png" width="106" height="34" alt="MTP"/></a>
+				</div>
+				<div class="topnav-link fl">
+					<ul>
+						<li class="li0"><a href="index.shtml">首页</a></li>
+						<li class="li1"><span>产品</span></li>
+						<li class="li2"><span>解决方案</span></li>
+						<li class="li3"><a href="product_price.shtml">定价</a></li>
+						<li class="li4"><a href="javascript:;">下载</a></li>
+						<!-- <li class="li4"><a href="sdk_home.shtml">SDK</a></li> -->
+						<li class="li5"><a href="help_center.shtml">帮助中心</a></li>
+						<li class="li6"><a href="https://intl.mtp.tencent.com">English</a></li>
+						<!--<li class="li6"><a href="contactus.shtml">联系我们</a></li>-->
+						<div class="line"></div>
+					</ul>
+				</div>
+				<div class="topnav-login fr">
+					<p class="unlogin">
+						<a href="javascript:void(0);" id="mtp_login1" class="btn btn_nav_top btn-login insert">立即接入</a>
+						<a href="javascript:void(0);" id="mtp_login2" class="btn btn_nav_top btn-login login_in" ><i class="ico ico-login"></i>登录</a>
+					</p>
+					<div class="logined" id="top-login-select" style="display:none">
+						<p class="logined-btn">
+							<i class="user-face"><img src="" width="17"  height="17"/></i>
+							<span class="user-name overell"></span><i class="ico ico-arr ico-arr-up"></i>
+						</p>
+						<ul class="login-info">
+							<li><a href="game_home.shtml"><i class="ico ico-game"></i>我的游戏</a></li>
+							<li><a href="game_user_info.shtml"><i class="ico ico-info"></i>个人信息</a></li>
+							<li><a href="javascript:;" class="login_out" id="mtp_logout1"><i class="ico ico-logout"></i>退出登录</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="topnav-tips">
+				<!--产品-->
+				<div class="product dhcont">
+					<ul>
+						<li>
+							<h3>咨询评审</h3>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">安全评审服务</em><span class="com fl">即将上线</span></div>
+								<p>腾讯安全专家对游戏安全性进行全面评审，给出详细改进意见</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">外挂分析服务</em><span class="com fl">即将上线</span></div>
+								<p>逆向分析出外挂作弊原理，输出专业外挂分析报告</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">漏洞挖掘服务</em><span class="com fl">即将上线</span></div>
+								<p>深入分析游戏逻辑，挖掘游戏潜在漏洞，输出详细修复建议</p>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h3>客户端保护</h3>
+							<a href="product_pinup.shtml">
+								<div><em class="fl">MTP加固服务</em></div>
+								<p>全面保护游戏逻辑，全面反调试，严防破解版，专业的手游加固方案</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">端游加固服务</em><span class="com fl">即将上线</span></div>
+								<p>领先的VMP技术，全面反调、反虚拟机、反注入、反多开，资源保护</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">驱动保护服务</em><span class="com fl">即将上线</span></div>
+								<p>进程保护与Ring 0级系统调用保护相结合，深度解决模拟按键问题</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="zb">
+						<li>
+							<h3>反作弊</h3>
+							<a href="product_com.shtml">
+								<div><em class="fl">修改器闪退</em></div>
+								<p>防通用修改器，一旦发现立即闪退</p>
+							</a>
+						</li>
+						<li>
+							<a href="product_transt.shtml">
+								<div><em class="fl">变速器闪退</em></div>
+								<p>防通用变速器，一旦发现立即闪退</p>
+							</a>
+						</li>
+						<li>
+							<a href="product_bro.shtml">
+								<div><em class="fl">虚拟机闪退</em></div>
+								<p>防虚拟机外挂，一旦发现立即闪退</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">模拟器检测</em><span class="com fl">内部试用</span></div>
+								<p>核心的手游模拟器检测技术</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">深度定制化</em><span class="com fl">即将上线</span></div>
+								<p>腾讯安全专家深度定制游戏保护方案</p>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h3>黑产对抗</h3>
+							<!--<a href="product_sxe.shtml">
+                                <div><em class="fl">渠道反作弊</em><span class="com fl">内部试用</span></div>
+                                <p>基于腾讯大数据，全面监控营销渠道作弊行为，输出详细作弊数据</p>
+                            </a>-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">渠道反作弊</em><span class="com fl">内部试用</span></div>
+								<p>基于腾讯大数据，全面监控营销渠道作弊行为，输出详细作弊数据</p>
+							</a>
+						</li>
+						<li>
+							<!--<a href="product_pay.shtml">
+                                <div><em class="fl">IOS支付安全</em><span class="com fl">内部试用</span></div>
+                                <p>监控IOS小额代充行为，检测充值金额损失，输出详细数据报表</p>
+                            </a>-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">IOS支付安全</em><span class="com fl">内部试用</span></div>
+								<p>监控IOS小额代充行为，检测充值金额损失，输出详细数据报表</p>
+							</a>
+						</li>
+						<li>
+							<!--未上线，请添加“dis_btn”-->
+							<a href="javascript:;" class="dis_btn">
+								<div><em class="fl">打金工作室监控</em><span class="com fl">即将上线</span></div>
+								<p>腾讯游戏多年大数据积累，全面监控打金工作室作弊行为</p>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h3>内容安全</h3>
+							<a href="product_pic.shtml">
+								<div><em class="fl">图片安全方案</em></div>
+								<p>AI技术与海量数据库相结合，快速识别游戏内非法图片信息</p>
+							</a>
+						</li>
+						<li>
+							<a href="product_text.shtml">
+								<div><em class="fl">文本安全方案</em></div>
+								<p>腾讯游戏10余年数据库积累，全面识别色情、政治、广告、暴恐信息</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--解决方案-->
+				<div class="solution dhcont clearfix">
+					<a href="solution_shouyou.shtml">手游安全解决方案</a>
+					<a href="solution_duanyou.shtml">端游安全解决方案</a>
+					<a href="solution_yeyou.shtml">页游安全解决方案</a>
+					<a href="solution_danji.shtml">单机游戏安全解决方案</a>
+				</div>
+				<!--定价-->
+				<div class="dhcont" ></div>
+				<!--下载-->
+				<div class="download dhcont clearfix" >
+					<a href="fasten_produc.shtml">MTP命令行工具</a>
+					<a href="sdk_home.shtml" class="r_0">反作弊SDK</a>
+				</div>
+			</div>
+		</div>
+		<div class="main pr">
+			<!-- 文字-->
+			<div class="left">
+				<!-- 标题-->
+				<div class="title">MTP命令行加固工具</div>
+				<!-- 描述-->
+				<div class="miaoshu">
+					腾讯出品的手游专用加固工具，仅需一次配置，快速集</br>
+					成到游戏编译发布流程。支持多平台，支持快速</br>
+					加固与自定义加固双重模式。
+				</div>
+				<!-- 选择-->
+				<p class="xuanze">CI持续集成<span>|</span>自动签名<span>|</span>多平台支持<span>|</span>快速加固模式</p>
+				<div class="banben">
+					本工具提供以下版本：
+					<a>了解如何获取工具</a>
+				</div>
+				<div class="banbenbox clearfix">
+					<a class="tubaoimg windows"></a>
+					<a class="tubaoimg mac"></a>
+					<a class="tubaoimg linux"></a>
+				</div>
+				<!-- 联系客服-->
+				<!-- <div class="lxkfbox"><span>*</span> 企业客户可以联系我们，我们将会提供试用并颁发证书。<span class="lxkf"><a href="">联系客服</a></span></div> -->
+			</div>
+			<!-- 图型-->
+			<div class="right pa">
+				<!-- 图标文字-->
+				<div class="tubaoimg tubao pr">
+					<!-- 点击态:阴影-->
+					<div class="tubao_on" style="display: none;">
+						<!--<li class="tubaoimg tubao_on1 pa"></li>-->
+						<!--<li class="tubaoimg tubao_on2 pa"></li>-->
+						<!--<li class="tubaoimg tubao_on3 pa"></li>-->
+						<li class="tubaoimg tubao_on4 pa"></li>
+						<!--<li class="tubaoimg tubao_on5 pa"></li>-->
+						<!--<li class="tubaoimg tubao_on6 pa"></li>-->
+					</div>
+					<!-- 图标未点击态-->
+					<div class="tubao_off">
+						<li class="tubaoimg tubao_off1 pa"></li>
+						<li class="tubaoimg tubao_off2 pa"></li>
+						<li class="tubaoimg tubao_off3 pa"></li>
+						<li class="tubaoimg tubao_off4 pa"></li>
+						<li class="tubaoimg tubao_off5 pa"></li>
+						<li class="tubaoimg tubao_off6 pa"></li>
+					</div>
+					<!-- MTP命令行工具：自动化处理-->
+					<div class="wztc pa" style="display: none;">MTP命令行工具：自动化处理</div>
+				</div>
+				<!-- 图形-->
+				<img class="tuxing pa" src="images/tuxing.png" alt=""/>
+			</div>
+			<!--前往下载 -->
+			<!-- <div class="qwxzbox"><span>* </span>MTP提供可视化客户端加固工具。<span class="qwxz"><a href="">前往下载</a></span></div> -->
+		</div>
+		<div class="btn_nextpage godown">向下滚动，了解如何获取工具</div>
+	</div>
+	<!-- 了解如何获取工具 -->
+	<div class="second">
+		<div class="main pr">
+			<div class="big-tit">了解如何获取工具</div>
+			<p class="txt1">在MTP控制台游戏加固页面，提供命令行工具下载。我们已经将你的游戏所需要的加固证书添加到工具目录下。</p>
+			<div class="sc-cont clearfix">
+				<div class="fl sc-left pr">
+					<div class="tit1">获取工具前准备</div>
+					<p><span class="st-ic1"></span>Step1：登录MTP平台</p>
+					<p><span class="st-ic2"></span>Step2：注册你的游戏</p>
+					<p><span class="st-ic3"></span>Step3：开通加固试用<a href="">联系我们</a></p>
+					<p><span class="st-ic4"></span>Step4：在控制台下载工具</p>
+					<a href="">直接前往下载</a>
+					<div class="tit2"><span>*</span>如果你已注册游戏并开通试用，可直接下载</div>
+					<div class="tit2 mt23"><span>*</span>MTP提供可视化客户端加固工具。<a href="//mtp.qq.com/fasten_produc.shtml" target="_blank">前往下载</a></div>
+				</div>
+				<div class="pa sc-right">
+					<img src="images/computer.png" alt>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="foot">
+	<p class="foottxt">腾讯公司|版权所有</p>
+    <p>Copyright &copy; 1998 - 2019 Tencent. All Rights Reserved.</p>
+</div>
+<script src="js/jquery.min.js?v2.0.0" ></script>
+<script src="js/global_sec.js?v2.0.0" ></script>
+<script>
+// JavaScript Document
+(function($){
+	$.fn.myScroll = function(options){
+	var defaults = {
+		speed:40,  
+		rowHeight:24 
+	};
+	var opts = $.extend({}, defaults, options),intId = [];
+	function marquee(obj, step){
+		obj.find("ul").animate({
+			marginTop: '-=1'
+		},0,function(){
+				var s = Math.abs(parseInt($(this).css("margin-top")));
+				if(s >= step){
+					$(this).find("li").slice(0, 1).appendTo($(this));
+					$(this).css("margin-top", 0);
+				}
+			});
+		}
+		this.each(function(i){
+			var sh = opts["rowHeight"],speed = opts["speed"],_this = $(this);
+			intId[i] = setInterval(function(){
+				if(_this.find("ul").height()<=_this.height()){
+					clearInterval(intId[i]);
+				}else{
+					marquee(_this, sh);
+				}
+			}, speed);
+		});
+	}
+})(jQuery);
+$('.godown,.banbenbox a,.banben a').on('click',scrollPage)
+if(location.hash == '#/video'){
+	scrollPage();
+};
+function scrollPage(){
+	var banner_h = $('.second').offset().top;
+	$('body,html').animate({scrollTop:banner_h},800);
+}
+$(".tubao_off4").hover(function(){
+
+$(".tubao_on").css('display', 'block');
+$(".wztc").css('display', 'block');
+
+donghuaon(".tubao_off4");
+donghuaon(".tubao_on4");
+
+}, function() {
+$(".tubao_on").css('display', 'none');
+$(".wztc").css('display', 'none');
+donghuaoff(".tubao_off4");
+donghuaoff(".tubao_on4");
+
+});
+
+
+function donghuaon(obj){
+$(obj).css('-webkit-transform', 'translateY(-5px)');
+$(obj).css('transform', 'translateY(-5px)');
+}
+
+function donghuaoff(obj){
+$(obj).css('-webkit-transform', 'translateY(0px)');
+$(obj).css('transform', 'translateY(0px)');
+
+}
+// $(window).scroll(function(){
+//     var scroll_top=$(window).scrollTop();
+//     // console.log(scroll_top)
+//     if(scroll_top>=780){
+//         $('.btn_nextpage').fadeOut();
+//     }else{
+//         $('.btn_nextpage').fadeIn();
+//     }
+// });
+</script>
+</body>
+</html>

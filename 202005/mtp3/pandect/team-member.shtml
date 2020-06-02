@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="learbar">
+				<!--游戏成员管理-->
+				<div class="game_manager">
+					<div class="bor">
+						<div class="title-box">
+							<strong class="title-name">游戏成员管理</strong>
+						</div>
+						<div class="team_box">
+							<div class="game_box">
+								<div class="game_title">
+									<div class="game_name">
+										<h3 class="fl"><span class="game_icon comm in"></span>王者人生<strong>（内部）</strong></h3>
+										<a href="overview.shtml" class="fr back_btn back_btn_xhx">返回</a>
+									</div>
+									<div class="game_table_box">
+										<table class="game_table">
+											<tr>
+												<th>Game ID：19520</th>
+												<td>公司名称：Tencent</td>
+											</tr>
+											<tr>
+												<td>游戏类型：MOBA</td>
+												<td>管理成员：2</td>
+											</tr>
+										</table>
+									</div>
+									<p class="createt"><span class="creat_icon comm in"></span>游戏创建时间：2018-12-12</p>
+								</div>
+								<div class="ser_box">
+									<div class="clearfix team_inf">
+										<h3 class="fl">成员信息</h3>
+										<div class="game_btn fr">
+											<!--无法点击灰态按钮，请添加类名"dis_btn"-->
+											<a href="javascript:;" class="in dis_btn pr">邀请成员<img src="ossweb-img/s-wuqx.png" class="pa s-limit"></a>
+										</div>
+									</div>
+									<div class="qutable qutable_team">
+										<table id="team_table">
+											<tr>
+												<th width="32%">帐号信息</th>
+												<th width="45%">身份信息</th>
+												<th width="22%">操作</th>
+											</tr>
+											<tr>
+												<td>
+													<div class="tx_div in">
+														<img src="ossweb-img/qqtx.jpg" width="37" height="37" alt="头像" class="in team_tx">
+													</div>
+													<p class="in team_inf_p">东风<br>123456789</p>
+												</td>
+												<td>
+													管理员
+												</td>
+												<!--无法点击灰态按钮，请添加类名"dis_btn"-->
+												<td><a href="javascript:;" class="dele_btn dis_btn pr">删除<img src="ossweb-img/s-wuqx.png" class="pa s-limit"></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="tx_div in">
+														<img src="ossweb-img/wxtx.jpg" width="37" height="37" alt="头像" class="in team_tx">
+														</div>
+													<p class="in team_inf_p">刘西风<br>xifengliu</p>
+												</td>
+												<td>
+													成员
+												</td>
+												<!--无法点击灰态按钮，请添加类名"dis_btn"-->
+												<td><a href="javascript:;" class="dele_btn pr dis_btn">删除<img src="ossweb-img/s-wuqx.png" class="pa s-limit"></a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--#include file="inc/personal_infor.htm"-->
+		</div>
+	</div>
+	<!--邀请成员-->
+	<div class="s-pop" id="pop_invite">
+		<h3>邀请成员</h3>
+		<div class="pop_yq_box">
+			<p>请填写邀请的成员账号信息：</p>
+			<p>
+				设置<input class="com_input" placeholder="请填写成员的QQ号" />为<select class="com_select"><option>管理员</option><option>成员</option></select>
+			</p>
+		</div>
+		<div class="s-pop-btn">
+			<a href="javascript:;" id="add_sure" class="pb1">确定</a>
+			<a href="javascript:closeDialog();" class="pb2">取消</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<div class="s-pop pop_small" id="add_pop">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">添加用户成功</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<!--删除用户成功-->
+	<div class="s-pop pop_small" id="pop_dele_team">
+		<h3>提示</h3>
+		<p class="s-pop-text txc">删除用户南风成功</p>
+		<div class="s-pop-btn">
+			<a href="javascript:closeDialog();" class="pb1">确定</a>
+		</div>
+		<!-- 关闭按钮 -->
+		<a class="s-close comm" href="javascript:closeDialog();">+</a>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+		/*成员管理*/
+		$('#add_sure').on('click',function(){
+			showDia('add_pop');
+			var tab_id=$('#team_table tr').length;
+			$('#team_table').append('<tr><td><div class="tx_div in"><img src="ossweb-img/qqtx.jpg" width="37" height="37" alt="头像" class="in team_tx"></div><p class="in team_inf_p">东风<br>123456789</p></td><td><div class="in pr selectbox"><select><option>管理员</option><option>成员</option></select></div></td><td><a href="javascript:dele_team('+tab_id+');" class="dele_btn">删除</a></td></tr>');
+			$('#team_table tr').eq(1).find('select').prop('disabled',false).removeClass('dis_able');
+			$('#team_table tr').eq(1).find('.dele_btn').removeClass('dis_btn');
+			$('#team_table tr').eq(1).find('.dele_btn img').remove();
+		});
+		function dele_team(obj){
+			showDia('pop_dele_team');
+			$('#team_table tr').eq(obj).remove();
+		};
+		//成员管理无修改权限
+		$('.dis_btn').hover(function(){
+			$(this).find('.s-limit').show();
+		},function(){
+			$(this).find('.s-limit').hide();
+		});
+	</script>
+</body>
+</html>

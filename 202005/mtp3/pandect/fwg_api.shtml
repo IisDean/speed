@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css?v=2">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+            <h2 class="xtop">MTP反外挂检测接口使用教程</h2>
+            <a class="reback" href="fwg_vip.shtml">返回</a>
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">概述</strong>
+				</div>
+                <div class="xcnt">
+                    <p>MTP为高级VIP用户提供反外挂检测接口功能，将检测到的用户作弊信息以实时广播的形式同步给MTP用户。游戏项目组可以根据检测结果，自行处理制定作弊打击策略，实现反外挂的自由可控与高度定制化。</p>
+                    <p>特别说明：</p>
+                    <div class="xbor">
+                        <p>1.关于SDK版本： MTP SDK3.6.2及以上版本开始支持该功能；<br />2.支持的开发语言： MTP提供C#、Java、C++三种形式的接口，开发者可任选一种语言来完成接入；<br />3.SDK接入： 在阅读本文之前，确保已经正确接入了其他MTP接口。 </p>
+                    </div>
+                </div>
+			</div>
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">接口说明</strong>
+				</div>
+                <div class="xcnt">
+                    <strong class="xtit">Java版本</strong>
+                    <div class="xbor">
+                        <p>public class TssInfoPublisher implements Runnable{</p>
+                        <p class="indent20">public static final int TSS_INFO_TYPE_DETECT_RESULT = 1;  // 检测结果</p>
+                        <p class="indent20">public static final int TSS_INFO_TYPE_HEARTBEAT = 2;  // 心跳数据</p>
+                        <br />
+                        <p class="indent20">// 开发者需要自己实现TssInfoReceiver接口</p>
+                        <p class="indent20">public interface TssInfoReceiver{</p>
+                        <p class="indent40">public void onReceive(int tssInfoType,String info);</p>
+                        <p class="indent20">}</p>
+                        <p>}</p>
+                        <br />
+                        <p>public class TP2Sdk {</p>
+                        <p class="indent20">// 开发者使用该函数注册自己实现的接口</p>
+                        <p class="indent20">public static void registTssInfoReceiver(TssInfoPublisher.TssInfoReceiver receiver)</p>
+                        <p class="indent20">{</p>
+                        <p class="indent40">TssSdk.registTssInfoReceiver(receiver);</p>
+                        <p class="indent20">}</p>
+                        <br />
+                        <p class="indent20">// 将收到的信息使用该接口解密</p>
+                        <p class="indent20">public static String decTssInfo(String info){</p>
+                        <p class="indent40">return TssSdk.decTssInfo(info);</p>
+                        <p class="indent20">}</p>
+                        <p>}</p>
+                    </div>
+                    <strong class="xtit">C++版本</strong>
+                    <p class="xsdt">接口源码文件tp2_sdk.h</p>
+                    <div class="xbor">
+                        <p>// 信息类型</p>
+                        <p>enum TssInfoType</p>
+                        <p>{</p>
+                        <p class="indent20">TSS_INFO_TYPE_DETECT_RESULT = 1,    // 检测结果</p>
+                        <p class="indent20">TSS_INFO_TYPE_HEARTBEAT = 2,        // 心跳信息</p>
+                        <p>};</p>
+                        <br />
+                        <p>// 开发者需要自己继承类TssInfoReceiver 实现onReceive函数</p>
+                        <p>class TssInfoReceiver</p>
+                        <p>{</p>
+                        <p>public:</p>
+                        <p class="indent20">virtual ~TssInfoReceiver(){}</p>
+                        <p class="indent20">virtual int getInterfaceVersionCode(){return 1;}</p>
+                        <p class="indent20">virtual void onReceive(int tssInfoType,const char* info) = 0;</p>
+                        <p>};</p>
+                        <p>// ...</p>
+                        <p>// 使用此接口注册自己实现的TssInfoReceiver</p>
+                        <p>void tp2_regist_tss_info_receiver(TssInfoReceiver* receiver);</p>
+                        <br />
+                        <p>// 将收到的信息使用该接口解密</p>
+                        <p>int tp2_dec_tss_info(const char* src,char* out,size_t len);</p>
+                    </div>
+                    <strong class="xtit">C#版本</strong>
+                    <p class="xsdt">C# 接口文件tp2.cs</p>
+                    <div class="xbor">
+                        <p>namespace tss{</p>
+                        <p class="indent20">// 开发者实现TssInfoReceiver接口</p>
+                        <p class="indent20">public interface TssInfoReceiver{</p>
+                        <p class="indent40">void onReceive(int tssInfoType,string info);</p>
+                        <p class="indent20">}</p>
+                        <br />
+                        <p class="indent20">public class TssInfoPublisher{</p>
+                        <p class="indent40">public const int TSS_INFO_TYPE_DETECT_RESULT = 1;  // 检测结果</p>
+                        <p class="indent40">public const int TSS_INFO_TYPE_HEARTBEAT = 2;      // 心跳</p>
+                        <p class="indent40">// ...</p>
+                        <p class="indent20">}</p>
+                        <p>}</p>
+                        <br />
+                        <p>public static class Tp2Sdk{</p>
+                        <p class="indent20">// ...</p>
+                        <p class="indent20">// 使用Tp2RegistTssInfoReceiver注册开发者实现的TssInfoReceiver接口</p>
+                        <p class="indent20">public static void Tp2RegistTssInfoReceiver(tss.TssInfoReceiver receiver){</p>
+                        <p class="indent40">tss.TssInfoPublisher.getInstance ().registTssInfoReceiver (receiver);</p>
+                        <p class="indent20">}</p>
+                        <br />
+                        <p class="indent20">// 将收到的信息使用该接口解密</p>
+                        <p class="indent20">public static string Tp2DecTssInfo(string info){</p>
+                        <p class="indent40">string cmd = String.Format("dec_tss_info:{0}",info);</p>
+                        <p class="indent40">return Tp2Ioctl(cmd);</p>
+                        <p class="indent20">}</p>
+                        <p class="indent20">// ...</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">数据格式</strong>
+				</div>
+                <div class="xcnt">
+                    <strong class="xtit">3.1 TSS_INFO_TYPE_DETECT_RESULT</strong>
+                    <p class="xsdt">接收的所有信息都是一个字符串，字符串格式:"id=value|key=value|key_value|..."。<br />每个字符串至少包含一个名为id的key，用于区分是哪种检测结果。<br />每个字符串应该采用key=value字典形式解析，以后对每条信息可能会扩充新的key=value。<br />目前MTP可能会产生8种类型检测结果信息，下面详细介绍每种类型的格式。<br />每种类型可与MTP官方控制台对照理解。</p>
+                    <p class="xstt">3.1.1 id=1二选一功能</p>
+                    <div class="xbor">
+                        <p>• 格式:id=1|name=外挂包名</p>
+                        <p class="indent20">• name:比如name=catch_.me_.if_.you_.can_</p>
+                    </div>
+                    <p class="xstt">3.1.2 id=2安全列表权限检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=2</p>
+                        <p>• 备注:只要收到该信息，可确认安全列表权限被禁止,被禁止后二选一功能就会失效</p>
+                    </div>
+                    <p class="xstt">3.1.3 id=3修改器检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=3|reason=检测到内存访问原因</p>
+                        <p class="indent20">• reason:可能是修改器的包名，可能是主动防御系统失效等</p>
+                        <p class="indent40">• reason=gp4_ignore_sig":对应S级修改器检测,表示只检测到了修改行为。</p>
+                        <p class="indent40">• reason=gp3_exception":检测到修改行为且反调试子系统异常。</p>
+                        <p class="indent40">• reason=gp4_w3":检测到修改行为且游戏进程的私有目录权限异常。</p>
+                        <p class="indent40">• reason=app_forbid":检测到修改行为且安全列表权限被禁止。</p>
+                        <p class="indent40">• reason=其他:可能是进程名，也可能是修改器包名。</p>
+                        <p>• 备注:只要收到该信息，可确认游戏内存被读写</p>
+                    </div>
+                    <p class="xstt">3.1.4 id=4反调试安全检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=4|reason=反调试子系统异常描述信息</p>
+                        <p class="indent20">• reason:目前返回两种2种异常信息</p>
+                        <p class="indent40">• reason=safe ptrace exception:外挂卡住了ptrace 使反调试系统启动失败</p>
+                        <p class="indent40">• reason=tracer scanner exception:反调试系统成功启动后，被外挂攻击</p>
+                        <p>• 备注:只要收到该信息，可确认反调试系统异常</p>
+                    </div>
+                    <p class="xstt">3.1.5 id=5 S极虚拟机检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=5|name=虚拟机包名</p>
+                        <p class="indent20">• name:如name=com.lulu.lulubox</p>
+                    </div>
+                    <p class="xstt">3.1.6 id=6虚拟机检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=6|name=虚拟机包名</p>
+                        <p class="indent20">• name:如name=com.lulu.lulubox</p>
+                    </div>
+                    <p class="xstt">3.1.7 id=7变速器检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=7|rate=变速倍数|reason=原因</p>
+                        <p class="indent20">• rate:变速倍数/100 后才是真实的倍率。如rate=100变速未变速，rate=150表示加速，倍率为1.5，rate=80变速减速，倍率为0.8。</p>
+                        <p class="indent20">• reason:可能是变速器进程名，可能是变速器模块名，可能是时间函数被hook</p>
+                        <p class="indent40">• reason=none:对应S极变速器检测，即只检测到变速，未检测到变速器的特征（如进程、模块等）</p>
+                        <p class="indent40">• reason=hook:时间函数被hook</p>
+                        <p class="indent40">• reason=其他:可能是进程名，可能是模块名</p>
+                    </div>
+                    <p class="xstt">3.1.8 id=8模拟器检测</p>
+                    <div class="xbor">
+                        <p>• 格式:id=8|name=模拟器名</p>
+                        <p>• 备注:只要收到该信息，可确认是在模拟器里运行游戏</p>
+                    </div>
+                    <p class="xstt">注意：</p>
+                    <p class="xsdt">广播频率：以上8种检测类型的检测及广播频率分为两种情况：<br />第一：修改/变速等行为检测类的，实时检测到作弊行为后，实时广播；<br />第二：二选一、虚拟机、模拟器等环境检测类的，大约每隔5分钟检测并广播一次，首次检测时间大约为游戏运行1分钟左右。</p>
+                    <strong class="xtit">3.2 TSS_INFO_TYPE_HEARTBEAT</strong>
+                    <p class="xsdt">接收的所有信息都是一个字符串，字符串格式:"id=value|key=value|key_value|..."。<br />每个字符串至少包含一个名为id的key，用于区分是哪种心跳信息，<br />目前只有一种类型id=1，用于游戏自己检测MTP的运行状态。</p>
+                    <div class="xbor">
+                        <p>• 格式：id=1|seq=序列号|pid=进程ID|time=手机开机启动时间</p>
+                        <p class="indent20">• seq=序列号 序列号从1开始，递增</p>
+                        <p class="indent20">• pid=游戏进程id 每次收到的pid应该一致</p>
+                        <p class="indent20">• time=手机开机启动时间 采用clock_gettime(CLOCK_MONOTONIC,...)获取。</p>
+                        <p>• 心跳频率：每10s中发送一次数据</p>
+                        <p>• 使用方法：可以通过检查每次收到的数据seq是否递增，pid是否相同来判断MTP状态是否正常</p>
+                        <p>• 备注：MTP 加固也会做自身安全性的保护，如果游戏开发者认为太麻烦，可以选接，不是必须的</p>
+                    </div>
+                </div>
+			</div>
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">演示代码</strong>
+				</div>
+                <div class="xcnt">
+                    <p>所有可运行的Demo 可以参考MTP包里的demo部分。</p>
+                    <strong class="xtit">Java版本</strong>
+                    <div class="xbor">
+                        <p>public class MainActivity extends Activity {</p>
+                        <br />
+                        <p class="indent20">// TssInfoReceiver接口实现</p>
+                        <p class="indent20">private class MyTssInfoReceiver implements TssInfoPublisher.TssInfoReceiver{</p>
+                        <p class="indent40">public void onReceive(int tssInfoType,String info){</p>
+                        <p class="indent60">if (tssInfoType == TssInfoPublisher.TSS_INFO_TYPE_DETECT_RESULT)</p>
+                        <p class="indent60">{</p>
+                        <p class="indent80">// 只关注TSS_INFO_TYPE_DETECT_RESULT</p>
+                        <p class="indent80">String plain = TP2Sdk.decTssInfo(info);</p>
+                        <p class="indent80">if (plain.equals("-1")) return;</p>
+                        <p class="indent80">Log.d("MTP","[Java TSS INFO]:" + tssInfoType + "|" + plain);</p>
+                        <p class="indent60">}</p>
+                        <p class="indent60">else if (tssInfoType == TssInfoPublisher.TSS_INFO_TYPE_HEARTBEAT){</p>
+                        <p class="indent80">// 如果不关心心跳信息，可忽略</p>
+                        <p class="indent80">String plain = TP2Sdk.decTssInfo(info);</p>
+                        <p class="indent80">if (plain.equals("-1")) return;</p>
+                        <p class="indent80">Log.d("MTP","[Java TSS INFO]:" + tssInfoType + "|" + plain);</p>
+                        <p class="indent60">}</p>
+                        <br />
+                        <p class="indent40">}</p>
+                        <p class="indent20">}</p>
+                         <p class="indent20">private MyTssInfoReceiver mTssInfoReceiver;</p>
+                        <p class="indent20">@Override</p>
+                        <p class="indent20">protected void onCreate(Bundle savedInstanceState) {</p>
+                        <p class="indent40">super.onCreate(savedInstanceState);</p>
+                        <p class="indent40">setContentView(R.layout.activity_main);</p>
+                        <br />
+                        <p class="indent40">// 先于TP2Sdk.initEx执行</p>
+                        <p class="indent40">mTssInfoReceiver = new MyTssInfoReceiver();</p>
+                        <p class="indent40">TP2Sdk.registTssInfoReceiver(mTssInfoReceiver);</p>
+                        <p class="indent40">TP2Sdk.ioctl("MTPDefenceLevel:M");</p>
+                        <p class="indent40">//登录后第一时间调用init接口, 填写gameId 和 appKey</p>
+                        <p class="indent40">TP2Sdk.initEx(9000, "d5ab8dc7ef67ca92e41d730982c5c602");</p>
+                        <p class="indent40">// ...</p>
+                        <p class="indent20">}</p>
+                        <p class="indent20">// ...</p>
+                        <p>}</p>
+                    </div>
+                    <strong class="xtit">C++版本</strong>
+                    <div class="xbor">
+                        <p>// TssInfoReceiver接口实现</p>
+                        <p>class MyTssInfoReceiver:public TssInfoReceiver</p>
+                        <p>{</p>
+                        <p>public:</p>
+                        <p class="indent20">virtual void onReceive(int tssInfoType,const char* info)</p>
+                        <p class="indent20">{</p>
+                        <br />
+                        <p class="indent40">char plain[256];</p>
+                        <p class="indent40">memset(plain,0x00,sizeof(plain));</p>
+                        <p class="indent40">if (tssInfoType == TSS_INFO_TYPE_DETECT_RESULT)</p>
+                        <p class="indent40">{</p>
+                        <p class="indent60">// 只关注TSS_INFO_TYPE_DETECT_RESULT</p>
+                        <br />
+                        <p class="indent60">int ret =tp2_dec_tss_info(info,plain,sizeof(plain));</p>
+                        <p class="indent60">if (ret == -1) return;</p>
+                        <p class="indent60">__android_log_print(ANDROID_LOG_DEBUG,"MTP","[C++  Cheat Info]:%d|%s", tssInfoType,plain);</p>
+                        <p class="indent40">}</p>
+                        <p class="indent40">else if (tssInfoType == TSS_INFO_TYPE_HEARTBEAT){</p>
+                        <p class="indent60">// // 处理心跳，如果不关心，可以忽略</p>
+                        <p class="indent60">int ret =tp2_dec_tss_info(info,plain,sizeof(plain));</p>
+                        <p class="indent60">if (ret == -1) return;</p>
+                        <p class="indent60">__android_log_print(ANDROID_LOG_DEBUG,"MTP","[C++  Cheat Info]:%d|%s", tssInfoType,plain);</p>
+                        <p class="indent40">}</p>
+                        <br />
+                        <p class="indent20">}</p>
+                        <p>};</p>
+                        <br />
+                        <p>MyTssInfoReceiver g_tss_info_receiver;</p>
+                        <br />
+                        <p>void game_start() {</p>
+                        <p class="indent20">// 游戏启动的第一时间调用 先于tp2_sdk_init_ex</p>
+                        <p class="indent20">tp2_regist_tss_info_receiver(&g_tss_info_receiver);</p>
+                        <p class="indent20">tp2_sdk_ioctl(TssSDKCmd_CommQuery,"MTPDefenceLevel:M");</p>
+                        <p class="indent20">tp2_sdk_init_ex (9000, "d5ab8dc7ef67ca92e41d730982c5c602");</p>
+                        <br />
+                        <p class="indent20">// 用户登录时调用</p>
+                        <p class="indent20">int account_type = ENTRY_ID_QZONE;      /*帐号类型*/</p>
+                        <p class="indent20">int world_id = 101;             /*大区id*/</p>
+                        <p class="indent20">char open_id[] = "B73B36366565F9E02C752";   /*与平台相关的用户标识*/</p>
+                        <p class="indent20">char role_id[] = "paladin";         /*角色id*/</p>
+                        <p class="indent20">tp2_setuserinfo(account_type, world_id, open_id, role_id); </p>
+                        <p>}</p>
+                    </div>
+                    <strong class="xtit">C#版本</strong>
+                    <div class="xbor">
+                        <p>public class main : MonoBehaviour {</p>
+                        <p class="indent20">// TssInfoReceiver接口实现</p>
+                        <p class="indent20">private class MyTssInfoReceiver:tss.TssInfoReceiver{</p>
+                        <p class="indent40">public void onReceive(int tssInfoType, string info){</p>
+                        <p class="indent60">// 此函数不能被阻塞</p>
+                        <p class="indent60">if (tssInfoType == tss.TssInfoPublisher.TSS_INFO_TYPE_DETECT_RESULT) {</p>
+                        <p class="indent80">// 处理检测结果 如果不关心，可以忽略</p>
+                        <p class="indent80">string plain = Tp2Sdk.Tp2DecTssInfo(info);</p>
+                        <p class="indent80">if (plain.Equals("-1"))</p>
+                        <p class="indent100">return;</p>
+                        <p class="indent80">Debug.Log ("C# Info:" + tssInfoType + "|" + plain);</p>
+                        <p class="indent60">}</p>
+                        <p class="indent60">else if (tssInfoType == tss.TssInfoPublisher.TSS_INFO_TYPE_HEARTBEAT){</p>
+                        <p class="indent80">// 处理心跳，如果不关心，可以忽略</p>
+                        <p class="indent80">string plain = Tp2Sdk.Tp2DecTssInfo(info);</p>
+                        <p class="indent80">if (plain.Equals("-1"))</p>
+                        <p class="indent100">return;</p>
+                        <p class="indent80">Debug.Log ("C# Info:" + tssInfoType + "|" + plain);</p>
+                        <p class="indent60">}</p>
+                        <p class="indent40">}</p>
+                        <p class="indent20">}</p>
+                        <br />
+                        <p class="indent20">private MyTssInfoReceiver mTssInfoReceiver;</p>
+                        <p class="indent20">void Awake () {</p>
+                        <p class="indent40">// 在游戏启动的第一时间调用 时机先于Tp2SdkInitEx接口</p>
+                        <p class="indent40">mTssInfoReceiver = new MyTssInfoReceiver();</p>
+                        <p class="indent40">Tp2Sdk.Tp2RegistTssInfoReceiver (mTssInfoReceiver);</p>
+                        <br />
+                        <p class="indent40">Tp2Sdk.Tp2SdkInitEx(9000, "d5ab8dc7ef67ca92e41d730982c5c602");</p>
+                        <p class="indent40">Debug.Log ("C#:main::Awake");</p>
+                        <p class="indent20">}</p>
+                        <br />
+                        <p class="indent20">// ...</p>
+                        <p>}</p>
+                    </div>
+                </div>
+			</div>
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">模拟器对照表</strong>
+				</div>
+                <div class="xcnt">
+                    <div class="xtb">
+                        <table>
+                            <thead>
+                                <tr><th width="120">模拟器名</th><th width="360">可能的特征名</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td align="center">腾讯</td><td>Tencent,Tencent*[^1]</td></tr>
+                                <tr><td align="center">雷电</td><td>LeiDian, LeiDian*[^2]</td></tr>
+                                <tr><td align="center">夜神</td><td>Nox,NOX605,NOX607,NOX6079</td></tr>
+                                <tr><td align="center">逍遥</td><td>XiaoYao,XiaoYao502,XiaoYao511,XiaoYao5119</td></tr>
+                                <tr><td align="center">网易</td><td>Netease,Netease9,Netease99</td></tr>
+                                <tr><td align="center">靠谱</td><td>KaopuTianTian,KaopuBlueStacks</td></tr>
+                                <tr><td align="center">天天</td><td>TianTian,TianTian9</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="xstt">说明：</p>
+                    <p class="xsdt">[^1] * 表示匹配任意字符串，如 Tencent*表示以Tencent开头的字符串<br />[^2] * 表示匹配任意字符串，如 LeiDian*表示以LeiDian开头的字符串</p>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

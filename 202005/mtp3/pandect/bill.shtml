@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main bill">
+		<div class="content">
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">我的账单</strong>
+				</div>
+				<div class="order_box">
+					<!--有账单信息-->
+					<div class="order_inf">
+						<span class="jinben_icon comm pa"></span>
+						<div class="order_name">
+							<h3 class="fl">账单号：E-181225100098870004</h3>
+							<b class="fr pay-price">¥520.00</b>
+						</div>
+						<table class="order_table">
+							<tr>
+								<td>游戏名：FF</td>
+								<td>账单性质：月结账单</td>
+							</tr>
+							<tr>
+								<td>账单周期：2019-04-01~2019-04-30</td>
+								<td>支 付 人 ：536549201</td>
+							</tr>
+							<tr>
+								<td>支付时间：2019-05-05  18:30:15</td>
+								<td>账单明细：<a href="bill_detail.shtml">点击查看</a></td>
+							</tr>
+						</table>
+						<div class="pa pay-sucess">
+							<b class="fr pay_link">支付成功</b>
+						</div>
+					</div>
+					<div class="order_inf">
+						<span class="jinben_icon comm pa"></span>
+						<div class="order_name">
+							<h3 class="fl">账单号：E-181225100098870003</h3>
+							<b class="fr pay-price">¥520.00</b>
+						</div>
+						<table class="order_table">
+							<tr>
+								<td>游戏名：FF</td>
+								<td>账单性质：月结账单</td>
+							</tr>
+							<tr>
+								<td>账单周期：2019-04-01~2019-04-30</td>
+								<td>支 付 人 ：<span>暂未支付</span></td>
+							</tr>
+							<tr>
+								<td>支付时间：<span>暂未支付</span></td>
+								<td>账单明细：<a href="bill_detail.shtml">点击查看</a></td>
+							</tr>
+						</table>
+						<div class="pa pay-sucess clearfix">
+							<a href="javascript:;" class="fr pay_link">等待支付</a>
+						</div>	
+					</div>
+					<!--无账单信息-->
+					<div class="nobill">
+						<p>暂无账单</p>
+					</div>
+					<div class="game_page">
+						<div class="table-page">
+							<span>每页显示：</span>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+							<a href="javascript:;" class="table-prev comm in" title="上一页"></a>
+							1 / 1
+							<a href="javascript:;" class="table-next comm in" title="下一页"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css?222222">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body class="inquire-daterangepicker">
+	<div class="main pb">
+		<div class="content">
+			<!-- 数据查询 -->
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">数据查询</strong>
+					<span class="title-tips in">Android</span>
+				</div>
+				<div class="inquire">
+					<table width="100%">
+						<colgroup>
+							<col width="20%" />
+							<col width="33%" />
+							<col width="47%" />
+						</colgroup>
+						<tr>
+							<td><b>基础查询</b></td>
+							<td>
+								<div class="inquire-m1 in">
+									<span>防御类型：</span>
+									<select class="inquire-inp3">
+										<option>全部</option>
+										<option>修改器</option>
+										<option>虚拟机</option>
+										<option>变速器</option>
+										<option>反调试</option>
+										<option>二选一</option>
+									</select>
+									<span>防御结果：</span>
+									<select class="inquire-inp3">
+										<option>全部</option>
+										<option>检测作弊</option>
+										<option>闪退</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="inquire-m2 in">
+									<span>选择日期范围：</span>
+									<div class="inquire-timer in">
+										<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="config-demo1" />
+										<div class="data-ri fl">
+											<a href="javascript:;" basis-day="1">今日</a>
+											<a href="javascript:;" basis-day="7">近7日</a>
+											<a href="javascript:;" basis-day="30">近30日</a>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="center"><b>高级查询（选填）</b></td>
+							<td>
+								<div class="inquire-m1 in">
+									<span>Open ID：</span>
+									<input type="" name="" placeholder="限128字符，避免输入特殊字符" class="inquire-inp1" />
+								</div>
+							</td>
+							<td>
+								<div class="inquire-m2 in">
+									<span>外挂包名：</span>
+									<input type="" name="" placeholder="限64字符，避免输入特殊字符" class="inquire-inp2" />
+									<div class="inquire-btn in">
+										<a href="javascript:dataLoading(false);">查询</a>
+										<a href="javascript:;">导出为Excel</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- //数据查询 -->
+			<!-- 数据查询列表 -->
+			<div class="bor loadingShow" style="display:none;">
+				<div class="inquire-list">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th>序号</th>
+								<th>Open ID</th>
+								<th>防御类型</th>
+								<th>防御结果</th>
+								<th>外挂包名</th>
+								<th>时间</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>03279af1ed903679e4d15afaff5a4a6ga4gag03279af</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>Open ID</b><a href="javascript:;">复制</a></p>
+												<p>03279af1ed903679e4d15afaff5a4a6ga4gag03279af1ed903679e4d15afaff5a4a6ga4gag03279af1ed903679e4d15afaff5a4a6ga4gag03279af1ed903679e4d15afaff5a4a6ga4gag</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>修改器</td>
+								<td>检测作弊</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>com.mono.mini_GPS</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>外挂包名</b><a href="javascript:;">复制</a></p>
+												<p>com.mono.mini_GPS</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>2018-11-20 11:20:58</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>03279af1ed903679e4d15afaff5a4a6ga4gag03279af</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>Open ID</b><a href="javascript:;">复制</a></p>
+												<p>03279af1ed903679e4d15afaff5a4a6ga4gag</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>修改器</td>
+								<td>检测作弊</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>com.mono.mini_GPS</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>外挂包名</b><a href="javascript:;">复制</a></p>
+												<p>com.mono.mini_GPS</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>2018-11-20 11:20:58</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>03279af1ed903679e4d15afaff5a4a6ga4gag03279af</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>Open ID</b><a href="javascript:;">复制</a></p>
+												<p>03279af1ed903679e4d15afaff5a4a6ga4gag</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>修改器</td>
+								<td>检测作弊</td>
+								<td>
+									<div class="inquire-copy in">
+										<span>com.mono.mini_GPS</span>
+										<div class="inquire-copy-box">
+											<div class="inquire-copy-text in">
+												<p><b>外挂包名</b><a href="javascript:;">复制</a></p>
+												<p>com.mono.mini_GPS</p>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>2018-11-20 11:20:58</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //数据查询列表 -->
+			<div class="inquire-page loadingShow" style="display:none;">
+				<div class="table-page">
+					<span>每页显示：</span>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<a href="javascript:;" class="table-prev comm in" title="上一页"></a>
+					1 / 1
+					<a href="javascript:;" class="table-next comm in" title="下一页"></a>
+				</div>
+			</div>
+			<!-- 暂无数据 -->
+			<div class="coming loading-gif" id="loadingDataNone" style="display:none;">
+				<img src="ossweb-img/inquire-none.png" class="in" />
+				<p>暂无数据</p>
+			</div>
+			<!-- //暂无数据 -->
+		</div>
+	</div>
+
+	<div class="page-tips">
+		<span>发布成功</span>
+	</div>
+
+	<!--#include file="inc/pop.htm"-->
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script>
+
+		//m : true （有数据）
+		//m : false （无数据）
+		function dataLoading(m){
+			showDia('loadingPop');
+			$('.loadingShow').hide();
+			$('#loadingDataNone').hide();
+			setTimeout(function(){
+				if(m){
+					$('.loadingShow').fadeIn();
+				}else{
+					$('#loadingDataNone').fadeIn();
+				}
+				showDialog.hide();
+			},1000)
+		}
+		dataLoading(true);
+
+		function pageTips(text,success){
+			var text = text || "成功";
+			$('.page-tips').html('<span>'+ text +'</span>').fadeIn();
+			setTimeout(function(){
+				$('.page-tips').fadeOut();
+				success && success();
+			},1000);
+		}
+
+		function getDay(day){  
+	       var today = new Date();  
+	       var targetday_milliseconds=today.getTime() + 1000*60*60*24*day;          
+	       today.setTime(targetday_milliseconds); //注意，这行是关键代码
+	       var tYear = today.getFullYear();  
+	       var tMonth = today.getMonth();  
+	       var tDate = today.getDate();  
+	       tMonth = doHandleMonth(tMonth + 1);  
+	       tDate = doHandleMonth(tDate);  
+	       return tYear+"-"+tMonth+"-"+tDate;  
+		}
+
+		function doHandleMonth(month){  
+			var m = month;  
+			if(month.toString().length == 1){  
+				m = "0" + month;  
+			}  
+			return m;  
+		}
+
+        var locale = {
+		    "format": 'YYYY-MM-DD',
+		    "applyLabel": "确定",
+		    "cancelLabel": "取消",
+		    "fromLabel": "起始时间",
+		    "toLabel": "结束时间'",
+		    "weekLabel": "W",
+		    "daysOfWeek": ["日", "一", "二", "三", "四", "五", "六"],
+		    "monthNames": ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+		    "firstDay": 1
+		};
+
+		function retreatData(data){
+			$('#config-demo1').daterangepicker({
+				"maxDate" : getDay(0),
+			    "startDate": getDay(-data+1),
+			    "endDate": getDay(0),
+			    "locale": locale
+			}, function(start, end, label) {
+				var st = start.format().substring(0,10);
+				var en = end.format().substring(0,10);
+				$('#config-demo1').val(st + ' - ' + en);
+				$('[basis-day]').removeClass('check');
+			});
+		}
+
+		$('[basis-day]').on('click',function(){
+			var da = $(this).attr('basis-day');
+			$('[basis-day]').removeClass('check');
+			$(this).addClass('check');
+			retreatData(da);
+		}).eq(0).click();
+
+	</script>
+</body>
+</html>

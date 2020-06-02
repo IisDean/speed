@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="coming">
+				<img src="ossweb-img/buy.png" class="in" />
+				<p>你的游戏尚未开通反外挂服务</p>
+				<a href="javascript:;" class="in">立即购买</a>
+				<p>你也可以联系客服申请试用（QQ：3083840693）</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

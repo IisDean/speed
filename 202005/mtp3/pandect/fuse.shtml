@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css?v=2">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">熔断告警说明</strong>
+				</div>
+                <div class="xc xcnt">
+                    <p class="xtip">1.熔断告警管理是MTP为外挂打击功能提供的一道保险机制，通过设置每项功能的阈值，触发上限后进入熔断状态，不再打击。</p>
+					<p class="xc-desc">2.如果你收到了熔断告警，请参考以下思路，根据实际情况进行处理：</p>
+					<p class="xc-desc xc-descx">① 如果确认当前的外挂打击没有出现误处罚，可以在本页面适当调高熔断阈值；</p>
+					<p class="xc-desc xc-descx">② 如果确认当前的外挂打击存在异常（如：误判），可到<a href="zsf.shtml" class="change-color">自主策略管理模块</a>关闭开关；</p>
+					<p class="xc-desc xc-descx">③ 如果确认发布过的“公共基础特征”存在问题，可到<a href="jctz_zsf.shtml" class="change-color">公共基础特征模块</a>对特征进行下架处理。</p>
+                </div>
+			</div>
+
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">熔断告警管理</strong>
+				</div>
+				<div class="jctz">
+					<span class="list-icon comm in fuse-icon"></span>
+					<div class="table fuse-table">
+						<table width="100%">
+							<colgroup>
+								<col width="17%" />
+								<col width="16%" />
+								<col width="15%" />
+								<col width="17%" />
+								<col width="17%" />
+								<col width="10%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>功能</th>
+									<th>熔断阈值（百分比）</th>
+									<th>是否已触发熔断</th>
+									<th class="question-th">今日请求闪退人数<div class="question">?<p class="tra">今日允许闪退人数=昨天DAU*熔断阈值（昨天DAU不足5万的，按5万计算）</p></div></th>
+									<th>今日允许闪退人数</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="info-name">修改器闪退</td>
+									<td class="info-value">0.3%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">S级修改器闪退</td>
+									<td class="info-value">0.5%</td>
+									<td class="yes">是</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">变速器闪退</td>
+									<td class="info-value">0.5%</td>
+									<td class="yes">是</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">S级变速器闪退</td>
+									<td class="info-value">0.6%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">虚拟机闪退</td>
+									<td class="info-value">0.7%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">S级虚拟机闪退</td>
+									<td class="info-value">0.8%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">二选一功能</td>
+									<td class="info-value">1.5%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">安全列表权限检测</td>
+									<td class="info-value">2.5%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+								<tr>
+									<td class="info-name">反调试安全检测</td>
+									<td class="info-value">3.5%</td>
+									<td>否</td>
+									<td>3505</td>
+									<td>3500</td>
+									<td><a href="javascript:;" class="xiugai">修改</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="xcnt xc xcnt-desc">
+						<p class="xtip">注：(1)数据的统计默认按天统计，每日24点自动清零；</p>
+						<p class="xtip xtip2">(2)短信通知规则为一小时通知一次；</p>
+						<p class="xtip xtip2">(3)如有疑惑，可<a href="javascript:;" class="qqkefu change-color">联系客服</a>为你解答。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--#include virtual="inc/pop.htm"-->
+	
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+	<script>
+		TGDialogS('fuse-pop1')
+		$('.gray-words').click(function(){
+			$('.gray-btn2').toggleClass('gray-btn')
+		})
+		$('.fuse-table .xiugai').click(function(){
+			var infoName = $(this).parent().siblings('.info-name').text()
+			var infoValue = $(this).parent().siblings('.info-value').text()
+			TGDialogS('fuse-pop2');
+			$('.name-detailes').text(infoName)
+			$('.fuse-val').val(parseFloat(infoValue))
+		})
+			
+			
+			setInterval(function(){
+				$('.save-change').hover(function(){
+					if($('.save-change').hasClass('gray-btn')){
+						$(this).append('<img src="ossweb-img/s-wuqx2.png" class="pa s-limit">');
+					}
+				},function(){
+					$(this).find('img').remove();
+				});
+			},500)
+
+		
+		$('.s-pop-choose').click(function(){
+			$(this).find('i').toggleClass('active')
+		})
+		
+		function fuse_reset(){
+			$('.fuse-val').val('0.2')
+		}
+		
+		function go_personal_info(){
+			window.location.href='personl.shtml'
+		}
+		
+		function TGDialogS(e){
+            // 利用milo库引入dialog组件
+            need("biz.dialog",function(Dialog){
+                Dialog.show({
+                    id:e,
+                    bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog(){
+            // 利用milo库引入dialog组件
+            need("biz.dialog",function(Dialog){
+                Dialog.hide();
+            });
+        };
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css?v=2">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+
+			<div class="bor">
+				<div class="title-box">
+					<strong class="title-name">VIP反外挂说明</strong>
+				</div>
+                <div class="xcnt">
+                    <p class="xtip">1.为更好地服务MTP客户，MTP提供更加精细化的VIP反外挂管理功能，现开放给MTP普通付费用户进行免费试用；<br />2.现阶段MTP VIP反外挂功能包括：反外挂检测广播与心跳检测广播，后续MTP开发团队会不断开发完善更多的VIP功能，敬请期待......</p>
+                </div>
+			</div>
+
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">VIP功能一：反外挂检测广播</strong>
+				</div>
+                <div class="xcnt">
+                    <div class="xcnt-pic">
+                        <img src="ossweb-img/fwg_p1.png" />
+                    </div>
+                    <div class="xcnt-txt">
+                        <p>MTP反外挂形式全面升级：<b>从检测到作弊行为直接闪退，升级为将检测到的作弊信息以实时广播的形式同步给游戏方，游戏方可根据检测结果，自行处理与制定作弊打击策略，</b>实现反外挂的自由可控与高度定制化。</p>
+                        <p>MTP提供8大类型信息广播，具体包括：</p>
+                        <ul class="xcnt-item">
+                            <li><span>1.虚拟机检测</span></li>
+                            <li><span>2.修改器检测</span></li>
+                            <li><span>3.模拟器检测</span></li>
+                            <li><span>4.变速器检测</span></li>
+                            <li><span>5.S级虚拟机<br />检测</span></li>
+                            <li><span>6.二选一功能<br />检测</span></li>
+                            <li><span>7.反调试安全<br />检测</span></li>
+                            <li><span>8.安全列表<br />权限检测</span></li>
+                        </ul>
+                        <p>
+                            <b>Q：我要怎么使用？</b><br />A：符合以下两个条件的用户，可按照接入教程指引进行VIP功能接入：
+                            <ul class="xcnt-list">
+                                <li>接入的MTP SDK版本是3.6.2及以上的版本；</li>
+                                <li>已付费购买MTP反外挂服务。</li>
+                            </ul>
+                        </p>
+                        <p><b>Q：支持什么开发语言？</b><br />A：MTP提供C#、Java、C++三种形式的接口，开发者可任选一种语言来完成接入。</p>
+                        <p>详细的接入教程：<a href="fwg_api.shtml">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bor">
+				<div class="title-box">
+					<strong class="title-name">VIP功能二：心跳检测广播</strong>
+				</div>
+                <div class="xcnt">
+                    <div class="xcnt-pic">
+                        <img src="ossweb-img/fwg_p2.png" />
+                    </div>
+                    <div class="xcnt-txt">
+                        <p>MTP为VIP用户提供MTP心跳检测功能接口，有效防止外挂作者将MTP建立起的反外挂保护机制剥离，通过每10s进行检测与广播的机制，告诉用户MTP的运行状态，以便于游戏方对企图剥离游戏保护的作弊行为制定打击策略。</p>
+                        <p>
+                            <b>Q：我要怎么使用？</b><br />A：符合以下两个条件的用户，可按照接入教程指引进行VIP功能接入：
+                            <ul class="xcnt-list">
+                                <li>接入的MTP SDK版本是3.6.2及以上的版本；</li>
+                                <li>已付费购买MTP反外挂服务。</li>
+                            </ul>
+                        </p>
+                        <p>详细的接入教程：<a href="fwg_api.shtml">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>

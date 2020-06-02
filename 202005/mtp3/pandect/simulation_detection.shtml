@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2019-12-12 -->
+</head>
+<body>
+	<!-- 模拟器检测 -->
+	<div class="detection">
+		<div class="main-cont">
+			<div class="content-box">
+				<div class="de-tit-box">
+					<strong class="t-name in">模拟器检测</strong>
+					<span class="title-tips in">Android</span>
+				</div>
+
+				<div class="part-wrap">
+					<div class="part-box part1">
+						<h3 class="par-tit">模拟器检测量</h3>
+						<div class="data-btns-wrap">
+							<div class="data-one in" id="changeDay">
+								<span class="cur">按天</span>
+								<span>按时</span>
+							</div>
+							<div class="data-time in" style="display: none;">
+								<input class="data-input fl" value="2018-07-07 -2018-08-13" id="config-demo11" />
+								<div class="data-ri fl">
+									<span class="cur">近7日</span>
+									<span>近30日</span>
+								</div>
+							</div>
+							<div class="data-time in" style="display: inline-block;">
+								<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="startOneDate11" />
+							</div>
+						</div>
+						<div class="demo-wrap">
+							<div id="chart" class="demo"></div>
+						</div>
+					</div>
+					<div class="part-box part2">
+						<h3 class="par-tit">昨日模拟器检测量</h3>
+						<span class="count-box"><i class="icon-users sp"></i><b class="counts">1103</b>人</span>
+						<div class="chart2-wrap">
+							<!--<div class="no-data"></div>-->
+							<div class="txt-center">
+								<p class="txt-big">0.003%</p>
+								<p class="txt-small"><a href="http://baidu.com">检测数据详情</a></p>
+							</div>
+							<div id="chart2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="part-wrap">
+					<div class="part-box part1 part1-bottom">
+						<div class="data-one in" id="changeDateType">
+							<span class="cur">昨日</span>
+							<span>近一周</span>
+							<span>近一月</span>
+						</div>
+						<div id="chart3"></div>
+					</div>
+					<div class="part-box part2 part2-bottom">
+                        <h3 class="par-tit">模拟器数据使用建议</h3>
+
+                        <div class="par-con">
+                            <p>MTP反外挂服务为游戏侧提供了模拟器检测功能，目前已可以覆盖近20种主流模拟器。</p>
+                            <p>MTP仅提供模拟器检测能力，游戏侧可以通过<a href="javascript:;">接入MTP广播接口</a>，获取模拟器检测数据，自己开发对抗策略。MTP团队根据实战经验为游戏侧提供了模拟器数据使用的Tips，供参考。
+                            </p>
+                            <div class="con-tit-box">
+                                <h4 class="con-tit">
+                                    <i class="icon-light sp"></i>Tips1   染色标注
+                                </h4>
+                            </div>
+                            <p>使用过模拟器的玩家存在较高的作弊风险，可以将使用过模拟器作为用户画像的一个维度，对用户进行染色标注，供后续做安全对抗策略使用。</p>
+
+                            <div class="con-tit-box">
+                                <h4 class="con-tit">
+                                    <i class="icon-light sp"></i>Tips2   匹配隔离
+                                </h4>
+                            </div>
+                            <p>在FPS等游戏中，使用模拟器的玩家会有明显优势。可以对正在使用模拟器的玩家进行匹配隔离，保障平衡性。</p>
+
+                            <div class="con-tit-box">
+                                <h4 class="con-tit">
+                                    <i class="icon-light sp"></i>Tips3   禁用模拟器
+                                </h4>
+                            </div>
+                            <p>如果游戏有禁用模拟器的诉求，可以根据MTP上报数据，检测到玩家使用模拟器后要求退出游戏。这种方式会引起模拟器检测的快速绕过，MTP强烈不建议直接禁用模拟器的方式。</p>
+
+                        </div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/data.js"></script>
+
+	<script src="js/echarts.min.js"></script>
+	<script src="js/detection.js"></script>
+
+	<script>
+
+		//点击触发
+		$('#changeDay span').on('click',function(){
+			var m = $(this).index();
+			var si = $(this).parent().siblings('.data-time');
+			$(this).addClass('cur').siblings().removeClass('cur');
+			si.hide().eq(m).show();
+		}).eq(0).click();
+
+		//切换近7日和近30日
+		$('.data-ri span').on('click',function () {
+            $(this).addClass('cur').siblings().removeClass('cur');
+        })
+
+		//按天
+		$('#config-demo11').daterangepicker({
+			"maxDate" : getDay(-1),
+			"startDate": getDay(-8),
+			"endDate": getDay(-1),
+			"locale": locale
+		}, function(start, end, label) {
+			var st = start.format().substring(0,10);
+			var en = end.format().substring(0,10);
+			var da = getAll(st,en);
+			$('#config-demo1').val(st + ' - ' + en);
+
+		});
+
+		//按时
+		$('#startOneDate11').daterangepicker({
+			singleDatePicker: true,
+			startDate: moment().subtract(0, 'days'),
+			"locale": locale
+		});
+
+
+        //点击触发
+        $('#changeDateType span').on('click',function(){
+            var m = $(this).index();
+            var si = $(this).parent().siblings('.data-time');
+            $(this).addClass('cur').siblings().removeClass('cur');
+            si.hide().eq(m).show();
+        }).eq(0).click();
+
+
+	</script>
+</body>
+</html>

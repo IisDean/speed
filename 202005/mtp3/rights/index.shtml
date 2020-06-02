@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+<div class="main">
+	<!-- 登录信息 -->
+	<div class="main-top">
+		<ul class="top-guide fl">
+			<li>
+				<a href="../index.shtml">总览</a>
+			</li>
+			<li>
+				<div class="top-select">
+					<div class="top-list">
+						<select id="area" data-searchplaceholder="请填写游戏信息">
+							<option title="[111]王者荣耀王者荣耀王者荣耀">[111]王者荣耀王者荣耀王者荣耀</option>
+							<option title="[222]英雄联盟">[222]英雄联盟</option>
+							<option title="[111]王者荣耀">[111]王者荣耀</option>
+							<option title="[222]英雄联盟">[222]英雄联盟</option>
+							<option title="[111]王者荣耀">[111]王者荣耀</option>
+							<option title="[222]英雄联盟">[222]英雄联盟</option>
+							<option title="[111]王者荣耀">[111]王者荣耀</option>
+							<option title="[222]英雄联盟">[222]英雄联盟</option>
+							<option title="[111]王者荣耀">[111]王者荣耀</option>
+						</select>
+					</div>
+				</div>
+			</li>
+			<li><div class="top-menu-btn-box pr">
+					<label class="top-menu-btn">全部产品 <span class="in">▲</span></label>
+					<div class="top-menu-list pa fl" style="display: ">
+						<label class="item item1"><span class="item-con"><i class="icon icon-item-1 comm"></i>客户端安全</span></label>
+						<a class="item item2 item-link" href="../pandect/index.shtml"><span class="item-con">MTP基础反外挂</span></a>
+						<a class="item item3 item-link" href="../pandect/index.shtml"><span class="item-con">MTP加固</span></a>
+						<label class="item item1"><span class="item-con"><i class="icon icon-item-2 comm"></i>内容安全</span></label>
+						<a class="item item2 item-link" href="../feedback/index.shtml"><span class="item-con">运营反馈</span></a>
+						<a class="item item3 item-link" href="javascript:;"><span class="item-con">标注审核</span></a>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="top-login fr">
+			<div id="unlogin" style="display: none;"><a href="javascript:;" id="dologin">登录</a></div>
+			<div id="logined" style="display: block;">
+				<i class="comm in top-head "></i>
+				<span class="top-name" id="dologname">MTP管理员</span>
+				<div class="top-info fr">
+					<a href="javascript:;" class="top-slide"><span class="in">▲</span></a>
+					<div class="top-menu">
+						<a href="javascript:;" title="账号信息">账号信息</a>
+						<a href="javascript:;" title="权限中心">权限中心</a>
+						<a href="javascript:;" title="费用管理">费用管理</a>
+						<a href="javascript:;" title="费用管理">收件箱</a>
+						<a href="javascript:;" title="费用管理">优惠券</a>
+						<a href="javascript:;" title="退出登录">退出登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //登录信息 -->
+	<!-- 导航 -->
+	<div class="main-nav">
+		<a href="javascript:;" class="logo t" title="MTP">MTP</a>
+		<ul>
+			<li class="head">
+				<em>公共管理</em>
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon1 comm in"></span>账号信息</a>
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon2 comm in"></span>权限中心</a>
+				<div class="main-nav-slide">
+					<span class="mns-icon comm"></span>
+					<a href="game.shtml">游戏权限管理</a>
+					<a href="product.shtml">产品权限管理</a>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon3 comm in"></span>业务明细</a>
+				<div class="main-nav-slide">
+					<span class="mns-icon comm"></span>
+					<a href="game.shtml">基础反外挂业务明细</a>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon4 comm in"></span>账单管理</a>
+				<div class="main-nav-slide">
+					<span class="mns-icon comm"></span>
+					<a href="processing.shtml">我的订单</a>
+					<a href="statistics.shtml">我的账单</a>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon5 comm in"></span>收件箱</a>
+
+			</li>
+			<li>
+				<a href="javascript:;"><span class="mn-icon6 comm in"></span>优惠券</a>
+
+			</li>
+			<!--<li>-->
+			<!--<a href="javascript:;"><span class="mn-icon4 comm in"></span>权限管理</a>-->
+			<!--<div class="main-nav-slide">-->
+			<!--<span class="mns-icon comm"></span>-->
+			<!--</div>-->
+			<!--</li>-->
+		</ul>
+	</div>
+	<!-- //导航 -->
+
+	<iframe id="g_iframe" class="g-iframe" scrolling="auto" frameborder="0" src="game.shtml" allowfullscreen="true"></iframe>
+</div>
+<style>
+	.pop{display: none;}
+</style>
+
+<!-- 游戏版块弹窗 -->
+<!--弹窗 添加游戏管理员-->
+<div class="pop pop4" id="pop1">
+	<h3>添加游戏管理员</h3>
+	<div class="con">
+		<div class="con_padding1">
+			<p class="txt-left">请填写添加的游戏管理员账号：</p>
+			<p class="input-line"><input name="secret" class="input" placeholder="请填写所添加人员的QQ账号" /></p>
+		</div>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:TGDialogS('pop3');" class="btn-s2">确定</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+<!--弹窗  添加成功(该弹窗请开发人员用toast弹窗代替)-->
+<div class="pop pop1" id="pop2">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">添加成功！</p>
+	</div>
+	<div class="pop-btn">
+		<a href="javascript:TGDialogS('pop3');" class="btn-s3">确定</a>
+	</div>
+</div>
+<!--弹窗  添加失败-->
+<div class="pop pop2" id="pop3">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">添加失败，请联系客服处理</p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:showDialog.hide();" class="btn-s2">联系客服</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+
+<!--弹窗  删除成功！(该弹窗请开发人员用toast弹窗代替)-->
+<div class="pop pop1" id="pop4">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">删除成功！</p>
+	</div>
+	<div class="pop-btn">
+		<a href="javascript:TGDialogS('pop5');" class="btn-s3">确定</a>
+	</div>
+</div>
+<!--弹窗  删除失败-->
+<div class="pop pop1" id="pop5">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">删除失败，请至少保留一位游戏位管理员</p>
+	</div>
+	<div class="pop-btn">
+		<a href="javascript:TGDialogS('pop6');" class="btn-s3">确定</a>
+	</div>
+</div>
+
+<!--弹窗  确认删除-->
+<div class="pop pop2" id="pop6">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">删除成员后，所选成员将在对应角色下移除，<br>
+		是否确认操作？</p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:TGDialogS('pop7');" class="btn-s2">确定</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+
+<!--弹窗  删除失败-->
+<div class="pop pop2" id="pop7">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">删除失败，请联系客服处理</p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:showDialog.hide();" class="btn-s2">联系客服</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+
+<!--弹窗  移除角色提示-->
+<div class="pop pop2" id="pop8">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">移除角色后，对应角色下的成员也会被移除，<br>
+			是否确认操作？</p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:TGDialogS('pop9');" class="btn-s2">确定</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+
+<!--弹窗  移除角色失败-->
+<div class="pop pop2" id="pop9">
+	<h3>提示</h3>
+	<div class="con">
+		<p class="hint">移除失败，请联系客服处理</p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:showDialog.hide();" class="btn-s2">联系客服</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+
+<!-- 产品管理版块弹窗 -->
+<div class="pop pop4" id="pop1">
+	<h3>添加游戏管理员</h3>
+	<div class="con">
+		<div class="con_padding1">
+			<p class="txt-left">请填写添加的游戏管理员账号：</p>
+			<p class="input-line"><input name="secret" class="input" placeholder="请填写所添加人员的QQ账号" /></p>
+		</div>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:TGDialogS('pop3');" class="btn-s2">确定</a>
+		<a href="javascript:showDialog.hide();" class="btn-s3">取消</a>
+	</div>
+</div>
+<div class="pop pop4" id="pop12">
+	<h3>添加游戏成员</h3>
+	<div class="con">
+		<p class="txt-left font15">成员角色：管理员</p>
+		<p class="txt-left font15">成员账号：<input name="secret" class="input input1" placeholder="请填写所添加人员的QQ账号" /></p>
+	</div>
+	<div class="pop-btn pop-btns">
+		<a href="javascript:;" class="btn-s2">确定</a>
+		<a href="javascript:TGDialogS('pop3');" class="btn-s3">取消</a>
+	</div>
+</div>
+
+
+<!-- 图片弹窗 -->
+<div id="layer_img" class="layer-img" >
+	<div class="pop-con">
+		<img src="" alt="" >
+	</div>
+</div>
+
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="js/select2.min.js"></script>
+<script>
+    function showLayer(src){
+        $('#layer_img').show();
+        $('#layer_img img').attr('src',src);
+        $('#layer_img img').css({
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            marginTop: -$('#layer_img img').height() / 2 + 'px',
+            marginLeft: -$('#layer_img img').width() / 2 + 'px',
+            zIndex: 998
+        });
+    }
+    $(document).click(function () {
+        $('.layer-img').hide();
+    });
+
+
+    // milo.addEvent(g("dologin"), "click", function() {
+    //     need("biz.login",function(LoginManager){
+    //     	LoginManager.init({
+    //             needReloadPage:true
+    //         });
+    //         LoginManager.login();
+    //     });
+    //     return false;
+    // });
+    // milo.addEvent(g("dologout"), "click", function() {
+    //     need("biz.login",function(LoginManager){
+    //         LoginManager.logout();
+    //     });
+    //     return false;
+    // });
+    // milo.ready(function() {
+    //     need("biz.login",function(LoginManager){
+    //     	 LoginManager.checkLogin(function(){
+    // 			LoginManager.getNickName(function(loginInfo){
+    // 				g('dologname').innerHTML = loginInfo.nickName;
+    // 			});
+    //         });
+    //
+    //     });
+    // });
+
+    //select2
+    $('#area').select2({
+        placeholder: '请选择'
+    });
+    $('#area').on('select2:open', (element) => {
+	    const text = element.currentTarget.dataset.searchplaceholder
+	    $('.select2-search__field').attr('placeholder', text)
+    })
+
+
+    //iframe跳转
+    $('.main-nav a').on('click',function() {
+        $(this).addClass('cur').parent().siblings().find('a').removeClass('cur');
+        var hr = $(this).attr('href');
+
+        if(hr!='javascript:;'){
+            $('#g_iframe').attr('src',hr);
+            return false;
+        };
+    });
+
+
+    //左侧导航
+    $('.main-nav li').on('click',function(){
+        $(this).toggleClass('navOff');
+        var dom = '.main-nav-slide';
+        var sl = $(this).find(dom);
+        var sh = sl.find('a').length * 52;
+
+        if(sl.hasClass('off')){
+            sl.removeClass('off').stop().animate({height:0},300);
+        }else{
+            sl.addClass('off').stop().animate({height:sh},300);
+        }
+    });
+
+    $('.main-nav-slide a').on('click',function(){
+        $('.main-nav-slide a').removeClass('on');
+        $(this).addClass('on');
+        $('.main-nav li a').removeClass('cur');
+        $(this).parent().prev().addClass('cur')
+    });
+
+
+    //顶部菜单
+    // $('.top-info').hover(function(){
+    //     $('.top-menu').show();
+    // },function(){
+    //     $('.top-menu').hide();
+    // });
+
+
+    //弹窗
+    function TGDialogS(e){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.show({
+                id:e,
+                bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        });
+    }
+    function closeDialog(){
+        // 利用milo库引入dialog组件
+        need("biz.dialog",function(Dialog){
+            Dialog.hide();
+        });
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*game*/
+.lb_list { min-height: 750px; }
+.js_gl {padding:18px 19px;}
+.rb_list_game{padding:19px 18px 19px 47px; }
+
+.up_delete {width:100%;}
+.up_delete .list_em a {width:103px; margin-left: -1px;}
+.up_delete a {width:103px;height:26px; display:inline-block;text-align:center;line-height:25px;}
+.up_delete a.btn_add_user{ margin-left: 10px;}
+
+
+.bd_bor {margin-top:21px;}
+
+.ga-item1{display: none;}
+.ga-item1.action{display:block;}
+.ga-item2{margin-top: 17px }
+.gridtable{color: #666666;}
+
+.gridtable .border1{border: 1px solid #e8ebf4;}
+.gridtable .border2{border-top:none; border-bottom:none; border-left: 1px solid #e8ebf4;border-right: 1px solid #e8ebf4;}
+
+.gridtable tr{border-bottom: 1px solid #e8ebf4;border-top: 1px solid #e8ebf4;}
+.gridtable th{line-height: 56px; font-size: 15px;}
+.gridtable .tit{border-top: none;}
+.gridtable .tit th{font-weight: bold;}
+.gridtable .tit th:nth-of-type(1){width: 13%; text-align: left;}
+.gridtable .tit th:nth-of-type(2){width: 140px;}
+.gridtable .padleft{padding-left: 80px;}
+.gridtable td{line-height: 45px;}
+.gridtable td em{width: 190px;display: inline-block;float: left;}
+.gridtable .gd-select{height: 18px;width: 18px;background-position:-272px 0;margin-right: 5px; }
+
+
+
+
+

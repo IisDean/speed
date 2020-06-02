@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/pandect.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<div class="main">
+		<!-- 登录信息 -->
+		<div class="main-top">
+			<ul class="top-guide fl">
+				<li>
+					<a href="javascript:;" class="logo t" title="MTP">MTP</a>
+				</li>
+				<li>
+					<a href="index.shtml">总览</a>
+				</li>
+			</ul>
+			<div class="top-login fr">
+				<div id="unlogin" style="display: none;;"><a href="javascript:;" id="dologin">登录</a></div>
+				<div id="logined" style="display: block;">
+					<i class="comm in top-head "></i>
+					<span class="top-name" id="dologname">MTP管理员</span>
+					<div class="top-info fr">
+						<a href="javascript:;" class="top-slide"><span class="in">▲</span></a>
+						<div class="top-menu tra">
+							<a href="javascript:;" title="账号信息">账号信息</a>
+                        <a href="rights/index.shtml" title="权限中心">权限中心</a>
+							<a href="javascript:;" title="费用管理">费用管理</a>
+							<a href="javascript:;" title="费用管理">收件箱</a>
+							<a href="javascript:;" title="费用管理">优惠券</a>
+							<a href="javascript:;" title="退出登录">退出登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="pan-cent">
+				<!--#include file="inc/personal_infor.htm"-->
+				<div class="learbar">
+					<div class="learbar">
+						<!--游戏注册-->
+						<div class="game_manager">
+							<div class="bor-box">
+								<div class="title-box">
+									<strong class="title-name">游戏注册</strong>
+								</div>
+								<div class="regist_box">
+									<div class="jiben_inf clearfix">
+										<h3 class="fl"><span class="game_icon comm1 in"></span>基本信息</h3>
+										<div class="combtn fr">
+											<a href="javascript:TGDialogS('pop_regist');" class="zc_btn in">注册</a>
+											<a href="index.shtml" class="back_btn in">返回</a>
+										</div>
+									</div>
+									<form>
+										<ul class="jblist">
+											<li>
+												<span>*</span>游戏名称：<input maxlength="64" placeholder="填写游戏名称，限64字符" />
+											</li>
+											<li>
+												<span>*</span>公司名称：<input maxlength="64" placeholder="填写公司名称，限64字符" />
+											</li>
+											<li>
+												<span>*</span>游戏类型：
+												<select>
+													<option value="请选择">请选择</option>
+													<option value="ARPG">ARPG</option>
+													<option value="MMORPG">MMORPG</option>
+													<option value="MOBA">MOBA</option>
+													<option value="卡牌">卡牌</option>
+													<option value="FPS">FPS</option>
+													<option value="飞机射击">飞机射击</option>
+													<option value="跑酷">跑酷</option>
+													<option value="棋牌">棋牌</option>
+													<option value="塔防">塔防</option>
+													<option value="休闲">休闲</option>
+													<option value="经验养成">经验养成</option>
+													<option value="非游戏类应用">非游戏类应用</option>
+													<option value="其他">其他</option>
+												</select>
+											</li>
+											<li>
+												<span>注：MTP服务仅限企业用户使用，请务必填写准确的公司信息和游戏信息，提交后请及时<a href="javascripr:;">联系MTP客服</a>审核。</span>
+											</li>
+										</ul>
+									</form>
+									<div class="qudao clearfix">
+										<h3 class="fl">渠道信息<a href="javascript:;" class="not-find">这是什么<span class="in wenhao">?</span></a></h3>
+										<div class="combtn fr">
+											
+										</div>
+									</div>
+									<div class="qutable">
+										<table id="channel_table">
+											<tr>
+												<th width="41%"><span>*</span>包名</th>
+												<th width="41%">渠道</th>
+												<th width="18%">操作</th>
+											</tr>
+											<tr>
+												<td><input placeholder="如：xxx.baidu （请联系游戏开发人员提供）"/></td>
+												<td><input placeholder="如：百度 （用于区分渠道信息，可自由填写）"/></td>
+												<td><a href="javascript:dele_tr(1);" class="dele_btn disabled">删除</a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--游戏注册成功-->
+	<div class="pop_small" id="pop_regist">
+		<h3>提示</h3>
+		<p class="pop_small-p">你的游戏注册信息已提交，可联系客服进行审核，<br>
+			审核通过的游戏才可使用MTP服务</p>
+		<div class="s-pop-btn">
+			<a href="pandect.shtml" class="pb1">联系客服</a>
+			<a href="pandect.shtml" class="pb2">取消</a>
+		</div>
+	</div>
+
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script>
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+		/*渠道包*/
+		$('#xz_file_btn').on('click',function(){
+			$('#tj_btn').removeClass('dis_btn');
+		});
+		$('#tj_btn').on('click',function(){
+			if($(this).hasClass('dis_btn')){return}else{
+				$('.pop_ch_box').hide();
+				$('#channel_2').show();
+				$(this).addClass('dis_btn');
+			};
+		});
+		$('#cancle_btn').on('click',function(){
+			$('.pop_ch_box').hide();
+			$('#channel_3').show();
+		});
+		$('#compelet_btn').on('click',function(){
+			$('.pop_ch_box').hide();
+			$('#channel_1').show();
+		});
+		var cur_channel_id=0;
+		function dele_tr(channle_obj){
+			var tr_length=$('#channel_table tr').length;
+			if(tr_length>2){
+				TGDialogS('pop_dele');
+				return cur_channel_id=channle_obj;
+			}else{
+				TGDialogS('pop_dele_failure');
+			};
+		};
+		$('#add_channel').on('click',function(){
+			var channel_id=$('#channel_table tr').length;
+			$('#channel_table').append('<tr><td><input placeholder="如：xxx.baidu （请联系游戏开发人员提供）"/></td><td><input placeholder="如：百度 （用于区分渠道信息，可自由填写）"/></td><td><a href="javascript:dele_tr('+channel_id+');" class="dele_btn">删除</a></td></tr>');
+		});
+		/*删除渠道*/
+		$('#sure_dele').on('click',function(){
+			$('#channel_table tr').eq(cur_channel_id).remove();
+		});
+	</script>
+</body>
+</html>

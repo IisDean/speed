@@ -353,7 +353,7 @@ a {
     -webkit-animation: music 4s linear infinite;
 }
 .part-1 .music-btn {
-    top: 3.68rem;
+    /* top: 3.68rem; */
 }
 .music-btn.off {
     animation: none;
@@ -751,7 +751,7 @@ a {
     -webkit-transform: rotate(0deg) scale(1);
 }
 .label-list {
-    margin: .1rem auto 0;
+    margin: .3rem auto 0;
     width: 2.1rem;
 }
 .label-item {
@@ -909,7 +909,7 @@ a {
     width: 2.37rem;
 }
 .poster-container .label-list {
-    margin: 0 auto;
+    margin: .3rem auto 0;
     width: 3rem;
 }
 .poster-container .label-item {

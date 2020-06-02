@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/highlight.min.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-08-09 -->
+</head>
+<body>
+	<!-- 策略对抗接口 -->
+	<div class="strategic">
+		<div class="main-cont">
+			<div class="content-box">
+				<h3 class="page-tit">策略对抗接口</h3>
+				<div class="mod-test">
+					<!--<p class="mod-tit">模拟器检测量</p>-->
+					<ul class="desc">
+						<li><strong>策略对抗接口使用目的：</strong>由于腾讯内部游戏，有专门的策略团队为游戏服务，为解决对外无法提供人力支持的情况，MTP以提供策略对抗接口方式，让游戏侧可自定义对抗策略，实现更加精细化的对抗，除此之外，随着外挂对抗的深入，MTP SDK可能被攻击，造成MTP反外挂功能失效，故MTP将心跳数据，与安全状态数据提供给游戏侧，作为策略辅助依据。</li>
+						<li><strong>策略对抗接口内容：</strong>1、广播数据接口；2、心跳数据接口；3、安全防剥离接口。</li>
+					</ul>
+				</div>
+				<div class="mod-tab">
+					<!-- 左侧 -->
+					<div class="nav-wrap">
+						<div class="nav-box cur">
+							<p class="mod-tit">广播接口说明<a href="javascript:;">查看文档</a></p>
+							<div class="nav-desc">
+								<div class="nav-flex">
+									<div class="nav-l nav-img1">
+										<img src="images/stra-ico1.png" alt="">
+									</div>
+									<div class="nav-r">
+										<div class="nav-ans">
+											MTP将作弊信息以实时广播形式提供，由游戏侧结合游戏内数据，自定义作弊打击策略。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-box">
+							<p class="mod-tit">心跳接口说明<a href="javascript:;">查看文档</a></p>
+							<div class="nav-desc">
+								<div class="nav-flex">
+									<div class="nav-l nav-img2">
+										<img src="images/stra-ico2.png" alt="">
+									</div>
+									<div class="nav-r">
+										<div class="nav-ans">
+											MTP将“心跳”运行状态告知游戏方，能有效防止反外挂保护机制被全部剥离。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-box">
+							<p class="mod-tit">安全防剥离接口<a href="javascript:;">查看文档</a></p>
+							<div class="nav-desc">
+								<div class="nav-flex">
+									<div class="nav-l nav-img3">
+										<img src="images/stra-ico3.png" alt="">
+									</div>
+									<div class="nav-r">
+										<div class="nav-ans">
+											MTP将安全状态数据信息提供给游戏侧，能有效解决反外挂方案被部分剥离的情况。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 右侧 -->
+					<div class="tab-panel-wrap">
+						<div class="tab-panel" style="display: block;">
+							<p class="mod-tit">接入文档</p>
+							<p class="small-tit">特别说明</p>
+							<div class="txt-area">
+								<ul>
+									<li>1.关于SDK版本： MTP SDK3.8.9及以上版本开始支持该功能；</li>
+									<li>2.支持的开发语言： MTP提供C#、Java、C++三种形式的接口，开发者可任选一种语言来完成接入；</li>
+									<li>3.SDK接入： 在阅读本文之前，确保已经正确接入了其他MTP接口；</li>
+									<li>4.关于广播数据：MTP SDK4.0.2及以上版本支持检测结果含有id = 10，11，12的广播数据。</li>
+								</ul>
+							</div>
+							<p class="small-tit">接口说明</p>
+							<p class="lang">Java版</p>
+							<div class="lang-area">
+<pre>
+public class TssInfoPublisher implements Runnable{
+// 检测结果
+    public static final int TSS_INFO_TYPE_DETECT_RESULT = 1;
+    // 心跳数据
+    public static final int TSS_INFO_TYPE_HEARTBEAT = 2;
+    // 开发者需要自己实现TssInfoReceiver接口
+    public interface TssInfoReceiver{
+        public void onReceive(int tssInfoType,String info);
+    }
+}
+public class TP2Sdk {
+    // 开发者使用该函数注册自己实现的接口
+    public static void registTssInfoReceiver(TssInfoPublisher.TssInfoReceiver receiver){
+        TssSdk.registTssInfoReceiver(receiver);
+    }
+    // 将收到的信息使用该接口解密
+    public static String decTssInfo(String info){
+        return TssSdk.decTssInfo(info);
+    }
+}
+</pre>
+							</div>
+							<p class="lang">C++版</p>
+							<p class="lang-txt">接口源码文件tp2_sdk.h</p>
+							<div class="lang-area">
+<pre>
+// 信息类型
+enum TssInfoType{
+    TSS_INFO_TYPE_DETECT_RESULT = 1, // 检测结果
+    TSS_INFO_TYPE_HEARTBEAT = 2, // 心跳信息
+};
+// 开发者需要自己继承类TssInfoReceiver 实现onReceive函数
+class TssInfoReceiver{
+    public:
+    virtual ~TssInfoReceiver(){}
+    virtual int getInterfaceVersionCode(){return 1;}
+    virtual void onReceive(int tssInfoType,const char* info) = 0;
+};
+// ...
+// 使用此接口注册自己实现的TssInfoReceiver
+void tp2_regist_tss_info_receiver(TssInfoReceiver* receiver);
+// 将收到的信息使用该接口解密
+int tp2_dec_tss_info(const char* src,char* out,size_t len);
+</pre>
+							</div>
+							<p class="lang">C#版本</p>
+							<p class="lang-txt">C# 接口文件tp2.cs</p>
+							<div class="lang-area">
+<pre>
+namespace tss{
+// 开发者实现TssInfoReceiver接口
+    public interface TssInfoReceiver{
+        void onReceive(int tssInfoType,string info);
+    }
+    public class TssInfoPublisher{
+        // 检测结果
+        public const int TSS_INFO_TYPE_DETECT_RESULT = 1;
+        // 心跳
+        public const int TSS_INFO_TYPE_HEARTBEAT = 2;
+        // ...
+    }
+}
+
+public static class Tp2Sdk{
+    // ...
+    // 使用Tp2RegistTssInfoReceiver注册开发者实现的TssInfoReceiver接口
+    public static void Tp2RegistTssInfoReceiver(tss.TssInfoReceiver receiver){
+        tss.TssInfoPublisher.getInstance ().registTssInfoReceiver (receiver);
+    }
+    // 将收到的信息使用该接口解密
+    public static string Tp2DecTssInfo(string info){
+        string cmd = String.Format("dec_tss_info:{0}",info);
+        return Tp2Ioctl(cmd);
+    }
+    // ...
+}
+</pre>
+							</div>
+							<p class="small-tit">数据格式</p>
+							<ul class="format">
+								<li><span>1. TSS_INFO_TYPE_DETECT_RESULT</span></li>
+								<li>1.接收的所有信息都是一个字符串，字符串格式:"id=value|key=value|key=value|..."。</li>
+								<li>2.每个字符串至少包含一个名为id的key，用于区分是哪种检测结果。</li>
+								<li>3.为了保证代码对新版MTP的兼容性，每个字符串应该采用key=value字典形式解析，不要假设键值对的顺序是不变的在新版本的MTP上可能会新增
+									新的广播id，或者在现有广播中以任意的顺序插入新增的键值对。
+								</li>
+								<li><strong>12种类型检测结果信息</strong></li>
+							</ul>
+							<p class="dot-txt dot-txt1">id=1 二选一功能</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=1|name=外挂包名</li>
+									<li class="indent1">name:比如name=catch_.me_.if_.you_.can_</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=2 安全列表权限检测</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=2</li>
+									<li>备注:只要收到该信息，可确认安全列表权限被禁止,被禁止后二选一功能就会失效</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=3 修改器检测</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=3|reason=检测到内存访问原因</li>
+									<li class="indent1">reason:可能是修改器的包名，可能是主动防御系统失效等</li>
+									<li class="indent1">reason="gp4_ignore_sig":对应S级修改器检测,表示只检测到了修改行为</li>
+									<li class="indent1">reason="gp3_exception":检测到修改行为且反调试子系统异常</li>
+									<li class="indent1">reason="gp4_w3":检测到修改行为且游戏进程的私有目录权限异常</li>
+									<li class="indent1">reason="app_forbid":检测到修改行为且安全列表权限被禁止</li>
+									<li class="indent1">reason=其他:可能是进程名，也可能是修改器包名</li>
+									<li>备注:只要收到该信息，可确认游戏内存被读写</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=4 反调试安全检测</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=4|reason=反调试子系统异常描述信息</li>
+									<li class="indent1">reason:目前返回两种2种异常信息</li>
+									<li class="indent1">reason=safe ptrace exception:外挂卡住了ptrace 使反调试系统启动失败</li>
+									<li class="indent1">reason=tracer scanner exception:反调试系统成功启动后，被外挂攻击</li>
+									<li>备注:只要收到该信息，可确认反调试系统异常</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=5 虚拟机检测（2&2.5层）</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=5|name=虚拟机包名</li>
+									<li class="indent1">name:如name=com.lulu.lulubox</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=6 虚拟机检测（3层）</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=6|name=虚拟机包名</li>
+									<li class="indent1">name:如name=com.lulu.lulubox</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=7 变速器检测</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=7|rate=变速倍数|reason=原因</li>
+									<li class="indent1">rate:变速倍数/100 后才是真实的倍率。如rate=100变速未变速，rate=150表示加速，倍率为1.5，rate=80变速减速，倍率为0.</li>
+									<li class="indent1">reason:可能是变速器进程名，可能是变速器模块名，可能是时间函数被hook</li>
+									<li class="indent1">reason=none:对应S极变速器检测，即只检测到变速，未检测到变速器的特征（如进程、模块等）</li>
+									<li class="indent1">reason=hook:时间函数被hook</li>
+									<li class="indent1">reason=其他:可能是进程名，可能是模块名</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=8 模拟器检测</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=8|name=模拟器名</li>
+									<li>备注:只要收到该信息，可确认是在模拟器里运行游戏</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=9 测试用广播</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=8|name=模拟器名</li>
+									<li>备注:只要收到该信息，可确认是在模拟器里运行游戏</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=10 信息收集</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=10|root=|...</li>
+									<li class="indent1">root=1表示手机root,root=0表示手机未root</li>
+									<li class="indent1">x86=0表示为非x86手机，x86=1表示为x86手机</li>
+									<li class="indent1">apk_cnt=数字，表示手机上安装了多少个apk，这个可以用来辅助判断apk列表权限是否被禁</li>
+									<li class="indent1">adb=1,表示手机usb线处于连接状态，adb=0表示手机usb线非处于连接状态。</li>
+									<li class="indent1">machine=手机型号</li>
+									<li class="indent1">sys_ver=系统版本号</li>
+									<li class="indent1">apk_name=当前apk包名</li>
+									<li class="indent1">app_name=当前应用的app名</li>
+									<li class="indent1">app_ver=app版本</li>
+									<li class="indent1">sdk_ver=sdk版本</li>
+									<li class="indent1">files_dir=当前apk的files路径，该数据可以看出apk所处的运行坏境</li>
+									<li class="indent1">sd_dir=应用在sd卡上的目录</li>
+									<li class="indent1">lib_dir为应用的so存在目录</li>
+									<li class="indent1">cert_md5=应用证书md5，用于辅助检测破解版，正常用户的证书md5都是一样的，非正常用户各有各同</li>
+									<li class="indent1">apk_hash_1=应用的安装包hash1，用量的聚集辅助策略制定</li>
+									<li class="indent1">apk_hash_2=应用的安装包hash2，用量的聚集辅助策略制定</li>
+									<li class="indent1">备注:用于辅助策略制定，不管什么情况下都会上报，无论是正常用户还是非正常用户</li>
+									<li></li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=11 so文件被替换</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=11|name=|size=|crc=|root=</li>
+									<li class="indent1">name=被替换的so文件名称</li>
+									<li class="indent1">size=被替换的so文件大小</li>
+									<li class="indent1">crc=被替换的so文件crc</li>
+									<li class="indent1">root=1表示手机root,root=0表示手机未root</li>
+									<li>备注:只要收到该信息，说明手机上lib目录下有so文件被替换</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=12 可疑的安装应用</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id=12|name=|feature=|size=|mtime=</li>
+									<li class="indent1">name=外挂包名</li>
+									<li class="indent1">feature=外挂唯一标识 </li>
+									<li class="indent1">size=apk大小</li>
+									<li class="indent1">mtime=apk最后修改时间</li>
+									<li>备注:可用量的聚集辅助策略制定</li>
+								</ul>
+							</div>
+							<p class="dot-txt">id=13 lua特征上报</p>
+							<div class="txt-area">
+								<ul>
+									<li>格式:id = 13 |...</li>
+									<li>备注:该广播为lua脚本主动推送的广播，具体格式与含义见所订阅的lua脚本描述信息</li>
+								</ul>
+							</div>
+							<ul class="format format2" id="tar">
+								<li class="tar-tit">2. TSS_INFO_TYPE_HEARTBEAT</li>
+								<li>1. 接收的所有信息都是一个字符串，字符串格式:"id=value|key=value|key_value|..."。</li>
+								<li>2. 每个字符串至少包含一个名为id的key，用于区分是哪种心跳信息</li>
+								<li>3. 目前只有一种类型id=1，用于游戏自己检测MTP的运行状态。</li>
+							</ul>
+							<div class="txt-area">
+								<ul>
+									<li>格式：id=1|seq=序列号|pid=进程ID|time=手机开机启动时间</li>
+									<li class="indent1">seq=序列号 序列号从1开始，递增</li>
+									<li class="indent1">pid=游戏进程id 每次收到的pid应该一致</li>
+									<li class="indent1">time=手机开机启动时间 采用clock_gettime(CLOCK_MONOTONIC,...)获取。</li>
+									<li>心跳频率：每10s中发送一次数据</li>
+									<li>使用方法：可以通过检查每次收到的数据seq是否递增，pid是否相同来判断MTP状态是否正常</li>
+									<li>备注：MTP 加固也会做自身安全性的保护，如果游戏开发者认为太麻烦，可以选接，不是必须的</li>
+								</ul>
+							</div>
+							<p class="small-tit">演示代码</p>
+							<p class="lang-txt">所有可运行的Demo 可以参考MTP包里的demo部分。</p>
+							<p class="lang lang2">Java版</p>
+							<div class="lang-area">
+<pre>
+public class MainActivity extends Activity {
+    // TssInfoReceiver接口实现
+    private class MyTssInfoReceiver implements TssInfoPublisher.TssInfoReceiver{
+        public void onReceive(int tssInfoType,String info){
+            if (tssInfoType == TssInfoPublisher.TSS_INFO_TYPE_DETECT_RESULT){
+
+                // 只关注TSS_INFO_TYPE_DETECT_RESULT
+                String plain = TP2Sdk.decTssInfo(info);
+                if (plain.equals("-1")) return;
+                Log.d("MTP","[Java TSS INFO]:" + tssInfoType + "|" + plain);
+            }else if (tssInfoType == TssInfoPublisher.TSS_INFO_TYPE_HEARTBEAT
+
+                // 如果不关心心跳信息，可忽略
+                String plain = TP2Sdk.decTssInfo(info);
+                if (plain.equals("-1")) return;
+                Log.d("MTP","[Java TSS INFO]:" + tssInfoType + "|" + plain);
+            }
+        }
+    }
+    private MyTssInfoReceiver mTssInfoReceiver;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_main);
+
+        // 先于TP2Sdk.initEx执行
+        mTssInfoReceiver = new MyTssInfoReceiver();
+        TP2Sdk.registTssInfoReceiver(mTssInfoReceiver);
+        TP2Sdk.ioctl("MTPDefenceLevel:M");
+        //登录后第一时间调用init接口, 填写gameId 和 appKey
+        TP2Sdk.initEx(9000, "d5ab8dc7ef67ca92e41d730982c5c602");
+        // ...
+    }
+    // ...
+}
+</pre>
+							</div>
+							<p class="lang">C++版</p>
+							<div class="lang-area">
+<pre>
+// TssInfoReceiver接口实现
+class MyTssInfoReceiver:public TssInfoReceiver{
+
+    public:
+    virtual void onReceive(int tssInfoType,const char* info)
+
+        char plain[256];
+        memset(plain,0x00,sizeof(plain));
+        if (tssInfoType == TSS_INFO_TYPE_DETECT_RESULT){
+
+            // 只关注TSS_INFO_TYPE_DETECT_RESULT
+            int ret =tp2_dec_tss_info(info,plain,sizeof(plain));
+            if (ret == -1) return;
+            __android_log_print(ANDROID_LOG_DEBUG,"MTP",
+            "[C++ Cheat Info]:%d|%s", tssInfoType,plain);
+        }else if (tssInfoType == TSS_INFO_TYPE_HEARTBEAT){
+
+            // // 处理心跳，如果不关心，可以忽略
+            int ret =tp2_dec_tss_info(info,plain,sizeof(plain));
+            if (ret == -1) return;
+            __android_log_print(ANDROID_LOG_DEBUG,"MTP",
+            "[C++ Cheat Info]:%d|%s", tssInfoType,plain);
+        }
+    }
+};
+
+MyTssInfoReceiver g_tss_info_receiver;
+
+void game_start() {
+    // 游戏启动的第一时间调用 先于tp2_sdk_init_ex
+    tp2_regist_tss_info_receiver(&g_tss_info_receiver);
+    tp2_sdk_ioctl(TssSDKCmd_CommQuery,"MTPDefenceLevel:M");
+    tp2_sdk_init_ex (9000, "d5ab8dc7ef67ca92e41d730982c5c602");
+
+    // 用户登录时调用
+    int account_type = ENTRY_ID_QZONE; /*帐号类型*/
+    int world_id = 101; /*大区id*/
+    char open_id[] = "B73B36366565F9E02C752"; /*与平台相关的用户标识*/
+    char role_id[] = "paladin"; /*角色id*/
+    tp2_setuserinfo(account_type, world_id, open_id, role_id);
+}
+</pre>
+							</div>
+							<p class="lang">C#版本</p>
+							<div class="lang-area">
+<pre>
+public class main : MonoBehaviour {
+
+                            // TssInfoReceiver接口实现
+    private class MyTssInfoReceiver:tss.TssInfoReceiver{
+
+        public void onReceive(int tssInfoType, string info){
+
+            // 此函数不能被阻塞
+            if (tssInfoType == tss.TssInfoPublisher.TSS_INFO_TYPE_DETECT_RESULT) {
+
+                // 处理检测结果 如果不关心，可以忽略
+                string plain = Tp2Sdk.Tp2DecTssInfo(info);
+                if (plain.Equals("-1")) return;
+                Debug.Log ("C# Info:" + tssInfoType + "|" + plain);
+            }else if (tssInfoType == tss.TssInfoPublisher.TSS_INFO_TYPE_HEARTBEAT){
+
+                // 处理心跳，如果不关心，可以忽略
+                string plain = Tp2Sdk.Tp2DecTssInfo(info);
+                if (plain.Equals("-1")) return;
+                Debug.Log ("C# Info:" + tssInfoType + "|" + plain);
+            }
+        }
+    }
+
+    private MyTssInfoReceiver mTssInfoReceiver;
+
+    void Awake () {
+        // 在游戏启动的第一时间调用 时机先于Tp2SdkInitEx接口
+        mTssInfoReceiver = new MyTssInfoReceiver();
+        Tp2Sdk.Tp2RegistTssInfoReceiver (mTssInfoReceiver);
+        Tp2Sdk.Tp2SdkInitEx(9000, "d5ab8dc7ef67ca92e41d730982c5c602");
+        Debug.Log ("C#:main::Awake");
+    }
+    // ...
+}
+</pre>
+							</div>
+							<p class="small-tit">模拟器对照表</p>
+							<table class="chart">
+								<thead>
+									<tr>
+										<th width="20%">模拟器名</th>
+										<th width="80%">可能的特征名</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>腾讯</td>
+										<td>Tencent,Tencent*[^1]</td>
+									</tr>
+									<tr>
+										<td>雷电</td>
+										<td>LeiDian, LeiDian*[^2]</td>
+									</tr>
+									<tr>
+										<td>夜神</td>
+										<td>Nox,NOX605,NOX607,NOX6079</td>
+									</tr>
+									<tr>
+										<td>逍遥</td>
+										<td>XiaoYao,XiaoYao502,XiaoYao511,XiaoYao5119</td>
+									</tr>
+									<tr>
+										<td>网易</td>
+										<td>Netease,Netease9,Netease99</td>
+									</tr>
+									<tr>
+										<td>靠谱</td>
+										<td>KaopuTianTian,KaopuBlueStacks</td>
+									</tr>
+									<tr>
+										<td>天天</td>
+										<td>TianTian,TianTian9</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="small-tit">说明：</p>
+							<ul class="explain">
+								<li>[^1] * 表示匹配任意字符串，如 Tencent*表示以Tencent开头的字符串</li>
+								<li>[^2] * 表示匹配任意字符串，如 LeiDian*表示以LeiDian开头的字符串</li>
+							</ul>
+						</div>
+						<div class="tab-panel">
+							<p class="mod-tit">接入文档</p>
+							<p class="small-tit">特别说明</p>
+							<div class="txt-area">
+								<ul>
+									<li>1.关于SDK版本： MTP SDK3.8.9及以上版本开始支持该功能；</li>
+									<li>2.支持的开发语言： MTP提供C#、C++两种形式的接口，开发者可任选一种语言来完成接入；</li>
+									<li>3.SDK接入： 在阅读本文之前，确保已经正确接入了其他MTP接口。</li>
+								</ul>
+							</div>
+							<p class="small-tit small-tit-bot">安全需求说明</p>
+							<p class="needs">
+								当前存在安全SDK被剥离，不能使用SDK上报数据进行处罚的问题，为更好地保证游戏的安全性，游戏需要在合适时机
+								调用获取安全SDK的核心数据接口获取SDK的核心初始化数据，并将获取到的数据通过一定的方式托传给服务端进行分析。
+							</p>
+							<p class="small-tit small-tit-top">C#版接入指引</p>
+							<p class="lang">调用条件</p>
+							<p class="lang-txt lang-txt-bot">确认引用了MTP的tp2.cs文件</p>
+							<p class="lang">调用函数原型</p>
+							<div class="lang-area">
+<pre>
+/**
+返回值null，则说明调用失败，请确认cmd参数填写是否正确及SDK版本是否正确；
+返回值非null，则返回的字符串即为当前的安全数据，其中字符串长度不会超过128个字节；
+*/
+string Tp2Ioctl(string cmd);
+</pre>
+							</div>
+							<p class="lang">调用参数说明</p>
+							<table class="chart chart2">
+								<thead>
+									<tr>
+										<th width="28%">参 数</th>
+										<th width="72%">说 明</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cmd</td>
+										<td>请求命令,请填写"GetSdkAntiData"</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="lang">接口调用</p>
+							<div class="lang-area">
+<pre>
+string GetSdkAntiData(){
+   return Tp2Sdk.Tp2Ioctl("GetSdkAntiData");
+}
+</pre>
+							</div>
+							<p class="lang">调用时机</p>
+							<p class="txt-bew1">建议游戏每隔3分钟调用一次，然后将返回的字符串数据发送给后台，后台接入下文的数据分析代码，通过上报数据判断当前SDK是否有问题。</p>
+							<p class="lang">注意事项</p>
+							<p class="txt-bew1">取到数据后，请勿在同一个线程中进行数据发送（尤其是主线程）。一般采用拷贝数据，放入网络数据发送队列，然后异步发送。</p>
+							<p class="small-tit">Android C版接入指引</p>
+							<p class="lang">调用条件</p>
+							<p class="lang-txt-bot">确认引用了MTP的tp2_sdk.h文件</p>
+							<p class="lang">调用函数原型</p>
+							<div class="lang-area">
+<pre>
+/**
+获取TssSDK需要通过游戏托传到TssSvrSDK的数据
+*/
+uintptr_t __attribute__((visibility("default"))) tss_get_report_data2();
+</pre>
+							</div>
+							<p class="lang">接口调用</p>
+							<div class="lang-area">
+<pre>
+void GetSdkCoreData(){
+   struct TssSdkAntiDataInfo *anti_data =
+   (struct TssSdkAntiDataInfo *anti_data)tss_get_report_data2();
+   if(anti_data != NULL && anti_data->anti_data_len_<= 128){
+      /**
+      *说明：
+        *1、 SDK保证该游戏获取到的核心数据长度不会大于128字节(数据不包含'\0')，如果大于128字节游戏可以丢弃；
+        *2、anti_data->anti_data_的长度为anti_data->anti_data_len_；
+        *3、anti_data->anti_data_为字符串，不会有以'\0'开头的数据，可以直接按照字符串的形式进行托传。
+      */
+     }
+}
+</pre>
+							</div>
+							<p class="lang">调用时机</p>
+							<p class="txt-bew1">
+								建议游戏每隔3分钟调用一次，然后将anti_data->anti_data_、anti_data->anti_data_len_ 数据发送给后台，后台接入下文的数据
+								分析代码，通过上报数据判断当前SDK是否有问题。
+							</p>
+							<p class="lang">注意事项</p>
+							<p class="txt-bew1">取到数据后，请勿在同一个线程中进行数据发送（尤其是主线程）。一般采用拷贝数据，放入网络数据发送队列，然后异步发送。</p>
+							<p class="small-tit small-tit-bot">数据解析</p>
+							<p class="needs">
+								服务器后台收到数据之后，以源码方式接入tss_data_decrypt2.h、tss_data_decrypt2.cpp、crc32.h、crc32.c这四个文件(服务端为C#则接入
+								tss_data_decrypt2.cs文件)，服务器收到本地传递过来的数据之后，调用tss_data_descrypt2接口进行解析。
+							</p>
+							<p class="lang">函数原型</p>
+							<div class="lang-area">
+<pre>
+c:
+int tss_data_descrypt2(const char *buf, size_t buf_len,struct TssSdkAntiData2* anti_data);
+</pre>
+							</div>
+							<div class="lang-area">
+<pre>
+c#:
+Using TssSdk;
+bool AntiData2Parser.tss_data_descrypt2(byte[] buf, int buf_len,out TssSdkAntiData2 anti_data);
+</pre>
+							</div>
+							<p class="lang-txt-bot">若服务端为C#，则使用如下代码将string类型的sdk_anti_data数据转换成buf,buf_len</p>
+							<div class="lang-area">
+<pre>
+String input = sdk_anti_data;
+System.Text.Encoding enc = System.Text.Encoding.ASCII;
+byte[] buf = enc.GetBytes(input);
+int buf_len = buf.Length;
+</pre>
+							</div>
+							<p class="txt-bew2">
+								得到的anti_data.state_word1中每一位表示MTP客户端一个功能的运行状态或者检测结果。所以游戏后台可以根据这个状态字段来
+								做策略，遇到外挂剥离MTP客户端的情况,可以查看游戏上报的上诉状态字段，如果有出现与正常玩家不一样的结果数据，则可认为对应的
+								MTP功能被剥离或运行异常了，并使用对应的状态数据指定检测策略。
+							</p>
+							<p class="small-tit small-tit-mt">举例说明</p>
+							<p class="txt-bew3">
+								现有一个虚拟机类型外挂Lulubox，会将安全SDK通过CDN下载特征的渠道和调度线程阻塞，那么就会发现anti_data.state_word1中的三个状态位为0，而且为了避免调用get_report_data2太早导致MTP还未初始化的情况，我们取get_cnt>=2,以保证MTP至少已经启动了3分钟。如下所示：
+							</p>
+							<div class="chart3-wrap">
+								<table class="chart chart3">
+								<thead>
+									<tr>
+										<th width="50%">状 态</th>
+										<th width="38%">说 明</th>
+										<th width="12%">值</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>AntiDataMagicFlag2_UpdateCDNRunned</td>
+										<td>请求命令,请填写"GetSdkAntiData"</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>AntiDataMagicFlag2_ScheduleEngIsRunnig</td>
+										<td>调度引擎是否正在运行</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>AntiDataMagicFlag2_CommDatDownloaded</td>
+										<td>SDK通用特征comm.dat是否下载成功</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							<p class="txt-bew4">游戏后台就可以通过下面的条件来判断哪些用户使用了此外挂。</p>
+							<div class="lang-area">
+<pre>
+((anti_data.state_word1 & AntiDataMagicFlag2_UpdateCDNRunned == 0) &&
+(anti_data.state_word1 & AntiDataMagicFlag2_ScheduleEnglsRunning == 0) &&
+(anti_data.state_word1 & AntiDataMagicFlag2_CommDatDownloaded == 0) &&
+anti_data.get_cnt >= 2)
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script src="js/highlightjs-line-numbers.min.js"></script>
+	<script src="js/wheel.js"></script>
+	<script>
+
+		var opt = {
+			el:document.body,
+			callback: onWheel
+		};
+		function onWheel(e,v){
+			var scTopBody = $('html').scrollTop();
+			var bodyMarginTop = 70;
+			var bodyOffsetTop = $('.nav-wrap')[0].offsetTop;
+
+			if(v > 0 && scTopBody < bodyOffsetTop - bodyMarginTop){
+				e.preventDefault();
+				//说明页面还未滚动到nav-wrap的位置，则继续滚动
+				$('html').animate({
+					scrollTop: bodyOffsetTop - bodyMarginTop
+				},100)
+			}
+		};
+		mouseEvent.wheel(opt);
+
+		//代码格式化
+		$('.lang-area pre').each(function (i, block) {
+
+			hljs.highlightBlock(block);
+			hljs.lineNumbersBlock(block);
+		});
+
+		var dis = $('#tar').offset().top ;
+
+		//切换
+		$('.nav-wrap .nav-box').on('click', function() {
+			var i = $(this).index();
+			var hasCur = $(this).hasClass('cur');
+
+			$('.tab-panel').eq(i>1?1:0).show().siblings().hide();
+			$(this).addClass('cur').siblings().removeClass('cur');
+
+
+			var scrollTop =  (i===1?dis: 0);
+			(!hasCur) && (
+				$('.tab-panel').eq(0).animate({
+					scrollTop: scrollTop
+				},300),
+					$('.tar-tit').addClass('corCur')
+			)
+		});
+
+		$(window).on('resize load', function() {
+			var navHeight  = $(window).height() - 100;
+			$('.tab-panel').height(navHeight)
+		});
+
+		//弹窗
+		function TGDialogS(e){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.show({
+					id:e,
+					bgcolor:'#e3e3e3', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+		function closeDialog(){
+			// 利用milo库引入dialog组件
+			need("biz.dialog",function(Dialog){
+				Dialog.hide();
+			});
+		};
+
+	</script>
+</body>
+</html>

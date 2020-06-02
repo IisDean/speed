@@ -1,0 +1,20 @@
+
+
+	<!-- 当前配置与外网不一致，更新后生效 -->
+	<div class="area tra"><span class="area-icon comm in"></span>当前配置与外网不一致，更新后生效</div>
+	<script>
+		$(window).scroll(function(){
+		　　var scrollTop = $(this).scrollTop();
+		　　var scrollHeight = $(document).height();
+		　　var windowHeight = $(this).height();
+		　　if(scrollTop + windowHeight >= scrollHeight - 300){
+				$('.area').stop().css({bottom:"-80px"});
+			}else{
+				$('.area').stop().css({bottom:"0"});
+			}			
+		});
+		$('.area').on('click',function(){
+			$('body,html').animate({"scrollTop":0})
+		})
+	</script>
+	<!-- //当前配置与外网不一致，更新后生效 -->

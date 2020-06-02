@@ -1,0 +1,64 @@
+
+
+/*产品权限页面-右侧上部第二导航*/
+.up_cha { padding: 13px 19px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.list_em a {width:113px;height:26px;line-height:25px;text-align:center;border:1px solid #aeb6c7;float:left;margin-right:-1px;color:#666666;}
+.list_em a.no {border:1px solid #4264f9;position:relative;z-index:5444;color:#4264f9;}
+
+
+/*左侧底部添加角色按钮和表单*/
+.add_js{width:195px;height:58px;padding-left:10px;line-height:58px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;cursor:pointer;font-size:14px;position:relative;color:#4264f9}
+.add_js:hover{background: #fbfcff;}
+.add_js i {width:11px;height:11px;background-position:-73px -15px;display:inline-block;margin-right:13px;}
+.btm_add {height:auto;}
+.add_form{background: rgba(255,255,255,.90); padding: 10px 0px; border-top:1px solid #d1d7e9; border-bottom:1px solid #d1d7e9; margin-top:-1px; }
+.add_form textarea{ display: block; width: 166px; height: 46px; padding:5px 5px 0 5px; line-height: 20px; border:1px solid #d1d7e9; margin:0px auto;}
+.add_form textarea::-webkit-input-placeholder {font-size: 12px;}
+.add_form textarea::-moz-placeholder {/* Mozilla Firefox 19+ */font-size: 12px;}
+.add_form textarea:-moz-placeholder {/* Mozilla Firefox 4 to 18 */font-size: 12px;}
+.add_form textarea:-ms-input-placeholder {/* Internet Explorer 10-11 */font-size: 12px;}
+.add_form .add_submit_line{display: block; width: 173px; margin:0px auto 0; padding:0px; }
+.add_form .add_submit_line .add_tips{ color: #fea52e; font-size: 12px; line-height: 18px; }
+.add_form .add_submit_line .btns{ display: block; text-align: right; }
+.btns .btn{display: inline-block; text-align: center; width:32px; height: 18px; line-height: 18px; font-size: 11px; border:1px solid #4264f9; background: #fff;}
+.btn_add_save,.btns .btn.on {background: #4264f9; color: #fff;}
+.btn_add_cancel { background: #fff; margin-left: 2px;}
+.btns .btn_add_save:hover{border:1px solid #6380ff; background: #6380ff;}
+.btns .btn_add_cancel:hover{filter: brightness(1.2);-webkit-filter: brightness(1.2);}
+
+.btns .btn_add_save.btn:active{color:#fff;}
+.btns .btn_add_cancel.btn:active{color:#4264f9;}
+
+/*右侧内容部分*/
+
+.up_delete {width:100%;}
+.up_delete .list_em a {width:103px;}
+.up_delete a {width:103px;height:26px; display:inline-block;text-align:center;line-height:25px;}
+.up_delete a.btn_add_user{ margin-left: 10px;}
+.up_delete .btn_refresh_config{ margin-left: 10px;}
+.up_delete a.btn_add_user{ margin-left: 10px;}
+
+
+.bd_bor table.gridtable{color: #666666; margin-top: 3px;}
+.bd_bor table.gridtable .border1{border: 1px solid #e8ebf4;}
+.bd_bor table.gridtable .border2{border-top:none; border-bottom:none; border-left: 1px solid #e8ebf4;border-right: 1px solid #e8ebf4;}
+.bd_bor table.gridtable tr{border-bottom: 1px solid #e8ebf4;border-top: 1px solid #e8ebf4;}
+.bd_bor table.gridtable tr th:nth-child(n).txt-center,.gridtable tr td:nth-child(n).txt-center{text-align: center;}
+.bd_bor table.gridtable th{line-height: 56px; font-size: 15px; text-align: left;}
+.bd_bor table.gridtable tr.tit{border-top: none;}
+.bd_bor table.gridtable tr.tit th{font-weight: bold;}
+.bd_bor table.gridtable tr.tit th:nth-of-type(1){width: 13%;}
+.bd_bor table.gridtable tr.tit th:nth-of-type(2){width: auto; min-width: 578px;}
+.bd_bor table.gridtable tr td{line-height: 45px; font-size: 14px; text-align: left;}
+.bd_bor table.gridtable tr td > .label{margin-left: 0;}
+.bd_bor table.gridtable tr .padleft{padding-left: 80px;}
+.bd_bor table.gridtable tr th.padleft{padding-left: 57px;}
+.bd_bor table.gridtable td em{width: 190px;display: inline-block;float: left;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MTP-移动游戏安全专家</title>
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2019-12-12 -->
+</head>
+<body class="inquire-daterangepicker">
+	<!-- 模拟器检测 -->
+	<div class="detection cer_detection">
+		<div class="main-cont">
+			<div class="content-box">
+				<div class="de-tit-box">
+					<strong class="t-name in">证书检测</strong>
+					<span class="title-tips in">iOS</span>
+					<div class="data-detail-wrap">
+						<span class="cir-ico comm"></span>
+						<div class="data-detail">
+							<p class="txt txt1">
+								<span class="io">数据说明</span>
+								将游戏证书信息通过广播id=XX传给游戏方，
+								统计数量最多的可疑证书信息
+							</p>
+							<p class="txt">
+								<span class="io">版本说明</span>
+								接入XXX以上版本SDK，支持查看该数据
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="part-wrap">
+					<div class="part-box part1 part1-bottom">
+						<div class="data-one in" id="changeDateType">
+							<span class="cur">昨日</span>
+							<span>近一周</span>
+							<span>近一月</span>
+						</div>
+						<div id="chart3"></div>
+						<p class="tells">注：点击对应信息，可在下方查看详细信息。</p>
+					</div>
+					<div class="part-box part2">
+						<h3 class="par-tit">昨日可疑证书检测量</h3>
+						<span class="count-box"><i class="icon-users sp"></i><b class="counts">1103</b>人</span>
+						<div class="chart2-wrap">
+							<!--<div class="no-data"></div>-->
+							<div class="txt-center">
+								<p class="txt-big">0.003%</p>
+							</div>
+							<div id="chart2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="part-mod">
+					<p class="sm-tit"><strong>可疑证书检测详情</strong></p>
+					<!-- 查询 -->
+					<div class="inquire">
+						<div class="inquire-m in">
+							<b>Open ID：</b>
+							<input type="text" placeholder="限128字符，避免输入特殊字符" class="inquire-inp1">
+						</div>
+						<div class="inquire-m in">
+							<b>详细信息：</b>
+							<input type="text" placeholder="限64字符" class="inquire-inp2">
+						</div>
+						<div class="inquire-m in">
+							<b class="v">查询时间：</b>
+							<div class="inquire-timer in">
+								<input class="data-input fl" value="2018-07-07 - 2018-08-13" id="config-demo1">
+								<div class="data-ri fl">
+									<a href="javascript:;" basis-day="1" class="">今日</a>
+									<a href="javascript:;" basis-day="7" class="check">近7日</a>
+									<a href="javascript:;" basis-day="30" class="">近30日</a>
+								</div>
+							</div>
+						</div>
+						<div class="inquire-btn in">
+							<a href="javascript:;">查询</a>
+							<a href="javascript:;">导出</a>
+						</div>
+						<div class="inquire-m in blue-tips">
+							<a href="javascript:;" class="wenhao in" title="本页面数据最多支持查询10000条数据，&#10若需要查看更多，可导出查看">?</a>
+							<!--<div class="blue-detail-box">-->
+								<!--<div class="detail">-->
+									<!--本页面数据最多支持查询10000条数据，<br/>若需要查看更多，可导出查看-->
+								<!--</div>-->
+							<!--</div>-->
+						</div>
+					</div>
+					<!-- 表格 -->
+					<table class="guess-tb">
+						<col width="6%">
+						<col width="40%">
+						<col width="36.8%">
+						<col width="16.2%">
+						<tr>
+							<th>序号</th>
+							<th>Open ID</th>
+							<th>详细信息</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>C73B36366565F9E02C7525516DCF31C9</td>
+							<td>Tomcat</td>
+							<td>2018-11-20 11:20:58</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>C73B36366565F9E02C7525516DCF31C9</td>
+							<td>Tomcat</td>
+							<td>2018-11-20 11:20:58</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="table-page">
+						<span>每页显示：</span>
+						<select>
+							<option value="10" selected>10</option>
+							<option value="50">50</option>
+						</select>
+						<a href="javascript:;" class="table-prev comm" title="上一页"></a>
+						<span class="num">1 / 3</span>
+						<a href="javascript:;" class="table-next comm" title="下一页"></a>
+						<span>前往</span><input type="text"><span>页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/certificate_detection.js"></script>
+	<script src="js/selectDate.js"></script>
+	<script>
+		$(function() {
+			$('.data-detail-wrap').hover(function() {
+				$('.data-detail').show();
+			}, function() {
+				$('.data-detail').hide();
+			});
+
+//			$('.blue-tips').hover(function() {
+//				$('.blue-detail-box').show();
+//			}, function() {
+//				$('.blue-detail-box').hide();
+//			});
+		})
+
+	</script>
+</body>
+</html>

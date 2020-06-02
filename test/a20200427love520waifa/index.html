@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="试试你能到几层" />
+    <meta name="Keywords" content="love" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <title>恋爱的千层套路</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/27 -->
+    <link href="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/index.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="p-r stage">
+    <audio id="musicBgm" loop>
+        <source src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/music.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- p1 首屏 -->
+    <div class="p-a part part-1 load-status">
+        <!-- 水印 -->
+        <!-- <div class="p-a bg water-mark-wx"></div> -->
+        <div class="p-r wrap">
+            <!-- 进度条 -->
+            <div class="p-a bg progress-container">
+                <div class="p-r progress-wrap progress-ani J-pro-wrap" style="width: 0%;">
+                    <div class="p-a bg progress-content"></div>
+                </div>
+                <div class="p-a progress-text t-c J-pro-text">0%</div>
+                <div class="p-a progress-text progress-ani J-pro-wrap t-c" style="z-index: 100;width: 0%;">
+                    <p class="J-pro-text">0%</p>
+                </div>
+            </div>
+            <div class="p-a full-img music-tips-img">
+                <img src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/music_tips.png" alt="提示">
+            </div>
+            <!-- 说明 -->
+            <!-- <a href="javascript: TGDialogS('rulePop');" onclick="PTTSendClick('btn','rule-btn','活动说明')" class="p-a icons rule-btn t">活动说明</a> -->
+            <!-- 音乐 -->
+            <a class="p-a icons music-btn off scale-ani t">音乐</a>
+            <div class="full-img logo-icon">
+                <img src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/logo.png" alt="logo">
+            </div>
+            <div class="full-img slogan-icon">
+                <img src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/slogan.png" alt="标题">
+            </div>
+            <!-- 按钮 -->
+            <!-- <i class="p-a icons tips-btn-icon t">开始挑战并预约手游</i> -->
+            <!--<a href="javascript: startAnswer();" -->
+            <!--onclick="PTTSendClick('btn','start-test-btn','立即挑战')" -->
+            <!--class="p-a icons start-test-btn btn-hover t">立即挑战</a>   -->
+            <a href="javascript: nextPageRead(2);"
+               onclick="PTTSendClick('btn','start-test-btn','立即挑战')"
+               class="p-a icons start-test-btn btn-hover t">立即挑战</a>
+        </div>
+    </div>
+    <!-- p2选择徽章 -->
+    <div class="p-a part part-2 part-init" style="display: none;">
+        <div class="p-r wrap">
+            <div class="full-img logo-icon">
+                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/logo.png" alt="logo">
+            </div>
+            <!-- 音乐 -->
+            <a class="p-a icons music-btn off scale-ani t">音乐</a>
+            <div class="p-r select-tips-wrap t-c">
+                <p>走近摩天楼</p>
+                <p>眼前出现了三个不同的入口</p>
+                <p>门上的徽章看起来十分神秘</p>
+            </div>
+            <div class="select-tips-wrap2 flex flex-center flex-middle">
+                <i class="icons tips-icon-1"></i>
+                <p>请选择你要进入的大门</p>
+                <i class="icons tips-icon-2"></i>
+            </div>
+            <ul class="select-hz-list flex flex-center">
+                <li class="p-r select-hz-item">
+                    <img class="select-hz-default" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_1.png" alt="徽章">
+                    <img class="select-hz-active" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_1_active.png" alt="徽章">
+                    <i class="p-a icons gou-icon"></i>
+                </li>
+                <li class="p-r select-hz-item">
+                    <img class="select-hz-default" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_2.png" alt="徽章">
+                    <img class="select-hz-active" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_2_active.png" alt="徽章">
+                    <i class="p-a icons gou-icon"></i>
+                </li>
+                <li class="p-r select-hz-item">
+                    <img class="select-hz-default" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_3.png" alt="徽章">
+                    <img class="select-hz-active" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_3_active.png" alt="徽章">
+                    <i class="p-a icons gou-icon"></i>
+                </li>
+            </ul>
+            <a class="icons select-ok-btn btn-hover t">我选好了</a>
+        </div>
+    </div>
+    <!-- p3答题 -->
+    <div class="p-a part part-3 part-init" style="display: none;">
+        <div class="p-r wrap">
+            <div class="full-img logo-icon">
+                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/logo.png" alt="logo">
+            </div>
+            <!-- 音乐 -->
+            <a class="p-a icons music-btn off scale-ani t">音乐</a>
+            <!-- 答题进度 -->
+            <div class="p-a answer-progress">
+                <p class="t-l J-timu-num">1</p>
+                <p class="t-r">8</p>
+            </div>
+            <!-- 题目列表 -->
+            <ul class="p-r answer-list">
+                <!-- 第1题 -->
+                <li class="bg answer-item on" data-id="1">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_1.png" alt="题目名称">
+                    </div>
+                    <div class="flex flex-center select-list select-list-img">
+                        <div class="flex select-item" data-idx="4">
+                            <span class="select-num-text">A.</span>
+                            <div class="full-img select-img">
+                                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_4.png" alt="选项">
+                            </div>
+                        </div>
+                        <div class="flex select-item" data-idx="1">
+                            <span class="select-num-text">B.</span>
+                            <div class="full-img select-img">
+                                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_1.png" alt="选项">
+                            </div>
+                        </div>
+                        <div class="flex select-item" data-idx="2">
+                            <span class="select-num-text">C.</span>
+                            <div class="full-img select-img">
+                                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_2.png" alt="选项">
+                            </div>
+                        </div>
+                        <div class="flex select-item" data-idx="3">
+                            <span class="select-num-text">D.</span>
+                            <div class="full-img select-img">
+                                <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_3.png" alt="选项">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第2题 -->
+                <li class="bg answer-item off" data-id="2">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_2.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">A.《穿越大清之宫心计》</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">B.《不小心掉入总裁的甜蜜陷阱》</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">C.《白夜行》</p>
+                        </div>
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">D.《恋爱心理学》</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第3题 -->
+                <li class="bg answer-item" data-id="3">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_3.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">A.经典的情歌对唱</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">B.甜腻的芭乐情歌</p>
+                        </div>
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">C.轻快的小众民谣</p>
+                        </div>
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">D.激情的地下摇滚</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第4题 -->
+                <li class="bg answer-item" data-id="4">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_4.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">A.悄悄把奶茶放在电脑桌上</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">B.加入他的开黑队伍</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">C.当然是选择把两杯都喝掉</p>
+                        </div>
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">D.拔掉网线然后不理TA</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第5题 -->
+                <li class="bg answer-item" data-id="5">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_5.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">A.知名惊悚悬疑片续作</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">B.叫好卖座的爆米花片</p>
+                        </div>
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">C.经典文艺爱情片</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">D.爱豆出演的青春伤痛片</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第6题 -->
+                <li class="bg answer-item" data-id="6">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_6.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">A.疯狂暗示TA不要忘记</p>
+                        </div>
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">B.默默准备给TA的惊喜</p>
+                        </div>
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">C.完全没有放在心上</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">D.发一条充满回忆的朋友圈</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第7题 -->
+                <li class="bg answer-item" data-id="7">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_7.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">A.送TA一直想要的新款球鞋</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">B.送TA豪华双人游套票</p>
+                        </div>
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">C.送TA保温杯让TA多喝热水</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">D.给TA发个充满爱意的红包</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 第8题 -->
+                <li class="bg answer-item" data-id="8">
+                    <i class="p-a bg answer-hz-icon"></i>
+                    <div class="full-img answer-title-icon">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_8.png" alt="题目名称">
+                    </div>
+                    <div class="select-list">
+                        <div class="select-item" data-idx="4">
+                            <p class="select-num-text t-l">A.穿休闲风连帽卫衣</p>
+                        </div>
+                        <div class="select-item" data-idx="2">
+                            <p class="select-num-text t-l">B.穿性感风黑色长裙</p>
+                        </div>
+                        <div class="select-item" data-idx="1">
+                            <p class="select-num-text t-l">C.穿昨天刚买的新衣服</p>
+                        </div>
+                        <div class="select-item" data-idx="3">
+                            <p class="select-num-text t-l">D.穿可爱风草莓短裙</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 回形针 -->
+            <i class="p-a bg clip-icon t">回形针</i>
+            <!-- 提示 -->
+            <div class="p-r flex flex-center flex-middle answer-tips-wrap">
+                <i class="icons tips-icon-1"></i>
+                <p>测试过程中可返回上层修改答案</p>
+                <i class="icons tips-icon-2"></i>
+            </div>
+            <!-- 按钮 -->
+            <div class="p-r flex flex-center answer-btn-container">
+                <a href="javascript: cutPrevTimu();" class="icons btn-hover prev-btn t" style="display: none;">上一题</a>
+                <a href="javascript: cutNextTimu();" class="icons btn-hover next-btn t">下一题</a>
+                <a href="javascript: cutNextTimu();" class="icons btn-hover look-result-btn t" style="display: none;">查看结果</a>
+            </div>
+        </div>
+    </div>
+    <!-- p4结果 -->
+    <div class="p-a part part-4 part-init" style="display: none;">
+        <div class="p-r J-scroll-init" style="width: 100%;height: 110%;"></div>
+        <div class="p-r bg poster-dk-wrap flex-middle">
+            <div class="p-r bg poster-dk">
+                <div class="p-r full-img person-wrap">
+                    <img class="J-person-img" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_1.png" alt="人物">
+                    <!-- 姓名&层数 -->
+                    <div class="p-a circle-wrap t-c">
+                        <!-- 标签 -->
+                        <div class="label-list J-label-list">
+                            <div class="label-item t-c">
+                                <span></span>
+                            </div>
+                            <div class="label-item t-c">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 角色话语 -->
+                    <div class="p-a full-img word-wrap J-word-wrap">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_1_down.png" alt="话语">
+                    </div>
+                    <!-- 徽章 -->
+                    <div class="p-a full-img badge-wrap badge-ani J-badge-wrap">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_result_1.png" alt="徽章">
+                    </div>
+                    <div class="p-r plies-wrap t-r">
+                        <p>你的恋爱套路有 <span><em class="J-plies-text">999</em>层</span></p>
+                    </div>
+                    <!-- 描述 -->
+                    <div class="result-msg-wrap J-msg-wrap">
+                        <p>提到套路，通常你都是被套路的那个。陌生人面前比较高冷的你，反倒会引起很多人的关注，但是大多数情况，都是别人追你逃的状态，想要追到你可不是件容易的事。所以，奉劝那些想要追你的人多点耐心，才有机会看到你真正可爱的一面，而你也要记得多给别人一些机会噢~</p>
+                    </div>
+                </div>
+                <!-- 按钮 -->
+                <div class="result-btn-container flex flex-center">
+                    <a onclick="PTTSendClick('btn','share-btn','分享好友')"
+                       class="icons share-btn btn-hover J-create-poster t">分享好友</a>
+                    <a href="./index.html"
+                       onclick="PTTSendClick('btn','more-fl-btn','更多福利')"
+                       class="icons more-fl-btn btn-hover t">更多福利</a>
+                </div>
+                <!-- 描述 -->
+                <!-- <div class="flex flex-center">
+                    <p class="t-c share-tips-text">生成海报立即分享</p>
+                    <p class="t-c share-tips-text" style="margin-left: .3rem;">赢华为/口红/香水</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- 海报 -->
+    <div class="p-a pop" id="posterPop" style="left: 100rem;display: block;">
+        <div class="p-r full-img pop-con pop-con-poster">
+            <div class="poster-tips-text J-psTips-1 t-c" style="margin-top: 0;margin-bottom: .2rem;display: none;">快长按图片保存至本地分享给好友吧</div>
+            <div class="p-a bg poster-container" id="poster">
+                <div class="p-r full-img person-wrap">
+                    <img class="J-person-img" data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_1.png" alt="人物">
+                    <!-- 姓名&层数 -->
+                    <div class="p-a circle-wrap t-c">
+                        <!-- 标签 -->
+                        <div class="label-list J-label-list">
+                            <div class="label-item t-c">
+                                <span>恋爱萌新</span>
+                            </div>
+                            <div class="label-item t-c">
+                                <span>无招胜有招</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 角色话语 -->
+                    <div class="p-a full-img word-wrap J-word-wrap">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_1_down.png" alt="话语">
+                    </div>
+                    <!-- 徽章 -->
+                    <div class="p-a full-img badge-wrap J-badge-wrap">
+                        <img data-src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_result_1.png" alt="徽章">
+                    </div>
+                    <div class="p-r plies-wrap t-r">
+                        <p>你的恋爱套路有 <span><em class="J-plies-text">999</em>层</span></p>
+                    </div>
+                    <!-- 描述 -->
+                    <div class="result-msg-wrap J-msg-wrap">
+                        <p>提到套路，通常你都是被套路的那个。陌生人面前比较高冷的你，反倒会引起很多人的关注，但是大多数情况，都是别人追你逃的状态，想要追到你可不是件容易的事。所以，奉劝那些想要追你的人多点耐心，才有机会看到你真正可爱的一面，而你也要记得多给别人一些机会噢~</p>
+                    </div>
+                    <!-- 二维码 -->
+                    <div class="p-a full-img qrcode-wrap" id="qrcode">
+                        <i class="p-a bg code-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-a poster-tips-text pstips-wrap J-psTips-2 t-c">正在全速生成中...</div>
+        </div>
+    </div>
+    <!-- 您已成功预约 -->
+    <div class="pop pop-2" id="orderSuccess">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon"></i>
+                <h1 class="pop-title1-text t-c" style="margin-top: .1rem;">您已成功预约</h1>
+                <p class="pop-title2-text t-c" style="margin-top: .16rem;">《光与夜之恋》手游</p>
+                <p class="sx-tips-text t-c">我们将在游戏上线第一时间通知您</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: selectHz();" class="p-a icons close-btn t">关闭</a>
+    </div>
+    <!-- 活动说明 -->
+    <div class="pop pop-2" id="rulePop">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <p class="pop-msg-text" style="margin-top: .4rem;">
+                    <em class="pop-num-text t-c">1</em>
+                    活动时间：即日起至6月20日
+                </p>
+                <p class="pop-msg-text" style="margin-top: .4rem;">
+                    <em class="pop-num-text t-c">2</em>
+                    点击【立即挑战】会自动预约《光与夜之恋》手游，我们会把预约礼包卡券发送到您的微信账号，在游戏不删档上线后可兑换使用。
+                </p>
+                <p class="pop-msg-text" style="margin-top: .24rem;margin-bottom: .24rem;">
+                    <em class="pop-num-text t-c">3</em>
+                    成功预约游戏或完成每日签到即可获得<span class="cs-text">抽奖机会</span>，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品；
+                </p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+    <!-- 请先回答这一题哦 -->
+    <div class="pop pop-2" id="hdTips">
+        <div class="p-r pop-con">
+            <i class="p-a bg pop-inset"></i>
+            <div class="bg pop-top"></div>
+            <div class="bg pop-center">
+                <i class="bg pop-title-icon" style="margin-top: .96rem;"></i>
+                <p class="pop-msg2-text t-c" style="margin-top: .22rem;margin-bottom: 1rem;">请先回答当前题目噢</p>
+            </div>
+            <div class="bg pop-bottom"></div>
+        </div>
+        <a href="javascript: closeDialog()" class="p-a icons close-btn t">关闭</a>
+    </div>
+
+</div>
+<!--<script src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script>-->
+<!--<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>-->
+<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//game.gtimg.cn/images/js/dom2img/1.0.min.js"></script>
+<script type="text/javascript" src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/qrcode.js"></script>
+<script>
+    // TGDialogS('posterPop');
+    function TGDialogS(e) {
+        // 利用milo库引入dialog组件
+        need("biz.dialog", function (Dialog) {
+            Dialog.show({
+                id: e,
+                bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        });
+    }
+    function closeDialog() {
+        // 利用milo库引入dialog组件
+        need("biz.dialog", function (Dialog) {
+            Dialog.hide();
+        });
+    }
+
+    $(function(){
+        //播放音乐
+        var music = document.getElementById('musicBgm');
+        var musicStatus = sessionStorage.getItem("musicTwitch");
+        //音乐开关
+        var switchMusic = $(".music-btn");
+        if( musicStatus == 1 ){
+            switchMusic.removeClass("off");
+            music.play();
+            $(window).one('touchstart', function () {
+                music.play();
+            });
+            //微信下兼容处理
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                music.play();
+            }, false);
+        }
+
+        switchMusic.on("click", function () {
+            switchMusic.removeClass('scale-ani');
+            if (switchMusic.hasClass('off')) {
+                music.play();
+                switchMusic.removeClass("off");
+                sessionStorage.setItem("musicTwitch", 1);
+            } else {
+                music.pause();
+                switchMusic.addClass("off");
+                sessionStorage.setItem("musicTwitch", 0);
+            }
+        });
+
+        //加载帧图
+        var imgList = [
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p1_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/water_mark_wx.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/slogan.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/progress_bg.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/progress.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/music_tips.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/icons.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/answer_bg.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_result_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_result_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/badge_result_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/clip.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/cloud_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_1_down.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_1_up.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_2_down.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_2_up.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_3_down.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/h_3_up.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/label_line.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/logo.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/logo2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/lottery.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/lottery_btn.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p1_bg.gif',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p2_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p3_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p4_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p5_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_1_4.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_2_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_2_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_2_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_2_4.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_3_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_3_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_3_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/person_3_4.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_bottom.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_center.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_inset.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_title_inset.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/pop_top.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/poster_bg.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/qq_icons.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_1_active.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_2_active.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/select_hz_3_active.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_4.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_5.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_6.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_7.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_8.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/timu_select_4.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/wx_icons.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/code_icon1.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/code_icon2.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/code_icon3.png',
+            '//game.gtimg.cn/images/lv/cp/a20200427love520waifa/poster_dk.png',
+        ];
+
+        function loadImg() {
+            var that = this,
+                imgLoad = 0,
+                pro = 0,
+                $loadText = $(".J-pro-text"),
+                $progress = $(".J-pro-wrap");
+            imgList.forEach(function (ev, index) {
+                var img = new Image();
+                img.src = ev;
+                img.style.position = 'absolute';
+                img.idx = index;
+                img.onload = function () {
+                    imgList[this.idx].obj = this;
+                    imgLoad++;
+                    pro = parseInt((imgLoad / imgList.length) *.95 * 100);
+                    $loadText.text(pro + '%');
+                    $progress.css('width', pro+'%');
+                    if (imgLoad >= imgList.length) {
+                        console.log('加载完成');
+                        document.fonts.ready.then(function() {
+                            // 字体加载完成
+                            $(".stage").css("font-family", 'hyzy');
+                            $loadText.text('100%');
+                            $progress.css('width', '100%');
+                            //图片显示
+                            showImg();
+                            setTimeout(function(){
+                                // 直接进入徽章选择
+                                $(".part-1").removeClass('load-status')
+                                    .css('background-image', 'url(//game.gtimg.cn/images/lv/cp/a20200427love520waifa/p1_bg.gif)');
+                                nextPageRead(1);
+                            }, 500);
+                        });
+                    }
+                }
+            });
+        }
+        loadImg();
+
+        //图片显示
+        var $imgList = $("img");
+        function showImg(){
+            $imgList.each(function(idx, ev){
+                var $ev = $(ev),
+                    src = $ev.attr('data-src');
+                if(src != null){
+                    $ev.attr('src', src);
+                }
+            });
+        }
+    });
+
+
+    //下一页准备
+    function nextPageRead(idx){
+        $(".part-"+idx).css('top', '0%');
+        if(idx<5){
+            var i = idx+1;
+            $(".part-"+i).css('top', '100%').show();
+            setTimeout(function(){
+                $(".part-"+idx).addClass("part-show");
+            }, 100);
+        }
+    }
+
+    //点击弹窗空白处关闭
+    $("body").on("touchstart", "#_overlay_", function(){
+        if($("#orderSuccess").css('display') != 'none'){
+            nextPageRead(2);
+        }
+        closeDialog();
+    });
+
+</script>
+<script src="//game.gtimg.cn/images/lv/cp/a20200427love520waifa/index.js?v=202005061"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<!--引入文件-->
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<!--<script src="vconsole.min.js" ></script>-->
+<!--<script src="action.js"></script>-->
+<script>
+    TGMobileShare({
+        shareTitle:'测一测你隐藏的恋爱实力',
+        shareDesc:'恋爱的千层套路有多深？',
+        shareImgUrl:'//game.gtimg.cn/images/lv/cp/a20200427love520waifa/share-icon.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'https://love.qq.com/cp/a20200427love520waifa/index.html',
+        actName:'a20200427love520waifa'
+    });
+    // var vConsole = new VConsole();
+
+</script>
+
+<script>
+    //此段代码不能放到外链JXXXXS中，
+    var setSite = { //设置网站属性
+        siteType: "a20200427love520waifa", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "移动端首页", //必填项:页面中文名
+        osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+    }
+    if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+</script>
+</body>
+
+
+</html>
