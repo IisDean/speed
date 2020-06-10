@@ -287,6 +287,23 @@ a {
         opacity: 0;
     }
 }
+.water-mark-qq,
+.water-mark-wx {
+    top: .3rem;
+    right: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+.water-mark-wx {
+    width: 1.9rem;
+    height: .44rem;
+    background-image: url('./water_mark_wx.png');
+}
+.water-mark-qq {
+    width: 1.1rem;
+    height: .76rem;
+    background-image: url('./water_mark_qq.png');
+}
 
 /* p2 */
 .part-2,
@@ -316,7 +333,6 @@ a {
 }
 .part-2 .select-list,
 .part-2 .select-img {
-    margin: .62rem auto 0;
     width: 6.52rem;
     height: 6.55rem;
 }
@@ -330,7 +346,43 @@ a {
     height: 2.24rem;
 }
 .select-item.active {
-    background-image: url('./p2_select_active.png');
+    background-image: url('./select_active.png');
+}
+.part-2 .select-list .select-item:nth-child(1) {
+    top: 0.76rem;
+    left: -0.25rem;
+}
+.part-2 .select-list .select-item:nth-child(2) {
+    top: 0.66rem;
+    left: 1.95rem;
+}
+.part-2 .select-list .select-item:nth-child(3) {
+    top: 0.7rem;
+    left: 4.25rem;
+}
+.part-2 .select-list .select-item:nth-child(4) {
+    top: 3.1rem;
+    left: -0.05rem;
+}
+.part-2 .select-list .select-item:nth-child(5) {
+    top: 2.9rem;
+    left: 2.1rem;
+}
+.part-2 .select-list .select-item:nth-child(6) {
+    top: 2.9rem;
+    left: 4.2rem;
+}
+.part-2 .select-list .select-item:nth-child(7) {
+    top: 5.2rem;
+    left: -0.1rem;
+}
+.part-2 .select-list .select-item:nth-child(8) {
+    top: 5.2rem;
+    left: 2rem;
+}
+.part-2 .select-list .select-item:nth-child(9) {
+    top: 5.2rem;
+    left: 4.2rem;
 }
 .tips-msg-text {
     margin: .25rem auto 0;
@@ -369,9 +421,6 @@ a {
     top: -2rem;
     width: 1.76rem;
     height: 1.63rem;
-}
-.part-3 .select-item.active {
-    background-image: url('./select_active.png');
 }
 .part-3 .select-list .select-item:nth-child(1) {
     top: .66rem;
@@ -417,9 +466,6 @@ a {
     top: -2rem;
     width: 1.76rem;
     height: 1.63rem;
-}
-.part-4 .select-item.active {
-    background-image: url('./select_active.png');
 }
 .part-4 .select-list .select-item:nth-child(1) {
     top: 1.66rem;
