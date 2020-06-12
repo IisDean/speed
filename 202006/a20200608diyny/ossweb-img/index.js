@@ -1,17 +1,31 @@
 var ctrlJs = {
     data: {
-        //å›¾ç‰‡é¢„åŠ è½½åˆ—è¡¨
-        loadImgList: [],
-        pageIdx: 1,//å½“å‰é¡µé¢ï¼Œé»˜è®¤é¦–é¡µ
+        //Í¼Æ¬Ô¤¼ÓÔØÁĞ±í
+        loadImgList: [
+            './ossweb-img/loading.gif',
+            './ossweb-img/result_1_1.jpg',
+            './ossweb-img/result_1_2.jpg',
+            './ossweb-img/result_2_1.jpg',
+            './ossweb-img/result_2_2.jpg',
+            './ossweb-img/result_3_1.jpg',
+            './ossweb-img/result_3_2.jpg',
+        ],
+        isImgLoading: false,//ÊÇ·ñ¼ÓÔØÍê³É
+        pageIdx: 1,//µ±Ç°Ò³Ãæ£¬Ä¬ÈÏÊ×Ò³
+        jd: 0,// Ñ¡ÔñµÄ»ùµ×
+        gz: [],// Ñ¡ÔñµÄ¹ûÖ­
+        zl: [],// Ñ¡ÔñµÄ×ôÁÏ
     },
     methods: {
-        //å›¾ç‰‡é¢„åŠ è½½
+        //Í¼Æ¬Ô¤¼ÓÔØ
         loadImg: function(){
             var that = this,
                 imgLoad = 0,
                 pro = 0,
+                imgList = ctrlJs.data.loadImgList;
                 $loadText = $(".J-pro-text"),
                 $progress = $(".J-pro-wrap");
+            console.log(imgList);
             imgList.forEach(function (ev, index) {
                 var img = new Image();
                 img.src = ev;
@@ -21,28 +35,17 @@ var ctrlJs = {
                     imgList[this.idx].obj = this;
                     imgLoad++;
                     pro = parseInt((imgLoad / imgList.length) *.95 * 100);
-                    $loadText.text(pro + '%');
-                    $progress.css('width', pro+'%');
+                    // $loadText.text(pro + '%');
+                    // $progress.css('width', pro+'%');
                     if (imgLoad >= imgList.length) {
-                        console.log('åŠ è½½å®Œæˆ');
-                        document.fonts.ready.then(function() {
-                            // å­—ä½“åŠ è½½å®Œæˆ
-                            $(".stage").css("font-family", 'hyzy');
-                            $loadText.text('100%');
-                            $progress.css('width', '100%');
-                            //å›¾ç‰‡æ˜¾ç¤º
-                            showImg();
-                            setTimeout(function(){
-                                // ç›´æ¥è¿›å…¥å¾½ç« é€‰æ‹©
-                                $(".part-1").removeClass('load-status');
-                                nextPageRead(1);
-                            }, 500);
-                        });
+                        console.log('¼ÓÔØÍê³É');
+                        ctrlJs.data.isImgLoading = true;
+                        // document.fonts.ready.then(function() {});
                     }
                 }
             });
         },
-        // æ˜¾ç¤ºå›¾ç‰‡
+        // ÏÔÊ¾Í¼Æ¬
         showImg: function(){
             var $imgList = $("img");
             $imgList.each(function(idx, ev){
@@ -53,19 +56,151 @@ var ctrlJs = {
                 }
             });
         },
-        // ä¸‹ä¸€é¡µå‡†å¤‡
+        // ÏÂÒ»Ò³×¼±¸
         nextPageRead: function(idx){
             var that = this;
-            if(idx && idx < 5){
+            if(idx && idx < 7){
                 setTimeout(function(){
+                    ctrlJs.data.pageIdx = idx;
                     $(".part-" + idx).addClass("part-show").show();
                 }, 100);
             }
         },
+        //»Øµ½ÉÏÒ»Ò³
+        prevPage: function(){
+            var idx = ctrlJs.data.pageIdx;
+            ctrlJs.data.pageIdx--;
+            $(".part-" + idx).removeClass("part-show");
+        },
+        //Éú³É½á¹ûÒ³
+        createResult: function(){
+            var resultData = {};
+            // ¸ù¾İ»ùµ×ÅĞ¶ÏÈËÎï 1/2/3ÎªÏôÒİ£¬4/5/6ÎªÂ½³Á£¬7/8/9ÎªÆëË¾Àñ
+            var jd = ctrlJs.data.jd;
+            if( jd == 1 || jd == 2 || jd == 3 ){
+                resultData.jd = 1;
+            }else if(jd == 4 || jd == 5 || jd == 6){
+                resultData.jd = 2;
+            }else if(jd == 7 || jd == 8|| jd == 9){
+                resultData.jd = 3;
+            }
+            // ÅĞ¶Ï¹ûÖ­ 1/3/5/7¶ÔÓ¦ÁÒÑæÀ¶µ÷¡¢Ç³²İÇàÉ­¡¢ÂÌÑ©Ñ¿°× 2/4/6/8/9¶ÔÓ¦ºìÄàĞ¡é×¡¢·ãµ¤ÃÛÓï¡¢Ç§µºÓñÒ¶
+            var isGz = [
+                [1,3,5,7],
+                [2,4,6,8,9]
+            ];
+            var gzA = 0,
+                gzB = 0;
+            ctrlJs.data.gz.forEach(function(ev, idx){
+                if( isGz[0].indexOf(ev) >= 0 ){
+                    gzA++;
+                }else if(isGz[1].indexOf(ev) >= 0) {
+                    gzB++;
+                }
+            });
+            gzA > gzB ? resultData.gz = 1 : resultData.gz = 2;
+            ctrlJs.methods.nextPageRead(5);
+            var resultSrc = './ossweb-img/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
+            $(".part-6").css("background-image", "url("+ resultSrc +")");
+            $(".stage").addClass('jd-'+resultData.jd);
+            setTimeout(function(){
+                TGDialogS('popZzcg');
+                setTimeout(function(){
+                    closeDialog();
+                    ctrlJs.methods.nextPageRead(6);
+                }, 500);
+            }, 3000);
+        }
     },
-    //åˆå§‹åŒ–
+    //³õÊ¼»¯
     init: function(){
-        console.log('123');
+        var that = this;
+        that.methods.loadImg();
+        
+        // Á¢¼´¿ªÊ¼
+        $(".part-1 .btn-start").on("click", function(){
+            that.methods.nextPageRead(2);
+        });
+
+        // Ñ¡È¡Ò»ÖÖ»ùµ×
+        $(".part-2 .select-list").on("click", "li", function(){
+            var $this = $(this),
+                idx = $this.index();
+            that.data.jd = idx+1;
+            $this.addClass("active").siblings('li').removeClass("active");
+        });
+
+        // Ñ¡È¡»ùµ× ÏÂÒ»²½
+        $(".part-2 .btn-next").on("click", function(){
+            if(that.data.jd <= 0){
+                $(".pop-tips .pop-tips-text").text('ĞèÒªÑ¡Ôñ1ÖÖ»ùµ×Å¶~');
+                TGDialogS('popTips');
+                return false;
+            }
+            that.methods.nextPageRead(3);
+        });
+
+        // Ñ¡È¡3ÖÖ¹ûÖ­
+        $(".part-3 .select-list").on('click', 'li', function(){
+            var $this = $(this),
+                idx = $this.index(),
+                isCz = that.data.gz.indexOf(idx+1);
+            if(isCz >= 0){
+                that.data.gz.splice(isCz, 1);
+                $this.removeClass('active');
+                return false;
+            }
+            if(that.data.gz.length >= 3){
+                $(".part-3 .select-list li").eq(that.data.gz[0]-1).removeClass("active");
+                that.data.gz.splice(0, 1);
+            }
+            that.data.gz.push(idx+1);
+            $this.addClass('active');
+        });
+
+        // Ñ¡È¡3ÖÖ¹ûÖ­ ÏÂÒ»²½
+        $(".part-3 .btn-next").on("click", function(){
+            if(that.data.gz.length < 3){
+                $(".pop-tips .pop-tips-text").text('ĞèÒªÑ¡Ôñ3ÖÖ¹ûÖ­Å¶~');
+                TGDialogS('popTips');
+                return false;
+            }
+            that.methods.nextPageRead(4);
+        });
+        
+        // Ñ¡È¡3ÖÖ×ôÁÏ
+        $(".part-4 .select-list").on('click', 'li', function(){
+            var $this = $(this),
+                idx = $this.index(),
+                isCz = that.data.zl.indexOf(idx+1);
+            if(isCz >= 0){
+                that.data.zl.splice(isCz, 1);
+                $this.removeClass('active');
+                return false;
+            }
+            if(that.data.zl.length >= 3){
+                $(".part-4 .select-list li").eq(that.data.zl[0]-1).removeClass("active");
+                that.data.zl.splice(0, 1);
+            }
+            that.data.zl.push(idx+1);
+            $this.addClass('active');
+        });
+
+        // Ñ¡È¡3ÖÖ×ôÁÏ ÏÂÒ»²½
+        $(".part-4 .btn-next").on("click", function(){
+            if(that.data.zl.length < 3){
+                $(".pop-tips .pop-tips-text").text('ĞèÒªÑ¡Ôñ3ÖÖ×ôÁÏÅ¶~');
+                TGDialogS('popTips');
+                return false;
+            }
+            // Éú³É½á¹û
+            that.methods.createResult();
+        });
+
+        //ÉÏÒ»²½
+        $(".btn-prev").on("click", function(){
+            that.methods.prevPage();
+        });
     }
 }
 ctrlJs.init();

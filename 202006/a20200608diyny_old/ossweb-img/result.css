@@ -1,0 +1,51 @@
+.part-1 {
+    
+}
+.btn-container {
+    margin: 10rem auto 0;
+    width: 5.6rem;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.btn-fb {
+    margin-bottom: .42rem;
+    width: 3.44rem;
+    height: .68rem;
+    background-position: 0 -.84rem;
+}
+.btn-bdsj,
+.btn-cycj1,
+.btn-cycj2 {
+    width: 2.4rem;
+    height: .47rem;
+    line-height: .47rem;
+    font-size: .28rem;
+    font-style:oblique;
+    border-radius: .08rem;
+}
+.btn-container.jd-1 .btn-border {
+    color: #706de6;
+    border: .01rem solid #706de6;
+}
+.btn-container.jd-2 .btn-border {
+    color: #cb6c76;
+    border: .01rem solid #cb6c76;
+}
+.btn-container.jd-3 .btn-border {
+    color: #50b4c6;
+    border: .01rem solid #50b4c6;
+}
+.btn-bdsj {
+    background-position: -3.49rem -.84rem;
+}
+.btn-cycj1 {
+    background-position: -3.49rem -1.36rem;
+}
+.btn-cycj2 {
+    background-position: -3.49rem -1.88rem;
+}
+
+.btn-cycj1,
+.btn-cycj2 {
+    margin-left: .66rem;
+}

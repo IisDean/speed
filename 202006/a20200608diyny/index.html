@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="gbk">
-    <meta name="Description" content="试试你能到几层" />
+    <meta name="Description" content="我和光启市男神官宣了" />
     <meta name="Keywords" content="love" />
     <meta content="telephone=no" name="format-detection">
     <meta content="yes" name="mobile-web-app-capable">
@@ -27,27 +27,52 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-    <title>DIY你的男友</title>
-    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/04/27 -->
+    <meta itemprop="name" content="光与夜之恋" />
+    <meta itemprop="description" content="我和光启市男神官宣了" />
+    <meta itemprop="image" content="./ossweb-img/share.jpg" />
+    <title>DIY我的饮品男孩</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/08 -->
+    <link href="./ossweb-img/common.css" rel="stylesheet" />
     <link href="./ossweb-img/index.css" rel="stylesheet" />
 </head>
 
 <body>
 <div class="p-r stage">
     <!-- 音乐 -->
-    <!-- <audio id="musicBgm" loop>
+    <audio id="musicBgm" loop>
         <source src="./ossweb-img/music.mp3" type="audio/mpeg" />
-    </audio> -->
+    </audio>
+    <!-- 音乐 -->
+    <a class="p-a icons music-btn lottery off t" style="z-index: 999;">音乐</a>
+    <!-- 水印 -->
+    <div class="p-a bg water-mark-wx"></div>
     <!-- p1 首屏 -->
-    <div class="p-a part part-1 load-status" style="display: none;">
+    <div class="p-a part part-1">
         <div class="p-r wrap">
-            
+            <div class="p-a full-img logo-icon">
+                <img src="./ossweb-img/logo.png" alt="logo">
+            </div>
+            <div class="p-a full-img wdj-icon">
+                <img src="./ossweb-img/wdj.png" alt="温度计">
+            </div>
+            <div class="text-wrap1 t-c">
+                <p class="guide-text">光启市夏日传说：</p>
+                <p class="guide-text" style="margin-top: .04rem;">当你在夏至日亲手配上一份沁心饮品<br/>融入真挚的心意与甜美的爱</p>
+            </div>
+            <div class="text-wrap2 t-c">
+                <p class="guide-text">会有心恋所向之人踏星光而至<br/>与你相会</p>
+            </div>
+            <div class="btn-container">
+                <a href="javascript: ;" class="icons btn-start btn-hover t" onclick="PTTSendClick('btn','start-btn','立即开始')">立即开始</a>
+                <p class="guide-text2 t-c">参加活动马上抽switch噢~</p>
+                <!-- <p class="guide-text2 t-c">参加活动马上抽iPhone噢~</p> -->
+            </div>
         </div>
+        <!-- 活动规则 -->
+        <a href="javascript: TGDialogS('popRule');" onclick="PTTSendClick('btn','rule-btn','活动规则')" class="p-a icons rule-btn btn-hover t">活动规则</a>
     </div>
     <!-- p2 选取一种基底 -->
-    <div class="p-a part part-2 part-init part-show">
-        <!-- 水印 -->
-        <div class="p-a bg water-mark-wx"></div>
+    <div class="p-a part part-2 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
                 <img src="./ossweb-img/p2_title.png" alt="标题">
@@ -70,7 +95,7 @@
             </div>
             <div class="bg tips-msg-text t-c"><p>沉浸的爱，倾慕与浪漫<br/>优雅的心，和君子般的风度</p></div>
             <div class="select-btn-container flex flex-center">
-                <a href="javascript: alert('敬请期待！');" class="icons btn-next btn-hover t">下一步</a>
+                <a href="javascript: ;" class="icons btn-next btn-hover t">下一步</a>
             </div>
         </div>
     </div>
@@ -98,8 +123,8 @@
             </div>
             <div class="bg tips-msg-text t-c"><p>后院的秋千装着午后的阳光<br/>像填满糖果的糖果罐一样满满当当</p></div>
             <div class="select-btn-container flex flex-center">
-                <a href="javascript: alert('敬请期待！');" class="icons btn-prev btn-hover t">上一步</a>
-                <a href="javascript: alert('敬请期待！');" class="icons btn-next btn-hover t">下一步</a>
+                <a href="javascript: ;" class="icons btn-prev btn-hover t">上一步</a>
+                <a href="javascript: ;" class="icons btn-next btn-hover t">下一步</a>
             </div>
         </div>
     </div>
@@ -127,27 +152,111 @@
             </div>
             <div class="bg tips-msg-text t-c"><p>每一个街角都氤氲着甜蜜的美好</p></div>
             <div class="select-btn-container flex flex-center">
-                <a href="javascript: alert('敬请期待！');" class="icons btn-prev btn-hover t">上一步</a>
-                <a href="javascript: alert('敬请期待！');" class="icons btn-next btn-hover t">下一步</a>
+                <a href="javascript: ;" class="icons btn-prev btn-hover t">上一步</a>
+                <a href="javascript: ;" class="icons btn-next btn-hover t">下一步</a>
             </div>
         </div>
     </div>
-    <!-- p5结果 -->
+    <!-- p5制作loading页 -->
     <div class="p-a part part-5 part-init" style="display: none;">
-        
+        <div class="p-r wrap"></div>
     </div>
-    
-
+    <div class="p-a part part-6 part-init" style="display: none;">
+        <!-- 水印 -->
+        <div class="p-a bg water-mark-wx"></div>
+        <div class="p-r wrap">
+            <div class="btn-container flex flex-center">
+                <a href="javascript: ;" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>
+                <a href="//game.weixin.qq.com/cgi-bin/actnew/newportalact/136488/nERmEjYXmVZy22Pcz4WFeg/main_page?act_id=136488&k=nERmEjYXmVZy22Pcz4WFeg&pid=main_page#wechat_redirect"
+                    class="btn-border btn-bdsj btn-hover t-c" onclick="PTTSendClick('btn','bind-sj-btn','绑定手机领好礼')">绑定手机领好礼</a>
+                <a href="lottery.html" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','cycj-switch-btn','参与抽奖赢switch')">参与抽奖赢switch</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- 活动规则 微信 -->
+<div class="pop bg pop-rule" id="popRule">
+    <div class="pop-con">
+        <ul class="rule-list">
+            <li class="rule-item">
+                <span class="num-text t-c">1</span>活动时间：即日起至7月20日
+            </li>
+            <li class="rule-item">
+                <span class="num-text t-c">2</span>点击<span class="blue-text">【立即开始】</span>会自动预约《光与夜之恋》手游，我们会把预约礼包卡券发送到您的微信账号，在游戏不删档上线后可兑换使用。
+            </li>
+            <li class="rule-item">
+                <span class="num-text t-c">3</span>成功预约游戏或<span class="blue-text">完成每日签到</span>即可获得抽奖机会，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品。
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 活动规则 qq -->
+<!-- <div class="pop bg pop-rule" id="popRule">
+    <div class="pop-con">
+        <ul class="rule-list">
+            <li class="rule-item">
+                <span class="num-text t-c">1</span>活动时间：即日起至7月20日
+            </li>
+            <li class="rule-item">
+                <span class="num-text t-c">2</span>点击<span class="blue-text">【立即开始】</span>会自动预约《光与夜之恋》手游，我们会把预约礼包卡券发送到您的QQ账号，在游戏不删档上线后可兑换使用。
+            </li>
+            <li class="rule-item">
+                <span class="num-text t-c">3</span>成功预约游戏或<span class="blue-text">完成每日分享</span>即可获得抽奖机会，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品。
+            </li>
+        </ul>
+    </div>
+</div> -->
+
+
+<!-- 提示 -->
+<div class="pop bg pop-tips" id="popTips">
+    <div class="pop-con">
+        <p class="pop-tips-text t-c"></p>
+        <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+    </div>
+</div>
+
+<!-- 制作成功 -->
+<div class="pop bg pop-zzcg" id="popZzcg">
+    <div class="pop-con"></div>
+</div>
+
 <script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
-<script src="//game.gtimg.cn/images/js/dom2img/1.0.min.js"></script>
-<script src="./ossweb-img/qrcode.js" type="text/javascript"></script>
 <script>
     
-    $(".stage").css("font-family", 'hyzy');
-    // TGDialogS('posterPop');
+    //播放音乐
+    var music = document.getElementById('musicBgm');
+    var musicStatus = sessionStorage.getItem("musicTwitch");
+    //音乐开关
+    var switchMusic = $(".music-btn");
+    if( musicStatus == 1 ){
+        switchMusic.removeClass("off");
+        music.play();
+        $(window).one('touchstart', function () {
+            music.play();
+        });
+        //微信下兼容处理
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            music.play();
+        }, false);
+    }
+
+    switchMusic.on("click", function () {
+        if (switchMusic.hasClass('off')) {
+            music.play();
+            switchMusic.removeClass("off");
+            sessionStorage.setItem("musicTwitch", 1);
+        } else {
+            music.pause();
+            switchMusic.addClass("off");
+            sessionStorage.setItem("musicTwitch", 0);
+        }
+    });
+    
     function TGDialogS(e) {
         // 利用milo库引入dialog组件
         need("biz.dialog", function (Dialog) {
@@ -165,113 +274,21 @@
         });
     }
 
-    $(function(){
-        //播放音乐
-        var music = document.getElementById('musicBgm');
-        var musicStatus = sessionStorage.getItem("musicTwitch");
-        //音乐开关
-        var switchMusic = $(".music-btn");
-        if( musicStatus == 1 ){
-            switchMusic.removeClass("off");
-            music.play();
-            $(window).one('touchstart', function () {
-                music.play();
-            });
-            //微信下兼容处理
-            document.addEventListener("WeixinJSBridgeReady", function () {
-                music.play();
-            }, false);
-        }
-
-        switchMusic.on("click", function () {
-            switchMusic.removeClass('scale-ani');
-            if (switchMusic.hasClass('off')) {
-                music.play();
-                switchMusic.removeClass("off");
-                sessionStorage.setItem("musicTwitch", 1);
-            } else {
-                music.pause();
-                switchMusic.addClass("off");
-                sessionStorage.setItem("musicTwitch", 0);
-            }
-        });
-
-        //加载帧图
-        var imgList = [
-            './ossweb-img/p1_bg.jpg',
-        ];
-
-        function loadImg() {
-            var that = this,
-                imgLoad = 0,
-                pro = 0,
-                $loadText = $(".J-pro-text"),
-                $progress = $(".J-pro-wrap");
-            imgList.forEach(function (ev, index) {
-                var img = new Image();
-                img.src = ev;
-                img.style.position = 'absolute';
-                img.idx = index;
-                img.onload = function () {
-                    imgList[this.idx].obj = this;
-                    imgLoad++;
-                    pro = parseInt((imgLoad / imgList.length) *.95 * 100);
-                    $loadText.text(pro + '%');
-                    $progress.css('width', pro+'%');
-                    if (imgLoad >= imgList.length) {
-                        console.log('加载完成');
-                        document.fonts.ready.then(function() {
-                            // 字体加载完成
-                            $(".stage").css("font-family", 'hyzy');
-                            $loadText.text('100%');
-                            $progress.css('width', '100%');
-                            //图片显示
-                            showImg();
-                            setTimeout(function(){
-                                // 直接进入徽章选择
-                                $(".part-1").removeClass('load-status')
-                                    .css('background-image', 'url(./ossweb-img/p1_bg.gif)');
-                                nextPageRead(1);
-                            }, 500);
-                        });
-                    }
-                }
-            });
-        }
-        // loadImg();
-
-        //图片显示
-        var $imgList = $("img");
-        function showImg(){
-            $imgList.each(function(idx, ev){
-                var $ev = $(ev),
-                    src = $ev.attr('data-src');
-                if(src != null){
-                    $ev.attr('src', src);
-                }
-            });
-        }
-    });
-
-
-    //下一页准备
-    function nextPageRead(idx){
-        $(".part-"+idx).css('top', '0%');
-        if(idx<5){
-            var i = idx+1;
-            $(".part-"+i).css('top', '100%').show();
-            setTimeout(function(){
-                $(".part-"+idx).addClass("part-show");
-            }, 100);
-        }
-    }
-
     //点击弹窗空白处关闭
     $("body").on("touchstart", "#_overlay_", function(){
-        if($("#orderSuccess").css('display') != 'none'){
-            nextPageRead(2);
-        }
-        closeDialog();
+        setTimeout(function(){
+            closeDialog();
+        }, 100);
+    });
+
+    var isPage = false;
+    window.addEventListener('pageshow', function () {
+        if (isPage) {
+　　　　　　window.location.reload(); 
+　　　　　}
+    });
+    window.addEventListener('pagehide', function () { 
+        isPage =true;
     });
 
 </script>
@@ -283,13 +300,12 @@
 <!--<script src="action.js"></script>-->
 <script>
     TGMobileShare({
-        shareTitle:'DIY你的男友',
-        shareDesc:'DIY你的男友',
+        shareTitle:'光与夜之恋',
+        shareDesc:'我和光启市男神官宣了',
         shareImgUrl:'./ossweb-img/share-icon.jpg', //分享图片尺寸200*200，且填写绝对路径
         shareLink:'https://love.qq.com/cp/a20200608diyny/index.html',
         actName:'a20200608diyny'
     });
-    // var vConsole = new VConsole();
 
 </script>
 
