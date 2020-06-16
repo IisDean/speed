@@ -166,7 +166,7 @@
         <div class="p-a bg water-mark-wx"></div>
         <div class="p-r wrap">
             <div class="btn-container flex flex-center">
-                <a href="javascript: ;" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>
+                <a href="javascript: TGDialogS('popShare');" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>
                 <a href="//game.weixin.qq.com/cgi-bin/actnew/newportalact/136488/nERmEjYXmVZy22Pcz4WFeg/main_page?act_id=136488&k=nERmEjYXmVZy22Pcz4WFeg&pid=main_page#wechat_redirect"
                     class="btn-border btn-bdsj btn-hover t-c" onclick="PTTSendClick('btn','bind-sj-btn','绑定手机领好礼')">绑定手机领好礼</a>
                 <a href="lottery.html" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','cycj-switch-btn','参与抽奖赢switch')">参与抽奖赢switch</a>
@@ -221,6 +221,11 @@
 <!-- 制作成功 -->
 <div class="pop bg pop-zzcg" id="popZzcg">
     <div class="pop-con"></div>
+</div>
+
+<!-- 引导分享 -->
+<div class="pop full-img pop-share" id="popShare">
+    <img src="./ossweb-img/share_pop.png" alt="">
 </div>
 
 <script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
@@ -292,7 +297,7 @@
     });
 
 </script>
-<script src="./ossweb-img/index.js"></script>
+<script src="./ossweb-img/index.js?v=20200615"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <!--引入文件-->
 <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>

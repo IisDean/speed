@@ -330,3 +330,11 @@
     height: 3.94rem;
     background-image: url('./pop_zzcg.png');
 }
+.pop-share {
+    top: 1.1rem !important;
+    right: .84rem !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: 4.98rem;
+    height: 4.32rem;
+}

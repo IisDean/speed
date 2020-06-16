@@ -107,6 +107,7 @@ var ctrlJs = {
                 TGDialogS('popZzcg');
                 setTimeout(function(){
                     closeDialog();
+                    $("#popZzcg").hide();
                     ctrlJs.methods.nextPageRead(6);
                 }, 500);
             }, 3000);
