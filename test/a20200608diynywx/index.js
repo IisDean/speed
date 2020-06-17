@@ -20,8 +20,8 @@ milo.ready(function () {
                         access_token:milo.cookie.get('access_token')
                     },function(WxUserInfo){
                         console.log('登录成功，用户信息为',WxUserInfo);
-                        var str = WxUserInfo.nickname;
-                        var res = str.replace(/\<span\s+class\=\"emoji\s+emoji\w+\"\>\<\/span\>/g,'');
+                        // var str = WxUserInfo.nickname;
+                        // var res = str.replace(/\<span\s+class\=\"emoji\s+emoji\w+\"\>\<\/span\>/g,''); //去掉昵称中的表情
                         console.log(res);
                         // $("#userinfo").html(res);
                         // $("#username").html(res);
@@ -29,9 +29,10 @@ milo.ready(function () {
                     },function(err){
                         // alert('获取用户信息失败');
                         console.log('获取用户信息失败',err);
-                    })
+                    });
+                    amsSubmit(311093,674277); //页面初始化
                 }
-                amsSubmit(311093,674277); //页面初始化
+
             },function() {
                 LoginManager.loginByWX({
                     redirect_wx_url: "",
@@ -58,6 +59,11 @@ milo.ready(function () {
     });
 });
 
+
+
+
+
+
 function checkAMS(id,n){
     need("biz.login",function(LoginManager){
         LoginManager.checkLogin(function(userInfo){
@@ -74,10 +80,6 @@ function checkAMS(id,n){
     });
 }
 
-// <button class="button" id="lottery_674240" ></button>
-// <button class="button" id="lottery_674242" ></button
-// <button class="button" id="lottery_674243" ></button>
-// <button class="button" id="lottery_674244" ></button>
 
 
 // 预约获得抽奖积分[674240]  amsSubmit(311093,674240);
@@ -129,7 +131,7 @@ amsCfg_674242 = {
         return 0; // 抽奖前事件，返回0表示成功
     },
     'onGetGiftFailureEvent' : function(callbackObj){// 抽奖失败事件
-        // alert(callbackObj.sMsg);
+        alert(callbackObj.sMsg);
     },
     'onGetGiftSuccessEvent' : function(callbackObj) {// 抽奖成功事件
         amsSubmit(311093,674277); //页面初始化

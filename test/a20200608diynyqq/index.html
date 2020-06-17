@@ -93,7 +93,7 @@
                     <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyqq/p2_select_img.png" alt="饮料">
                 </div>
             </div>
-            <div class="bg tips-msg-text t-c"><p>沉浸的爱，倾慕与浪漫<br/>优雅的心，和君子般的风度</p></div>
+            <div class="bg tips-msg-text t-c"><p>沉静的爱，倾慕与浪漫<br/>优雅的心，和君子般的风度</p></div>
             <div class="select-btn-container flex flex-center">
                 <a href="javascript: ;" class="icons btn-next btn-hover t">下一步</a>
             </div>
@@ -164,7 +164,8 @@
     <div class="p-a part part-6 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="btn-container flex flex-center">
-                <a href="javascript: TGDialogS('popShare');" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>
+                <!--<a href="javascript: TGDialogS('popShare');" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>-->
+                <a href="javascript: amsCommon.shareInvite();" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','fblq-btn','发布恋情')">发布恋情</a>
                 <!-- <a href="//game.weixin.qq.com/cgi-bin/actnew/newportalact/136488/nERmEjYXmVZy22Pcz4WFeg/main_page?act_id=136488&k=nERmEjYXmVZy22Pcz4WFeg&pid=main_page#wechat_redirect"
                     class="btn-border btn-bdsj btn-hover t-c" onclick="PTTSendClick('btn','bind-sj-btn','绑定手机领好礼')">绑定手机领好礼</a> -->
                 <a href="lottery.html" style="margin-left: 0;" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','cycj-iPhone-btn','参与抽奖赢switch')">参与抽奖赢iPhone</a>
@@ -215,16 +216,26 @@
         <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
     </div>
 </div>
-
+<!-- 制作成功 -->
+<div class="pop bg pop-zzcg" id="popZzcg">
+    <div class="pop-con"></div>
+</div>
 <!-- 引导分享 -->
 <div class="pop full-img pop-share" id="popShare">
     <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyqq/share_pop.png" alt="点击右上角按钮分享">
 </div>
-
+<!-- 分享成功 -->
+<div class="pop bg pop-tips" id="popFxcg">
+    <div class="pop-con">
+        <p class="pop-tips-text t-c">分享成功~</p>
+        <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+    </div>
+</div>
 
 <script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
 <script>
     
     //播放音乐
@@ -299,6 +310,7 @@
 <script src="index.js"></script>
 <script>
     var vConsole = new VConsole();
+
     TGMobileShare({
         shareTitle:'光与夜之恋',
         shareDesc:'我和光启市男神官宣了',
@@ -324,4 +336,4 @@
 </body>
 
 
-</html><!-- #t6Hl8#1B0DB4ABDAF856796306CC6544B6C5D0 -->
+</html><!-- #t6Hl8#44E70062A1CCE5EF1F821D4373E44318 -->

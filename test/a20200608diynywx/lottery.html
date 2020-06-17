@@ -85,8 +85,8 @@
                 </div> -->
                 <div class="flex bg down-btn-list wx-icons">
                     <a href="//game.weixin.qq.com/cgi-bin/h5/static/group/index.html?appid=wxca6215f6c23c2e90&group=1#wechat_redirect" class="flex-1 down-btn-item t">游戏圈</a>
-                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/community/club_index.html?noticeid=&appid=wxca6215f6c23c2e90#wechat_redirect" class="flex-1 down-btn-item t"></a>
-                    <a href="//w.url.cn/s/ABnZsHh#wechat_redirect" class="flex-1 down-btn-item t">公众号</a>
+                    <a href="//w.url.cn/s/ABnZsHh#wechat_redirect" class="flex-1 down-btn-item t"></a>
+                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/community/club_index.html?noticeid=&appid=wxca6215f6c23c2e90#wechat_redirect" class="flex-1 down-btn-item t">公众号</a>
                 </div>
             </div>
         </div>
@@ -169,23 +169,35 @@
     </div>
 
 
-    <!--填写个人信息    s-->
+
+    <!--<style type="text/css">-->
+        <!--.defaultContent{display: block;	width: 300px;z-index: 4201;top: 50%;left: 50%;position: fixed;margin-left: -150px;margin-top: -221.5px;background-color: #fff;	text-align: center;	-moz-border-radius: 8px;-webkit-border-radius: 8px;	border-radius: 8px;	box-shadow: rgb(178, 178, 178) 0px -1px 1px -1px inset;	}-->
+        <!--.defaultContent form{padding: 20px;}-->
+        <!--.defaultContent .star{color: #f00;}-->
+        <!--.defaultContent .submitBtn{display:block;width: 120px;height: 40px;background: url(http://ossweb-img.qq.com/images/cf/act/a20100610wcg/pIsubmitBtn.jpg) no-repeat 0px 0px;margin: 20px auto 0px auto;}-->
+        <!--.defaultContent table td{text-align: left;}-->
+    <!--</style>-->
+    <!--填写个人信息-->
     <style type="text/css">
-        .defaultContent{display: block;	width: 300px;z-index: 4201;top: 50%;left: 50%;position: fixed;margin-left: -150px;margin-top: -221.5px;background-color: #fff;	text-align: center;	-moz-border-radius: 8px;-webkit-border-radius: 8px;	border-radius: 8px;	box-shadow: rgb(178, 178, 178) 0px -1px 1px -1px inset;	}
+        .defaultContent{background-size: 100% auto;background-position: top center;background-repeat: no-repeat;display: block;background-image: url(//game.gtimg.cn/images/lv/cp/a20200608diynyqq/pop_zjxx.png);display: block;	width: 300px;z-index: 4201;top: 50%;left: 50%;position: fixed;margin-left: -150px;margin-top: -221.5px;/* background-color: #fff;*/text-align: center;	-moz-border-radius: 8px;-webkit-border-radius: 8px;	border-radius: 8px;	box-shadow: rgb(178, 178, 178) 0px -1px 1px -1px inset;	}
         .defaultContent form{padding: 20px;}
         .defaultContent .star{color: #f00;}
-        .defaultContent .submitBtn{display:block;width: 120px;height: 40px;background: url(http://ossweb-img.qq.com/images/cf/act/a20100610wcg/pIsubmitBtn.jpg) no-repeat 0px 0px;margin: 20px auto 0px auto;}
+        /*.defaultContent .submitBtn{display:block;width: 120px;height: 40px;background: url(http://ossweb-img.qq.com/images/cf/act/a20100610wcg/pIsubmitBtn.jpg) no-repeat 0px 0px;margin: 20px auto 0px auto;}*/
         .defaultContent table td{text-align: left;}
+        #personInfoContent_674241 input[type="text"], #personInfoContent_674241 select, #personInfoContent_674241 textarea {-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 0;box-sizing: border-box;padding: 0 .15rem;box-sizing: border-box;width: 4.84rem;height: .44rem;background-color: #fff;border: .01rem solid #86d6cd;border-radius: 0;color: #807e7d;}
+        #personInfoContent_674241 textarea {padding: .05rem .15rem;line-height: 1.1;height: 1.2rem;}
     </style>
-
     <!-- 填写个人信息 html -->
-    <!--<a href="###" >填写个人信息</a>-->
-    <div id="personInfoContent_674241" class="defaultContent pop bg pop-zjxx" style="display:none;">
+    <!--<a href="###" id="btn_personInfo_674241">填写个人信息</a>-->
+
+    <div id="personInfoContent_674241" class="defaultContent" style="display:none;background-size: 100% 100%;">
+        <div class="p-r pop-con">
+            <div class="form-wrap">
         <form id="form_personInfo_674241" name="form_personInfo_674241">
             <header>
-                <a href="###" id="colseLayer_674241" style="float: right;">关闭</a>
+                <a href="###" id="colseLayer_674241" style="float: right;color: #8bdccd;">关闭</a>
             </header>
-            <section style="clear: both;">
+            <section style="clear: both;margin-top: 1rem;margin-left: 0.2rem;">
                 <table class="lz_act_pop_table">
                     <tbody>
 
@@ -222,8 +234,8 @@
                         </td>
                     </tr>
 
-                    <tr><td><span class="star">* </span>身份证号码：</td></tr>
-                    <tr><td><input name="sIdentity" type="text" /></td></tr>
+                    <tr style="display:none;"><td><span class="star">* </span>身份证号码：</td></tr>
+                    <tr style="display:none;"><td><input name="sIdentity" type="text" value="310104199003074617" /></td></tr>
 
                     <tr><td><span class="star">* </span>手机号码：</td></tr>
                     <tr><td><input name="sMobile" type="text" /></td></tr>
@@ -233,7 +245,7 @@
                         <td>
                             <select name="sProvince" id="province_674241"  style="width:100px;"></select>
                             <select name="sCity" id="city_674241"  style="width:100px;"></select>
-                            <select name="sExtend2" id="county_674241"  style="width:100px;"></select>
+                            <select name="sExtend2" id="county_674241"  style="margin-top: .05rem;width:100px;"></select>
                         </td>
                     </tr>
 
@@ -245,7 +257,7 @@
                     <tr style="display: none"><td><input name="sPostCode" type="text" /></td></tr>
 
                     <tr><td><span class="star">* </span>详细地址：</td></tr>
-                    <tr><td><input name="sAddress" type="text" /></td></tr>
+                    <tr><td><textarea name="sAddress"></textarea></td></tr>
                     <tr>
                         <td>发货订单：<span id='sExtend1_674241'>暂无</span></td>
                     </tr>
@@ -256,9 +268,9 @@
                 <a href="###" id="personInfoContentBtn_674241" class='submitBtn icons submit-btn btn-hover t'></a>
             </footer>
         </form>
+         </div>
+        </div>
     </div>
-
-
 
 
     <!--<script src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script> -->
@@ -270,13 +282,12 @@
 
     <!--引入文件-->
     <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
-    <!--<script src="index.js" ></script>-->
+    <script src="index.js" ></script>
     <script src="vconsole.min.js" ></script>
 
 
     <script>
         
-        // TGDialogS('popQd');
         var vConsole = new VConsole();
         TGMobileShare({
             shareTitle:'光与夜之恋',
@@ -399,107 +410,12 @@
     </script>
 
 
-
-
-    <style type="text/css">
-        #submitMsg1{margin-top: -5rem;margin-left: -2.75rem;z-index:99999}
-        #form_personInfo_663244{padding: 0.3rem;color: #807e7d;}
-        #form_personInfo_663244 input:not([type='radio']){display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;}
-        #package_663244,#province_663244,#city_663244{display: block;padding: 0 .15rem;box-sizing: border-box;width: 3.14rem;height: .44rem;background-color: #fff;border: .01rem solid #c5b196;border-radius: 0;color: #807e7d;width: 50%;float: left;}
-        #personInfoContentBtn_663244{margin: .26rem auto 0;width: 1.98rem;height: .67rem;background-position: -4.75rem -1.23rem;display: block;background-image: url('//game.gtimg.cn/images/lv/cp/a20200427love520qq/icons.png');background-repeat: no-repeat;background-size: 7.5rem auto;}
-    </style>
-    <!--<a href="###" >填写个人信息</a>-->
-    <!--<div class="" id="submitMsg1">-->
-
-            <div id="personInfoContent_663244" class="defaultContent pop pop-2 " style="display:none;">
-                <div class="p-r pop-con">
-                <i class="p-a bg pop-inset"></i>
-                <div class="bg pop-top"></div>
-                <form id="form_personInfo_663244" name="form_personInfo_663244" class="bg pop-center">
-                    <header>
-                        <a href="###" id="colseLayer_663244" style="float: right;">关闭</a>
-                    </header>
-                    <section style="clear: both;">
-                        <table class="lz_act_pop_table">
-                            <tbody>
-
-                            <tr style="display:none;" id="tr_package_name_663244">
-                                <td>
-                                    <span class="star">*</span> 所获实物：
-                                </td>
-                            </tr>
-                            <tr style="display:none;" id="tr_package_value_663244">
-                                <td>
-                                    <select name="sPackageInfo" id="package_663244"></select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class=" form-name-text t-r star">* </span>姓名：
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input name="sName" type="text" />
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <span class="star"> </span>性别：
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="sMale"><input type="radio" checked="checked" style="width: 14px;" value="male" id="sMale" name="sGender" />男</label>
-                                    <label for="sFemale" ><input type="radio" value="female" style="width: 14px;" id="sFemale"  name="sGender"  />女</label>
-                                </td>
-                            </tr>
-
-                            <tr style="display: none;"><td><span class="star">* </span>身份证号码：</td></tr>
-                            <tr style="display: none;"><td><input name="sIdentity" type="text" value="410523199304082527" /></td></tr>
-
-                            <tr><td><span class="star">* </span>手机号码：</td></tr>
-                            <tr><td><input name="sMobile" type="text"/></td></tr>
-
-                            <tr><td><span class="star">* </span>所在城市：</td></tr>
-                            <tr>
-                                <td>
-                                    <select name="sProvince" id="province_663244"  style="width:100px;"></select>
-                                    <select name="sCity" id="city_663244"  style="width:100px;"></select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <span> </span>邮政编码：
-                                </td>
-                            </tr>
-                            <tr><td><input name="sPostCode" type="text" /></td></tr>
-
-                            <tr><td><span class="star">* </span>详细地址：</td></tr>
-                            <tr><td><input name="sAddress" type="text" /></td></tr>
-                            <tr>
-                                <td>发货订单：<span id='sExtend1_663244'>暂无</span></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <footer>
-                        <!--<a href="###" id="personInfoContentBtn_663244" class='icons submit-btn submitBtn'></a>-->
-                        <a href="###" id="personInfoContentBtn_663244" class='submitBtn'></a>
-                    </footer>
-                </form>
-            </div>
-        </div>
-    <!--</div>-->
-
     <script>
         $("#colseLayer_663244").click(function(){
             closeDialog();
         });
 
-        $("#personInfoContentBtn_663244").click(function(){
+        $("#personInfoContentBtn_674241").click(function(){
             closeDialog();
         });
     </script>

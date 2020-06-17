@@ -66,7 +66,7 @@
                     <a href="./index.html"
                     onclick="PTTSendClick('btn','back-btn','再次体验')" 
                         class="icons lottery-zcty-btn btn-hover t">再次体验</a>
-                    <a href="javascript: checkAMS(674237,2);TGDialogS('popFxcg');"
+                    <a href="javascript:amsCommon.shareInvite();"
                         onclick="PTTSendClick('btn','lottery-share-btn','分享有礼')" 
                         class="icons lottery-share-btn btn-hover t">分享有礼</a>
                     <!-- <a href="javascript: TGDialogS('popQd');"
@@ -197,17 +197,20 @@
         .defaultContent .star{color: #f00;}
         /*.defaultContent .submitBtn{display:block;width: 120px;height: 40px;background: url(http://ossweb-img.qq.com/images/cf/act/a20100610wcg/pIsubmitBtn.jpg) no-repeat 0px 0px;margin: 20px auto 0px auto;}*/
         .defaultContent table td{text-align: left;}
-    </style>
+        #personInfoContent_674236 input[type="text"],#personInfoContent_674236 select{-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 0;box-sizing: border-box;padding: 0 .15rem;box-sizing: border-box;width: 4.84rem;height: .44rem;background-color: #fff;border: .01rem solid #86d6cd;border-radius: 0;color: #807e7d;}
+        #personInfoContent_674236 textarea{overflow: auto;overflow-y: scroll;-webkit-overflow-scrolling: touch;-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 0;box-sizing: border-box;padding: 0 .15rem;box-sizing: border-box;width: 4.84rem;height: .44rem;background-color: #fff;border: .01rem solid #86d6cd;border-radius: 0;color: #807e7d;display: inline-block;}
+        #personInfoContent_674236 textarea {padding: .05rem .15rem;line-height: 1.1;height: 1.2rem;}
+</style>
 
     <!-- 填写个人信息 html -->
     <!--<a href="###" id="btn_personInfo_674236">填写个人信息</a>-->
     <!--<div class="pop bg pop-zjxx" id="submitMsg1">-->
-    <div id="personInfoContent_674236" class="defaultContent" style="display:none;">
+    <div id="personInfoContent_674236" class="defaultContent" style="display:none;-webkit-overflow-scrolling: touch;">
         <div class="p-r pop-con">
             <div class="form-wrap">
         <form id="form_personInfo_674236" name="form_personInfo_674236">
             <header>
-                <a href="###" id="colseLayer_674236" style="float: right;">关闭</a>
+                <a href="###" id="colseLayer_674236" style="float: right;color: #8bdccd;">关闭</a>
             </header>
             <section style="clear: both;margin-top: 1rem;margin-left: 0.2rem;">
                 <table class="lz_act_pop_table">
@@ -246,8 +249,8 @@
                         </td>
                     </tr>
 
-                    <tr><td><span class="star">* </span>身份证号码：</td></tr>
-                    <tr><td><input name="sIdentity" value="310104199003074617" type="text" /></td></tr>
+                    <tr style="display:none"><td><span class="star">* </span>身份证号码：</td></tr>
+                    <tr style="display:none"><td><input name="sIdentity" value="310104199003074617" type="text" /></td></tr>
 
                     <tr><td><span class="star">* </span>手机号码：</td></tr>
                     <tr><td><input name="sMobile" type="text" /></td></tr>
@@ -257,7 +260,7 @@
                         <td>
                             <select name="sProvince" id="province_674236"  style="width:100px;"></select>
                             <select name="sCity" id="city_674236"  style="width:100px;"></select>
-                            <select name="sExtend2" id="county_674236"  style="width:100px;"></select>
+                            <select name="sExtend2" id="county_674236"  style="margin-top: .05rem;width:100px;"></select>
                         </td>
                     </tr>
 
@@ -269,7 +272,7 @@
                     <tr  style="display:none" ><td><input name="sPostCode" type="text" /></td></tr>
 
                     <tr><td><span class="star">* </span>详细地址：</td></tr>
-                    <tr><td><input name="sAddress" type="text" /></td></tr>
+                    <tr><td><textarea name="sAddress"></textarea></td></tr>
                     <tr>
                         <td>发货订单：<span id='sExtend1_674236'>暂无</span></td>
                     </tr>
@@ -285,7 +288,10 @@
     </div>
     <!--</div>-->
 
-
+    <!-- 引导分享 -->
+    <div class="pop full-img pop-share" id="popShare">
+        <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyqq/share_pop.png" alt="点击右上角按钮分享">
+    </div>
 
 
 
@@ -294,6 +300,7 @@
     <script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
     <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
     <script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
 
     <!--引入文件-->
@@ -302,15 +309,30 @@
     <script src="index.js"></script>
 
     <script>
-        
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
         // TGDialogS('popFxcg');
         var vConsole = new VConsole();
         TGMobileShare({
             shareTitle:'光与夜之恋',
             shareDesc:'我和光启市男神官宣了',
-            shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynyqq/share.jpg', //分享图片尺寸200*200，且填写绝对路径
-            shareLink:'https://love.qq.com/cp/a20200608diynyqq/index.html',
-            actName:'a20200608diynyqq'
+            shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynywx/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink:'https://love.qq.com/cp/a20200608diynywx/index.html',
+            actName:'a20200608diynywx'
         });
 
         //播放音乐
@@ -354,14 +376,7 @@
         // var lotteryNum = 2;
         // $(".J-lottery-num").text(lotteryNum+'/2');//更新抽奖次数
         //
-        var prizeList = [
-            'switch',
-            '故宫手账本礼盒',
-            '谢谢参与',
-            '三只松鼠大礼包',
-            '野兽派永生花音乐盒',
-            'Tiffany手链',
-        ];
+
         $('.panel-btn').on('click', function(event) {
             checkAMS(674238,3);
             // event.preventDefault();

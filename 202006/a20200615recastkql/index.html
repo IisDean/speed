@@ -42,24 +42,24 @@
     <!-- p1 首屏 -->
     <div class="p-a bg part part-1">
         <div class="p-r wrap">
-            <div class="p-a full-img logo-icon">
+            <div class="p-a full-img logo-icon fade-in">
                 <img src="./ossweb-img/logo.png" alt="logo">
             </div>
-            <div class="p-a full-img slogan-icon">
+            <div class="p-a full-img slogan-icon move-right">
                 <img src="./ossweb-img/p1_slogan.png" alt="标题">
             </div>
-            <a href="javascript: alert('敬请期待！');" class="p-a icons play-btn btn-hover t" onclick="PTTSendClick('btn','play-home-btn','视频播放-首页')">视频播放</a>
+            <a href="javascript: alert('敬请期待！');" class="p-a icons play-btn btn-hover fade-in t" onclick="PTTSendClick('btn','play-home-btn','视频播放-首页')">视频播放</a>
             <div class="p-a full-img kql-icon">
                 <img src="./ossweb-img/p1_kql.png" alt="孔雀翎">
             </div>
-            <i class="p-a icons mp-icon"></i>
+            <i class="p-a icons mp-icon move-up"></i>
             <div class="p-a btn-container">
-                <i class="icons tips-icon"></i>
-                <a href="javascript: alert('敬请期待！');" class="icons start-btn btn-hover t" onclick="PTTSendClick('btn','start-btn','重铸孔雀翎')">重铸孔雀翎</a>
+                <i class="icons tips-icon move-up"></i>
+                <a href="javascript: ;" class="icons start-btn btn-hover move-up t" onclick="PTTSendClick('btn','start-btn','重铸孔雀翎')">重铸孔雀翎</a>
             </div>
         </div>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container" style="display: none;">
         <div class="swiper-wrapper">
             <!-- p2 宝物合成 -->
             <div class="p-r swiper-slide">
@@ -77,7 +77,7 @@
                                     <img src="./ossweb-img/p2_inset.png" alt="插图">
                                 </div>
                                 <!-- 宝物碎片 -->
-                                <ul class="bw-list">
+                                <ul class="p-r bw-list">
                                     <li class="p-a bg bw-item">
                                         <div class="p-a full-img bw-img">
                                             <img src="./ossweb-img/p2_wp1.png" alt="天外陨铁">
@@ -112,8 +112,8 @@
                             </div>
                         </div>
                         <div class="flex flex-center btn-container">
-                            <a href="javascript: alert('敬请期待！');" class="icons sxbw-btn btn-hover t" onclick="PTTSendClick('btn','sxbw-btn','搜寻宝物')">搜寻宝物</a>
-                            <a href="javascript: alert('敬请期待！');" class="icons hckql-btn btn-hover t" onclick="PTTSendClick('btn','hckql-btn','合成孔雀翎')">合成孔雀翎</a>
+                            <a href="javascript: ;" class="icons sxbw-btn btn-hover t" onclick="PTTSendClick('btn','sxbw-btn','搜寻宝物')">搜寻宝物</a>
+                            <a href="javascript: ;" class="icons hckql-btn btn-hover t" onclick="PTTSendClick('btn','hckql-btn','合成孔雀翎')">合成孔雀翎</a>
                             <a href="javascript: alert('敬请期待！');" class="icons gklj-btn btn-hover t" onclick="PTTSendClick('btn','gklj-btn','刮卡领奖')">刮卡领奖</a>
                         </div>
                     </div>
@@ -154,12 +154,14 @@
                             <p class="slogan-msg-text t-c">每铸成1把孔雀翎，可刮卡1次，百分百中奖<br/>有概率抽中测试资格</p>
                         </div>
                         <!-- 刮奖 -->
-                        <div class="bg gj-container">
-
+                        <div class="p-r bg gj-container">
+                            <div class="p-a full-img gj-wrap">
+                                <!-- <img id="redux" src="./ossweb-img/p4_gj.jpg" alt="刮奖"> -->
+                            </div>
                         </div>
                         <p class="gj-msg-text t-c">累计获得刮卡次数：<span>0</span>， 剩余刮卡次数：<span>0</span></p>
                         <div class="t-r">
-                            <a href="javascript: alert('敬请期待！');" class="icons look-zjmsg-btn btn-hover" onclick="PTTSendClick('btn','look-zjmsg-btn','查看中奖信息')"></a>
+                            <a href="javascript: TGDialogS('popPrizeMsg');" class="icons look-zjmsg-btn btn-hover" onclick="PTTSendClick('btn','look-zjmsg-btn','查看中奖信息')"></a>
                         </div>
                         <!-- 视频 -->
                         <div class="p-r bg video-container">
@@ -327,7 +329,7 @@
 <div class="pop bg pop-site" id="popSite">
     <div class="pop-con">
         <h3 class="icons pop-title-site t">填写实物信息</h3>
-        <ul class="form-list">
+        <ul class="form-list" style="margin-top: .4rem;">
             <li class="form-item flex">
                 <p class="form-title t-r">收件人：</p>
                 <input type="text" class="input-wrap" />
@@ -353,24 +355,57 @@
 <div class="pop bg pop-prize-msg" id="popPrizeMsg">
     <div class="pop-con">
         <h3 class="bg pop-title-prizemsg t">中奖信息</h3>
-        <table class="prize-table">
-            <tr>
-                <td>1</td>
-                <td>2020年1月1日</td>
-                <td>iphone 11Pro</td>
-                <td><a href="javascript: alert('敬请期待！');">填写收件信息</a></td>
-            </tr>
-        </table>
+        <div class="prize-table-wrap">
+            <table class="prize-table">
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020年1月1日</td>
+                    <td>iphone 11Pro</td>
+                    <td><a href="javascript: TGDialogS('popSite');">填写收件信息</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="prize-tips-text t-c">卡券礼包查看方式：微信 > 我 > 卡包 > 微信游戏礼品卡</div>
     </div>
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
 
-<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script> 
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script>
-    TGDialogS("popPrizeMsg");
+    // TGDialogS("popSite");
 
     function TGDialogS(e) {
         // 利用milo库引入dialog组件
@@ -395,6 +430,7 @@
         }, 100);
     });
 </script>
+<script src="./ossweb-img/jquery.eraser.js"></script>
 <script src="./ossweb-img/index.js"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <!--引入文件-->

@@ -1,38 +1,100 @@
 var ctrlJs = {
     data: {
-        pageSwiper: null,// é¡µé¢Swiper
-        pageIdx: 0,//å½“å‰é¡µé¢åºå·
-        navLeft: ['12.8%', '37%', '61%', '85%'],//æ¸¸æ ‡çŠ¶æ€
+        pageSwiper: null,// Ò³ÃæSwiper
+        pageIdx: 0,//µ±Ç°Ò³ÃæÐòºÅ
+        navLeft: ['12.8%', '37%', '61%', '85%'],//ÓÎ±ê×´Ì¬
+        client: $(document.body)[0].clientWidth
     },
     methods: {
-        cutPage: function(idx){//åˆ‡æ¢é¡µé¢
+        cutPage: function(idx){//ÇÐ»»Ò³Ãæ
             ctrlJs.data.pageSwiper.slideTo(idx-1);
             ctrlJs.methods.moveCursor(idx);
         },
-        moveCursor: function(idx){//ç§»åŠ¨å¯¼èˆªæ¸¸æ ‡
+        moveCursor: function(idx){//ÒÆ¶¯µ¼º½ÓÎ±ê
             $(".nav-cursor").animate({"left": ctrlJs.data.navLeft[idx]}, 300);
+        },
+        initEraser: function(){//¹Î½±³õÊ¼»¯
+            var gjImg = new Image();
+            gjImg.src = './ossweb-img/p4_gj.jpg';
+            $(".gj-wrap").html(gjImg);
+            gjImg.onload = function(){
+                $(gjImg).eraser({
+                    size: 20, //ÉèÖÃÏðÆ¤²Á´óÐ¡
+                    completeRatio: .6, //ÉèÖÃ²Á³ýÃæ»ý±ÈÀý
+                    completeFunction: ctrlJs.methods.showResetButton   //´óÓÚ²Á³ýÃæ»ý±ÈÀý´¥·¢º¯Êý
+                });
+            }
+        },
+		showResetButton: function(){//¹Î½±½á¹û
+            alert('»ñµÃ');
+            ctrlJs.data.pageSwiper.unlockSwipes();
+        },
+        initSwiper: function(){// Ò³ÃæSwiper
+            ctrlJs.data.pageSwiper = new Swiper('.swiper-container', {
+                effect : 'fade',
+                initialSlide: 0,
+                onSlideChangeStart: function(swiper){
+                    ctrlJs.methods.moveCursor(swiper.activeIndex+1);
+                },
+                onTouchEnd: function(swiper){
+                    var dis = 70;
+                    TR = swiper.translate;
+                    if(TR > dis){
+                        swiper.setWrapperTranslate(TR);
+                        ctrlJs.methods.backHome();
+                    }
+                }
+            })
+        },
+        backHome: function(){//»Øµ½Ê×Ò³
+            $(".swiper-container .wrap").fadeOut(300);
+            setTimeout(function(){
+                $(".part-1 .wrap").show();
+                $(".part-1").show();
+            }, 600);
         }
     },
     init: function(){
         var that = this;
-        // é¡µé¢Swiper
-        that.data.pageSwiper = new Swiper('.swiper-container', {
-            effect : 'fade',
-            loop: false,
-            initialSlide: 2,
-            onSlideChangeStart: function(swiper){
-                that.methods.moveCursor(swiper.activeIndex+1);
-            }
-        });
-        // ç‚¹å‡»å¯¼èˆªæ 
+        // µã»÷µ¼º½À¸
         $(".nav-list li").on("click", function(){
             var $this = $(this),
                 idx = $this.index();
-            if(idx > 0){
-                that.methods.cutPage(idx);
-            }else {
-
-            }
+            idx > 0 ? that.methods.cutPage(idx) : that.methods.backHome();
+        });
+        // ÖØÖý¿×È¸ôá
+        $(".part-1 .start-btn").on("click", function(){
+            // ³õÊ¼»¯swiper start
+            $(".swiper-container").show();
+            that.methods.initSwiper();
+            // ³õÊ¼»¯swiper end
+            $(".part-1 .wrap").fadeOut(600);
+            $(".swiper-container .wrap").show();
+            setTimeout(function(){
+                $(".part-1").fadeOut(300);
+            }, 600);
+        });
+        // ºÏ³É¿×È¸ôá
+        $(".part-2 .hckql-btn").on("click", function(){
+            $(".part-2 .bw-wrap").addClass('active');
+            $(".part-2 .btn-container").animate({
+                "margin-top": '.5rem',
+                "opacity": 0
+            }, 600, function(){
+                
+            });
+        });
+        // ËÑÑ°±¦Îï
+        $(".sxbw-btn").on("click", function(){
+            that.methods.cutPage(2);
+        });
+        //¹Î½±
+        that.methods.initEraser();
+        var $redux = $(".gj-wrap");
+        $redux.on("touchstart", function(){
+            that.data.pageSwiper.lockSwipes();
+        }).on("touchend", function(){
+            that.data.pageSwiper.unlockSwipes();
         });
     }
 }

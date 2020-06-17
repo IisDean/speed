@@ -254,7 +254,7 @@ a {
 }
 /* p1 */
 .part-1 {
-    /* z-index: 999; */
+    z-index: 999;
     background-image: url('./p1_bg.jpg');
 }
 .logo-icon {
@@ -346,6 +346,14 @@ a {
     left: 1.1rem;
     width: 4.34rem;
     pointer-events: none;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+}
+.part-2 .bw-wrap.active .person-icon {
+    opacity: 0;
+}
+.bw-list {
+    height: 6.45rem;
 }
 .bw-item {
     width: 1.84rem;
@@ -377,6 +385,23 @@ a {
     transform: translateX(-2.6rem);
     -webkit-transform: translateX(-2.6rem);
 }
+.part-2 .bw-wrap.active .bw-list {
+    animation: bwRotate 1.4s linear forwards;
+}
+@keyframes bwRotate {
+    to {
+        transform: rotate(980deg);
+    }
+}
+.part-2 .bw-wrap.active .bw-item {
+    animation: moveCenter 1.8s ease-out forwards;
+}
+@keyframes moveCenter {
+    to {
+        transform: translate(0, 0) scale(.1);
+        opacity: 0;
+    }
+}
 .part-2 .bw-img {
     right: 0;
     bottom: .6rem;
@@ -390,17 +415,48 @@ a {
     font-size: .18rem;
     color: #ffe1a7;
 }
-.kql-icon {
-    display: none;
+.part-2 .kql-icon {
     top: -.4rem;
     left: .4rem;
     width: 6.4rem;
     height: 6.32rem;
+    opacity: 0;
+    pointer-events: none;
+}
+.part-2 .bw-wrap.active .kql-icon {
+    animation: bwCx .6s 1.6s ease forwards;
+}
+@keyframes bwCx {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .part-2 .mp-icon {
-    display: none;
     top: 4.5rem;
     left: 5rem;
+    opacity: 0;
+}
+.part-2 .bw-wrap.active .mp-icon {
+    animation: mpCx .4s 2s ease forwards;
+}
+@keyframes mpCx {
+    0% {
+        opacity: 0;
+        transform: translateX(.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .sxbw-btn,
 .hckql-btn {
@@ -465,6 +521,18 @@ a {
     height: 2.57rem;
     background-image: url('./p4_gj_bg.png');
 }
+.gj-wrap {
+    top: .4rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 3.74rem;
+    height: 1.82rem;
+}
+.gj-wrap img {
+    width: 3.74rem;
+    height: 1.82rem;
+}
 .gj-msg-text {
     margin-top: .1rem;
     font-size: .18rem;
@@ -496,7 +564,7 @@ a {
     height: .6rem;
     background-position: 0 -6.22rem;
 }
-/* å¯¼èˆª */
+/* nav */
 .nav-container {
     top: calc((100% - 11.7rem) / 2);
     left: 0;
@@ -509,7 +577,7 @@ a {
 }
 .nav-cursor {
     top: 0;
-    left: 12.8%;
+    left: 37%;
     width: .42rem;
     height: .26rem;
     background-position: -6.32rem -3.03rem;
@@ -757,14 +825,172 @@ a {
     height: .33rem;
     background-image: url('./pop_prize_title.png');
 }
+.prize-table-wrap {
+    margin-top: .1rem;
+    width: 100%;
+    height: 3.74rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
 .prize-table {
+    margin: 0 .22rem;
     text-align: center;
+}
+.prize-table,
+.prize-table a {
     font-size: .2rem;
     color: #d5caaf;
 }
+.prize-table a {
+    text-decoration: underline;
+}
 .prize-table tr td {
-    line-height: .36rem;
+    padding: .15rem 0;
 }
 .prize-table tr td:nth-child(1) {
-    width: .9rem;
+    width: .42rem;
+}
+.prize-table tr td:nth-child(2),
+.prize-table tr td:nth-child(3) {
+    width: 1.7rem;
+}
+.prize-table tr td:nth-child(4) {
+    width: 1.5rem;
+}
+.prize-tips-text {
+    border-top: .01rem solid #d5caaf;
+    line-height: .62rem;
+    font-size: .2rem;
+    color: #d5caaf;
+}
+
+/* ??¡§?¡±? */
+.part-1 .play-btn,
+.part-1 .mp-icon {
+    animation-delay: .4s !important;
+    -webkit-animation-delay: .4s !important;
+}
+.part-1 .tips-icon,
+.part-1 .start-btn {
+    animation-delay: .6s !important;
+    -webkit-animation-delay: .6s !important;
+}
+/* .part-1 .start-btn {
+    animation-delay: .8s !important;
+    -webkit-animation-delay: .8s !important;
+} */
+.part-1 .kql-icon {
+    opacity: 0;
+    animation: kqlInit .8s ease forwards;
+    -webkit-animation: kqlInit .8s ease forwards;
+}
+@keyframes kqlInit {
+    0% {
+        opacity: 0;
+        transform: translate(.5rem, -.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@-webkit-keyframes kqlInit {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(.5rem, -.5rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+.part-1 .mp-icon {
+    opacity: 0;
+    animation: moveUpLittle .8s ease forwards;
+    -webkit-animation: moveUpLittle .8s ease forwards;
+}
+@keyframes moveUpLittle {
+    0% {
+        opacity: 0;
+        transform: translate(0, .5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@-webkit-keyframes moveUpLittle {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, .5rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+.move-right {
+    opacity: 0;
+    animation: moveLeft .6s ease forwards;
+    -webkit-animation: moveLeft .6s ease forwards;
+}
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-1rem, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@-webkit-keyframes moveLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-1rem, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+.move-up {
+    opacity: 0;
+    animation: moveUp .4s ease forwards;
+    -webkit-animation: moveUp .4s ease forwards;
+}
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translate(0, 1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@-webkit-keyframes moveUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 1rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn .6s ease forwards;
+    -webkit-animation: fadeIn .6s ease forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

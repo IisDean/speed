@@ -1,12 +1,58 @@
 // 判断用户设备
 var device = 0;
+var iChannel = 0;
 var u = navigator.userAgent;
 if(u.indexOf('Android') > -1 || u.indexOf('Adr') > -1){
-    device = 2;//android终端
+    device = 1;//android终端
+
 }
 if(u.indexOf("iPhone") > -1 || u.indexOf("iOS") > -1){
-    device = 1; //ios终端
+    device = 2; //ios终端
+
 }
+
+
+
+// milo.ready(function () {
+//     need("biz.login", function (LoginManager) {
+//         if(LoginManager.isWxApp()){
+//             //如果是在微信中打开，则跳转到微信页面
+//             //如果是在微信中打开，跳转到QQ中打开页面
+//             console.log('在微信，QQ->wx');
+//             window.location.href = "https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90245428&appid=wxca6215f6c23c2e90&url=https%3A%2F%2Flove.qq.com%2Fcp%2Fa20200608diynywx%2Findex.html"; //这里放openlink
+//         }else if (LoginManager.isQQApp()) {
+//             LoginManager.checkLogin(function (userInfo) {
+//                 iChannel = 2;
+//                 console.log("已登录,登录信息：", userInfo);
+//                 // 如果已经有登录态，则由微信中跳转到QQ
+//                 // $("#userinfo").html(decodeURIComponent(userInfo.nickName));
+//                 console.log('成功登录999');
+//                 amsCommon.shareInit();//分享初始化
+//                 amsSubmit(311093,674277);  //页面初始化
+//             }, function () {
+//                 LoginManager.login(
+//                     {
+//                         s_url: "",
+//                         logo: "",
+//                         sData: {
+//                             //传pt_no_onekey:1 可以屏蔽一键登录
+//                             //pt_no_onekey:1
+//                         },
+//                         iUseQQConnect: 0,//是否使用QQ互联
+//                     }
+//                 );
+//             });
+//         }else{
+//             //如果在浏览器中打开，直接拉起QQ客户端
+//             iChannel = 1;
+//             var qqurlnew = '//love.qq.com/cp/a20200608diynyqq/index.html';
+//             var sStartQQ = location.protocol+"//imgcache.qq.com/club/themes/mobile/middle_page/index.html?url=" + window.location.protocol+ encodeURIComponent(qqurlnew);
+//             window.location.href = sStartQQ;
+//         }
+//     });
+// });
+
+
 milo.ready(function () {
     need("biz.login", function (LoginManager) {
         if(LoginManager.isWxApp()){
@@ -14,12 +60,14 @@ milo.ready(function () {
             //如果是在微信中打开，跳转到QQ中打开页面
             console.log('在微信，QQ->wx');
             window.location.href = "https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90245428&appid=wxca6215f6c23c2e90&url=https%3A%2F%2Flove.qq.com%2Fcp%2Fa20200608diynywx%2Findex.html"; //这里放openlink
-        }else {
+        }else{
             LoginManager.checkLogin(function (userInfo) {
+                iChannel = 2;
                 console.log("已登录,登录信息：", userInfo);
                 // 如果已经有登录态，则由微信中跳转到QQ
-                $("#userinfo").html(decodeURIComponent(userInfo.nickName));
+                // $("#userinfo").html(decodeURIComponent(userInfo.nickName));
                 console.log('成功登录999');
+                amsCommon.shareInit();//分享初始化
                 amsSubmit(311093,674277);  //页面初始化
             }, function () {
                 LoginManager.login(
@@ -33,12 +81,64 @@ milo.ready(function () {
                         iUseQQConnect: 0,//是否使用QQ互联
                     }
                 );
-
-
             });
         }
     });
 });
+
+
+
+var amsCommon = {
+    shareInit:function(){
+        TGMobileShare({
+            shareTitle:"光与夜之恋", //不设置或设置为空时，页面有title，则调取title
+            shareDesc:'我和光启市男神官宣了', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynyqq/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink:'https://love.qq.com/cp/a20200608diynyqq/index.html', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName:'a20200608diynyqq', //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+            onShare: {
+                WXToMessageSuccess: function () {
+                    console.log('WXToMessageSuccess');
+                    amsCommon.shareBack();
+                },
+                WXToTimelineSuccess: function () {
+                    console.log('WXToTimelineSuccess');
+                    amsCommon.shareBack();
+                },
+                QQToQQSuccess: function () {
+                    console.log('QQToQQSuccess');
+                    amsCommon.shareBack();
+                },
+                QQToQzoneSuccess: function () {
+                    console.log('QQToQzoneSuccess');
+                    amsCommon.shareBack();
+                },
+                QQToMessageSuccess: function () {
+                    console.log('QQToMessageSuccess');
+                    amsCommon.shareBack();
+                },
+                QQToTimelineSuccess: function () {
+                    console.log('QQToTimelineSuccess');
+                    amsCommon.shareBack();
+                },
+            }
+        });
+    },
+    //分享
+    shareBack: function () {
+        //回调了哦
+        checkAMS(674237,2);
+    },
+    shareInvite:function () {
+        if(iChannel == 2){
+            mqq.ui.showShareMenu();
+        }else{
+            alert(iChannel);
+            TGDialogS('popShare');
+        }
+
+    }
+};
 
 function checkAMS(id,n){
     need("biz.login",function(LoginManager){
@@ -89,10 +189,12 @@ amsCfg_674237 = {
         return 0; // 抽奖前事件，返回0表示成功
     },
     'onGetGiftFailureEvent' : function(callbackObj){// 抽奖失败事件
-        // alert(callbackObj.sMsg);
+        amsSubmit(311093,674277);  //页面初始化
+        // TGDialogS('popFxcg');
     },
     'onGetGiftSuccessEvent' : function(callbackObj){// 抽奖成功事件
         amsSubmit(311093,674277);  //页面初始化
+        // TGDialogS('popFxcg');
     }
 };
 
@@ -225,11 +327,12 @@ amsCfg_674236 = {
                     cityId : "city_"+674236,
                     areaId: "county_"+674236,
                 };
+                console.log(pcsConfig);
                 if (res.jData.sProvince && res.jData.sCity && res.jData.sExtend2) {
                     pcsConfig.initVal = [res.jData.sProvince,res.jData.sCity, res.jData.sExtend2]
                 }
                 pcs.show(pcsConfig);
-
+                console.log(pcs);
                 //发货订单:
                 if(res.jData.sExtend1){
                     g('sExtend1_674236').innerHTML=res.jData.sExtend1;
@@ -239,13 +342,29 @@ amsCfg_674236 = {
                 FormManager.setAllInputValue(res.jData, 'form_personInfo_674236');
 
                 if(typeof res.jData.arrPackageInfo != 'undefined' && res.jData.arrPackageInfo.length > 0) { //如果存在实物信息，则显示
+                    // g('tr_package_name_674236').style.display = '';
+                    // g('tr_package_value_674236').style.display = '';
+                    // for(var i=0; i<res.jData.arrPackageInfo.length; ++i) {
+                    //     var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
+                    //     var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
+                    //     g('package_674236').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                    // }
                     g('tr_package_name_674236').style.display = '';
                     g('tr_package_value_674236').style.display = '';
                     for(var i=0; i<res.jData.arrPackageInfo.length; ++i) {
                         var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
                         var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
-                        g('package_674236').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                        if(res.jData.arrPackageInfo[i].iPackageId == 1939835)
+                        {
+                            g('tr_package_name_674236').style.display = 'none';
+                            g('tr_package_value_674236').style.display = 'none';
+                        }else{
+                            g('package_674236').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                        }
+
                     }
+
+
                 }
             });
 
