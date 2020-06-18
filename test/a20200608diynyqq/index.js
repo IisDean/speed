@@ -13,46 +13,6 @@ if(u.indexOf("iPhone") > -1 || u.indexOf("iOS") > -1){
 
 
 
-// milo.ready(function () {
-//     need("biz.login", function (LoginManager) {
-//         if(LoginManager.isWxApp()){
-//             //如果是在微信中打开，则跳转到微信页面
-//             //如果是在微信中打开，跳转到QQ中打开页面
-//             console.log('在微信，QQ->wx');
-//             window.location.href = "https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90245428&appid=wxca6215f6c23c2e90&url=https%3A%2F%2Flove.qq.com%2Fcp%2Fa20200608diynywx%2Findex.html"; //这里放openlink
-//         }else if (LoginManager.isQQApp()) {
-//             LoginManager.checkLogin(function (userInfo) {
-//                 iChannel = 2;
-//                 console.log("已登录,登录信息：", userInfo);
-//                 // 如果已经有登录态，则由微信中跳转到QQ
-//                 // $("#userinfo").html(decodeURIComponent(userInfo.nickName));
-//                 console.log('成功登录999');
-//                 amsCommon.shareInit();//分享初始化
-//                 amsSubmit(311093,674277);  //页面初始化
-//             }, function () {
-//                 LoginManager.login(
-//                     {
-//                         s_url: "",
-//                         logo: "",
-//                         sData: {
-//                             //传pt_no_onekey:1 可以屏蔽一键登录
-//                             //pt_no_onekey:1
-//                         },
-//                         iUseQQConnect: 0,//是否使用QQ互联
-//                     }
-//                 );
-//             });
-//         }else{
-//             //如果在浏览器中打开，直接拉起QQ客户端
-//             iChannel = 1;
-//             var qqurlnew = '//love.qq.com/cp/a20200608diynyqq/index.html';
-//             var sStartQQ = location.protocol+"//imgcache.qq.com/club/themes/mobile/middle_page/index.html?url=" + window.location.protocol+ encodeURIComponent(qqurlnew);
-//             window.location.href = sStartQQ;
-//         }
-//     });
-// });
-
-
 milo.ready(function () {
     need("biz.login", function (LoginManager) {
         if(LoginManager.isWxApp()){
@@ -60,7 +20,7 @@ milo.ready(function () {
             //如果是在微信中打开，跳转到QQ中打开页面
             console.log('在微信，QQ->wx');
             window.location.href = "https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90245428&appid=wxca6215f6c23c2e90&url=https%3A%2F%2Flove.qq.com%2Fcp%2Fa20200608diynywx%2Findex.html"; //这里放openlink
-        }else{
+        }else if (LoginManager.isQQApp()) {
             LoginManager.checkLogin(function (userInfo) {
                 iChannel = 2;
                 console.log("已登录,登录信息：", userInfo);
@@ -82,9 +42,49 @@ milo.ready(function () {
                     }
                 );
             });
+        }else{
+            //如果在浏览器中打开，直接拉起QQ客户端
+            iChannel = 1;
+            var qqurlnew = '//love.qq.com/cp/a20200608diynyqq/index.html';
+            var sStartQQ = location.protocol+"//imgcache.qq.com/club/themes/mobile/middle_page/index.html?url=" + window.location.protocol+ encodeURIComponent(qqurlnew);
+            window.location.href = sStartQQ;
         }
     });
 });
+
+//
+// milo.ready(function () {
+//     need("biz.login", function (LoginManager) {
+//         if(LoginManager.isWxApp()){
+//             //如果是在微信中打开，则跳转到微信页面
+//             //如果是在微信中打开，跳转到QQ中打开页面
+//             console.log('在微信，QQ->wx');
+//             window.location.href = "https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90245428&appid=wxca6215f6c23c2e90&url=https%3A%2F%2Flove.qq.com%2Fcp%2Fa20200608diynywx%2Findex.html"; //这里放openlink
+//         }else{
+//             LoginManager.checkLogin(function (userInfo) {
+//                 iChannel = 2;
+//                 console.log("已登录,登录信息：", userInfo);
+//                 // 如果已经有登录态，则由微信中跳转到QQ
+//                 // $("#userinfo").html(decodeURIComponent(userInfo.nickName));
+//                 console.log('成功登录999');
+//                 amsCommon.shareInit();//分享初始化
+//                 amsSubmit(311093,674277);  //页面初始化
+//             }, function () {
+//                 LoginManager.login(
+//                     {
+//                         s_url: "",
+//                         logo: "",
+//                         sData: {
+//                             //传pt_no_onekey:1 可以屏蔽一键登录
+//                             //pt_no_onekey:1
+//                         },
+//                         iUseQQConnect: 0,//是否使用QQ互联
+//                     }
+//                 );
+//             });
+//         }
+//     });
+// });
 
 
 
@@ -293,6 +293,13 @@ amsCfg_674236 = {
                     for(var i in fillData) {
                         var _val = fillData[i];
                         switch(i) {
+
+                            case 'sPackageInfo': {
+                                var options=$("#package_674236 option:selected");
+                                if(options.text() == '谢谢参与'){alert("请获得实物后，填写个人信息"); return false;}
+                                break;
+                            }
+
                             case 'sName': {
                                 if(!_val){alert("姓名不能为空"); return false;}
                                 if(milo.getByteLength(_val) > 30){alert("姓名长度不能超过30个字节。"); return false;}
@@ -319,6 +326,8 @@ amsCfg_674236 = {
                     }
 
                     amsCfg_674236.sData = fillData;
+                    // var options=$("#package_674236 option:selected");
+                    // amsCfg_674236.sData.nGiftName = options.text();
                     amsSubmit(311093,674236);
 
                 };
@@ -354,10 +363,11 @@ amsCfg_674236 = {
                     for(var i=0; i<res.jData.arrPackageInfo.length; ++i) {
                         var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
                         var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
-                        if(res.jData.arrPackageInfo[i].iPackageId == 1939835)
+                        if(res.jData.arrPackageInfo[i].iPackageId == 1939835 )
                         {
-                            g('tr_package_name_674236').style.display = 'none';
-                            g('tr_package_value_674236').style.display = 'none';
+                            g('package_674236').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                            g('package_674236').options[i].style.display = 'none';
+
                         }else{
                             g('package_674236').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
                         }

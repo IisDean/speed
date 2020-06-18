@@ -25,7 +25,6 @@ var ctrlJs = {
                 imgList = ctrlJs.data.loadImgList;
                 $loadText = $(".J-pro-text"),
                 $progress = $(".J-pro-wrap");
-            console.log(imgList);
             imgList.forEach(function (ev, index) {
                 var img = new Image();
                 img.src = ev;
@@ -204,4 +203,4 @@ var ctrlJs = {
         });
     }
 }
-ctrlJs.init();/* #t6Hl8#0C5D73CBD8D410A8E21872991A373DC2 */
+ctrlJs.init();/* #t6Hl8#F4813F7FDA5ABE85EC225AEA3998E19D */

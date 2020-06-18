@@ -28,12 +28,13 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-    <meta itemprop="name" content="天涯明月刀" />
-    <meta itemprop="description" content="仗剑天涯铸神兵" />
-    <meta itemprop="image" content="https:./ossweb-img/share.jpg" />
+    <meta itemprop="name" content="天下第一暗器即将面世！" />
+    <meta itemprop="description" content="重铸天下第一暗器<孔雀翎>，即可百分百领取奖励" />
+    <meta itemprop="image" content="https:./ossweb-img/share_bw.jpg" />
     <title>仗剑天涯铸神兵-天涯明月刀官方网站-腾讯游戏</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/15 -->
     <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="./ossweb-img/common.css" rel="stylesheet" />
     <link href="./ossweb-img/index.css" rel="stylesheet" />
 </head>
 
@@ -48,7 +49,7 @@
             <div class="p-a full-img slogan-icon move-right">
                 <img src="./ossweb-img/p1_slogan.png" alt="标题">
             </div>
-            <a href="javascript: alert('敬请期待！');" class="p-a icons play-btn btn-hover fade-in t" onclick="PTTSendClick('btn','play-home-btn','视频播放-首页')">视频播放</a>
+            <a href="javascript: ctrlJs.methods.playVideo('w0935q89x61');" class="p-a icons play-btn btn-hover fade-in t" onclick="PTTSendClick('btn','play-home-btn','视频播放-首页')">视频播放</a>
             <div class="p-a full-img kql-icon">
                 <img src="./ossweb-img/p1_kql.png" alt="孔雀翎">
             </div>
@@ -78,17 +79,18 @@
                                 </div>
                                 <!-- 宝物碎片 -->
                                 <ul class="p-r bw-list">
-                                    <li class="p-a bg bw-item">
+                                    <!-- 添加filter类名为置灰 -->
+                                    <li class="p-a bg bw-item filter">
                                         <div class="p-a full-img bw-img">
                                             <img src="./ossweb-img/p2_wp1.png" alt="天外陨铁">
                                         </div>
                                         <p class="bw-name-text t-c">天外陨铁<br/>×<span>1</span>件</p>
                                     </li>
-                                    <li class="p-a bg bw-item filter">
+                                    <li class="p-a bg bw-item">
                                         <div class="p-a full-img bw-img">
                                             <img src="./ossweb-img/p2_wp2.png" alt="《铸神残篇》">
                                         </div>
-                                        <p class="bw-name-text t-c">《铸神残篇》<br/>×<span>0</span>件</p>
+                                        <p class="bw-name-text t-c">《铸神残篇》<br/>×<span>1</span>件</p>
                                     </li>
                                     <li class="p-a bg bw-item">
                                         <div class="p-a full-img bw-img">
@@ -108,13 +110,13 @@
                                     <img src="./ossweb-img/p2_kql.png" alt="成品孔雀翎">
                                 </div>
                                 <i class="p-a icons mp-icon"></i>
-                                <p class="p-a hccg-tips-text t-c"></p>
+                                <p class="p-a hccg-tips-text t-c">成功合成</p>
                             </div>
                         </div>
                         <div class="flex flex-center btn-container">
                             <a href="javascript: ;" class="icons sxbw-btn btn-hover t" onclick="PTTSendClick('btn','sxbw-btn','搜寻宝物')">搜寻宝物</a>
                             <a href="javascript: ;" class="icons hckql-btn btn-hover t" onclick="PTTSendClick('btn','hckql-btn','合成孔雀翎')">合成孔雀翎</a>
-                            <a href="javascript: alert('敬请期待！');" class="icons gklj-btn btn-hover t" onclick="PTTSendClick('btn','gklj-btn','刮卡领奖')">刮卡领奖</a>
+                            <a href="javascript: ;" class="icons gklj-btn btn-hover t" onclick="PTTSendClick('btn','gklj-btn','刮卡领奖')">刮卡领奖</a>
                         </div>
                     </div>
                 </div>
@@ -129,17 +131,17 @@
                             </div>
                             <p class="slogan-msg-text t-c">点击！并完成任务，即可搜寻到宝物</p>
                         </div>
-                        <ul class="p-r task-list">
-                            <li class="p-a full-img task-item filter">
+                        <div class="p-r task-list">
+                            <a href="javascript: TGDialogS('popTaskShare');" onclick="PTTSendClick('btn','share-task-btn','分享任务')" class="p-a full-img mask-fd">
                                 <img src="./ossweb-img/p3_task1.png" alt="分享任务">
-                            </li>
-                            <li class="p-a full-img task-item">
+                            </a>
+                            <a href="javascript: TGDialogS('popTaskYq');" onclick="PTTSendClick('btn','yaoq-task-btn','邀请任务')" class="p-a full-img mask-fd">
                                 <img src="./ossweb-img/p3_task2.png" alt="邀请任务">
-                            </li>
-                            <li class="p-a full-img task-item">
+                            </a>
+                            <a href="javascript: TGDialogS('popTaskYy');" onclick="PTTSendClick('btn','yuyue-task-btn','预约任务')" class="p-a full-img mask-fd filter">
                                 <img src="./ossweb-img/p3_task3.png" alt="预约任务">
-                            </li>
-                        </ul>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,6 +160,7 @@
                             <div class="p-a full-img gj-wrap">
                                 <!-- <img id="redux" src="./ossweb-img/p4_gj.jpg" alt="刮奖"> -->
                             </div>
+                            <div class="p-a cxgj-btn t-c">再刮一次</div>
                         </div>
                         <p class="gj-msg-text t-c">累计获得刮卡次数：<span>0</span>， 剩余刮卡次数：<span>0</span></p>
                         <div class="t-r">
@@ -165,9 +168,9 @@
                         </div>
                         <!-- 视频 -->
                         <div class="p-r bg video-container">
-                            <a href="javascript: alert('敬请期待！');" class="p-a icons play-btn btn-hover t" onclick="PTTSendClick('btn','play-p4-btn','视频播放-孔雀翎重现')">视频播放</a>
+                            <a href="javascript: ctrlJs.methods.playVideo('w0935q89x61');" class="p-a icons play-btn btn-hover t" onclick="PTTSendClick('btn','play-p4-btn','视频播放-孔雀翎重现')">视频播放</a>
                         </div>
-                        <a href="javascript: alert('敬请期待！');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
+                        <a href="javascript: TGDialogS('popRule');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +181,7 @@
         <i class="p-a icons nav-cursor"></i>
         <ul class="flex flex-center nav-list">
             <li class="icons nav-item t">首页</li>
-            <li class="icons nav-item t">宝物合成</li>
+            <li class="icons nav-item active t">宝物合成</li>
             <li class="icons nav-item t">奇袭血衣楼</li>
             <li class="icons nav-item t">孔雀翎重现</li>
         </ul>
@@ -209,8 +212,8 @@
             </li>
         </ul>
         <i class="fenge-line"></i>
-        <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','order-btn','立即预约')" class="icons yuyue-btn btn-hover t">预约</a>
-        <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
+        <a href="javascript: TGDialogS('popShare');" onclick="PTTSendClick('btn','ljfx-btn','立即分享')" class="icons ljfx-btn btn-hover t">立即分享</a>
+        <a href="javascript: TGDialogS('popTips');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
     </div>
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
@@ -249,15 +252,15 @@
             <li class="friends-item">
                 <img src="./ossweb-img/avatar_default.png" alt="头像">
             </li>
-            <li class="friends-item">
+            <li class="friends-item" onclick="TGDialogS('popShare')">
                 <img src="./ossweb-img/avatar_add.png" alt="头像">
             </li>
-            <li class="friends-item">
+            <li class="friends-item" onclick="TGDialogS('popShare')">
                 <img src="./ossweb-img/avatar_add.png" alt="头像">
             </li>
         </ul>
-        <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','order-btn','立即预约')" class="icons yuyue-btn btn-hover t">预约</a>
-        <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
+        <a href="javascript: TGDialogS('popShare');" onclick="PTTSendClick('btn','yaoq-btn','立即邀请')" class="icons yaoq-btn btn-hover t">立即邀请</a>
+        <a href="javascript: TGDialogS('popTips');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
         <p class="pop-msg-text t-c">已成功邀请X位，可领取X次，剩余X次奖励可领取</p>
     </div>
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
@@ -288,7 +291,7 @@
         </ul>
         <i class="fenge-line"></i>
         <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','order-btn','立即预约')" class="icons yuyue-btn btn-hover t">预约</a>
-        <a href="javascript: alert('敬请期待！');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
+        <a href="javascript: TGDialogS('popTips');" onclick="PTTSendClick('btn','fx-prize-btn','领取奖励-分享任务')" class="icons get-prize-btn btn-hover t">领取奖励</a>
     </div>
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
@@ -298,7 +301,7 @@
     <div class="pop-con">
         <h3 class="icons pop-title1-icon t">提示</h3>
         <p class="pop-msg-text t-c">恭喜获得天外陨铁×1</p>
-        <a href="javascript: alert('敬请期待！');" class="icons confirm-btn btn-hover t">确定</a>
+        <a href="javascript: closeDialog();" class="icons confirm-btn btn-hover t">确定</a>
     </div>
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
@@ -400,12 +403,48 @@
     <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
 
+<!-- 引导分享 -->
+<div class="pop full-img pop-share" id="popShare">
+    <img src="./ossweb-img/pop_share.png" alt="点击右上角按钮分享给好友">
+</div>
+
+<!-- 弹窗 活动规则 -->
+<div class="pop bg pop-rule" id="popRule">
+    <div class="pop-con">
+        <h3 class="icons pop-title-rule t">活动规则</h3>
+        <div class="prize-table-wrap">
+            <ul class="rule-list">
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+                <li>1、请填写有效的账号信息，将在下测自动开启 </li>
+            </ul>
+        </div>
+    </div>
+    <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
+</div>
+
+<!-- 视频弹窗 -->
+<div class="pop pop-video" id="popVideo">
+    <div class="pop-con">
+        <div id="videoWrap" style="width: 7.5rem;height: 4.3rem;"></div>
+    </div>
+    <a href="javascript: ctrlJs.methods.pauseVideo();" class="p-a icons close-btn btn-hover t">关闭</a>
+</div>
+
 <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script> 
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script>
-    // TGDialogS("popSite");
+    // TGDialogS('popShare');
 
     function TGDialogS(e) {
         // 利用milo库引入dialog组件
@@ -425,29 +464,101 @@
     }
     //点击弹窗空白处关闭
     $("body").on("touchstart", "#_overlay_", function(){
+        if(!$("#popVideo").is(":hidden"))ctrlJs.methods.pauseVideo();
         setTimeout(function(){
             closeDialog();
         }, 100);
     });
 </script>
 <script src="./ossweb-img/jquery.eraser.js"></script>
-<script src="./ossweb-img/index.js"></script>
+<script src="./ossweb-img/main.js"></script>
+<script>
+    ctrlJs.init(function(that){
+        //配置分享参数
+        that.methods.initShare(1);
+        // 立即分享-任务
+        $(".ljfx-btn").on("click", function(){
+            that.methods.initShare(1);
+        });
+        // 立即邀请-任务
+        $(".yaoq-btn").on("click", function(){
+            that.methods.initShare(2);
+        });
+        // 点击导航栏
+        $(".nav-list li").on("click", function(){
+            var $this = $(this),
+                idx = $this.index();
+            idx > 0 ? that.methods.cutPage(idx) : that.methods.backHome();
+            if( idx == 3 ){
+                //刮奖初始化
+                that.methods.initEraser();
+            }
+        });
+        // 重铸孔雀翎
+        $(".part-1 .start-btn").on("click", function(){
+            // 初始化swiper start
+            $(".swiper-container").show();
+            that.methods.initSwiper();
+            // 初始化swiper end
+            $(".part-1 .wrap").fadeOut(600);
+            $(".swiper-container .wrap").show();
+            setTimeout(function(){
+                $(".part-1").fadeOut(300);
+            }, 600);
+        });
+        // 合成孔雀翎
+        $(".part-2 .hckql-btn").on("click", function(){
+            $(".part-2 .bw-wrap").addClass('active');
+            var $btn = $(".part-2 .btn-container");
+            $btn.animate({
+                "margin-top": '.5rem',
+                "opacity": 0
+            }, 800, function(){
+                $btn.addClass("hc");
+                $(".hccg-tips-text").delay(1000).fadeIn();
+                $btn.delay(1500).animate({
+                    "margin-top": 0,
+                    "opacity": 1
+                }, 400);
+            });
+        });
+        // 搜寻宝物
+        $(".sxbw-btn").on("click", function(){
+            that.methods.cutPage(2);
+        });
+        // 成功合成，去刮奖领卡
+        $(".gklj-btn").on("click", function(){
+            that.methods.cutPage(3);
+            setTimeout(function (){
+                $(".part-2 .bw-wrap").removeClass('active');
+                $(".part-2 .btn-container").removeClass("hc");
+            }, 1000);
+            //刮奖
+            that.methods.initEraser();
+        });
+        // 刮奖事件在main.js中
+        var $redux = $(".gj-wrap");
+        $redux.on("touchstart", function(){
+            that.data.pageSwiper.lockSwipes();
+        }).on("touchend", function(){
+            that.data.pageSwiper.unlockSwipes();
+        });
+        //再刮一次
+        var gjNum = 1;
+        $(".cxgj-btn").on("click", function(){
+            console.log('123');
+            //刮奖初始化
+            that.methods.initEraser();
+        });
+    });
+</script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <!--引入文件-->
 <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
 <script>
-    TGMobileShare({
-        shareTitle:'光与夜之恋',
-        shareDesc:'我和光启市男神官宣了',
-        shareImgUrl:'https:./ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
-        shareLink:'https://love.qq.com/cp/a20200608diynyqq/index.html',
-        actName:'a20200608diynyqq'
-    });
-</script>
-<script>
     //此段代码不能放到外链JXXXXS中，
     var setSite = { //设置网站属性    
-        siteType: "a20200608diynyqq", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        siteType: "a20200615recastkql", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
         pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
         pageName: "移动端首页", //必填项:页面中文名
         osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置

@@ -30,6 +30,13 @@ milo.ready(function () {
                         // alert('获取用户信息失败');
                         console.log('获取用户信息失败',err);
                     });
+                    TGMobileShare({
+                        shareTitle:'光与夜之恋',
+                        shareDesc:'我和光启市男神官宣了',
+                        shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynywx/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+                        shareLink:'https://love.qq.com/cp/a20200608diynywx/index.html',
+                        actName:'a20200608diynywx'
+                    });
                     amsSubmit(311093,674277); //页面初始化
                 }
 
@@ -243,6 +250,11 @@ amsCfg_674241 = {
                     for(var i in fillData) {
                         var _val = fillData[i];
                         switch(i) {
+                            case 'sPackageInfo': {
+                                var options=$("#package_674241 option:selected");
+                                if(options.text() == '谢谢参与'){alert("请获得实物后，填写个人信息"); return false;}
+                                break;
+                            }
                             case 'sName': {
                                 if(!_val){alert("姓名不能为空"); return false;}
                                 if(milo.getByteLength(_val) > 30){alert("姓名长度不能超过30个字节。"); return false;}
@@ -297,6 +309,21 @@ amsCfg_674241 = {
                         var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
                         g('package_674241').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
                     }
+
+                    g('tr_package_name_674241').style.display = '';
+                    g('tr_package_value_674241').style.display = '';
+                    for(var i=0; i<res.jData.arrPackageInfo.length; ++i) {
+                        var iPackageId = res.jData.arrPackageInfo[i].iPackageId;
+                        var sPackageName = res.jData.arrPackageInfo[i].sPackageName;
+                        if(res.jData.arrPackageInfo[i].iPackageId == 1939683){
+                            g('package_674241').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                            g('package_674241').options[i].style.display = 'none';
+
+                        }else{
+                            g('package_674241').options[i] = new Option(sPackageName, iPackageId + '|' + sPackageName);
+                        }
+                    }
+
                 }
             });
 
