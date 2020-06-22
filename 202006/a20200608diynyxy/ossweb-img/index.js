@@ -2,13 +2,13 @@ var ctrlJs = {
     data: {
         //图片预加载列表
         loadImgList: [
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/loading.gif',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_1_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_1_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_2_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_2_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_3_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_3_2.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/loading.gif',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_1_1.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_1_2.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_2_1.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_2_2.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_3_1.jpg',
+            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_3_2.jpg',
         ],
         isImgLoading: false,//是否加载完成
         pageIdx: 1,//当前页面，默认首页
@@ -99,14 +99,14 @@ var ctrlJs = {
             });
             gzA > gzB ? resultData.gz = 1 : resultData.gz = 2;
             ctrlJs.methods.nextPageRead(5);
-            var resultSrc = '//game.gtimg.cn/images/lv/cp/a20200608diynyqq/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
+            var resultSrc = '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
             $(".part-6").css("background-image", "url("+ resultSrc +")");
             $(".stage").addClass('jd-'+resultData.jd);
             setTimeout(function(){
                 TGDialogS('popZzcg');
                 setTimeout(function(){
                     closeDialog();
-                    $("#popZzcg").hide();
+                    $("#popZzcg").remove();
                     ctrlJs.methods.nextPageRead(6);
                 }, 500);
             }, 3000);

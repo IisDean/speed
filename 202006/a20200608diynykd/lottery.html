@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="Keywords" content="love" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+    <meta itemprop="name" content="我和光启市男神官宣了" />
+    <meta itemprop="description" content="DIY你的饮品男孩 抽iPhone缤纷好礼" />
+    <meta itemprop="image" content="https://game.gtimg.cn/images/lv/cp/a20200608diynykd/share.jpg" />
+    <title>DIY我的饮品男孩</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/08 -->
+    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynykd/common.css" rel="stylesheet" />
+    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynykd/lottery.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="p-r stage">
+        <audio id="musicBgm" loop>
+            <source src="//game.gtimg.cn/images/lv/cp/a20200608diynykd/music.mp3" type="audio/mpeg" />
+        </audio>
+        <!-- 首屏 -->
+        <div class="p-r part part-lottery">
+            <!-- 音乐 -->
+            <a class="p-a icons music-btn lottery off t" style="z-index: 999;">音乐</a>
+            <div class="p-r bg wrap">
+                <div class="bg tips-msg-text t-c"><p>预约游戏可获得1次抽奖机会 <br/>每日分享可额外获得1次抽奖机会</p></div>
+                <div class="lottery-num-wrap t-c">
+                    <p>剩余抽奖次数 <span class="J-lottery-num"><span id="ticket">0</span>/<span id="total">2</span></span></p>
+                </div>
+                <div class="p-r flex flex-between btn-lottery-container">
+                    <a href="javascript:;"
+                        onclick="PTTSendClick('btn','edit-msg-btn','填写中奖信息')"
+                        class="icons edit-msg-btn btn-hover t" id="btn_personInfo_674236">填写中奖信息</a>
+                    <a href="javascript: TGDialogS('popRule');" 
+                        onclick="PTTSendClick('btn','lottery-rule-btn','抽奖活动规则')" 
+                        class="icons lottery-rule-btn btn-hover t">抽奖活动规则</a>
+                </div>
+                <!-- 抽奖 -->
+                <div class="p-r panel" id="lotterycontent">
+                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynykd/lottery.png">
+                </div>
+                <div class="p-r flex flex-center btn-lty2-container">
+                    <a href="./index.html"
+                    onclick="PTTSendClick('btn','back-btn','再次体验')" 
+                        class="icons lottery-zcty-btn btn-hover t">再次体验</a>
+                    <a href="javascript:amsCommon.shareInvite();"
+                        onclick="PTTSendClick('btn','lottery-share-btn','分享有礼')" 
+                        class="icons lottery-share-btn btn-hover t">分享有礼</a>
+                    <!-- <a href="javascript: TGDialogS('popQd');"
+                        onclick="PTTSendClick('btn','lottery-qd-btn','签到有礼')"
+                        class="icons lottery-qd-btn btn-hover t">签到有礼</a> -->
+                    <!-- <a href="javascript: checkAMS(663245,2);"
+                    onclick="PTTSendClick('btn','lottery-qd-btn','每日签到')"
+                    class="icons lottery-qd-btn btn-hover t">每日签到</a> -->
+                </div>
+                <div class="flex bg down-btn-list qq-icons">
+                    <a href="//youxi.vip.qq.com/m/act/0f0a7528ca_love_465547.html?_wv=1&_wwv=4" class="flex-1 down-btn-item t">官方Q群</a>
+                    <a href="//buluo.qq.com/mobile/barindex.html?bid=420118&source=index&scene=rencent&_nav_bgclr=ffffff&_nav_titleclr=ffffff&_nav_txtclr=ffffff&_nav_anim=true&_nav_alpha=0&_wvSb=0&_wwv=1024&from=dongtai&_wv=536871939&webview=1" class="flex-1 down-btn-item t">兴趣部落</a>
+                    <a href="//m.gamecenter.qq.com/directout/detail/1106900827?appid=1106900827&_wv=1&asyncMode=3" class="flex-1 down-btn-item t">详情页</a>
+                </div>
+                <!-- <div class="flex bg down-btn-list wx-icons">
+                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/group/index.html?appid=wxca6215f6c23c2e90&group=1#wechat_redirect" class="flex-1 down-btn-item t">游戏圈</a>
+                    <a href="//game.weixin.qq.com/cgi-bin/h5/static/community/club_index.html?noticeid=&appid=wxca6215f6c23c2e90#wechat_redirect" class="flex-1 down-btn-item t"></a>
+                    <a href="//w.url.cn/s/ABnZsHh#wechat_redirect" class="flex-1 down-btn-item t">公众号</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- 活动规则 微信 -->
+    <!-- <div class="pop bg pop-rule" id="popRule">
+        <div class="pop-con">
+            <ul class="rule-list">
+                <li class="rule-item">
+                    <span class="num-text t-c">1</span>活动时间：即日起至7月20日
+                </li>
+                <li class="rule-item">
+                    <span class="num-text t-c">2</span>点击<span class="blue-text">【立即开始】</span>会自动预约《光与夜之恋》手游，我们会把预约礼包卡券发送到您的微信账号，在游戏不删档上线后可兑换使用。
+                </li>
+                <li class="rule-item">
+                    <span class="num-text t-c">3</span>成功预约游戏或<span class="blue-text">完成每日签到</span>即可获得抽奖机会，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品。
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 活动规则 qq -->
+    <div class="pop bg pop-rule" id="popRule">
+        <div class="pop-con">
+            <ul class="rule-list">
+                <li class="rule-item">
+                    <span class="num-text t-c">1</span>活动时间：即日起至7月20日
+                </li>
+                <li class="rule-item">
+                    <span class="num-text t-c">2</span>点击<span class="blue-text">【立即开始】</span>会自动预约《光与夜之恋》手游，我们会把预约礼包卡券发送到您的QQ账号，在游戏不删档上线后可兑换使用。
+                </li>
+                <li class="rule-item">
+                    <span class="num-text t-c">3</span>成功预约游戏或<span class="blue-text">完成每日分享</span>即可获得抽奖机会，请抽中实物奖励的玩家完善个人信息，我们将尽快为您发放奖品。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- 没有抽奖次数了 -->
+    <div class="pop bg pop-tips" id="popMycs">
+        <div class="pop-con">
+            <p class="pop-tips-text t-c">没有抽奖次数了哦~</p>
+            <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+        </div>
+    </div>
+
+    <!-- 分享成功 -->
+    <div class="pop bg pop-tips" id="popFxcg">
+        <div class="pop-con">
+            <p class="pop-tips-text t-c">分享成功~</p>
+            <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+        </div>
+    </div>
+
+    <!-- 谢谢参与 -->
+    <div class="pop bg pop-xxcn" id="popXxcy">
+        <div class="pop-con">
+            <p class="t">谢谢参与</p>
+        </div>
+    </div>
+    
+    <!-- 抽奖奖品 -->
+    <div class="pop bg pop-zj" id="popZj">
+        <div class="pop-con">
+            <p class="lottery-name-text J-zj-wrap t-c"></p>
+            <p onclick="TGDialogS('submitMsg');" class="lottery-tips-text t-c">请填写中奖信息<br/>我们将尽快为您发奖</p>
+        </div>
+    </div>
+
+    <!-- 签到成功 -->
+    <div class="pop bg pop-qd" id="popQd">
+        <div class="pop-con">
+            <p class="qd-msg-text t-c">获得一次抽奖机机会！</p>
+        </div>
+    </div>
+
+    <!-- 提交个人信息 -->
+    <!--<div class="pop bg pop-zjxx" id="submitMsg">-->
+        <!--<div class="p-r pop-con">-->
+            <!--&lt;!&ndash; 提交信息表单容器 &ndash;&gt;-->
+            <!--<div class="form-wrap">-->
+
+            <!--</div>-->
+            <!--<a href="javascript: ;"-->
+                <!--onclick="PTTSendClick('btn','submitMsg','提交中奖信息')" -->
+                <!--class="icons submit-btn btn-hover t">提交中奖信息</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!-- 提交个人信息 -->
+    <div class="pop bg pop-zjxx" id="submitMsg">
+        <div class="p-r pop-con">
+            <!-- 提交信息表单容器 -->
+            <div class="form-wrap">
+
+            </div>
+            <a href="javascript: ;"
+               onclick="PTTSendClick('btn','submitMsg','提交中奖信息')"
+               class="icons submit-btn btn-hover t">提交中奖信息</a>
+        </div>
+    </div>
+
+
+    <!--填写个人信息-->
+    <style type="text/css">
+        .defaultContent{background-size: 100% auto;background-position: top center;background-repeat: no-repeat;display: block;background-image: url(//game.gtimg.cn/images/lv/cp/a20200608diynykd/pop_zjxx.png);display: block;	width: 300px;z-index: 4201;top: 50%;left: 50%;position: fixed;margin-left: -150px;margin-top: -221.5px;/* background-color: #fff;*/text-align: center;	-moz-border-radius: 8px;-webkit-border-radius: 8px;	border-radius: 8px;	box-shadow: rgb(178, 178, 178) 0px -1px 1px -1px inset;	}
+        .defaultContent form{padding: 20px;}
+        .defaultContent .star{color: #f00;}
+        /*.defaultContent .submitBtn{display:block;width: 120px;height: 40px;background: url(http://ossweb-img.qq.com/images/cf/act/a20100610wcg/pIsubmitBtn.jpg) no-repeat 0px 0px;margin: 20px auto 0px auto;}*/
+        .defaultContent table td{text-align: left;}
+        #personInfoContent_674236 input[type="text"],#personInfoContent_674236 select{-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 0;box-sizing: border-box;padding: 0 .15rem;box-sizing: border-box;width: 3.84rem;height: .44rem;background-color: #fff;border: .01rem solid #86d6cd;border-radius: 0;color: #807e7d;}
+        #personInfoContent_674236 textarea{overflow: auto;overflow-y: scroll;-webkit-overflow-scrolling: touch;-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 0;box-sizing: border-box;padding: 0 .15rem;box-sizing: border-box;width: 3.84rem;height: .44rem;background-color: #fff;border: .01rem solid #86d6cd;border-radius: 0;color: #807e7d;display: inline-block;}
+        #personInfoContent_674236 textarea {padding: .05rem .15rem;line-height: 1.1;height: 1.2rem;}
+</style>
+
+    <!-- 填写个人信息 html -->
+    <!--<a href="###" id="btn_personInfo_674236">填写个人信息</a>-->
+    <!--<div class="pop bg pop-zjxx" id="submitMsg1">-->
+    <div id="personInfoContent_674236" class="defaultContent" style="display:none;-webkit-overflow-scrolling: touch;">
+        <div class="p-r pop-con">
+            <div class="form-wrap">
+        <form id="form_personInfo_674236" name="form_personInfo_674236">
+            <header>
+                <a href="###" id="colseLayer_674236" style="float: right;color: #8bdccd;">关闭</a>
+            </header>
+            <section style="clear: both;margin-top: 1rem;margin-left: 0.2rem;">
+                <table class="lz_act_pop_table">
+                    <tbody>
+
+                    <tr style="display:none;" id="tr_package_name_674236">
+                        <td>
+                            <span class="star">*</span> 所获实物：
+                        </td>
+                    </tr>
+                    <tr style="display:none;" id="tr_package_value_674236">
+                        <td>
+                            <select name="sPackageInfo" id="package_674236"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="star">* </span>姓名：
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="sName" type="text" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="star"> </span>性别：
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sMale"><input type="radio" checked="checked" style="width: 14px;" value="male" id="sMale" name="sGender" />男</label>
+                            <label for="sFemale" ><input type="radio" value="female" style="width: 14px;" id="sFemale"  name="sGender"  />女</label>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none"><td><span class="star">* </span>身份证号码：</td></tr>
+                    <tr style="display:none"><td><input name="sIdentity" value="310104199003074617" type="text" /></td></tr>
+
+                    <tr><td><span class="star">* </span>手机号码：</td></tr>
+                    <tr><td><input name="sMobile" type="text" /></td></tr>
+
+                    <tr><td><span class="star">* </span>所在城市：</td></tr>
+                    <tr>
+                        <td>
+                            <select name="sProvince" id="province_674236"  style="width:100px;"></select>
+                            <select name="sCity" id="city_674236"  style="width:100px;"></select>
+                            <select name="sExtend2" id="county_674236"  style="margin-top: .05rem;width:100px;"></select>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none" >
+                        <td>
+                            <span> </span>邮政编码：
+                        </td>
+                    </tr>
+                    <tr  style="display:none" ><td><input name="sPostCode" type="text" /></td></tr>
+
+                    <tr><td><span class="star">* </span>详细地址：</td></tr>
+                    <tr><td><textarea name="sAddress"></textarea></td></tr>
+                    <tr>
+                        <td>发货订单：<span id='sExtend1_674236'>暂无</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <footer>
+                <a href="###" id="personInfoContentBtn_674236" class='submitBtn icons submit-btn btn-hover t'></a>
+            </footer>
+        </form>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+
+    <!-- 引导分享 -->
+    <div class="pop full-img pop-share" id="popShare">
+        <img src="//game.gtimg.cn/images/lv/cp/a20200608diynykd/share_pop.png" alt="点击右上角按钮分享">
+    </div>
+
+
+
+    <!--<script src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script> -->
+    <!--<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>-->
+    <script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+    <script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
+
+    <!--引入文件-->
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <!--<script src="vconsole.min.js" ></script>-->
+    <script src="index.js"></script>
+
+    <script>
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+        // TGDialogS('popFxcg');
+        // var vConsole = new VConsole();
+        TGMobileShare({
+            shareTitle:'我和光启市男神官宣了',
+            shareDesc:'DIY你的饮品男孩 抽iPhone缤纷好礼',
+            shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynykd/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink:'https://love.qq.com/cp/a20200608diynyqq/index.html',
+            actName:'a20200608diynyqq'
+        });
+
+        //播放音乐
+        var music = document.getElementById('musicBgm');
+        var musicStatus = sessionStorage.getItem("musicTwitch");
+        //音乐开关
+        var switchMusic = $(".music-btn");
+        if( musicStatus == 1 ){
+            switchMusic.removeClass("off");
+            music.play();
+            $(window).one('touchstart', function () {
+                music.play();
+            });
+            //微信下兼容处理
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                music.play();
+            }, false);
+        }
+
+        switchMusic.on("click", function () {
+            if (switchMusic.hasClass('off')) {
+                music.play();
+                switchMusic.removeClass("off");
+                sessionStorage.setItem("musicTwitch", 1);
+            } else {
+                music.pause();
+                switchMusic.addClass("off");
+                sessionStorage.setItem("musicTwitch", 0);
+            }
+        });
+
+        // 转盘初始化
+        // 第一个参数是奖品的个数
+        // 第二个是用来旋转的圆盘（指针不动）
+        var panel = new PanelLotery({
+            length: 6,
+            // duration: 100, //动画的时间，默认5秒，可不填
+            el: '#lotterycontent'
+        });
+
+        // var lotteryNum = 2;
+        // $(".J-lottery-num").text(lotteryNum+'/2');//更新抽奖次数
+        //
+
+        $('.panel-btn').on('click', function(event) {
+            checkAMS(674238,3);
+            // event.preventDefault();
+            // if(panel.playing) return;
+            // // 这里是演示随机转到奖品n
+            // // 初始的指针右侧开始
+            // // 顺时针方向开始算
+            // // 第一个奖品是n=0 switch n=1 故宫手账本礼盒, n=2 谢谢参与, n=3 三只松鼠大礼包, n=4 野兽派永生花音乐盒, n=5 Tiffany手链
+            // if(lotteryNum<1){
+            //     TGDialogS('popMycs'); //抽奖次数不足
+            //     return false;
+            // }
+            // lotteryNum--;
+            // $(".J-lottery-num").text(lotteryNum+'/2');//更新抽奖次数
+            // var n = Math.floor(Math.random()*8);
+            // var n = 3;
+            // panel.playto(n, function(){
+            //     if( n == 2){//谢谢参与
+            //         TGDialogS('popXxcy');
+            //     }else {
+            //         $(".J-zj-wrap").text(prizeList[n]+' x 1');
+            //         TGDialogS('popZj');
+            //     }
+            //
+            // });
+        });
+
+        //修复 IOS12，微信 6.7.4+ 键盘不回弹的问题
+        $('body').on('blur',"input,select,textarea",function(){
+            if(!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+                setTimeout(() => {
+                    const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+                }, 100);
+            }
+        });
+
+        //点击弹窗空白处关闭
+        $("body").on("touchstart", "#_overlay_", function(){
+            setTimeout(function(){
+                closeDialog();
+            }, 100);
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
+    </script>
+
+    <script>
+        $("#colseLayer_663244").click(function(){
+            closeDialog();
+        });
+
+        $("#personInfoContentBtn_663244").click(function(){
+            closeDialog();
+        });
+    </script>
+
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200608diynyqq", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "page2", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "抽奖页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+
+
+</html><!-- #t6Hl8#29E4183DCE1BB104FFBFBCFB185689A4 -->
