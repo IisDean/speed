@@ -1,0 +1,176 @@
+.music-btn {
+    top: 1rem;
+}
+.part-lottery {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/lottery_bg.jpg');
+}
+.logo-icon {
+    margin-left: .33rem;
+    width: 1.68rem;
+    height: .62rem;
+}
+.back-btn {
+    top: .11rem;
+    right: .3rem;
+    width: 1.88rem;
+    height: .57rem;
+    background-position: -3.25rem -2.16rem;
+}
+.lottery-tips-text {
+    margin-top: .06rem;
+    line-height: .3rem;
+    font-size: .24rem;
+    color: #f0f0f0;
+}
+.lottery-num-wrap {
+    margin: 0.08rem auto 0;
+    width: 2.7rem;
+    height: .47rem;
+    border-radius: .06rem;
+    border: .01rem solid #707070;
+}
+.lottery-num-wrap p {
+    line-height: .45rem;
+    font-size: .24rem;
+    color: #707070;
+}
+.btn-lottery-container {
+    z-index: 99;
+    margin: .12rem .6rem 0;
+}
+.edit-msg-btn,
+.lottery-rule-btn {
+    height: .45rem;
+}
+.edit-msg-btn {
+    width: 1.87rem;
+    background-position: -3.49rem -.84rem;
+}
+.lottery-rule-btn {
+    width: 1.37rem;
+    background-position: -5.41rem -.84rem;
+}
+
+.tips-msg-text {
+    margin: 1.32rem auto 0;
+    width: 5.76rem;
+    height: auto;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p2_tips_bg.png');
+    background-position: top center;
+    overflow: hidden;
+}
+.tips-msg-text p {
+    margin-top: -.05rem;
+    line-height: .36rem;
+    font-size: .26rem;
+    color: #707070;
+}
+.panel {
+    margin: -0.4rem auto 0;
+    width: 6.95rem;
+    height: 6.95rem;
+}
+.panel .panel-face {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/lottery.png');
+    background-size: cover;
+    width: 6.95rem;
+    height: 6.95rem;
+}
+.panel .panel-btn {
+    position: absolute;
+    z-index: 999;
+    top: 2.62rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1.43rem;
+    height: 1.54rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/lottery_btn.png');
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.panel .panel-btn:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+.btn-lty2-container {
+    z-index: 99;
+    margin: .1rem auto 0;
+}
+.lottery-zcty-btn,
+.lottery-qd-btn,
+.lottery-share-btn {
+    width: 2.6rem;
+    height: .66rem;
+}
+.lottery-zcty-btn {
+    background-position: 0 -2.41rem;
+}
+.lottery-share-btn {
+    margin-left: .35rem;
+    background-position: 0 -3.12rem;
+}
+.lottery-qd-btn {
+    margin-left: .35rem;
+    background-position: -2.65rem -2.41rem;
+}
+.down-btn-list {
+    margin: .3rem auto 0;
+    width: 5rem;
+    height: .93rem;
+}
+.down-btn-list.wx-icons {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/wx_icons.png');
+}
+.down-btn-list.qq-icons {
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/qq_icons.png');
+}
+.down-btn-item {
+    height: 100%;
+}
+/* 弹窗 */
+.pop-xxcn {
+    width: 6.34rem;
+    height: 3.94rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/pop_xxcy.png');
+}
+.pop-zj {
+    width: 6.34rem;
+    height: 3.94rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/pop_lottery.png');
+}
+.lottery-name-text {
+    margin-top: 1.88rem;
+    font-size: .4rem;
+    color: #989797;
+}
+.lottery-tips-text {
+    margin-top: .22rem;
+    line-height: .38rem;
+    font-size: .26rem;
+    color: #8bdccd;
+}
+.pop-qd {
+    width: 6.34rem;
+    height: 3.94rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/pop_qd.png');
+}
+.qd-msg-text {
+    margin-top: 2.3rem;
+    font-size: .36rem;
+    color: #989797;
+}
+.pop-zjxx {
+    padding: 1.6rem .6rem 0;
+    box-sizing: border-box;
+    width: 6.34rem;
+    height: 10.15rem;
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyxy/pop_zjxx.png');
+}
+.submit-btn {
+    margin: .3rem auto 0;
+    width: 2.6rem;
+    height: .66rem;
+    background-position: -2.65rem -3.12rem;
+}/* #t6Hl8#69021F003B8FF36C4A048ACE7AB71C68 */

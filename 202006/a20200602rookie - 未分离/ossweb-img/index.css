@@ -61,6 +61,7 @@ td,th,ul,ol,li {
     min-width: 1000px;
     position: relative;
     z-index: 100;
+    color: #fff;
 }
 .top-l .logo {
     width: 155px;
@@ -203,7 +204,6 @@ body {
 body {
     padding-top: 42px;
     background: #0e0e0e;
-    color: #fff;
     font-size: 16px;
 }
 .head-a a:hover,
@@ -880,4 +880,4 @@ body {
     width: 254px;
     height: 59px;
     background-position: -161px -515px;
-}
+}/* #t6Hl8#9BD7225CCA0987E2D327385804C0098D */

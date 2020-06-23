@@ -2,13 +2,13 @@ var ctrlJs = {
     data: {
         //图片预加载列表
         loadImgList: [
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/loading.gif',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_1_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_1_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_2_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_2_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_3_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_3_2.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/loading.gif',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_1_1.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_1_2.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_2_1.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_2_2.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_3_1.jpg',
+            '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_3_2.jpg',
         ],
         isImgLoading: false,//是否加载完成
         pageIdx: 1,//当前页面，默认首页
@@ -69,7 +69,7 @@ var ctrlJs = {
         prevPage: function(){
             var idx = ctrlJs.data.pageIdx;
             ctrlJs.data.pageIdx--;
-            $(".part-" + idx).removeClass("part-show");
+            $(".part-" + idx).removeClass("part-show").css("display", "none");
         },
         //生成结果页
         createResult: function(){
@@ -99,7 +99,7 @@ var ctrlJs = {
             });
             gzA > gzB ? resultData.gz = 1 : resultData.gz = 2;
             ctrlJs.methods.nextPageRead(5);
-            var resultSrc = '//game.gtimg.cn/images/lv/cp/a20200608diynyxy/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
+            var resultSrc = '//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
             $(".part-6").css("background-image", "url("+ resultSrc +")");
             $(".stage").addClass('jd-'+resultData.jd);
             setTimeout(function(){
@@ -119,6 +119,9 @@ var ctrlJs = {
         
         // 立即开始
         $(".part-1 .btn-start").on("click", function(){
+            // if(is_app){
+            //     that.methods.nextPageRead(2);
+            // }
             that.methods.nextPageRead(2);
         });
 

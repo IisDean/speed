@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="gbk">
-    <meta name="Keywords" content="love" />
+    <meta name="Keywords" content="love"/>
     <meta content="telephone=no" name="format-detection">
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -12,11 +12,13 @@
         (function (win, doc) {
             if (!win.addEventListener) return;
             var html = document.documentElement;
+
             function setFont() {
                 var html = document.documentElement;
                 var k = 750;
                 html.style.fontSize = html.clientWidth / k * 100 + "px";
             }
+
             setFont();
             setTimeout(function () {
                 setFont();
@@ -25,44 +27,79 @@
             win.addEventListener('resize', setFont, false);
             win.addEventListener('load', setFont, false);
         })(window, document);
+        var is_app = 0,
+                userAgent1 = navigator.userAgent;
+        if (userAgent1.toLowerCase().indexOf('tgclub') != -1) {
+            is_app = 1;
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) { // ios
+                document.addEventListener('TgclubReady', function () {
+                    Tgclub.showFunctionButton();
+                }, false);
+            } else {
+                if ('undefined' != typeof (Tgclub)) { // 安卓
+                    Tgclub.showFunctionButton();
+                }
+            }
+        } else {
+            is_app = 0;
+//            document.write("<script src='//ossweb-img.qq.com/images/tgclub/web2017/mtopbar/pub_top_bar.js'><\/script>");
+        }
     </script>
-    <meta itemprop="name" content="我和光启市男神官宣了" />
-    <meta itemprop="description" content="DIY你的饮品男孩 抽iPhone缤纷好礼" />
-    <meta itemprop="image" content="https://game.gtimg.cn/images/lv/cp/a20200608diynyxy/share.jpg" />
-    <title>DIY我的饮品男孩</title>
+    <meta itemprop="name" content="我和光启市男神官宣了"/>
+    <meta itemprop="description" content="DIY你的饮品男孩 抽iPhone缤纷好礼"/>
+    <meta itemprop="image" content="https://game.gtimg.cn/images/tgclub/act/a20200608diynyxy/share.jpg"/>
+    <title>DIY你的夏日男友</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/08 -->
-    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/common.css" rel="stylesheet" />
-    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/index.css" rel="stylesheet" />
+    <link href="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/common.css" rel="stylesheet"/>
+    <link href="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/index.css" rel="stylesheet"/>
 </head>
 
 <body>
 <div class="p-r stage">
     <!-- 音乐 -->
     <audio id="musicBgm" loop>
-        <source src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/music.mp3" type="audio/mpeg" />
+        <source src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/music.mp3" type="audio/mpeg"/>
     </audio>
     <!-- 音乐 -->
     <a class="p-a icons music-btn lottery off t" style="z-index: 999;">音乐</a>
     <!-- 水印 -->
     <!-- <div class="p-a bg water-mark-qq"></div> -->
     <!-- p1 首屏 -->
+
+    <div style="display: none">
+        <!--登录前状态 Start-->
+        <p id="unlogin" class="logined" style="display:none;">
+            <a href="javascript:void(0);" id="wxloginBtn" ontouchend="PTTSendClick('btn','login','【微信】');"
+               style="display:none;">【微信登录】</a>
+            <a href="javascript:void(0);" id="ptLoginBtn" ontouchend="PTTSendClick('btn','btn4','【QQ登录】');"
+               style="display:none;">【QQ登录】</a>
+        </p>
+        <!--登录前状态 End-->
+        <!--登录后状态 Start-->
+        <p id="logined" class="login" style="display: none">
+            <span id="userinfo"></span>
+            <a href="javascript:void(0);" id="ptLogoutBtn" style="display: none">【注销】</a>
+        </p>
+    </div>
     <div class="p-a part part-1">
         <div class="p-r wrap">
             <div class="p-a full-img logo-icon xy">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/logo_xy.png" alt="logo">
+                <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/logo_xy.png" alt="logo">
             </div>
             <div class="p-a full-img wdj-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/wdj.png" alt="温度计">
+                <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/wdj.png" alt="温度计">
             </div>
             <div class="text-wrap1 t-c">
                 <p class="guide-text">光启市夏日传说：</p>
+
                 <p class="guide-text" style="margin-top: .04rem;">当你在夏至日亲手配上一份沁心饮品<br/>融入真挚的心意与甜美的爱</p>
             </div>
             <div class="text-wrap2 t-c">
                 <p class="guide-text">会有心恋所向之人踏星光而至<br/>与你相会</p>
             </div>
             <div class="btn-container">
-                <a href="javascript:checkAMS(674235,1);" class="icons btn-start btn-hover t" onclick="PTTSendClick('btn','start-btn','立即开始')">立即开始</a>
+                <a href="javascript:doQuery(676865);" class="icons btn-start btn-hover t"
+                   onclick="PTTSendClick('btn','start-btn','立即开始')">立即开始</a>
                 <!-- <p class="guide-text2 t-c">参加活动马上抽switch噢~</p> -->
                 <!-- <p class="guide-text2 t-c">参加活动马上抽iPhone噢~</p> -->
             </div>
@@ -74,7 +111,7 @@
     <div class="p-a part part-2 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p2_title.png" alt="标题">
+                <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p2_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="select-list flex">
@@ -89,7 +126,7 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p2_select_img.png" alt="饮料">
+                    <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p2_select_img.png" alt="饮料">
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>沉静的爱，倾慕与浪漫<br/>优雅的心，和君子般的风度</p></div>
@@ -102,7 +139,7 @@
     <div class="p-a part part-3 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p3_title.png" alt="标题">
+                <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p3_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="p-r select-list flex">
@@ -117,7 +154,7 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p3_select_img.png" alt="饮料">
+                    <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p3_select_img.png" alt="饮料">
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>后院的秋千装着午后的阳光<br/>像填满糖果的糖果罐一样满满当当</p></div>
@@ -131,7 +168,7 @@
     <div class="p-a part part-4 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p4_title.png" alt="标题">
+                <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p4_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="p-r select-list flex">
@@ -146,7 +183,7 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/p4_select_img.png" alt="饮料">
+                    <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/p4_select_img.png" alt="饮料">
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>每一个街角都氤氲着甜蜜的美好</p></div>
@@ -163,8 +200,10 @@
     <div class="p-a part part-6 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="btn-container flex flex-center">
-                <a href="javascript: TGDialogS('popShare');" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','ljfx-btn','立即分享')">立即分享</a>
-                <a href="./index.html" style="margin-left: 0;" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','cxcs-btn','重新测试')">重新测试</a>
+                <a href="javascript:app_share_data();" class="icons btn-fb btn-hover t"
+                   onclick="PTTSendClick('btn','ljfx-btn','立即分享')">立即分享</a>
+                <a href="./index.html" style="margin-left: 0;" class="btn-border btn-cycj1 btn-hover t-c"
+                   onclick="PTTSendClick('btn','cxcs-btn','重新测试')">重新测试</a>
             </div>
         </div>
     </div>
@@ -209,7 +248,7 @@
 <div class="pop bg pop-tips" id="popTips">
     <div class="pop-con">
         <p class="pop-tips-text t-c"></p>
-        <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+        <a href="javascript: closeDialog();" class="icons confirm-btn btn-hover t">确定</a>
     </div>
 </div>
 <!-- 制作成功 -->
@@ -218,13 +257,13 @@
 </div>
 <!-- 引导分享 -->
 <div class="pop full-img pop-share" id="popShare">
-    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/share_pop.png" alt="点击右上角按钮分享">
+    <img src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/share_pop.png" alt="点击右上角按钮分享">
 </div>
 <!-- 分享成功 -->
 <div class="pop bg pop-tips" id="popFxcg">
     <div class="pop-con">
         <p class="pop-tips-text t-c">分享成功~</p>
-        <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
+        <a href="javascript: closeDialog();" class="icons confirm-btn btn-hover t">确定</a>
     </div>
 </div>
 
@@ -233,13 +272,13 @@
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
 <script>
-    
+
     //播放音乐
     var music = document.getElementById('musicBgm');
     var musicStatus = sessionStorage.getItem("musicTwitch");
     //音乐开关
     var switchMusic = $(".music-btn");
-    if( musicStatus == 1 ){
+    if (musicStatus == 1) {
         switchMusic.removeClass("off");
         music.play();
         $(window).one('touchstart', function () {
@@ -262,7 +301,7 @@
             sessionStorage.setItem("musicTwitch", 0);
         }
     });
-    
+
     function TGDialogS(e) {
         // 利用milo库引入dialog组件
         need("biz.dialog", function (Dialog) {
@@ -281,8 +320,8 @@
     }
 
     //点击弹窗空白处关闭
-    $("body").on("touchstart", "#_overlay_", function(){
-        setTimeout(function(){
+    $("body").on("touchstart", "#_overlay_", function () {
+        setTimeout(function () {
             closeDialog();
         }, 100);
     });
@@ -290,30 +329,32 @@
     var isPage = false;
     window.addEventListener('pageshow', function () {
         if (isPage) {
-　　　　　　window.location.reload(); 
-　　　　　}
+            window.location.reload();
+        }
     });
-    window.addEventListener('pagehide', function () { 
-        isPage =true;
+    window.addEventListener('pagehide', function () {
+        isPage = true;
     });
 
 </script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyxy/index.js"></script>
+
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <!--引入文件-->
 <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
-<!--<script src="vconsole.min.js" ></script>-->
+<script type="text/javascript" src="//game.gtimg.cn/images/tgclub/act/a20200608diynyxy/index.js"></script>
+<!-- <script src="vconsole.min.js" ></script> -->
 <!-- <script src="index.js"></script> -->
+<script src="index.js" charset="gbk"></script>
 <script>
     // var vConsole = new VConsole();
 
-    TGMobileShare({
-        shareTitle:'我和光启市男神官宣了',
-        shareDesc:'DIY你的饮品男孩 抽iPhone缤纷好礼',
-        shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynyxy/share.jpg', //分享图片尺寸200*200，且填写绝对路径
-        shareLink:'https://love.qq.com/cp/a20200608diynyxy/index.html',
-        actName:'a20200608diynyxy'
-    });
+    //    TGMobileShare({
+    //        shareTitle: '我和光启市男神官宣了',
+    //        shareDesc: 'DIY你的饮品男孩 抽iPhone缤纷好礼',
+    //        shareImgUrl: 'https://game.gtimg.cn/images/tgclub/act/a20200608diynyxy/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+    //        shareLink: 'https://love.qq.com/cp/a20200608diynyxy/index.html',
+    //        actName: 'a20200608diynyxy'
+    //    });
 
 </script>
 
