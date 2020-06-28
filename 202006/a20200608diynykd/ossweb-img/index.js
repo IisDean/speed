@@ -69,7 +69,7 @@ var ctrlJs = {
         prevPage: function(){
             var idx = ctrlJs.data.pageIdx;
             ctrlJs.data.pageIdx--;
-            $(".part-" + idx).removeClass("part-show");
+            $(".part-" + idx).removeClass("part-show").css("display", "none");
         },
         //生成结果页
         createResult: function(){

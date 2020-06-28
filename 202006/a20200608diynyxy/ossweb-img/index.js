@@ -119,10 +119,9 @@ var ctrlJs = {
         
         // 立即开始
         $(".part-1 .btn-start").on("click", function(){
-            // if(is_app){
-            //     that.methods.nextPageRead(2);
-            // }
-            that.methods.nextPageRead(2);
+            if(is_app){
+                that.methods.nextPageRead(2);
+            }
         });
 
         // 选取一种基底

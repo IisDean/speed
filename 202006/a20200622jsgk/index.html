@@ -39,31 +39,31 @@
 
 <body>
     <div class="p-r stage">
-        <div class="p-a bg part part-1 part-init" style="display: none;">
+        <div class="p-a bg part part-1 part-init part-show">
             <div class="wrap">
                 <div class="p-r form-container">
-                    <input type="text" class="input-wrap t-c" placeholder="请输入姓名" />
+                    <input type="text" class="input-wrap t-c" id="userName" placeholder="请输入姓名" value="1" />
                     <div class="flex flex-center sex-list">
                         <label for="sexBoy">
-                            <input type="radio" hidden id="sexBoy" name="sex" />
+                            <input type="radio" hidden id="sexBoy" name="sex" checked value="1" />
                             <div class="radio-icon"><i></i></div>
                             男
                         </label>
                         <label for="sexGirl" style="margin-left: .2rem;">
-                            <input type="radio" hidden id="sexGirl" name="sex" />
+                            <input type="radio" hidden id="sexGirl" name="sex" value="2" />
                             <div class="radio-icon"><i></i></div>
                             女
                         </label>
                     </div>
                 </div>
-                <a href="javascript: alert('敬请期待！');" class="icons btn-start btn-hover t">核对准考证</a>
+                <a href="javascript: ;" class="icons btn-start btn-hover t">核对准考证</a>
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
                 <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
             </div>
         </div>
-        <div class="p-a bg part part-2">
+        <div class="p-a bg part part-2 part-init" style="display: none;">
             <div class="p-r wrap">
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
@@ -73,40 +73,40 @@
                 </div>
                 <!-- 头像 -->
                 <div class="full-img avatar-wrap">
-                    <img src="./assets/images/avatar_boy.png" alt="头像">
+                    <img class="J-sex-avatar" src="./assets/images/avatar_boy.png" alt="头像">
                 </div>
                 <!-- 印章 -->
                 <div class="p-a full-img zhang-icon">
                     <img src="./assets/images/zhang.png" alt="印章">
                 </div>
                 <p class="ks-msg-text t-c">准考证号：<span>JXSJ20200715</span></p>
-                <p class="ks-msg-text t-c">姓名：<span style="margin-right: .16rem;">输入姓名显示</span>性别：<span>男</span></p>
-                <a href="javascript: alert('敬请期待！');" class="icons btn-answer btn-hover t">开始答题</a>
+                <p class="ks-msg-text t-c">姓名：<span style="margin-right: .16rem;" class="J-user-name">输入姓名显示</span>性别：<span class="J-sex-text">男</span></p>
+                <a href="javascript: ;" class="icons btn-answer btn-hover t">开始答题</a>
                 <ul class="rule-list">
                     <li>1.考卷共计10道题，每道题10分，总分100分；</li>
                     <li>2.7月7日-7月21日期间内，成绩≥80分即可获得价值1000元的老江湖认证礼包；</li>
                     <li>3.奖励将以激活码形式发放，每个角色限使用一次；</li>
                     <li>4.成绩不足80分可选择重考，奖励单个微信号只发放一次。</li>
                 </ul>
-                <div class="full-img code-icon">
-                    <img src="./assets/images/code.png" alt="二维码">
+                <div class="full-img code-icon" id="qrcode">
+                    <!-- <img src="./assets/images/code.png" alt="二维码"> -->
                 </div>
                 <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
             </div>
         </div>
-        <div class="p-a bg part part-3">
+        <div class="p-a bg part part-3 part-init" style="display: none;">
             <div class="p-r wrap">
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
                 <ul class="answer-list">
-                    <li>
+                    <!-- <li>
                         <p class="answer-title-test">一、网通青梅雅筑的少帅丨风景线曾在见面会现场以跨服宋金347连斩傲视群雄，当时他使用的职业是？</p>
                         <a href="javascript: ;" class="p-r answer-option active"><i class="icons"></i>[ A ] 袖箭唐门</a>
                         <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ B ] 陷阱唐门</a>
                         <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ C ] 针古墓</a>
                         <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ D ] 剑古墓</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="flex flex-center btn-container">
                     <a href="javascript: alert('敬请期待！');" class="icons btn-prev btn-hover t">上一题</a>
@@ -115,8 +115,64 @@
                 <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
             </div>
         </div>
-        <div class="p-a bg part part-4">
-            <div class="wrap"></div>
+        <div class="p-a bg part part-4 part-init" style="display: none;">
+            <div class="p-r wrap" style="z-index: 1;">
+                <div class="full-img logo-icon">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                <div class="full-img title-icon">
+                    <img src="./assets/images/p4_title.png" alt="标题">
+                </div>
+                <p class="ks-msg-text">准考证号：<span>JXSJ20200715</span></p>
+                <p class="ks-msg-text">姓名：<span class="J-user-name">输入姓名显示</span></p>
+                <p class="ks-msg-text">性别：<span class="J-sex-text">男</span></p>
+                <div class="p-r bg fs-container">
+                    <div class="p-a fs-wrap t-c">100</div>
+                </div>
+                <div class="flex inset-container">
+                    <div class="bg code-wrap">
+                        <img src="./assets/images/code.png" alt="二维码">
+                    </div>
+                    <div class="full-img inset-wrap">
+                        <img src="./assets/images/result_inset_1.png" alt="插图">
+                    </div>
+                </div>
+                <div class="flex flex-center btn-container">
+                    <a href="javascript: alert('敬请期待！');" class="icons btn-wyck btn-hover t">我要重考</a>
+                    <a href="javascript: alert('敬请期待！');" class="icons btn-lqjl btn-hover t">领取奖励</a>
+                </div>
+                <div class="full-img sava-tips-icon">
+                    <img src="./assets/images/p4_sava_tips.png" alt="长按保存">
+                </div>
+                <i class="p-a bg zhang-icon"></i>
+                <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
+                <img class="poster-img" src="" alt="">
+            </div>
+            <!-- 生成海报 -->
+            <div class="p-a bg poster-container" id="poster">
+                <div class="wrap">
+                    <div class="full-img logo-icon">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="full-img title-icon">
+                        <img src="./assets/images/p4_title.png" alt="标题">
+                    </div>
+                    <p class="ks-msg-text">准考证号：<span>JXSJ20200715</span></p>
+                    <p class="ks-msg-text">姓名：<span class="J-user-name">输入姓名显示</span></p>
+                    <p class="ks-msg-text">性别：<span class="J-sex-text">男</span></p>
+                    <div class="p-r bg fs-container">
+                        <div class="p-a fs-wrap t-c">100</div>
+                    </div>
+                    <div class="full-img inset-wrap">
+                        <img src="./assets/images/result_inset_1.png" alt="插图">
+                    </div>
+                    <div class="bg code-wrap">
+                        <img src="./assets/images/code.png" alt="二维码">
+                    </div>
+                    <i class="p-a bg zhang-icon"></i>
+                    <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -126,7 +182,22 @@
             <div class="bg login-title-icon"></div>
             <div class="xsj_register_dom_nine"></div>
         </div>
-        <a href="javascript: $.lay.close();" class="p-a bg close-btn2 t">关闭</a>
+        <a href="javascript: $.lay.close();" class="p-a bg close-btn btn-hover t">关闭</a>
+    </div>
+
+    <!-- 获得券码 -->
+    <div class="bg pop pop-ticket" id="popTicket">
+        <div class="pop-con">
+            <div class="bg ticket-wrap t-c">JSLSYYSHVIPFQC8G</div>
+            <div class="t-c">
+                <a href="javascript: ;" class="btn-copy">【点击复制】</a>
+            </div>
+            <div class="full-img ticket-icon">
+                <img src="./assets/images/ticket_tips.png" alt="提示">
+            </div>
+            <a href="javascript: alert('敬请期待！');" class="icons btn-qxf btn-hover t">抱团闯新服</a>
+        </div>
+        <a href="javascript: $.lay.close();" class="p-a icons close-btn btn-hover t">关闭</a>
     </div>
 
 <script src="//zhcdn01.xoyo.com/xassets/lib/jquery/1.7.2/jquery.js"></script>
@@ -145,15 +216,16 @@
 </script>
 <script src="//zhcdn01.xoyo.com/xassets/com/pf/slideloadpage/dist/dropload.js"></script>
 <script src="./assets/scripts/vconsole.min.js" ></script>
+<script src="./assets/scripts/dom2img.min.js"></script>
+<script src="./assets/scripts/qrcode.js"></script>
 <script src="./assets/scripts/wv.umd.js"></script>
 <script src="./assets/scripts/pop.js"></script>
 <script src="./assets/scripts/main.js"></script>
 <script>
     $(function () {
         g.init(function(that){
-        
+            // $.lay.open($("#popTicket"));
         });
-    
     })
 </script>
 </body>

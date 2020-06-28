@@ -51,6 +51,7 @@
     width: 2.92rem;
 }
 .btn-clickme {
+    z-index: 999;
     bottom: .7rem;
     left: 4.58rem;
     width: 1.01rem;
@@ -72,7 +73,7 @@
     margin: .2rem auto 0;
     width: 1.78rem;
 }
-.zhang-icon {
+.part-2 .zhang-icon {
     top: 3.22rem;
     left: 4.04rem;
     width: 1.64rem;
@@ -123,6 +124,9 @@
 .answer-list {
     margin: 0.6rem 1.1rem 0 1.6rem;
 }
+.answer-list li {
+    display: none;
+}
 .answer-title-test {
     line-height: .5rem;
     font-weight: bold;
@@ -163,4 +167,163 @@
 }
 .btn-next {
     background-position: 0 -2.01rem;
+}
+/* p4 */
+.part-4,
+.poster-container {
+    background-image: url('../images/p4_bg.jpg');
+}
+.poster-container {
+    top: -100rem;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 16.5rem;
+}
+.part-4 .logo-icon {
+    margin-top: 0.8rem;
+}
+.part-4 .title-icon {
+    margin: 0 auto;
+    width: 3.79rem;
+}
+.part-4 .ks-msg-text {
+    margin-top: 0.24rem;
+    margin-left: 1.3rem;
+}
+.fs-container {
+    margin: .4rem auto 0;
+    width: 4.92rem;
+    height: 1.2rem;
+    background-image: url('../images/p4_fs.png');
+    background-size: 4.9rem 1.18rem;
+}
+.fs-wrap {
+    top: .6rem;
+    left: 2.48rem;
+    width: 2.42rem;
+    font-weight: bold;
+    line-height: .6rem;
+    font-size: .24rem;
+    color: #6d231f;
+}
+.inset-container {
+    margin-top: 0.38rem;
+}
+.part-4 .btn-clickme {
+    bottom: .4rem;
+    left: 4.84rem;
+}
+.part-4 .code-wrap {
+    margin-left: 1.28rem;
+    padding: .08rem;
+    box-sizing: border-box;
+    width: 1.41rem;
+    height: 1.41rem;
+    background-image: url('../images/p4_code_bg.png');
+}
+.poster-container .code-wrap {
+    margin: .3rem auto 0;
+}
+.part-4 .code-wrap img {
+    display: block;
+    padding: .02rem;
+    box-sizing: border-box;
+    width: 1.26rem;
+    background-color: #fff;
+}
+.inset-wrap {
+    margin-left: .4rem;
+    width: 3.44rem;
+}
+.poster-container .inset-wrap {
+    margin-top: .28rem;
+    margin-left: 2.5rem;
+}
+.part-4 .btn-container {
+    margin-top: .36rem;
+}
+.btn-wyck,
+.btn-lqjl {
+    position: relative;
+    z-index: 999;
+    margin: 0 .14rem;
+    width: 1.8rem;
+    height: .55rem;
+}
+.btn-wyck {
+    background-position: 0 -2.68rem;
+}
+.btn-lqjl {
+    background-position: 0 -3.28rem;
+}
+.sava-tips-icon {
+    margin: .26rem auto 0;
+    width: 3.85rem;
+}
+.part-4 .zhang-icon {
+    top: 4.04rem;
+    left: 4.78rem;
+    width: 1.64rem;
+    height: 1.64rem;
+    background-image: url('../images/zhang.png');
+}
+/* pop */
+.pop-ticket {
+    width: 7.08rem;
+    height: 5.22rem;
+    background-image: url('../images/pop_ticket.png');
+}
+.pop-ticket .pop-con {
+    padding: 1.86rem .24rem 0 2.68rem;
+    box-sizing: border-box;
+}
+.ticket-wrap {
+    margin: 0 auto;
+    width: 3.52rem;
+    height: .54rem;
+    line-height: .54rem;
+    background-image: url('../images/ticket_bg.png');
+    font-weight: bold;
+    font-size: .32rem;
+    color: #fff;
+}
+.btn-copy {
+    display: inline-block;
+    margin: .2rem auto 0;
+    line-height: 1;
+    font-weight: bold;
+    font-size: .32rem;
+    color: #851f1c;
+    text-decoration: none;
+}
+.ticket-icon {
+    margin: .24rem auto 0;
+    width: 4.14rem;
+}
+.btn-qxf {
+    margin: .24rem auto 0;
+    width: 2.57rem;
+    height: .62rem;
+    background-position: -2.12rem -1.34rem;
+}
+.close-btn {
+    top: 0.7rem;
+    right: 0.26rem;
+    width: .57rem;
+    height: .52rem;
+    background-position: -2.42rem -.5rem;
+}
+.poster-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.dom2img-result {
+    /* position: relative; */
+    /* z-index: 1; */
+    opacity: 0;
 }
