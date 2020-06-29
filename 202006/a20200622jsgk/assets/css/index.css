@@ -104,7 +104,16 @@
 }
 .part-2 .code-icon {
     margin: .2rem auto 0;
+    padding: .07rem;
+    box-sizing: border-box;
     width: 1.17rem;
+    background-image: url('../images/p4_code_bg.png');
+}
+.part-2 .code-icon img {
+    padding: .02rem;
+    box-sizing: border-box;
+    width: 1.04rem;
+    background-color: #fff;
 }
 .part-2 .btn-clickme {
     bottom: .4rem;
@@ -135,15 +144,17 @@
 }
 .answer-option {
     display: block;
-    margin-top: .56rem;
-    line-height: 1;
+    margin-top: .16rem;
+    line-height: .62rem;
     font-size: .22rem;
     color: #1b0f01;
-    text-decoration: none
+    text-decoration: none;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
 }
 .answer-option i  {
     position: absolute;
-    top: -.02rem;
+    top: 0.16rem;
     left: .06rem;
     width: .3rem;
     height: .29rem;
@@ -157,7 +168,8 @@
     margin-top: .8rem;
 }
 .btn-prev,
-.btn-next {
+.btn-next,
+.btn-submit-result {
     margin: 0 .12rem;
     width: 2.07rem;
     height: .62rem;
@@ -168,39 +180,57 @@
 .btn-next {
     background-position: 0 -2.01rem;
 }
+.btn-submit-result {
+    display: none;
+    background-position: -2.12rem -2.01rem;
+}
 /* p4 */
-.part-4,
-.poster-container {
+.part-4 {
     background-image: url('../images/p4_bg.jpg');
 }
 .poster-container {
     top: -100rem;
-    /* top: 0; */
+    /* top: -2rem; */
     left: 0;
-    width: 100%;
+    z-index: 99;
+    width: 7.5rem;
     height: 16.5rem;
+    overflow: hidden;
+}
+.poster-wrap {
+    width: 7.49rem;
+    height: 16.49rem;
+    background-image: url('../images/p4_bg.jpg');
+    pointer-events: none;
+    overflow: hidden;
 }
 .part-4 .logo-icon {
     margin-top: 0.8rem;
+    pointer-events: none;
 }
 .part-4 .title-icon {
     margin: 0 auto;
     width: 3.79rem;
+    pointer-events: none;
 }
 .part-4 .ks-msg-text {
     margin-top: 0.24rem;
     margin-left: 1.3rem;
+    pointer-events: none;
 }
 .fs-container {
     margin: .4rem auto 0;
     width: 4.92rem;
-    height: 1.2rem;
+    height: 1.22rem;
     background-image: url('../images/p4_fs.png');
-    background-size: 4.9rem 1.18rem;
+    background-size: 99.6% auto;
+    background-position: 0 1px;
+    pointer-events: none;
+    overflow: hidden;
 }
 .fs-wrap {
-    top: .6rem;
-    left: 2.48rem;
+    top: 0.62rem;
+    left: 50.5%;
     width: 2.42rem;
     font-weight: bold;
     line-height: .6rem;
@@ -209,10 +239,11 @@
 }
 .inset-container {
     margin-top: 0.38rem;
+    pointer-events: none;
 }
 .part-4 .btn-clickme {
-    bottom: .4rem;
-    left: 4.84rem;
+    top: 10.9rem;
+    left: 4.82rem;
 }
 .part-4 .code-wrap {
     margin-left: 1.28rem;
@@ -260,6 +291,7 @@
 .sava-tips-icon {
     margin: .26rem auto 0;
     width: 3.85rem;
+    pointer-events: none;
 }
 .part-4 .zhang-icon {
     top: 4.04rem;
@@ -267,6 +299,18 @@
     width: 1.64rem;
     height: 1.64rem;
     background-image: url('../images/zhang.png');
+}
+.poster-wrap .logo-icon {
+    margin-top: 3.4rem;
+}
+.poster-wrap .zhang-icon {
+    top: 6.6rem;
+}
+.poster-wrap .fs-wrap {
+    top: 0.57rem;
+}
+.poster-wrap .btn-clickme {
+    top: 13.25rem;
 }
 /* pop */
 .pop-ticket {
@@ -279,6 +323,7 @@
     box-sizing: border-box;
 }
 .ticket-wrap {
+    display: block;
     margin: 0 auto;
     width: 3.52rem;
     height: .54rem;
@@ -296,6 +341,8 @@
     font-size: .32rem;
     color: #851f1c;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 .ticket-icon {
     margin: .24rem auto 0;
@@ -317,6 +364,7 @@
 .poster-img {
     display: block;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;

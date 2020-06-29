@@ -9,8 +9,8 @@ $.extend($, {
         function pos(con){
             con.css({
                 position:'fixed',
-                left: ($(window).width() - con.width()) / 2,
-                top: ($(window).height() - con.height()) / 2,
+                left: ($(window).width() - con.innerWidth()) / 2,
+                top: ($(window).height() - con.innerHeight()) / 2,
             });
         }
         var ret = {

@@ -42,7 +42,7 @@
         <div class="p-a bg part part-1 part-init part-show">
             <div class="wrap">
                 <div class="p-r form-container">
-                    <input type="text" class="input-wrap t-c" id="userName" placeholder="请输入姓名" value="1" />
+                    <input type="text" class="input-wrap t-c" id="userName" placeholder="请输入姓名" value="" />
                     <div class="flex flex-center sex-list">
                         <label for="sexBoy">
                             <input type="radio" hidden id="sexBoy" name="sex" checked value="1" />
@@ -88,7 +88,8 @@
                     <li>3.奖励将以激活码形式发放，每个角色限使用一次；</li>
                     <li>4.成绩不足80分可选择重考，奖励单个微信号只发放一次。</li>
                 </ul>
-                <div class="full-img code-icon" id="qrcode">
+                <div class="full-img bg code-icon" id="qrcode">
+
                     <!-- <img src="./assets/images/code.png" alt="二维码"> -->
                 </div>
                 <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
@@ -100,17 +101,18 @@
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
                 <ul class="answer-list">
-                    <!-- <li>
+                    <!-- <li style="display: block;">
                         <p class="answer-title-test">一、网通青梅雅筑的少帅丨风景线曾在见面会现场以跨服宋金347连斩傲视群雄，当时他使用的职业是？</p>
-                        <a href="javascript: ;" class="p-r answer-option active"><i class="icons"></i>[ A ] 袖箭唐门</a>
-                        <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ B ] 陷阱唐门</a>
-                        <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ C ] 针古墓</a>
-                        <a href="javascript: ;" class="p-r answer-option"><i class="icons"></i>[ D ] 剑古墓</a>
+                        <a href="javascript: ;" class="p-r answer-option btn-hover active"><i class="icons"></i>[ A ] 袖箭唐门</a>
+                        <a href="javascript: ;" class="p-r answer-option btn-hover"><i class="icons"></i>[ B ] 陷阱唐门</a>
+                        <a href="javascript: ;" class="p-r answer-option btn-hover"><i class="icons"></i>[ C ] 针古墓</a>
+                        <a href="javascript: ;" class="p-r answer-option btn-hover"><i class="icons"></i>[ D ] 剑古墓</a>
                     </li> -->
                 </ul>
                 <div class="flex flex-center btn-container">
-                    <a href="javascript: alert('敬请期待！');" class="icons btn-prev btn-hover t">上一题</a>
-                    <a href="javascript: alert('敬请期待！');" class="icons btn-next btn-hover t">下一题</a>
+                    <a href="javascript: g.methods.prevQuestion();" style="display: none;" class="icons btn-prev btn-hover t">上一题</a>
+                    <a href="javascript: g.methods.nextQuestion();" class="icons btn-next btn-hover t">下一题</a>
+                    <a href="javascript: g.methods.submitResult();" class="icons btn-submit-result btn-hover t">交卷</a>
                 </div>
                 <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
             </div>
@@ -127,19 +129,19 @@
                 <p class="ks-msg-text">姓名：<span class="J-user-name">输入姓名显示</span></p>
                 <p class="ks-msg-text">性别：<span class="J-sex-text">男</span></p>
                 <div class="p-r bg fs-container">
-                    <div class="p-a fs-wrap t-c">100</div>
+                    <div class="p-a fs-wrap t-c J-score-text">100</div>
                 </div>
                 <div class="flex inset-container">
                     <div class="bg code-wrap">
                         <img src="./assets/images/code.png" alt="二维码">
                     </div>
-                    <div class="full-img inset-wrap">
+                    <div class="full-img inset-wrap J-inset-wrap">
                         <img src="./assets/images/result_inset_1.png" alt="插图">
                     </div>
                 </div>
                 <div class="flex flex-center btn-container">
-                    <a href="javascript: alert('敬请期待！');" class="icons btn-wyck btn-hover t">我要重考</a>
-                    <a href="javascript: alert('敬请期待！');" class="icons btn-lqjl btn-hover t">领取奖励</a>
+                    <a href="javascript: window.location.reload();" class="icons btn-wyck btn-hover t">我要重考</a>
+                    <a href="javascript: ;" class="icons btn-lqjl btn-hover t">领取奖励</a>
                 </div>
                 <div class="full-img sava-tips-icon">
                     <img src="./assets/images/p4_sava_tips.png" alt="长按保存">
@@ -149,8 +151,8 @@
                 <img class="poster-img" src="" alt="">
             </div>
             <!-- 生成海报 -->
-            <div class="p-a bg poster-container" id="poster">
-                <div class="wrap">
+            <div class="p-a poster-container">
+                <div class="p-r bg poster-wrap" id="poster">
                     <div class="full-img logo-icon">
                         <img src="./assets/images/logo.png" alt="logo">
                     </div>
@@ -161,9 +163,9 @@
                     <p class="ks-msg-text">姓名：<span class="J-user-name">输入姓名显示</span></p>
                     <p class="ks-msg-text">性别：<span class="J-sex-text">男</span></p>
                     <div class="p-r bg fs-container">
-                        <div class="p-a fs-wrap t-c">100</div>
+                        <div class="p-a fs-wrap t-c J-score-text">100</div>
                     </div>
-                    <div class="full-img inset-wrap">
+                    <div class="full-img inset-wrap J-inset-wrap">
                         <img src="./assets/images/result_inset_1.png" alt="插图">
                     </div>
                     <div class="bg code-wrap">
@@ -176,21 +178,12 @@
         </div>
     </div>
 
-    <!-- 弹窗 登录 -->
-    <div class="bg pop pop-login" id="popLogin">
-        <div class="pop-con">
-            <div class="bg login-title-icon"></div>
-            <div class="xsj_register_dom_nine"></div>
-        </div>
-        <a href="javascript: $.lay.close();" class="p-a bg close-btn btn-hover t">关闭</a>
-    </div>
-
     <!-- 获得券码 -->
     <div class="bg pop pop-ticket" id="popTicket">
         <div class="pop-con">
-            <div class="bg ticket-wrap t-c">JSLSYYSHVIPFQC8G</div>
+            <p class="bg ticket-wrap t-c J-cd-key" id="copyText"></p>
             <div class="t-c">
-                <a href="javascript: ;" class="btn-copy">【点击复制】</a>
+                <button id="copyBtn" class="btn-copy" data-clipboard-target="#copyText">【点击复制】</button>
             </div>
             <div class="full-img ticket-icon">
                 <img src="./assets/images/ticket_tips.png" alt="提示">
@@ -214,8 +207,8 @@
     window.StReportSdk023 = window.exports.StReportSdk;
     window.exports = window.$$exports;
 </script>
-<script src="//zhcdn01.xoyo.com/xassets/com/pf/slideloadpage/dist/dropload.js"></script>
 <script src="./assets/scripts/vconsole.min.js" ></script>
+<script src="//zhcdn01.xoyo.com/xassets/lib/clipboard.js/2.0.0/clipboard.min.js"></script>
 <script src="./assets/scripts/dom2img.min.js"></script>
 <script src="./assets/scripts/qrcode.js"></script>
 <script src="./assets/scripts/wv.umd.js"></script>
@@ -223,11 +216,8 @@
 <script src="./assets/scripts/main.js"></script>
 <script>
     $(function () {
-        g.init(function(that){
-            // $.lay.open($("#popTicket"));
-        });
+        g.init(function(that){});
     })
 </script>
 </body>
-
 </html>
