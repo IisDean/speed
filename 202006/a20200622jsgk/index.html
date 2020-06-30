@@ -8,10 +8,7 @@
     <meta content="telephone=no,email=no" name="format-detection"/>
     <meta name="description" content="人间烟火与君同，《剑侠世界2》手游资料片“缘定三生”今日浪漫公测。全新侠侣系统上线，打造充满人情味的唯美江湖！">
     <meta name="keywords" content="剑世2,剑世2手游,剑世2官网,剑世2手游官网,剑侠世界2,剑侠世界2手游,剑侠世界2官网,剑侠世界2手游官网,剑侠情缘,剑侠世界,西山居,西山居手游,古风,武侠,情缘,剑侠,仙侠,指尖江湖,剑网3,剑歌行,云裳羽衣,剑手,角色扮演,rpg,情缘,天刀,天涯明月刀,完美世界,神雕侠侣2,龙族幻想,倩女幽魂,逆水寒,古剑奇谭,一梦江湖,楚留香,雪鹰领主,闪耀暖暖,熹妃Q传,龙之谷,自由幻想,笑傲江湖手游,梦幻西游3d">
-    <meta itemprop="name" content="家园作品 pick你最爱的设计" />
-    <meta itemprop="description" content="剑网3家园设计师作品精选，你最想要哪一套房？" />
-    <meta itemprop="image" content="http://csquansu.com/202005test/a20200514jyzxds/m/assets/images/share.jpg" />
-    <title>剑世2高考-西山居游戏</title>
+    <title>《剑侠世界》老江湖全国统一考试</title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/index.css" rel="stylesheet" />
     <script>
@@ -33,14 +30,15 @@
             win.addEventListener('load', setFont, false);
         })(window, document);
     </script>
-    <script src="//zhcdn01.xoyo.com/xassets/lib/daily-app-auth/0.0.1/daily-app-auth.js" crossOrigin="anonymous" ></script>
-    <script src="//zhcdn01.xoyo.com/xassets/lib/daily-app-auth/0.0.1/get-daily-account-info.js" crossOrigin="anonymous" ></script>
 </head>
 
 <body>
     <div class="p-r stage">
         <div class="p-a bg part part-1 part-init part-show">
             <div class="wrap">
+                <i class="p-a bg fy-icon"></i>
+                <i class="p-a bg yb-icon"></i>
+                <i class="p-a bg tq-icon"></i>
                 <div class="p-r form-container">
                     <input type="text" class="input-wrap t-c" id="userName" placeholder="请输入姓名" value="" />
                     <div class="flex flex-center sex-list">
@@ -56,7 +54,11 @@
                         </label>
                     </div>
                 </div>
-                <a href="javascript: ;" class="icons btn-start btn-hover t">核对准考证</a>
+                <div class="flex flex-center btn-container">
+                    <a href="javascript: ;" class="icons btn-start J-start-btn btn-scale t">核对准考证</a>
+                    <a href="javascript: ;" class="icons btn-wyck J-start-btn btn-hover t">我要重考</a>
+                    <a href="javascript: ;" class="icons btn-cxjl J-lqjl-btn btn-hover t">查询奖励</a>
+                </div>
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
@@ -65,6 +67,9 @@
         </div>
         <div class="p-a bg part part-2 part-init" style="display: none;">
             <div class="p-r wrap">
+                <i class="p-a bg fy-icon"></i>
+                <i class="p-a bg yb-icon"></i>
+                <i class="p-a bg tq-icon"></i>
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
@@ -80,7 +85,7 @@
                     <img src="./assets/images/zhang.png" alt="印章">
                 </div>
                 <p class="ks-msg-text t-c">准考证号：<span>JXSJ20200715</span></p>
-                <p class="ks-msg-text t-c">姓名：<span style="margin-right: .16rem;" class="J-user-name">输入姓名显示</span>性别：<span class="J-sex-text">男</span></p>
+                <p class="ks-msg-text t-c">姓名：<span style="display: inline-block;margin-right: .16rem;max-width: 2rem;" class="t-hide J-user-name">输入姓名显示</span>性别：<span class="J-sex-text">男</span></p>
                 <a href="javascript: ;" class="icons btn-answer btn-hover t">开始答题</a>
                 <ul class="rule-list">
                     <li>1.考卷共计10道题，每道题10分，总分100分；</li>
@@ -97,6 +102,8 @@
         </div>
         <div class="p-a bg part part-3 part-init" style="display: none;">
             <div class="p-r wrap">
+                <i class="p-a bg fy-icon"></i>
+                <i class="p-a bg tq-icon"></i>
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
@@ -119,6 +126,9 @@
         </div>
         <div class="p-a bg part part-4 part-init" style="display: none;">
             <div class="p-r wrap" style="z-index: 1;">
+                <i class="p-a bg fy-icon"></i>
+                <i class="p-a bg yb-icon"></i>
+                <i class="p-a bg tq-icon"></i>
                 <div class="full-img logo-icon">
                     <img src="./assets/images/logo.png" alt="logo">
                 </div>
@@ -133,15 +143,16 @@
                 </div>
                 <div class="flex inset-container">
                     <div class="bg code-wrap">
-                        <img src="./assets/images/code.png" alt="二维码">
+                        <img src="" alt="二维码">
                     </div>
                     <div class="full-img inset-wrap J-inset-wrap">
                         <img src="./assets/images/result_inset_1.png" alt="插图">
                     </div>
                 </div>
                 <div class="flex flex-center btn-container">
-                    <a href="javascript: window.location.reload();" class="icons btn-wyck btn-hover t">我要重考</a>
-                    <a href="javascript: ;" class="icons btn-lqjl btn-hover t">领取奖励</a>
+                    <a href="javascript: ;" class="icons btn-wyck btn-hover t">我要重考</a>
+                    <a href="javascript: ;" class="icons btn-lqjl J-lqjl-btn btn-hover t">领取奖励</a>
+                    <a href="javascript: ;" class="icons btn-cxjl J-lqjl-btn btn-hover t">查询奖励</a>
                 </div>
                 <div class="full-img sava-tips-icon">
                     <img src="./assets/images/p4_sava_tips.png" alt="长按保存">
@@ -169,7 +180,7 @@
                         <img src="./assets/images/result_inset_1.png" alt="插图">
                     </div>
                     <div class="bg code-wrap">
-                        <img src="./assets/images/code.png" alt="二维码">
+                        <img src="" alt="二维码">
                     </div>
                     <i class="p-a bg zhang-icon"></i>
                     <a href="javascript: alert('敬请期待！');" class="p-a icons btn-clickme btn-hover t">点我</a>
@@ -194,8 +205,6 @@
     </div>
 
 <script src="//zhcdn01.xoyo.com/xassets/lib/jquery/1.7.2/jquery.js"></script>
-<script src="//zhcdn01.xoyo.com/xassets/com/pf/register/jsreg/v2/register.js"></script>
-<script src="//zhcdn01.xoyo.com/xassets/com/pf/footer/v2/black/m/footernofont.js"></script>
 <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="//zhcdn01.xoyo.com/xassets/com/wx/useWxApi/v2/useWxApi.js"></script>
 <script class="trackerBefore">
@@ -207,17 +216,12 @@
     window.StReportSdk023 = window.exports.StReportSdk;
     window.exports = window.$$exports;
 </script>
-<script src="./assets/scripts/vconsole.min.js" ></script>
 <script src="//zhcdn01.xoyo.com/xassets/lib/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script src="./assets/scripts/vconsole.min.js" ></script>
 <script src="./assets/scripts/dom2img.min.js"></script>
 <script src="./assets/scripts/qrcode.js"></script>
 <script src="./assets/scripts/wv.umd.js"></script>
 <script src="./assets/scripts/pop.js"></script>
 <script src="./assets/scripts/main.js"></script>
-<script>
-    $(function () {
-        g.init(function(that){});
-    })
-</script>
 </body>
 </html>

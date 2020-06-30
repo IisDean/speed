@@ -29,6 +29,7 @@ var g = {
             './assets/images/p2_bg.jpg',
             './assets/images/p3_bg.jpg',
             './assets/images/p4_bg.jpg',
+            './assets/images/poster_bg.jpg',
             './assets/images/result_inset_1.png',
             './assets/images/result_inset_2.png',
             './assets/images/result_inset_3.png',
@@ -72,6 +73,19 @@ var g = {
         });
     },
     methods: {
+        // 初始化全局配置
+        initConfig: function(){
+            $.lay.load();
+            g.getData.get_qjpz(function(data){
+                $.lay.close();
+                //更新激活码信息
+                g.data.is_code1 = data.data.reply.can_get_code;
+                g.data.code = data.data.reply.code;
+                if( g.data.is_code1 || g.data.code != '' ){
+                    $(".part-1 .btn-container,.part-4 .btn-container").addClass("ck");
+                }
+            });
+        },
         //获取微信授权
         getWxSq: function(url){
             window.location.href = url;
@@ -149,6 +163,7 @@ var g = {
                 //返回分数&是否可以获取激活码
                 g.data.is_code2 = data.data.reply.can_get_code;
                 g.data.score = data.data.reply.score;
+                if(g.data.is_code2) $(".part-4 .btn-lqjl").show();
                 //进入页面4
                 g.methods.nextPageRead(4);
                 // 生成海报
@@ -196,6 +211,10 @@ var g = {
                     }
                 });
             }, 600);
+        },
+        // 获取随机数
+        getRandom: function(min, max){
+            return Math.floor( Math.random() * (max - min) + min);
         }
     },
     getData: {
@@ -314,7 +333,10 @@ var g = {
             $(".answer-list").html(topic_str).find("li").eq(0).show();
         }
     },
+    //初始化，页面加载后执行
     init: function (callback) {
+        //获取全局配置
+        g.methods.initConfig();
         //图片预加载
         g.methods.loadImg();
         // 生成海报二维码
@@ -327,44 +349,49 @@ var g = {
                     window.scrollTo(0, Math.max(scrollHeight - 1, 0));
                 }, 100);
             }
-        })
+        });
+        //微信自定义分享 start
+        var shareTitle = [
+            '点击领取高考准考证，进入《剑世》老江湖考试',
+            '这套题，只玩两三年的《剑世》拿不到满分',
+            '你和千元奖励只差十道题！坐等《剑世》老江湖出手'
+        ];
+        var eventData = {
+            title: shareTitle[ g.methods.getRandom(0, shareTitle.length) ],
+            link: location.href,
+            imgUrl: $.tools.getUrl+'/'+window.location.pathname.replace('/index.html','')+'/assets/images/share.jpg',
+            desc: '参与《剑侠世界》老江湖全国统一考试，完成认证领千元奖励，坐等满分老江湖！'
+        }
+        usewxapi.getSignature(eventData);
+        //微信自定义分享 end
+
         if(callback)callback(this);
     }
 };
 
+g.init(function(that){});
 
 $(function () {
+    // var vConsole = new VConsole();
 
-    var vConsole = new VConsole();
-    // g.methods.nextPageRead(2);
-    
     // 核对准考证
-    $(".part-1 .btn-start").on("click", function(){
-        //获取全局配置
-        $.lay.load();
-        g.getData.get_qjpz(function(data){
-            $.lay.close();
-            g.data.userName = $("#userName").val();
-            g.data.sex = $("input[name='sex']:checked").val();
-            if(g.data.userName == '') return $.lay.msg('请填写姓名', {time: 600});
-            var avatarSrc,sexText;
-            if(g.data.sex == 1){
-                avatarSrc = './assets/images/avatar_boy.png';
-                sexText = '男';
-            }else if( g.data.sex == 2) {
-                avatarSrc = './assets/images/avatar_girl.png';
-                sexText = '女';
-            }
-            $(".J-user-name").text(g.data.userName);
-            $(".J-sex-text").text(sexText);
-            $(".J-sex-avatar").attr('src', avatarSrc);
-            //更新激活码信息
-            g.data.is_code1 = data.data.reply.can_get_code;
-            g.data.code = data.data.reply.code;
-            console.log(g.data);
-            //进入页面2
-            g.methods.nextPageRead(2);
-        });
+    $(".part-1 .J-start-btn").on("click", function(){
+        g.data.userName = $("#userName").val();
+        g.data.sex = $("input[name='sex']:checked").val();
+        if(g.data.userName == '') return $.lay.msg('请填写姓名', {time: 600});
+        var avatarSrc,sexText;
+        if(g.data.sex == 1){
+            avatarSrc = './assets/images/avatar_boy.png';
+            sexText = '男';
+        }else if( g.data.sex == 2) {
+            avatarSrc = './assets/images/avatar_girl.png';
+            sexText = '女';
+        }
+        $(".J-user-name").text(g.data.userName);
+        $(".J-sex-text").text(sexText);
+        $(".J-sex-avatar").attr('src', avatarSrc);
+        //进入页面2
+        g.methods.nextPageRead(2);
     });
 
     //开始答题
@@ -389,31 +416,43 @@ $(function () {
         };
     });
 
-    //获取奖励
-    $(".btn-lqjl").on("click", function(){
-        if(!g.data.is_code1 && !g.data.is_code2 && g.data.code == ''){
-            return $.lay.msg("暂未获得领取资格", {time: 600});
+    // 我要重考
+    $(".part-4 .btn-wyck").on("click", function(){
+        // 答题数据初始化
+        g.data.resultList = [];
+        g.data.topicNum = 1;
+        g.data.score = 0;
+        //答题页按钮初始化
+        g.methods.cutQuestion();
+        // 页面状态初始化
+        $(".part").removeClass('part-show').hide();
+        g.methods.nextPageRead(1);
+    });
+
+    //领取奖励
+    $(".J-lqjl-btn").on("click", function(){
+        if(g.data.code != ''){
+            $(".J-cd-key").text(g.data.code);
+            initCdkeyPop();
+        }else if(!g.data.is_code1 && !g.data.is_code2 && g.data.code == ''){
+            return $.lay.msg("大侠分数不足80，无法领取奖励", {time: 600});
         }else if(g.data.is_code1 || g.data.is_code2){
             //答题完成，获得领取激活码资格
             g.getData.getCDkey(function(data){
                 $(".J-cd-key").text(data.data.reply.code);
-                $.lay.open($("#popTicket"));
-                //初始化复制激活码
-                var clipboard = new ClipboardJS('#copyBtn');
-                clipboard.on('success', function(e) {
-                    $.lay.msg("复制成功", {time: 600});
-                });
                 g.data.is_code1 = g.data.is_code2 = 0;
-            });
-        }else if(g.data.code != ''){
-            console.log('123');
-            $(".J-cd-key").text(g.data.code);
-            $.lay.open($("#popTicket"));
-            //初始化复制激活码
-            var clipboard = new ClipboardJS('#copyBtn');
-            clipboard.on('success', function(e) {
-                $.lay.msg("复制成功", {time: 600});
+                initCdkeyPop();
             });
         }
     });
+    
+    //弹出激活码弹窗
+    function initCdkeyPop(){
+        $.lay.open($("#popTicket"));
+        //初始化复制激活码
+        var clipboard = new ClipboardJS('#copyBtn');
+        clipboard.on('success', function(e) {
+            $.lay.msg("复制成功", {time: 600});
+        });
+    }
 });

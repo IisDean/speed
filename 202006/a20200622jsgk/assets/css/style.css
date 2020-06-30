@@ -191,13 +191,13 @@ a {
 }
 @keyframes partShow {
     from {
-        transform: scale(1.1) translateY(50%);
+        transform: scale(1.1);
         opacity: 0;
     }
 }
 @-webkit-keyframes partShow {
     from {
-        -webkit-transform: scale(1.1) translateY(50%);
+        -webkit-transform: scale(1.1);
         opacity: 0;
     }
 }
