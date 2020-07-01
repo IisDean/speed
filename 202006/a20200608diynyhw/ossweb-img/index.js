@@ -2,19 +2,21 @@ var ctrlJs = {
     data: {
         //图片预加载列表
         loadImgList: [
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/loading.gif',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_1_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_1_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_2_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_2_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_3_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_3_2.jpg',
+            './ossweb-img/loading.gif',
+            './ossweb-img/result_1_1.jpg',
+            './ossweb-img/result_1_2.jpg',
+            './ossweb-img/result_2_1.jpg',
+            './ossweb-img/result_2_2.jpg',
+            './ossweb-img/result_3_1.jpg',
+            './ossweb-img/result_3_2.jpg',
         ],
         isImgLoading: false,//是否加载完成
         pageIdx: 1,//当前页面，默认首页
         jd: 0,// 选择的基底
         gz: [],// 选择的果汁
         zl: [],// 选择的佐料
+        isJsYy: 0,//是否解锁语音
+        yySrc: '',//语音地址
     },
     methods: {
         //图片预加载
@@ -34,12 +36,9 @@ var ctrlJs = {
                     imgList[this.idx].obj = this;
                     imgLoad++;
                     pro = parseInt((imgLoad / imgList.length) *.95 * 100);
-                    // $loadText.text(pro + '%');
-                    // $progress.css('width', pro+'%');
                     if (imgLoad >= imgList.length) {
                         console.log('加载完成');
                         ctrlJs.data.isImgLoading = true;
-                        // document.fonts.ready.then(function() {});
                     }
                 }
             });
@@ -99,7 +98,8 @@ var ctrlJs = {
             });
             gzA > gzB ? resultData.gz = 1 : resultData.gz = 2;
             ctrlJs.methods.nextPageRead(5);
-            var resultSrc = '//game.gtimg.cn/images/lv/cp/a20200608diynyhw/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
+            var resultSrc = './ossweb-img/result_'+ resultData.jd +'_'+ resultData.gz +'.jpg';
+            ctrlJs.data.yySrc = './ossweb-img/yy_'+ resultData.jd +'_'+ resultData.gz +'.mp3';
             $(".part-6").css("background-image", "url("+ resultSrc +")");
             $(".stage").addClass('jd-'+resultData.jd);
             setTimeout(function(){
@@ -110,6 +110,15 @@ var ctrlJs = {
                     ctrlJs.methods.nextPageRead(6);
                 }, 500);
             }, 3000);
+        },
+        //播放语音
+        playYy: function(){
+            //若背景音乐正在播放，则暂停
+            if(!switchMusic.hasClass('off')){
+                $(switchMusic).click();
+            }
+            $musicYy.attr('src', ctrlJs.data.yySrc);
+            $musicYy[0].play();
         }
     },
     //初始化
@@ -167,6 +176,12 @@ var ctrlJs = {
             }
             that.methods.nextPageRead(4);
         });
+
+        //成功预约 解锁3种果汁
+        $(".btn-yyjs").on("click", function(){
+            TGDialogS('popYycg');
+            $(".zd-wrap").hide();
+        });
         
         // 选取3种佐料
         $(".part-4 .select-list").on('click', 'li', function(){
@@ -201,6 +216,32 @@ var ctrlJs = {
         $(".btn-prev").on("click", function(){
             that.methods.prevPage();
         });
+
+        // 立即预约
+        $(".btn-fb").on("click", function(){
+            $(this).addClass('filter');
+        });
+
+        //立即分享
+        $(".btn-cycj1").on("click", function(){
+            //首次点击提示用户分享
+            if( !that.data.isJsYy ){ 
+                TGDialogS('popFxcg');
+                that.data.isJsYy = 1;//解锁分享
+                $(".yuyin-btn").addClass('scale-ani');//语音播放按钮 开始闪烁
+            }else {
+                $(".yuyin-btn").click();
+            }
+        });
+        
+        //播放语音
+        $(".yuyin-btn").on("click", function(){
+            //未解锁时提示用户分享
+            if( !that.data.isJsYy )return TGDialogS('popFxjs');
+            that.methods.playYy();
+        });
+        
+        // ctrlJs.methods.nextPageRead(6);
     }
 }
 ctrlJs.init();/* #t6Hl8#F4813F7FDA5ABE85EC225AEA3998E19D */

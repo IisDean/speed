@@ -28,31 +28,31 @@
     </script>
     <meta itemprop="name" content="我和光启市男神官宣了" />
     <meta itemprop="description" content="DIY你的饮品男孩 抽iPhone缤纷好礼" />
-    <meta itemprop="image" content="https://game.gtimg.cn/images/lv/cp/a20200608diynyhw/share.jpg" />
+    <meta itemprop="image" content="https:./ossweb-img/share.jpg" />
     <title>DIY我的饮品男孩</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/08 -->
-    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/common.css" rel="stylesheet" />
-    <link href="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/index.css" rel="stylesheet" />
+    <link href="./ossweb-img/common.css" rel="stylesheet" />
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
 </head>
 
 <body>
 <div class="p-r stage">
     <!-- 音乐 -->
-    <audio id="musicBgm" loop>
-        <source src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/music.mp3" type="audio/mpeg" />
-    </audio>
+    <audio id="musicBgm" loop src="./ossweb-img/music.mp3"></audio>
     <!-- 音乐 -->
     <a class="p-a icons music-btn lottery off t" style="z-index: 999;">音乐</a>
+    <!-- 语音 -->
+    <audio id="musicYy"></audio>
     <!-- 水印 -->
     <!-- <div class="p-a bg water-mark-qq"></div> -->
     <!-- p1 首屏 -->
     <div class="p-a part part-1">
         <div class="p-r wrap">
             <div class="p-a full-img logo-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/logo.png" alt="logo">
+                <img src="./ossweb-img/logo.png" alt="logo">
             </div>
             <div class="p-a full-img wdj-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/wdj.png" alt="温度计">
+                <img src="./ossweb-img/wdj.png" alt="温度计">
             </div>
             <div class="text-wrap1 t-c">
                 <p class="guide-text">光启市夏日传说：</p>
@@ -74,7 +74,7 @@
     <div class="p-a part part-2 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p2_title.png" alt="标题">
+                <img src="./ossweb-img/p2_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="select-list flex">
@@ -89,7 +89,7 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p2_select_img.png" alt="饮料">
+                    <img src="./ossweb-img/p2_select_img.png" alt="饮料">
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>沉静的爱，倾慕与浪漫<br/>优雅的心，和君子般的风度</p></div>
@@ -102,7 +102,7 @@
     <div class="p-a part part-3 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p3_title.png" alt="标题">
+                <img src="./ossweb-img/p3_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="p-r select-list flex">
@@ -117,7 +117,12 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p3_select_img.png" alt="饮料">
+                    <img src="./ossweb-img/p3_select_img.png" alt="饮料">
+                </div>
+                <div class="p-a bg zd-wrap">
+                    <i class="p-a bg star-icon"></i>
+                    <div class="zd-tips-text t-c">约定与他相遇，解锁更多精彩内容！</div>
+                    <a href="javascript: ;" class="icons btn-yyjs btn-hover t" onclick="PTTSendClick('btn','btn-yyjs','预约解锁')">预约解锁</a>
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>后院的秋千装着午后的阳光<br/>像填满糖果的糖果罐一样满满当当</p></div>
@@ -131,7 +136,7 @@
     <div class="p-a part part-4 part-init" style="display: none;">
         <div class="p-r wrap">
             <div class="full-img title-icon">
-                <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p4_title.png" alt="标题">
+                <img src="./ossweb-img/p4_title.png" alt="标题">
             </div>
             <div class="p-r bg select-container">
                 <ul class="p-r select-list flex">
@@ -146,7 +151,7 @@
                     <li class="p-a bg select-item"></li>
                 </ul>
                 <div class="p-a full-img select-img">
-                    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p4_select_img.png" alt="饮料">
+                    <img src="./ossweb-img/p4_select_img.png" alt="饮料">
                 </div>
             </div>
             <div class="bg tips-msg-text t-c"><p>每一个街角都氤氲着甜蜜的美好</p></div>
@@ -160,12 +165,15 @@
     <div class="p-a part part-5 part-init" style="display: none;">
         <div class="p-r wrap"></div>
     </div>
-    <div class="p-a part part-6 part-init" style="display: none;">
+    <div class="p-a part part-6 part-init" style="background-image: url('./ossweb-img/result_1_1.jpg');" style="display: none;">
         <div class="p-r wrap">
+            <a href="javascript: ;" class="p-a icons yuyin-btn t">语音播放</a>
             <div class="btn-container flex flex-center">
-                <a href="javascript: alert('敬请期待！');" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','ljyy-btn','立即预约')">立即预约</a>
-                <a href="javascript: alert('敬请期待！');" style="margin-left: 0;" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','ljfx-btn','分享好友')">分享好友</a>
+                <a href="javascript: TGDialogS('popYycg');;" class="icons btn-fb btn-hover t" onclick="PTTSendClick('btn','ljyy-btn','立即预约')">立即预约</a>
+                <a href="javascript: ;" style="margin-left: 0;" class="btn-border btn-cycj1 btn-hover t-c" onclick="PTTSendClick('btn','ljfx-btn','点击收听他的语音')">点击收听他的语音</a>
                 <a href="./index.html" class="btn-border btn-cycj2 btn-hover t-c" onclick="PTTSendClick('btn','cxcs-btn','重新测试')">重新测试</a>
+                <div class="btn-tips-text t-c">分享好友解锁语音</div>
+                <div class="btn-tips-text t-c" style="margin-left: .66rem;">预约解锁更多惊喜内容</div>
             </div>
         </div>
         <!-- 前往社区晒图领奖 -->
@@ -220,25 +228,41 @@
 </div>
 <!-- 引导分享 -->
 <div class="pop full-img pop-share" id="popShare">
-    <img src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/share_pop.png" alt="点击右上角按钮分享">
+    <img src="./ossweb-img/share_pop.png" alt="点击右上角按钮分享">
 </div>
 <!-- 分享成功 -->
 <div class="pop bg pop-tips" id="popFxcg">
     <div class="pop-con">
-        <p class="pop-tips-text t-c">分享成功~</p>
+        <p class="pop-msg-text t-c" style="margin-top: .2rem;">分享测试结果即可解锁男主语音！</p>
         <a href="javascript: closeDialog();"class="icons confirm-btn btn-hover t">确定</a>
     </div>
 </div>
+<!-- 预约成功 -->
+<div class="pop bg pop-yycg" id="popYycg">
+    <div class="pop-con">
+        <p class="pop-msg-text t-c">恭喜你<span>成功预约《光与夜之恋》手游</span><br/>同时解锁更多果汁选项！~</p>
+    </div>
+</div>
+<!-- 分享解锁 -->
+<div class="pop bg pop-fxjs" id="popFxjs">
+    <div class="pop-con">
+        <p class="pop-msg-text t-c">点击<span>【分享好友】</span>分享你的测试结果，即可解锁男主语音噢！~</p>
+    </div>
+</div>
 
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/zepto.js"></script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/milo.js"></script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/TGMobileShare.min.js"></script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/qqapi.js?_bid=152"></script>
+<script src="./ossweb-img/zepto.js"></script>
+<script src="./ossweb-img/milo.js"></script>
+<script src="./ossweb-img/TGMobileShare.min.js"></script>
+<script src="./ossweb-img/qqapi.js?_bid=152"></script>
 <script>
+
+    
         
     //播放音乐
     var music = document.getElementById('musicBgm');
     var musicStatus = sessionStorage.getItem("musicTwitch");
+    // 语音
+    var $musicYy = $("#musicYy");
     //音乐开关
     var switchMusic = $(".music-btn");
     if( musicStatus == 1 ){
@@ -300,23 +324,21 @@
     });
 
 </script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/index.js"></script>
-<script src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/ping_tcss_tgideas_https_min.js"></script>
+<script src="./ossweb-img/index.js"></script>
+<script src="./ossweb-img/ping_tcss_tgideas_https_min.js"></script>
 <!--引入文件-->
-<script type="text/javascript" src="//game.gtimg.cn/images/lv/cp/a20200608diynyhw/reporting.js"></script>
+<script type="text/javascript" src="./ossweb-img/reporting.js"></script>
 <!--<script src="vconsole.min.js" ></script>-->
 <!-- <script src="index.js"></script> -->
 <script>
     // var vConsole = new VConsole();
-
     TGMobileShare({
         shareTitle:'我和光启市男神官宣了',
         shareDesc:'DIY你的饮品男孩 抽iPhone缤纷好礼',
-        shareImgUrl:'https://game.gtimg.cn/images/lv/cp/a20200608diynyhw/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareImgUrl:'https:./ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
         shareLink:'https://love.qq.com/cp/a20200608diynyhw/index.html',
         actName:'a20200608diynyhw'
     });
-
 </script>
 
 <script>

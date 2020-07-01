@@ -1,7 +1,7 @@
 /*reset*/
 @font-face {
     font-family: 'hyzy';
-    src: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/hyzy.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('./hyzy.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 html,body,div,section,p,ul,li,form,table,td,a,dl,dt,dd,em,i,span,img,input,h1,h2,h3,h4,h5 {
     margin: 0;
@@ -148,7 +148,7 @@ body {
 }
 .icons {
     display: block;
-    background-image: url("//game.gtimg.cn/images/lv/cp/a20200608diynyhw/icons.png");
+    background-image: url("./icons.png");
     background-repeat: no-repeat;
     background-size: 7.5rem auto;
 }
@@ -272,6 +272,7 @@ a {
         -webkit-transform: rotate(360deg);
     }
 }
+.yuyin-btn.scale-ani,
 .music-btn.off.scale-ani {
     animation: musicScale 1s ease-in-out infinite;
 }
@@ -294,13 +295,13 @@ a {
 .water-mark-wx {
     width: 1.9rem;
     height: .44rem;
-    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/water_mark_wx.png');
+    background-image: url('./water_mark_wx.png');
 }
 .water-mark-qq {
     right: .5rem;
     width: 1.23rem;
     height: .82rem;
-    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/water_mark_qq.png');
+    background-image: url('./water_mark_qq.png');
 }
 .rule-btn {
     top: 1.8rem;
@@ -320,7 +321,7 @@ a {
     box-sizing: border-box;
     width: 6.34rem;
     height: 5.22rem;
-    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_rule.png');
+    background-image: url('./pop_rule.png');
 }
 .num-text {
     display: inline-block;
@@ -351,7 +352,7 @@ a {
     box-sizing: border-box;
     width: 6.34rem;
     height: 3.94rem;
-    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_common.png');
+    background-image: url('./pop_common.png');
 }
 .confirm-btn {
     margin: .25rem auto 0;

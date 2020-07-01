@@ -117,6 +117,9 @@
     font-size: .2rem;
     color: #1b0f01;
 }
+.rule-list li span {
+    color: #723029;
+}
 .part-2 .code-icon {
     margin: .2rem auto 0;
     padding: .07rem;
@@ -410,8 +413,8 @@
     width: .99rem;
     height: 1rem;
     background-image: url('../images/tq.png');
-    animation: rotateTq 8s linear infinite;
-    -webkit-animation: rotateTq 8s linear infinite;
+    /* animation: rotateTq 8s linear infinite;
+    -webkit-animation: rotateTq 8s linear infinite; */
 }
 .part-2 .tq-icon {
     top: 1.4rem;

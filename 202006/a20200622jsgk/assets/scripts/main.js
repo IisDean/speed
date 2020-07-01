@@ -5,6 +5,7 @@ var g = {
     domain: isMaster ? '//ws.xoyo.com' : '//test-ws.xoyo.com',
     isApp: window.THIRD_PARTY_AUTH && window.THIRD_PARTY_AUTH.ua === 'daily' ? true : false,// 判断是否处于推栏app的环境
     apis: {
+        get_wx: '/core/wechat/get_current_user_info',//微信授权
         get_qjpz: '/jxsj/gkh5200628/get_config',  //获取全局配置
         get_topic_list: '/jxsj/gkh5200628/get_question_list',//获取题目列表
         submit_answer: '/jxsj/gkh5200628/submit_answer',//提交答案
@@ -106,7 +107,7 @@ var g = {
                     imgLoad++;
                     pro = parseInt((imgLoad / imgList.length) *.95 * 100);
                     if (imgLoad >= imgList.length) {
-                        // console.log('加载完成');
+                        console.log('加载完成');
                         g.data.isImgLoading = true;
                     }
                 }
@@ -219,6 +220,28 @@ var g = {
     },
     getData: {
         /**
+         * 获取微信授权
+         * */
+        get_wx: function(){
+            var options = {
+                url: g.apis.get_wx,
+                type: 'get',
+                data: { },
+            };
+            console.log('123');
+            g.ajax(options, function(data) {
+                if(data.code == 1) {
+                    g.methods.initConfig();
+                }else if(data.code == -10801){
+                    // 微信授权
+                    g.methods.getWxSq(data.data.auth_url);
+                    console.log('微信授权');
+                }else {
+                    console.log(data);
+                }
+            });
+        },
+        /**
          * 获取全局配置
          * */
         get_qjpz: function(callback){
@@ -231,10 +254,6 @@ var g = {
                 if(data.code == 1) {
                     // console.log(data);
                     if(callback)callback(data);
-                }else if(data.code == -10801){
-                    // 微信授权
-                    g.methods.getWxSq(data.data.auth_url);
-                    console.log('微信授权');
                 }else {
                     console.log(data);
                 }
@@ -335,8 +354,8 @@ var g = {
     },
     //初始化，页面加载后执行
     init: function (callback) {
-        //获取全局配置
-        g.methods.initConfig();
+        //获取微信授权
+        g.getData.get_wx();
         //图片预加载
         g.methods.loadImg();
         // 生成海报二维码
@@ -372,7 +391,7 @@ var g = {
 g.init(function(that){});
 
 $(function () {
-    // var vConsole = new VConsole();
+    var vConsole = new VConsole();
 
     // 核对准考证
     $(".part-1 .J-start-btn").on("click", function(){
@@ -435,7 +454,7 @@ $(function () {
             $(".J-cd-key").text(g.data.code);
             initCdkeyPop();
         }else if(!g.data.is_code1 && !g.data.is_code2 && g.data.code == ''){
-            return $.lay.msg("大侠分数不足80，无法领取奖励", {time: 600});
+            return $.lay.msg("大侠分数不足80，无法领取奖励", {time: 700});
         }else if(g.data.is_code1 || g.data.is_code2){
             //答题完成，获得领取激活码资格
             g.getData.getCDkey(function(data){
