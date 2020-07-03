@@ -153,10 +153,13 @@
                             <div class="full-img slogan-icon">
                                 <img src="./ossweb-img/p4_slogan.png" alt="奇袭血衣楼 领取宝物">
                             </div>
-                            <p class="slogan-msg-text t-c">每铸成1把孔雀翎，可刮卡1次，百分百中奖<br/>有概率抽中测试资格</p>
+                            <p class="slogan-msg-text t-c">每铸成1把孔雀翎，可刮卡1次，百分百中奖<br/>有概率抽中实物周边大奖</p>
                         </div>
                         <!-- 刮奖 -->
                         <div class="p-r bg gj-container">
+                            <div class="full-img prize-img">
+                                <img src="" alt="奖品">
+                            </div>
                             <div class="p-a full-img gj-wrap">
                                 <!-- <img id="redux" src="./ossweb-img/p4_gj.jpg" alt="刮奖"> -->
                             </div>
@@ -438,13 +441,25 @@
     <a href="javascript: ctrlJs.methods.pauseVideo();" class="p-a icons close-btn btn-hover t">关闭</a>
 </div>
 
+<!-- 刮奖获得 -->
+<div class="pop bg pop-tips" id="popGj">
+    <div class="pop-con">
+        <h3 class="icons pop-title2-icon t">提示</h3>
+        <div class="full-img prize-img" style="margin: -.18rem auto;">
+            <img src="" alt="">
+        </div>
+        <a href="javascript: closeDialog();" style="margin-top: 0;" class="icons confirm-btn btn-hover t">确定</a>
+    </div>
+    <a href="javascript: closeDialog();" class="p-a icons close-btn btn-hover t">关闭</a>
+</div>
+
 <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
 <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script> 
 <script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script>
-    // TGDialogS('popShare');
+    // TGDialogS('popGj');
 
     function TGDialogS(e) {
         // 利用milo库引入dialog组件

@@ -2,7 +2,7 @@
     top: 1rem;
 }
 .part-lottery {
-    background-image: url('../img/lottery_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/lottery_bg.jpg');
 }
 .logo-icon {
     margin-left: .33rem;
@@ -55,7 +55,7 @@
     margin: 1.32rem auto 0;
     width: 5.76rem;
     height: auto;
-    background-image: url('../img/p2_tips_bg.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/p2_tips_bg.png');
     background-position: top center;
     overflow: hidden;
 }
@@ -71,7 +71,7 @@
     height: 6.95rem;
 }
 .panel .panel-face {
-    background-image: url('../img/lottery.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/lottery.png');
     background-size: cover;
     width: 6.95rem;
     height: 6.95rem;
@@ -85,7 +85,7 @@
     margin: 0 auto;
     width: 1.43rem;
     height: 1.54rem;
-    background-image: url('../img/lottery_btn.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/lottery_btn.png');
     background-size: cover;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -121,10 +121,10 @@
     height: .93rem;
 }
 .down-btn-list.wx-icons {
-    background-image: url('../img/wx_icons.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/wx_icons.png');
 }
 .down-btn-list.qq-icons {
-    background-image: url('../img/qq_icons.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/qq_icons.png');
 }
 .down-btn-item {
     height: 100%;
@@ -133,12 +133,12 @@
 .pop-xxcn {
     width: 6.34rem;
     height: 3.94rem;
-    background-image: url('../img/pop_xxcy.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_xxcy.png');
 }
 .pop-zj {
     width: 6.34rem;
     height: 3.94rem;
-    background-image: url('../img/pop_lottery.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_lottery.png');
 }
 .lottery-name-text {
     margin-top: 1.88rem;
@@ -154,7 +154,7 @@
 .pop-qd {
     width: 6.34rem;
     height: 3.94rem;
-    background-image: url('../img/pop_qd.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_qd.png');
 }
 .qd-msg-text {
     margin-top: 2.3rem;
@@ -166,7 +166,7 @@
     box-sizing: border-box;
     width: 6.34rem;
     height: 10.15rem;
-    background-image: url('../img/pop_zjxx.png');
+    background-image: url('//game.gtimg.cn/images/lv/cp/a20200608diynyhw/pop_zjxx.png');
 }
 .submit-btn {
     margin: .3rem auto 0;

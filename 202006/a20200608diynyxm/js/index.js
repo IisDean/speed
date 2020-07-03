@@ -2,13 +2,13 @@ var ctrlJs = {
     data: {
         //图片预加载列表
         loadImgList: [
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/loading.gif',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_1_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_1_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_2_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_2_2.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_3_1.jpg',
-            '//game.gtimg.cn/images/lv/cp/a20200608diynykk/result_3_2.jpg',
+            'img/loading.gif',
+            'img/result_1_1.jpg',
+            'img/result_1_2.jpg',
+            'img/result_2_1.jpg',
+            'img/result_2_2.jpg',
+            'img/result_3_1.jpg',
+            'img/result_3_2.jpg',
         ],
         isImgLoading: false,//是否加载完成
         pageIdx: 1,//当前页面，默认首页
@@ -37,7 +37,7 @@ var ctrlJs = {
                     // $loadText.text(pro + '%');
                     // $progress.css('width', pro+'%');
                     if (imgLoad >= imgList.length) {
-                        console.log('加载完成');
+                        // console.log('加载完成');
                         ctrlJs.data.isImgLoading = true;
                         // document.fonts.ready.then(function() {});
                     }

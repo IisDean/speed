@@ -8,6 +8,61 @@ var ctrlJs = {
         videoWidth: $("#videoWrap").width(),
         videoHeight: $("#videoWrap").height(),
         gjStatus: false,//默认为false， 等于true时表示当前可以刮奖
+        prizeResult: '',//中奖结果
+        prizeList: [
+            {
+                name: '灵殊·幽帘疏芳（7天）',
+                imgSrc: './ossweb-img/gj_1.png'
+            }, {
+                name: '紫色心法残页×1',
+                imgSrc: './ossweb-img/gj_2.png'
+            }, {
+                name: '泉沏龙井×1',
+                imgSrc: './ossweb-img/gj_3.png'
+            }, {
+                name: '私藏特产×1',
+                imgSrc: './ossweb-img/gj_4.png'
+            }, {
+                name: '帮派功勋令×2',
+                imgSrc: './ossweb-img/gj_5.png'
+            }, {
+                name: '天刀人物印象挂画×1',
+                imgSrc: './ossweb-img/gj_6.png'
+            }, {
+                name: '五周年大礼盒×1',
+                imgSrc: './ossweb-img/gj_7.png'
+            }, {
+                name: '天下盟会手账本×1',
+                imgSrc: './ossweb-img/gj_8.png'
+            }, {
+                name: '侠影研习录·三×1',
+                imgSrc: './ossweb-img/gj_9.png'
+            }, {
+                name: '侠影研习录·二×2',
+                imgSrc: './ossweb-img/gj_10.png'
+            }, {
+                name: '一级霜铁×5',
+                imgSrc: './ossweb-img/gj_11.png'
+            }, {
+                name: '一级金丝×5',
+                imgSrc: './ossweb-img/gj_12.png'
+            }, {
+                name: '侠影研习录·一×5',
+                imgSrc: './ossweb-img/gj_13.png'
+            }, {
+                name: '铸神令×2',
+                imgSrc: './ossweb-img/gj_14.png'
+            }, {
+                name: '红尘宝匣×1',
+                imgSrc: './ossweb-img/gj_15.png'
+            }, {
+                name: '绑点×20',
+                imgSrc: './ossweb-img/gj_16.png'
+            }, {
+                name: '碎银×20000',
+                imgSrc: './ossweb-img/gj_17.png'
+            }
+        ]
     },
     methods: {
         initShare: function(type){//配置分享参数
@@ -40,6 +95,7 @@ var ctrlJs = {
         initEraser: function(){//刮奖初始化
             if(ctrlJs.data.gjStatus)return false;
             ctrlJs.data.gjStatus = true;
+            var idx = ctrlJs.methods.getRandom(0, ctrlJs.data.prizeList.length);
             $(".cxgj-btn").hide();
             var gjImg = new Image();
             gjImg.src = './ossweb-img/p4_gj.jpg';
@@ -50,10 +106,12 @@ var ctrlJs = {
                     completeRatio: .6, //设置擦除面积比例
                     completeFunction: ctrlJs.methods.showResetButton   //大于擦除面积比例触发函数
                 });
+                $(".prize-img img").attr('src', ctrlJs.data.prizeList[idx].imgSrc);
+                ctrlJs.data.prizeResult = ctrlJs.data.prizeList[idx].name;
             }
         },
 		showResetButton: function(){//刮奖结果
-            alert('获得');
+            TGDialogS('popGj');
             ctrlJs.data.gjStatus = false;
             $(".cxgj-btn").show();
             ctrlJs.data.pageSwiper.unlockSwipes();
@@ -95,6 +153,9 @@ var ctrlJs = {
         pauseVideo: function(){//关闭视频
             closeDialog();
             $("#videoWrap").empty();
+        },
+        getRandom: function(min, max){//获取随机数
+            return Math.floor( Math.random() * (max- min) + min );
         }
     },
     init: function(callback){

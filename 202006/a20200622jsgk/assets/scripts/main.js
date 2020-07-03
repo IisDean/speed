@@ -45,7 +45,7 @@ var g = {
             dataType: o.dataType || 'jsonp',
             contentType: o.contentType || 'application/x-www-form-urlencoded',
         };
-        // console.log(t);
+        console.log(t);
         $.ajax({
             type: t.method,
             url: t.url,
@@ -80,6 +80,8 @@ var g = {
             g.getData.get_qjpz(function(data){
                 $.lay.close();
                 //更新激活码信息
+                console.log('123');
+                console.log(data);
                 g.data.is_code1 = data.data.reply.can_get_code;
                 g.data.code = data.data.reply.code;
                 if( g.data.is_code1 || g.data.code != '' ){
@@ -254,6 +256,9 @@ var g = {
                 if(data.code == 1) {
                     // console.log(data);
                     if(callback)callback(data);
+                }else if(data.code == -10154){
+                    //活动一结束
+                    $.lay.msg(data.message);
                 }else {
                     console.log(data);
                 }

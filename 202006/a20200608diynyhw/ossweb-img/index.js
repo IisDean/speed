@@ -240,8 +240,6 @@ var ctrlJs = {
             if( !that.data.isJsYy )return TGDialogS('popFxjs');
             that.methods.playYy();
         });
-        
-        // ctrlJs.methods.nextPageRead(6);
     }
 }
 ctrlJs.init();/* #t6Hl8#F4813F7FDA5ABE85EC225AEA3998E19D */

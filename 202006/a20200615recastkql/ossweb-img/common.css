@@ -208,6 +208,12 @@ a {
     height: .35rem;
     background-position: -2.84rem -5.17rem;
 }
+.pop-title2-icon {
+    margin: .64rem auto 0;
+    width: 1.27rem;
+    height: .33rem;
+    background-position: -1.98rem -5.73rem;
+}
 .pop-msg-text {
     font-size: .24rem;
     color: #d5caaf;
