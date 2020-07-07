@@ -199,18 +199,48 @@ var ctrlJs = {
                 ]
             }                
         },
+        loadImgList: [
+            './ossweb-img/p2_options_active.png',
+        ],//图片预加载列表
         optionsNum: ['A', 'B', 'C', 'D'],//选项序号
         activeKey: 'q_1',//当前问题键值名
         activeQuestion: null,
         result: '',//答题结果，你在天刀最适合的门派是
     },
     methods: {
+        load: function(t){
+            var shade = $('<div class="pop-shade"></div>').css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0',
+                'width': '100%',
+                'height': '100%',
+                'z-index': '9998'
+                }),
+                text = $('<div class="pop-load"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1rem" height="1rem" fill="#000" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path opacity="0.2" fill="#fff" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path><path fill="#fff" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z" transform="rotate(42.1171 20 20)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform></path></svg></div>').css({
+                    'position':'absolute',
+                    'top': '50%',
+                    'left': '50%',
+                    'z-index': '9999',
+                    'width': '1rem',
+                    'height': '1rem',
+                    'transform': 'translate(-50%, -50%)',
+                    '-webkit-transform': 'translate(-50%, -50%)',
+                    'background-color': 'rgba(0, 0, 0, .5)',
+                    'border-radius': '4px'
+                });
+            $("body").append(shade).append(text);
+        },
+        close: function(){
+            $(".pop-shade").hide();
+            $(".pop-load").hide();
+        },
         //图片预加载
-        loadImg: function(){
+        loadImg: function(callback){
             var that = this,
                 imgLoad = 0,
                 pro = 0,
-                imgList = g.data.loadImgList;
+                imgList = ctrlJs.data.loadImgList;
             imgList.forEach(function (ev, index) {
                 var img = new Image();
                 img.src = ev;
@@ -221,10 +251,24 @@ var ctrlJs = {
                     imgLoad++;
                     pro = parseInt((imgLoad / imgList.length) *.95 * 100);
                     if (imgLoad >= imgList.length) {
-                        console.log('加载完成');
+                        // console.log('加载完成');
                         ctrlJs.data.isImgLoading = true;
+                        if(callback)callback();
                     }
                 }
+            });
+        },
+        //海报二维码地址
+        createQrcode: function(){
+            var url = window.location.href;
+            var qrcode = new QRCode('qrcode', {
+                text: url,
+                render: 'table',
+                width: 138,
+                height: 138,
+                colorDark: '#000000',
+                colorLight: '#ffffff',
+                correctLevel: QRCode.CorrectLevel.H
             });
         },
         // 下一页准备
@@ -249,8 +293,28 @@ var ctrlJs = {
         },
         //答题结束，初始化结果页
         initResult: function(){
-            $(".result-container img").attr('src', ctrlJs.data.mpList[ ctrlJs.data.result ].posterSrc);
-            ctrlJs.methods.nextPageRead(3);
+            ctrlJs.methods.load();
+            var src = ctrlJs.data.mpList[ ctrlJs.data.result ].posterSrc;
+            ctrlJs.data.loadImgList.push(src);
+            ctrlJs.methods.loadImg(function(){
+                $(".result-container img").attr('src', src);
+                ctrlJs.methods.nextPageRead(3);
+                // 生成海报
+                // console.log('生成海报');
+                ctrlJs.methods.createPoster();
+            });
+        },
+        // 生成海报
+        createPoster: function(){
+            setTimeout(function(){
+                dom2img('#poster', {
+                    ondone: function () {
+                        ctrlJs.methods.close();
+                        var posterSrc = $(".dom2img-result").attr('src');
+                        $(".poster-img").attr('src', posterSrc);
+                    }
+                });
+            }, 600);
         },
         // 获取随机数
         getRandom: function(min, max){
@@ -276,8 +340,10 @@ var ctrlJs = {
     //初始化，页面加载后执行
     init: function (callback) {
         var that = this;
-        //初始化题目
-        that.methods.cutQuestion( that.data.activeKey );
+        // 生成海报二维码
+        that.methods.createQrcode();
+        //图片预加载
+        that.methods.loadImg();
         
         if(callback)callback(this);
     }
@@ -286,52 +352,51 @@ var ctrlJs = {
 ctrlJs.init(function(that){});
 
 $(function () {
-    var vConsole = new VConsole();
+    // var vConsole = new VConsole();
     
     //首页过场动画
-    var video = document.getElementById('video');
-        video.load();
-        video.onload = function(){
-            console.log('12344');
-        }
-        var src='./ossweb-img/interlude.mp4';    
-        var videoPlayer = new MMD.VideoPlayer({             
-            videoElement: document.getElementById('video'),//[必填],video元素;
-            src: src,//[必填],video src;
-            loop: false,//[可选],是否循环,默认false,true为循环;
-            muted: false,//[可选],是否静音,默认false,IOS下只有IOS10生效,安卓生效;
-            poster:'',//[可选],video默认图片;
-            tryMultipleVideoPlayAtTheSameTime: false,//[可选],尝试同时播放多个视频,默认false;
-            timesParam: [
-                {name: 'firstPoint',time: 11.48}
-            ],//[可选],video currenttime时间点;
-            onTimes: function(name){             
-                switch (name) {                    
-                    case 'firstPoint':                                    
-                        break;
-                }
-            },//[可选],video currenttime回调;
-            onStart: function(){                
-                console.log('video start');
-                setTimeout(function(){
-                    ctrlJs.methods.nextPageRead(2);
-                }, 1500);
-            },//[可选],video第一个画面出现回调;
-            onEnd: function(){                
-                console.log('video end');
-                $(".interlude-wrap").hide();
-            }//[可选],video播放完成回调;
-        });
-        //当isVideoCanAutoPlay属性为true时,则代表允许自动播放;
-        //false时,则需要通过用户点击才能播放视频;
-        if(videoPlayer.isVideoCanAutoPlay) {
-            // videoPlayer.play();
-        }else {        
-            //click to play;
-        }   
+    var src='./ossweb-img/interlude.mp4';    
+    var videoPlayer = new MMD.VideoPlayer({             
+        videoElement: document.getElementById('video'),//[必填],video元素;
+        src: src,//[必填],video src;
+        loop: false,//[可选],是否循环,默认false,true为循环;
+        muted: false,//[可选],是否静音,默认false,IOS下只有IOS10生效,安卓生效;
+        poster:'',//[可选],video默认图片;
+        tryMultipleVideoPlayAtTheSameTime: false,//[可选],尝试同时播放多个视频,默认false;
+        timesParam: [
+            {name: 'firstPoint',time: 11.48}
+        ],//[可选],video currenttime时间点;
+        onTimes: function(name){             
+            switch (name) {                    
+                case 'firstPoint':                                    
+                    break;
+            }
+        },//[可选],video currenttime回调;
+        onStart: function(){                
+            // console.log('video start');
+            ctrlJs.methods.close();
+            setTimeout(function(){
+                ctrlJs.methods.nextPageRead(2);
+            }, 1500);
+        },//[可选],video第一个画面出现回调;
+        onEnd: function(){                
+            // console.log('video end');
+            $(".interlude-wrap").hide();
+        }//[可选],video播放完成回调;
+    });
+    //当isVideoCanAutoPlay属性为true时,则代表允许自动播放;
+    //false时,则需要通过用户点击才能播放视频;
+    if(videoPlayer.isVideoCanAutoPlay) {
+        // videoPlayer.play();
+    }else {        
+        //click to play;
+    }   
     
     //开始测试
     $(".part-1 .btn-start").on("click", function(){
+        ctrlJs.methods.load();
+        //初始化题目
+        ctrlJs.methods.cutQuestion( ctrlJs.data.activeKey );
         videoPlayer.play();
     });
 
@@ -349,7 +414,6 @@ $(function () {
             }else {
                 //进入下一题
                 ctrlJs.data.activeKey = obj.options[idx].next;
-                console.log(ctrlJs.data.activeKey);
                 ctrlJs.methods.cutQuestion();
             }
         }, 500);

@@ -396,7 +396,7 @@ var g = {
 g.init(function(that){});
 
 $(function () {
-    var vConsole = new VConsole();
+    // var vConsole = new VConsole();
 
     // 核对准考证
     $(".part-1 .J-start-btn").on("click", function(){

@@ -69,6 +69,7 @@
     font-size: .26rem;
     color: #fff;
     text-decoration: none;
+    opacity: 0;
 }
 .options-item.active {
     background-image: url('./p2_options_active.png');
@@ -95,6 +96,7 @@
 .part-3 .btn-container {
     bottom: .96rem;
     left: 0;
+    z-index: 99;
     width: 100%;
 }
 .sava-tips {
@@ -115,7 +117,49 @@
 .btn-share {
     background-position: 0 -1.9rem;
 }
-/* 弹窗 */
+.poster-container {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.poster-wrap {
+    width: 7.5rem;
+    height: 16.5rem;
+    background-image: url('./p3_bg.jpg');
+    background-size: 100% 100%;
+}
+.code-container {
+    top: 9.08rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 5.98rem;
+    height: 1.66rem;
+    background-image: url('./code_bg.png');
+    overflow: hidden;
+}
+.code-wrap {
+    margin: .14rem .2rem 0 0;
+    width: 1.38rem;
+}
+.code-tips-text {
+    margin: .5rem 0 0 .5rem;
+    line-height: .38rem;
+    font-weight: bold;
+    font-size: .26rem;
+    color: #000;
+}
+.poster-img {
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+}
+/* pop */
 .pop-share {
     top: .15rem !important;
     right: 1rem !important;

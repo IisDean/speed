@@ -9,9 +9,9 @@
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <meta itemprop="name" content="天下第一暗器即将面世！" />
-    <meta itemprop="description" content="重铸天下第一暗器<孔雀翎>，即可百分百领取奖励" />
-    <meta itemprop="image" content="https:./ossweb-img/share_bw.jpg" />
+    <meta itemprop="name" content="原来我的命定门派竟然是！" />
+    <meta itemprop="description" content="洗髓易经，不改初心" />
+    <meta itemprop="image" content="./ossweb-img/share_bw.jpg" />
     <title>天刀门派转职测试-天涯明月刀官方网站-腾讯游戏</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/07/02 -->
     <link href="./ossweb-img/style.css" rel="stylesheet" />
@@ -38,6 +38,7 @@
 </head>
 
 <body ontouchstart="">
+    
     <div class="p-r stage">
         <!-- 首页 -->
         <div class="p-a bg part part-1 part-init part-show">
@@ -48,7 +49,7 @@
                 <div class="full-img text-icon">
                     <img src="./ossweb-img/p1_text.png" alt="八荒门派...">
                 </div>
-                <a href="javascript: ;" class="icons btn-start btn-hover t" onclick="PTTSendClick('btn','start-btn','开始测试')">开始测试</a>
+                <a href="javascript: ;" class="icons btn-start btn-scale t" onclick="PTTSendClick('btn','start-btn','开始测试')">开始测试</a>
                 <div class="full-img logo-icon">
                     <img src="./ossweb-img/logo.png" alt="logo">
                 </div>
@@ -58,7 +59,7 @@
         <div class="p-a interlude-container">
             <div class="interlude-wrap" view-mode="v" view-rotation="auto" view-scale="noborder" view-width="750" view-height="1650" view-align="">
                 <div class="p-a">
-                    <video id="video" src="./ossweb-img/interlude.mp4" width="" style="display:none;"></video>
+                    <video id="video" preload src="./ossweb-img/interlude.mp4" width="" style="display:none;"></video>
                 </div>
             </div>
         </div>
@@ -83,17 +84,41 @@
         </div>
         <!-- 结果页 -->
         <div class="p-a bg part part-3 part-init" style="display: none;">
-            <div class="p-r wrap">
+            <img src="" class="p-a poster-img J-poster" alt="">
+            <div class="p-r wrap" style="z-index: 99;">
                 <div class="full-img result-container">
                     <img src="./ossweb-img/result_gaibang.png" alt="门派">
                 </div>
                 <div class="p-a btn-container">
                     <p class="sava-tips t-c">长按可保存图片</p>
-                    <a href="javascript: alert('敬请期待！');" class="icons btn-get-prize btn-hover t" onclick="PTTSendClick('btn','get-prize-btn','点击免费领取转职礼盒')">点击免费领取转职礼盒</a>
+                    <a href="javascript: alert('敬请期待！');" class="icons btn-get-prize btn-scale t" onclick="PTTSendClick('btn','get-prize-btn','点击免费领取转职礼盒')">点击免费领取转职礼盒</a>
                     <a href="javascript: TGDialogS('popShare');" class="icons btn-share btn-hover t" onclick="PTTSendClick('btn','btn-share','一键分享')">一键分享</a>
                 </div>
                 <div class="p-a full-img logo-icon">
                     <img src="./ossweb-img/logo.png" alt="logo">
+                </div>
+                <img src="" class="p-a poster-img J-poster" alt="">
+            </div>
+            <!-- 海报 -->
+            <div class="p-a poster-container">
+                <img src="./ossweb-img/p2_options_active.png" alt="">
+                <div class="p-r bg poster-wrap" id="poster">
+                    <div class="p-r wrap">
+                        <div class="full-img result-container">
+                            <img src="./ossweb-img/result_gaibang.png" alt="门派">
+                        </div>
+                        <div class="p-a bg code-container flex">
+                            <div class="flex-1">
+                                <p class="code-tips-text">测一测我最适合的天刀门派，<br/>免费get转职礼盒！</p>
+                            </div>
+                            <div class="full-img code-wrap" id="qrcode">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="p-a full-img logo-icon">
+                            <img src="./ossweb-img/logo.png" alt="logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,12 +153,20 @@
         }
     </script>
     <script src="./ossweb-img/vconsole.min.js"></script>
+    <script src="./ossweb-img/qrcode.js"></script>
     <script src="./ossweb-img/dom2img.min.js"></script>
     <script src="./ossweb-img/main.js"></script>
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
     <!--引入文件-->
     <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
     <script>
+        TGMobileShare({
+           shareTitle: '原来我的命定门派竟然是！',
+           shareDesc: '洗髓易经，不改初心',
+           shareImgUrl: './ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+           shareLink: '',
+           actName: 'a20200702zztest'
+       });
         //此段代码不能放到外链JXXXXS中，
         var setSite = { //设置网站属性    
             siteType: "a20200702zztest", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx

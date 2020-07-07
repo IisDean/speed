@@ -85,7 +85,6 @@ body {
 .stage {
     width: 100%;
     overflow: hidden;
-    font-family: 'hyjkj';
 }
 .t-c {
     text-align: center;
@@ -161,6 +160,9 @@ a {
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
 }
+.question-list {
+    font-family: 'hyjkj';
+}
 .part {
     top: 0;
     left: 0;
@@ -210,13 +212,82 @@ a {
         opacity: 0;
     }
 }
+.question-title {
+    animation: titleFade .6s ease forwards;
+    -webkit-animation: titleFade .6s ease forwards;
+}
+@keyframes titleFade {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes titleFade {
+    0% {
+        -webkit-transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+.question-list li,
+.options-item {
+    animation: optionsShow .6s ease forwards;
+    -webkit-animation: optionsShow .6s ease forwards;
+}
+@keyframes optionsShow {
+    0% {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes optionsShow {
+    0% {
+        -webkit-transform: scale(1.05);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+.question-list .options-item:nth-child(1) {
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+}
+.question-list .options-item:nth-child(2) {
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
+.question-list .options-item:nth-child(3) {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+.question-list .options-item:nth-child(4) {
+    animation-delay: .8s;
+    -webkit-animation-delay: .8s;
+}
+.question-list .options-item:nth-child(5) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
 .pop {
     display: none;
     outline: none;
 }
 .btn-scale {
-    animation: scaleBtn .6s ease-in infinite alternate;
-    -webkit-animation: scaleBtn .6s ease-in infinite alternate;
+    animation: scaleBtn .6s ease-in-out infinite alternate;
+    -webkit-animation: scaleBtn .6s ease-in-out infinite alternate;
 }
 @keyframes scaleBtn {
     to {
