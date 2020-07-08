@@ -4,43 +4,43 @@ var ctrlJs = {
         mpList: {
             mp_sd: {
                 name: '神刀',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_shendao.png'
+                posterSrc: './ossweb-img/result_shendao.png'
             },
             mp_sl: {
                 name: '少林',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_shaolin.png'
+                posterSrc: './ossweb-img/result_shaolin.png'
             },
             mp_tb: {
                 name: '太白',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_taibai.png'
+                posterSrc: './ossweb-img/result_taibai.png'
             },
             mp_sw: {
                 name: '神威',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_shenwei.png'
+                posterSrc: './ossweb-img/result_shenwei.png'
             },
             mp_tm: {
                 name: '唐门',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_tangmen.png'
+                posterSrc: './ossweb-img/result_tangmen.png'
             },
             mp_tx: {
                 name: '天香',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_tianxiang.png'
+                posterSrc: './ossweb-img/result_tianxiang.png'
             },
             mp_wd: {
                 name: '五毒',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_wudu.png'
+                posterSrc: './ossweb-img/result_wudu.png'
             },
             mp_yh: {
                 name: '移花',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_yihua.png'
+                posterSrc: './ossweb-img/result_yihua.png'
             },
             mp_gb: {
                 name: '丐帮',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_gaibang.png'
+                posterSrc: './ossweb-img/result_gaibang.png'
             },
             mp_zw: {
                 name: '真武',
-                posterSrc: '//game.gtimg.cn/images/wuxia/act/a20200702zztest/result_zhenwu.png'
+                posterSrc: './ossweb-img/result_zhenwu.png'
             }
         },
         //问题列表
@@ -200,7 +200,7 @@ var ctrlJs = {
             }                
         },
         loadImgList: [
-            '//game.gtimg.cn/images/wuxia/act/a20200702zztest/p2_options_active.png',
+            './ossweb-img/p2_options_active.png',
         ],//图片预加载列表
         optionsNum: ['A', 'B', 'C', 'D'],//选项序号
         activeKey: 'q_1',//当前问题键值名
@@ -355,7 +355,7 @@ $(function () {
     // var vConsole = new VConsole();
     
     //首页过场动画
-    var src='//game.gtimg.cn/images/wuxia/act/a20200702zztest/interlude.mp4';
+    var src='./ossweb-img/interlude.mp4';    
     var videoPlayer = new MMD.VideoPlayer({             
         videoElement: document.getElementById('video'),//[必填],video元素;
         src: src,//[必填],video src;

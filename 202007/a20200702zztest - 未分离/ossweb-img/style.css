@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'hyjkj';
-    src: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/HANYIJINKAIJIAN-1.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('./HANYIJINKAIJIAN-1.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -78,7 +78,7 @@ body {
 }
 .icons {
     display: block;
-    background-image: url("//game.gtimg.cn/images/wuxia/act/a20200702zztest/icons.png");
+    background-image: url("./icons.png");
     background-repeat: no-repeat;
     background-size: 7.5rem auto;
 }
