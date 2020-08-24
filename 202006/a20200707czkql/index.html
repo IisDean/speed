@@ -33,9 +33,9 @@
     <meta itemprop="image" content="https://game.gtimg.cn/images/ty/cp/a20200707czkql/share_bw.jpg" />
     <title>仗剑天涯铸神兵-天涯明月刀官方网站-腾讯游戏</title>
     <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/06/15 -->
-    <link href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css" rel="stylesheet">
-    <link href="//game.gtimg.cn/images/ty/cp/a20200707czkql/common.css" rel="stylesheet">
-    <link href="//game.gtimg.cn/images/ty/cp/a20200707czkql/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">
+    <link href="//game.gtimg.cn/images/ty/cp/a20200707czkql/common.css" rel="stylesheet" />
+    <link href="//game.gtimg.cn/images/ty/cp/a20200707czkql/index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -168,14 +168,18 @@
                             <div class="p-a cxgj-btn t-c">再刮一次</div>
                         </div>
                         <p class="gj-msg-text t-c">累计获得刮卡次数：<span>0</span>， 剩余刮卡次数：<span>0</span></p>
-                        <div class="t-r">
+                        <div class="flex flex-between" style="margin: .1rem .54rem 0;">
+                            <a href="javascript: TGDialogS('popRule');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
                             <a href="javascript: TGDialogS('popPrizeMsg');" class="icons look-zjmsg-btn btn-hover" onclick="PTTSendClick('btn','look-zjmsg-btn','查看中奖信息')"></a>
                         </div>
                         <!-- 视频 -->
                         <div class="p-r bg video-container">
                             <a href="javascript: ctrlJs.methods.playVideo('w0935q89x61');" class="p-a icons play-btn btn-hover t" onclick="PTTSendClick('btn','play-p4-btn','视频播放-孔雀翎重现')">视频播放</a>
                         </div>
-                        <a href="javascript: TGDialogS('popRule');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
+                        <!-- banner -->
+                        <div class="full-img banner-wrap">
+                            <img src="//game.gtimg.cn/images/ty/cp/a20200707czkql/banner_1.png" alt="banner">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -511,6 +515,7 @@
 <script src="//game.gtimg.cn/images/ty/cp/a20200707czkql/main.js"></script>
 <script>
     ctrlJs.init(function(that){
+            // that.methods.cutPage(3);
         //导航栏位置
         var aqh = $(".part-2 .wrap").height(),
             bodyh = $("html,body").height();
@@ -533,7 +538,7 @@
             idx > 0 ? that.methods.cutPage(idx) : that.methods.backHome();
             if( idx == 3 ){
                 //刮奖初始化
-                that.methods.initEraser();
+                // that.methods.initEraser();
             }
         });
         // 重铸孔雀翎
@@ -577,7 +582,7 @@
                 $(".hccg-tips-text").hide();
             }, 1000);
             //刮奖
-            that.methods.initEraser();
+            // that.methods.initEraser();
         });
         // 刮奖事件在main.js中
         var $redux = $(".gj-wrap");

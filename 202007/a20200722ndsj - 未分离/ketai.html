@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta itemprop="name" content="掌火年度数据-腾讯游戏" />
+    <meta itemprop="description" content="掌火年度数据-腾讯游戏 " />
+    <meta itemprop="image" content="https:./ossweb-img/share.jpg" />
+    <title>掌火年度数据-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/07/22 -->
+    <link href="./ossweb-img/common.css" rel="stylesheet" />
+    <link href="./ossweb-img/ketai.css" rel="stylesheet" />
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+
+<body ontouchstart="">
+    <h1 class="hide">掌火年度数据</h1>
+    <div class="p-r bg stage">
+        <div class="head-wrap">
+            <div class="avatar-wrap">
+                <img src="./ossweb-img/default_avatar.jpg" alt="头像">
+            </div>
+            <p class="head-name-text t-c">Laughing笑酱</p>
+        </div>
+        <div class="flex flex-middle data-wrap1">
+            <div class="year-text">12年</div>
+            <div class="bg badge-wrap t-c">火线名宿</div>
+        </div>
+        <ul class="bg data-wrap2 t-c">
+            <li class="flex flex-middle data-list">
+                <div class="data-item">
+                    <p class="title-text">军衔</p>
+                    <p class="msg-text">上校3</p>
+                </div>
+                <div class="data-item">
+                    <p class="title-text">战斗场次/胜场</p>
+                    <p class="msg-text">1522/508</p>
+                </div>
+                <div class="data-item">
+                    <p class="title-text">杀敌数</p>
+                    <p class="msg-text">39885</p>
+                </div>
+            </li>
+            <li class="flex flex-middle data-list">
+                <div class="data-item">
+                    <p class="title-text">爆头率</p>
+                    <p class="msg-text">18.53%</p>
+                </div>
+                <div class="data-item">
+                    <p class="title-text">近身杀敌</p>
+                    <p class="msg-text">1508</p>
+                </div>
+                <div class="data-item">
+                    <p class="title-text">手雷杀敌</p>
+                    <p class="msg-text">985</p>
+                </div>
+            </li>
+        </ul>
+        <a href="javascript: alert('敬请期待！');" class="icons btn-look-career btn-hover t" onclick="PTTSendClick('btn','btn-look-career','点击查看我的火线生涯-客态')">点击查看我的火线生涯</a>
+        <!-- 掌火周年3重礼 -->
+        <ul class="p-r gift-list">
+            <li class="p-r gift-item">
+                <div class="p-r gift-title-wrap">
+                    <i class="icons gift-title1 t">一重礼</i>
+                    <p class="msg-text">查看火线生涯<br/>领专属周年头像框</p>
+                </div>
+                <div class="p-a full-img inset-img1">
+                    <img src="./ossweb-img/kt_prize1_inset1.png" alt="奖品">
+                </div>
+                <div class="p-a full-img inset-img2">
+                    <img src="./ossweb-img/kt_prize1_inset2.png" alt="奖品">
+                </div>
+            </li>
+            <li class="p-r flex gift-item">
+                <div class="flex-1"></div>
+                <div class="p-r gift-title-wrap">
+                    <i class="icons gift-title2 t">二重礼</i>
+                    <p class="msg-text t-r">社区动态<br/>赢专属道具</p>
+                </div>
+                <div class="p-a full-img inset-img1">
+                    <img src="./ossweb-img/kt_prize2_inset1.png" alt="奖品">
+                </div>
+                <div class="p-a full-img inset-img2">
+                    <img src="./ossweb-img/kt_prize2_inset2.png" alt="奖品">
+                </div>
+            </li>
+            <li class="p-r gift-item">
+                <div class="p-r gift-title-wrap">
+                    <i class="icons gift-title3 t">三重礼</i>
+                    <p class="msg-text">积分升级<br/>好礼不断</p>
+                </div>
+                <div class="p-a full-img inset-img1">
+                    <img src="./ossweb-img/kt_prize3_inset1.png" alt="奖品">
+                </div>
+                <div class="p-a full-img inset-img2">
+                    <img src="./ossweb-img/kt_prize3_inset2.png" alt="奖品">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"  ></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script>
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+    <!--引入文件-->
+    <script>
+       //  TGMobileShare({
+       //     shareTitle: '勇者同行，元气满满',
+       //     shareDesc: '勇者同行，元气满满 ',
+       //     shareImgUrl: 'https:./ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+       //     shareLink: '',
+       //     actName: 'a20200722ndsj'
+       // });
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性    
+            siteType: "a20200722ndsj", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "ketai", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端客态页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+
+</body>
+</html><!-- #t6Hl8#3F884A19E54511B3D10CBE22F743CD2E -->

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="《龙族幻想》手游，《龙族》IP正版授权，公测现已正式开启，腾讯2019年RPG大作,次世代画面,超拟真世界!Epic顶尖UE4引擎,展现真实场景交互,融入全局光照技术,电影级别画面渲染!
+龙族幻想周年庆，请追随内心，探寻你的周年回忆！" />
+<meta name="Keywords" content="龙族幻想,龙族幻想官网,龙族幻想下载,专属称号,周年回忆" />
+<title>龙族幻想周年庆</title>
+<!-- 设计：CP | 重构：CP | 创建：2020/07/01 -->
+<link rel="stylesheet" type="text/css" href="ossweb-img/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="ossweb-img/comm.css"  />
+</head>
+<script>
+	//屏幕适应
+    (function (win) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            function setRem() {
+                var ua = navigator.userAgent.toLowerCase();
+                var is_iPad = ua.match(/(ipad)/i) != null;
+                var cliWidth = html.clientWidth;
+                var w = document.documentElement.clientWidth, h = document.documentElement.clientHeight;
+                var val = 750;
+                if (w > h) {
+                    //横屏
+                    val = 1650;
+                }
+                html.style.fontSize = 100 * (cliWidth / val) + 'px';
+            }
+            setRem();
+            setTimeout(function () {
+                setRem();
+            }, 300);
+
+        }
+        win.addEventListener('resize', setFont, false);
+        setFont();
+    })(window);
+
+</script>
+<body class="landscape">
+
+<!-- loading-->
+<div view-mode="h" view-rotation="auto" view-scale="height" view-width="1650" view-height="750" view-align="" class="bg-com show" id="load-bg">
+    <div id="loading" class="loading compatibleStyle">
+        <div class="loading-box" >
+            <div class="mid">
+                <img src="ossweb-img/logo.png" class="logo" alt="" />
+                <div class="con flex">
+                    <div class="cl1 cl">
+                        <img src="ossweb-img/c1-girl.png" alt="" />
+                    </div>
+                    <div class="cr1 cr">
+                        <div class="cr-txt"><p>【<span class="name-length nameGame">玩家游戏昵称称</span>】，你好</p><p class="p1">时光列车即将出发</p><p class="p1">请打开声音</p><p class="p1">准备启程</p></div>
+                    </div>
+                </div>
+                <div class="pro-bg">
+                    <div class="progress"></div> 
+                    <div class="pro-car"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- //loading-->
+
+<!-- 页面内容-->
+<div view-mode="h" view-rotation="auto" view-scale="height" view-width="1650" view-height="750" view-align="" class="bg-com" id="main-end">
+    <div class="main-role main">
+        <div class="mid">
+            <div class="con">
+                <img src="ossweb-img/con3-dh.png" class="con3-dh" alt="" />
+                <!-- 角色选择-->
+                <div class="role-sel-box">
+                    <ul class="role-list flex" id="role-list">
+                        <li class="role role1 moveRight delay1" ontouchend="PTTSendClick('btn','role1','路明非');">
+                            <img src="ossweb-img/c2-role1.png" alt="路明非" />
+                            <p class="txt-bg">
+                                探秘尼伯龙根，<br>
+                                狂飙95号公路，<br>
+                                冒险，在继续！
+                            </p>
+                        </li>
+                        <li class="role role2 moveRight delay2" ontouchend="PTTSendClick('btn','role2','楚子航');">
+                            <img src="ossweb-img/c2-role2.png" alt="楚子航" />
+                            <p class="txt-bg">
+                                在血与火中突破极限，<br>
+                                努力，<br>
+                                是为了变得更好！
+                            </p>
+                        </li>
+                        <li class="role role3 moveRight delay3" ontouchend="PTTSendClick('btn','role3','绘梨衣');">
+                            <img src="ossweb-img/c2-role3.png" alt="绘梨衣" />
+                            <p class="txt-bg">
+                                平行世界里，<br>
+                                生活不止一面，<br>
+                                世界很温柔,也很多彩～
+                            </p>
+                        </li>
+                        <li class="role role4 moveRight delay4" ontouchend="PTTSendClick('btn','role4','诺诺');">
+                            <img src="ossweb-img/c2-role4.png" alt="诺诺" />
+                            <p class="txt-bg">
+                                是谁<br>
+                                与你携手并肩<br>
+                                一起冒险？
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="r-txt-box">
+                        <p class="r-txt1 r-txt">请追随内心，探寻你的周年回忆！</p>
+                        <p class="r-txt2 r-txt">（选择仅影响查看先后顺序）</p>
+                    </div>
+                </div>
+                <!-- //角色选择-->
+                <!-- 角色数据页---->
+                <div class="role-data-box">
+                    <div class="role-data1 role-data">
+                        <div class="cl">
+                            <img src="ossweb-img/c1-girl.png" alt="" />
+                        </div>
+                        <div class="cr">
+                            <div class="cr-txt">
+                                <p class="moveTop delay1">1你的剧情进度已完成<i>XX%</i></p>
+                                <p class="moveTop delay2">一路冒险走来</p>
+                                <p class="moveTop delay3">有<i>XX</i>位伙伴加入你的队伍中</p>
+                                <p class="p-mt moveTop delay4">【<span class="name-length">伙伴名称伙伴名</span>】是你最信赖的知己</p>
+                                <p class="moveTop delay5">也许TA就是你追求的那个自己！</p>
+                            </div>
+                        </div>
+                    </div>  <!-- //路明非数据页（冒险）-->
+                    <div class="role-data2 role-data">
+                        <div class="cl">
+                            <img src="ossweb-img/c1-girl.png" alt="" />
+                        </div>
+                        <div class="cr">
+                            <div class="cr-txt fadeIn">
+                                <p class="moveTop delay1">2作为一名顶尖的【<span class="name-length">职业名称</span>】</p>
+                                <p class="moveTop delay2">从不离身的【<span class="name-length">职业武器名称</span>】<br>一路伴你成长</p>
+                                <p class="p-mt moveTop delay3"><span>XX年XX月XX日</span></p>
+                                <p class="moveTop delay4">第一次，你获得龙语 ·【<span class="name-length">龙语名称</span>】</p>
+                                <p class="moveTop delay5">那是你走向SS级血统荣耀的开始</p>
+                            </div>
+                        </div>
+                    </div>  <!-- //楚子航数据页（成长）-->
+                    <div class="role-data3 role-data">
+                        <div class="cl">
+                            <img src="ossweb-img/c1-girl.png" alt="" />
+                        </div>
+                        <div class="cr">
+                            <div class="cr-txt fadeIn">
+                                <p class="moveTop delay1">3你热爱生活</p>
+                                <p class="moveTop delay2">梦想是成为【<span class="name-length">副职名称</span>】</p>
+                                <p class="p-mt moveTop delay3">你热爱时尚</p>
+                                <p class="moveTop delay4">最爱的是名为【<span class="name-length">时装名称</span>】的时装</p>
+                                <p class="r3-replace1 p-mt moveTop delay5">你渴望安稳与温暖</p>
+                                <p class="r3-replace2 moveTop delay6"><span>XX年XX月XX日</span>，你拥有了自己的家</p>
+                                <p class="r3-replace3 p-mt moveTop delay5" style="display: none;">你渴望自由</p><!-- 若无家园数据，则最后两句调整为：-->
+                                <p class="r3-replace4 moveTop delay6" style="display: none;">没有家园，选择去远方</p><!-- 若无家园数据，则最后两句调整为：-->
+                            </div>
+                        </div>
+                    </div>  <!-- //绘梨衣数据页（生活）-->
+                    <div class="role-data4 role-data">
+                        <div class="cl">
+                            <img src="ossweb-img/c1-girl.png" alt="" />
+                        </div>
+                        <div class="cr">
+                            <div class="cr-txt fadeIn">
+                                <p class="moveTop delay1">4<span>XX年XX月XX日</span></p>
+                                <p class="moveTop delay2">是你上一次登录龙族幻想的日子</p>
+                                <p class="p-mt moveTop delay3">还记得，这里与你并肩的<i>XX</i>个战友吗？</p>
+                                <p class="r4-replace1 moveTop delay4">要记得！依然有<i>XX</i>人在等你回来</p>
+                                <p class="r4-replace2 moveTop delay5" style="display: none;">要记得！依然有<i>XX</i>人在与你一起战斗</p>
+                            </div>
+                        </div>
+                    </div>  <!-- //诺诺数据页（羁绊）-->
+                    <div class="role-data5 role-data">
+                        <div class="cl">
+                            <img src="ossweb-img/c1-girl.png" alt="" />
+                        </div>
+                        <div class="cr">
+                            <div class="cr-txt fadeIn">
+                                <p>5<span>XX年XX月XX日</span></p>
+                                <p>你坐上CC1000次列车，<br>来到这个世界</p>
+                                <p class="p-mt"><i>XX</i>个日夜里</p>
+                                <p>你一共打开了龙族<i>XX</i>次</p>
+                                <p>超越了<i>XX%</i>的玩家；</p>
+                            </div>
+                        </div>
+                    </div>  <!-- //个人总数据页-->
+
+                    <a href="javascript:void(0);" id="toNext" class="toNext compatibleStyle" onclick="toNext();" >继续播放</a>
+                    <a href="javascript:void(0);" id="toNextBig" class="toNextBig compatibleStyle" onclick="toNext();" >继续播放</a>
+                </div>
+                <!-- //角色数据页---->
+                <!-- 角色分享页 展示结构 开发数据看这里---->
+                <div class="share-box share-box-before">
+                    <div class="share-poster">
+                        <div class="share-con flex">
+                            <div class="c4-r">
+                                <div class="user-info flex">
+                                    <div class="user"><img src="ossweb-img/user.jpg" id="user-img" alt=""></div>
+                                    <div class="name-bg"><p id="user-name">SiliveAsh</p></div>
+                                    <a href="javascript:;" class="qh-btn hh" ontouchend="PTTSendClick('btn','qh','切换角色');"></a>
+                                </div>
+                                <div class="keyword-box">
+                                    <span>我的周年关键词</span><span class="key-tag1 key-tag">社交达人</span>
+                                </div>
+                                <div class="info-txt">
+                                    <div class="swiper-container swiper-info swiper-info1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="share-txt"><p></p></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev prev prev1"></div>
+                                    <div class="swiper-button-next next next1"></div>
+                                </div>
+                                <p class="share-tips share-tips1">以上数据截至2020年7月10日，数据录入可能存在波动</p>
+                            </div>
+                        </div>
+                        <div class="no-share">
+                            <div class="s-btn-box flex">
+                                <a href="javascript:;" class="again-btn icon hh" ontouchend="PTTSendClick('btn','again','再次观看');">再次观看</a>
+                                <a href="javascript:popShow('popReward');" class="lq-btn icon hh" ontouchend="PTTSendClick('btn','lq','领取周年福利');">领取周年福利</a>
+                                <a href="javascript:;" class="pos-btn icon hh" ontouchend="PTTSendClick('btn','pos','生成海报');" >生成海报</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //角色分享页---->
+            </div>
+        </div>
+    </div>
+    <p class="p-tips">分享图正在生成中...</p>
+
+    <div class="bgm">
+        <audio id="bgm" src="ossweb-img/bgm.mp3" preload="auto"></audio>
+    </div>
+</div>
+<!-- //页面内容-->
+
+<!-- 角色分享页 需要生成的结构 跟角色分享页 展示结构 对应---->
+<div class="share-box share-box-after">
+    <div class="share-poster" id="poster1">
+        <div class="share-con flex">
+            <div class="c4-r">
+                <div class="user-info flex">
+                    <div class="user"><img src="" alt=""></div>
+                    <div class="name-bg"><p></p></div>
+                </div>
+                <div class="keyword-box">
+                    <span>我的周年关键词</span><span class="key-tag1 key-tag"></span>
+                </div>
+                <div class="info-txt">
+                    <div class="swiper-container swiper-info swiper-info2">
+                        <div class="swiper-wrapper">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev prev2"></div>
+                    <div class="swiper-button-next next next2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="code"><img src="ossweb-img/code.jpg" alt="" /> </div>
+    </div>
+</div>
+<!-- //角色分享页 需要生成的结构 ---->
+
+<!-- video-->
+<div view-mode="h" view-rotation="auto" view-scale="width" view-width="1650" view-height="750" view-align="" class="bg-com" id="video-bg">
+    <a id="startPlay" compatibleStyle ><span>START!</span></a>
+    <div class="video-box">
+        <video id="video" webkit-playsinline playsinline></video>
+    </div>
+    <a href="javascript:void(0);" id="toEnd" class="toEnd compatibleStyle" onclick="skipToEnd();" >跳过 </a>
+    <a href="javascript:void(0);" id="toRoleEnd" class="toEnd compatibleStyle" onclick="skipRoleEnd();" >跳过 </a>
+</div>
+<!-- //video-->
+
+<!-- 弹窗层-->
+<div view-mode="h" view-rotation="auto" view-scale="height" view-width="1650" view-height="750" view-align="" class="bg-com" id="main-pop">
+
+    <!-- 生成保存弹窗 -->
+    <div class="pop-box compatibleStyle" id="popImg">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','s-colse','保存关闭');">关闭</a>
+        <img src="" alt="" id="pic1">
+        <p class="txt">长按上方图片保存分享</p>
+    </div>
+    <!-- 角色绑定弹窗 -->
+    <div class="pop-box popRole compatibleStyle" id="popRole">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','role-colse','角色绑定关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="pop-tit1 pop-tit">请选择绑定的大区和角色</p>
+            <div class="info-list">
+                <div class="opt">
+                    <label>平台：</label>
+                    <select><option value="">选择平台</option></select>
+                </div>
+                <div class="opt">
+                    <label>系统：</label>
+                    <select><option value="">选择系统</option></select>
+                </div>
+                <div class="opt">
+                    <label>区服：</label>
+                    <select><option value="">请选择大区</option></select>
+                </div>
+                <div class="opt">
+                    <label>角色：</label>
+                    <select><option value="">请选择角色</option></select>
+                </div>
+            </div>
+            <a href="javascript:;" class="bd-btn hh" ontouchend="PTTSendClick('btn','bd-btn','确认绑定');">确认绑定</a>
+            <a href="javascript:;" class="no-role-btn" ontouchend="PTTSendClick('btn','no-role','没有角色');">没有角色</a>
+        </div>
+    </div>
+    <!-- 登录弹窗 -->
+    <div class="pop-box pop-com compatibleStyle" id="popLogin">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','login-colse','登录关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="pop-tit2 pop-tit">请选择绑定的大区和角色</p>
+            <div class="pop-btn-box flex">
+                <a href="javascript:;" class="wx-btn" ontouchend="PTTSendClick('btn','wx',' 微信');">微信</a>
+                <a href="javascript:;" class="qq-btn" ontouchend="PTTSendClick('btn','qq',' QQ');">QQ</a>
+            </div>
+        </div>
+    </div>
+    <!-- 提示通用弹窗-->
+    <div class="pop-box pop-com compatibleStyle" id="popTips">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','ts-colse','提示关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tip-box flex">
+                <p class="pop-txt">提示提示提示语言</p>
+            </div>
+        </div>
+    </div>
+
+    <!--奖励弹窗 7.13-->
+    <div class="pop-box pop-com compatibleStyle" id="popReward">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','jl-colse','领取奖励关闭');">关闭</a>
+        <div class="pop-con">
+            <img src="ossweb-img/pop-jl1.png" class="pop-jl" alt="" />
+            <a href="javascript:popShow('popReceive');" class="lqjl icon hh" ontouchend="PTTSendClick('btn','lqjl','领取奖励');">领取奖励</a>
+        </div>
+    </div>
+    <!--领取成功 7.13-->
+    <div class="pop-box pop-com compatibleStyle" id="popReceive">
+        <a href="javascript:popHide();" class="btn-close hh" ontouchend="PTTSendClick('btn','lq-colse','领取成功关闭');">关闭</a>
+        <div class="pop-con">
+            <img src="ossweb-img/pop-tips1.png" class="pop-tips-img" alt="" />
+            <a href="javascript:popHide();" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确认');">确认</a>
+        </div>
+    </div>
+
+</div>
+
+<!--<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>-->
+<script src="//ossweb-img.qq.com/images/js/mmdPlugin/mmd-plugin.min.1.0.2.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mmdVideoPlayer/mmd.videoplayer.min.1.0.1.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/zepto/zepto1.2.min.js"></script>
+<script type="text/javascript" src="ossweb-img/swiper.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/motion/loader.min.js"></script>
+<script src="//game.gtimg.cn/images/js/dom2img/1.0.min.js"></script>
+
+<script src="//cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+<script>
+    var vConsole = new VConsole();
+</script>
+<script>
+    //弹窗
+    var popShow = function (id) {
+        popHide();
+        $("#main-pop").addClass("show");
+        var p = $('#' + id),
+            b = $(document.createElement('div')),
+            g = function () {
+                p.css({
+                    position: 'fixed',
+                    zIndex: 999,
+                    top: '50%',
+                    left: '50%',
+                    marginLeft: -p.width() / 2,
+                    marginTop: -p.height() / 2
+                }).attr('for', 'pop');
+                b.css({
+                    width: '100%',
+                    height: '100%',
+                    position: 'fixed',
+                    zIndex: 998,
+                    top: 0,
+                    left: 0,
+                    background: '#000',
+                    opacity: 0.85
+                }).attr('for', 'overlay');
+            };
+        $(window).on('resize orientationchange', function () {
+            g();
+            setTimeout(g, 300);
+        });
+        p.parent().append(b);
+        p.show();
+        g();
+    };
+    //关闭弹窗
+    var popHide = function () {
+        $('[for="pop"]').hide();
+        $('[for="overlay"]').remove();
+        $("#main-pop").removeClass("show");
+    };
+
+    //判断横竖屏
+    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+        if (window.orientation === 180 || window.orientation === 0) {
+            $("body").addClass("portrait").removeClass("landscape");
+        }
+        if (window.orientation === 90 || window.orientation === -90 ){
+            $("body").addClass("landscape").removeClass("portrait");
+        }
+    }, false);
+
+    //bgm
+    document.getElementById('bgm').volume = 1;
+    var bgmPlayer = {
+        dom: $('.bgm'),
+        audio: document.getElementById('bgm'),
+        play: function () {
+            this.audio.play();
+            this.dom.removeClass('pause');
+        },
+        pause: function () {
+            this.audio.pause();
+            this.dom.addClass('pause');
+        },
+        init: function () {
+            var a = this;
+            a.dom.on('click', function () {
+                if ($(this).hasClass('pause')) {
+                    a.play();
+                } else {
+                    a.pause();
+                }
+            });
+
+        }
+    };
+
+    document.addEventListener('visibilitychange', function () {
+        var audio = document.querySelector('audio');
+        if (document.hidden) {
+            audio.pause();
+            //console.log("页面非激活,暂定播放");
+        } else {
+            audio.play();
+            //console.log("页面激活， 继续播放")
+        }
+    });
+   //$('.bgm').fadeIn();
+
+   //bgm播放完后 从30s循环
+    setInterval(function (){
+        var _bgm = document.getElementById("bgm");
+        if(_bgm.currentTime >= _bgm.duration){
+            _bgm.currentTime = 30;
+        }
+    }, 500);
+
+    // 判断手机系统
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //Android终端
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isAndroid) {
+        // console.log("安卓机！");
+        $("#startPlay").click(function(){
+            var audio = document.getElementById('bgm');
+            audio.play();
+        });
+    }
+    if (isIOS) {
+
+    }
+
+
+
+</script>
+
+<script>
+    /*绑定角色弹窗内的没有角色
+   $(".no-role-btn").on("click",function () {
+       if(isWX()){
+           window.location.href="//game.weixin.qq.com/cgi-bin/h5/static/gamecenter/detail.html?appid=wxebffc92f0b100397&ssid=22&autoinstall=1&type=1#wechat_redirect";
+       }else {
+           window.location.href="//speed.gamecenter.qq.com/pushgame/v1/detail?appid=1106940691&_wv=2164260896&_wwv=448&autodownload=1&autolaunch=1&autosubscribe=1";
+       }
+   });
+
+   //微信
+   function isWX(){
+       var  ua = navigator.userAgent;
+       if(ua.match(/MicroMessenger/i) == 'MicroMessenger'){
+           return true;
+       }else{
+           return false;
+       }
+   }
+   //QQ
+   function isQQ(){
+       var  ua= navigator.userAgent;
+       if (ua.match(/QQ\//i) == "QQ/") {
+           return true;
+       } else {
+           return false;
+       }
+   }*/
+
+   // popShow("popLogin");
+
+    //切换角色
+    $(".qh-btn").on("click",function () {
+        popShow("popRole");
+    });
+
+
+    //文字
+    var txt0 = $(".loading-box .cr-txt");
+    autotype(txt0);
+    function autotype(txt,callback){
+        var $text = txt;
+        var str = $text.html();
+        var index = 0;
+        var x = $text.html('');
+        var timer1 = setInterval(function() {
+            $text.show();
+            var current = str.substr(index, 1);
+            if (current == '<') {
+                index = str.indexOf('>', index) + 1;
+            } else {
+                index++;
+            }
+            $text.html(str.substring(0, index));
+            if (index >= str.length) {
+                clearTimeout(timer1);
+                setTimeout(callback,100);
+            }
+        }, 90);
+    }
+
+    //loading
+    var page = {
+        imagePath: 'ossweb-img/',
+        /**
+         * 播放，并判断是否跳过首页播放
+         * @param  {[type]} bool [是否跳过首页，true跳过]
+         * @return {[null]}      [description]
+         */
+        loaded:function(type){
+            var loadbox = $('.loading');
+            loadbox.hide();
+            loadbox.addClass('pageload-complete');
+            if(type){}
+        },
+        loader: function () {
+            var source = ['bd-btn.png','bg.jpg','c1-girl.png','c1-girl-bg.png','c1-txt-bg.png','c2-role1.png','c2-role2.png','c2-role3.png','c2-role4.png',
+                'c2-tips.png','c2-txt-bg1.png','c2-txt-bg2.png','c4-role.png','c4-txt-bg.png','c4-txt-bg2.png','c4-txt-qp.png','con3.png','con3-role.png','con3-role2.png',
+                'con3-dh.png','post.jpg','share-bg.jpg','pop1.png','pop2.png','pop-com.png','pop-tit.png','icon.png','pop-jl1.png','pop-tips1.png','qq-btn.png','wx-btn.png'];
+            for (var n in source) {
+                source[n] = page.imagePath + source[n];
+            }
+            new mo.Loader(source, {
+                loadType: 1,
+                minTime: 200,
+                onLoading: function (count, total) {
+                    if (count === total) {
+                        $('.pro-car').css({ left: '90%'});
+                        $('.progress').css({left:'1%'})
+                    } else {
+                        $('.pro-car').css({ left: parseInt(count / total * 100-4) + '%'});
+                        $('.progress').css({left:parseInt(count / total * 100-99) + '%'})
+                    }
+                },
+                onComplete: function (time) {
+                    setTimeout(function () {
+                        var audio = document.getElementById('bgm');
+                        audio.play();
+                    }, 800);
+
+                    setTimeout(function () {
+                        page.loaded();
+                        videoShow();
+                    }, 200);
+                }
+            });
+        },
+        init: function () {
+            setTimeout(function () {
+              page.loader();
+            }, 1500);
+        }
+    };
+    page.init();
+
+    //video load
+    document.getElementById('video').load();
+    document.getElementById('bgm').load();
+    document.addEventListener("WeixinJSBridgeReady", function () { //微信
+        document.getElementById('video').load();
+        document.getElementById('bgm').load();
+    }, false);
+
+    //视频
+    var videosrc = "ossweb-img/video.mp4";  //测试视频
+    var src=videosrc;
+    var videoPlayer=new MMD.VideoPlayer({
+            videoElement:document.getElementById('video'),//[必填],video元素;
+            src:src,//[必填],video src;
+            loop:false,//[可选],是否循环,默认false,true为循环;
+            muted:false,//[可选],是否静音,默认false;
+            poster:'ossweb-img/post.jpg',//[可选],video默认图片;
+            timesParam:[
+                {name:'showSkipBtn',time:3},
+                {name:'loadOne',time:44},
+            ],//[可选],video currenttime时间点;
+            onTimes:function(name){
+                switch (name)
+                {
+                    case 'showSkipBtn':
+                        //to do;
+                        document.getElementById('toEnd').style.display='block';
+                        PTTSendClick('btn','jumptoEnd','跳到角色页');
+                        break;
+                    case 'loadOne':
+                        skipToEnd();
+                        console.log(videoPlayer.timesParam[1].time);
+                        break;
+                }
+            },//[可选],video currenttime回调;
+            onStart:function(){
+                document.getElementById('loading').style.display='none';
+            },//[可选],video第一个画面出现回调;
+            onEnd:function(){
+                skipToEnd();
+            }//[可选],video播放完成回调;
+        }
+    );
+    // console.log('videoPlayer.isVideoCanAutoPlay:',videoPlayer.isVideoCanAutoPlay);
+
+    //loading后视频显示
+    var btn=document.getElementById('startPlay');
+    function videoShow(){
+        $("#load-bg").removeClass("show");
+        $("#video-bg").addClass("show");
+        if(videoPlayer.isVideoCanAutoPlay)
+       // if(videoPlayer.isVideoCanAutoPlay&&(isWX()||isQQ()))
+        {
+          
+            btn.style.display='none';
+            videoPlayer.poster.src="";
+            videoPlayer.play();
+            PTTSendClick('btn','play','播放');
+            
+            bgmPlayer.init();
+
+        }else{
+            btn.style.display='block';
+            btn.addEventListener('click',function(e)
+            {
+                btn.style.display='none';
+                videoPlayer.play();
+                PTTSendClick('btn','play','播放');
+
+                bgmPlayer.init();
+            });
+        }
+
+        $("#startPlay").on('click',function() {
+            btn.style.display='none';
+            document.getElementById('video').style.display='block';
+            videoPlayer.play();
+            PTTSendClick('btn','startplay','开始按钮播放');
+         });
+    }
+
+  
+    //loading后视频跳过
+    function skipToEnd() {
+        //videoPlayer.pause();
+        TimeAndPause();
+        $("#toEnd").css("display","none");
+        $("#main-end").addClass("show");
+        $("#video-bg").removeClass("show");
+        $(".role-sel-box").addClass("show");
+        PTTSendClick('btn','toEnd','到达角色选择页');
+       var _bgm=document.getElementById("bgm");
+       _bgm.currentTime=30;    
+
+    }
+
+    //角色选择数据以及时间段
+    var MaxIndex=4;
+    var selArr = [
+        {
+            idx: 0,
+            startTime: 74,
+            endTime: 88
+        },
+        {
+            idx: 1,
+            startTime: 45,
+            endTime: 59.33333
+        },
+        {
+            idx: 2,
+            startTime: 60,
+            endTime: 73.33333
+        },
+        {
+            idx: 3,
+            startTime: 89,
+            endTime:98.00066
+        },
+        {
+            idx: 4,
+            startTime: 98.5,
+            endTime: 120
+        },
+    ];
+    var newArr = [];
+    var _n = 0;
+    var Timer;
+    var index;
+    $("#role-list li").on("click",function(){
+        index=$(this).index();
+        newArr = selArr;
+        var str = selArr.splice(index,1);
+        selArr.unshift(str[0]);
+
+        //$(".main-role .role-sel-box").removeClass("show");  //角色选择页离开
+        $(".role-sel-box").removeClass("show").hide();  //角色选择页离开
+        $(".main-role .con").addClass("con2");
+        $(".role-data-box").addClass("show"); //数据内容页出现
+        show(0);
+    });
+
+    function show(num){
+        if(num == 1){
+            clearTimeout(Timer); //0自动下一页  1点击下一页
+        }
+        if (_n === 0) {
+            $(".toNext").show();
+        }else {
+            $(".toNext").hide();
+        }
+        if(_n > MaxIndex){
+            clearTimeout(Timer);
+            $(".role-data-box").removeClass("show");
+            $(".role-data").removeClass("show");
+            $(".share-box-before").addClass("show");  //分享页出现
+            $(".main-role .con").addClass("con3");
+        }else{
+            // for(var i=0;i<=MaxIndex;i++){
+            //
+            // }
+            //$(".role-data").eq(selArr[_n].idx).addClass("show").siblings(".role-data").removeClass("show");
+        }
+
+        $(".role-data").eq(selArr[_n].idx).addClass("show").siblings(".role-data").removeClass("show");
+        videoDivPlay(_n);
+        _n++;
+    }
+
+
+    //视频时间段播放暂停
+    var interval;
+    var timeDisplay;
+    function videoDivPlay(idx) {
+        console.log('1');
+        videoPlayer.currentTimeAndPlay = selArr[idx].startTime;
+        console.log(selArr[idx].startTime);
+
+        $("#main-end").removeClass("show");
+        $(".role-sel-box").removeClass("show");
+        $(".role-data-box").removeClass("show");
+        $("#video-bg").addClass("show");
+
+        setTimeout(function(){
+            $("#toRoleEnd").css("display","block");
+        }, 2000);
+        interval = setInterval(function () {
+            timeDisplay = Number(videoPlayer.currentTime);
+            console.log('--'+videoPlayer.currentTime);
+            //console.log(newArr[idx].endTime);
+            if (timeDisplay >= selArr[idx].endTime){
+                console.log('123'+timeDisplay);
+                videoDivPause();
+               // videoPlayer.pause();
+            }
+        },1000/25);
+    }
+    function videoDivPause() {
+        //videoPlayer.pause();
+        clearInterval(interval);
+        TimeAndPause();
+        $("#video-bg").removeClass("show");
+        $("#main-end").addClass("show");
+        $(".role-data-box").addClass("show"); //数据内容页出现
+
+        Timer = setTimeout(function () {
+            if (_n > MaxIndex){
+                clearTimeout(Timer);
+                $(".role-data-box").removeClass("show");
+              //  $(".role-data").removeClass("show");
+                $(".share-box-before").addClass("show");  //分享页出现
+                $(".main-role .con").addClass("con3");
+            }else{
+                show(0);
+            }
+        },8000);//设置定时器，显示下一个数据
+    }
+    function TimeAndPause(){
+        if(_n > MaxIndex){
+            videoPlayer.pause();
+        }else{
+            videoPlayer.currentTimeAndPause = selArr[_n].startTime;
+        }
+    }
+
+    //数据页内容继续播放下一个
+    function toNext() {
+        clearTimeout(Timer);
+        clearInterval(interval);
+        show(1); //点击播放下一页
+        PTTSendClick('btn','toNext','播放下一页');
+    }
+
+    //再次观看
+    function clearShow(){
+        clearInterval(interval);
+        _n = 0;
+        selArr = [
+            {
+                idx: 0,
+                startTime: 74,
+                endTime: 88
+            },
+            {
+                idx: 1,
+                startTime: 45,
+                endTime: 59.33333
+            },
+            {
+                idx: 2,
+                startTime: 60,
+                endTime: 73.33333
+            },
+            {
+                idx: 3,
+                startTime: 89,
+                endTime:98.00066
+            },
+            {
+                idx: 4,
+                startTime: 98.5,
+                endTime: 120
+            },
+        ];
+        newArr = [];
+        clearTimeout(Timer);
+        $(".role-sel-box").removeClass("show");  //角色选择页离开
+        $(".role-data-box").removeClass("show");
+        $(".role-data").removeClass("show");;
+    }
+    $(".again-btn").on("click",function(){
+        videoPlayer.replay();
+        clearShow();
+        $("#toRoleEnd").css("display","none");
+        $("#main-end").removeClass("show");
+        $(".share-box-before").removeClass("show");
+        $(".main-role .con").removeClass("con2");
+        $(".main-role .con").removeClass("con3");
+        $("#video-bg").addClass("show");
+        $(".main-role .role-sel-box").show();
+
+        var _bgm=document.getElementById("bgm");
+       _bgm.currentTime=0;  
+    });
+
+
+    //角色视频跳过
+    function skipRoleEnd() {
+        clearShow();
+       // videoPlayer.pause();
+        TimeAndPause();
+        $("#toRoleEnd").css("display","none");
+        $("#video-bg").removeClass("show");
+        $("#main-end").addClass("show");
+        $(".share-box-before").addClass("show");  //分享页出现
+        $(".main-role .con").addClass("con3");
+        PTTSendClick('btn','toEnd','到达分享页');
+    }
+
+    //分享页信息 结果页数据 0路明非（冒险） 1楚子航（成长） 2绘梨衣（生活） 3诺诺（羁绊） 4个人总
+    var infoFun = {
+        infoList: [
+            {
+             txt:[
+                    '剧情进度完成<i>XX%</i><br>'+
+                    '拥有<i>XX</i>个伙伴<br>'+
+                    '友好度最高的伙伴是<i>XXX</i>'
+                ]
+            },
+            {
+                txt:[
+                    '你钟爱【<span>职业武器名字</span>】<br>'+
+                    '最喜欢的职业：<i>XXX</i><br>'+
+                    '<span>XX年XX月XX日</span>第一次获得龙语'
+                ]
+            },
+            {
+                txt:[
+                    '最高身份等级：<i>XX</i><br>'+
+                    '最喜爱的时装：<i>XXX</i><br>'+
+                    '<span>XX年XX月XX日</span><br>'+
+                    '拥有了自己的家园'
+                ]
+            },
+            {
+                txt:[
+                    '最后一次登录时间：<br><span>XX年XX月XX日</span><br>'+
+                    '拥有<i>XX</i>个好友<br>'+
+                    '其中<i>XX</i>人在等你回来继续战斗'
+                ]
+            },
+            {
+                txt:[
+                    '<span>XX年XX月XX日</span>注册<br>'+
+                    '启动过<i>XX</i>次游戏<br>'+
+                    '超越<i>XX%</i>的玩家'
+                ]
+            }
+        ]
+    };
+
+    //结果页关键词
+    var keyWord=['资深元老','新生龙宝','人间肝帝','Social达人','母胎SOLO','富贵人家','四海为家'];
+
+    var swiperinfoNum = 0;
+    function swiperCard() {
+        var html ="";
+        var infoLists = infoFun.infoList;
+        //console.log(infoLists);
+        for (var a=0; a< (infoLists.length);a++) {
+            if(infoLists[a].txt == ''){
+            }else {
+                html +=
+                    '<div class="swiper-slide">' +
+                        ' <div class="share-txt">' +
+                        '<p>' + infoLists[a].txt +'</p>' +
+                        ' </div>' +
+                    ' </div>'
+            }
+        }
+        return html;
+    }
+    $('.swiper-info .swiper-wrapper').html(swiperCard());
+
+    //保存图获取分享结构里的信息
+    var userSrc = $("#user-img").attr("src");
+    var userTxt = $("#user-name").html();
+    var tipTxt=$(".share-tips1").html();
+    $("#poster1 .user").find("img").attr("src", userSrc);
+    $("#poster1 .name-bg").find("p").html(userTxt);
+    $(".key-tag").html(keyWord[0]);
+
+    //生成海报
+    $('.pos-btn').on('click', function() {
+        //console.log(swiperinfoNum);
+        $('.p-tips').show();
+        $('.swiper-info2 .swiper-slide').hide();
+        $('.swiper-info2 .swiper-slide').eq(swiperinfoNum).show().addClass("transform");
+        setTimeout(function(){
+            dom2img('#poster1', {
+                ondone: function () {
+                    draw();
+                }
+            })
+        }, 30);
+    });
+    //二次裁剪
+    function draw() {
+        var nuns = $('.dom2img-result').length-1;
+        var path=  $('.dom2img-result')[nuns].src;
+        var img = new Image();
+        img.src = path;
+        img.onload = function(){
+            var w = img.width,
+                h = img.height;
+            var canvas = document.createElement('canvas');
+            ctx = canvas.getContext('2d');
+            canvas.width = w-3;
+            canvas.height = h-3;
+            //画背景
+            ctx.drawImage(img,0,0);
+            //画最终图
+            var last_img = new Image();
+            last_img.setAttribute('crossOrigin', 'anonymous');
+            last_img.src = canvas.toDataURL("image/png", 1);
+            last_img.onload = function () {
+                document.getElementById('pic1').src = last_img.src;
+                popShow('popImg');
+                $("#main-end").css("z-index","2");
+                $(".p-tips").hide();
+            };
+        }
+    }
+
+    //切换
+    var swiper = new Swiper('.swiper-info1', {
+         effect : 'fade',
+         fadeEffect: {
+             crossFade: true,
+         },
+        navigation: {
+            prevEl: '.prev1',
+            nextEl: '.next1',
+        },
+        observer:true,
+        observeParents:true,
+        on: {
+            slideChangeTransitionStart: function(){
+                //console.log(swiperinfoNum+'切换');
+                swiperinfoNum = swiper.activeIndex;
+                swiper2.slideTo(swiper.activeIndex, 600, true);
+            }
+
+        }
+    });
+    var swiper2 = new Swiper('.swiper-info2', {
+         effect : 'fade',
+         fadeEffect: {
+            crossFade: true,
+         },
+        navigation: {
+            prevEl: '.prev2',
+            nextEl: '.next2',
+        },
+        observer:true,
+        observeParents:true,
+        on: {
+            slideChangeTransitionStart: function(){
+                swiper2.slideTo(swiper.activeIndex, 600, true);
+            }
+        }
+    });
+
+
+    /*登录
+    milo.ready(function () {
+        need("biz.login", function (LoginManager) {
+            LoginManager.init({
+            });
+            //QQ登录
+            milo.addEvent(g('ptLoginBtn'), 'click', function (e) {
+                LoginManager.login();
+            });
+            //检查登录态
+            LoginManager.checkLogin(function(userInfo){
+                //console.log("已登录");
+                //console.log("登录信息：",userInfo);
+            },function(){
+                console.log("未登录");
+            });
+            //注销
+            milo.addEvent(g("ptLogoutBtn"),"click",function(){
+                LoginManager.logout(
+                    {
+                        logoutCallback:function(){
+                            alert("已注销");
+                        }
+                    }
+                );
+            })
+        });
+    });*/
+
+
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+
+    //分享
+    TGMobileShare({
+        shareTitle:'龙族幻想周年庆',
+        shareDesc:'请追随内心，探寻你的周年回忆！',
+        shareImgUrl:'ossweb-img/share.png',
+        shareLink:'',
+        actName:'a20200630data'
+    });
+
+
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20200630data",
+        pageType:"index",
+        pageName:"首页",
+        project:"other",
+        osact:0
+    };
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+
+</script>
+</body>
+</html>

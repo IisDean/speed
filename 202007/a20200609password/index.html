@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="谁是普通话最强王者~" />
+<meta name="Keywords" content="功能游戏,谁是普通话最强王者" />
+<title>《普通话小镇》公益活动</title>
+<!-- 设计：CP | 重构：CP | 创建：2020/06/10 -->
+<script>
+    //屏幕适应
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        function setFont() {
+            var html = document.documentElement;
+            var k =750;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+<link type="text/css" rel="stylesheet" href="ossweb-img/comm.css?v=3" />
+</head>
+
+<!-- 默认 活动首页:index-page   解锁页：unlock-page  领奖结算页：result-page-->
+<body class="index-page">
+    <div class="wrap">
+        <div class="head">
+            <!-- 登录信息 -->
+            <div class="login-box" style="display: none;">
+                <!-- 登录信息 -->
+                <div id="ams_loginbar">
+                    <div id="unlogin">
+                        您好，请<a id="ptLoginBtn" href="javascript:;">【登录】</a>
+                    </div>
+                    <div id="logined" style="display: none;">
+                        <span>欢迎您，</span>
+                        <span id="userinfo"></span>
+                        <a id="ptLogoutBtn" href="javascript:;" >【注销】</a>
+                    </div>
+                </div>
+            </div>
+            <img src="ossweb-img/logo.png" class="logo" alt="" />
+            <a href="javascript:popShow('pop-rule');" class="rule-btn" ontouchend="PTTSendClick('btn','rule','规则');">规则</a>
+            <div class="time"><img src="ossweb-img/time.png" alt="活动时间 : 7月23号-8月6号" /></div>
+            <div class="slg"><img src="ossweb-img/slg.png" alt="益口同声传递爱" /></div>
+            <div class="roll-box flex">
+                <i class="r-ico icon hh"></i>
+                <div class="roll-txt">
+                    <ul>
+                        <li class="notice-active">恭喜小九的樱桃小丸子获得现金红包0.2元</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 首页红包部分-->
+            <div class="index-red red-part">
+                <div class="num-txt"><span class="s1">剩余数量 : </span> <span class="s2">943,3433</span></div>
+                <!-- red-before 添加show显示-->
+                <div class="show red-before red-box">
+                    <div class="red-logo" title="普通话小镇"></div>
+                    <a href="javascript:popShow('pop-sel');" class="send-btn icon comm" ontouchend="PTTSendClick('btn','send','发爱心口令');">发爱心口令</a>
+                    <p class="r-txt">你和好友都可以领哦~</p>
+                </div>
+            </div>
+
+            <!-- 解锁页红包部分-->
+            <div class="unlock-red red-part">
+                <!-- red-before 添加show显示-->
+                <div class="show red-before red-box">
+                    <div class="red-logo" title="普通话小镇"></div>
+                    <div class="word-box">
+                        <p>念口令领红包</p>
+                        <div class="word-say"><i class="read-img"></i><span class="word-txt">“益口同声传递爱”</span><i class="read-img2 read-img"></i></div>
+                    </div>
+                    <a href="javascript:;" id="prize-btn" class="prize-btn icon comm" ontouchend="PTTSendClick('btn','priz','长按念出领奖');">长按念出领奖</a>
+                </div>
+
+                <!-- 本红包已领光 状态-->
+                <div class="red-before red-box ">
+                    <div class="red-logo" title="普通话小镇"></div>
+                    <div class="word-box">
+                        <p>念口令领红包</p>
+                        <div class="word-say"><i class="read-img"></i><span  class="word-txt">“益口同声传递爱”</span><i class="read-img2 read-img"></i></div>
+                    </div>
+                    <a href="javascript:;"  class="my-password icon comm" ontouchend="PTTSendClick('btn','my-password','创建我的口令');">创建我的口令</a>
+                    <p class="lw-txt">本红包已领光</p>
+                </div>
+            </div>
+
+            <!-- 领奖结算页红包部分-->
+            <div class="result-red red-part">
+                <!-- red-after 添加show显示-->
+                <div class=" show red-after red-box" >
+                    <div class="red1 red"></div>
+                    <div class="red2 red"></div>
+                    <div class="red3 red">
+                        <div class="user"><img src="ossweb-img/user.jpg" alt=""></div>
+                        <div class="gx-txt">恭喜<span class="name">昵称昵称昵称</span>获得</div>
+                        <div class="money"><i>￥</i><span>0.3</span></div>
+                        <p>现金红包</p>
+                    </div>
+                    <div class="red-con">
+                        <a href="javascript:;" class="reflect-btn icon comm" ontouchend="PTTSendClick('btn','reflect','提 现');">提 现</a>
+                        <!--<a href="javascript:popShow('pop-one-step');" class="post-btn icon comm" ontouchend="PTTSendClick('btn','post','注册提现');">注册提现</a>-->
+                        <!--<a href="javascript:;" class="gray-reflect icon comm" ontouchend="PTTSendClick('btn','reflect','提 现');">提 现</a>&lt;!&ndash; //灰态提现&ndash;&gt;-->
+                        <!--<a href="javascript:;" class="thank-btn icon comm" ontouchend="PTTSendClick('btn','thank','感谢参与');">感谢参与</a>&lt;!&ndash; //灰态感谢参与&ndash;&gt;-->
+                        <!--<a href="javascript:;" class="ytx-btn icon comm" ontouchend="PTTSendClick('btn','ytx','已提现');">已提现</a>&lt;!&ndash; //灰态已提现&ndash;&gt;-->
+                        <div class="djs-box"><span>提现有效期</span> <span id="CountDown"></span></div>
+                        <a href="javascript:;" class="haoy-btn icon comm" ontouchend="PTTSendClick('btn','haoy','邀请好友一起解锁');">邀请好友一起解锁</a>
+                        <!--<a href="javascript:popShow('pop-sel');" class="my-btn icon comm" ontouchend="PTTSendClick('btn','my','我也要发爱心口令');">我也要发爱心口令</a>-->
+                    </div>
+                </div>
+                <!-- 红包已领完状态-->
+                <div class="after-finish red-after red-box">
+                    <div class="red1 red"></div>
+                    <div class="red2 red"></div>
+                    <div class="red3 red">
+                        <div class="user"><img src="ossweb-img/user.jpg" alt=""></div>
+                        <div class="gx-txt"><span class="name">LiamCai</span>发起的爱心口令</div>
+                        <div class="ylq-ico hh">已领完</div>
+                    </div>
+                    <div class="red-con">
+                        <a href="javascript:popShow('pop-sel');" class="my-btn icon comm" ontouchend="PTTSendClick('btn','my','我也要发爱心口令');">我也要发爱心口令</a>
+                        <div class="red-tips">最高可领100元现金</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="javascript:popShow('pop-record');" class="note-btn" ontouchend="PTTSendClick('btn','note','领奖记录');">领奖记录</a>
+        </div>
+        <div class="content">
+            <div class="step" title="参与步骤"></div>
+
+            <!-- 首页进度-->
+            <div class="index-user user-part">
+                <p>您有如下好友已参与：</p>
+                <ul class="user-list flex">
+                    <li class="user"><img src="ossweb-img/user.jpg" alt="" /></li>
+                    <li class="user"><img src="ossweb-img/user.jpg" alt="" /></li>
+                    <li class="user"><img src="ossweb-img/user.jpg" alt="" /></li>
+                    <li class="user"><img src="ossweb-img/user.jpg" alt="" /></li>
+                    <li class="user"><img src="ossweb-img/user.jpg" alt="" /></li>
+                </ul>
+            </div>
+            <!-- 解锁页进度 领奖结算页进度-->
+            <div class="unlock-pros user-pros">
+                <p>解锁进度（1/4）</p>
+                <img src="ossweb-img/bor.png" class="bor" alt="" />
+                <ul class="pros-list flex">
+                    <li>
+                        <div class="user"><img src="ossweb-img/user.jpg" alt="" /></div>
+                        <span class="user-name">昵称昵称昵称</span>
+                        <span class="user-txt">获得现金0.3元</span>
+                    </li>
+                    <li>
+                        <div class="user"><img src="ossweb-img/user-wenh.png" alt="" /></div>
+                        <span class="user-name">虚位以待</span>
+                        <a href="javascript:;" class="yaoq-btn icon comm" ontouchend="PTTSendClick('btn','yaoq','邀请好友');">邀请好友</a>
+                    </li>
+                    <li>
+                        <div class="user"><img src="ossweb-img/user-wenh.png" alt="" /></div>
+                        <span class="user-name">虚位以待</span>
+                        <a href="javascript:;" class="yaoq-btn icon comm" ontouchend="PTTSendClick('btn','yaoq','邀请好友');">邀请好友</a>
+                    </li>
+                    <li>
+                        <div class="user"><img src="ossweb-img/user-wenh.png" alt="" /></div>
+                        <span class="user-name">虚位以待</span>
+                        <a href="javascript:;" class="yaoq-btn icon comm" ontouchend="PTTSendClick('btn','yaoq','邀请好友');">邀请好友</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="info-txt">
+                目前我国仍有部分人群因未能流利使用普通话而面临语言困境，在学习、就业上存在阻碍。
+                但他们，同样会为生活做梦。<b class="yellow">腾讯首款普通话学习游戏《普通话小镇》</b>，诚邀您一起助力每一份可爱珍贵的梦想，帮助他们提升普通话水平，让更多可爱的人被听见。
+            </p>
+            <img src="ossweb-img/bor.png" class="bor" alt="" />
+            <img src="ossweb-img/foot-logo.png" class="foot-logo" alt="" />
+
+        </div>
+
+    </div>
+
+
+
+    <!-- 以下为弹窗-->
+    <!--提现成功（抽空金币）1888金币-->
+    <div class="pop" id="pop-success1">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>提现成功</span><i class="star"></i></div>
+            <p class="pop-txt">请前往【普通话小镇】邮箱中<br>领取奖励</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="ljqw-btn icon hh" ontouchend="PTTSendClick('btn','ljqw','立即前往');">立即前往</a>
+            </div>
+        </div>
+    </div>
+    <!--提现成功（用户已注册）提现-->
+    <div class="pop" id="pop-success2">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>提现成功</span><i class="star"></i></div>
+            <p class="pop-txt">请前往【微信游戏】公众号<br>查收奖励</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确 认');">确 认</a>
+            </div>
+        </div>
+    </div>
+    <!--就差一步啦-->
+    <div class="pop" id="pop-one-step">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>就差一步啦</span><i class="star"></i></div>
+            <p class="pop-txt"> 注册后回到本页面，<br>即可完成提现</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="ljqw-btn icon hh" ontouchend="PTTSendClick('btn','ljqw','立即前往');">立即前往</a>
+            </div>
+        </div>
+    </div>
+    <!--创建口令 请选择爱心口令-->
+    <div class="pop pop2" id="pop-sel">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>请选择爱心口令</span><i class="star"></i></div>
+            <ul class="sel-list">
+                <!-- 选中li添加on-->
+                <li><span class="sel-ico icon"></span><p>加油！</p></li>
+                <li><span class="sel-ico icon"></span><p>推普加油，祖国加油</p></li>
+                <li><span class="sel-ico icon"></span><p>《普通话小镇》为每一个梦想加油</p></li>
+            </ul>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="share-btn icon hh" ontouchend="PTTSendClick('btn','share','分享好友');">分享好友</a>
+            </div>
+        </div>
+    </div>
+    <!--创建成功-->
+    <div class="pop" id="pop-cjcg">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>创建成功</span><i class="star"></i></div>
+           <p class="pop-txt">快邀好友一同解锁<br>齐领千万爱心红包吧~</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="share-btn icon hh" ontouchend="PTTSendClick('btn','share','分享好友');">分享好友</a>
+            </div>
+        </div>
+    </div>
+    <!--规则备注-->
+    <div class="pop pop3" id="pop-rule">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>规则备注</span><i class="star"></i></div>
+            <div class="rule-box">
+                <div class="txt-box">
+                    <h3>【活动时间】</h3>
+                    <p>2020/07/23 11:00 - 2020/08/06 23:59</p>
+                </div>
+                <div class="txt-box">
+                    <h3>【参与方式】</h3>
+                    <p>每名用户最多可创建1次口令，解锁2次口令（初始奖励1次，创建口令后再奖励1次），正确念出口令，即可获得随机奖励。</p>
+                </div>
+                <div class="txt-box3 txt-box">
+                    <h3>【奖励领取】</h3>
+                    <p>1.解锁爱心口令，即可获得随机奖励，包含1-100元现金红包，1888-8888金币；</p>
+                    <p>2.奖励提现有有效期，时长6小时，逾期失效请务必记得尽快提现领取；</p>
+                    <p>3.提现后，游戏奖励道具将在24小时内通过邮件发放至对应角色邮箱内，请确保已注册角色，否则奖励无法到账；</p>
+                    <p>4.微信现金红包领取前，务必确认已关注【微信游戏】公众号，获取红包后的24小时内前往公众号领取，逾期失效。非微信活跃用户无法获得红包。</p>
+                </div>
+            </div>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="share-btn icon hh" ontouchend="PTTSendClick('btn','share','立即分享好友');">立即分享好友</a>
+            </div>
+        </div>
+    </div>
+    <!--恭喜获得现金1元 主态解锁-->
+    <div class="pop pop4" id="pop-gongx1">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="gx-tit icon">恭喜获得现金1元</p>
+            <div class="pop-red">
+                <img src="ossweb-img/pop-red.png" alt="" />
+            </div>
+            <p class="pop-txt">运气好好！快邀请好友也来试试吧~</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="yqhy-btn icon hh" ontouchend="PTTSendClick('btn','yaoq','邀请好友一同领奖');">邀请好友一同领奖</a>
+            </div>
+        </div>
+    </div>
+    <!--恭喜获得现金1元  客态解锁（未创建过口令）-->
+    <div class="pop pop4" id="pop-gongx2">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="gx-tit icon">恭喜获得现金1元</p>
+            <div class="pop-red">
+                <img src="ossweb-img/pop-red.png" alt="" />
+            </div>
+            <p class="pop-txt">创建爱心口令，还可再领1次红包</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="ljcj-btn icon hh" ontouchend="PTTSendClick('btn','ljcj','立即创建爱心口令');">立即创建爱心口令</a>
+            </div>
+        </div>
+    </div>
+    <!--通用弹窗-->
+    <div class="pop pop-tips" id="pop-tips1">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="pop-txt">老用户直接到账，<br>新用户需先注册</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="ljqw-btn icon hh" ontouchend="PTTSendClick('btn','ljqw','立即前往');">立即前往</a>
+            </div>
+        </div>
+    </div>
+    <!--提现确认-->
+    <div class="pop" id="pop-cash-out">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>提现确认</span><i class="star"></i></div>
+            <p class="pop-txt"> 红包将通过【微信游戏】公众号发出，<br>在发放前请先确认已关注公众号。</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="guanz-btn icon hh" ontouchend="PTTSendClick('btn','guanz','前往关注');">前往关注</a>
+                <a href="javascript:;" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确 认');">确 认</a>
+            </div>
+        </div>
+    </div>
+    <!--提现状态-成功-->
+    <div class="pop" id="pop-success3">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>恭喜你 提现成功</span><i class="star"></i></div>
+            <p class="pop-txt">奖励已发放<br>快去【微信游戏】公众号领取吧！</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确 认');">确 认</a>
+            </div>
+        </div>
+    </div>
+    <!--提现失败-->
+    <div class="pop" id="pop-fail">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>提现失败</span><i class="star"></i></div>
+            <p class="pop-txt">你还未关注公众号，请在微信中搜索<br>“微信游戏”，关注后再来提现吧！</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确 认');">确 认</a>
+            </div>
+        </div>
+    </div>
+    <!--解锁2次的 参与已达上限-->
+    <div class="pop" id="pop-limit">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>参与已达上限</span><i class="star"></i></div>
+            <p class="pop-txt">感谢你为全国推普献力，告诉好友，<br>让Ta一同把爱心口令传递下去吧！</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="tell-btn icon hh" ontouchend="PTTSendClick('btn','tell','告诉好友');">告诉好友</a>
+            </div>
+        </div>
+    </div>
+    <!--未创建过自己的 红包待领取-->
+    <div class="pop" id="pop-receive1">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>红包待领取</span><i class="star"></i></div>
+            <p class="pop-txt">创建爱心口令，<br>还可再得1次解锁口令机会哦！</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="ljcj-btn2 icon hh" ontouchend="PTTSendClick('btn','ljcj2','立即创建新口令');">立即创建新口令</a>
+            </div>
+        </div>
+    </div>
+    <!--未解锁过别人的  红包待领取-->
+    <div class="pop" id="pop-receive2">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>红包待领取</span><i class="star"></i></div>
+            <p class="pop-txt">你还可通过解锁好友爱心口令<br>再拿1次奖励哦！</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="yqhy-btn2 icon hh" ontouchend="PTTSendClick('btn','yqhy2','邀请好友生成口令');">邀请好友生成口令</a>
+            </div>
+        </div>
+    </div>
+    <!--领奖记录-->
+    <div class="pop pop5" id="pop-record">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>领奖记录</span><i class="star"></i></div>
+            <div class="record-table">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <th width="38%">爱心口令</th>
+                            <th width="20%">奖励</th>
+                            <th width="32%" class="no-right">领取人数</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="kl-name">我愿为推普脱贫推广...</span>
+                                <span class="kl-time">2020-5-7 23:45:45</span>
+                            </td>
+                            <td>1元</td>
+                            <td class="no-right">
+                                <span class="kl-jd">1/4</span>
+                                <a href="javascript:;" class="more" ontouchend="PTTSendClick('btn','more1','点击查看详情>>');">点击查看详情>></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="kl-name">我愿为推普脱贫推广...</span>
+                                <span class="kl-time">2020-5-7 23:45:45</span>
+                            </td>
+                            <td>1元</td>
+                            <td class="no-right">
+                                <span class="kl-jd">1/4</span>
+                                <a href="javascript:;" class="more" ontouchend="PTTSendClick('btn','more1','点击查看详情>>');">点击查看详情>></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--识别失败-->
+    <div class="pop" id="pop-discern">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <div class="pop-tit"><i class="star"></i><span>识别失败</span><i class="star"></i></div>
+            <p class="pop-txt">  成功即可领取红包，<br>再录一次试试吧</p>
+            <div class="pop-a flex">
+                <a href="javascript:;" class="quer-btn icon hh" ontouchend="PTTSendClick('btn','quer','确 认');">确 认</a>
+            </div>
+        </div>
+    </div>
+    <!--解锁口令-->
+    <div class="pop pop6" id="pop-unlock">
+        <a href="javascript:popHide();" class="btn-close icon hh" ontouchend="PTTSendClick('btn','close','关闭');">关闭</a>
+        <div class="pop-con">
+            <p class="pop-txt">请用标准普通话，尽量降低语速哦~</p>
+            <div class="tell on">
+                <!-- tell添加类名on 音浪gif显示-->
+                <img src="ossweb-img/read1.png" class="tell-img read-img1" alt="" />
+                <img src="ossweb-img/read1.gif" class="tell-img read-gif1" alt="" />
+                <img src="ossweb-img/talk.png" class="talk-ico" alt="" />
+            </div>
+            <p class="pop-txt">说完后请松开手指~</p>
+            <div class="surplus-time">剩余录制时间：<span class="second">10</span>S</div>
+        </div>
+    </div>
+
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script>
+    // popShow('pop-discern');
+    
+
+    //测试录音弹窗
+    var bt_recoding = document.getElementById("prize-btn");
+    function initEvent() {
+        bt_recoding.addEventListener("touchstart", function (event) {
+            event.preventDefault();//阻止浏览器默认行为
+            popShow('pop-unlock');
+            times();
+        });
+        bt_recoding.addEventListener("touchmove", function (event) {
+            // event.preventDefault();//阻止浏览器默认行为
+
+        });
+        bt_recoding.addEventListener("touchend", function (event) {
+            event.preventDefault(); //阻止浏览器默认行为
+            clearTimeout(t);
+            s = 10;
+            popHide1("pop-unlock");
+        });
+    }
+    initEvent();
+
+   //录音倒计时 s为倒计时总时间
+    var s = 10, t;
+    function times() {
+        //console.log(s);
+        if (s <= 0) {
+            clearTimeout(t);
+            popShow('pop-gongx1');
+        } else {
+            s--;
+            $('.second').html(s);
+            t = setTimeout(function() {times()}, 1000)
+        }
+    }
+
+    //选择爱心口令
+    var index;
+    $(".sel-list li").on("click",function () {
+        index=$(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
+    //领奖记录的查看详情  测试跳转到结果页
+    $(".more").on("click",function () {
+        popHide();
+        setTimeout(function(){
+            $("body").addClass('result-page').removeClass('index-page').removeClass('unlock-page');
+        },1000);
+    });
+
+    //请选择爱心口令 测试跳转到解锁页
+    var kl=['加油！','推普加油，祖国加油','《普通话小镇》'+'<br>'+'为每一个梦想加油'];
+
+    $("#pop-sel .share-btn").on("click",function () {
+        popHide();
+        setTimeout(function(){
+            $("body").addClass('unlock-page').removeClass('index-page').removeClass('result-page');
+        },1000);
+
+        var text =kl[index];
+        $(".word-say").find(".word-txt").html(text);
+    });
+
+
+    //提现按钮
+    $(".reflect-btn").on("click",function () {
+        popShow('pop-success3');
+    });
+    $("#pop-success3 .quer-btn,#pop-success3 .btn-close").on("click",function () {
+        popHide();
+        $(".reflect-btn").addClass('ytx-btn').removeClass('reflect-btn');
+    });
+
+    //跑马灯
+    function timer(opj){
+        $(opj).find('ul').animate({
+            marginTop : "-.46rem"
+        },500,function(){
+            $(this).css({marginTop : "0"}).find("li:first").appendTo(this);
+        })
+    }
+    $(function(){
+        var num = $('.roll-txt').find('li').length;
+        if(num > 1){
+            var time=setInterval('timer(".roll-txt")',3500);
+        }
+    });
+
+    //提现有效期倒计时
+    var countDownInit = function (endDate, id) {
+        var per = [['', 1000], [':', 60000], [':', 3600000]],//可根据需要修改格式
+            //per = [['秒', 1000], ['分', 60000], ['时', 3600000], ['天', 86400000]]
+            len = per.length,
+            int = new Array(len),
+            count = function () {
+                var dis = new Date(endDate).getTime() - new Date().getTime(),
+                    str = '';
+                if (dis < 0) dis = 0;
+                for (var i = len - 1; i >= 0; i--) {
+                    int[i] = i == 0 ? Math.ceil(dis / per[i][1]) : Math.floor(dis / per[i][1]);
+                    if(int[i]<10){
+                        int[i] = '0'+int[i];
+                    }
+                    str += (int[i] + per[i][0]);
+                    dis -= int[i] * per[i][1];
+                }
+                document.getElementById(id).innerText = str;
+            };
+        setInterval(count, 1000);
+    };
+    countDownInit('2020/6/12 23:59:59','CountDown');
+
+
+    var notice=[
+        '恭喜LiamCai获得现金红包17元',
+        '恭喜芦苇有点甜获得现金红包1元',
+        '恭喜澈单获得现金红包3元',
+        '恭喜小九的樱桃小丸子获得现金红包0.2元',
+        '恭喜火锅突击队长获得现金红包0.5元',
+        '恭喜SukiW获得现金红包1元',
+        '恭喜嘉琦.L获得现金红包0.7元',
+        '恭喜清欢获得金币1888',
+        '恭喜痴言斋获得金币8888',
+        '恭喜航迹云获得现金红包5元',
+        '恭喜傑癖JP获得现金红包0.1元',
+        '恭喜旖南获得现金红包1元',
+        '恭喜玻璃杯获得现金红包1元',
+        '恭喜屯土山获得现金红包1元',
+        '恭喜陈瑶获得现金红包0.6元',
+        '恭喜宋小北获得现金红包5元',
+        '恭喜流浪远方获得现金红包0.8元',
+        '恭喜天意获得现金红包0.6元',
+        '恭喜羊羔噢获得现金红包1元',
+        '恭喜初000获得现金红包1元',
+        '恭喜喜欢吃菠萝的猫获得现金红包1.5元',
+        '恭喜哆瑞咪发提获得现金红包6元',
+        '恭喜kzzlz获得现金红包10元',
+        '恭喜饮和丶获得现金红包0.7元',
+        '恭喜冬季获得现金红包0.2元',
+        '恭喜咕噜咕噜获得现金红包0.8元',
+        '恭喜韵韵韵获得现金红包1元',
+        '恭喜嫁东风获得现金红包1元',
+        '恭喜水木高台获得现金红包0.7元',
+        '恭喜乎尔乎获得现金红包0.3元',
+        '恭喜寺七获得现金红包0.4元',
+        '恭喜D某人获得现金红包0.2元',
+        '恭喜慎映薇获得现金红包0.3元',
+        '恭喜隔山海获得现金红包0.5元',
+        '恭喜应许获得现金红包0.5元',
+        '恭喜勾陈获得现金红包4元',
+        '恭喜Densy获得现金红包0.2元',
+        '恭喜Crossroads获得现金红包0.3元',
+        '恭喜现在什么都没有获得现金红包0.4元',
+        '恭喜冰冰冰不是冰获得现金红包0.5元',
+        '恭喜你的眼里有星辰获得现金红包0.7元',
+        '恭喜妞妞妈获得金币8888',
+        '恭喜举觞获得现金币8888',
+        '恭喜墨凉获得现金红包1元',
+        '恭喜肥仓获得现金红包1元',
+        '恭喜雨停了获得现金红包1元',
+        '恭喜亦枫获得现金红包0.8元',
+        '恭喜特基拉获得现金红包0.6元',
+        '恭喜五彩巧克力获得金币8888',
+        '恭喜尘尘获得现金红包0.4元',
+        '恭喜Markli获得现金红包0.5元',
+        '恭喜椒盐兔兔获得现金红包0.4元',
+        '恭喜得得猪获得现金红包1元',
+        '恭喜東枫获得现金红包1元',
+        '恭喜易木莉呀获得现金红包1元',
+        '恭喜傻柴家的大橘获得金币8888',
+        '恭喜嘻嘻嘻获得现金红包0.4元',
+        '恭喜月亮上的中秋节获得现金红包0.7元',
+        '恭喜刘草日月获得现金红包0.2元',
+        '恭喜了了获得现金红包0.4元',
+        '恭喜行走江湖大名周奇获得现金红包1元',
+        '恭喜喜欢肖战呀获得现金红包1元',
+        '恭喜驴鸣获得现金红包1元',
+        '恭喜宁一粥获得现金红包1元',
+        '恭喜邑千裘获得金币8888',
+        '恭喜陈可爱获得现金红包0.4元',
+        '恭喜咪哩个咪咪咪获得金币8888',
+        '恭喜余沧海获得现金红包1元',
+        '恭喜刚柔并济获得现金红包1元',
+        '恭喜安怡获得现金红包0.4元',
+        '恭喜尘与获得现金红包0.8元',
+        '恭喜君顾啊获得现金红包1元',
+        '恭喜木生and木苼获得金币8888',
+        '恭喜乱发获得现金红包0.7元',
+        '恭喜ZeRo获得现金红包8元'
+    ];
+
+    function RollTxt() {
+        var html="";
+        for( var i=0; i<notice.length; i++){
+            html += '<li class="notice-active">'+notice[i]+'</li>';
+        }
+        return html;
+    }
+   $(".roll-txt ul").html(RollTxt());
+
+
+
+    //弹窗
+    var popIsShow = false;
+    var popDom = null;
+    function popShow(id) {
+        popHide();
+        var p = $('#'+id);
+        popDom = p;
+        if (p) {
+            p.show().css({
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 9998
+            });
+            p.attr('for', 'pop');
+            popIsShow = true;
+            if ($('[for="' + id + '"]').length >= 1) return;
+            $('body').append('<div name="overlay" for=' + id + ' style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:9997;background:rgba(0,0,0,0.7);"></div>');
+        }
+    }
+    function popHide() {
+        $('[for="pop"]').hide().attr('style', '');
+        $('[name="overlay"]').remove();
+    }
+    function popHide1(id) {
+        $('[for="'+id+'"]').hide().attr('style', '');
+        $('#'+id).hide();
+    }
+    window.addEventListener("resize", function () {
+        if (!popIsShow)
+            return;
+        setTimeout(function () {
+            popDom.css({
+                marginTop: -popDom.height() / 2 + 'px',
+                marginLeft: -popDom.width() / 2 + 'px',
+                zIndex: 9998
+            });
+        }, 400)
+    });
+
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //分享
+    TGMobileShare({
+        shareTitle:'《普通话小镇》公益活动',
+        shareDesc:'益口同声传递爱，1000万份爱心红包等你拿~',
+        shareImgUrl:'ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'',
+        actName:'a20200609password'
+    });
+
+    //此段代码不能放到外链JS中
+    var setSite={
+        siteType:"a20200609password",
+        pageType:"index",
+        pageName:"首页",
+        project:"other",
+        osact:0
+    };
+    if(typeof(pgvMain)=='function')pgvMain();
+</script>
+</body>
+</html>

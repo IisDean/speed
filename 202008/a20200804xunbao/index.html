@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description"
+        content="NBA2K Online篮球在线官方网站。全国首款NBA官方授权篮球网游,最真实的NBA玩法,最自由的街头竞技,打造你的王朝梦之队,保罗·乔治代言,带给你最刺激的篮球体验。">
+    <meta name="Keywords"
+        content="nba2k,NBA2K Online,nba2kol,NBA,real nba,fantasy nba,street,3D,篮球在线,篮球,街球,体育,球星,美职篮,体育网游,篮球网游,腾讯,网络游戏">
+    <meta itemprop="name" content="寻宝大作战" />
+    <meta itemprop="description" content="超值好礼等你来拿" />
+    <meta itemprop="image" content="https://game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/share.jpg" />
+    <title>寻宝大作战-NBA2KOL2官方网站-腾讯游戏</title>
+    <!--[if lte IE 11]>
+    <script>alert("您的浏览器版本过低，为获得更好体验，请使用QQ浏览器或者谷歌浏览器等体验活动");</script>
+    <![endif]-->
+    <link rel="stylesheet" href="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/index.css?v=11">
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/08/04 -->
+</head>
+
+<body>
+    <h1 class="hide">寻宝大作战</h1>
+    <!--topbar-->
+    <div class="topbar">
+        <div class="top-l">
+            <h2 class="logo">
+                <a href="//nba2k2.qq.com/" target="_blank" class="hd" onclick="PTTSendClick('btn','hd','NBA2K online2')"
+                    title="NBA2K online2"></a>
+            </h2>
+            <div class="login">
+                <!--登录前状态 Start-->
+                <p id="unlogin"><a href="javascript:;" id="btn_qqlogin">登录</a></p>
+                <!--登录前状态 End-->
+                <!--登录后状态 Start-->
+                <p id="logined" style="display: none">欢迎，
+                    <span id='login_qq_span'></span>，
+                    <span id="spanNotBind_690658">
+                        <a href="javascript:amsInit(322944, 690657);">  绑定大区</a>
+                    </span>
+                    <span id="spanBind_690658" style="display:none">
+                        <span id="area_info_690658"></span>
+                        <span id="role_info_690658"></span>
+                        <a href="javascript:amsInit(322944, 690657);">更改绑定</a>
+                    </span>
+                    <a href="javascript:;" id="btn_logout">注销</a></p>
+                <!--登录后状态 End-->
+            </div>
+            <a href="//www.wegame.com.cn/" target="_blank" class="hdlogo"
+                onclick="PTTSendClick('btn','wegame','进入wegame')" title="wegame"></a>
+        </div>
+        <div class="top-r">
+            <a href="//nba2k2.qq.com/" onclick="PTTSendClick('btn','gw-btn','进入官网')" class="gw-btn" target="_blank"
+                title="官网首页">官网首页</a>
+            <a href="//nba2k2.qq.com/events.html" onclick="PTTSendClick('btn','hd-btn','活动中心')" class="down-btn"
+                target="_blank" title="活动中心">活动中心</a>
+            <div class="top-ico-box">
+                <a href="//nba2k2.gamebbs.qq.com/forum.php" class="ico1 top-ico" target="_blank" title="官方论坛"
+                    onclick="PTTSendClick('btn','ico1','官方论坛')"></a>
+                <a href="javascript:;" class="ico2 top-ico" title="官方微信"
+                    onclick="PTTSendClick('btn','ico2','官方微信')"><img
+                        src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/weixin.jpg" alt="官方微信" /></a>
+                <a href="javascript:;" class="ico3 top-ico" title="兴趣部落"
+                    onclick="PTTSendClick('btn','ico3','兴趣部落')"><img
+                        src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/buluo.jpg" alt="兴趣部落" /></a>
+                <a href="//weibo.com/nba2kol2" class="ico4 top-ico" target="_blank" title="官方微博"
+                    onclick="PTTSendClick('btn','ico4','官方微博')"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //topbar -->
+    <div class="p-r" id="stage">
+        <!-- 头部 -->
+        <div class="head-wrap">
+            <div class="wrap">
+                <!-- 时间 -->
+                <div class="full-img time-wrap">
+                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/hd_time.png" alt="活动时间">
+                </div>
+                <!-- 步骤 -->
+                <ul class="bg step-container c">
+                    <li class="f-l step-1">
+                        <i class="icons step-icon step-icon-1 t">step 01</i>
+                        <p class="step-msg-text t-c">每日完成活动指定任务，获得投掷<br/>骰子的机会，<span>次数须当天用完</span></p>
+                    </li>
+                    <li class="f-l step-2">
+                        <i class="icons step-icon step-icon-2 t">step 02</i>
+                        <p class="step-msg-text t-c">根据骰子点数，在地图上<br/>进行移动</p>
+                    </li>
+                    <li class="f-l step-3">
+                        <i class="icons step-icon step-icon-3 t">step 03</i>
+                        <p class="step-msg-text t-c">在某格停留后即可获得<br/>该格子中的奖励</p>
+                    </li>
+                    <li class="f-l step-4">
+                        <i class="icons step-icon step-icon-4 t">step 04</i>
+                        <p class="step-msg-text t-c">金球和银球可分别兑换<br/>不同的游戏道具奖励</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 内容 -->
+        <div class="main-wrap">
+            <div class="wrap">
+                <!-- 任务 -->
+                <ul class="task-container t-c">
+                    <li class="bg task-item">
+                        <i class="icons task-icon t-i-1"></i>
+                        <div class="task-tips t-c">需每日领取</div>
+                        <i class="line"></i>
+                        <p class="task-msg-text t-c">每日在匹配或排位-任意模式<br/>获得首胜</p>
+                        <a href="javascript:amsCfg_690655.sData.iTask=1;amsSubmit(322944,690655);"  onclick="PTTSendClick('btn','btn-task1','任务1领取奖励')" class="icons btn-task btn-hover t-c">获得<span>1次</span>掷骰子机会</a>
+                    </li>
+                    <li class="bg task-item">
+                        <i class="icons task-icon t-i-2"></i>
+                        <div class="task-tips t-c">需每日领取</div>
+                        <i class="line"></i>
+                        <p class="task-msg-text t-c">每日在匹配或排位中，完成4场街头<br/>模式比赛<span>或</span>完成2场王朝模式比赛</p>
+                        <a href="javascript:amsCfg_690655.sData.iTask=2;amsSubmit(322944,690655);"  onclick="PTTSendClick('btn','btn-task2','任务2领取奖励')" class="icons btn-task btn-hover t-c">获得<span>2次</span>掷骰子机会</a>
+                    </li>
+                    <li class="bg task-item">
+                        <i class="icons task-icon t-i-3"></i>
+                        <div class="task-tips t-c">需每日领取</div>
+                        <i class="line"></i>
+                        <p class="task-msg-text t-c">每日在匹配或排位中，在街头模式<br/>获得MVP<span>或</span>获得2场王朝模式的胜利</p>
+                        <a href="javascript:amsCfg_690655.sData.iTask=3;amsSubmit(322944,690655);"  onclick="PTTSendClick('btn','btn-task3','任务3领取奖励')" class="icons btn-task btn-hover t-c">获得<span>3次</span>掷骰子机会</a>
+                    </li>
+                </ul>
+                <!-- 掷骰子抽奖 -->
+                <div class="p-r bg lottery-container">
+                    <!-- 抽奖容器 -->
+                    <div class="p-a lottery-wrap" id="lotterycontent">
+                        <i class="p-a bg teshu-icon"></i>
+                        <!-- 掷骰子位置 -->
+                        <div class="p-a bg lottery-hover"></div>
+                        <i class="p-a icons ts-prize-icon t">特殊奖励库hover</i>
+                    </div>
+                    <div class="p-a bg dice-wrap"></div>
+                    <!--  -->
+                    <div class="p-r dice-content c">
+                        <div class="dice-num f-l t-c">您当前拥有<span id="sz_num">-</span>次数<a onclick="PTTSendClick('btn','btn-sx','刷新')" href="javascript:amsSubmit(322944,690962);">[刷新]</a></div>
+                        <a href="javascript:doRollDice();" onclick="PTTSendClick('btn','btn-dice','前进-掷骰子')" class="icons btn-lottery btn-hover f-l t">前进</a>
+                    </div>
+                    <div class="p-r t-c">
+                        <a href="javascript:amsSubmit(322944,690797);" onclick="PTTSendClick('btn','btn-look-prize','查看我获得的奖励')" class="btn-look-prize">查看我获得的奖励</a>
+                    </div>
+                </div>
+                <!-- 特殊奖励库奖励 -->
+                <div class="p-a bg ts-tips-wrap">
+                    <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/ts_prize.png" alt="特殊奖励库奖励">
+                </div>
+                <!-- 奖券兑换奖励 -->
+                <h3 class="icons title-icon t-i-1 t" style="margin-top: 50px;">代币兑换奖励</h3>
+                <p class="ball-num-text t-c">您当前拥有 金球：<span id="gold_num">-</span> 个 / 银球：<span id="silver_num">-</span> 个</p>
+                <!-- 金球奖励兑换 -->
+                <ul class="prize-list t-c">
+                    <li class="bg prize-jin">
+                        <div class="p-a bg prize-tips t-c">限量1000 先到先得 单Q限兑1</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_1.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">现役人气10人包*1</p>
+                        <a href="javascript:amsCfg_690847.sData.iNum=1;amsSubmit(322944,690847);" onclick="PTTSendClick('btn','btn-dh1','现役人气10人包*1')" class="icons btn-exchange btn-hover t-c"><span>26</span>金球可兑换</a>
+                    </li>
+                    <li class="bg prize-jin">
+                        <div class="p-a bg prize-tips t-c">限量2000 先到先得 单Q限兑1</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_2.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">现役人气20人包*1</p>
+                        <a href="javascript:amsCfg_690847.sData.iNum=2;amsSubmit(322944,690847);" onclick="PTTSendClick('btn','btn-dh2','现役人气20人包*1')" class="icons btn-exchange btn-hover t-c"><span>26</span>金球可兑换</a>
+                    </li>
+                    <li class="bg prize-jin">
+                        <div class="p-a bg prize-tips t-c">不限量 单Q限兑1</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_3.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">现役人气30人包*1</p>
+                        <a href="javascript:amsCfg_690847.sData.iNum=3;amsSubmit(322944,690847);" onclick="PTTSendClick('btn','btn-dh3','现役人气30人包*1')" class="icons btn-exchange btn-hover t-c"><span>26</span>金球可兑换</a>
+                    </li>
+                    <li class="bg prize-jin">
+                        <div class="p-a bg prize-tips t-c">不限量 单Q限兑1</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_4.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">S8历史10人包*1</p>
+                        <a href="javascript:amsCfg_690847.sData.iNum=4;amsSubmit(322944,690847);" onclick="PTTSendClick('btn','btn-dh4','S8历史10人包*1')" class="icons btn-exchange btn-hover t-c"><span>20</span>金球可兑换</a>
+                    </li>
+                    <li class="bg prize-jin">
+                        <div class="p-a bg prize-tips t-c">不限量</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_5.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">银球*10</p>
+                        <a href="javascript:amsCfg_690847.sData.iNum=5;amsSubmit(322944,690847);" onclick="PTTSendClick('btn','btn-dh5','银球*10')" class="icons btn-exchange btn-hover t-c"><span>1</span>金球可兑换</a>
+                    </li>
+                </ul>
+                <!-- 银球奖励兑换 -->
+                <ul class="prize-list t-c" style="margin-top: 0;width: 888px;">
+                    <li class="bg prize-yin">
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_6.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">球员训练卡*1</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=1;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh6','球员训练卡*1')" class="icons btn-exchange btn-hover t-c"><span>30</span>银球可兑换</a>
+                    </li>
+                    <li class="bg prize-yin">
+                        <div class="p-a bg prize-tips t-c">单Q限兑3</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_7.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">活跃进阶合同费包*1</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=2;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh7','活跃进阶合同费包*1')" class="icons btn-exchange btn-hover t-c"><span>50</span>银球可兑换</a>
+                    </li>
+                    <li class="bg prize-yin">
+                        <div class="p-a bg prize-tips t-c">单Q限兑2</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_8.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">19年新秀20人包*1</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=3;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh8','19年新秀20人包*1')" class="icons btn-exchange btn-hover t-c"><span>70</span>银球可兑换</a>
+                    </li>
+                    <li class="bg prize-yin">
+                        <div class="p-a bg prize-tips t-c">单Q限兑1</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_9.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">S8历史25人包*1</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=4;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh9','S8历史25人包*1')" class="icons btn-exchange btn-hover t-c"><span>80</span>银球可兑换</a>
+                    </li>
+                    <li class="bg prize-yin">
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_10.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">购物券*188</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=5;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh10','购物券*188')" class="icons btn-exchange btn-hover t-c"><span>1</span>银球可兑换</a>
+                    </li>
+                    <li class="bg prize-yin">
+                        <div class="p-a bg prize-tips t-c">单Q限兑5</div>
+                        <div class="full-img prize-img">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/prize_11.png" alt="奖励">
+                        </div>
+                        <p class="prize-name-text t-hide t-c">金球*1</p>
+                        <a href="javascript:amsCfg_690905.sData.iNum=6;amsSubmit(322944,690905);" onclick="PTTSendClick('btn','btn-dh11','金球*1')" class="icons btn-exchange btn-hover t-c"><span>15</span>银球可兑换</a>
+                    </li>
+                </ul>
+                <!-- 活动说明 -->
+                <h3 class="icons title-icon t-i-2 t" style="margin-top: 127px;">活动说明</h3>
+                <ul class="rule-list">
+                    <li>1.  活动时间为：2020年9月1日-9月17日</li>
+                    <li>2.  活动期间，玩家每日完成指定任务，即可在页面上获得相应的投掷骰子的机会，每日任务需当天完成，零点重置；投掷骰子的机会必须当天用完，每日零点清空投掷机会；</li>
+                    <li>3.  点击【前进】按钮，根据骰子点数在地图上移动，停止移动后即可获得对应奖励。</li>
+                    <li>4.  奖励分为固定游戏道具，活动专属的金球和银球代币，除此之外还有特殊奖励库的道具等你获得，有机会获得现役人气30人包等超值游戏奖励！ <a href="//nba2k2.qq.com/webplat/info/news_version3/30714/34630/m19598/202008/867487.shtml" onclick="PTTSendClick('btn','btn-look-gl','查看特殊奖励库概率')" target="_blank">(查看特殊奖励库概率)</a></li>
+                    <li>5.  活动期间，玩家可使用已获得的金球和银球兑换游戏内道具奖励，兑换时请注意道具限量和单Q限量。</li>
+                </ul>
+                <!-- 底部 -->
+                <ul class="footer-wrap t-c">
+                    <a class="p-r" href="//nba2k2.gamebbs.qq.com/forum.php" target="_blank">
+                        <i class="icons luntan-icon ani"></i>
+                        <p class="ani">官方论坛</p>
+                    </a>
+                    <a class="p-r">
+                        <i class="icons weixin-icon ani"></i>
+                        <p class="ani">官方微信</p>
+                        <div class="p-a full-img code-img ani">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/weixin.jpg" alt="微信">
+                        </div>
+                    </a>
+                    <a class="p-r">
+                        <i class="icons buluo-icon ani"></i>
+                        <p class="ani">兴趣部落</p>
+                        <div class="p-a full-img code-img ani">
+                            <img src="//game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/buluo.jpg" alt="部落">
+                        </div>
+                    </a>
+                    <a class="p-r" href="//weibo.com/nba2kol2?is_all=1" target="_blank">
+                        <i class="icons weibo-icon ani"></i>
+                        <p class="ani">官方微博</p>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 弹窗 -->
+    <div class="pop pop-prize" id="popPrize">
+        <div class="pop-con">
+            <!-- 查看我领取的奖励 -->
+            <h3 class="icons pop-prize-title t" style="margin-top: 50px;">查看我领取的奖励</h3>
+            <table class="table-prize t-c" border="1">
+                <thead>
+                    <tr>
+                        <th class="td-1">时间</th>
+                        <th>奖励</th>
+                    </tr>
+                </thead>
+                <tbody id="getGiftContent_690797">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="getGiftPageContent_690797" align="center" colspan="4"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--<div class="page-list t-c">-->
+                <!--<a href="javascript: ;" class="page-btn btn-hover active">1</a>-->
+                <!--<a href="javascript: ;" class="page-btn btn-hover">2</a>-->
+                <!--<a href="javascript: ;" class="page-btn btn-hover">3</a>-->
+                <!--<a href="javascript: ;" class="page-btn btn-hover">4</a>-->
+                <!--<a href="javascript: ;" class="page-btn btn-hover">5</a>-->
+            <!--</div>-->
+        </div>
+        <a href="javascript:myGiftList_690797.close();" class="p-a icons btn-close btn-hover t"></a>
+    </div>
+    <script type="text/html" id="getGiftTemplate_690797">
+        {if MyGiftListObject.iRet!='0'}
+        <tr>
+            <td colspan="4" align="center">${MyGiftListObject.sMsg}</td>
+        </tr>
+        {else}
+        {for giftInfo in MyGiftListObject.myGiftList}
+        <tr>
+            <td class="td-1">${giftInfo.getTime}</td>
+            <td>${giftInfo.packageName}</td>
+        </tr>
+        {forelse}
+        <tr>
+            <td colspan="4" align="center">您尚未获得任何礼包</td>
+        </tr>
+        {/for}
+        {/if}
+    </script>
+
+    <script src="//ossweb-img.qq.com/images/js/title.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+    <script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js?action=322944"></script>
+    <script src="index.js"></script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+    <script>
+        // 特殊奖励库奖励
+        $(".ts-prize-icon").hover(function(){
+            $(".ts-tips-wrap").show();
+        }, function(){
+            $(".ts-tips-wrap").hide();
+        });
+
+        // 返回顶部
+        $(".back-top").on("click", function () {
+            $("html,body").animate({
+                'scrollTop': 0
+            }, 300);
+        });
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+
+        //二维码
+        $('.top-ico-box .top-ico').hover(function () {
+            $(this).find('img').show();
+        }, function () {
+            $(this).find('img').hide();
+        });
+
+        milo.ready(function () {
+            need("biz.login", function (LoginManager) {
+                //QQ登录
+                milo.addEvent(g('btn_qqlogin'), 'click', function (e) {
+                    LoginManager.login();
+                });
+                LoginManager.checkLogin(function () {
+                    amsInit(322944, 690658);
+                    amsSubmit(322944,690962);
+                    g("login_qq_span").innerHTML = LoginManager.getUserUin(); //????QQ??
+                });
+                //注销
+                milo.addEvent(g("btn_logout"), "click", function () {
+                    LoginManager.logout();
+                });
+            });
+        });
+
+        //分享
+        TGMobileShare({
+            shareTitle: '寻宝大作战', //不设置或设置为空时，页面有title，则调取title
+            shareDesc: '超值好礼等你来拿', //不设置或设置为空时，页面有Description，则调取Description
+            shareImgUrl: 'https://game.gtimg.cn/images/nba2kx/cp/a20200804xunbao/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+            shareLink: '', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+            actName: 'a20200804xunbao' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+        });
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性
+            siteType: "a20200804xunbao", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+        };
+        if (typeof (pgvMain) == 'function') pgvMain();
+    </script>
+</body>
+
+</html><!-- #t6Hl8#DAB08D9238F4959351ADDD796F5DCEF4 -->

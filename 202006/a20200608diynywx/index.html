@@ -238,7 +238,7 @@
     var musicStatus = sessionStorage.getItem("musicTwitch");
     //“Ù¿÷ø™πÿ
     var switchMusic = $(".music-btn");
-    if( musicStatus == 1 ){
+    if( musicStatus == 1 || musicStatus == null ){
         switchMusic.removeClass("off");
         music.play();
         $(window).one('touchstart', function () {

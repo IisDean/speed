@@ -168,14 +168,18 @@
                             <div class="p-a cxgj-btn t-c">再刮一次</div>
                         </div>
                         <p class="gj-msg-text t-c">累计获得刮卡次数：<span>0</span>， 剩余刮卡次数：<span>0</span></p>
-                        <div class="t-r">
+                        <div class="flex flex-between" style="margin: .1rem .54rem 0;">
+                            <a href="javascript: TGDialogS('popRule');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
                             <a href="javascript: TGDialogS('popPrizeMsg');" class="icons look-zjmsg-btn btn-hover" onclick="PTTSendClick('btn','look-zjmsg-btn','查看中奖信息')"></a>
                         </div>
                         <!-- 视频 -->
                         <div class="p-r bg video-container">
                             <a href="javascript: ctrlJs.methods.playVideo('w0935q89x61');" class="p-a icons play-btn btn-hover t" onclick="PTTSendClick('btn','play-p4-btn','视频播放-孔雀翎重现')">视频播放</a>
                         </div>
-                        <a href="javascript: TGDialogS('popRule');" class="icons rule-btn btn-hover" onclick="PTTSendClick('btn','rule-btn','活动规则')"></a>
+                        <!-- banner -->
+                        <div class="full-img banner-wrap">
+                            <img src="./ossweb-img/banner_1.png" alt="banner">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -511,6 +515,7 @@
 <script src="./ossweb-img/main.js"></script>
 <script>
     ctrlJs.init(function(that){
+            // that.methods.cutPage(3);
         //导航栏位置
         var aqh = $(".part-2 .wrap").height(),
             bodyh = $("html,body").height();

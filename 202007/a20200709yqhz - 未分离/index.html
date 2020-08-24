@@ -1,0 +1,885 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="《和平精英》是腾讯光子工作室群自研打造的军事竞赛体验手游。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验。">
+    <meta name="Keywords" content="PEL职业联赛,PEC职业联赛,和平精英, 和平精英手游, 腾讯和平精英, 和平精英手游下载, 和平精英公测 ,和平精英手游公测, 腾讯和平精英公测,  勇者同行, 和平精英官网">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta itemprop="name" content="勇者同行，元气满满" />
+    <meta itemprop="description" content="应援领永久定制套装 " />
+    <meta itemprop="image" content="./ossweb-img/share.jpg" />
+    <title>和平精英-官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/07/09 -->
+    <link href="./ossweb-img/index.css" rel="stylesheet" />
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+
+<body ontouchstart="">
+    <h1 class="hide">勇者同行，元气满满</h1>
+    <div class="p-r stage">
+        <div class="p-r bg part-1">
+            <div class="hy-text">欢迎您！和平精英</div>
+            <div class="p-a full-img slogan-icon">
+                <img src="./ossweb-img/slogan.png" alt="标题">
+            </div>
+            <div class="p-a btn-list">
+                <a href="javascript: TGDialogS('popRule');" class="icons btn-hover btn-rule t" onclick="PTTSendClick('btn','btn-rule','规则')">规则</a>
+                <a href="javascript: TGDialogS('pop1');" class="icons btn-hover btn-share t" onclick="PTTSendClick('btn','btn-share','分享')">分享</a>
+            </div>
+        </div>
+        <div class="p-r bg part-2">
+            <!-- 应援宝箱 -->
+            <div class="flex flex-between zj-container">
+                <div class="yybx-wrap">
+                    <p class="yybx-title-text t-c">集齐口号或明星卡抢先体验<br/><span>定制套装</span></p>
+                    <div class="p-r bg yybx-icon">
+                        <div class="full-img">
+                            <img src="./ossweb-img/p2_bx_prize.png" alt="奖品">
+                        </div>
+                        <div class="p-a time-wrap t-c">7天</div>
+                    </div>
+                    <!-- 领取  已领取 添加 ylq 类名 -->
+                    <a href="javascript: ;" class="icons btn-hover btn-get-bx J-start-yy1 t" onclick="PTTSendClick('btn','btn-get-bx','领取并开启应援')">领取并开启应援</a>
+                </div>
+                <div class="zjdy-wrap">
+                    <a href="javascript: ;" class="icons btn-hover btn-zjdy t" onclick="PTTSendClick('btn','btn-zjdy','召集队员')">召集队员</a>
+                    <div class="flex flex-center">
+                        <p class="nl-msg-text">剩余次数：<span>6</span></p>
+                        <a href="javascript: TGDialogS('pop7');" class="btn-hover btn-to-get">去获取</a>
+                    </div>
+                    <div class="flex flex-between">
+                        <a href="javascript: TGDialogS('pop21');" class="icons btn-hover btn-gx t" onclick="PTTSendClick('btn','btn-gx','共享')">共享</a>
+                        <a href="javascript: TGDialogS('pop20');" class="icons btn-hover btn-sy t" onclick="PTTSendClick('btn','btn-sy','索要')">索要</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 集套装 -->
+            <div class="ji-container">
+                <div class="bg team-title-blue">元气口号卡 已集齐<span>X</span>套</div>
+                <ul class="p-r flex card-kh-list">
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_1.png" alt="元">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_2.png" alt="气">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_3.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_4.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_5.png" alt="和">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_6.png" alt="平">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_7.png" alt="精">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_8.png" alt="英">
+                        <div class="p-a icons card-num t-c">1</div>
+                    </li>
+                </ul>
+                <div class="bg team-title-yellow">元气明星卡 已集齐<span>X</span>套</div>
+                <ul class="p-r flex flex-center card-mx-list">
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="p-r bg part-3">
+            <h2 class="icons title-icon t">应援！元气小队冲鸭</h2>
+            <p class="msg-text title2-msg t-c">消耗口令卡或者明显卡领取，每款限领1次呦~</p>
+            <ul class="flex flex-center tz-dh-list">
+                <li class="p-r bg tz-dh-item">
+                    <div class="full-img tz-zs-img">
+                        <img src="./ossweb-img/p3_boy.png" alt="套装展示">
+                    </div>
+                    <!-- 已获得 -->
+                    <div class="p-a yget-wrap t-c">已获得</div>
+                    <!-- 切换 -->
+                    <a href="javascript: ;" class="p-a cut-sex2-btn cs1 cut-1 flex t-c">
+                        <span class="flex-1">男款</span>
+                        <span class="flex-1">女款</span>
+                    </a>
+                    <div class="p-a tz-name-wrap t-c">活力前浪套装（30天）</div>
+                </li>
+                <li class="p-r bg tz-dh-item">
+                    <div class="full-img tz-zs-img">
+                        <img src="./ossweb-img/p3_boy.png" alt="套装展示">
+                    </div>
+                    <!-- 已获得 -->
+                    <div class="p-a yget-wrap t-c">已获得</div>
+                    <!-- 切换 -->
+                    <a href="javascript: ;" class="p-a cut-sex2-btn cs2 cut-1 flex t-c">
+                        <span class="flex-1">男款</span>
+                        <span class="flex-1">女款</span>
+                    </a>
+                    <div class="p-a tz-name-wrap t-c">活力后浪套装（30天）</div>
+                </li>
+            </ul>
+            <p class="select-tips-text t-c">请点击选择心仪的套装哦~</p>
+            <div class="flex flex-center dh-btn-container">
+                <div class="dh-btn-wrap">
+                    <div class="dh-jq-text t-c">已集齐口令卡5套</div>
+                    <a href="javascript: TGDialogS('pop33');" class="bg dh-khcard-btn btn-hover t">消耗x套口号卡兑换</a>
+                </div>
+                <div class="dh-btn-wrap" style="margin-left: .13rem;">
+                    <div class="dh-jq-text t-c">已集齐明星卡5套</div>
+                    <a href="javascript: TGDialogS('pop33');" class="bg dh-mxcard-btn btn-hover t">消耗x套明星卡兑换</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript: alert('敬请期待！');" class="icons btn-hover download-game t">下载游戏</a>
+    
+    <!-- 弹窗 活动规则 -->
+    <div class="pop bg pop-rule" id="popRule">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>活动规则<i class="p-a icons inset-2"></i></div>
+            </div>
+            <ul class="rule-list">
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+                <li>1.规则规则规则规则规则规则规则规则规则规则规则规则规则规则</li>
+            </ul>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-hover btn-close t">关闭</a>
+    </div>
+    <!-- 弹窗 分享至QQ平台 -->
+    <div class="pop bg pop-1" id="pop1">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>选择分享平台<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="flex flex-center pt-list">
+                <a href="javascript: TGDialogS('pop3');" class="full-img pt-icon">
+                    <img src="./ossweb-img/pt_qq.png" alt="分享至qq">
+                    <p class="t-c">QQ好友</p>
+                </a>
+                <a href="javascript: TGDialogS('pop3');" class="full-img pt-icon">
+                    <img src="./ossweb-img/pt_kj.png" alt="分享至qq空间">
+                    <p class="t-c">QQ空间</p>
+                </a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-hover btn-close t">关闭</a>
+    </div>
+    <!-- 弹窗 分享至微信平台 -->
+    <div class="pop bg pop-1" id="pop2">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>选择分享平台<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="flex flex-center pt-list">
+                <a href="javascript: TGDialogS('pop3');" class="full-img pt-icon">
+                    <img src="./ossweb-img/pt_wx.png" alt="微信好友">
+                    <p class="t-c">微信好友</p>
+                </a>
+                <a href="javascript: TGDialogS('pop3');" class="full-img pt-icon">
+                    <img src="./ossweb-img/pt_pyq.png" alt="朋友圈">
+                    <p class="t-c">朋友圈</p>
+                </a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-hover btn-close t">关闭</a>
+    </div>
+    <!-- 弹窗 引导分享 -->
+    <div class="pop full-img pop-share" id="pop3">
+        <img src="./ossweb-img/pop_share.png" alt="点击右上角分享给好友吧~">
+    </div>
+    <!-- 弹窗 搜集次数不足 快去完成任务获取次数吧！ -->
+    <div class="pop bg pop-2" id="pop4">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .36rem;">搜集次数不足，<br/>快去完成任务获取次数吧！</p>
+            <a href="javascript: closeDialog();" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 搜集次数不足 去和好友互动共享加速收集吧！ -->
+    <div class="pop bg pop-2" id="pop5">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .36rem;">搜集次数不足，<br/>去和好友互动共享加速收集吧！</p>
+            <a href="javascript: closeDialog();" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 获取次数 -->
+    <div class="pop bg pop-4" id="pop7">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>获取次数<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-tips-text t-c" style="margin-top: .3rem;">每天可获得5次搜集次数（次日0点重置）</p>
+            <div class="flex task-title-wrap">
+                <div class="task-1" style="padding-left: .44rem;">任务</div>
+                <div class="task-2 t-c">次数</div>
+                <div class="task-3" style="padding-left: 1.48rem;">完成</div>
+            </div>
+            <ul class="task-list">
+                <li class="bg task-item flex">
+                    <div class="task-1">登录游戏</div>
+                    <div class="task-2 t-c">+1</div>
+                    <div class="task-3">
+                        <a href="javascript: alert('敬请期待！');" class="icons btn-toWc btn-hover t">去完成</a>
+                        <!-- 已完成显示 √ -->
+                        <!-- <i class="icons task-wc-icon"></i> -->
+                    </div>
+                </li>
+                <li class="bg task-item flex">
+                    <div class="task-1">任意模式竞赛1场</div>
+                    <div class="task-2 t-c">+1</div>
+                    <div class="task-3">
+                        <!-- <a href="javascript: alert('敬请期待！');" class="icons btn-toWc btn-hover t">去完成</a> -->
+                        <!-- 已完成显示 √ -->
+                        <i class="icons task-wc-icon"></i>
+                    </div>
+                </li>
+                <li class="bg task-item flex">
+                    <div class="task-1">共享卡片1次</div>
+                    <div class="task-2 t-c">+2</div>
+                    <div class="task-3">
+                        <a href="javascript: TGDialogS('pop21');" class="icons btn-gongx btn-hover t">共享</a>
+                        <!-- 已完成显示 √ -->
+                        <!-- <i class="icons task-wc-icon"></i> -->
+                    </div>
+                </li>
+                <li class="bg task-item flex">
+                    <div class="task-1">索要卡片1次</div>
+                    <div class="task-2 t-c">+1</div>
+                    <div class="task-3">
+                        <a href="javascript: TGDialogS('pop20');" class="icons btn-suoy btn-hover t">索要</a>
+                        <!-- 已完成显示 √ -->
+                        <!-- <i class="icons task-wc-icon"></i> -->
+                    </div>
+                </li>
+            </ul>
+            <p class="pop-tips-text t-c" style="margin-top: .04rem;color: #0788cb;">温馨提示：给好友共享卡片不会扣除卡片哦！</p>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 卡片不足 -->
+    <div class="pop bg pop-5" id="pop8">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>卡片不足<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">暂无可分享的卡片</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">提示：卡片数量不为0才可共享<br/>但共享不扣除卡片哦~</p>
+            <a href="javascript: closeDialog();" style="margin-top: .1rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 尚未集齐足够的卡片 去和其他好友互相共享收集卡片把！ -->
+    <div class="pop bg pop-5" id="pop9">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">尚未集齐小队卡片哦</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">去和其他好友互相共享收集卡片吧！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 不可以领取自己的共享 -->
+    <div class="pop bg pop-5" id="pop12">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">不可以领取自己的共享哦</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">去和其他好友互相共享吧！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 晚到一步 已经领完了 -->
+    <div class="pop bg pop-5" id="pop13">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>晚到一步<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">晚到一步，已经领完了</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">去和其他好友互相共享吧！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 领取次数不足 -->
+    <div class="pop bg pop-5" id="pop14">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>领取次数不足<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">每日最多可领取2张共享的卡片</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">今日已经上限，请明日再来哦~</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 不可以响应自己发出去的共享哦 -->
+    <div class="pop bg pop-5" id="pop14">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">不可以响应自己发出去的共享哦</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">发送给好友一起共享收集吧！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 您还没有好友请求共享的卡片； -->
+    <div class="pop bg pop-5" id="pop16">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">您还没有好友请求共享的卡片；<br/> 明星卡-x</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">快去完成任务收集卡片吧~</p>
+            <a href="javascript: closeDialog();" style="margin-top: .2rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 下载游戏 -->
+    <div class="pop bg pop-5" id="pop17">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>下载游戏<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">为了奖励的顺利发放，创建过游<br/>戏角色的账号才能参加活动。</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">前往下载游戏创建角色>></p>
+            <a href="javascript: alert('敬请期待！');" class="icons btn-download btn-hover t">游戏下载</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 活动未开始 正在筹备中 -->
+    <div class="pop bg pop-5" id="pop18">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .44rem;">活动正在筹备中<br/>敬请期待！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .3rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 活动已结束 -->
+    <div class="pop bg pop-5" id="pop19">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>提示<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">活动已结束<br/>更多精彩活动正在筹备中</p>
+            <p class="pop-msg-text t-c" style="margin-top: .14rem;">敬请期待！</p>
+            <a href="javascript: closeDialog();" style="margin-top: .1rem;" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 索要卡片 -->
+    <div class="pop bg pop-7" id="pop20">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>索要卡片<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .3rem;font-size: .24rem;">点击选择想<span style="font-size: .3rem;font-weight: bold;">索要</span>的卡片</p>
+            <div class="J-sy-card">
+                <ul class="p-r flex flex-center card-kh-list">
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_1.png" alt="元">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_2.png" alt="气">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_3.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_4.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_5.png" alt="和">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_6.png" alt="平">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_7.png" alt="精">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_8.png" alt="英">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                </ul>
+                <ul class="p-r flex flex-center card-mx-list">
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">索要</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-center" style="margin-top: .14rem;">
+                <a href="javascript: closeDialog();" class="icons btn-cancel btn-hover t">取消</a>
+                <a href="javascript: TGDialogS('pop3');" style="margin-left: 1.2rem;" class="icons btn-sy2 btn-hover t">索要</a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 共享卡片 -->
+    <div class="pop bg pop-7" id="pop21">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>共享卡片<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .3rem;font-size: .24rem;">点击选择想<span style="font-size: .3rem;font-weight: bold;">共享</span>的卡片<br/>卡片数量不为0才可共享，单共享不扣除卡片平~</p>
+            <div class="J-gx-card">
+                <ul class="p-r flex flex-center card-kh-list">
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_1.png" alt="元">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_2.png" alt="气">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_3.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_4.png" alt="满">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_5.png" alt="和">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_6.png" alt="平">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_7.png" alt="精">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r full-img card-item">
+                        <img src="./ossweb-img/card_kh_8.png" alt="英">
+                        <div class="p-a icons card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                </ul>
+                <ul class="p-r flex flex-center card-mx-list">
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                    <li class="p-r bg card-item">
+                        <div class="p-a card-num t-c">1</div>
+                        <div class="p-a card-active t-c">共享</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-center" style="margin-top: .34rem;">
+                <a href="javascript: closeDialog();" class="icons btn-cancel btn-hover t">取消</a>
+                <a href="javascript: TGDialogS('pop8');" style="margin-left: 1.2rem;" class="icons btn-gx2 btn-hover t">共享</a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 发现口号卡 or 明星卡 - x -->
+    <div class="pop bg pop-kb pop-kb-1" id="pop23">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i><p class="J-pop-kh">发现口号卡 - X</p><i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="full-img J-kh-img" style="margin: .3rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/card_kh_1.png" alt="卡片">
+            </div>
+            <i class="p-a bg sava-tips-icon"></i>
+            <a href="javascript: alert('敬请期待！');" style="margin-top: .14rem;" class="icons btn-xyyx btn-hover t">炫耀一下</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 元气小队集结完毕 按钮分享 -->
+    <div class="pop bg pop-kb pop-kb-2" id="pop24">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>元气小队集结完毕<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="p-r poster-container">
+                <div class="p-r bg poster-1" id="poster1">
+                    <div class="p-a flex flex-center flex-middle code-container">
+                        <div class="full-img code-icon">
+                            <img src="./ossweb-img/code.jpg" alt="二维码">
+                        </div>
+                        <div class="code-text-wrap" style="margin-left: .56rem;">
+                            <p class="code-msg-text">扫码为小哥哥应援<br/>领取定制套装一起元气满满</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript: closeDialog();" style="margin-top: .14rem;" class="icons btn-share-poster btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 元气小队集结完毕 长按图片分享 -->
+    <div class="pop bg pop-kb pop-kb-2" id="pop25">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>元气小队集结完毕<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="p-r poster-container">
+                <div class="p-r bg poster-1" id="poster1">
+                    <div class="p-a flex flex-center flex-middle code-container">
+                        <div class="full-img code-icon">
+                            <img src="./ossweb-img/code.jpg" alt="二维码">
+                        </div>
+                        <div class="code-text-wrap" style="margin-left: .56rem;">
+                            <p class="code-msg-text">扫码为小哥哥应援<br/>领取定制套装一起元气满满</p>
+                            <i class="icons cn-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 查看元气口号卡 -->
+    <div class="pop bg pop-kb pop-kb-3" id="popFxKh">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i><p class="J-pop-kh">发现口号卡 - X</p><i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="full-img J-kh-img" style="margin: .3rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/pop_kp.png" alt="卡片">
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .16rem;">剩余x张</p>
+            <div class="flex flex-center" style="margin-top: .16rem;">
+                <a href="javascript: closeDialog();" class="icons btn-sy2 btn-hover t">索要</a>
+                <a href="javascript: closeDialog();" style="margin-left: .3rem;" class="icons btn-gx2 btn-hover t">共享</a>
+            </div>
+            <i class="p-a bg sava-tips-icon s-2"></i>
+            <a href="javascript: alert('敬请期待！');" class="p-a icons btn-xyyx2 t">炫耀一下</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 查看元气明星卡 -->
+    <div class="pop bg pop-kb pop-kb-3" id="popFxMx">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i><p class="J-pop-mx">发现明星卡 - X</p><i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="full-img J-mx-img" style="margin: .3rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/pop_kp.png" alt="卡片">
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .16rem;">剩余x张</p>
+            <div class="flex flex-center" style="margin-top: .16rem;">
+                <a href="javascript: closeDialog();" class="icons btn-sy2 btn-hover t">索要</a>
+                <a href="javascript: closeDialog();" style="margin-left: .3rem;" class="icons btn-gx2 btn-hover t">共享</a>
+            </div>
+            <i class="p-a bg sava-tips-icon s-2"></i>
+            <a href="javascript: alert('敬请期待！');" class="p-a icons btn-xyyx2 t">炫耀一下</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 选择角色 -->
+    <div class="pop bg pop-12" id="pop30">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>选择角色<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="flex flex-center select-wrap" style="margin-top: .34rem;">
+                <span class="select-title t-r">系统</span>
+                <select class="bg" name="" id=""></select>
+            </div>
+            <div class="flex flex-center select-wrap">
+                <span class="select-title t-r">角色名称</span>
+                <select class="bg" name="" id=""></select>
+            </div>
+            <a href="javascript: alert('敬请期待！');" class="icons btn-confirm btn-hover t">确认</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 收到好友卡片 -->
+    <div class="pop bg pop-kb pop-kb-4" id="pop31">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>元气明星卡-X<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .16rem;">收到好友的卡片，目前拥有x张</p>
+            <div class="full-img" style="margin: .1rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/pop_kp.png" alt="卡片">
+            </div>
+            <a href="javascript: closeDialog();" class="icons btn-confirm btn-hover t">确认</a>
+            <p class="pop-msg-text t-c" style="margin-top: .1rem;">今日还可以领取y次</p>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 好友请求共享卡片 -->
+    <div class="pop bg pop-kb pop-kb-5" id="pop32">
+        <div class="p-a full-img share-icon">
+            <img src="./ossweb-img/pop_share.png" alt="点击右上角分享">
+        </div>
+        <div class="p-a pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>元气明星卡-X<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .16rem;">好友请求共享卡片</p>
+            <div class="full-img" style="margin: .1rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/pop_kp.png" alt="卡片">
+            </div>
+            <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+        </div>
+    </div>
+    <!-- 弹窗 消耗卡片兑换 装扮 -->
+    <div class="pop bg pop-11" id="pop33">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>活力后浪上装<i class="p-a icons inset-2"></i></div>
+            </div>
+            <div class="confirm-get-wrap">
+                <div class="p-r bg yy-wrap">
+                    <div class="p-a label-text t-c">30天</div>
+                </div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .24rem;font-size: .24rem;">消耗X套口号卡兑换</p>
+            <p class="pop-msg-text t-c" style="margin-top: .1rem;">领取角色：<span style="font-weight: bold;">角色角色名</span></p>
+            <div class="flex flex-center" style="margin-top: .28rem;">
+                <a href="javascript: TGDialogS('pop30');" class="icons btn-cut-role btn-hover t">切换角色</a>
+                <a href="javascript: TGDialogS('pop37');" style="margin-left: .4rem;" class="icons btn-dh2 btn-hover t">兑换</a>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 首次进入 弹出 -->
+    <div class="pop bg pop-kb pop-kb-7" id="pop34">
+        <div class="full-img J-kh-img" style="margin: .3rem auto 0;width: 3.51rem;">
+            <img src="./ossweb-img/pop_kp.png" alt="卡片">
+        </div>
+        <i class="p-a bg sava-tips-icon s-2"></i>
+        <a href="javascript: alert('敬请期待！');" style="margin-top: .14rem;" class="icons btn-xyyx btn-hover t">炫耀一下</a>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 选择心仪的套装奖励 -->
+    <div class="pop bg pop-kb pop-kb-6" id="pop36">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title"><i class="p-a icons inset-1"></i>定制套装抢先体验<i class="p-a icons inset-2"></i></div>
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .34rem;">首次集齐口令或明显卡可领取定制套装<br/>每款限领1次哟~</p>
+            <div class="p-r flex tz-container">
+                <!-- 蓝色 -->
+                <div class="p-r flex-1 tz-wrap active ylq-status">
+                    <!-- 切换 -->
+                    <a href="javascript: ;" class="p-a icons cut-sex-btn blue cut-1 flex t-c">
+                        <span>男款</span>
+                        <span>女款</span>
+                    </a>
+                    <div class="p-a full-img dizuo-wrap">
+                        <img src="./ossweb-img/dizuo_1.png" alt="">
+                    </div>
+                    <!-- 套装展示 -->
+                    <div class="p-r full-img tz-img">
+                        <img src="./ossweb-img/p3_boy.png" alt="">
+                    </div>
+                    <!-- 选中光效 -->
+                    <div class="p-a full-img light-img">
+                        <img src="./ossweb-img/light_1.png" alt="光">
+                    </div>
+                    <!-- 已领取 -->
+                    <div class="p-a ylq-wrap t-c">已领取</div>
+                    <!-- 名字 -->
+                    <div class="p-a tz-name-wrap t-c">活力前浪套装(7天)</div>
+                </div>
+                <!-- 黄色 -->
+                <div class="p-r flex-1 tz-wrap">
+                    <a href="javascript: ;" class="p-a icons yellow cut-sex-btn cut-1 flex t-c">
+                        <span>男款</span>
+                        <span>女款</span>
+                    </a>
+                    <div class="p-a full-img dizuo-wrap">
+                        <img src="./ossweb-img/dizuo_2.png" alt="">
+                    </div>
+                    <!-- 套装展示 -->
+                    <div class="p-r full-img tz-img">
+                        <img src="./ossweb-img/p3_boy.png" alt="">
+                    </div>
+                    <!-- 选中光效 -->
+                    <div class="p-a full-img light-img">
+                        <img src="./ossweb-img/light_2.png" alt="光">
+                    </div>
+                    <!-- 名字 -->
+                    <div class="p-a tz-name-wrap t-c">活力后浪套装(7天)</div>
+                </div>
+            </div>
+            <p class="pop-msg-text J-select-result t-c" style="margin-top: .6rem;">请点击选择心仪的套装哦~</p>
+            <div class="flex flex-center">
+                <div style="width: 2.72rem;">
+                    <p class="tz-tips-text t-c">口令卡进度：1/8</p>
+                    <a href="javascript: ;" style="margin-top: .04rem;" class="icons btn-wjq btn-hover t">未集齐</a>
+                </div>
+                <div style="margin-left: .9rem;width: 2.72rem;">
+                    <p class="tz-tips-text t-c">明星卡进度：1/3</p>
+                    <a href="javascript: TGDialogS('pop33');" style="margin-top: .04rem;" class="icons btn-lq2 btn-hover t">领取</a>
+                    <!-- 已领取 -->
+                    <!-- <a href="javascript: ;" style="margin-top: .04rem;" class="icons btn-ylq2 btn-hover t">已领取</a> -->
+                </div>
+            </div>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+    <!-- 弹窗 选择心仪的套装奖励 -->
+    <div class="pop bg pop-kb pop-kb-7" id="pop37">
+        <div class="pop-con">
+            <div class="t-c">
+                <div class="p-r pop-title">活动活力后浪套装（30天）</div>
+            </div>
+            <div class="full-img J-kh-img" style="margin: .3rem auto 0;width: 3.51rem;">
+                <img src="./ossweb-img/pop_kp.png" alt="卡片">
+            </div>
+            <p class="pop-msg-text t-c" style="margin-top: .24rem;">将在24小时内通过邮件发放至改角色</p>
+            <a href="javascript: alert('敬请期待！');" style="margin-top: .14rem;" class="icons btn-xyyx btn-hover t">炫耀一下</a>
+        </div>
+        <a href="javascript: closeDialog();" class="p-a icons btn-close btn-hover t">关闭</a>
+    </div>
+
+    <!-- msdk分享遮罩 -->
+    <div class="pop_box pop_id_33" data-pbt="msdk分享遮罩" style="display:none;" onclick="myClose();"></div>
+
+
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/mmdPlugin/mmd-plugin.min.1.0.2.js" charset="utf-8"></script>
+    <script src="//game.gtimg.cn/images/js/mmdVideoPlayer/mmd.videoplayer.min.1.0.1.js" charset="utf-8"></script>
+    <script>
+
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+    </script>
+    <script src="./ossweb-img/dom2img.min.js"></script>
+    <script src="./ossweb-img/index.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <!--引入文件-->
+    <script>
+        TGMobileShare({
+           shareTitle: '勇者同行，元气满满',
+           shareDesc: '应援领永久定制套装 ',
+           shareImgUrl: './ossweb-img/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+           shareLink: '',
+           actName: 'a20200709yqhz'
+       });
+        //此段代码不能放到外链JXXXXS中，
+        var setSite = { //设置网站属性    
+            siteType: "a20200709yqhz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "m", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "移动端首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+</html>

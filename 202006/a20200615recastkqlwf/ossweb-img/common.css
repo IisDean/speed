@@ -294,6 +294,8 @@ a {
     font-size: .18rem;
 }
 .yuyue-btn,
+.yuyue-btn2,
+.qwsq-btn,
 .yaoq-btn,
 .ljfx-btn {
     margin: .6rem auto 0;
@@ -303,11 +305,17 @@ a {
 .yuyue-btn {
     background-position: 0 -3.35rem;
 }
+.yuyue-btn2 {
+    background-position: -3.1rem -8.36rem;
+}
 .yaoq-btn {
     background-position: 0 -7.43rem;
 }
 .ljfx-btn {
     background-position: -3.1rem -7.43rem;
+}
+.qwsq-btn {
+    background-position: 0 -9.29rem;
 }
 .get-prize-btn {
     margin: .52rem auto 0;

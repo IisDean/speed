@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta name="Description" content="《天涯明月刀》年度资料片“禅宗少林”全新上线，全新门派少林入世，史诗话本“莲华镇心魔”震撼开启，新金装新剧情新地图新美妆，月下雅僧，金刚怒目！">
+    <meta name="Keywords" content="国风,禅宗少林,少林，新门派，天涯明月刀,天涯明月刀ol,武侠,武侠网游,端游，明月心,公子羽,唐青枫,时光沧海,沧海云帆,半青少女,青龙永夜,浩瀚天涯,劲爆福利,史诗剧情">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta itemprop="name" content="没想到我的命定江湖门派竟是？！" />
+    <meta itemprop="description" content="非正经测试，就是想白送转职丹。 " />
+    <meta itemprop="image" content="https://game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/share.jpg" />
+    <title>天刀门派转职测试-天涯明月刀官方网站-腾讯游戏</title>
+    <!-- 页面设计: cp | 页面制作： cp | 创建： 2020/07/02 -->
+    <link href="./ossweb-img/style.css" rel="stylesheet" />
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+<style>
+    .stage {
+        width: 7.5rem;
+        height: 16.5rem;
+    }
+</style>
+
+<body ontouchstart="">
+    
+    <div class="p-r full-img stage" id="poster">
+        <img src="./ossweb-img/p1_bg.jpg" alt="">
+    </div>
+
+    <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+    <script src="//game.gtimg.cn/images/js/mmdPlugin/mmd-plugin.min.1.0.2.js" charset="utf-8"></script>
+    <script src="//game.gtimg.cn/images/js/mmdVideoPlayer/mmd.videoplayer.min.1.0.1.js" charset="utf-8"></script>
+    <script>
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function (Dialog) {
+                Dialog.hide();
+            });
+        }
+    </script>
+    <script src="./ossweb-img/dom2img.min.js"></script>
+    <script>
+        setTimeout(function(){
+            dom2img('#poster', {
+                ondone: function () {
+                }
+            });
+        }, 600);
+    </script>
+</body>
+</html>

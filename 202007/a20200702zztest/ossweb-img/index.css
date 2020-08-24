@@ -1,6 +1,6 @@
 /* p1 */
 .part-1 {
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p1_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p1_bg.jpg');
 }
 .part-1 .slogan-icon {
     top: 0;
@@ -34,7 +34,7 @@
 }
 /* p2 */
 .part-2 {
-    background-image: url('.//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p2_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/ossweb-img/p2_bg.jpg');
 }
 .question-list {
     margin: -.1rem auto 0;
@@ -46,7 +46,7 @@
     box-sizing: border-box;
     width: 7.09rem;
     height: 11.35rem;
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p2_question.png');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p2_question.png');
     overflow: hidden;
 }
 .question-title-wrap {
@@ -64,7 +64,7 @@
     padding: 0 0 0 .36rem;
     width: 5.82rem;
     height: .92rem;
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p2_options.png');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p2_options.png');
     line-height: .92rem;
     font-size: .26rem;
     color: #fff;
@@ -72,7 +72,7 @@
     opacity: 0;
 }
 .options-item.active {
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p2_options_active.png');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p2_options_active.png');
 }
 .options-item span {
     margin-right: .16rem;
@@ -86,7 +86,7 @@
 }
 /* p3 */
 .part-3 {
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p3_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p3_bg.jpg');
 }
 .result-container {
     margin: -.1rem 0 0 .04rem;
@@ -143,7 +143,7 @@
 .poster-wrap {
     width: 7.5rem;
     height: 16.5rem;
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/p3_bg.jpg');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/p3_bg.jpg');
     background-size: 100% 100%;
 }
 .code-container {
@@ -153,7 +153,7 @@
     margin: 0 auto;
     width: 5.98rem;
     height: 1.66rem;
-    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/code_bg.png');
+    background-image: url('//game.gtimg.cn/images/wuxia/act/a20200702zztest/ossweb-img/code_bg.png');
     overflow: hidden;
 }
 .code-wrap {
